@@ -1,0 +1,852 @@
+1	C:\wlua_dump\path\Lotus\Interface\ComponentsBoosterInfo.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Interface\ComponentsBoosterInfo.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  03                 size of number (bytes)
+0008  19                 integral (1=integral)
+425
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+package
+seeall
+Lotus.Interface.Libs.TimerMgr
+mMovie
+mActiveBoosters
+mDirty
+mTimerMgr
+Initialize
+Populate
+FastUpdate
+Update
+mMovie
+mActiveBoosters
+mTimerMgr
+mActiveBoosters
+mRefreshDelay
+gPlayerProfileMgr
+mGameData
+mItemType
+Engine
+mExpiryDate
+mUsesRemaining
+mLocalizeTag
+mLocalizeDescTag
+mIconTexture
+table
+mGlobalUpgrades
+mActivation
+mDirty
+mRefreshDelay
+mGameData
+mTimerMgr
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  03                 maxstacksize (3)
+                         * code:
+0008  19                 sizecode (25)
+0009  1D000000           [01] getglobal  0   0        ; 954442511
+000D  41000001           [02] vararg     1   2      
+0011  9D400000           [03] getglobal  2   1        ; package
+0015  8E804001           [04] gettable   2   2   258  ; "seeall"
+0019  22408001           [05] call       0   3   1  
+001D  1DC00000           [06] getglobal  0   3        ; 849075268
+0021  59000100           [07] loadk      1   4        ; "Lotus.Interface.Libs.TimerMgr"
+0025  22800001           [08] call       0   2   2  
+0029  4B000200           [09] newtable   1   0   8    ; array=0, hash=8
+002D  4C80C182           [10] settable   1   261 262  ; "mMovie" nil
+0031  8B000000           [11] newtable   2   0   0    ; array=0, hash=0
+0035  4C808083           [12] settable   1   263 2    ; "mActiveBoosters"
+0039  4C404284           [13] settable   1   264 265  ; "mDirty" 0
+003D  4C804185           [14] settable   1   266 262  ; "mTimerMgr" nil
+0041  A5000000           [15] closure    2   0      
+0045  12000000           [16] move       0   0      
+0049  4C808085           [17] settable   1   267 2    ; "Initialize"
+004D  A5400000           [18] closure    2   1      
+0051  4C800086           [19] settable   1   268 2    ; "Populate"
+0055  A5800000           [20] closure    2   2      
+0059  4C808086           [21] settable   1   269 2    ; "FastUpdate"
+005D  A5C00000           [22] closure    2   3      
+0061  4C800087           [23] settable   1   270 2    ; "Update"
+0065  5E000001           [24] return     1   2      
+0069  1E008000           [25] return     0   1      
+                         * constants:
+006D  0F                 sizek (15)
+006E  01                 const type 3
+006F  0FA3E338           const [0]: (954442511)
+0073  04                 const type 4
+0074  08                 string size (8)
+0075  7061636B61676500   "package\0"
+                         const [1]: "package"
+007D  04                 const type 4
+007E  07                 string size (7)
+007F  736565616C6C00     "seeall\0"
+                         const [2]: "seeall"
+0086  01                 const type 3
+0087  44DC9B32           const [3]: (849075268)
+008B  04                 const type 4
+008C  1E                 string size (30)
+008D  4C6F7475732E496E+  "Lotus.In"
+0095  746572666163652E+  "terface."
+009D  4C6962732E54696D+  "Libs.Tim"
+00A5  65724D677200       "erMgr\0"
+                         const [4]: "Lotus.Interface.Libs.TimerMgr"
+00AB  04                 const type 4
+00AC  07                 string size (7)
+00AD  6D4D6F76696500     "mMovie\0"
+                         const [5]: "mMovie"
+00B4  00                 const type 0
+                         const [6]: nil
+00B5  04                 const type 4
+00B6  10                 string size (16)
+00B7  6D41637469766542+  "mActiveB"
+00BF  6F6F737465727300   "oosters\0"
+                         const [7]: "mActiveBoosters"
+00C7  04                 const type 4
+00C8  07                 string size (7)
+00C9  6D446972747900     "mDirty\0"
+                         const [8]: "mDirty"
+00D0  01                 const type 3
+00D1  00000000           const [9]: (0)
+00D5  04                 const type 4
+00D6  0A                 string size (10)
+00D7  6D54696D65724D67+  "mTimerMg"
+00DF  7200               "r\0"
+                         const [10]: "mTimerMgr"
+00E1  04                 const type 4
+00E2  0B                 string size (11)
+00E3  496E697469616C69+  "Initiali"
+00EB  7A6500             "ze\0"
+                         const [11]: "Initialize"
+00EE  04                 const type 4
+00EF  09                 string size (9)
+00F0  506F70756C617465+  "Populate"
+00F8  00                 "\0"
+                         const [12]: "Populate"
+00F9  04                 const type 4
+00FA  0B                 string size (11)
+00FB  4661737455706461+  "FastUpda"
+0103  746500             "te\0"
+                         const [13]: "FastUpdate"
+0106  04                 const type 4
+0107  07                 string size (7)
+0108  55706461746500     "Update\0"
+                         const [14]: "Update"
+                         * functions:
+010F  04                 sizep (4)
+                         
+0110                     ** function [0] definition (level 2)
+                         ** start of function **
+0110  00                 string size (0)
+                         source name: (none)
+0111  0E                 line defined (14)
+0112  13                 last line defined (19)
+0113  01                 nups (1)
+0114  02                 numparams (2)
+0115  00                 is_vararg (0)
+0116  04                 maxstacksize (4)
+                         * code:
+0117  0A                 sizecode (10)
+0118  0C400080           [01] settable   0   256 1    ; "mMovie"
+011C  8B000000           [02] newtable   2   0   0    ; array=0, hash=0
+0120  0C808080           [03] settable   0   257 2    ; "mActiveBoosters"
+0124  93000000           [04] getupval   2   0      
+0128  8EC04001           [05] gettable   2   2   259  ; -1029178688
+012C  A2808000           [06] call       2   1   2  
+0130  0C800081           [07] settable   0   258 2    ; "mTimerMgr"
+0134  A4004100           [08] self       2   0   260  ; -1234485493
+0138  A2400001           [09] call       2   2   1  
+013C  1E008000           [10] return     0   1      
+                         * constants:
+0140  05                 sizek (5)
+0141  04                 const type 4
+0142  07                 string size (7)
+0143  6D4D6F76696500     "mMovie\0"
+                         const [0]: "mMovie"
+014A  04                 const type 4
+014B  10                 string size (16)
+014C  6D41637469766542+  "mActiveB"
+0154  6F6F737465727300   "oosters\0"
+                         const [1]: "mActiveBoosters"
+015C  04                 const type 4
+015D  0A                 string size (10)
+015E  6D54696D65724D67+  "mTimerMg"
+0166  7200               "r\0"
+                         const [2]: "mTimerMgr"
+0168  01                 const type 3
+0169  C0FAA7C2           const [3]: (-1029178688)
+016D  01                 const type 3
+016E  0B3F6BB6           const [4]: (-1234485493)
+                         * functions:
+0172  00                 sizep (0)
+                         * lines:
+0173  0A                 sizelineinfo (10)
+                         [pc] (line)
+0174  0F                 [01] (15)
+0175  00                 [02] (16)
+0176  00                 [03] (16)
+0177  00                 [04] (17)
+0178  10                 [05] (17)
+0179  00                 [06] (17)
+017A  00                 [07] (17)
+017B  00                 [08] (18)
+017C  10                 [09] (18)
+017D  00                 [10] (19)
+                         * locals:
+019C  00                 sizelocvars (0)
+                         * upvalues:
+019D  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+019E                     ** function [1] definition (level 2)
+                         ** start of function **
+019E  00                 string size (0)
+                         source name: (none)
+019F  14                 line defined (20)
+01A0  5A                 last line defined (90)
+01A1  00                 nups (0)
+01A2  01                 numparams (1)
+01A3  00                 is_vararg (0)
+01A4  17                 maxstacksize (23)
+                         * code:
+01A6  01                 sizecode (147)
+01A7  4B000000           [001] newtable   1   0   0    ; array=0, hash=0
+01AB  0C400080           [002] settable   0   256 1    ; "mActiveBoosters"
+01AF  0C80C080           [003] settable   0   257 258  ; "mRefreshDelay" nil
+01B3  5DC00000           [004] getglobal  1   3        ; gPlayerProfileMgr
+01B7  6400C100           [005] self       1   1   260  ; 569342746
+01BB  D9400100           [006] loadk      3   5        ; 0
+01BF  62808001           [007] call       1   3   2  
+01C3  9D800100           [008] getglobal  2   6        ; 1074689893
+01C7  D2008000           [009] move       3   1      
+01CB  A2800001           [010] call       2   2   2  
+01CF  98000000           [011] test       2       0    ; to [13] if true
+01D3  1A000080           [012] jmp        1            ; to [14]
+01D7  1E008000           [013] return     0   1      
+01DB  A400C200           [014] self       2   1   264  ; 1699680402
+01DF  A2800001           [015] call       2   2   2  
+01E3  0C808083           [016] settable   0   263 2    ; "mGameData"
+01E7  9D800100           [017] getglobal  2   6        ; 1074689893
+01EB  CEC04100           [018] gettable   3   0   263  ; "mGameData"
+01EF  A2800001           [019] call       2   2   2  
+01F3  98000000           [020] test       2       0    ; to [22] if true
+01F7  1A000080           [021] jmp        1            ; to [23]
+01FB  1E008000           [022] return     0   1      
+01FF  8EC04100           [023] gettable   2   0   263  ; "mGameData"
+0203  A4404201           [024] self       2   2   265  ; 1865287165
+0207  A2800001           [025] call       2   2   2  
+020B  A4804201           [026] self       2   2   266  ; 801382141
+020F  A2800001           [027] call       2   2   2  
+0213  D9C00200           [028] loadk      3   11       ; 0
+0217  0A010001           [029] len        4   2      
+021B  59C10200           [030] loadk      5   11       ; 0
+021F  D0000F80           [031] forprep    3   61       ; to [93]
+0223  C6018003           [032] loadnil    7   7      
+0227  1D820100           [033] getglobal  8   6        ; 1074689893
+022B  4E820101           [034] gettable   9   2   6  
+022F  4E02C304           [035] gettable   9   9   268  ; "mItemType"
+0233  22820001           [036] call       8   2   2  
+0237  18420000           [037] test       8       1    ; to [39] if false
+023B  1A400D80           [038] jmp        54           ; to [93]
+023F  0E820101           [039] gettable   8   2   6  
+0243  0E024304           [040] gettable   8   8   268  ; "mItemType"
+0247  24424304           [041] self       8   8   269  ; 1528419216
+024B  22820001           [042] call       8   2   2  
+024F  18020000           [043] test       8       0    ; to [45] if true
+0253  1A400380           [044] jmp        14           ; to [59]
+0257  1D820300           [045] getglobal  8   14       ; Engine
+025B  0EC24304           [046] gettable   8   8   271  ; -794986224
+025F  4E820101           [047] gettable   9   2   6  
+0263  4E02C404           [048] gettable   9   9   272  ; "mExpiryDate"
+0267  22820001           [049] call       8   2   2  
+fail op	21
+026B  15008282           [050] concat     0   261 8  
+026F  1AC00380           [051] jmp        16           ; to [68]
+0273  4B820000           [052] newtable   9   0   2    ; array=0, hash=2
+0277  8E820101           [053] gettable   10  2   6  
+027B  8E024405           [054] gettable   10  10  272  ; "mExpiryDate"
+027F  4C820288           [055] settable   9   272 10   ; "mExpiryDate"
+0283  4C42C188           [056] settable   9   273 261  ; "mUsesRemaining" 0
+0287  D2018004           [057] move       7   9      
+028B  1A000280           [058] jmp        9            ; to [68]
+028F  4E820101           [059] gettable   9   2   6  
+0293  4E42C404           [060] gettable   9   9   273  ; "mUsesRemaining"
+fail op	21
+0297  15408282           [061] concat     0   261 9  
+029B  1A000180           [062] jmp        5            ; to [68]
+029F  4B420000           [063] newtable   9   0   1    ; array=0, hash=1
+02A3  8E820101           [064] gettable   10  2   6  
+02A7  8E424405           [065] gettable   10  10  273  ; "mUsesRemaining"
+02AB  4C828288           [066] settable   9   273 10   ; "mUsesRemaining"
+02AF  D2018004           [067] move       7   9      
+fail op	35
+02B3  6380C003           [068] close      1  
+02B7  1A800580           [069] jmp        23           ; to [93]
+02BB  4E820101           [070] gettable   9   2   6  
+02BF  4E02C304           [071] gettable   9   9   268  ; "mItemType"
+02C3  64C2C404           [072] self       9   9   275  ; 1634497718
+02C7  62820001           [073] call       9   2   2  
+02CB  CC410289           [074] settable   7   274 9    ; "mLocalizeTag"
+02CF  4E820101           [075] gettable   9   2   6  
+02D3  4E02C304           [076] gettable   9   9   268  ; "mItemType"
+02D7  6442C504           [077] self       9   9   277  ; 1110445749
+02DB  62820001           [078] call       9   2   2  
+02DF  CC41028A           [079] settable   7   276 9    ; "mLocalizeDescTag"
+02E3  4E820101           [080] gettable   9   2   6  
+02E7  4E02C304           [081] gettable   9   9   268  ; "mItemType"
+02EB  64C2C504           [082] self       9   9   279  ; -240553170
+02EF  62820001           [083] call       9   2   2  
+02F3  CC41028B           [084] settable   7   278 9    ; "mIconTexture"
+02F7  4E820101           [085] gettable   9   2   6  
+02FB  4E02C304           [086] gettable   9   9   268  ; "mItemType"
+02FF  CC410286           [087] settable   7   268 9    ; "mItemType"
+0303  5D020600           [088] getglobal  9   24       ; table
+0307  4E42C604           [089] gettable   9   9   281  ; -431682403
+030B  8E024000           [090] gettable   10  0   256  ; "mActiveBoosters"
+030F  D2028003           [091] move       11  7      
+0313  62428001           [092] call       9   3   1  
+0317  D440F07F           [093] forloop    3   -62      ; to [32] if loop
+031B  4EC24100           [094] gettable   9   0   263  ; "mGameData"
+031F  6482C604           [095] self       9   9   282  ; 755731078
+0323  62820001           [096] call       9   2   2  
+0327  99C20200           [097] loadk      10  11       ; 0
+032B  CEC2C604           [098] gettable   11  9   283  ; "mGlobalUpgrades"
+032F  CA028005           [099] len        11  11     
+0333  19C30200           [100] loadk      12  11       ; 0
+0337  90420380           [101] forprep    10  14       ; to [116]
+033B  8EC3C604           [102] gettable   14  9   283  ; "mGlobalUpgrades"
+033F  8E430307           [103] gettable   14  14  13 
+0343  DD830300           [104] getglobal  15  14       ; Engine
+0347  CEC3C307           [105] gettable   15  15  271  ; -794986224
+034B  0E044707           [106] gettable   16  14  284  ; "mActivation"
+034F  E2830001           [107] call       15  2   2  
+0353  1D840300           [108] getglobal  16  14       ; Engine
+0357  0EC44308           [109] gettable   16  16  271  ; -794986224
+035B  4E044407           [110] gettable   17  14  272  ; "mExpiryDate"
+035F  22840001           [111] call       16  2   2  
+fail op	21
+0363  1540C107           [112] concat     0   15  261
+0367  1A400080           [113] jmp        2            ; to [116]
+fail op	21
+036B  15008482           [114] concat     0   261 16 
+036F  1AC0FF7F           [115] jmp        0            ; to [116]
+0373  9402FC7F           [116] forloop    10  -15      ; to [102] if loop
+0377  59C40200           [117] loadk      17  11       ; 0
+037B  99440700           [118] loadk      18  29       ; 0
+037F  D9C40200           [119] loadk      19  11       ; 0
+0383  50C40580           [120] forprep    17  24       ; to [145]
+0387  4E054000           [121] gettable   21  0   256  ; "mActiveBoosters"
+038B  4A05800A           [122] len        21  21     
+fail op	33
+038F  2140050A           [123] tforloop   0       21   ; to [125] if exit
+0393  1AC00480           [124] jmp        20           ; to [145]
+0397  4E054000           [125] gettable   21  0   256  ; "mActiveBoosters"
+039B  4E05850A           [126] gettable   21  21  20 
+039F  4E05C40A           [127] gettable   21  21  272  ; "mExpiryDate"
+fail op	35
+03A3  6380C00A           [128] close      1  
+03A7  1A800380           [129] jmp        15           ; to [145]
+03AB  5D850300           [130] getglobal  21  14       ; Engine
+03AF  4EC5C30A           [131] gettable   21  21  271  ; -794986224
+03B3  8E054000           [132] gettable   22  0   256  ; "mActiveBoosters"
+03B7  8E05050B           [133] gettable   22  22  20 
+03BB  8E05440B           [134] gettable   22  22  272  ; "mExpiryDate"
+03BF  62850001           [135] call       21  2   2  
+fail op	21
+03C3  15408582           [136] concat     0   261 21 
+03C7  1A800180           [137] jmp        7            ; to [145]
+03CB  8E454000           [138] gettable   22  0   257  ; "mRefreshDelay"
+fail op	35
+03CF  6380400B           [139] close      1  
+03D3  1A800080           [140] jmp        3            ; to [144]
+03D7  8E454000           [141] gettable   22  0   257  ; "mRefreshDelay"
+fail op	21
+03DB  1580850A           [142] concat     0   21  22 
+03DF  1A000080           [143] jmp        1            ; to [145]
+03E3  0C408580           [144] settable   0   257 21   ; "mRefreshDelay"
+03E7  5484F97F           [145] forloop    17  -25      ; to [121] if loop
+03EB  0CC0478F           [146] settable   0   286 287  ; "mDirty" 1
+03EF  1E008000           [147] return     0   1      
+                         * constants:
+03F3  20                 sizek (32)
+03F4  04                 const type 4
+03F5  10                 string size (16)
+03F6  6D41637469766542+  "mActiveB"
+03FE  6F6F737465727300   "oosters\0"
+                         const [0]: "mActiveBoosters"
+0406  04                 const type 4
+0407  0E                 string size (14)
+0408  6D52656672657368+  "mRefresh"
+0410  44656C617900       "Delay\0"
+                         const [1]: "mRefreshDelay"
+0416  00                 const type 0
+                         const [2]: nil
+0417  04                 const type 4
+0418  12                 string size (18)
+0419  67506C6179657250+  "gPlayerP"
+0421  726F66696C654D67+  "rofileMg"
+0429  7200               "r\0"
+                         const [3]: "gPlayerProfileMgr"
+042B  01                 const type 3
+042C  1A7BEF21           const [4]: (569342746)
+0430  03                 const type 3
+0431  00000000           const [5]: (0)
+0435  01                 const type 3
+0436  65770E40           const [6]: (1074689893)
+043A  04                 const type 4
+043B  0A                 string size (10)
+043C  6D47616D65446174+  "mGameDat"
+0444  6100               "a\0"
+                         const [7]: "mGameData"
+0446  01                 const type 3
+0447  92104F65           const [8]: (1699680402)
+044B  01                 const type 3
+044C  FD052E6F           const [9]: (1865287165)
+0450  01                 const type 3
+0451  FD1EC42F           const [10]: (801382141)
+0455  03                 const type 3
+0456  0000803F           const [11]: (0)
+045A  04                 const type 4
+045B  0A                 string size (10)
+045C  6D4974656D547970+  "mItemTyp"
+0464  6500               "e\0"
+                         const [12]: "mItemType"
+0466  01                 const type 3
+0467  90D3195B           const [13]: (1528419216)
+046B  04                 const type 4
+046C  07                 string size (7)
+046D  456E67696E6500     "Engine\0"
+                         const [14]: "Engine"
+0474  01                 const type 3
+0475  10799DD0           const [15]: (-794986224)
+0479  04                 const type 4
+047A  0C                 string size (12)
+047B  6D45787069727944+  "mExpiryD"
+0483  61746500           "ate\0"
+                         const [16]: "mExpiryDate"
+0487  04                 const type 4
+0488  0F                 string size (15)
+0489  6D5573657352656D+  "mUsesRem"
+0491  61696E696E6700     "aining\0"
+                         const [17]: "mUsesRemaining"
+0498  04                 const type 4
+0499  0D                 string size (13)
+049A  6D4C6F63616C697A+  "mLocaliz"
+04A2  6554616700         "eTag\0"
+                         const [18]: "mLocalizeTag"
+04A7  01                 const type 3
+04A8  B6746C61           const [19]: (1634497718)
+04AC  04                 const type 4
+04AD  11                 string size (17)
+04AE  6D4C6F63616C697A+  "mLocaliz"
+04B6  6544657363546167+  "eDescTag"
+04BE  00                 "\0"
+                         const [20]: "mLocalizeDescTag"
+04BF  01                 const type 3
+04C0  B50E3042           const [21]: (1110445749)
+04C4  04                 const type 4
+04C5  0D                 string size (13)
+04C6  6D49636F6E546578+  "mIconTex"
+04CE  7475726500         "ture\0"
+                         const [22]: "mIconTexture"
+04D3  01                 const type 3
+04D4  2E73A9F1           const [23]: (-240553170)
+04D8  04                 const type 4
+04D9  06                 string size (6)
+04DA  7461626C6500       "table\0"
+                         const [24]: "table"
+04E0  01                 const type 3
+04E1  9D0C45E6           const [25]: (-431682403)
+04E5  01                 const type 3
+04E6  868A0B2D           const [26]: (755731078)
+04EA  04                 const type 4
+04EB  10                 string size (16)
+04EC  6D476C6F62616C55+  "mGlobalU"
+04F4  7067726164657300   "pgrades\0"
+                         const [27]: "mGlobalUpgrades"
+04FC  04                 const type 4
+04FD  0C                 string size (12)
+04FE  6D41637469766174+  "mActivat"
+0506  696F6E00           "ion\0"
+                         const [28]: "mActivation"
+050A  03                 const type 3
+050B  00008040           const [29]: (0)
+050F  04                 const type 4
+0510  07                 string size (7)
+0511  6D446972747900     "mDirty\0"
+                         const [30]: "mDirty"
+0518  01                 const type 3
+0519  01000000           const [31]: (1)
+                         * functions:
+051D  00                 sizep (0)
+                         * lines:
+051F  01                 sizelineinfo (147)
+                         [pc] (line)
+0520  15                 [001] (21)
+0521  00                 [002] (21)
+0522  00                 [003] (22)
+0523  00                 [004] (24)
+0524  15                 [005] (24)
+0525  00                 [006] (24)
+0526  00                 [007] (24)
+0527  00                 [008] (25)
+0528  16                 [009] (25)
+0529  00                 [010] (25)
+052A  00                 [011] (25)
+052B  00                 [012] (25)
+052C  18                 [013] (26)
+052D  00                 [014] (29)
+052E  00                 [015] (29)
+052F  00                 [016] (29)
+0530  18                 [017] (30)
+0531  00                 [018] (30)
+0532  00                 [019] (30)
+0533  00                 [020] (30)
+0534  18                 [021] (30)
+0535  00                 [022] (31)
+0536  00                 [023] (35)
+0537  00                 [024] (35)
+0538  18                 [025] (35)
+0539  00                 [026] (35)
+053A  00                 [027] (35)
+053B  00                 [028] (36)
+053C  19                 [029] (36)
+053D  00                 [030] (36)
+053E  00                 [031] (36)
+053F  00                 [032] (37)
+0540  19                 [033] (39)
+0541  00                 [034] (39)
+0542  00                 [035] (39)
+0543  00                 [036] (39)
+0544  19                 [037] (39)
+0545  00                 [038] (39)
+0546  00                 [039] (40)
+0547  00                 [040] (40)
+0548  19                 [041] (40)
+0549  00                 [042] (40)
+054A  00                 [043] (40)
+054B  00                 [044] (40)
+054C  19                 [045] (41)
+054D  00                 [046] (41)
+054E  00                 [047] (41)
+054F  00                 [048] (41)
+0550  1A                 [049] (41)
+0551  00                 [050] (42)
+0552  00                 [051] (42)
+0553  00                 [052] (43)
+0554  1D                 [053] (43)
+0555  00                 [054] (43)
+0556  00                 [055] (43)
+0557  00                 [056] (43)
+0558  1D                 [057] (43)
+0559  00                 [058] (44)
+055A  00                 [059] (45)
+055B  00                 [060] (45)
+055C  1D                 [061] (45)
+055D  00                 [062] (45)
+055E  00                 [063] (46)
+055F  00                 [064] (46)
+0560  1E                 [065] (46)
+0561  00                 [066] (46)
+0562  00                 [067] (46)
+0563  00                 [068] (49)
+0564  1E                 [069] (49)
+0565  00                 [070] (50)
+0566  00                 [071] (50)
+0567  00                 [072] (50)
+0568  1E                 [073] (50)
+0569  00                 [074] (50)
+056A  00                 [075] (51)
+056B  00                 [076] (51)
+056C  1E                 [077] (51)
+056D  00                 [078] (51)
+056E  00                 [079] (51)
+056F  00                 [080] (52)
+0570  1E                 [081] (52)
+0571  00                 [082] (52)
+0572  00                 [083] (52)
+0573  00                 [084] (52)
+0574  1F                 [085] (53)
+0575  00                 [086] (53)
+0576  00                 [087] (53)
+0577  00                 [088] (55)
+0578  23                 [089] (55)
+0579  00                 [090] (55)
+057A  00                 [091] (55)
+057B  00                 [092] (55)
+057C  23                 [093] (36)
+057D  00                 [094] (61)
+057E  00                 [095] (61)
+057F  00                 [096] (61)
+0580  23                 [097] (62)
+0581  00                 [098] (62)
+0582  00                 [099] (62)
+0583  00                 [100] (62)
+0584  23                 [101] (62)
+0585  00                 [102] (63)
+0586  00                 [103] (63)
+0587  00                 [104] (64)
+0588  23                 [105] (64)
+0589  00                 [106] (64)
+058A  00                 [107] (64)
+058B  00                 [108] (65)
+058C  24                 [109] (65)
+058D  00                 [110] (65)
+058E  00                 [111] (65)
+058F  00                 [112] (67)
+0590  24                 [113] (67)
+0591  00                 [114] (67)
+0592  00                 [115] (67)
+0593  00                 [116] (62)
+0594  24                 [117] (72)
+0595  00                 [118] (72)
+0596  00                 [119] (72)
+0597  00                 [120] (72)
+0598  24                 [121] (73)
+0599  00                 [122] (73)
+059A  00                 [123] (73)
+059B  00                 [124] (73)
+059C  25                 [125] (74)
+059D  00                 [126] (74)
+059E  00                 [127] (74)
+059F  00                 [128] (74)
+05A0  27                 [129] (74)
+05A1  00                 [130] (75)
+05A2  00                 [131] (75)
+05A3  00                 [132] (75)
+05A4  27                 [133] (75)
+05A5  00                 [134] (75)
+05A6  00                 [135] (75)
+05A7  00                 [136] (76)
+05A8  27                 [137] (76)
+05A9  00                 [138] (77)
+05AA  00                 [139] (77)
+05AB  00                 [140] (77)
+05AC  27                 [141] (77)
+05AD  00                 [142] (77)
+05AE  00                 [143] (77)
+05AF  00                 [144] (78)
+05B0  27                 [145] (72)
+05B1  00                 [146] (89)
+05B2  00                 [147] (90)
+                         * locals:
+076C  00                 sizelocvars (0)
+                         * upvalues:
+076D  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+076E                     ** function [2] definition (level 2)
+                         ** start of function **
+076E  00                 string size (0)
+                         source name: (none)
+076F  5B                 line defined (91)
+0770  67                 last line defined (103)
+0771  00                 nups (0)
+0772  01                 numparams (1)
+0773  00                 is_vararg (0)
+0774  03                 maxstacksize (3)
+                         * code:
+0775  0F                 sizecode (15)
+0776  4E004000           [01] gettable   1   0   256  ; "mRefreshDelay"
+fail op	35
+077A  2340C000           [02] close      0  
+077E  1A000080           [03] jmp        1            ; to [5]
+0782  1E008000           [04] return     0   1      
+0786  4E004000           [05] gettable   1   0   256  ; "mRefreshDelay"
+078A  9D800000           [06] getglobal  2   2        ; 1661359502
+078E  A2808000           [07] call       2   1   2  
+0792  4D808000           [08] sub        1   1   2  
+0796  0C400080           [09] settable   0   256 1    ; "mRefreshDelay"
+079A  4E004000           [10] gettable   1   0   256  ; "mRefreshDelay"
+fail op	21
+079E  15C0C000           [11] concat     0   1   259
+07A2  1A400080           [12] jmp        2            ; to [15]
+07A6  64004100           [13] self       1   0   260  ; -1234485493
+07AA  62400001           [14] call       1   2   1  
+07AE  1E008000           [15] return     0   1      
+                         * constants:
+07B2  05                 sizek (5)
+07B3  04                 const type 4
+07B4  0E                 string size (14)
+07B5  6D52656672657368+  "mRefresh"
+07BD  44656C617900       "Delay\0"
+                         const [0]: "mRefreshDelay"
+07C3  00                 const type 0
+                         const [1]: nil
+07C4  01                 const type 3
+07C5  8E550663           const [2]: (1661359502)
+07C9  03                 const type 3
+07CA  00000000           const [3]: (0)
+07CE  01                 const type 3
+07CF  0B3F6BB6           const [4]: (-1234485493)
+                         * functions:
+07D3  00                 sizep (0)
+                         * lines:
+07D4  0F                 sizelineinfo (15)
+                         [pc] (line)
+07D5  5D                 [01] (93)
+07D6  00                 [02] (93)
+07D7  00                 [03] (93)
+07D8  00                 [04] (94)
+07D9  5D                 [05] (97)
+07DA  00                 [06] (97)
+07DB  00                 [07] (97)
+07DC  00                 [08] (97)
+07DD  5D                 [09] (97)
+07DE  00                 [10] (99)
+07DF  00                 [11] (99)
+07E0  00                 [12] (99)
+07E1  5E                 [13] (100)
+07E2  00                 [14] (100)
+07E3  00                 [15] (103)
+                         * locals:
+0811  00                 sizelocvars (0)
+                         * upvalues:
+0812  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0813                     ** function [3] definition (level 2)
+                         ** start of function **
+0813  00                 string size (0)
+                         source name: (none)
+0814  68                 line defined (104)
+0815  74                 last line defined (116)
+0816  00                 nups (0)
+0817  01                 numparams (1)
+0818  00                 is_vararg (0)
+0819  04                 maxstacksize (4)
+                         * code:
+081A  16                 sizecode (22)
+081B  5D000000           [01] getglobal  1   0        ; 1074689893
+081F  8E404000           [02] gettable   2   0   257  ; "mGameData"
+0823  62800001           [03] call       1   2   2  
+0827  58000000           [04] test       1       0    ; to [6] if true
+082B  1A000080           [05] jmp        1            ; to [7]
+082F  1E008000           [06] return     0   1      
+0833  4E404000           [07] gettable   1   0   257  ; "mGameData"
+0837  6480C000           [08] self       1   1   258  ; 297894441
+083B  62800001           [09] call       1   2   2  
+083F  58000000           [10] test       1       0    ; to [12] if true
+0843  1A000180           [11] jmp        5            ; to [17]
+0847  64C04000           [12] self       1   0   259  ; -1234485493
+084B  62400001           [13] call       1   2   1  
+084F  4E404000           [14] gettable   1   0   257  ; "mGameData"
+0853  6400C100           [15] self       1   1   260  ; 1944626319
+0857  62400001           [16] call       1   2   1  
+085B  4E404100           [17] gettable   1   0   261  ; "mTimerMgr"
+085F  6480C100           [18] self       1   1   262  ; -1938777623
+0863  DDC00100           [19] getglobal  3   7        ; 1661359502
+0867  E2008000           [20] call       3   1   0  
+086B  62400000           [21] call       1   0   1  
+086F  1E008000           [22] return     0   1      
+                         * constants:
+0873  08                 sizek (8)
+0874  01                 const type 3
+0875  65770E40           const [0]: (1074689893)
+0879  04                 const type 4
+087A  0A                 string size (10)
+087B  6D47616D65446174+  "mGameDat"
+0883  6100               "a\0"
+                         const [1]: "mGameData"
+0885  01                 const type 3
+0886  2982C111           const [2]: (297894441)
+088A  01                 const type 3
+088B  0B3F6BB6           const [3]: (-1234485493)
+088F  01                 const type 3
+0890  8FA4E873           const [4]: (1944626319)
+0894  04                 const type 4
+0895  0A                 string size (10)
+0896  6D54696D65724D67+  "mTimerMg"
+089E  7200               "r\0"
+                         const [5]: "mTimerMgr"
+08A0  01                 const type 3
+08A1  E999708C           const [6]: (-1938777623)
+08A5  01                 const type 3
+08A6  8E550663           const [7]: (1661359502)
+                         * functions:
+08AA  00                 sizep (0)
+                         * lines:
+08AB  16                 sizelineinfo (22)
+                         [pc] (line)
+08AC  6A                 [01] (106)
+08AD  00                 [02] (106)
+08AE  00                 [03] (106)
+08AF  00                 [04] (106)
+08B0  6A                 [05] (106)
+08B1  00                 [06] (107)
+08B2  00                 [07] (110)
+08B3  00                 [08] (110)
+08B4  6A                 [09] (110)
+08B5  00                 [10] (110)
+08B6  00                 [11] (110)
+08B7  00                 [12] (111)
+08B8  6A                 [13] (111)
+08B9  00                 [14] (112)
+08BA  00                 [15] (112)
+08BB  00                 [16] (112)
+08BC  6A                 [17] (115)
+08BD  00                 [18] (115)
+08BE  00                 [19] (115)
+08BF  00                 [20] (115)
+08C0  6B                 [21] (115)
+08C1  00                 [22] (116)
+                         * locals:
+0904  00                 sizelocvars (0)
+                         * upvalues:
+0905  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+0906  19                 sizelineinfo (25)
+                         [pc] (line)
+0907  01                 [01] (1)
+0908  00                 [02] (1)
+0909  00                 [03] (1)
+090A  00                 [04] (1)
+090B  01                 [05] (1)
+090C  00                 [06] (4)
+090D  00                 [07] (4)
+090E  00                 [08] (4)
+090F  01                 [09] (7)
+0910  00                 [10] (9)
+0911  00                 [11] (10)
+0912  00                 [12] (10)
+0913  01                 [13] (11)
+0914  00                 [14] (12)
+0915  00                 [15] (19)
+0916  00                 [16] (19)
+0917  01                 [17] (19)
+0918  00                 [18] (90)
+0919  00                 [19] (90)
+091A  00                 [20] (103)
+091B  04                 [21] (103)
+091C  00                 [22] (116)
+091D  00                 [23] (116)
+091E  00                 [24] (117)
+091F  04                 [25] (117)
+                         * locals:
+096B  00                 sizelocvars (0)
+                         * upvalues:
+096C  00                 sizeupvalues (0)
+                         ** end of function **
+
+096D                     ** end of chunk **

@@ -1,0 +1,1459 @@
+1	C:\wlua_dump\path\Lotus\Interface\ComponentsTipGenerator.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Interface\ComponentsTipGenerator.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  03                 size of number (bytes)
+0008  0D                 integral (1=integral)
+413
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+package
+seeall
+EE.Interface.Utilities
+Create
+text
+
+_alpha
+mMovie
+COMMON
+UNCOMMON
+RARE
+mPrefix
+TipGenerator(
+)::
+mClipName
+mTips
+TipIndex
+TipDuration
+FadeDuration
+MinimumTipsToAllowRandom
+Random
+RandomIndicesCalculated
+MaxLines
+Print
+AddTip
+GenerateRandomIndices
+RefreshTip
+ShowNewTip
+Start
+COMMON
+table
+mTips
+Tip
+Rarity
+RandomIndex
+RandomIndicesCalculated
+COMMON
+UNCOMMON
+RARE
+mTips
+Rarity
+RandomIndex
+Assing randomIndex 
+ -> 
+RandomIndicesCalculated
+mTips
+TipIndex
+mMovie
+<WARNING>
+ 
+Tip
+MaxLines
+...
+text
+mTips
+TipIndex
+Random
+MinimumTipsToAllowRandom
+RandomIndicesCalculated
+RandomIndex -> 
+IndexCompare lastIndex >=
+RandomIndex
+ < 
+ = 
+Index Selected -> 
+mMovie
+UISys
+FlashInstance_LINEAR
+_alpha
+FadeDuration
+ERROR: Tried to index a tip that didn't exist. TipIndex = 
+mMovie
+UISys
+FlashInstance_LINEAR
+_alpha
+FadeDuration
+TipDuration
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  03                 maxstacksize (3)
+                         * code:
+0008  0D                 sizecode (13)
+0009  1D000000           [01] getglobal  0   0        ; 954442511
+000D  41000001           [02] vararg     1   2      
+0011  9D400000           [03] getglobal  2   1        ; package
+0015  8E804001           [04] gettable   2   2   258  ; "seeall"
+0019  22408001           [05] call       0   3   1  
+001D  1DC00000           [06] getglobal  0   3        ; 849075268
+0021  59000100           [07] loadk      1   4        ; "EE.Interface.Utilities"
+0025  22800001           [08] call       0   2   2  
+0029  65000000           [09] closure    1   0      
+002D  12000000           [10] move       0   0      
+0031  60400100           [11] setglobal  1   5        ; Create
+0035  60800100           [12] setglobal  1   6        ; 1191123516
+0039  1E008000           [13] return     0   1      
+                         * constants:
+003D  07                 sizek (7)
+003E  01                 const type 3
+003F  0FA3E338           const [0]: (954442511)
+0043  04                 const type 4
+0044  08                 string size (8)
+0045  7061636B61676500   "package\0"
+                         const [1]: "package"
+004D  04                 const type 4
+004E  07                 string size (7)
+004F  736565616C6C00     "seeall\0"
+                         const [2]: "seeall"
+0056  01                 const type 3
+0057  44DC9B32           const [3]: (849075268)
+005B  04                 const type 4
+005C  17                 string size (23)
+005D  45452E496E746572+  "EE.Inter"
+0065  666163652E557469+  "face.Uti"
+006D  6C697469657300     "lities\0"
+                         const [4]: "EE.Interface.Utilities"
+0074  04                 const type 4
+0075  07                 string size (7)
+0076  43726561746500     "Create\0"
+                         const [5]: "Create"
+007D  01                 const type 3
+007E  3C1AFF46           const [6]: (1191123516)
+                         * functions:
+0082  01                 sizep (1)
+                         
+0083                     ** function [0] definition (level 2)
+                         ** start of function **
+0083  00                 string size (0)
+                         source name: (none)
+0084  05                 line defined (5)
+0085  7D                 last line defined (125)
+0086  01                 nups (1)
+0087  02                 numparams (2)
+0088  00                 is_vararg (0)
+0089  07                 maxstacksize (7)
+                         * code:
+008A  31                 sizecode (49)
+008B  A4004000           [01] self       2   0   256  ; -693657623
+008F  12018000           [02] move       4   1      
+0093  59410000           [03] loadk      5   1        ; "text"
+0097  99810000           [04] loadk      6   2        ; ""
+009B  A2408002           [05] call       2   5   1  
+009F  A4C04000           [06] self       2   0   259  ; 471456102
+00A3  12018000           [07] move       4   1      
+00A7  59010100           [08] loadk      5   4        ; "_alpha"
+00AB  99410100           [09] loadk      6   5        ; 0
+00AF  A2408002           [10] call       2   5   1  
+00B3  8B000000           [11] newtable   2   0   0    ; array=0, hash=0
+00B7  8C000083           [12] settable   2   262 0    ; "mMovie"
+00BB  8C00C283           [13] settable   2   263 264  ; "COMMON" 0
+00BF  8C80C284           [14] settable   2   265 266  ; "UNCOMMON" 0
+00C3  8C00C385           [15] settable   2   267 268  ; "RARE" 0
+00C7  D9800300           [16] loadk      3   14       ; "TipGenerator("
+00CB  12018000           [17] move       4   1      
+00CF  59C10300           [18] loadk      5   15       ; ")::"
+00D3  C2408101           [19] concat     3   3   5  
+00D7  8CC08086           [20] settable   2   269 3    ; "mPrefix"
+00DB  8C400088           [21] settable   2   272 1    ; "mClipName"
+00DF  CB000000           [22] newtable   3   0   0    ; array=0, hash=0
+00E3  8CC08088           [23] settable   2   273 3    ; "mTips"
+00E7  8C404189           [24] settable   2   274 261  ; "TipIndex" 0
+00EB  8C00C589           [25] settable   2   275 276  ; "TipDuration" 0
+00EF  8C80C58A           [26] settable   2   277 278  ; "FadeDuration" 0
+00F3  8C00C58B           [27] settable   2   279 276  ; "MinimumTipsToAllowRandom" 0
+00F7  8C40468C           [28] settable   2   280 281  ; "Random" 1
+00FB  8CC0468D           [29] settable   2   282 283  ; "RandomIndicesCalculated" 0
+00FF  8C40478E           [30] settable   2   284 285  ; "MaxLines" nil
+0103  E5000000           [31] closure    3   0      
+0107  8CC0008F           [32] settable   2   286 3    ; "Print"
+010B  E5400000           [33] closure    3   1      
+010F  8CC0808F           [34] settable   2   287 3    ; "AddTip"
+0113  E5800000           [35] closure    3   2      
+0117  8CC00090           [36] settable   2   288 3    ; "GenerateRandomIndices"
+011B  E5C00000           [37] closure    3   3      
+011F  13000000           [38] getupval   0   0      
+0123  12008000           [39] move       0   1      
+0127  8CC08090           [40] settable   2   289 3    ; "RefreshTip"
+012B  E5000100           [41] closure    3   4      
+012F  13000000           [42] getupval   0   0      
+0133  12000001           [43] move       0   2      
+0137  12008000           [44] move       0   1      
+013B  8CC00091           [45] settable   2   290 3    ; "ShowNewTip"
+013F  E5400100           [46] closure    3   5      
+0143  8CC08091           [47] settable   2   291 3    ; "Start"
+0147  9E000001           [48] return     2   2      
+014B  1E008000           [49] return     0   1      
+                         * constants:
+014F  24                 sizek (36)
+0150  01                 const type 3
+0151  E99FA7D6           const [0]: (-693657623)
+0155  04                 const type 4
+0156  05                 string size (5)
+0157  7465787400         "text\0"
+                         const [1]: "text"
+015C  04                 const type 4
+015D  01                 string size (0)
+                         const [2]: ""
+015F  01                 const type 3
+0160  66D9191C           const [3]: (471456102)
+0164  04                 const type 4
+0165  07                 string size (7)
+0166  5F616C70686100     "_alpha\0"
+                         const [4]: "_alpha"
+016D  03                 const type 3
+016E  00000000           const [5]: (0)
+0172  04                 const type 4
+0173  07                 string size (7)
+0174  6D4D6F76696500     "mMovie\0"
+                         const [6]: "mMovie"
+017B  04                 const type 4
+017C  07                 string size (7)
+017D  434F4D4D4F4E00     "COMMON\0"
+                         const [7]: "COMMON"
+0184  03                 const type 3
+0185  0000803F           const [8]: (0)
+0189  04                 const type 4
+018A  09                 string size (9)
+018B  554E434F4D4D4F4E+  "UNCOMMON"
+0193  00                 "\0"
+                         const [9]: "UNCOMMON"
+0194  03                 const type 3
+0195  00000040           const [10]: (0)
+0199  04                 const type 4
+019A  05                 string size (5)
+019B  5241524500         "RARE\0"
+                         const [11]: "RARE"
+01A0  03                 const type 3
+01A1  00004040           const [12]: (0)
+01A5  04                 const type 4
+01A6  08                 string size (8)
+01A7  6D50726566697800   "mPrefix\0"
+                         const [13]: "mPrefix"
+01AF  04                 const type 4
+01B0  0E                 string size (14)
+01B1  54697047656E6572+  "TipGener"
+01B9  61746F722800       "ator(\0"
+                         const [14]: "TipGenerator("
+01BF  04                 const type 4
+01C0  04                 string size (4)
+01C1  293A3A00           ")::\0"
+                         const [15]: ")::"
+01C5  04                 const type 4
+01C6  0A                 string size (10)
+01C7  6D436C69704E616D+  "mClipNam"
+01CF  6500               "e\0"
+                         const [16]: "mClipName"
+01D1  04                 const type 4
+01D2  06                 string size (6)
+01D3  6D5469707300       "mTips\0"
+                         const [17]: "mTips"
+01D9  04                 const type 4
+01DA  09                 string size (9)
+01DB  546970496E646578+  "TipIndex"
+01E3  00                 "\0"
+                         const [18]: "TipIndex"
+01E4  04                 const type 4
+01E5  0C                 string size (12)
+01E6  5469704475726174+  "TipDurat"
+01EE  696F6E00           "ion\0"
+                         const [19]: "TipDuration"
+01F2  03                 const type 3
+01F3  0000A040           const [20]: (0)
+01F7  04                 const type 4
+01F8  0D                 string size (13)
+01F9  4661646544757261+  "FadeDura"
+0201  74696F6E00         "tion\0"
+                         const [21]: "FadeDuration"
+0206  03                 const type 3
+0207  0000403F           const [22]: (0)
+020B  04                 const type 4
+020C  19                 string size (25)
+020D  4D696E696D756D54+  "MinimumT"
+0215  697073546F416C6C+  "ipsToAll"
+021D  6F7752616E646F6D+  "owRandom"
+0225  00                 "\0"
+                         const [23]: "MinimumTipsToAllowRandom"
+0226  04                 const type 4
+0227  07                 string size (7)
+0228  52616E646F6D00     "Random\0"
+                         const [24]: "Random"
+022F  01                 const type 3
+0230  01000000           const [25]: (1)
+0234  04                 const type 4
+0235  18                 string size (24)
+0236  52616E646F6D496E+  "RandomIn"
+023E  646963657343616C+  "dicesCal"
+0246  63756C6174656400   "culated\0"
+                         const [26]: "RandomIndicesCalculated"
+024E  01                 const type 3
+024F  00000000           const [27]: (0)
+0253  04                 const type 4
+0254  09                 string size (9)
+0255  4D61784C696E6573+  "MaxLines"
+025D  00                 "\0"
+                         const [28]: "MaxLines"
+025E  00                 const type 0
+                         const [29]: nil
+025F  04                 const type 4
+0260  06                 string size (6)
+0261  5072696E7400       "Print\0"
+                         const [30]: "Print"
+0267  04                 const type 4
+0268  07                 string size (7)
+0269  41646454697000     "AddTip\0"
+                         const [31]: "AddTip"
+0270  04                 const type 4
+0271  16                 string size (22)
+0272  47656E6572617465+  "Generate"
+027A  52616E646F6D496E+  "RandomIn"
+0282  646963657300       "dices\0"
+                         const [32]: "GenerateRandomIndices"
+0288  04                 const type 4
+0289  0B                 string size (11)
+028A  5265667265736854+  "RefreshT"
+0292  697000             "ip\0"
+                         const [33]: "RefreshTip"
+0295  04                 const type 4
+0296  0B                 string size (11)
+0297  53686F774E657754+  "ShowNewT"
+029F  697000             "ip\0"
+                         const [34]: "ShowNewTip"
+02A2  04                 const type 4
+02A3  06                 string size (6)
+02A4  537461727400       "Start\0"
+                         const [35]: "Start"
+                         * functions:
+02AA  06                 sizep (6)
+                         
+02AB                     ** function [0] definition (level 3)
+                         ** start of function **
+02AB  00                 string size (0)
+                         source name: (none)
+02AC  1A                 line defined (26)
+02AD  1C                 last line defined (28)
+02AE  00                 nups (0)
+02AF  02                 numparams (2)
+02B0  00                 is_vararg (0)
+02B1  02                 maxstacksize (2)
+                         * code:
+02B2  01                 sizecode (1)
+02B3  1E008000           [1] return     0   1      
+                         * constants:
+02B7  00                 sizek (0)
+                         * functions:
+02B8  00                 sizep (0)
+                         * lines:
+02B9  01                 sizelineinfo (1)
+                         [pc] (line)
+02BA  1C                 [1] (28)
+                         * locals:
+02BE  00                 sizelocvars (0)
+                         * upvalues:
+02BF  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+02C0                     ** function [1] definition (level 3)
+                         ** start of function **
+02C0  00                 string size (0)
+                         source name: (none)
+02C1  1F                 line defined (31)
+02C2  25                 last line defined (37)
+02C3  00                 nups (0)
+02C4  03                 numparams (3)
+02C5  00                 is_vararg (0)
+02C6  06                 maxstacksize (6)
+                         * code:
+02C7  0D                 sizecode (13)
+fail op	35
+02C8  23004001           [01] close      0  
+02CC  1A000080           [02] jmp        1            ; to [4]
+02D0  8E404000           [03] gettable   2   0   257  ; "COMMON"
+02D4  DD800000           [04] getglobal  3   2        ; table
+02D8  CEC0C001           [05] gettable   3   3   259  ; -431682403
+02DC  0E014100           [06] gettable   4   0   260  ; "mTips"
+02E0  4BC10000           [07] newtable   5   0   3    ; array=0, hash=3
+02E4  4C418082           [08] settable   5   261 1    ; "Tip"
+02E8  4C810083           [09] settable   5   262 2    ; "Rarity"
+02EC  4C01C283           [10] settable   5   263 264  ; "RandomIndex" 0
+02F0  E2408001           [11] call       3   3   1  
+02F4  0C80C284           [12] settable   0   265 266  ; "RandomIndicesCalculated" 0
+02F8  1E008000           [13] return     0   1      
+                         * constants:
+02FC  0B                 sizek (11)
+02FD  00                 const type 0
+                         const [0]: nil
+02FE  04                 const type 4
+02FF  07                 string size (7)
+0300  434F4D4D4F4E00     "COMMON\0"
+                         const [1]: "COMMON"
+0307  04                 const type 4
+0308  06                 string size (6)
+0309  7461626C6500       "table\0"
+                         const [2]: "table"
+030F  01                 const type 3
+0310  9D0C45E6           const [3]: (-431682403)
+0314  04                 const type 4
+0315  06                 string size (6)
+0316  6D5469707300       "mTips\0"
+                         const [4]: "mTips"
+031C  04                 const type 4
+031D  04                 string size (4)
+031E  54697000           "Tip\0"
+                         const [5]: "Tip"
+0322  04                 const type 4
+0323  07                 string size (7)
+0324  52617269747900     "Rarity\0"
+                         const [6]: "Rarity"
+032B  04                 const type 4
+032C  0C                 string size (12)
+032D  52616E646F6D496E+  "RandomIn"
+0335  64657800           "dex\0"
+                         const [7]: "RandomIndex"
+0339  03                 const type 3
+033A  00000000           const [8]: (0)
+033E  04                 const type 4
+033F  18                 string size (24)
+0340  52616E646F6D496E+  "RandomIn"
+0348  646963657343616C+  "dicesCal"
+0350  63756C6174656400   "culated\0"
+                         const [9]: "RandomIndicesCalculated"
+0358  01                 const type 3
+0359  00000000           const [10]: (0)
+                         * functions:
+035D  00                 sizep (0)
+                         * lines:
+035E  0D                 sizelineinfo (13)
+                         [pc] (line)
+035F  20                 [01] (32)
+0360  00                 [02] (32)
+0361  00                 [03] (33)
+0362  00                 [04] (35)
+0363  20                 [05] (35)
+0364  00                 [06] (35)
+0365  00                 [07] (35)
+0366  00                 [08] (35)
+0367  21                 [09] (35)
+0368  00                 [10] (35)
+0369  00                 [11] (35)
+036A  00                 [12] (36)
+036B  23                 [13] (37)
+                         * locals:
+0393  00                 sizelocvars (0)
+                         * upvalues:
+0394  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0395                     ** function [2] definition (level 3)
+                         ** start of function **
+0395  00                 string size (0)
+                         source name: (none)
+0396  28                 line defined (40)
+0397  3B                 last line defined (59)
+0398  00                 nups (0)
+0399  01                 numparams (1)
+039A  00                 is_vararg (0)
+039B  16                 maxstacksize (22)
+                         * code:
+039C  29                 sizecode (41)
+039D  4B000000           [01] newtable   1   0   0    ; array=0, hash=0
+03A1  8E004000           [02] gettable   2   0   256  ; "COMMON"
+03A5  4C404001           [03] settable   1   2   257  ; 0
+03A9  8E804000           [04] gettable   2   0   258  ; "UNCOMMON"
+03AD  4CC04001           [05] settable   1   2   259  ; 0
+03B1  8E004100           [06] gettable   2   0   260  ; "RARE"
+03B5  4C404101           [07] settable   1   2   261  ; 0
+03B9  99800100           [08] loadk      2   6        ; 0
+03BD  DDC00100           [09] getglobal  3   7        ; 1672515847
+03C1  0E014200           [10] gettable   4   0   264  ; "mTips"
+03C5  E2000101           [11] call       3   2   4  
+03C9  1A800080           [12] jmp        3            ; to [16]
+03CD  0E42C203           [13] gettable   8   7   265  ; "Rarity"
+03D1  0E028200           [14] gettable   8   1   8  
+03D5  83000201           [15] add        2   2   8  
+03D9  D6800000           [16] tforloop   3       2    ; to [18] if exit
+03DD  1A80FE7F           [17] jmp        -5           ; to [13]
+03E1  1C828082           [18] div        8   261 2    ; 0
+03E5  59820100           [19] loadk      9   6        ; 0
+03E9  9DC20100           [20] getglobal  10  7        ; 1672515847
+03ED  CE024200           [21] gettable   11  0   264  ; "mTips"
+03F1  A2020101           [22] call       10  2   4  
+03F5  1A400380           [23] jmp        14           ; to [38]
+03F9  CE434207           [24] gettable   15  14  265  ; "Rarity"
+03FD  CEC38300           [25] gettable   15  1   15 
+0401  C4038207           [26] mul        15  15  8  
+0405  43C28304           [27] add        9   9   15 
+0409  8C430285           [28] settable   14  266 9    ; "RandomIndex"
+040D  E4C34200           [29] self       15  0   267  ; -1945964524
+0411  59040300           [30] loadk      17  12       ; "Assing randomIndex "
+0415  92048006           [31] move       18  13     
+0419  D9440300           [32] loadk      19  13       ; " -> "
+041D  1D850300           [33] getglobal  20  14       ; -1615931716
+0421  4E854207           [34] gettable   21  14  266  ; "RandomIndex"
+0425  22850001           [35] call       20  2   2  
+0429  42048508           [36] concat     17  17  20 
+042D  E2438001           [37] call       15  3   1  
+0431  96820000           [38] tforloop   10      2    ; to [40] if exit
+0435  1AC0FB7F           [39] jmp        -16          ; to [24]
+0439  0C00C487           [40] settable   0   271 272  ; "RandomIndicesCalculated" 1
+043D  1E008000           [41] return     0   1      
+                         * constants:
+0441  11                 sizek (17)
+0442  04                 const type 4
+0443  07                 string size (7)
+0444  434F4D4D4F4E00     "COMMON\0"
+                         const [0]: "COMMON"
+044B  03                 const type 3
+044C  00004040           const [1]: (0)
+0450  04                 const type 4
+0451  09                 string size (9)
+0452  554E434F4D4D4F4E+  "UNCOMMON"
+045A  00                 "\0"
+                         const [2]: "UNCOMMON"
+045B  03                 const type 3
+045C  00000040           const [3]: (0)
+0460  04                 const type 4
+0461  05                 string size (5)
+0462  5241524500         "RARE\0"
+                         const [4]: "RARE"
+0467  03                 const type 3
+0468  0000803F           const [5]: (0)
+046C  03                 const type 3
+046D  00000000           const [6]: (0)
+0471  01                 const type 3
+0472  0791B063           const [7]: (1672515847)
+0476  04                 const type 4
+0477  06                 string size (6)
+0478  6D5469707300       "mTips\0"
+                         const [8]: "mTips"
+047E  04                 const type 4
+047F  07                 string size (7)
+0480  52617269747900     "Rarity\0"
+                         const [9]: "Rarity"
+0487  04                 const type 4
+0488  0C                 string size (12)
+0489  52616E646F6D496E+  "RandomIn"
+0491  64657800           "dex\0"
+                         const [10]: "RandomIndex"
+0495  01                 const type 3
+0496  14F0028C           const [11]: (-1945964524)
+049A  04                 const type 4
+049B  14                 string size (20)
+049C  417373696E672072+  "Assing r"
+04A4  616E646F6D496E64+  "andomInd"
+04AC  65782000           "ex \0"
+                         const [12]: "Assing randomIndex "
+04B0  04                 const type 4
+04B1  05                 string size (5)
+04B2  202D3E2000         " -> \0"
+                         const [13]: " -> "
+04B7  01                 const type 3
+04B8  BCD6AE9F           const [14]: (-1615931716)
+04BC  04                 const type 4
+04BD  18                 string size (24)
+04BE  52616E646F6D496E+  "RandomIn"
+04C6  646963657343616C+  "dicesCal"
+04CE  63756C6174656400   "culated\0"
+                         const [15]: "RandomIndicesCalculated"
+04D6  01                 const type 3
+04D7  01000000           const [16]: (1)
+                         * functions:
+04DB  00                 sizep (0)
+                         * lines:
+04DC  29                 sizelineinfo (41)
+                         [pc] (line)
+04DD  29                 [01] (41)
+04DE  00                 [02] (42)
+04DF  00                 [03] (42)
+04E0  00                 [04] (43)
+04E1  2A                 [05] (43)
+04E2  00                 [06] (44)
+04E3  00                 [07] (44)
+04E4  00                 [08] (46)
+04E5  2A                 [09] (47)
+04E6  00                 [10] (47)
+04E7  00                 [11] (47)
+04E8  00                 [12] (47)
+04E9  2B                 [13] (48)
+04EA  00                 [14] (48)
+04EB  00                 [15] (48)
+04EC  00                 [16] (47)
+04ED  2B                 [17] (48)
+04EE  00                 [18] (51)
+04EF  00                 [19] (52)
+04F0  00                 [20] (53)
+04F1  2C                 [21] (53)
+04F2  00                 [22] (53)
+04F3  00                 [23] (53)
+04F4  00                 [24] (54)
+04F5  2C                 [25] (54)
+04F6  00                 [26] (54)
+04F7  00                 [27] (54)
+04F8  00                 [28] (55)
+04F9  2E                 [29] (56)
+04FA  00                 [30] (56)
+04FB  00                 [31] (56)
+04FC  00                 [32] (56)
+04FD  2F                 [33] (56)
+04FE  00                 [34] (56)
+04FF  00                 [35] (56)
+0500  00                 [36] (56)
+0501  2F                 [37] (56)
+0502  00                 [38] (53)
+0503  00                 [39] (56)
+0504  00                 [40] (58)
+0505  2F                 [41] (59)
+                         * locals:
+0581  00                 sizelocvars (0)
+                         * upvalues:
+0582  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0583                     ** function [3] definition (level 3)
+                         ** start of function **
+0583  00                 string size (0)
+                         source name: (none)
+0584  3E                 line defined (62)
+0585  49                 last line defined (73)
+0586  02                 nups (2)
+0587  01                 numparams (1)
+0588  00                 is_vararg (0)
+0589  08                 maxstacksize (8)
+                         * code:
+058A  28                 sizecode (40)
+058B  4E004000           [01] gettable   1   0   256  ; "mTips"
+058F  8E404000           [02] gettable   2   0   257  ; "TipIndex"
+0593  4E808000           [03] gettable   1   1   2  
+fail op	35
+0597  2380C000           [04] close      0  
+059B  1A000080           [05] jmp        1            ; to [7]
+059F  1E008000           [06] return     0   1      
+05A3  4EC04000           [07] gettable   1   0   259  ; "mMovie"
+05A7  6400C100           [08] self       1   1   260  ; 98241492
+05AB  D9400100           [09] loadk      3   5        ; "<WARNING>"
+05AF  17018000           [10] loadbool   4   1   0    ; true
+05B3  62800002           [11] call       1   4   2  
+05B7  99800100           [12] loadk      2   6        ; " "
+05BB  CEC04000           [13] gettable   3   0   259  ; "mMovie"
+05BF  E400C101           [14] self       3   3   260  ; 98241492
+05C3  4E014000           [15] gettable   5   0   256  ; "mTips"
+05C7  8E414000           [16] gettable   6   0   257  ; "TipIndex"
+05CB  4E818102           [17] gettable   5   5   6  
+05CF  4EC1C102           [18] gettable   5   5   263  ; "Tip"
+05D3  97018000           [19] loadbool   6   1   0    ; true
+05D7  E2800002           [20] call       3   4   2  
+05DB  42C08000           [21] concat     1   1   3  
+05DF  8E004200           [22] gettable   2   0   264  ; "MaxLines"
+fail op	35
+05E3  63804001           [23] close      1  
+05E7  1A000280           [24] jmp        9            ; to [34]
+05EB  93000000           [25] getupval   2   0      
+05EF  8E404201           [26] gettable   2   2   265  ; -1171960790
+05F3  CEC04000           [27] gettable   3   0   259  ; "mMovie"
+05F7  13018000           [28] getupval   4   1      
+05FB  4E014200           [29] gettable   5   0   264  ; "MaxLines"
+05FF  92018000           [30] move       6   1      
+0603  D9810200           [31] loadk      7   10       ; "..."
+0607  A2400003           [32] call       2   6   1  
+060B  1A400180           [33] jmp        6            ; to [40]
+060F  8EC04000           [34] gettable   2   0   259  ; "mMovie"
+0613  A4C04201           [35] self       2   2   267  ; 471456102
+0617  13018000           [36] getupval   4   1      
+061B  59010300           [37] loadk      5   12       ; "text"
+061F  92018000           [38] move       6   1      
+0623  A2408002           [39] call       2   5   1  
+0627  1E008000           [40] return     0   1      
+                         * constants:
+062B  0D                 sizek (13)
+062C  04                 const type 4
+062D  06                 string size (6)
+062E  6D5469707300       "mTips\0"
+                         const [0]: "mTips"
+0634  04                 const type 4
+0635  09                 string size (9)
+0636  546970496E646578+  "TipIndex"
+063E  00                 "\0"
+                         const [1]: "TipIndex"
+063F  00                 const type 0
+                         const [2]: nil
+0640  04                 const type 4
+0641  07                 string size (7)
+0642  6D4D6F76696500     "mMovie\0"
+                         const [3]: "mMovie"
+0649  01                 const type 3
+064A  D40BDB05           const [4]: (98241492)
+064E  04                 const type 4
+064F  0A                 string size (10)
+0650  3C5741524E494E47+  "<WARNING"
+0658  3E00               ">\0"
+                         const [5]: "<WARNING>"
+065A  04                 const type 4
+065B  02                 string size (2)
+065C  2000               " \0"
+                         const [6]: " "
+065E  04                 const type 4
+065F  04                 string size (4)
+0660  54697000           "Tip\0"
+                         const [7]: "Tip"
+0664  04                 const type 4
+0665  09                 string size (9)
+0666  4D61784C696E6573+  "MaxLines"
+066E  00                 "\0"
+                         const [8]: "MaxLines"
+066F  01                 const type 3
+0670  2A4C25BA           const [9]: (-1171960790)
+0674  04                 const type 4
+0675  04                 string size (4)
+0676  2E2E2E00           "...\0"
+                         const [10]: "..."
+067A  01                 const type 3
+067B  66D9191C           const [11]: (471456102)
+067F  04                 const type 4
+0680  05                 string size (5)
+0681  7465787400         "text\0"
+                         const [12]: "text"
+                         * functions:
+0686  00                 sizep (0)
+                         * lines:
+0687  28                 sizelineinfo (40)
+                         [pc] (line)
+0688  3F                 [01] (63)
+0689  00                 [02] (63)
+068A  00                 [03] (63)
+068B  00                 [04] (63)
+068C  3F                 [05] (63)
+068D  00                 [06] (64)
+068E  00                 [07] (67)
+068F  00                 [08] (67)
+0690  3F                 [09] (67)
+0691  00                 [10] (67)
+0692  00                 [11] (67)
+0693  00                 [12] (67)
+0694  3F                 [13] (67)
+0695  00                 [14] (67)
+0696  00                 [15] (67)
+0697  00                 [16] (67)
+0698  3F                 [17] (67)
+0699  00                 [18] (67)
+069A  00                 [19] (67)
+069B  00                 [20] (67)
+069C  40                 [21] (67)
+069D  00                 [22] (68)
+069E  00                 [23] (68)
+069F  00                 [24] (68)
+06A0  43                 [25] (69)
+06A1  00                 [26] (69)
+06A2  00                 [27] (69)
+06A3  00                 [28] (69)
+06A4  43                 [29] (69)
+06A5  00                 [30] (69)
+06A6  00                 [31] (69)
+06A7  00                 [32] (69)
+06A8  43                 [33] (69)
+06A9  00                 [34] (71)
+06AA  00                 [35] (71)
+06AB  00                 [36] (71)
+06AC  43                 [37] (71)
+06AD  00                 [38] (71)
+06AE  00                 [39] (71)
+06AF  00                 [40] (73)
+                         * locals:
+0728  00                 sizelocvars (0)
+                         * upvalues:
+0729  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+072A                     ** function [4] definition (level 3)
+                         ** start of function **
+072A  00                 string size (0)
+                         source name: (none)
+072B  4C                 line defined (76)
+072C  75                 last line defined (117)
+072D  03                 nups (3)
+072E  01                 numparams (1)
+072F  00                 is_vararg (0)
+0730  12                 maxstacksize (18)
+                         * code:
+0732  01                 sizecode (132)
+0733  4E004000           [001] gettable   1   0   256  ; "mTips"
+0737  4A008000           [002] len        1   1      
+fail op	35
+073B  6340C000           [003] close      1  
+073F  1A000180           [004] jmp        5            ; to [10]
+fail op	35
+0743  2380C000           [005] close      0  
+0747  1AC00080           [006] jmp        4            ; to [11]
+074B  8EC04000           [007] gettable   2   0   259  ; "TipIndex"
+fail op	35
+074F  23804001           [008] close      0  
+0753  1A000080           [009] jmp        1            ; to [11]
+0757  1E008000           [010] return     0   1      
+075B  99800000           [011] loadk      2   2        ; 0
+075F  CE004100           [012] gettable   3   0   260  ; "Random"
+0763  D8000000           [013] test       3       0    ; to [15] if true
+0767  1AC01280           [014] jmp        76           ; to [91]
+076B  CE404100           [015] gettable   3   0   261  ; "MinimumTipsToAllowRandom"
+fail op	33
+076F  21408001           [016] tforloop   0       1    ; to [18] if exit
+0773  1A001280           [017] jmp        73           ; to [91]
+0777  CE804100           [018] gettable   3   0   262  ; "RandomIndicesCalculated"
+077B  D8400000           [019] test       3       1    ; to [21] if false
+077F  1A400080           [020] jmp        2            ; to [23]
+0783  E4C04100           [021] self       3   0   263  ; 214787485
+0787  E2400001           [022] call       3   2   1  
+078B  DD000200           [023] getglobal  3   8        ; 469076166
+078F  19410000           [024] loadk      4   1        ; 0
+0793  E2400001           [025] call       3   2   1  
+0797  DD400200           [026] getglobal  3   9        ; -1941280958
+079B  19410000           [027] loadk      4   1        ; 0
+079F  59810000           [028] loadk      5   2        ; 0
+07A3  E2808001           [029] call       3   3   2  
+07A7  24814200           [030] self       4   0   266  ; -1945964524
+07AB  99C10200           [031] loadk      6   11       ; "RandomIndex -> "
+07AF  DD010300           [032] getglobal  7   12       ; -1615931716
+07B3  12028001           [033] move       8   3      
+07B7  E2810001           [034] call       7   2   2  
+07BB  82C10103           [035] concat     6   6   7  
+07BF  22418001           [036] call       4   3   1  
+07C3  19410000           [037] loadk      4   1        ; 0
+07C7  59810000           [038] loadk      5   2        ; 0
+07CB  92018000           [039] move       6   1      
+07CF  D9810000           [040] loadk      7   2        ; 0
+07D3  50010980           [041] forprep    5   37       ; to [79]
+07D7  64824200           [042] self       9   0   266  ; -1945964524
+07DB  D9420300           [043] loadk      11  13       ; "IndexCompare lastIndex >="
+07DF  1D030300           [044] getglobal  12  12       ; -1615931716
+07E3  4E034000           [045] gettable   13  0   256  ; "mTips"
+07E7  4E038206           [046] gettable   13  13  8  
+07EB  4E83C306           [047] gettable   13  13  270  ; "RandomIndex"
+07EF  22830001           [048] call       12  2   2  
+07F3  59C30300           [049] loadk      13  15       ; " < "
+07F7  9D030300           [050] getglobal  14  12       ; -1615931716
+07FB  D2038001           [051] move       15  3      
+07FF  A2830001           [052] call       14  2   2  
+0803  D9030400           [053] loadk      15  16       ; " = "
+0807  1D040300           [054] getglobal  16  12       ; -1615931716
+fail op	33
+080B  21C00002           [055] tforloop   0       3    ; to [57] if exit
+080F  1A000180           [056] jmp        5            ; to [62]
+0813  4E044000           [057] gettable   17  0   256  ; "mTips"
+0817  4E048208           [058] gettable   17  17  8  
+081B  4E84C308           [059] gettable   17  17  270  ; "RandomIndex"
+fail op	21
+081F  55408401           [060] concat     1   3   17 
+0823  1A000080           [061] jmp        1            ; to [63]
+0827  57440000           [062] loadbool   17  0   1    ; false, to [64]
+082B  57048000           [063] loadbool   17  1   0    ; true
+082F  22840001           [064] call       16  2   2  
+0833  C2028405           [065] concat     11  11  16 
+0837  62428001           [066] call       9   3   1  
+fail op	33
+083B  21C00002           [067] tforloop   0       3    ; to [69] if exit
+083F  1A800180           [068] jmp        7            ; to [76]
+0843  4E024000           [069] gettable   9   0   256  ; "mTips"
+0847  4E028204           [070] gettable   9   9   8  
+084B  4E82C304           [071] gettable   9   9   270  ; "RandomIndex"
+fail op	21
+084F  15408201           [072] concat     0   3   9  
+0853  1A400080           [073] jmp        2            ; to [76]
+0857  92000004           [074] move       2   8      
+085B  1AC00080           [075] jmp        4            ; to [80]
+085F  4E024000           [076] gettable   9   0   256  ; "mTips"
+0863  4E028204           [077] gettable   9   9   8  
+0867  0E81C304           [078] gettable   4   9   270  ; "RandomIndex"
+086B  5441F67F           [079] forloop    5   -38      ; to [42] if loop
+086F  4EC24000           [080] gettable   9   0   259  ; "TipIndex"
+fail op	35
+0873  63808004           [081] close      1  
+0877  1AC0F07F           [082] jmp        -60          ; to [23]
+087B  64824200           [083] self       9   0   266  ; -1945964524
+087F  D9420400           [084] loadk      11  17       ; "Index Selected -> "
+0883  1D030300           [085] getglobal  12  12       ; -1615931716
+0887  52030001           [086] move       13  2      
+088B  22830001           [087] call       12  2   2  
+088F  C2028305           [088] concat     11  11  12 
+0893  62428001           [089] call       9   3   1  
+0897  1A000280           [090] jmp        9            ; to [100]
+089B  53020000           [091] getupval   9   0      
+089F  4E82C404           [092] gettable   9   9   274  ; 2084775947
+08A3  93028000           [093] getupval   10  1      
+08A7  8EC24005           [094] gettable   10  10  259  ; "TipIndex"
+08AB  D9820000           [095] loadk      11  2        ; 0
+08AF  19830000           [096] loadk      12  2        ; 0
+08B3  52038000           [097] move       13  1      
+08B7  62828002           [098] call       9   5   2  
+08BB  92008004           [099] move       2   9      
+08BF  4E024000           [100] gettable   9   0   256  ; "mTips"
+08C3  4E828004           [101] gettable   9   9   2  
+fail op	35
+08C7  63C0C404           [102] close      1  
+08CB  1A000580           [103] jmp        21           ; to [125]
+08CF  0C808081           [104] settable   0   259 2    ; "TipIndex"
+08D3  64024500           [105] self       9   0   276  ; 1398956911
+08D7  62420001           [106] call       9   2   1  
+08DB  5D420500           [107] getglobal  9   21       ; 1390508688
+08DF  8E824500           [108] gettable   10  0   278  ; "mMovie"
+08E3  D3020001           [109] getupval   11  2      
+08E7  1DC30500           [110] getglobal  12  23       ; UISys
+08EB  0E034606           [111] gettable   12  12  280  ; "FlashInstance_LINEAR"
+08EF  4B038000           [112] newtable   13  1   0    ; array=1, hash=0
+08F3  99430600           [113] loadk      14  25       ; "_alpha"
+08F7  5B438000           [114] setlist    13  1   1    ; index 1 to 1
+08FB  8B038000           [115] newtable   14  1   0    ; array=1, hash=0
+08FF  D9830600           [116] loadk      15  26       ; 0
+0903  9B438000           [117] setlist    14  1   1    ; index 1 to 1
+0907  CEC34600           [118] gettable   15  0   283  ; "FadeDuration"
+090B  19440000           [119] loadk      16  1        ; 0
+090F  65040000           [120] closure    17  0      
+0913  12000000           [121] move       0   0      
+0917  13000001           [122] getupval   0   2      
+091B  62428004           [123] call       9   9   1  
+091F  1A800180           [124] jmp        7            ; to [132]
+0923  5D020700           [125] getglobal  9   28       ; -1817107093
+0927  99420700           [126] loadk      10  29       ; "ERROR: Tried to index a tip that didn't exist. TipIndex = "
+092B  DD020300           [127] getglobal  11  12       ; -1615931716
+092F  12030001           [128] move       12  2      
+0933  E2820001           [129] call       11  2   2  
+0937  82C20205           [130] concat     10  10  11 
+093B  62420001           [131] call       9   2   1  
+093F  1E008000           [132] return     0   1      
+                         * constants:
+0943  1E                 sizek (30)
+0944  04                 const type 4
+0945  06                 string size (6)
+0946  6D5469707300       "mTips\0"
+                         const [0]: "mTips"
+094C  03                 const type 3
+094D  00000000           const [1]: (0)
+0951  03                 const type 3
+0952  0000803F           const [2]: (0)
+0956  04                 const type 4
+0957  09                 string size (9)
+0958  546970496E646578+  "TipIndex"
+0960  00                 "\0"
+                         const [3]: "TipIndex"
+0961  04                 const type 4
+0962  07                 string size (7)
+0963  52616E646F6D00     "Random\0"
+                         const [4]: "Random"
+096A  04                 const type 4
+096B  19                 string size (25)
+096C  4D696E696D756D54+  "MinimumT"
+0974  697073546F416C6C+  "ipsToAll"
+097C  6F7752616E646F6D+  "owRandom"
+0984  00                 "\0"
+                         const [5]: "MinimumTipsToAllowRandom"
+0985  04                 const type 4
+0986  18                 string size (24)
+0987  52616E646F6D496E+  "RandomIn"
+098F  646963657343616C+  "dicesCal"
+0997  63756C6174656400   "culated\0"
+                         const [6]: "RandomIndicesCalculated"
+099F  01                 const type 3
+09A0  9D65CD0C           const [7]: (214787485)
+09A4  01                 const type 3
+09A5  C688F51B           const [8]: (469076166)
+09A9  01                 const type 3
+09AA  42674A8C           const [9]: (-1941280958)
+09AE  01                 const type 3
+09AF  14F0028C           const [10]: (-1945964524)
+09B3  04                 const type 4
+09B4  10                 string size (16)
+09B5  52616E646F6D496E+  "RandomIn"
+09BD  646578202D3E2000   "dex -> \0"
+                         const [11]: "RandomIndex -> "
+09C5  01                 const type 3
+09C6  BCD6AE9F           const [12]: (-1615931716)
+09CA  04                 const type 4
+09CB  1A                 string size (26)
+09CC  496E646578436F6D+  "IndexCom"
+09D4  70617265206C6173+  "pare las"
+09DC  74496E646578203E+  "tIndex >"
+09E4  3D00               "=\0"
+                         const [13]: "IndexCompare lastIndex >="
+09E6  04                 const type 4
+09E7  0C                 string size (12)
+09E8  52616E646F6D496E+  "RandomIn"
+09F0  64657800           "dex\0"
+                         const [14]: "RandomIndex"
+09F4  04                 const type 4
+09F5  04                 string size (4)
+09F6  203C2000           " < \0"
+                         const [15]: " < "
+09FA  04                 const type 4
+09FB  04                 string size (4)
+09FC  203D2000           " = \0"
+                         const [16]: " = "
+0A00  04                 const type 4
+0A01  13                 string size (19)
+0A02  496E646578205365+  "Index Se"
+0A0A  6C6563746564202D+  "lected -"
+0A12  3E2000             "> \0"
+                         const [17]: "Index Selected -> "
+0A15  01                 const type 3
+0A16  0B28437C           const [18]: (2084775947)
+0A1A  00                 const type 0
+                         const [19]: nil
+0A1B  01                 const type 3
+0A1C  6F636253           const [20]: (1398956911)
+0A20  01                 const type 3
+0A21  907AE152           const [21]: (1390508688)
+0A25  04                 const type 4
+0A26  07                 string size (7)
+0A27  6D4D6F76696500     "mMovie\0"
+                         const [22]: "mMovie"
+0A2E  04                 const type 4
+0A2F  06                 string size (6)
+0A30  554953797300       "UISys\0"
+                         const [23]: "UISys"
+0A36  04                 const type 4
+0A37  15                 string size (21)
+0A38  466C617368496E73+  "FlashIns"
+0A40  74616E63655F4C49+  "tance_LI"
+0A48  4E45415200         "NEAR\0"
+                         const [24]: "FlashInstance_LINEAR"
+0A4D  04                 const type 4
+0A4E  07                 string size (7)
+0A4F  5F616C70686100     "_alpha\0"
+                         const [25]: "_alpha"
+0A56  03                 const type 3
+0A57  0000C842           const [26]: (0)
+0A5B  04                 const type 4
+0A5C  0D                 string size (13)
+0A5D  4661646544757261+  "FadeDura"
+0A65  74696F6E00         "tion\0"
+                         const [27]: "FadeDuration"
+0A6A  01                 const type 3
+0A6B  6B25B193           const [28]: (-1817107093)
+0A6F  04                 const type 4
+0A70  3B                 string size (59)
+0A71  4552524F523A2054+  "ERROR: T"
+0A79  7269656420746F20+  "ried to "
+0A81  696E646578206120+  "index a "
+0A89  7469702074686174+  "tip that"
+0A91  206469646E277420+  " didn't "
+0A99  65786973742E2054+  "exist. T"
+0AA1  6970496E64657820+  "ipIndex "
+0AA9  3D2000             "= \0"
+                         const [29]: "ERROR: Tried to index a tip that didn't exist. TipIndex = "
+                         * functions:
+0AAC  01                 sizep (1)
+                         
+0AAD                     ** function [0] definition (level 4)
+                         ** start of function **
+0AAD  00                 string size (0)
+                         source name: (none)
+0AAE  6C                 line defined (108)
+0AAF  71                 last line defined (113)
+0AB0  02                 nups (2)
+0AB1  00                 numparams (0)
+0AB2  00                 is_vararg (0)
+0AB3  09                 maxstacksize (9)
+                         * code:
+0AB4  14                 sizecode (20)
+0AB5  1D000000           [01] getglobal  0   0        ; 1390508688
+0AB9  53000000           [02] getupval   1   0      
+0ABD  4E40C000           [03] gettable   1   1   257  ; "mMovie"
+0AC1  93008000           [04] getupval   2   1      
+0AC5  DD800000           [05] getglobal  3   2        ; UISys
+0AC9  CEC0C001           [06] gettable   3   3   259  ; "FlashInstance_LINEAR"
+0ACD  0B018000           [07] newtable   4   1   0    ; array=1, hash=0
+0AD1  59010100           [08] loadk      5   4        ; "_alpha"
+0AD5  1B418000           [09] setlist    4   1   1    ; index 1 to 1
+0AD9  4B018000           [10] newtable   5   1   0    ; array=1, hash=0
+0ADD  99410100           [11] loadk      6   5        ; 0
+0AE1  5B418000           [12] setlist    5   1   1    ; index 1 to 1
+0AE5  93010000           [13] getupval   6   0      
+0AE9  8E814103           [14] gettable   6   6   262  ; "FadeDuration"
+0AED  D3010000           [15] getupval   7   0      
+0AF1  CEC1C103           [16] gettable   7   7   263  ; "TipDuration"
+0AF5  25020000           [17] closure    8   0      
+0AF9  13000000           [18] getupval   0   0      
+0AFD  22408004           [19] call       0   9   1  
+0B01  1E008000           [20] return     0   1      
+                         * constants:
+0B05  08                 sizek (8)
+0B06  01                 const type 3
+0B07  907AE152           const [0]: (1390508688)
+0B0B  04                 const type 4
+0B0C  07                 string size (7)
+0B0D  6D4D6F76696500     "mMovie\0"
+                         const [1]: "mMovie"
+0B14  04                 const type 4
+0B15  06                 string size (6)
+0B16  554953797300       "UISys\0"
+                         const [2]: "UISys"
+0B1C  04                 const type 4
+0B1D  15                 string size (21)
+0B1E  466C617368496E73+  "FlashIns"
+0B26  74616E63655F4C49+  "tance_LI"
+0B2E  4E45415200         "NEAR\0"
+                         const [3]: "FlashInstance_LINEAR"
+0B33  04                 const type 4
+0B34  07                 string size (7)
+0B35  5F616C70686100     "_alpha\0"
+                         const [4]: "_alpha"
+0B3C  03                 const type 3
+0B3D  00000000           const [5]: (0)
+0B41  04                 const type 4
+0B42  0D                 string size (13)
+0B43  4661646544757261+  "FadeDura"
+0B4B  74696F6E00         "tion\0"
+                         const [6]: "FadeDuration"
+0B50  04                 const type 4
+0B51  0C                 string size (12)
+0B52  5469704475726174+  "TipDurat"
+0B5A  696F6E00           "ion\0"
+                         const [7]: "TipDuration"
+                         * functions:
+0B5E  01                 sizep (1)
+                         
+0B5F                     ** function [0] definition (level 5)
+                         ** start of function **
+0B5F  00                 string size (0)
+                         source name: (none)
+0B60  6E                 line defined (110)
+0B61  70                 last line defined (112)
+0B62  01                 nups (1)
+0B63  00                 numparams (0)
+0B64  00                 is_vararg (0)
+0B65  02                 maxstacksize (2)
+                         * code:
+0B66  04                 sizecode (4)
+0B67  13000000           [1] getupval   0   0      
+0B6B  24004000           [2] self       0   0   256  ; 1393771377
+0B6F  22400001           [3] call       0   2   1  
+0B73  1E008000           [4] return     0   1      
+                         * constants:
+0B77  01                 sizek (1)
+0B78  01                 const type 3
+0B79  71431353           const [0]: (1393771377)
+                         * functions:
+0B7D  00                 sizep (0)
+                         * lines:
+0B7E  04                 sizelineinfo (4)
+                         [pc] (line)
+0B7F  6F                 [1] (111)
+0B80  00                 [2] (111)
+0B81  00                 [3] (111)
+0B82  00                 [4] (112)
+                         * locals:
+0B8F  00                 sizelocvars (0)
+                         * upvalues:
+0B90  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+0B91  14                 sizelineinfo (20)
+                         [pc] (line)
+0B92  6D                 [01] (109)
+0B93  00                 [02] (109)
+0B94  00                 [03] (109)
+0B95  00                 [04] (109)
+0B96  6D                 [05] (109)
+0B97  00                 [06] (109)
+0B98  00                 [07] (109)
+0B99  00                 [08] (109)
+0B9A  6D                 [09] (109)
+0B9B  00                 [10] (109)
+0B9C  00                 [11] (109)
+0B9D  00                 [12] (109)
+0B9E  6D                 [13] (109)
+0B9F  00                 [14] (109)
+0BA0  00                 [15] (109)
+0BA1  00                 [16] (109)
+0BA2  6D                 [17] (112)
+0BA3  00                 [18] (112)
+0BA4  00                 [19] (109)
+0BA5  00                 [20] (113)
+                         * locals:
+0BE2  00                 sizelocvars (0)
+                         * upvalues:
+0BE3  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+0BE5  01                 sizelineinfo (132)
+                         [pc] (line)
+0BE6  4D                 [001] (77)
+0BE7  00                 [002] (77)
+0BE8  00                 [003] (78)
+0BE9  00                 [004] (78)
+0BEA  4D                 [005] (78)
+0BEB  00                 [006] (78)
+0BEC  00                 [007] (78)
+0BED  00                 [008] (78)
+0BEE  4E                 [009] (78)
+0BEF  00                 [010] (79)
+0BF0  00                 [011] (81)
+0BF1  00                 [012] (82)
+0BF2  4E                 [013] (82)
+0BF3  00                 [014] (82)
+0BF4  00                 [015] (82)
+0BF5  00                 [016] (82)
+0BF6  4E                 [017] (82)
+0BF7  00                 [018] (83)
+0BF8  00                 [019] (83)
+0BF9  00                 [020] (83)
+0BFA  4E                 [021] (84)
+0BFB  00                 [022] (84)
+0BFC  00                 [023] (87)
+0BFD  00                 [024] (87)
+0BFE  4E                 [025] (87)
+0BFF  00                 [026] (88)
+0C00  00                 [027] (88)
+0C01  00                 [028] (88)
+0C02  4E                 [029] (88)
+0C03  00                 [030] (89)
+0C04  00                 [031] (89)
+0C05  00                 [032] (89)
+0C06  4E                 [033] (89)
+0C07  00                 [034] (89)
+0C08  00                 [035] (89)
+0C09  00                 [036] (89)
+0C0A  4F                 [037] (90)
+0C0B  00                 [038] (91)
+0C0C  00                 [039] (91)
+0C0D  00                 [040] (91)
+0C0E  51                 [041] (91)
+0C0F  00                 [042] (92)
+0C10  00                 [043] (92)
+0C11  00                 [044] (92)
+0C12  52                 [045] (92)
+0C13  00                 [046] (92)
+0C14  00                 [047] (92)
+0C15  00                 [048] (92)
+0C16  52                 [049] (92)
+0C17  00                 [050] (92)
+0C18  00                 [051] (92)
+0C19  00                 [052] (92)
+0C1A  52                 [053] (92)
+0C1B  00                 [054] (92)
+0C1C  00                 [055] (92)
+0C1D  00                 [056] (92)
+0C1E  52                 [057] (92)
+0C1F  00                 [058] (92)
+0C20  00                 [059] (92)
+0C21  00                 [060] (92)
+0C22  52                 [061] (92)
+0C23  00                 [062] (92)
+0C24  00                 [063] (92)
+0C25  00                 [064] (92)
+0C26  52                 [065] (92)
+0C27  00                 [066] (92)
+0C28  00                 [067] (93)
+0C29  00                 [068] (93)
+0C2A  53                 [069] (93)
+0C2B  00                 [070] (93)
+0C2C  00                 [071] (93)
+0C2D  00                 [072] (93)
+0C2E  53                 [073] (93)
+0C2F  00                 [074] (94)
+0C30  00                 [075] (95)
+0C31  00                 [076] (97)
+0C32  53                 [077] (97)
+0C33  00                 [078] (97)
+0C34  00                 [079] (91)
+0C35  00                 [080] (99)
+0C36  54                 [081] (99)
+0C37  00                 [082] (99)
+0C38  00                 [083] (100)
+0C39  00                 [084] (100)
+0C3A  54                 [085] (100)
+0C3B  00                 [086] (100)
+0C3C  00                 [087] (100)
+0C3D  00                 [088] (100)
+0C3E  57                 [089] (100)
+0C3F  00                 [090] (100)
+0C40  00                 [091] (102)
+0C41  00                 [092] (102)
+0C42  57                 [093] (102)
+0C43  00                 [094] (102)
+0C44  00                 [095] (102)
+0C45  00                 [096] (102)
+0C46  57                 [097] (102)
+0C47  00                 [098] (102)
+0C48  00                 [099] (102)
+0C49  00                 [100] (104)
+0C4A  58                 [101] (104)
+0C4B  00                 [102] (104)
+0C4C  00                 [103] (104)
+0C4D  00                 [104] (105)
+0C4E  58                 [105] (106)
+0C4F  00                 [106] (106)
+0C50  00                 [107] (107)
+0C51  00                 [108] (107)
+0C52  58                 [109] (107)
+0C53  00                 [110] (107)
+0C54  00                 [111] (107)
+0C55  00                 [112] (107)
+0C56  58                 [113] (107)
+0C57  00                 [114] (107)
+0C58  00                 [115] (107)
+0C59  00                 [116] (107)
+0C5A  59                 [117] (107)
+0C5B  00                 [118] (107)
+0C5C  00                 [119] (107)
+0C5D  00                 [120] (113)
+0C5E  59                 [121] (113)
+0C5F  00                 [122] (113)
+0C60  00                 [123] (107)
+0C61  00                 [124] (113)
+0C62  59                 [125] (115)
+0C63  00                 [126] (115)
+0C64  00                 [127] (115)
+0C65  00                 [128] (115)
+0C66  59                 [129] (115)
+0C67  00                 [130] (115)
+0C68  00                 [131] (115)
+0C69  00                 [132] (117)
+                         * locals:
+0DF6  00                 sizelocvars (0)
+                         * upvalues:
+0DF7  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0DF8                     ** function [5] definition (level 3)
+                         ** start of function **
+0DF8  00                 string size (0)
+                         source name: (none)
+0DF9  78                 line defined (120)
+0DFA  7A                 last line defined (122)
+0DFB  00                 nups (0)
+0DFC  01                 numparams (1)
+0DFD  00                 is_vararg (0)
+0DFE  03                 maxstacksize (3)
+                         * code:
+0DFF  03                 sizecode (3)
+0E00  64004000           [1] self       1   0   256  ; 1393771377
+0E04  62400001           [2] call       1   2   1  
+0E08  1E008000           [3] return     0   1      
+                         * constants:
+0E0C  01                 sizek (1)
+0E0D  01                 const type 3
+0E0E  71431353           const [0]: (1393771377)
+                         * functions:
+0E12  00                 sizep (0)
+                         * lines:
+0E13  03                 sizelineinfo (3)
+                         [pc] (line)
+0E14  79                 [1] (121)
+0E15  00                 [2] (121)
+0E16  00                 [3] (122)
+                         * locals:
+0E20  00                 sizelocvars (0)
+                         * upvalues:
+0E21  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+0E22  31                 sizelineinfo (49)
+                         [pc] (line)
+0E23  06                 [01] (6)
+0E24  00                 [02] (6)
+0E25  00                 [03] (6)
+0E26  00                 [04] (6)
+0E27  06                 [05] (6)
+0E28  00                 [06] (7)
+0E29  00                 [07] (7)
+0E2A  00                 [08] (7)
+0E2B  06                 [09] (7)
+0E2C  00                 [10] (7)
+0E2D  00                 [11] (9)
+0E2E  00                 [12] (10)
+0E2F  06                 [13] (11)
+0E30  00                 [14] (12)
+0E31  00                 [15] (13)
+0E32  00                 [16] (14)
+0E33  06                 [17] (14)
+0E34  00                 [18] (14)
+0E35  00                 [19] (14)
+0E36  00                 [20] (14)
+0E37  07                 [21] (15)
+0E38  00                 [22] (16)
+0E39  00                 [23] (16)
+0E3A  00                 [24] (17)
+0E3B  07                 [25] (18)
+0E3C  00                 [26] (19)
+0E3D  00                 [27] (20)
+0E3E  00                 [28] (21)
+0E3F  07                 [29] (22)
+0E40  00                 [30] (23)
+0E41  00                 [31] (28)
+0E42  00                 [32] (28)
+0E43  07                 [33] (37)
+0E44  00                 [34] (37)
+0E45  00                 [35] (59)
+0E46  00                 [36] (59)
+0E47  07                 [37] (73)
+0E48  00                 [38] (73)
+0E49  00                 [39] (73)
+0E4A  00                 [40] (73)
+0E4B  09                 [41] (117)
+0E4C  00                 [42] (117)
+0E4D  00                 [43] (117)
+0E4E  00                 [44] (117)
+0E4F  0A                 [45] (117)
+0E50  00                 [46] (122)
+0E51  00                 [47] (122)
+0E52  00                 [48] (124)
+0E53  0B                 [49] (125)
+                         * locals:
+0EE7  00                 sizelocvars (0)
+                         * upvalues:
+0EE8  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+0EE9  0D                 sizelineinfo (13)
+                         [pc] (line)
+0EEA  01                 [01] (1)
+0EEB  00                 [02] (1)
+0EEC  00                 [03] (1)
+0EED  00                 [04] (1)
+0EEE  01                 [05] (1)
+0EEF  00                 [06] (3)
+0EF0  00                 [07] (3)
+0EF1  00                 [08] (3)
+0EF2  01                 [09] (125)
+0EF3  00                 [10] (125)
+0EF4  00                 [11] (125)
+0EF5  00                 [12] (5)
+0EF6  01                 [13] (125)
+                         * locals:
+0F1E  00                 sizelocvars (0)
+                         * upvalues:
+0F1F  00                 sizeupvalues (0)
+                         ** end of function **
+
+0F20                     ** end of chunk **

@@ -1,0 +1,666 @@
+1	C:\wlua_dump\path\Lotus\ScriptsMusicFunctions.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\ScriptsMusicFunctions.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  02                 size of number (bytes)
+0008  10                 integral (1=integral)
+416
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+TurnOffDynamicMusic
+TurnOnDynamicMusic
+GoToDynamicMusicState
+StartMusic
+StopMusic
+gGameRules
+Duration
+gGameRules
+gGameRules
+StateName
+EMPTY_SYMBOL
+StateNumber
+Duration
+gGameRules
+MusicType
+StateNumber
+StateName
+EMPTY_SYMBOL
+Duration
+gGameRules
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  02                 maxstacksize (2)
+                         * code:
+0008  10                 sizecode (16)
+0009  25000000           [01] closure    0   0      
+000D  20000000           [02] setglobal  0   0        ; TurnOffDynamicMusic
+0011  20400000           [03] setglobal  0   1        ; -1979070754
+0015  25400000           [04] closure    0   1      
+0019  20800000           [05] setglobal  0   2        ; TurnOnDynamicMusic
+001D  20C00000           [06] setglobal  0   3        ; -1904907410
+0021  25800000           [07] closure    0   2      
+0025  20000100           [08] setglobal  0   4        ; GoToDynamicMusicState
+0029  20400100           [09] setglobal  0   5        ; -298509947
+002D  25C00000           [10] closure    0   3      
+0031  20800100           [11] setglobal  0   6        ; StartMusic
+0035  20C00100           [12] setglobal  0   7        ; 1499926794
+0039  25000100           [13] closure    0   4      
+003D  20000200           [14] setglobal  0   8        ; StopMusic
+0041  20400200           [15] setglobal  0   9        ; 928351959
+0045  1E008000           [16] return     0   1      
+                         * constants:
+0049  0A                 sizek (10)
+004A  04                 const type 4
+004B  14                 string size (20)
+004C  5475726E4F666644+  "TurnOffD"
+0054  796E616D69634D75+  "ynamicMu"
+005C  73696300           "sic\0"
+                         const [0]: "TurnOffDynamicMusic"
+0060  01                 const type 3
+0061  DEC6098A           const [1]: (-1979070754)
+0065  04                 const type 4
+0066  13                 string size (19)
+0067  5475726E4F6E4479+  "TurnOnDy"
+006F  6E616D69634D7573+  "namicMus"
+0077  696300             "ic\0"
+                         const [2]: "TurnOnDynamicMusic"
+007A  01                 const type 3
+007B  6E6B758E           const [3]: (-1904907410)
+007F  04                 const type 4
+0080  16                 string size (22)
+0081  476F546F44796E61+  "GoToDyna"
+0089  6D69634D75736963+  "micMusic"
+0091  537461746500       "State\0"
+                         const [4]: "GoToDynamicMusicState"
+0097  01                 const type 3
+0098  851935EE           const [5]: (-298509947)
+009C  04                 const type 4
+009D  0B                 string size (11)
+009E  53746172744D7573+  "StartMus"
+00A6  696300             "ic\0"
+                         const [6]: "StartMusic"
+00A9  01                 const type 3
+00AA  0A116759           const [7]: (1499926794)
+00AE  04                 const type 4
+00AF  0A                 string size (10)
+00B0  53746F704D757369+  "StopMusi"
+00B8  6300               "c\0"
+                         const [8]: "StopMusic"
+00BA  01                 const type 3
+00BB  D7865537           const [9]: (928351959)
+                         * functions:
+00BF  05                 sizep (5)
+                         
+00C0                     ** function [0] definition (level 2)
+                         ** start of function **
+00C0  00                 string size (0)
+                         source name: (none)
+00C1  0A                 line defined (10)
+00C2  17                 last line defined (23)
+00C3  00                 nups (0)
+00C4  00                 numparams (0)
+00C5  00                 is_vararg (0)
+00C6  05                 maxstacksize (5)
+                         * code:
+00C7  18                 sizecode (24)
+00C8  1D000000           [01] getglobal  0   0        ; gGameRules
+00CC  64404000           [02] self       1   0   257  ; 516385015
+00D0  62800001           [03] call       1   2   2  
+00D4  9D800000           [04] getglobal  2   2        ; 1074689893
+00D8  D2008000           [05] move       3   1      
+00DC  A2800001           [06] call       2   2   2  
+00E0  98400000           [07] test       2       1    ; to [9] if false
+00E4  1A800380           [08] jmp        15           ; to [24]
+00E8  A4C0C000           [09] self       2   1   259  ; -1105824
+00EC  17010000           [10] loadbool   4   0   0    ; false
+00F0  A2408001           [11] call       2   3   1  
+00F4  A400C100           [12] self       2   1   260  ; 1209012877
+00F8  19410100           [13] loadk      4   5        ; 0
+00FC  A2408001           [14] call       2   3   1  
+0100  9D800100           [15] getglobal  2   6        ; Duration
+fail op	21
+0104  15808083           [16] concat     0   263 2  
+0108  1A400180           [17] jmp        6            ; to [24]
+010C  9D000200           [18] getglobal  2   8        ; 538022378
+0110  DD800100           [19] getglobal  3   6        ; Duration
+0114  A2400001           [20] call       2   2   1  
+0118  A4C0C000           [21] self       2   1   259  ; -1105824
+011C  17018000           [22] loadbool   4   1   0    ; true
+0120  A2408001           [23] call       2   3   1  
+0124  1E008000           [24] return     0   1      
+                         * constants:
+0128  09                 sizek (9)
+0129  04                 const type 4
+012A  0B                 string size (11)
+012B  6747616D6552756C+  "gGameRul"
+0133  657300             "es\0"
+                         const [0]: "gGameRules"
+0136  01                 const type 3
+0137  F768C71E           const [1]: (516385015)
+013B  01                 const type 3
+013C  65770E40           const [2]: (1074689893)
+0140  01                 const type 3
+0141  6020EFFF           const [3]: (-1105824)
+0145  01                 const type 3
+0146  8D121048           const [4]: (1209012877)
+014A  03                 const type 3
+014B  000000C0           const [5]: (0)
+014F  04                 const type 4
+0150  09                 string size (9)
+0151  4475726174696F6E+  "Duration"
+0159  00                 "\0"
+                         const [6]: "Duration"
+015A  03                 const type 3
+015B  00000000           const [7]: (0)
+015F  01                 const type 3
+0160  EA911120           const [8]: (538022378)
+                         * functions:
+0164  00                 sizep (0)
+                         * lines:
+0165  18                 sizelineinfo (24)
+                         [pc] (line)
+0166  0B                 [01] (11)
+0167  00                 [02] (12)
+0168  00                 [03] (12)
+0169  00                 [04] (14)
+016A  0C                 [05] (14)
+016B  00                 [06] (14)
+016C  00                 [07] (14)
+016D  00                 [08] (14)
+016E  0C                 [09] (15)
+016F  00                 [10] (15)
+0170  00                 [11] (15)
+0171  00                 [12] (16)
+0172  0E                 [13] (16)
+0173  00                 [14] (16)
+0174  00                 [15] (18)
+0175  00                 [16] (18)
+0176  0E                 [17] (18)
+0177  00                 [18] (19)
+0178  00                 [19] (19)
+0179  00                 [20] (19)
+017A  0E                 [21] (20)
+017B  00                 [22] (20)
+017C  00                 [23] (20)
+017D  00                 [24] (23)
+                         * locals:
+01C6  00                 sizelocvars (0)
+                         * upvalues:
+01C7  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+01C8                     ** function [1] definition (level 2)
+                         ** start of function **
+01C8  00                 string size (0)
+                         source name: (none)
+01C9  1D                 line defined (29)
+01CA  24                 last line defined (36)
+01CB  00                 nups (0)
+01CC  00                 numparams (0)
+01CD  00                 is_vararg (0)
+01CE  05                 maxstacksize (5)
+                         * code:
+01CF  0C                 sizecode (12)
+01D0  1D000000           [01] getglobal  0   0        ; gGameRules
+01D4  64404000           [02] self       1   0   257  ; 516385015
+01D8  62800001           [03] call       1   2   2  
+01DC  9D800000           [04] getglobal  2   2        ; 1074689893
+01E0  D2008000           [05] move       3   1      
+01E4  A2800001           [06] call       2   2   2  
+01E8  98400000           [07] test       2       1    ; to [9] if false
+01EC  1A800080           [08] jmp        3            ; to [12]
+01F0  A4C0C000           [09] self       2   1   259  ; -1105824
+01F4  17018000           [10] loadbool   4   1   0    ; true
+01F8  A2408001           [11] call       2   3   1  
+01FC  1E008000           [12] return     0   1      
+                         * constants:
+0200  04                 sizek (4)
+0201  04                 const type 4
+0202  0B                 string size (11)
+0203  6747616D6552756C+  "gGameRul"
+020B  657300             "es\0"
+                         const [0]: "gGameRules"
+020E  01                 const type 3
+020F  F768C71E           const [1]: (516385015)
+0213  01                 const type 3
+0214  65770E40           const [2]: (1074689893)
+0218  01                 const type 3
+0219  6020EFFF           const [3]: (-1105824)
+                         * functions:
+021D  00                 sizep (0)
+                         * lines:
+021E  0C                 sizelineinfo (12)
+                         [pc] (line)
+021F  1E                 [01] (30)
+0220  00                 [02] (31)
+0221  00                 [03] (31)
+0222  00                 [04] (33)
+0223  1F                 [05] (33)
+0224  00                 [06] (33)
+0225  00                 [07] (33)
+0226  00                 [08] (33)
+0227  1F                 [09] (34)
+0228  00                 [10] (34)
+0229  00                 [11] (34)
+022A  00                 [12] (36)
+                         * locals:
+024F  00                 sizelocvars (0)
+                         * upvalues:
+0250  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0251                     ** function [2] definition (level 2)
+                         ** start of function **
+0251  00                 string size (0)
+                         source name: (none)
+0252  2B                 line defined (43)
+0253  3C                 last line defined (60)
+0254  00                 nups (0)
+0255  00                 numparams (0)
+0256  00                 is_vararg (0)
+0257  05                 maxstacksize (5)
+                         * code:
+0258  20                 sizecode (32)
+0259  1D000000           [01] getglobal  0   0        ; gGameRules
+025D  64404000           [02] self       1   0   257  ; 516385015
+0261  62800001           [03] call       1   2   2  
+0265  9D800000           [04] getglobal  2   2        ; 1074689893
+0269  D2008000           [05] move       3   1      
+026D  A2800001           [06] call       2   2   2  
+0271  98400000           [07] test       2       1    ; to [9] if false
+0275  1A800580           [08] jmp        23           ; to [32]
+0279  A4C0C000           [09] self       2   1   259  ; -1105824
+027D  17010000           [10] loadbool   4   0   0    ; false
+0281  A2408001           [11] call       2   3   1  
+0285  9D000100           [12] getglobal  2   4        ; StateName
+0289  DD400100           [13] getglobal  3   5        ; EMPTY_SYMBOL
+fail op	35
+028D  23C00001           [14] close      0  
+0291  1AC00080           [15] jmp        4            ; to [20]
+0295  A480C100           [16] self       2   1   262  ; 1209012877
+0299  1DC10100           [17] getglobal  4   7        ; StateNumber
+029D  A2408001           [18] call       2   3   1  
+02A1  1A800080           [19] jmp        3            ; to [23]
+02A5  A400C200           [20] self       2   1   264  ; 1520803588
+02A9  1D010100           [21] getglobal  4   4        ; StateName
+02AD  A2408001           [22] call       2   3   1  
+02B1  9D400200           [23] getglobal  2   9        ; Duration
+fail op	21
+02B5  15800085           [24] concat     0   266 2  
+02B9  1A400180           [25] jmp        6            ; to [32]
+02BD  9DC00200           [26] getglobal  2   11       ; 538022378
+02C1  DD400200           [27] getglobal  3   9        ; Duration
+02C5  A2400001           [28] call       2   2   1  
+02C9  A4C0C000           [29] self       2   1   259  ; -1105824
+02CD  17018000           [30] loadbool   4   1   0    ; true
+02D1  A2408001           [31] call       2   3   1  
+02D5  1E008000           [32] return     0   1      
+                         * constants:
+02D9  0C                 sizek (12)
+02DA  04                 const type 4
+02DB  0B                 string size (11)
+02DC  6747616D6552756C+  "gGameRul"
+02E4  657300             "es\0"
+                         const [0]: "gGameRules"
+02E7  01                 const type 3
+02E8  F768C71E           const [1]: (516385015)
+02EC  01                 const type 3
+02ED  65770E40           const [2]: (1074689893)
+02F1  01                 const type 3
+02F2  6020EFFF           const [3]: (-1105824)
+02F6  04                 const type 4
+02F7  0A                 string size (10)
+02F8  53746174654E616D+  "StateNam"
+0300  6500               "e\0"
+                         const [4]: "StateName"
+0302  04                 const type 4
+0303  0D                 string size (13)
+0304  454D5054595F5359+  "EMPTY_SY"
+030C  4D424F4C00         "MBOL\0"
+                         const [5]: "EMPTY_SYMBOL"
+0311  01                 const type 3
+0312  8D121048           const [6]: (1209012877)
+0316  04                 const type 4
+0317  0C                 string size (12)
+0318  53746174654E756D+  "StateNum"
+0320  62657200           "ber\0"
+                         const [7]: "StateNumber"
+0324  01                 const type 3
+0325  049FA55A           const [8]: (1520803588)
+0329  04                 const type 4
+032A  09                 string size (9)
+032B  4475726174696F6E+  "Duration"
+0333  00                 "\0"
+                         const [9]: "Duration"
+0334  03                 const type 3
+0335  00000000           const [10]: (0)
+0339  01                 const type 3
+033A  EA911120           const [11]: (538022378)
+                         * functions:
+033E  00                 sizep (0)
+                         * lines:
+033F  20                 sizelineinfo (32)
+                         [pc] (line)
+0340  2C                 [01] (44)
+0341  00                 [02] (45)
+0342  00                 [03] (45)
+0343  00                 [04] (47)
+0344  2D                 [05] (47)
+0345  00                 [06] (47)
+0346  00                 [07] (47)
+0347  00                 [08] (47)
+0348  2D                 [09] (48)
+0349  00                 [10] (48)
+034A  00                 [11] (48)
+034B  00                 [12] (49)
+034C  2F                 [13] (49)
+034D  00                 [14] (49)
+034E  00                 [15] (49)
+034F  00                 [16] (50)
+0350  2F                 [17] (50)
+0351  00                 [18] (50)
+0352  00                 [19] (50)
+0353  00                 [20] (52)
+0354  2F                 [21] (52)
+0355  00                 [22] (52)
+0356  00                 [23] (55)
+0357  00                 [24] (55)
+0358  2F                 [25] (55)
+0359  00                 [26] (56)
+035A  00                 [27] (56)
+035B  00                 [28] (56)
+035C  2F                 [29] (57)
+035D  00                 [30] (57)
+035E  00                 [31] (57)
+035F  00                 [32] (60)
+                         * locals:
+03C0  00                 sizelocvars (0)
+                         * upvalues:
+03C1  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+03C2                     ** function [3] definition (level 2)
+                         ** start of function **
+03C2  00                 string size (0)
+                         source name: (none)
+03C3  44                 line defined (68)
+03C4  59                 last line defined (89)
+03C5  00                 nups (0)
+03C6  00                 numparams (0)
+03C7  00                 is_vararg (0)
+03C8  05                 maxstacksize (5)
+                         * code:
+03C9  2E                 sizecode (46)
+03CA  1D000000           [01] getglobal  0   0        ; gGameRules
+03CE  64404000           [02] self       1   0   257  ; 516385015
+03D2  62800001           [03] call       1   2   2  
+03D6  9D800000           [04] getglobal  2   2        ; 1074689893
+03DA  D2008000           [05] move       3   1      
+03DE  A2800001           [06] call       2   2   2  
+03E2  98400000           [07] test       2       1    ; to [9] if false
+03E6  1A000980           [08] jmp        37           ; to [46]
+03EA  A4C0C000           [09] self       2   1   259  ; 2143938515
+03EE  1D010100           [10] getglobal  4   4        ; MusicType
+03F2  A2408001           [11] call       2   3   1  
+03F6  9D400100           [12] getglobal  2   5        ; StateNumber
+fail op	33
+03FA  61800083           [13] tforloop   1       2    ; to [15] if exit
+03FE  1A000180           [14] jmp        5            ; to [20]
+0402  9DC00100           [15] getglobal  2   7        ; StateName
+0406  A4004201           [16] self       2   2   264  ; 828278287
+040A  A2800001           [17] call       2   2   2  
+040E  98000000           [18] test       2       0    ; to [20] if true
+0412  1A400680           [19] jmp        26           ; to [46]
+0416  A440C200           [20] self       2   1   265  ; -1105824
+041A  17010000           [21] loadbool   4   0   0    ; false
+041E  A2408001           [22] call       2   3   1  
+0422  9D800200           [23] getglobal  2   10       ; 538022378
+0426  D9C00200           [24] loadk      3   11       ; 0
+042A  A2400001           [25] call       2   2   1  
+042E  9DC00100           [26] getglobal  2   7        ; StateName
+0432  DD000300           [27] getglobal  3   12       ; EMPTY_SYMBOL
+fail op	35
+0436  23C00001           [28] close      0  
+043A  1AC00080           [29] jmp        4            ; to [34]
+043E  A440C300           [30] self       2   1   269  ; 1209012877
+0442  1D410100           [31] getglobal  4   5        ; StateNumber
+0446  A2408001           [32] call       2   3   1  
+044A  1A800080           [33] jmp        3            ; to [37]
+044E  A480C300           [34] self       2   1   270  ; 1520803588
+0452  1DC10100           [35] getglobal  4   7        ; StateName
+0456  A2408001           [36] call       2   3   1  
+045A  9DC00300           [37] getglobal  2   15       ; Duration
+fail op	21
+045E  15800083           [38] concat     0   262 2  
+0462  1A400180           [39] jmp        6            ; to [46]
+0466  9D800200           [40] getglobal  2   10       ; 538022378
+046A  DDC00300           [41] getglobal  3   15       ; Duration
+046E  A2400001           [42] call       2   2   1  
+0472  A440C200           [43] self       2   1   265  ; -1105824
+0476  17018000           [44] loadbool   4   1   0    ; true
+047A  A2408001           [45] call       2   3   1  
+047E  1E008000           [46] return     0   1      
+                         * constants:
+0482  10                 sizek (16)
+0483  04                 const type 4
+0484  0B                 string size (11)
+0485  6747616D6552756C+  "gGameRul"
+048D  657300             "es\0"
+                         const [0]: "gGameRules"
+0490  01                 const type 3
+0491  F768C71E           const [1]: (516385015)
+0495  01                 const type 3
+0496  65770E40           const [2]: (1074689893)
+049A  01                 const type 3
+049B  D3E7C97F           const [3]: (2143938515)
+049F  04                 const type 4
+04A0  0A                 string size (10)
+04A1  4D75736963547970+  "MusicTyp"
+04A9  6500               "e\0"
+                         const [4]: "MusicType"
+04AB  04                 const type 4
+04AC  0C                 string size (12)
+04AD  53746174654E756D+  "StateNum"
+04B5  62657200           "ber\0"
+                         const [5]: "StateNumber"
+04B9  03                 const type 3
+04BA  00000000           const [6]: (0)
+04BE  04                 const type 4
+04BF  0A                 string size (10)
+04C0  53746174654E616D+  "StateNam"
+04C8  6500               "e\0"
+                         const [7]: "StateName"
+04CA  01                 const type 3
+04CB  0F865E31           const [8]: (828278287)
+04CF  01                 const type 3
+04D0  6020EFFF           const [9]: (-1105824)
+04D4  01                 const type 3
+04D5  EA911120           const [10]: (538022378)
+04D9  03                 const type 3
+04DA  0000003F           const [11]: (0)
+04DE  04                 const type 4
+04DF  0D                 string size (13)
+04E0  454D5054595F5359+  "EMPTY_SY"
+04E8  4D424F4C00         "MBOL\0"
+                         const [12]: "EMPTY_SYMBOL"
+04ED  01                 const type 3
+04EE  8D121048           const [13]: (1209012877)
+04F2  01                 const type 3
+04F3  049FA55A           const [14]: (1520803588)
+04F7  04                 const type 4
+04F8  09                 string size (9)
+04F9  4475726174696F6E+  "Duration"
+0501  00                 "\0"
+                         const [15]: "Duration"
+                         * functions:
+0502  00                 sizep (0)
+                         * lines:
+0503  2E                 sizelineinfo (46)
+                         [pc] (line)
+0504  45                 [01] (69)
+0505  00                 [02] (70)
+0506  00                 [03] (70)
+0507  00                 [04] (71)
+0508  46                 [05] (71)
+0509  00                 [06] (71)
+050A  00                 [07] (71)
+050B  00                 [08] (71)
+050C  46                 [09] (72)
+050D  00                 [10] (72)
+050E  00                 [11] (72)
+050F  00                 [12] (74)
+0510  47                 [13] (74)
+0511  00                 [14] (74)
+0512  00                 [15] (74)
+0513  00                 [16] (74)
+0514  47                 [17] (74)
+0515  00                 [18] (74)
+0516  00                 [19] (74)
+0517  00                 [20] (75)
+0518  47                 [21] (75)
+0519  00                 [22] (75)
+051A  00                 [23] (76)
+051B  00                 [24] (76)
+051C  47                 [25] (76)
+051D  00                 [26] (77)
+051E  00                 [27] (77)
+051F  00                 [28] (77)
+0520  47                 [29] (77)
+0521  00                 [30] (78)
+0522  00                 [31] (78)
+0523  00                 [32] (78)
+0524  48                 [33] (78)
+0525  00                 [34] (80)
+0526  00                 [35] (80)
+0527  00                 [36] (80)
+0528  48                 [37] (83)
+0529  00                 [38] (83)
+052A  00                 [39] (83)
+052B  00                 [40] (84)
+052C  48                 [41] (84)
+052D  00                 [42] (84)
+052E  00                 [43] (85)
+052F  00                 [44] (85)
+0530  4A                 [45] (85)
+0531  00                 [46] (89)
+                         * locals:
+05BC  00                 sizelocvars (0)
+                         * upvalues:
+05BD  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+05BE                     ** function [4] definition (level 2)
+                         ** start of function **
+05BE  00                 string size (0)
+                         source name: (none)
+05BF  5F                 line defined (95)
+05C0  66                 last line defined (102)
+05C1  00                 nups (0)
+05C2  00                 numparams (0)
+05C3  00                 is_vararg (0)
+05C4  05                 maxstacksize (5)
+                         * code:
+05C5  0F                 sizecode (15)
+05C6  1D000000           [01] getglobal  0   0        ; gGameRules
+05CA  64404000           [02] self       1   0   257  ; 516385015
+05CE  62800001           [03] call       1   2   2  
+05D2  9D800000           [04] getglobal  2   2        ; 1074689893
+05D6  D2008000           [05] move       3   1      
+05DA  A2800001           [06] call       2   2   2  
+05DE  98400000           [07] test       2       1    ; to [9] if false
+05E2  1A400180           [08] jmp        6            ; to [15]
+05E6  A4C0C000           [09] self       2   1   259  ; -1105824
+05EA  17018000           [10] loadbool   4   1   0    ; true
+05EE  A2408001           [11] call       2   3   1  
+05F2  A400C100           [12] self       2   1   260  ; 2143938515
+05F6  06010002           [13] loadnil    4   4      
+05FA  A2408001           [14] call       2   3   1  
+05FE  1E008000           [15] return     0   1      
+                         * constants:
+0602  05                 sizek (5)
+0603  04                 const type 4
+0604  0B                 string size (11)
+0605  6747616D6552756C+  "gGameRul"
+060D  657300             "es\0"
+                         const [0]: "gGameRules"
+0610  01                 const type 3
+0611  F768C71E           const [1]: (516385015)
+0615  01                 const type 3
+0616  65770E40           const [2]: (1074689893)
+061A  01                 const type 3
+061B  6020EFFF           const [3]: (-1105824)
+061F  01                 const type 3
+0620  D3E7C97F           const [4]: (2143938515)
+                         * functions:
+0624  00                 sizep (0)
+                         * lines:
+0625  0F                 sizelineinfo (15)
+                         [pc] (line)
+0626  60                 [01] (96)
+0627  00                 [02] (97)
+0628  00                 [03] (97)
+0629  00                 [04] (98)
+062A  61                 [05] (98)
+062B  00                 [06] (98)
+062C  00                 [07] (98)
+062D  00                 [08] (98)
+062E  61                 [09] (99)
+062F  00                 [10] (99)
+0630  00                 [11] (99)
+0631  00                 [12] (100)
+0632  62                 [13] (100)
+0633  00                 [14] (100)
+0634  00                 [15] (102)
+                         * locals:
+0662  00                 sizelocvars (0)
+                         * upvalues:
+0663  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+0664  10                 sizelineinfo (16)
+                         [pc] (line)
+0665  17                 [01] (23)
+0666  00                 [02] (23)
+0667  00                 [03] (10)
+0668  00                 [04] (36)
+0669  17                 [05] (36)
+066A  00                 [06] (29)
+066B  00                 [07] (60)
+066C  00                 [08] (60)
+066D  0A                 [09] (43)
+066E  00                 [10] (89)
+066F  00                 [11] (89)
+0670  00                 [12] (68)
+0671  24                 [13] (102)
+0672  00                 [14] (102)
+0673  00                 [15] (95)
+0674  00                 [16] (102)
+                         * locals:
+06A5  00                 sizelocvars (0)
+                         * upvalues:
+06A6  00                 sizeupvalues (0)
+                         ** end of function **
+
+06A7                     ** end of chunk **

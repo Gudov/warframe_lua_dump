@@ -1,0 +1,1847 @@
+1	C:\wlua_dump\path\Lotus\Interface\ComponentsRadialText.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Interface\ComponentsRadialText.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  03                 size of number (bytes)
+0008  09                 integral (1=integral)
+49
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+package
+seeall
+CreateCircularText
+EE.Interface.Utilities
+mMovie
+mText
+
+mLetters
+mClipName
+UTIL
+mInitialDepth
+mInitialX
+_x
+mInitialY
+_y
+mInitialZ
+_z
+mRadius
+mLetterSpacing
+mInitialLetterRotation
+mInitialAngle
+mAlignment
+CENTER_ALIGNED
+mFlip
+PI
+mLayflat
+mUseHeading
+mZMultiplier
+mPrefix
+CircularText(
+)::
+Print
+GetHowManyLetters
+ConvertPixelsInCircumferenceToAngle
+Redraw
+SetText
+RunForEachLetter
+string
+mText
+PI
+mRadius
+UTIL
+Redraw()
+mLetters
+
+mClipName
+table
+mMovie
+.removeMovieClip
+_alpha
+mText
+string
+Id
+Letter
+Tf
+text
+ 
+.Tf
+textWidth
+mLetterSpacing
+Calculating width '
+' deltaWidth=
+' deltaAngle=
+DeltaAngle
+UTIL
+mFlip
+mInitialAngle
+totalCircumference=
+mAlignment
+CENTER_ALIGNED
+RIGHT_ALIGNED
+undefined
+.
+duplicating and creating 
+ from 
+.duplicateMovieClip
+mInitialDepth
+mInitialX
+math
+mRadius
+mUseHeading
+mInitialZ
+mZMultiplier
+mInitialY
+ letter -> 
+ currentAngle -> 
+ X:
+ Y:
+_x
+_heading
+mInitialLetterRotation
+_z
+mLayflat
+_pitch
+_y
+_rotation
+OnDrawLetter
+SetText(
+)
+mText
+mLetters
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  03                 maxstacksize (3)
+                         * code:
+0008  09                 sizecode (9)
+0009  1D000000           [1] getglobal  0   0        ; 954442511
+000D  41000001           [2] vararg     1   2      
+0011  9D400000           [3] getglobal  2   1        ; package
+0015  8E804001           [4] gettable   2   2   258  ; "seeall"
+0019  22408001           [5] call       0   3   1  
+001D  25000000           [6] closure    0   0      
+0021  20C00000           [7] setglobal  0   3        ; CreateCircularText
+0025  20000100           [8] setglobal  0   4        ; -264542484
+0029  1E008000           [9] return     0   1      
+                         * constants:
+002D  05                 sizek (5)
+002E  01                 const type 3
+002F  0FA3E338           const [0]: (954442511)
+0033  04                 const type 4
+0034  08                 string size (8)
+0035  7061636B61676500   "package\0"
+                         const [1]: "package"
+003D  04                 const type 4
+003E  07                 string size (7)
+003F  736565616C6C00     "seeall\0"
+                         const [2]: "seeall"
+0046  04                 const type 4
+0047  13                 string size (19)
+0048  4372656174654369+  "CreateCi"
+0050  7263756C61725465+  "rcularTe"
+0058  787400             "xt\0"
+                         const [3]: "CreateCircularText"
+005B  01                 const type 3
+005C  EC663BF0           const [4]: (-264542484)
+                         * functions:
+0060  01                 sizep (1)
+                         
+0061                     ** function [0] definition (level 2)
+                         ** start of function **
+0061  00                 string size (0)
+                         source name: (none)
+0062  03                 line defined (3)
+0063  A7                 last line defined (167)
+0064  01                 nups (0)
+0065  00                 numparams (2)
+0066  02                 is_vararg (0)
+0067  00                 maxstacksize (9)
+                         * code:
+0069  3E                 sizecode (62)
+006A  9D000000           [01] getglobal  2   0        ; 849075268
+006E  D9400000           [02] loadk      3   1        ; "EE.Interface.Utilities"
+0072  A2800001           [03] call       2   2   2  
+0076  CB400500           [04] newtable   3   0   21   ; array=0, hash=26
+007A  CC000081           [05] settable   3   258 0    ; "mMovie"
+007E  CC00C181           [06] settable   3   259 260  ; "mText" ""
+0082  0B010000           [07] newtable   4   0   0    ; array=0, hash=0
+0086  CC008182           [08] settable   3   261 4    ; "mLetters"
+008A  CC400083           [09] settable   3   262 1    ; "mClipName"
+008E  CC808083           [10] settable   3   263 2    ; "UTIL"
+0092  CC404284           [11] settable   3   264 265  ; "mInitialDepth" 0
+0096  1DC10200           [12] getglobal  4   11       ; -174740002
+009A  64014300           [13] self       5   0   268  ; 1803241227
+009E  D2018000           [14] move       7   1      
+00A2  19420300           [15] loadk      8   13       ; "_x"
+00A6  62010002           [16] call       5   4   0  
+00AA  22810000           [17] call       4   0   2  
+00AE  CC000185           [18] settable   3   266 4    ; "mInitialX"
+00B2  1DC10200           [19] getglobal  4   11       ; -174740002
+00B6  64014300           [20] self       5   0   268  ; 1803241227
+00BA  D2018000           [21] move       7   1      
+00BE  19C20300           [22] loadk      8   15       ; "_y"
+00C2  62010002           [23] call       5   4   0  
+00C6  22810000           [24] call       4   0   2  
+00CA  CC000187           [25] settable   3   270 4    ; "mInitialY"
+00CE  1DC10200           [26] getglobal  4   11       ; -174740002
+00D2  64014300           [27] self       5   0   268  ; 1803241227
+00D6  D2018000           [28] move       7   1      
+00DA  19420400           [29] loadk      8   17       ; "_z"
+00DE  62010002           [30] call       5   4   0  
+00E2  22810000           [31] call       4   0   2  
+00E6  CC000188           [32] settable   3   272 4    ; "mInitialZ"
+00EA  CCC04489           [33] settable   3   274 275  ; "mRadius" 0
+00EE  CC40458A           [34] settable   3   276 277  ; "mLetterSpacing" 0
+00F2  CCC0458B           [35] settable   3   278 279  ; "mInitialLetterRotation" 0
+00F6  CC40468C           [36] settable   3   280 281  ; "mInitialAngle" 0
+00FA  0EC14601           [37] gettable   4   2   283  ; "CENTER_ALIGNED"
+00FE  CC00018D           [38] settable   3   282 4    ; "mAlignment"
+0102  CC40478E           [39] settable   3   284 285  ; "mFlip" 0
+0106  CCC0478F           [40] settable   3   286 287  ; "PI" -7
+010A  CC404790           [41] settable   3   288 285  ; "mLayflat" 0
+010E  CC40C790           [42] settable   3   289 285  ; "mUseHeading" 0
+0112  CCC04891           [43] settable   3   290 291  ; "mZMultiplier" 0
+0116  19410900           [44] loadk      4   37       ; "CircularText("
+011A  52018000           [45] move       5   1      
+011E  99810900           [46] loadk      6   38       ; ")::"
+0122  02810102           [47] concat     4   4   6  
+0126  CC000192           [48] settable   3   292 4    ; "mPrefix"
+012A  25010000           [49] closure    4   0      
+012E  CC008193           [50] settable   3   295 4    ; "Print"
+0132  25410000           [51] closure    4   1      
+0136  CC000194           [52] settable   3   296 4    ; "GetHowManyLetters"
+013A  25810000           [53] closure    4   2      
+013E  CC008194           [54] settable   3   297 4    ; "ConvertPixelsInCircumferenceToAngle"
+0142  25C10000           [55] closure    4   3      
+0146  CC000195           [56] settable   3   298 4    ; "Redraw"
+014A  25010100           [57] closure    4   4      
+014E  CC008195           [58] settable   3   299 4    ; "SetText"
+0152  25410100           [59] closure    4   5      
+0156  CC000196           [60] settable   3   300 4    ; "RunForEachLetter"
+015A  DE000001           [61] return     3   2      
+015E  1E008000           [62] return     0   1      
+                         * constants:
+0162  2D                 sizek (45)
+0163  01                 const type 3
+0164  44DC9B32           const [0]: (849075268)
+0168  04                 const type 4
+0169  17                 string size (23)
+016A  45452E496E746572+  "EE.Inter"
+0172  666163652E557469+  "face.Uti"
+017A  6C697469657300     "lities\0"
+                         const [1]: "EE.Interface.Utilities"
+0181  04                 const type 4
+0182  07                 string size (7)
+0183  6D4D6F76696500     "mMovie\0"
+                         const [2]: "mMovie"
+018A  04                 const type 4
+018B  06                 string size (6)
+018C  6D5465787400       "mText\0"
+                         const [3]: "mText"
+0192  04                 const type 4
+0193  01                 string size (0)
+                         const [4]: ""
+0195  04                 const type 4
+0196  09                 string size (9)
+0197  6D4C657474657273+  "mLetters"
+019F  00                 "\0"
+                         const [5]: "mLetters"
+01A0  04                 const type 4
+01A1  0A                 string size (10)
+01A2  6D436C69704E616D+  "mClipNam"
+01AA  6500               "e\0"
+                         const [6]: "mClipName"
+01AC  04                 const type 4
+01AD  05                 string size (5)
+01AE  5554494C00         "UTIL\0"
+                         const [7]: "UTIL"
+01B3  04                 const type 4
+01B4  0E                 string size (14)
+01B5  6D496E697469616C+  "mInitial"
+01BD  446570746800       "Depth\0"
+                         const [8]: "mInitialDepth"
+01C3  03                 const type 3
+01C4  00007A44           const [9]: (0)
+01C8  04                 const type 4
+01C9  0A                 string size (10)
+01CA  6D496E697469616C+  "mInitial"
+01D2  5800               "X\0"
+                         const [10]: "mInitialX"
+01D4  01                 const type 3
+01D5  DEAD95F5           const [11]: (-174740002)
+01D9  01                 const type 3
+01DA  0B477B6B           const [12]: (1803241227)
+01DE  04                 const type 4
+01DF  03                 string size (3)
+01E0  5F7800             "_x\0"
+                         const [13]: "_x"
+01E3  04                 const type 4
+01E4  0A                 string size (10)
+01E5  6D496E697469616C+  "mInitial"
+01ED  5900               "Y\0"
+                         const [14]: "mInitialY"
+01EF  04                 const type 4
+01F0  03                 string size (3)
+01F1  5F7900             "_y\0"
+                         const [15]: "_y"
+01F4  04                 const type 4
+01F5  0A                 string size (10)
+01F6  6D496E697469616C+  "mInitial"
+01FE  5A00               "Z\0"
+                         const [16]: "mInitialZ"
+0200  04                 const type 4
+0201  03                 string size (3)
+0202  5F7A00             "_z\0"
+                         const [17]: "_z"
+0205  04                 const type 4
+0206  08                 string size (8)
+0207  6D52616469757300   "mRadius\0"
+                         const [18]: "mRadius"
+020F  03                 const type 3
+0210  00004843           const [19]: (0)
+0214  04                 const type 4
+0215  0F                 string size (15)
+0216  6D4C657474657253+  "mLetterS"
+021E  706163696E6700     "pacing\0"
+                         const [20]: "mLetterSpacing"
+0225  03                 const type 3
+0226  0000803F           const [21]: (0)
+022A  04                 const type 4
+022B  17                 string size (23)
+022C  6D496E697469616C+  "mInitial"
+0234  4C6574746572526F+  "LetterRo"
+023C  746174696F6E00     "tation\0"
+                         const [22]: "mInitialLetterRotation"
+0243  03                 const type 3
+0244  0000B442           const [23]: (0)
+0248  04                 const type 4
+0249  0E                 string size (14)
+024A  6D496E697469616C+  "mInitial"
+0252  416E676C6500       "Angle\0"
+                         const [24]: "mInitialAngle"
+0258  03                 const type 3
+0259  0000B4C2           const [25]: (0)
+025D  04                 const type 4
+025E  0B                 string size (11)
+025F  6D416C69676E6D65+  "mAlignme"
+0267  6E7400             "nt\0"
+                         const [26]: "mAlignment"
+026A  04                 const type 4
+026B  0F                 string size (15)
+026C  43454E5445525F41+  "CENTER_A"
+0274  4C49474E454400     "LIGNED\0"
+                         const [27]: "CENTER_ALIGNED"
+027B  04                 const type 4
+027C  06                 string size (6)
+027D  6D466C697000       "mFlip\0"
+                         const [28]: "mFlip"
+0283  01                 const type 3
+0284  00000000           const [29]: (0)
+0288  04                 const type 4
+0289  03                 string size (3)
+028A  504900             "PI\0"
+                         const [30]: "PI"
+028D  03                 const type 3
+028E  F90F4940           const [31]: (-7)
+0292  04                 const type 4
+0293  09                 string size (9)
+0294  6D4C6179666C6174+  "mLayflat"
+029C  00                 "\0"
+                         const [32]: "mLayflat"
+029D  04                 const type 4
+029E  0C                 string size (12)
+029F  6D55736548656164+  "mUseHead"
+02A7  696E6700           "ing\0"
+                         const [33]: "mUseHeading"
+02AB  04                 const type 4
+02AC  0D                 string size (13)
+02AD  6D5A4D756C746970+  "mZMultip"
+02B5  6C69657200         "lier\0"
+                         const [34]: "mZMultiplier"
+02BA  03                 const type 3
+02BB  0000A041           const [35]: (0)
+02BF  04                 const type 4
+02C0  08                 string size (8)
+02C1  6D50726566697800   "mPrefix\0"
+                         const [36]: "mPrefix"
+02C9  04                 const type 4
+02CA  0E                 string size (14)
+02CB  43697263756C6172+  "Circular"
+02D3  546578742800       "Text(\0"
+                         const [37]: "CircularText("
+02D9  04                 const type 4
+02DA  04                 string size (4)
+02DB  293A3A00           ")::\0"
+                         const [38]: ")::"
+02DF  04                 const type 4
+02E0  06                 string size (6)
+02E1  5072696E7400       "Print\0"
+                         const [39]: "Print"
+02E7  04                 const type 4
+02E8  12                 string size (18)
+02E9  476574486F774D61+  "GetHowMa"
+02F1  6E794C6574746572+  "nyLetter"
+02F9  7300               "s\0"
+                         const [40]: "GetHowManyLetters"
+02FB  04                 const type 4
+02FC  24                 string size (36)
+02FD  436F6E7665727450+  "ConvertP"
+0305  6978656C73496E43+  "ixelsInC"
+030D  697263756D666572+  "ircumfer"
+0315  656E6365546F416E+  "enceToAn"
+031D  676C6500           "gle\0"
+                         const [41]: "ConvertPixelsInCircumferenceToAngle"
+0321  04                 const type 4
+0322  07                 string size (7)
+0323  52656472617700     "Redraw\0"
+                         const [42]: "Redraw"
+032A  04                 const type 4
+032B  08                 string size (8)
+032C  5365745465787400   "SetText\0"
+                         const [43]: "SetText"
+0334  04                 const type 4
+0335  11                 string size (17)
+0336  52756E466F724561+  "RunForEa"
+033E  63684C6574746572+  "chLetter"
+0346  00                 "\0"
+                         const [44]: "RunForEachLetter"
+                         * functions:
+0347  06                 sizep (6)
+                         
+0348                     ** function [0] definition (level 3)
+                         ** start of function **
+0348  00                 string size (0)
+                         source name: (none)
+0349  1E                 line defined (30)
+034A  20                 last line defined (32)
+034B  00                 nups (0)
+034C  02                 numparams (2)
+034D  00                 is_vararg (0)
+034E  02                 maxstacksize (2)
+                         * code:
+034F  01                 sizecode (1)
+0350  1E008000           [1] return     0   1      
+                         * constants:
+0354  00                 sizek (0)
+                         * functions:
+0355  00                 sizep (0)
+                         * lines:
+0356  01                 sizelineinfo (1)
+                         [pc] (line)
+0357  20                 [1] (32)
+                         * locals:
+035B  00                 sizelocvars (0)
+                         * upvalues:
+035C  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+035D                     ** function [1] definition (level 3)
+                         ** start of function **
+035D  00                 string size (0)
+                         source name: (none)
+035E  23                 line defined (35)
+035F  25                 last line defined (37)
+0360  00                 nups (0)
+0361  01                 numparams (1)
+0362  00                 is_vararg (0)
+0363  03                 maxstacksize (3)
+                         * code:
+0364  06                 sizecode (6)
+0365  5D000000           [1] getglobal  1   0        ; string
+0369  4E40C000           [2] gettable   1   1   257  ; -965268854
+036D  8E804000           [3] gettable   2   0   258  ; "mText"
+0371  62800001           [4] call       1   2   2  
+0375  5E000001           [5] return     1   2      
+0379  1E008000           [6] return     0   1      
+                         * constants:
+037D  03                 sizek (3)
+037E  04                 const type 4
+037F  07                 string size (7)
+0380  737472696E6700     "string\0"
+                         const [0]: "string"
+0387  01                 const type 3
+0388  8A2A77C6           const [1]: (-965268854)
+038C  04                 const type 4
+038D  06                 string size (6)
+038E  6D5465787400       "mText\0"
+                         const [2]: "mText"
+                         * functions:
+0394  00                 sizep (0)
+                         * lines:
+0395  06                 sizelineinfo (6)
+                         [pc] (line)
+0396  24                 [1] (36)
+0397  00                 [2] (36)
+0398  00                 [3] (36)
+0399  00                 [4] (36)
+039A  24                 [5] (36)
+039B  00                 [6] (37)
+                         * locals:
+03AE  00                 sizelocvars (0)
+                         * upvalues:
+03AF  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+03B0                     ** function [2] definition (level 3)
+                         ** start of function **
+03B0  00                 string size (0)
+                         source name: (none)
+03B1  28                 line defined (40)
+03B2  2C                 last line defined (44)
+03B3  00                 nups (0)
+03B4  02                 numparams (2)
+03B5  00                 is_vararg (0)
+03B6  07                 maxstacksize (7)
+                         * code:
+03B7  0D                 sizecode (13)
+03B8  8E004000           [01] gettable   2   0   256  ; "PI"
+03BC  CE404000           [02] gettable   3   0   257  ; "mRadius"
+03C0  84C00001           [03] mul        2   2   3  
+03C4  84804001           [04] mul        2   2   258  ; 0
+03C8  DC808000           [05] div        3   1   2  
+03CC  0EC14000           [06] gettable   4   0   259  ; "UTIL"
+03D0  0E014102           [07] gettable   4   4   260  ; -1075800375
+03D4  4481C001           [08] mul        5   3   258  ; 0
+03D8  8E014000           [09] gettable   6   0   256  ; "PI"
+03DC  44818102           [10] mul        5   5   6  
+03E0  22810001           [11] call       4   2   2  
+03E4  1E010001           [12] return     4   2      
+03E8  1E008000           [13] return     0   1      
+                         * constants:
+03EC  05                 sizek (5)
+03ED  04                 const type 4
+03EE  03                 string size (3)
+03EF  504900             "PI\0"
+                         const [0]: "PI"
+03F2  04                 const type 4
+03F3  08                 string size (8)
+03F4  6D52616469757300   "mRadius\0"
+                         const [1]: "mRadius"
+03FC  03                 const type 3
+03FD  00000040           const [2]: (0)
+0401  04                 const type 4
+0402  05                 string size (5)
+0403  5554494C00         "UTIL\0"
+                         const [3]: "UTIL"
+0408  01                 const type 3
+0409  C996E0BF           const [4]: (-1075800375)
+                         * functions:
+040D  00                 sizep (0)
+                         * lines:
+040E  0D                 sizelineinfo (13)
+                         [pc] (line)
+040F  29                 [01] (41)
+0410  00                 [02] (41)
+0411  00                 [03] (41)
+0412  00                 [04] (41)
+0413  29                 [05] (42)
+0414  00                 [06] (43)
+0415  00                 [07] (43)
+0416  00                 [08] (43)
+0417  29                 [09] (43)
+0418  00                 [10] (43)
+0419  00                 [11] (43)
+041A  00                 [12] (43)
+041B  29                 [13] (44)
+                         * locals:
+0443  00                 sizelocvars (0)
+                         * upvalues:
+0444  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0445                     ** function [3] definition (level 3)
+                         ** start of function **
+0445  00                 string size (0)
+                         source name: (none)
+0446  2F                 line defined (47)
+0447  95                 last line defined (149)
+0448  01                 nups (0)
+0449  00                 numparams (1)
+044A  01                 is_vararg (0)
+044B  00                 maxstacksize (45)
+                         * code:
+044E  02                 sizecode (352)
+044F  64004000           [001] self       1   0   256  ; -1945964524
+0453  D9400000           [002] loadk      3   1        ; "Redraw()"
+0457  62408001           [003] call       1   3   1  
+045B  4E804000           [004] gettable   1   0   258  ; "mLetters"
+045F  4A008000           [005] len        1   1      
+0463  99C00000           [006] loadk      2   3        ; ""
+0467  D9000100           [007] loadk      3   4        ; 0
+046B  19010100           [008] loadk      4   4        ; 0
+046F  4D41C100           [009] sub        5   1   261  ; 0
+0473  99410100           [010] loadk      6   5        ; 0
+0477  10010680           [011] forprep    4   25       ; to [37]
+047B  CDC08100           [012] sub        3   1   7  
+047F  0E824000           [013] gettable   8   0   258  ; "mLetters"
+0483  0EC20004           [014] gettable   8   8   3  
+0487  8E804104           [015] gettable   2   8   262  ; "mClipName"
+048B  1DC20100           [016] getglobal  8   7        ; table
+048F  0E024204           [017] gettable   8   8   264  ; -843973282
+0493  4E824000           [018] gettable   9   0   258  ; "mLetters"
+0497  92028001           [019] move       10  3      
+049B  22428001           [020] call       8   3   1  
+049F  0E824100           [021] gettable   8   0   262  ; "mClipName"
+fail op	35
+04A3  63000201           [022] close      1  
+04A7  1A800180           [023] jmp        7            ; to [31]
+04AB  1D420200           [024] getglobal  8   9        ; -1939558487
+04AF  4E824200           [025] gettable   9   0   266  ; "mMovie"
+04B3  92020001           [026] move       10  2      
+04B7  D9C20200           [027] loadk      11  11       ; ".removeMovieClip"
+04BB  82C20205           [028] concat     10  10  11 
+04BF  22428001           [029] call       8   3   1  
+04C3  1A400180           [030] jmp        6            ; to [37]
+04C7  0E824200           [031] gettable   8   0   266  ; "mMovie"
+04CB  24024304           [032] self       8   8   268  ; 471456102
+04CF  92020001           [033] move       10  2      
+04D3  D9420300           [034] loadk      11  13       ; "_alpha"
+04D7  19030100           [035] loadk      12  4        ; 0
+04DB  22428002           [036] call       8   5   1  
+04DF  1441F97F           [037] forloop    4   -26      ; to [12] if loop
+04E3  0B020000           [038] newtable   8   0   0    ; array=0, hash=0
+04E7  0C000281           [039] settable   0   258 8    ; "mLetters"
+04EB  06020004           [040] loadnil    8   8      
+04EF  59020100           [041] loadk      9   4        ; 0
+04F3  8E824300           [042] gettable   10  0   270  ; "mText"
+04F7  DDC20300           [043] getglobal  11  15       ; string
+04FB  CE02C405           [044] gettable   11  11  272  ; -965268854
+04FF  12030005           [045] move       12  10     
+0503  E2820001           [046] call       11  2   2  
+fail op	21
+0507  15C00282           [047] concat     0   260 11 
+050B  1A400580           [048] jmp        22           ; to [71]
+fail op	21
+050F  1540C404           [049] concat     0   9   273
+0513  1AC00480           [050] jmp        20           ; to [71]
+0517  4342C104           [051] add        9   9   261  ; 0
+051B  DD820400           [052] getglobal  11  18       ; 1823837398
+051F  12030005           [053] move       12  10     
+0523  59030100           [054] loadk      13  4        ; 0
+0527  99430100           [055] loadk      14  5        ; 0
+052B  E2820002           [056] call       11  4   2  
+052F  12028005           [057] move       8   11     
+0533  DD820400           [058] getglobal  11  18       ; 1823837398
+0537  12030005           [059] move       12  10     
+053B  59C30400           [060] loadk      13  19       ; 0
+053F  E2828001           [061] call       11  3   2  
+0543  92028005           [062] move       10  11     
+0547  DDC20100           [063] getglobal  11  7        ; table
+054B  CE02C505           [064] gettable   11  11  276  ; -431682403
+054F  0E834000           [065] gettable   12  0   258  ; "mLetters"
+0553  4B830000           [066] newtable   13  0   2    ; array=0, hash=2
+0557  4C43828A           [067] settable   13  277 9    ; "Id"
+055B  4C03028B           [068] settable   13  278 8    ; "Letter"
+055F  E2428001           [069] call       11  3   1  
+0563  1AC0F87F           [070] jmp        -28          ; to [43]
+0567  CE824000           [071] gettable   11  0   258  ; "mLetters"
+056B  4A008005           [072] len        1   11     
+056F  D9C20000           [073] loadk      11  3        ; ""
+0573  19030100           [074] loadk      12  4        ; 0
+0577  59030100           [075] loadk      13  4        ; 0
+057B  99030100           [076] loadk      14  4        ; 0
+057F  D9030100           [077] loadk      15  4        ; 0
+0583  19040100           [078] loadk      16  4        ; 0
+0587  59440100           [079] loadk      17  5        ; 0
+058B  92048000           [080] move       18  1      
+058F  D9440100           [081] loadk      19  5        ; 0
+0593  50C40B80           [082] forprep    17  48       ; to [131]
+0597  4E854200           [083] gettable   21  0   266  ; "mMovie"
+059B  64C5C50A           [084] self       21  21  279  ; -2013161817
+059F  CE854100           [085] gettable   23  0   262  ; "mClipName"
+05A3  19060600           [086] loadk      24  24       ; "Tf"
+05A7  59460600           [087] loadk      25  25       ; "text"
+05AB  92068005           [088] move       26  11     
+05AF  D9860600           [089] loadk      27  26       ; " "
+05B3  82C6060D           [090] concat     26  26  27 
+05B7  62450003           [091] call       21  6   1  
+05BB  5DC50600           [092] getglobal  21  27       ; -174740002
+05BF  8E854200           [093] gettable   22  0   266  ; "mMovie"
+05C3  A405470B           [094] self       22  22  284  ; 1803241227
+05C7  0E864100           [095] gettable   24  0   262  ; "mClipName"
+05CB  59460700           [096] loadk      25  29       ; ".Tf"
+05CF  0246060C           [097] concat     24  24  25 
+05D3  59860700           [098] loadk      25  30       ; "textWidth"
+05D7  A2050002           [099] call       22  4   0  
+05DB  62850000           [100] call       21  0   2  
+05DF  9203800A           [101] move       14  21     
+05E3  4D030307           [102] sub        13  14  12 
+05E7  12030007           [103] move       12  14     
+05EB  64C54700           [104] self       21  0   287  ; 1105728355
+05EF  CE054800           [105] gettable   23  0   288  ; "mLetterSpacing"
+05F3  C345830B           [106] add        23  23  13 
+05F7  62858001           [107] call       21  3   2  
+05FB  D203800A           [108] move       15  21     
+05FF  03C40308           [109] add        16  16  15 
+0603  52058005           [110] move       21  11     
+0607  8E854000           [111] gettable   22  0   258  ; "mLetters"
+060B  8E05050B           [112] gettable   22  22  20 
+060F  8E85450B           [113] gettable   22  22  278  ; "Letter"
+0613  C282850A           [114] concat     11  21  22 
+0617  64054000           [115] self       21  0   256  ; -1945964524
+061B  D9450800           [116] loadk      23  33       ; "Calculating width '"
+061F  12068005           [117] move       24  11     
+0623  59860800           [118] loadk      25  34       ; "' deltaWidth="
+0627  9DC60800           [119] getglobal  26  35       ; -1615931716
+062B  D2060007           [120] move       27  14     
+062F  A2860001           [121] call       26  2   2  
+0633  D9060900           [122] loadk      27  36       ; "' deltaAngle="
+0637  1DC70800           [123] getglobal  28  35       ; -1615931716
+063B  52078007           [124] move       29  15     
+063F  22870001           [125] call       28  2   2  
+0643  C205870B           [126] concat     23  23  28 
+0647  62458001           [127] call       21  3   1  
+064B  4E854000           [128] gettable   21  0   258  ; "mLetters"
+064F  4E05850A           [129] gettable   21  21  20 
+0653  4CC58392           [130] settable   21  293 15   ; "DeltaAngle"
+0657  5484F37F           [131] forloop    17  -49      ; to [83] if loop
+065B  4E854900           [132] gettable   21  0   294  ; "UTIL"
+065F  4EC5C90A           [133] gettable   21  21  295  ; -132701534
+0663  8E054A00           [134] gettable   22  0   296  ; "mFlip"
+0667  D9450A00           [135] loadk      23  41       ; 0
+066B  19460100           [136] loadk      24  5        ; 0
+066F  62850002           [137] call       21  4   2  
+0673  8605000C           [138] loadnil    22  24     
+0677  4E864A00           [139] gettable   25  0   298  ; "mInitialAngle"
+067B  8E864000           [140] gettable   26  0   258  ; "mLetters"
+067F  8E46410D           [141] gettable   26  26  261  ; 0
+0683  8E46490D           [142] gettable   26  26  293  ; "DeltaAngle"
+0687  4D86860C           [143] sub        25  25  26 
+068B  A4064000           [144] self       26  0   256  ; -1945964524
+068F  19C70A00           [145] loadk      28  43       ; "totalCircumference="
+0693  52070008           [146] move       29  16     
+0697  0247070E           [147] concat     28  28  29 
+069B  A2468001           [148] call       26  3   1  
+069F  8E064B00           [149] gettable   26  0   300  ; "mAlignment"
+06A3  CE864900           [150] gettable   27  0   294  ; "UTIL"
+06A7  CE46CB0D           [151] gettable   27  27  301  ; "CENTER_ALIGNED"
+fail op	35
+06AB  23C0060D           [152] close      0  
+06AF  1AC00080           [153] jmp        4            ; to [158]
+06B3  84864B08           [154] mul        26  16  302  ; 0
+06B7  8446050D           [155] mul        26  26  21 
+06BB  4D86860C           [156] sub        25  25  26 
+06BF  1A800180           [157] jmp        7            ; to [165]
+06C3  8E064B00           [158] gettable   26  0   300  ; "mAlignment"
+06C7  CE864900           [159] gettable   27  0   294  ; "UTIL"
+06CB  CEC6CB0D           [160] gettable   27  27  303  ; "RIGHT_ALIGNED"
+fail op	35
+06CF  23C0060D           [161] close      0  
+06D3  1A400080           [162] jmp        2            ; to [165]
+06D7  84460508           [163] mul        26  16  21 
+06DB  4D86860C           [164] sub        25  25  26 
+06DF  9D060C00           [165] getglobal  26  48       ; 1672515847
+06E3  CE864000           [166] gettable   27  0   258  ; "mLetters"
+06E7  A2060101           [167] call       26  2   4  
+06EB  1A002D80           [168] jmp        181          ; to [350]
+fail op	35
+06EF  2340C10E           [169] close      0  
+06F3  1A400080           [170] jmp        2            ; to [173]
+06F7  8E804100           [171] gettable   2   0   262  ; "mClipName"
+06FB  1A800080           [172] jmp        3            ; to [176]
+06FF  CE874100           [173] gettable   31  0   262  ; "mClipName"
+0703  1208800E           [174] move       32  29     
+0707  8200880F           [175] concat     2   31  32 
+070B  CE874000           [176] gettable   31  0   258  ; "mLetters"
+070F  CE47870F           [177] gettable   31  31  29 
+0713  CC870083           [178] settable   31  262 2    ; "mClipName"
+0717  CE874200           [179] gettable   31  0   266  ; "mMovie"
+071B  E407C70F           [180] self       31  31  284  ; 1803241227
+071F  52080001           [181] move       33  2      
+0723  E2878001           [182] call       31  3   2  
+0727  1D480C00           [183] getglobal  32  49       ; 1074689893
+072B  5208800F           [184] move       33  31     
+072F  22880001           [185] call       32  2   2  
+0733  18480000           [186] test       32      1    ; to [188] if false
+0737  1A000180           [187] jmp        5            ; to [193]
+073B  1DC80800           [188] getglobal  32  35       ; -1615931716
+073F  5208800F           [189] move       33  31     
+0743  22880001           [190] call       32  2   2  
+fail op	35
+0747  23804C10           [191] close      0  
+074B  1A400680           [192] jmp        26           ; to [219]
+074F  1DC80C00           [193] getglobal  32  51       ; -773365605
+0753  59080D00           [194] loadk      33  52       ; "."
+0757  92080001           [195] move       34  2      
+075B  22888001           [196] call       32  3   2  
+075F  64084000           [197] self       33  0   256  ; -1945964524
+0763  D9480D00           [198] loadk      35  53       ; "duplicating and creating "
+0767  1DC90800           [199] getglobal  36  35       ; -1615931716
+076B  4A090010           [200] len        37  32     
+076F  4E490910           [201] gettable   37  32  37 
+0773  22890001           [202] call       36  2   2  
+0777  59890D00           [203] loadk      37  54       ; " from "
+077B  9DC90800           [204] getglobal  38  35       ; -1615931716
+077F  D2090001           [205] move       39  2      
+0783  A2890001           [206] call       38  2   2  
+0787  C2888911           [207] concat     35  35  38 
+078B  62488001           [208] call       33  3   1  
+078F  5D480200           [209] getglobal  33  9        ; -1939558487
+0793  8E884200           [210] gettable   34  0   266  ; "mMovie"
+0797  CE884100           [211] gettable   35  0   262  ; "mClipName"
+079B  19C90D00           [212] loadk      36  55       ; ".duplicateMovieClip"
+079F  C2088911           [213] concat     35  35  36 
+07A3  0A090010           [214] len        36  32     
+07A7  0E090910           [215] gettable   36  32  36 
+07AB  4E094E00           [216] gettable   37  0   312  ; "mInitialDepth"
+07AF  43498712           [217] add        37  37  29 
+07B3  62488002           [218] call       33  5   1  
+07B7  4E48490F           [219] gettable   33  30  293  ; "DeltaAngle"
+07BB  44488510           [220] mul        33  33  21 
+07BF  4346880C           [221] add        25  25  33 
+07C3  4E484E00           [222] gettable   33  0   313  ; "mInitialX"
+07C7  9D880E00           [223] getglobal  34  58       ; math
+07CB  8EC84E11           [224] gettable   34  34  315  ; -1775039999
+07CF  CE884900           [225] gettable   35  0   294  ; "UTIL"
+07D3  CE08CF11           [226] gettable   35  35  316  ; 17807441
+07D7  1209800C           [227] move       36  25     
+07DB  E2080001           [228] call       35  2   0  
+07DF  A2880000           [229] call       34  0   2  
+07E3  CE484F00           [230] gettable   35  0   317  ; "mRadius"
+07E7  84C80811           [231] mul        34  34  35 
+07EB  83858810           [232] add        22  33  34 
+07EF  4E884F00           [233] gettable   33  0   318  ; "mUseHeading"
+07F3  58080000           [234] test       33      0    ; to [236] if true
+07F7  1A400380           [235] jmp        14           ; to [250]
+07FB  4EC84F00           [236] gettable   33  0   319  ; "mInitialZ"
+07FF  9D880E00           [237] getglobal  34  58       ; math
+0803  8E085011           [238] gettable   34  34  320  ; -1153493898
+0807  CE884900           [239] gettable   35  0   294  ; "UTIL"
+080B  CE08CF11           [240] gettable   35  35  316  ; 17807441
+080F  1209800C           [241] move       36  25     
+0813  E2080001           [242] call       35  2   0  
+0817  A2880000           [243] call       34  0   2  
+081B  CE484F00           [244] gettable   35  0   317  ; "mRadius"
+081F  84C80811           [245] mul        34  34  35 
+0823  03868810           [246] add        24  33  34 
+0827  4E485000           [247] gettable   33  0   321  ; "mZMultiplier"
+082B  0446080C           [248] mul        24  24  33 
+082F  1A800280           [249] jmp        11           ; to [261]
+0833  4E885000           [250] gettable   33  0   322  ; "mInitialY"
+0837  9D880E00           [251] getglobal  34  58       ; math
+083B  8E085011           [252] gettable   34  34  320  ; -1153493898
+083F  CE884900           [253] gettable   35  0   294  ; "UTIL"
+0843  CE08CF11           [254] gettable   35  35  316  ; 17807441
+0847  1209800C           [255] move       36  25     
+084B  E2080001           [256] call       35  2   0  
+084F  A2880000           [257] call       34  0   2  
+0853  CE484F00           [258] gettable   35  0   317  ; "mRadius"
+0857  84C80811           [259] mul        34  34  35 
+085B  C3858810           [260] add        23  33  34 
+085F  64084000           [261] self       33  0   256  ; -1945964524
+0863  DDC80800           [262] getglobal  35  35       ; -1615931716
+0867  1209800E           [263] move       36  29     
+086B  E2880001           [264] call       35  2   2  
+086F  19C91000           [265] loadk      36  67       ; " letter -> "
+0873  5DC90800           [266] getglobal  37  35       ; -1615931716
+0877  8E89450F           [267] gettable   38  30  278  ; "Letter"
+087B  62890001           [268] call       37  2   2  
+087F  99091100           [269] loadk      38  68       ; " currentAngle -> "
+0883  DDC90800           [270] getglobal  39  35       ; -1615931716
+0887  120A800C           [271] move       40  25     
+088B  E2890001           [272] call       39  2   2  
+088F  194A1100           [273] loadk      40  69       ; " X:"
+0893  5DCA0800           [274] getglobal  41  35       ; -1615931716
+0897  920A000B           [275] move       42  22     
+089B  628A0001           [276] call       41  2   2  
+089F  998A1100           [277] loadk      42  70       ; " Y:"
+08A3  DDCA0800           [278] getglobal  43  35       ; -1615931716
+08A7  120B800B           [279] move       44  23     
+08AB  E28A0001           [280] call       43  2   2  
+08AF  C2C88A11           [281] concat     35  35  43 
+08B3  62488001           [282] call       33  3   1  
+08B7  4E884200           [283] gettable   33  0   266  ; "mMovie"
+08BB  6408C310           [284] self       33  33  268  ; 471456102
+08BF  D2080001           [285] move       35  2      
+08C3  19C91100           [286] loadk      36  71       ; "_x"
+08C7  5209000B           [287] move       37  22     
+08CB  62488002           [288] call       33  5   1  
+08CF  4E884F00           [289] gettable   33  0   318  ; "mUseHeading"
+08D3  58080000           [290] test       33      0    ; to [292] if true
+08D7  1AC00580           [291] jmp        24           ; to [316]
+08DB  4E884200           [292] gettable   33  0   266  ; "mMovie"
+08DF  6408C310           [293] self       33  33  268  ; 471456102
+08E3  D2080001           [294] move       35  2      
+08E7  19091200           [295] loadk      36  72       ; "_heading"
+08EB  4E495200           [296] gettable   37  0   329  ; "mInitialLetterRotation"
+08EF  8D4906A5           [297] sub        38  330 25   ; 0
+08F3  43898912           [298] add        37  37  38 
+08F7  62488002           [299] call       33  5   1  
+08FB  4E884200           [300] gettable   33  0   266  ; "mMovie"
+08FF  6408C310           [301] self       33  33  268  ; 471456102
+0903  D2080001           [302] move       35  2      
+0907  19C91200           [303] loadk      36  75       ; "_z"
+090B  5209000C           [304] move       37  24     
+090F  62488002           [305] call       33  5   1  
+0913  4E085300           [306] gettable   33  0   332  ; "mLayflat"
+0917  58080000           [307] test       33      0    ; to [309] if true
+091B  1AC00480           [308] jmp        20           ; to [329]
+091F  4E884200           [309] gettable   33  0   266  ; "mMovie"
+0923  6408C310           [310] self       33  33  268  ; 471456102
+0927  D2080001           [311] move       35  2      
+092B  19491300           [312] loadk      36  77       ; "_pitch"
+092F  59891300           [313] loadk      37  78       ; 0
+0933  62488002           [314] call       33  5   1  
+0937  1A000380           [315] jmp        13           ; to [329]
+093B  4E884200           [316] gettable   33  0   266  ; "mMovie"
+093F  6408C310           [317] self       33  33  268  ; 471456102
+0943  D2080001           [318] move       35  2      
+0947  19C91300           [319] loadk      36  79       ; "_y"
+094B  5209800B           [320] move       37  23     
+094F  62488002           [321] call       33  5   1  
+0953  4E884200           [322] gettable   33  0   266  ; "mMovie"
+0957  6408C310           [323] self       33  33  268  ; 471456102
+095B  D2080001           [324] move       35  2      
+095F  19091400           [325] loadk      36  80       ; "_rotation"
+0963  4E495200           [326] gettable   37  0   329  ; "mInitialLetterRotation"
+0967  43498612           [327] add        37  37  25 
+096B  62488002           [328] call       33  5   1  
+096F  4E884200           [329] gettable   33  0   266  ; "mMovie"
+0973  6408C310           [330] self       33  33  268  ; 471456102
+0977  D2080001           [331] move       35  2      
+097B  19490300           [332] loadk      36  13       ; "_alpha"
+097F  59491400           [333] loadk      37  81       ; 0
+0983  62488002           [334] call       33  5   1  
+0987  4E884200           [335] gettable   33  0   266  ; "mMovie"
+098B  6488D410           [336] self       33  33  338  ; -693657623
+098F  D2080001           [337] move       35  2      
+0993  19490700           [338] loadk      36  29       ; ".Tf"
+0997  C2088911           [339] concat     35  35  36 
+099B  19490600           [340] loadk      36  25       ; "text"
+099F  4E89450F           [341] gettable   37  30  278  ; "Letter"
+09A3  62488002           [342] call       33  5   1  
+09A7  4EC85400           [343] gettable   33  0   339  ; "OnDrawLetter"
+fail op	35
+09AB  6300D510           [344] close      1  
+09AF  1AC00080           [345] jmp        4            ; to [350]
+09B3  64485500           [346] self       33  0   341  ; 863223067
+09B7  CE884000           [347] gettable   35  0   258  ; "mLetters"
+09BB  CE488711           [348] gettable   35  35  29 
+09BF  62488001           [349] call       33  3   1  
+09C3  96860000           [350] tforloop   26      2    ; to [352] if exit
+09C7  1A00D27F           [351] jmp        -183         ; to [169]
+09CB  1E008000           [352] return     0   1      
+                         * constants:
+09CF  56                 sizek (86)
+09D0  01                 const type 3
+09D1  14F0028C           const [0]: (-1945964524)
+09D5  04                 const type 4
+09D6  09                 string size (9)
+09D7  5265647261772829+  "Redraw()"
+09DF  00                 "\0"
+                         const [1]: "Redraw()"
+09E0  04                 const type 4
+09E1  09                 string size (9)
+09E2  6D4C657474657273+  "mLetters"
+09EA  00                 "\0"
+                         const [2]: "mLetters"
+09EB  04                 const type 4
+09EC  01                 string size (0)
+                         const [3]: ""
+09EE  03                 const type 3
+09EF  00000000           const [4]: (0)
+09F3  03                 const type 3
+09F4  0000803F           const [5]: (0)
+09F8  04                 const type 4
+09F9  0A                 string size (10)
+09FA  6D436C69704E616D+  "mClipNam"
+0A02  6500               "e\0"
+                         const [6]: "mClipName"
+0A04  04                 const type 4
+0A05  06                 string size (6)
+0A06  7461626C6500       "table\0"
+                         const [7]: "table"
+0A0C  01                 const type 3
+0A0D  5EFDB1CD           const [8]: (-843973282)
+0A11  01                 const type 3
+0A12  A9AF648C           const [9]: (-1939558487)
+0A16  04                 const type 4
+0A17  07                 string size (7)
+0A18  6D4D6F76696500     "mMovie\0"
+                         const [10]: "mMovie"
+0A1F  04                 const type 4
+0A20  11                 string size (17)
+0A21  2E72656D6F76654D+  ".removeM"
+0A29  6F766965436C6970+  "ovieClip"
+0A31  00                 "\0"
+                         const [11]: ".removeMovieClip"
+0A32  01                 const type 3
+0A33  66D9191C           const [12]: (471456102)
+0A37  04                 const type 4
+0A38  07                 string size (7)
+0A39  5F616C70686100     "_alpha\0"
+                         const [13]: "_alpha"
+0A40  04                 const type 4
+0A41  06                 string size (6)
+0A42  6D5465787400       "mText\0"
+                         const [14]: "mText"
+0A48  04                 const type 4
+0A49  07                 string size (7)
+0A4A  737472696E6700     "string\0"
+                         const [15]: "string"
+0A51  01                 const type 3
+0A52  8A2A77C6           const [16]: (-965268854)
+0A56  03                 const type 3
+0A57  00004842           const [17]: (0)
+0A5B  01                 const type 3
+0A5C  D68CB56C           const [18]: (1823837398)
+0A60  03                 const type 3
+0A61  00000040           const [19]: (0)
+0A65  01                 const type 3
+0A66  9D0C45E6           const [20]: (-431682403)
+0A6A  04                 const type 4
+0A6B  03                 string size (3)
+0A6C  496400             "Id\0"
+                         const [21]: "Id"
+0A6F  04                 const type 4
+0A70  07                 string size (7)
+0A71  4C657474657200     "Letter\0"
+                         const [22]: "Letter"
+0A78  01                 const type 3
+0A79  A7960188           const [23]: (-2013161817)
+0A7D  04                 const type 4
+0A7E  03                 string size (3)
+0A7F  546600             "Tf\0"
+                         const [24]: "Tf"
+0A82  04                 const type 4
+0A83  05                 string size (5)
+0A84  7465787400         "text\0"
+                         const [25]: "text"
+0A89  04                 const type 4
+0A8A  02                 string size (2)
+0A8B  2000               " \0"
+                         const [26]: " "
+0A8D  01                 const type 3
+0A8E  DEAD95F5           const [27]: (-174740002)
+0A92  01                 const type 3
+0A93  0B477B6B           const [28]: (1803241227)
+0A97  04                 const type 4
+0A98  04                 string size (4)
+0A99  2E546600           ".Tf\0"
+                         const [29]: ".Tf"
+0A9D  04                 const type 4
+0A9E  0A                 string size (10)
+0A9F  7465787457696474+  "textWidt"
+0AA7  6800               "h\0"
+                         const [30]: "textWidth"
+0AA9  01                 const type 3
+0AAA  6313E841           const [31]: (1105728355)
+0AAE  04                 const type 4
+0AAF  0F                 string size (15)
+0AB0  6D4C657474657253+  "mLetterS"
+0AB8  706163696E6700     "pacing\0"
+                         const [32]: "mLetterSpacing"
+0ABF  04                 const type 4
+0AC0  14                 string size (20)
+0AC1  43616C63756C6174+  "Calculat"
+0AC9  696E672077696474+  "ing widt"
+0AD1  68202700           "h '\0"
+                         const [33]: "Calculating width '"
+0AD5  04                 const type 4
+0AD6  0E                 string size (14)
+0AD7  272064656C746157+  "' deltaW"
+0ADF  696474683D00       "idth=\0"
+                         const [34]: "' deltaWidth="
+0AE5  01                 const type 3
+0AE6  BCD6AE9F           const [35]: (-1615931716)
+0AEA  04                 const type 4
+0AEB  0E                 string size (14)
+0AEC  272064656C746141+  "' deltaA"
+0AF4  6E676C653D00       "ngle=\0"
+                         const [36]: "' deltaAngle="
+0AFA  04                 const type 4
+0AFB  0B                 string size (11)
+0AFC  44656C7461416E67+  "DeltaAng"
+0B04  6C6500             "le\0"
+                         const [37]: "DeltaAngle"
+0B07  04                 const type 4
+0B08  05                 string size (5)
+0B09  5554494C00         "UTIL\0"
+                         const [38]: "UTIL"
+0B0E  01                 const type 3
+0B0F  A22217F8           const [39]: (-132701534)
+0B13  04                 const type 4
+0B14  06                 string size (6)
+0B15  6D466C697000       "mFlip\0"
+                         const [40]: "mFlip"
+0B1B  03                 const type 3
+0B1C  000080BF           const [41]: (0)
+0B20  04                 const type 4
+0B21  0E                 string size (14)
+0B22  6D496E697469616C+  "mInitial"
+0B2A  416E676C6500       "Angle\0"
+                         const [42]: "mInitialAngle"
+0B30  04                 const type 4
+0B31  14                 string size (20)
+0B32  746F74616C436972+  "totalCir"
+0B3A  63756D666572656E+  "cumferen"
+0B42  63653D00           "ce=\0"
+                         const [43]: "totalCircumference="
+0B46  04                 const type 4
+0B47  0B                 string size (11)
+0B48  6D416C69676E6D65+  "mAlignme"
+0B50  6E7400             "nt\0"
+                         const [44]: "mAlignment"
+0B53  04                 const type 4
+0B54  0F                 string size (15)
+0B55  43454E5445525F41+  "CENTER_A"
+0B5D  4C49474E454400     "LIGNED\0"
+                         const [45]: "CENTER_ALIGNED"
+0B64  03                 const type 3
+0B65  0000003F           const [46]: (0)
+0B69  04                 const type 4
+0B6A  0E                 string size (14)
+0B6B  52494748545F414C+  "RIGHT_AL"
+0B73  49474E454400       "IGNED\0"
+                         const [47]: "RIGHT_ALIGNED"
+0B79  01                 const type 3
+0B7A  0791B063           const [48]: (1672515847)
+0B7E  01                 const type 3
+0B7F  65770E40           const [49]: (1074689893)
+0B83  04                 const type 4
+0B84  0A                 string size (10)
+0B85  756E646566696E65+  "undefine"
+0B8D  6400               "d\0"
+                         const [50]: "undefined"
+0B8F  01                 const type 3
+0B90  9B60E7D1           const [51]: (-773365605)
+0B94  04                 const type 4
+0B95  02                 string size (2)
+0B96  2E00               ".\0"
+                         const [52]: "."
+0B98  04                 const type 4
+0B99  1A                 string size (26)
+0B9A  6475706C69636174+  "duplicat"
+0BA2  696E6720616E6420+  "ing and "
+0BAA  6372656174696E67+  "creating"
+0BB2  2000               " \0"
+                         const [53]: "duplicating and creating "
+0BB4  04                 const type 4
+0BB5  07                 string size (7)
+0BB6  2066726F6D2000     " from \0"
+                         const [54]: " from "
+0BBD  04                 const type 4
+0BBE  14                 string size (20)
+0BBF  2E6475706C696361+  ".duplica"
+0BC7  74654D6F76696543+  "teMovieC"
+0BCF  6C697000           "lip\0"
+                         const [55]: ".duplicateMovieClip"
+0BD3  04                 const type 4
+0BD4  0E                 string size (14)
+0BD5  6D496E697469616C+  "mInitial"
+0BDD  446570746800       "Depth\0"
+                         const [56]: "mInitialDepth"
+0BE3  04                 const type 4
+0BE4  0A                 string size (10)
+0BE5  6D496E697469616C+  "mInitial"
+0BED  5800               "X\0"
+                         const [57]: "mInitialX"
+0BEF  04                 const type 4
+0BF0  05                 string size (5)
+0BF1  6D61746800         "math\0"
+                         const [58]: "math"
+0BF6  01                 const type 3
+0BF7  010A3396           const [59]: (-1775039999)
+0BFB  01                 const type 3
+0BFC  51B80F01           const [60]: (17807441)
+0C00  04                 const type 4
+0C01  08                 string size (8)
+0C02  6D52616469757300   "mRadius\0"
+                         const [61]: "mRadius"
+0C0A  04                 const type 4
+0C0B  0C                 string size (12)
+0C0C  6D55736548656164+  "mUseHead"
+0C14  696E6700           "ing\0"
+                         const [62]: "mUseHeading"
+0C18  04                 const type 4
+0C19  0A                 string size (10)
+0C1A  6D496E697469616C+  "mInitial"
+0C22  5A00               "Z\0"
+                         const [63]: "mInitialZ"
+0C24  01                 const type 3
+0C25  76143FBB           const [64]: (-1153493898)
+0C29  04                 const type 4
+0C2A  0D                 string size (13)
+0C2B  6D5A4D756C746970+  "mZMultip"
+0C33  6C69657200         "lier\0"
+                         const [65]: "mZMultiplier"
+0C38  04                 const type 4
+0C39  0A                 string size (10)
+0C3A  6D496E697469616C+  "mInitial"
+0C42  5900               "Y\0"
+                         const [66]: "mInitialY"
+0C44  04                 const type 4
+0C45  0C                 string size (12)
+0C46  206C657474657220+  " letter "
+0C4E  2D3E2000           "-> \0"
+                         const [67]: " letter -> "
+0C52  04                 const type 4
+0C53  12                 string size (18)
+0C54  2063757272656E74+  " current"
+0C5C  416E676C65202D3E+  "Angle ->"
+0C64  2000               " \0"
+                         const [68]: " currentAngle -> "
+0C66  04                 const type 4
+0C67  04                 string size (4)
+0C68  20583A00           " X:\0"
+                         const [69]: " X:"
+0C6C  04                 const type 4
+0C6D  04                 string size (4)
+0C6E  20593A00           " Y:\0"
+                         const [70]: " Y:"
+0C72  04                 const type 4
+0C73  03                 string size (3)
+0C74  5F7800             "_x\0"
+                         const [71]: "_x"
+0C77  04                 const type 4
+0C78  09                 string size (9)
+0C79  5F68656164696E67+  "_heading"
+0C81  00                 "\0"
+                         const [72]: "_heading"
+0C82  04                 const type 4
+0C83  17                 string size (23)
+0C84  6D496E697469616C+  "mInitial"
+0C8C  4C6574746572526F+  "LetterRo"
+0C94  746174696F6E00     "tation\0"
+                         const [73]: "mInitialLetterRotation"
+0C9B  03                 const type 3
+0C9C  00003443           const [74]: (0)
+0CA0  04                 const type 4
+0CA1  03                 string size (3)
+0CA2  5F7A00             "_z\0"
+                         const [75]: "_z"
+0CA5  04                 const type 4
+0CA6  09                 string size (9)
+0CA7  6D4C6179666C6174+  "mLayflat"
+0CAF  00                 "\0"
+                         const [76]: "mLayflat"
+0CB0  04                 const type 4
+0CB1  07                 string size (7)
+0CB2  5F706974636800     "_pitch\0"
+                         const [77]: "_pitch"
+0CB9  03                 const type 3
+0CBA  0000B4C2           const [78]: (0)
+0CBE  04                 const type 4
+0CBF  03                 string size (3)
+0CC0  5F7900             "_y\0"
+                         const [79]: "_y"
+0CC3  04                 const type 4
+0CC4  0A                 string size (10)
+0CC5  5F726F746174696F+  "_rotatio"
+0CCD  6E00               "n\0"
+                         const [80]: "_rotation"
+0CCF  03                 const type 3
+0CD0  0000C842           const [81]: (0)
+0CD4  01                 const type 3
+0CD5  E99FA7D6           const [82]: (-693657623)
+0CD9  04                 const type 4
+0CDA  0D                 string size (13)
+0CDB  4F6E447261774C65+  "OnDrawLe"
+0CE3  7474657200         "tter\0"
+                         const [83]: "OnDrawLetter"
+0CE8  00                 const type 0
+                         const [84]: nil
+0CE9  01                 const type 3
+0CEA  1BBD7333           const [85]: (863223067)
+                         * functions:
+0CEE  00                 sizep (0)
+                         * lines:
+0CF0  02                 sizelineinfo (352)
+                         [pc] (line)
+0CF1  30                 [001] (48)
+0CF2  00                 [002] (48)
+0CF3  00                 [003] (48)
+0CF4  00                 [004] (50)
+0CF5  30                 [005] (50)
+0CF6  00                 [006] (51)
+0CF7  00                 [007] (52)
+0CF8  00                 [008] (53)
+0CF9  30                 [009] (53)
+0CFA  00                 [010] (53)
+0CFB  00                 [011] (53)
+0CFC  00                 [012] (54)
+0CFD  32                 [013] (55)
+0CFE  00                 [014] (55)
+0CFF  00                 [015] (55)
+0D00  00                 [016] (56)
+0D01  32                 [017] (56)
+0D02  00                 [018] (56)
+0D03  00                 [019] (56)
+0D04  00                 [020] (56)
+0D05  33                 [021] (57)
+0D06  00                 [022] (57)
+0D07  00                 [023] (57)
+0D08  00                 [024] (58)
+0D09  34                 [025] (58)
+0D0A  00                 [026] (58)
+0D0B  00                 [027] (58)
+0D0C  00                 [028] (58)
+0D0D  35                 [029] (58)
+0D0E  00                 [030] (58)
+0D0F  00                 [031] (60)
+0D10  00                 [032] (60)
+0D11  35                 [033] (60)
+0D12  00                 [034] (60)
+0D13  00                 [035] (60)
+0D14  00                 [036] (60)
+0D15  35                 [037] (53)
+0D16  00                 [038] (65)
+0D17  00                 [039] (65)
+0D18  00                 [040] (66)
+0D19  35                 [041] (67)
+0D1A  00                 [042] (68)
+0D1B  00                 [043] (69)
+0D1C  00                 [044] (69)
+0D1D  36                 [045] (69)
+0D1E  00                 [046] (69)
+0D1F  00                 [047] (69)
+0D20  00                 [048] (69)
+0D21  37                 [049] (69)
+0D22  00                 [050] (69)
+0D23  00                 [051] (70)
+0D24  00                 [052] (71)
+0D25  37                 [053] (71)
+0D26  00                 [054] (71)
+0D27  00                 [055] (71)
+0D28  00                 [056] (71)
+0D29  37                 [057] (71)
+0D2A  00                 [058] (72)
+0D2B  00                 [059] (72)
+0D2C  00                 [060] (72)
+0D2D  38                 [061] (72)
+0D2E  00                 [062] (72)
+0D2F  00                 [063] (73)
+0D30  00                 [064] (73)
+0D31  38                 [065] (73)
+0D32  00                 [066] (73)
+0D33  00                 [067] (73)
+0D34  00                 [068] (73)
+0D35  38                 [069] (73)
+0D36  00                 [070] (73)
+0D37  00                 [071] (76)
+0D38  00                 [072] (76)
+0D39  38                 [073] (79)
+0D3A  00                 [074] (80)
+0D3B  00                 [075] (81)
+0D3C  00                 [076] (82)
+0D3D  38                 [077] (83)
+0D3E  00                 [078] (84)
+0D3F  00                 [079] (85)
+0D40  00                 [080] (85)
+0D41  39                 [081] (85)
+0D42  00                 [082] (85)
+0D43  00                 [083] (86)
+0D44  00                 [084] (86)
+0D45  39                 [085] (86)
+0D46  00                 [086] (86)
+0D47  00                 [087] (86)
+0D48  00                 [088] (86)
+0D49  39                 [089] (86)
+0D4A  00                 [090] (86)
+0D4B  00                 [091] (86)
+0D4C  00                 [092] (87)
+0D4D  3A                 [093] (87)
+0D4E  00                 [094] (87)
+0D4F  00                 [095] (87)
+0D50  00                 [096] (87)
+0D51  3A                 [097] (87)
+0D52  00                 [098] (87)
+0D53  00                 [099] (87)
+0D54  00                 [100] (87)
+0D55  3A                 [101] (87)
+0D56  00                 [102] (88)
+0D57  00                 [103] (89)
+0D58  00                 [104] (90)
+0D59  3A                 [105] (90)
+0D5A  00                 [106] (90)
+0D5B  00                 [107] (90)
+0D5C  00                 [108] (90)
+0D5D  3A                 [109] (91)
+0D5E  00                 [110] (93)
+0D5F  00                 [111] (93)
+0D60  00                 [112] (93)
+0D61  3A                 [113] (93)
+0D62  00                 [114] (93)
+0D63  00                 [115] (94)
+0D64  00                 [116] (94)
+0D65  3A                 [117] (94)
+0D66  00                 [118] (94)
+0D67  00                 [119] (94)
+0D68  00                 [120] (94)
+0D69  3C                 [121] (94)
+0D6A  00                 [122] (94)
+0D6B  00                 [123] (94)
+0D6C  00                 [124] (94)
+0D6D  3C                 [125] (94)
+0D6E  00                 [126] (94)
+0D6F  00                 [127] (94)
+0D70  00                 [128] (95)
+0D71  3C                 [129] (95)
+0D72  00                 [130] (95)
+0D73  00                 [131] (85)
+0D74  00                 [132] (98)
+0D75  3C                 [133] (98)
+0D76  00                 [134] (98)
+0D77  00                 [135] (98)
+0D78  00                 [136] (98)
+0D79  3C                 [137] (98)
+0D7A  00                 [138] (99)
+0D7B  00                 [139] (102)
+0D7C  00                 [140] (102)
+0D7D  3C                 [141] (102)
+0D7E  00                 [142] (102)
+0D7F  00                 [143] (102)
+0D80  00                 [144] (103)
+0D81  35                 [145] (103)
+0D82  00                 [146] (103)
+0D83  00                 [147] (103)
+0D84  00                 [148] (103)
+0D85  41                 [149] (104)
+0D86  00                 [150] (104)
+0D87  00                 [151] (104)
+0D88  00                 [152] (104)
+0D89  41                 [153] (104)
+0D8A  00                 [154] (105)
+0D8B  00                 [155] (105)
+0D8C  00                 [156] (105)
+0D8D  42                 [157] (105)
+0D8E  00                 [158] (106)
+0D8F  00                 [159] (106)
+0D90  00                 [160] (106)
+0D91  43                 [161] (106)
+0D92  00                 [162] (106)
+0D93  00                 [163] (107)
+0D94  00                 [164] (107)
+0D95  44                 [165] (109)
+0D96  00                 [166] (109)
+0D97  00                 [167] (109)
+0D98  00                 [168] (109)
+0D99  45                 [169] (110)
+0D9A  00                 [170] (110)
+0D9B  00                 [171] (111)
+0D9C  00                 [172] (111)
+0D9D  45                 [173] (113)
+0D9E  00                 [174] (113)
+0D9F  00                 [175] (113)
+0DA0  00                 [176] (115)
+0DA1  45                 [177] (115)
+0DA2  00                 [178] (115)
+0DA3  00                 [179] (116)
+0DA4  00                 [180] (116)
+0DA5  45                 [181] (116)
+0DA6  00                 [182] (116)
+0DA7  00                 [183] (117)
+0DA8  00                 [184] (117)
+0DA9  45                 [185] (117)
+0DAA  00                 [186] (117)
+0DAB  00                 [187] (117)
+0DAC  00                 [188] (117)
+0DAD  45                 [189] (117)
+0DAE  00                 [190] (117)
+0DAF  00                 [191] (117)
+0DB0  00                 [192] (117)
+0DB1  45                 [193] (118)
+0DB2  00                 [194] (118)
+0DB3  00                 [195] (118)
+0DB4  00                 [196] (118)
+0DB5  45                 [197] (119)
+0DB6  00                 [198] (119)
+0DB7  00                 [199] (119)
+0DB8  00                 [200] (119)
+0DB9  46                 [201] (119)
+0DBA  00                 [202] (119)
+0DBB  00                 [203] (119)
+0DBC  00                 [204] (119)
+0DBD  47                 [205] (119)
+0DBE  00                 [206] (119)
+0DBF  00                 [207] (119)
+0DC0  00                 [208] (119)
+0DC1  47                 [209] (120)
+0DC2  00                 [210] (120)
+0DC3  00                 [211] (120)
+0DC4  00                 [212] (120)
+0DC5  47                 [213] (120)
+0DC6  00                 [214] (120)
+0DC7  00                 [215] (120)
+0DC8  00                 [216] (120)
+0DC9  47                 [217] (120)
+0DCA  00                 [218] (120)
+0DCB  00                 [219] (122)
+0DCC  00                 [220] (122)
+0DCD  47                 [221] (122)
+0DCE  00                 [222] (123)
+0DCF  00                 [223] (123)
+0DD0  00                 [224] (123)
+0DD1  47                 [225] (123)
+0DD2  00                 [226] (123)
+0DD3  00                 [227] (123)
+0DD4  00                 [228] (123)
+0DD5  48                 [229] (123)
+0DD6  00                 [230] (123)
+0DD7  00                 [231] (123)
+0DD8  00                 [232] (123)
+0DD9  48                 [233] (124)
+0DDA  00                 [234] (124)
+0DDB  00                 [235] (124)
+0DDC  00                 [236] (125)
+0DDD  48                 [237] (125)
+0DDE  00                 [238] (125)
+0DDF  00                 [239] (125)
+0DE0  00                 [240] (125)
+0DE1  48                 [241] (125)
+0DE2  00                 [242] (125)
+0DE3  00                 [243] (125)
+0DE4  00                 [244] (125)
+0DE5  48                 [245] (125)
+0DE6  00                 [246] (125)
+0DE7  00                 [247] (126)
+0DE8  00                 [248] (126)
+0DE9  49                 [249] (126)
+0DEA  00                 [250] (-128)
+0DEB  00                 [251] (-128)
+0DEC  00                 [252] (-128)
+0DED  49                 [253] (-128)
+0DEE  00                 [254] (-128)
+0DEF  00                 [255] (-128)
+0DF0  00                 [256] (-128)
+0DF1  49                 [257] (-128)
+0DF2  00                 [258] (-128)
+0DF3  00                 [259] (-128)
+0DF4  00                 [260] (-128)
+0DF5  49                 [261] (-125)
+0DF6  00                 [262] (-125)
+0DF7  00                 [263] (-125)
+0DF8  00                 [264] (-125)
+0DF9  49                 [265] (-125)
+0DFA  00                 [266] (-125)
+0DFB  00                 [267] (-125)
+0DFC  00                 [268] (-125)
+0DFD  49                 [269] (-125)
+0DFE  00                 [270] (-125)
+0DFF  00                 [271] (-125)
+0E00  00                 [272] (-125)
+0E01  49                 [273] (-125)
+0E02  00                 [274] (-125)
+0E03  00                 [275] (-125)
+0E04  00                 [276] (-125)
+0E05  49                 [277] (-125)
+0E06  00                 [278] (-125)
+0E07  00                 [279] (-125)
+0E08  00                 [280] (-125)
+0E09  4C                 [281] (-125)
+0E0A  00                 [282] (-125)
+0E0B  00                 [283] (-124)
+0E0C  00                 [284] (-124)
+0E0D  4C                 [285] (-124)
+0E0E  00                 [286] (-124)
+0E0F  00                 [287] (-124)
+0E10  00                 [288] (-124)
+0E11  4F                 [289] (-123)
+0E12  00                 [290] (-123)
+0E13  00                 [291] (-123)
+0E14  00                 [292] (-122)
+0E15  50                 [293] (-122)
+0E16  00                 [294] (-122)
+0E17  00                 [295] (-122)
+0E18  00                 [296] (-122)
+0E19  51                 [297] (-122)
+0E1A  00                 [298] (-122)
+0E1B  00                 [299] (-122)
+0E1C  00                 [300] (-121)
+0E1D  52                 [301] (-121)
+0E1E  00                 [302] (-121)
+0E1F  00                 [303] (-121)
+0E20  00                 [304] (-121)
+0E21  53                 [305] (-121)
+0E22  00                 [306] (-120)
+0E23  00                 [307] (-120)
+0E24  00                 [308] (-120)
+0E25  54                 [309] (-119)
+0E26  00                 [310] (-119)
+0E27  00                 [311] (-119)
+0E28  00                 [312] (-119)
+0E29  55                 [313] (-119)
+0E2A  00                 [314] (-119)
+0E2B  00                 [315] (-118)
+0E2C  00                 [316] (-116)
+0E2D  55                 [317] (-116)
+0E2E  00                 [318] (-116)
+0E2F  00                 [319] (-116)
+0E30  00                 [320] (-116)
+0E31  55                 [321] (-116)
+0E32  00                 [322] (-115)
+0E33  00                 [323] (-115)
+0E34  00                 [324] (-115)
+0E35  55                 [325] (-115)
+0E36  00                 [326] (-115)
+0E37  00                 [327] (-115)
+0E38  00                 [328] (-115)
+0E39  56                 [329] (-113)
+0E3A  00                 [330] (-113)
+0E3B  00                 [331] (-113)
+0E3C  00                 [332] (-113)
+0E3D  56                 [333] (-113)
+0E3E  00                 [334] (-113)
+0E3F  00                 [335] (-112)
+0E40  00                 [336] (-112)
+0E41  56                 [337] (-112)
+0E42  00                 [338] (-112)
+0E43  00                 [339] (-112)
+0E44  00                 [340] (-112)
+0E45  56                 [341] (-112)
+0E46  00                 [342] (-112)
+0E47  00                 [343] (-111)
+0E48  00                 [344] (-111)
+0E49  56                 [345] (-111)
+0E4A  00                 [346] (-110)
+0E4B  00                 [347] (-110)
+0E4C  00                 [348] (-110)
+0E4D  56                 [349] (-110)
+0E4E  00                 [350] (109)
+0E4F  00                 [351] (-109)
+0E50  00                 [352] (-107)
+                         * locals:
+1271  00                 sizelocvars (0)
+                         * upvalues:
+1272  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+1273                     ** function [4] definition (level 3)
+                         ** start of function **
+1273  00                 string size (0)
+                         source name: (none)
+1275  01                 line defined (152)
+1276  9C                 last line defined (156)
+1277  01                 nups (0)
+1278  00                 numparams (2)
+1279  02                 is_vararg (0)
+127A  00                 maxstacksize (7)
+                         * code:
+127C  0A                 sizecode (10)
+127D  A4004000           [01] self       2   0   256  ; -1945964524
+1281  19410000           [02] loadk      4   1        ; "SetText("
+1285  52018000           [03] move       5   1      
+1289  99810000           [04] loadk      6   2        ; ")"
+128D  02810102           [05] concat     4   4   6  
+1291  A2408001           [06] call       2   3   1  
+1295  0C408081           [07] settable   0   259 1    ; "mText"
+1299  A4004100           [08] self       2   0   260  ; 1685109492
+129D  A2400001           [09] call       2   2   1  
+12A1  1E008000           [10] return     0   1      
+                         * constants:
+12A5  05                 sizek (5)
+12A6  01                 const type 3
+12A7  14F0028C           const [0]: (-1945964524)
+12AB  04                 const type 4
+12AC  09                 string size (9)
+12AD  5365745465787428+  "SetText("
+12B5  00                 "\0"
+                         const [1]: "SetText("
+12B6  04                 const type 4
+12B7  02                 string size (2)
+12B8  2900               ")\0"
+                         const [2]: ")"
+12BA  04                 const type 4
+12BB  06                 string size (6)
+12BC  6D5465787400       "mText\0"
+                         const [3]: "mText"
+12C2  01                 const type 3
+12C3  F4BA7064           const [4]: (1685109492)
+                         * functions:
+12C7  00                 sizep (0)
+                         * lines:
+12C8  0A                 sizelineinfo (10)
+                         [pc] (line)
+12C9  99                 [01] (-103)
+12CA  00                 [02] (-103)
+12CB  00                 [03] (-103)
+12CC  00                 [04] (-103)
+12CD  99                 [05] (-103)
+12CE  00                 [06] (-103)
+12CF  00                 [07] (-102)
+12D0  00                 [08] (-101)
+12D1  99                 [09] (-101)
+12D2  00                 [10] (-100)
+                         * locals:
+12F1  00                 sizelocvars (0)
+                         * upvalues:
+12F2  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+12F3                     ** function [5] definition (level 3)
+                         ** start of function **
+12F3  00                 string size (0)
+                         source name: (none)
+12F5  01                 line defined (159)
+12F6  A5                 last line defined (165)
+12F7  01                 nups (0)
+12F8  00                 numparams (2)
+12F9  02                 is_vararg (0)
+12FA  00                 maxstacksize (8)
+                         * code:
+12FC  10                 sizecode (16)
+12FD  9D000000           [01] getglobal  2   0        ; 1074689893
+1301  D2008000           [02] move       3   1      
+1305  A2800001           [03] call       2   2   2  
+1309  98400000           [04] test       2       1    ; to [6] if false
+130D  1A400280           [05] jmp        10           ; to [16]
+1311  99400000           [06] loadk      2   1        ; 0
+1315  CE804000           [07] gettable   3   0   258  ; "mLetters"
+1319  CA008001           [08] len        3   3      
+131D  19410000           [09] loadk      4   1        ; 0
+1321  90C00080           [10] forprep    2   4        ; to [15]
+1325  92018000           [11] move       6   1      
+1329  CE814000           [12] gettable   7   0   258  ; "mLetters"
+132D  CE418103           [13] gettable   7   7   5  
+1331  A2410001           [14] call       6   2   1  
+1335  9480FE7F           [15] forloop    2   -5       ; to [11] if loop
+1339  1E008000           [16] return     0   1      
+                         * constants:
+133D  03                 sizek (3)
+133E  01                 const type 3
+133F  65770E40           const [0]: (1074689893)
+1343  03                 const type 3
+1344  0000803F           const [1]: (0)
+1348  04                 const type 4
+1349  09                 string size (9)
+134A  6D4C657474657273+  "mLetters"
+1352  00                 "\0"
+                         const [2]: "mLetters"
+                         * functions:
+1353  00                 sizep (0)
+                         * lines:
+1354  10                 sizelineinfo (16)
+                         [pc] (line)
+1355  A0                 [01] (-96)
+1356  00                 [02] (-96)
+1357  00                 [03] (-96)
+1358  00                 [04] (-96)
+1359  A0                 [05] (-96)
+135A  00                 [06] (-95)
+135B  00                 [07] (-95)
+135C  00                 [08] (-95)
+135D  A0                 [09] (-95)
+135E  00                 [10] (-95)
+135F  00                 [11] (-94)
+1360  00                 [12] (-94)
+1361  A0                 [13] (-94)
+1362  00                 [14] (-94)
+1363  00                 [15] (-95)
+1364  00                 [16] (-91)
+                         * locals:
+1395  00                 sizelocvars (0)
+                         * upvalues:
+1396  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+1397  3E                 sizelineinfo (62)
+                         [pc] (line)
+1398  05                 [01] (5)
+1399  00                 [02] (5)
+139A  00                 [03] (5)
+139B  00                 [04] (6)
+139C  05                 [05] (8)
+139D  00                 [06] (9)
+139E  00                 [07] (10)
+139F  00                 [08] (10)
+13A0  05                 [09] (11)
+13A1  00                 [10] (12)
+13A2  00                 [11] (13)
+13A3  00                 [12] (14)
+13A4  06                 [13] (14)
+13A5  00                 [14] (14)
+13A6  00                 [15] (14)
+13A7  00                 [16] (14)
+13A8  08                 [17] (14)
+13A9  00                 [18] (14)
+13AA  00                 [19] (15)
+13AB  00                 [20] (15)
+13AC  09                 [21] (15)
+13AD  00                 [22] (15)
+13AE  00                 [23] (15)
+13AF  00                 [24] (15)
+13B0  0A                 [25] (15)
+13B1  00                 [26] (16)
+13B2  00                 [27] (16)
+13B3  00                 [28] (16)
+13B4  0A                 [29] (16)
+13B5  00                 [30] (16)
+13B6  00                 [31] (16)
+13B7  00                 [32] (16)
+13B8  0B                 [33] (17)
+13B9  00                 [34] (18)
+13BA  00                 [35] (19)
+13BB  00                 [36] (20)
+13BC  0C                 [37] (21)
+13BD  00                 [38] (21)
+13BE  00                 [39] (22)
+13BF  00                 [40] (23)
+13C0  0D                 [41] (24)
+13C1  00                 [42] (25)
+13C2  00                 [43] (26)
+13C3  00                 [44] (27)
+13C4  0E                 [45] (27)
+13C5  00                 [46] (27)
+13C6  00                 [47] (27)
+13C7  00                 [48] (27)
+13C8  0E                 [49] (32)
+13C9  00                 [50] (32)
+13CA  00                 [51] (37)
+13CB  00                 [52] (37)
+13CC  0E                 [53] (44)
+13CD  00                 [54] (44)
+13CE  00                 [55] (-107)
+13CF  00                 [56] (-107)
+13D0  0E                 [57] (-100)
+13D1  00                 [58] (-100)
+13D2  00                 [59] (-91)
+13D3  00                 [60] (-91)
+13D4  0E                 [61] (-90)
+13D5  00                 [62] (-89)
+                         * locals:
+1490  00                 sizelocvars (0)
+                         * upvalues:
+1491  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+1492  09                 sizelineinfo (9)
+                         [pc] (line)
+1493  01                 [1] (1)
+1494  00                 [2] (1)
+1495  00                 [3] (1)
+1496  00                 [4] (1)
+1497  01                 [5] (1)
+1498  00                 [6] (-89)
+1499  00                 [7] (-89)
+149A  00                 [8] (3)
+149B  01                 [9] (-89)
+                         * locals:
+14B7  00                 sizelocvars (0)
+                         * upvalues:
+14B8  00                 sizeupvalues (0)
+                         ** end of function **
+
+14B9                     ** end of chunk **

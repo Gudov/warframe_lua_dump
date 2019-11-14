@@ -1,0 +1,288 @@
+1	C:\wlua_dump\path\Lotus\Weapons\Tenno\HackingDevices\TnHackingDeviceTnHackingDevice.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Weapons\Tenno\HackingDevices\TnHackingDeviceTnHackingDevice.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  03                 size of number (bytes)
+0008  07                 integral (1=integral)
+47
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+HackDeviceImpact
+gRegion
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  03                 maxstacksize (3)
+                         * code:
+0008  07                 sizecode (7)
+0009  65000000           [1] closure    1   0      
+000D  12000000           [2] move       0   0      
+0011  A5400000           [3] closure    2   1      
+0015  12008000           [4] move       0   1      
+0019  A0000000           [5] setglobal  2   0        ; HackDeviceImpact
+001D  A0400000           [6] setglobal  2   1        ; 1514894221
+0021  1E008000           [7] return     0   1      
+                         * constants:
+0025  02                 sizek (2)
+0026  04                 const type 4
+0027  11                 string size (17)
+0028  4861636B44657669+  "HackDevi"
+0030  6365496D70616374+  "ceImpact"
+0038  00                 "\0"
+                         const [0]: "HackDeviceImpact"
+0039  01                 const type 3
+003A  8D734B5A           const [1]: (1514894221)
+                         * functions:
+003E  02                 sizep (2)
+                         
+003F                     ** function [0] definition (level 2)
+                         ** start of function **
+003F  00                 string size (0)
+                         source name: (none)
+0040  03                 line defined (3)
+0041  0E                 last line defined (14)
+0042  01                 nups (1)
+0043  02                 numparams (2)
+0044  00                 is_vararg (0)
+0045  08                 maxstacksize (8)
+                         * code:
+0046  1D                 sizecode (29)
+0047  9D000000           [01] getglobal  2   0        ; 1074689893
+004B  D3000000           [02] getupval   3   0      
+004F  A2800001           [03] call       2   2   2  
+0053  98000000           [04] test       2       0    ; to [6] if true
+0057  1A000380           [05] jmp        13           ; to [19]
+005B  9D400000           [06] getglobal  2   1        ; gRegion
+005F  A4804001           [07] self       2   2   258  ; 65205951
+0063  A2800001           [08] call       2   2   2  
+0067  DD000000           [09] getglobal  3   0        ; 1074689893
+006B  12010001           [10] move       4   2      
+006F  E2800001           [11] call       3   2   2  
+0073  D8400000           [12] test       3       1    ; to [14] if false
+0077  1A000180           [13] jmp        5            ; to [19]
+007B  E4C04001           [14] self       3   2   259  ; 1525877273
+007F  E2800001           [15] call       3   2   2  
+0083  2401C101           [16] self       4   3   260  ; -735717699
+0087  22810001           [17] call       4   2   2  
+fail op	8
+008B  08010000           [18] setupval   4   0      
+008F  1D010000           [19] getglobal  4   0        ; 1074689893
+0093  53010000           [20] getupval   5   0      
+0097  22810001           [21] call       4   2   2  
+009B  18410000           [22] test       4       1    ; to [24] if false
+009F  1A000180           [23] jmp        5            ; to [29]
+00A3  13010000           [24] getupval   4   0      
+00A7  24414102           [25] self       4   4   261  ; -1350216097
+00AB  92010000           [26] move       6   0      
+00AF  D2018000           [27] move       7   1      
+00B3  22410002           [28] call       4   4   1  
+00B7  1E008000           [29] return     0   1      
+                         * constants:
+00BB  06                 sizek (6)
+00BC  01                 const type 3
+00BD  65770E40           const [0]: (1074689893)
+00C1  04                 const type 4
+00C2  08                 string size (8)
+00C3  67526567696F6E00   "gRegion\0"
+                         const [1]: "gRegion"
+00CB  01                 const type 3
+00CC  BFF6E203           const [2]: (65205951)
+00D0  01                 const type 3
+00D1  190AF35A           const [3]: (1525877273)
+00D5  01                 const type 3
+00D6  BDD625D4           const [4]: (-735717699)
+00DA  01                 const type 3
+00DB  5F5685AF           const [5]: (-1350216097)
+                         * functions:
+00DF  00                 sizep (0)
+                         * lines:
+00E0  1D                 sizelineinfo (29)
+                         [pc] (line)
+00E1  04                 [01] (4)
+00E2  00                 [02] (4)
+00E3  00                 [03] (4)
+00E4  00                 [04] (4)
+00E5  04                 [05] (4)
+00E6  00                 [06] (5)
+00E7  00                 [07] (5)
+00E8  00                 [08] (5)
+00E9  04                 [09] (6)
+00EA  00                 [10] (6)
+00EB  00                 [11] (6)
+00EC  00                 [12] (6)
+00ED  04                 [13] (6)
+00EE  00                 [14] (7)
+00EF  00                 [15] (7)
+00F0  00                 [16] (8)
+00F1  04                 [17] (8)
+00F2  00                 [18] (8)
+00F3  00                 [19] (11)
+00F4  00                 [20] (11)
+00F5  05                 [21] (11)
+00F6  00                 [22] (11)
+00F7  00                 [23] (11)
+00F8  00                 [24] (12)
+00F9  05                 [25] (12)
+00FA  00                 [26] (12)
+00FB  00                 [27] (12)
+00FC  00                 [28] (12)
+00FD  05                 [29] (14)
+                         * locals:
+0155  00                 sizelocvars (0)
+                         * upvalues:
+0156  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0157                     ** function [1] definition (level 2)
+                         ** start of function **
+0157  00                 string size (0)
+                         source name: (none)
+0158  10                 line defined (16)
+0159  1C                 last line defined (28)
+015A  01                 nups (1)
+015B  00                 numparams (0)
+015C  00                 is_vararg (0)
+015D  03                 maxstacksize (3)
+                         * code:
+015E  28                 sizecode (40)
+015F  13000000           [01] getupval   0   0      
+0163  59000000           [02] loadk      1   0        ; 0
+0167  99400000           [03] loadk      2   1        ; 0
+016B  22408001           [04] call       0   3   1  
+016F  1D800000           [05] getglobal  0   2        ; 538022378
+0173  59C00000           [06] loadk      1   3        ; 10
+0177  22400001           [07] call       0   2   1  
+017B  13000000           [08] getupval   0   0      
+017F  59000000           [09] loadk      1   0        ; 0
+0183  99000000           [10] loadk      2   0        ; 0
+0187  22408001           [11] call       0   3   1  
+018B  1D800000           [12] getglobal  0   2        ; 538022378
+018F  59C00000           [13] loadk      1   3        ; 10
+0193  22400001           [14] call       0   2   1  
+0197  13000000           [15] getupval   0   0      
+019B  59000000           [16] loadk      1   0        ; 0
+019F  99000100           [17] loadk      2   4        ; 0
+01A3  22408001           [18] call       0   3   1  
+01A7  1D800000           [19] getglobal  0   2        ; 538022378
+01AB  59C00000           [20] loadk      1   3        ; 10
+01AF  22400001           [21] call       0   2   1  
+01B3  13000000           [22] getupval   0   0      
+01B7  59000000           [23] loadk      1   0        ; 0
+01BB  99400100           [24] loadk      2   5        ; 0
+01BF  22408001           [25] call       0   3   1  
+01C3  1D800000           [26] getglobal  0   2        ; 538022378
+01C7  59C00000           [27] loadk      1   3        ; 10
+01CB  22400001           [28] call       0   2   1  
+01CF  13000000           [29] getupval   0   0      
+01D3  59800100           [30] loadk      1   6        ; 0
+01D7  99000000           [31] loadk      2   0        ; 0
+01DB  22408001           [32] call       0   3   1  
+01DF  1D800000           [33] getglobal  0   2        ; 538022378
+01E3  59C00000           [34] loadk      1   3        ; 10
+01E7  22400001           [35] call       0   2   1  
+01EB  13000000           [36] getupval   0   0      
+01EF  59800100           [37] loadk      1   6        ; 0
+01F3  99800100           [38] loadk      2   6        ; 0
+01F7  22408001           [39] call       0   3   1  
+01FB  1E008000           [40] return     0   1      
+                         * constants:
+01FF  07                 sizek (7)
+0200  03                 const type 3
+0201  0000803F           const [0]: (0)
+0205  03                 const type 3
+0206  0000003F           const [1]: (0)
+020A  01                 const type 3
+020B  EA911120           const [2]: (538022378)
+020F  03                 const type 3
+0210  0AD7A33C           const [3]: (10)
+0214  03                 const type 3
+0215  00000040           const [4]: (0)
+0219  03                 const type 3
+021A  00008040           const [5]: (0)
+021E  03                 const type 3
+021F  00000000           const [6]: (0)
+                         * functions:
+0223  00                 sizep (0)
+                         * lines:
+0224  28                 sizelineinfo (40)
+                         [pc] (line)
+0225  11                 [01] (17)
+0226  00                 [02] (17)
+0227  00                 [03] (17)
+0228  00                 [04] (17)
+0229  11                 [05] (18)
+022A  00                 [06] (18)
+022B  00                 [07] (18)
+022C  00                 [08] (19)
+022D  11                 [09] (19)
+022E  00                 [10] (19)
+022F  00                 [11] (19)
+0230  00                 [12] (20)
+0231  11                 [13] (20)
+0232  00                 [14] (20)
+0233  00                 [15] (21)
+0234  00                 [16] (21)
+0235  12                 [17] (21)
+0236  00                 [18] (21)
+0237  00                 [19] (22)
+0238  00                 [20] (22)
+0239  12                 [21] (22)
+023A  00                 [22] (23)
+023B  00                 [23] (23)
+023C  00                 [24] (23)
+023D  12                 [25] (23)
+023E  00                 [26] (24)
+023F  00                 [27] (24)
+0240  00                 [28] (24)
+0241  13                 [29] (25)
+0242  00                 [30] (25)
+0243  00                 [31] (25)
+0244  00                 [32] (25)
+0245  13                 [33] (26)
+0246  00                 [34] (26)
+0247  00                 [35] (26)
+0248  00                 [36] (27)
+0249  13                 [37] (27)
+024A  00                 [38] (27)
+024B  00                 [39] (27)
+024C  00                 [40] (28)
+                         * locals:
+02C5  00                 sizelocvars (0)
+                         * upvalues:
+02C6  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+02C7  07                 sizelineinfo (7)
+                         [pc] (line)
+02C8  0E                 [1] (14)
+02C9  00                 [2] (14)
+02CA  00                 [3] (28)
+02CB  00                 [4] (28)
+02CC  0E                 [5] (28)
+02CD  00                 [6] (16)
+02CE  00                 [7] (28)
+                         * locals:
+02E4  00                 sizelocvars (0)
+                         * upvalues:
+02E5  00                 sizeupvalues (0)
+                         ** end of function **
+
+02E6                     ** end of chunk **

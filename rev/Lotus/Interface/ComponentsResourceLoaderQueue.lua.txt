@@ -1,0 +1,511 @@
+1	C:\wlua_dump\path\Lotus\Interface\ComponentsResourceLoaderQueue.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Interface\ComponentsResourceLoaderQueue.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  03                 size of number (bytes)
+0008  09                 integral (1=integral)
+49
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+package
+seeall
+CreateResourceQueuedLoader
+mResourceQueue
+mMovie
+mCallback
+mLoading
+LoadResource
+ResourceLoaded
+table
+mResourceQueue
+Name
+Callback
+mLoading
+gGameRules
+mCallback
+mResourceQueue
+Callback
+gTextureType
+table
+mLoading
+gGameRules
+Name
+mCallback
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  03                 maxstacksize (3)
+                         * code:
+0008  09                 sizecode (9)
+0009  1D000000           [1] getglobal  0   0        ; 954442511
+000D  41000001           [2] vararg     1   2      
+0011  9D400000           [3] getglobal  2   1        ; package
+0015  8E804001           [4] gettable   2   2   258  ; "seeall"
+0019  22408001           [5] call       0   3   1  
+001D  25000000           [6] closure    0   0      
+0021  20C00000           [7] setglobal  0   3        ; CreateResourceQueuedLoader
+0025  20000100           [8] setglobal  0   4        ; 1239639801
+0029  1E008000           [9] return     0   1      
+                         * constants:
+002D  05                 sizek (5)
+002E  01                 const type 3
+002F  0FA3E338           const [0]: (954442511)
+0033  04                 const type 4
+0034  08                 string size (8)
+0035  7061636B61676500   "package\0"
+                         const [1]: "package"
+003D  04                 const type 4
+003E  07                 string size (7)
+003F  736565616C6C00     "seeall\0"
+                         const [2]: "seeall"
+0046  04                 const type 4
+0047  1B                 string size (27)
+0048  4372656174655265+  "CreateRe"
+0050  736F757263655175+  "sourceQu"
+0058  657565644C6F6164+  "euedLoad"
+0060  657200             "er\0"
+                         const [3]: "CreateResourceQueuedLoader"
+0063  01                 const type 3
+0064  F966E349           const [4]: (1239639801)
+                         * functions:
+0068  01                 sizep (1)
+                         
+0069                     ** function [0] definition (level 2)
+                         ** start of function **
+0069  00                 string size (0)
+                         source name: (none)
+006A  03                 line defined (3)
+006B  2D                 last line defined (45)
+006C  00                 nups (0)
+006D  02                 numparams (2)
+006E  00                 is_vararg (0)
+006F  04                 maxstacksize (4)
+                         * code:
+0070  0C                 sizecode (12)
+0071  8B800100           [01] newtable   2   0   6    ; array=0, hash=6
+0075  CB000000           [02] newtable   3   0   0    ; array=0, hash=0
+0079  8CC00080           [03] settable   2   256 3    ; "mResourceQueue"
+007D  8C008080           [04] settable   2   257 0    ; "mMovie"
+0081  8C400081           [05] settable   2   258 1    ; "mCallback"
+0085  8C00C181           [06] settable   2   259 260  ; "mLoading" 0
+0089  E5000000           [07] closure    3   0      
+008D  8CC08082           [08] settable   2   261 3    ; "LoadResource"
+0091  E5400000           [09] closure    3   1      
+0095  8CC00083           [10] settable   2   262 3    ; "ResourceLoaded"
+0099  9E000001           [11] return     2   2      
+009D  1E008000           [12] return     0   1      
+                         * constants:
+00A1  07                 sizek (7)
+00A2  04                 const type 4
+00A3  0F                 string size (15)
+00A4  6D5265736F757263+  "mResourc"
+00AC  65517565756500     "eQueue\0"
+                         const [0]: "mResourceQueue"
+00B3  04                 const type 4
+00B4  07                 string size (7)
+00B5  6D4D6F76696500     "mMovie\0"
+                         const [1]: "mMovie"
+00BC  04                 const type 4
+00BD  0A                 string size (10)
+00BE  6D43616C6C626163+  "mCallbac"
+00C6  6B00               "k\0"
+                         const [2]: "mCallback"
+00C8  04                 const type 4
+00C9  09                 string size (9)
+00CA  6D4C6F6164696E67+  "mLoading"
+00D2  00                 "\0"
+                         const [3]: "mLoading"
+00D3  01                 const type 3
+00D4  00000000           const [4]: (0)
+00D8  04                 const type 4
+00D9  0D                 string size (13)
+00DA  4C6F61645265736F+  "LoadReso"
+00E2  7572636500         "urce\0"
+                         const [5]: "LoadResource"
+00E7  04                 const type 4
+00E8  0F                 string size (15)
+00E9  5265736F75726365+  "Resource"
+00F1  4C6F6164656400     "Loaded\0"
+                         const [6]: "ResourceLoaded"
+                         * functions:
+00F8  02                 sizep (2)
+                         
+00F9                     ** function [0] definition (level 3)
+                         ** start of function **
+00F9  00                 string size (0)
+                         source name: (none)
+00FA  0A                 line defined (10)
+00FB  12                 last line defined (18)
+00FC  00                 nups (0)
+00FD  03                 numparams (3)
+00FE  00                 is_vararg (0)
+00FF  07                 maxstacksize (7)
+                         * code:
+0100  18                 sizecode (24)
+fail op	35
+0101  6300C000           [01] close      1  
+0105  1AC00480           [02] jmp        20           ; to [23]
+0109  DD400000           [03] getglobal  3   1        ; table
+010D  CE80C001           [04] gettable   3   3   258  ; -431682403
+0111  0EC14000           [05] gettable   4   0   259  ; "mResourceQueue"
+0115  4B810000           [06] newtable   5   0   2    ; array=0, hash=2
+0119  4C410082           [07] settable   5   260 1    ; "Name"
+011D  4C818082           [08] settable   5   261 2    ; "Callback"
+0121  E2408001           [09] call       3   3   1  
+0125  CE804100           [10] gettable   3   0   262  ; "mLoading"
+0129  D8400000           [11] test       3       1    ; to [13] if false
+012D  1A400280           [12] jmp        10           ; to [23]
+0131  DDC00100           [13] getglobal  3   7        ; 1074689893
+0135  1D010200           [14] getglobal  4   8        ; gGameRules
+0139  E2800001           [15] call       3   2   2  
+013D  D8400000           [16] test       3       1    ; to [18] if false
+0141  1A000180           [17] jmp        5            ; to [23]
+0145  DD000200           [18] getglobal  3   8        ; gGameRules
+0149  E440C201           [19] self       3   3   265  ; 1247278653
+014D  52018000           [20] move       5   1      
+0151  8E814200           [21] gettable   6   0   266  ; "mCallback"
+0155  E2400002           [22] call       3   4   1  
+0159  0CC04283           [23] settable   0   262 267  ; "mLoading" 1
+015D  1E008000           [24] return     0   1      
+                         * constants:
+0161  0C                 sizek (12)
+0162  00                 const type 0
+                         const [0]: nil
+0163  04                 const type 4
+0164  06                 string size (6)
+0165  7461626C6500       "table\0"
+                         const [1]: "table"
+016B  01                 const type 3
+016C  9D0C45E6           const [2]: (-431682403)
+0170  04                 const type 4
+0171  0F                 string size (15)
+0172  6D5265736F757263+  "mResourc"
+017A  65517565756500     "eQueue\0"
+                         const [3]: "mResourceQueue"
+0181  04                 const type 4
+0182  05                 string size (5)
+0183  4E616D6500         "Name\0"
+                         const [4]: "Name"
+0188  04                 const type 4
+0189  09                 string size (9)
+018A  43616C6C6261636B+  "Callback"
+0192  00                 "\0"
+                         const [5]: "Callback"
+0193  04                 const type 4
+0194  09                 string size (9)
+0195  6D4C6F6164696E67+  "mLoading"
+019D  00                 "\0"
+                         const [6]: "mLoading"
+019E  01                 const type 3
+019F  65770E40           const [7]: (1074689893)
+01A3  04                 const type 4
+01A4  0B                 string size (11)
+01A5  6747616D6552756C+  "gGameRul"
+01AD  657300             "es\0"
+                         const [8]: "gGameRules"
+01B0  01                 const type 3
+01B1  3DF6574A           const [9]: (1247278653)
+01B5  04                 const type 4
+01B6  0A                 string size (10)
+01B7  6D43616C6C626163+  "mCallbac"
+01BF  6B00               "k\0"
+                         const [10]: "mCallback"
+01C1  01                 const type 3
+01C2  01000000           const [11]: (1)
+                         * functions:
+01C6  00                 sizep (0)
+                         * lines:
+01C7  18                 sizelineinfo (24)
+                         [pc] (line)
+01C8  0B                 [01] (11)
+01C9  00                 [02] (11)
+01CA  00                 [03] (12)
+01CB  00                 [04] (12)
+01CC  0B                 [05] (12)
+01CD  00                 [06] (12)
+01CE  00                 [07] (12)
+01CF  00                 [08] (12)
+01D0  0C                 [09] (12)
+01D1  00                 [10] (13)
+01D2  00                 [11] (13)
+01D3  00                 [12] (13)
+01D4  0C                 [13] (13)
+01D5  00                 [14] (13)
+01D6  00                 [15] (13)
+01D7  00                 [16] (13)
+01D8  0C                 [17] (13)
+01D9  00                 [18] (14)
+01DA  00                 [19] (14)
+01DB  00                 [20] (14)
+01DC  0C                 [21] (14)
+01DD  00                 [22] (14)
+01DE  00                 [23] (17)
+01DF  00                 [24] (18)
+                         * locals:
+0228  00                 sizelocvars (0)
+                         * upvalues:
+0229  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+022A                     ** function [1] definition (level 3)
+                         ** start of function **
+022A  00                 string size (0)
+                         source name: (none)
+022B  14                 line defined (20)
+022C  2A                 last line defined (42)
+022D  00                 nups (0)
+022E  02                 numparams (2)
+022F  00                 is_vararg (0)
+0230  09                 maxstacksize (9)
+                         * code:
+0231  3B                 sizecode (59)
+0232  8E004000           [01] gettable   2   0   256  ; "mResourceQueue"
+0236  8A000001           [02] len        2   2      
+fail op	21
+023A  15808080           [03] concat     0   257 2  
+023E  1A800780           [04] jmp        31           ; to [36]
+0242  8E004000           [05] gettable   2   0   256  ; "mResourceQueue"
+0246  8E804001           [06] gettable   2   2   258  ; 0
+024A  DDC00000           [07] getglobal  3   3        ; 1074689893
+024E  0E014101           [08] gettable   4   2   260  ; "Callback"
+0252  E2800001           [09] call       3   2   2  
+0256  D8400000           [10] test       3       1    ; to [12] if false
+025A  1A800480           [11] jmp        19           ; to [31]
+025E  DD400100           [12] getglobal  3   5        ; 2083004503
+0262  12018000           [13] move       4   1      
+0266  E2800001           [14] call       3   2   2  
+026A  2481C101           [15] self       4   3   262  ; -1957065004
+026E  9DC10100           [16] getglobal  6   7        ; gTextureType
+0272  22818001           [17] call       4   3   2  
+0276  18010000           [18] test       4       0    ; to [20] if true
+027A  1AC00080           [19] jmp        4            ; to [24]
+027E  2401C201           [20] self       4   3   264  ; -2052612073
+0282  22810001           [21] call       4   2   2  
+0286  18410000           [22] test       4       1    ; to [24] if false
+028A  1AC00080           [23] jmp        4            ; to [28]
+028E  0E414201           [24] gettable   4   2   265  ; 1188592657
+0292  52018001           [25] move       5   3      
+0296  22410001           [26] call       4   2   1  
+029A  1A800080           [27] jmp        3            ; to [31]
+029E  0E414201           [28] gettable   4   2   265  ; 1188592657
+02A2  46018002           [29] loadnil    5   5      
+02A6  22410001           [30] call       4   2   1  
+02AA  1D810200           [31] getglobal  4   10       ; table
+02AE  0EC14202           [32] gettable   4   4   267  ; -843973282
+02B2  4E014000           [33] gettable   5   0   256  ; "mResourceQueue"
+02B6  99810000           [34] loadk      6   2        ; 0
+02BA  22418001           [35] call       4   3   1  
+02BE  0C404386           [36] settable   0   268 269  ; "mLoading" 0
+02C2  0E014000           [37] gettable   4   0   256  ; "mResourceQueue"
+02C6  0A010002           [38] len        4   4      
+fail op	21
+02CA  15008180           [39] concat     0   257 4  
+02CE  1A400480           [40] jmp        18           ; to [59]
+02D2  1DC10000           [41] getglobal  4   3        ; 1074689893
+02D6  5D810300           [42] getglobal  5   14       ; gGameRules
+02DA  22810001           [43] call       4   2   2  
+02DE  18410000           [44] test       4       1    ; to [46] if false
+02E2  1A000380           [45] jmp        13           ; to [59]
+02E6  0E014000           [46] gettable   4   0   256  ; "mResourceQueue"
+02EA  0E814002           [47] gettable   4   4   258  ; 0
+02EE  5DC10000           [48] getglobal  5   3        ; 1074689893
+02F2  9D810300           [49] getglobal  6   14       ; gGameRules
+02F6  62810001           [50] call       5   2   2  
+02FA  58410000           [51] test       5       1    ; to [53] if false
+02FE  1A000180           [52] jmp        5            ; to [58]
+0302  5D810300           [53] getglobal  5   14       ; gGameRules
+0306  64C1C302           [54] self       5   5   271  ; 1247278653
+030A  CE014402           [55] gettable   7   4   272  ; "Name"
+030E  0E424400           [56] gettable   8   0   273  ; "mCallback"
+0312  62410002           [57] call       5   4   1  
+0316  0C804486           [58] settable   0   268 274  ; "mLoading" 1
+031A  1E008000           [59] return     0   1      
+                         * constants:
+031E  13                 sizek (19)
+031F  04                 const type 4
+0320  0F                 string size (15)
+0321  6D5265736F757263+  "mResourc"
+0329  65517565756500     "eQueue\0"
+                         const [0]: "mResourceQueue"
+0330  03                 const type 3
+0331  00000000           const [1]: (0)
+0335  03                 const type 3
+0336  0000803F           const [2]: (0)
+033A  01                 const type 3
+033B  65770E40           const [3]: (1074689893)
+033F  04                 const type 4
+0340  09                 string size (9)
+0341  43616C6C6261636B+  "Callback"
+0349  00                 "\0"
+                         const [4]: "Callback"
+034A  01                 const type 3
+034B  5720287C           const [5]: (2083004503)
+034F  01                 const type 3
+0350  D48E598B           const [6]: (-1957065004)
+0354  04                 const type 4
+0355  0D                 string size (13)
+0356  6754657874757265+  "gTexture"
+035E  5479706500         "Type\0"
+                         const [7]: "gTextureType"
+0363  01                 const type 3
+0364  17A0A785           const [8]: (-2052612073)
+0368  01                 const type 3
+0369  117CD846           const [9]: (1188592657)
+036D  04                 const type 4
+036E  06                 string size (6)
+036F  7461626C6500       "table\0"
+                         const [10]: "table"
+0375  01                 const type 3
+0376  5EFDB1CD           const [11]: (-843973282)
+037A  04                 const type 4
+037B  09                 string size (9)
+037C  6D4C6F6164696E67+  "mLoading"
+0384  00                 "\0"
+                         const [12]: "mLoading"
+0385  01                 const type 3
+0386  00000000           const [13]: (0)
+038A  04                 const type 4
+038B  0B                 string size (11)
+038C  6747616D6552756C+  "gGameRul"
+0394  657300             "es\0"
+                         const [14]: "gGameRules"
+0397  01                 const type 3
+0398  3DF6574A           const [15]: (1247278653)
+039C  04                 const type 4
+039D  05                 string size (5)
+039E  4E616D6500         "Name\0"
+                         const [16]: "Name"
+03A3  04                 const type 4
+03A4  0A                 string size (10)
+03A5  6D43616C6C626163+  "mCallbac"
+03AD  6B00               "k\0"
+                         const [17]: "mCallback"
+03AF  01                 const type 3
+03B0  01000000           const [18]: (1)
+                         * functions:
+03B4  00                 sizep (0)
+                         * lines:
+03B5  3B                 sizelineinfo (59)
+                         [pc] (line)
+03B6  15                 [01] (21)
+03B7  00                 [02] (21)
+03B8  00                 [03] (21)
+03B9  00                 [04] (21)
+03BA  15                 [05] (22)
+03BB  00                 [06] (22)
+03BC  00                 [07] (23)
+03BD  00                 [08] (23)
+03BE  15                 [09] (23)
+03BF  00                 [10] (23)
+03C0  00                 [11] (23)
+03C1  00                 [12] (24)
+03C2  15                 [13] (24)
+03C3  00                 [14] (24)
+03C4  00                 [15] (25)
+03C5  00                 [16] (25)
+03C6  16                 [17] (25)
+03C7  00                 [18] (25)
+03C8  00                 [19] (25)
+03C9  00                 [20] (25)
+03CA  16                 [21] (25)
+03CB  00                 [22] (25)
+03CC  00                 [23] (25)
+03CD  00                 [24] (26)
+03CE  17                 [25] (26)
+03CF  00                 [26] (26)
+03D0  00                 [27] (26)
+03D1  00                 [28] (28)
+03D2  17                 [29] (28)
+03D3  00                 [30] (28)
+03D4  00                 [31] (32)
+03D5  00                 [32] (32)
+03D6  17                 [33] (32)
+03D7  00                 [34] (32)
+03D8  00                 [35] (32)
+03D9  00                 [36] (34)
+03DA  17                 [37] (35)
+03DB  00                 [38] (35)
+03DC  00                 [39] (35)
+03DD  00                 [40] (35)
+03DE  17                 [41] (35)
+03DF  00                 [42] (35)
+03E0  00                 [43] (35)
+03E1  00                 [44] (35)
+03E2  18                 [45] (35)
+03E3  00                 [46] (36)
+03E4  00                 [47] (36)
+03E5  00                 [48] (37)
+03E6  18                 [49] (37)
+03E7  00                 [50] (37)
+03E8  00                 [51] (37)
+03E9  00                 [52] (37)
+03EA  18                 [53] (38)
+03EB  00                 [54] (38)
+03EC  00                 [55] (38)
+03ED  00                 [56] (38)
+03EE  19                 [57] (38)
+03EF  00                 [58] (40)
+03F0  00                 [59] (42)
+                         * locals:
+04A2  00                 sizelocvars (0)
+                         * upvalues:
+04A3  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+04A4  0C                 sizelineinfo (12)
+                         [pc] (line)
+04A5  04                 [01] (4)
+04A6  00                 [02] (6)
+04A7  00                 [03] (6)
+04A8  00                 [04] (7)
+04A9  06                 [05] (8)
+04AA  00                 [06] (9)
+04AB  00                 [07] (18)
+04AC  00                 [08] (18)
+04AD  06                 [09] (42)
+04AE  00                 [10] (42)
+04AF  00                 [11] (44)
+04B0  00                 [12] (45)
+                         * locals:
+04D5  00                 sizelocvars (0)
+                         * upvalues:
+04D6  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+04D7  09                 sizelineinfo (9)
+                         [pc] (line)
+04D8  01                 [1] (1)
+04D9  00                 [2] (1)
+04DA  00                 [3] (1)
+04DB  00                 [4] (1)
+04DC  01                 [5] (1)
+04DD  00                 [6] (45)
+04DE  00                 [7] (45)
+04DF  00                 [8] (3)
+04E0  01                 [9] (45)
+                         * locals:
+04FC  00                 sizelocvars (0)
+                         * upvalues:
+04FD  00                 sizeupvalues (0)
+                         ** end of function **
+
+04FE                     ** end of chunk **

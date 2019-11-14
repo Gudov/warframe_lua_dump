@@ -1,0 +1,1868 @@
+1	C:\wlua_dump\path\Lotus\Interface\ComponentsMultiSizedElementCategorizedGrid.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Interface\ComponentsMultiSizedElementCategorizedGrid.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  03                 size of number (bytes)
+0008  09                 integral (1=integral)
+49
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+package
+seeall
+CreateMultiSizedElementCategorizedGrid
+Lotus.Interface.Components.CategorizedGrid
+mPrefix
+MultiSizedElementCategorizedGrid(
+)::
+LOTUS_UTIL
+Lotus.Interface.LotusUtilities
+mHasMultiSizedElement
+mItemGrid
+mCursor
+_MultiSizedElementCategorizedGrid_GetHowManyVisibleElements
+GetHowManyVisibleElements
+_MultiSizedElementCategorizedGrid_FocusElement
+FocusElement
+AddMultiSizedElement
+_MultiSizedElementCategorizedGrid_FocusElementInDirection
+FocusElementInDirection
+_MultiSizedElementCategorizedGrid_CalculateX
+CalculateX
+_MultiSizedElementCategorizedGrid_CalculateY
+CalculateY
+_MultiSizedElementCategorizedGrid_OnFilteredElementsReady
+OnFilteredElementsReady
+CanUseScrollBar
+_MultiSizedElementCategorizedGrid_RepositionButton
+RepositionButton
+_MultiSizedElementCategorizedGrid_ScrollValueChangedCallback
+ScrollValueChangedCallback
+mCachedVisibleElements
+mCursor
+mElements
+x
+mAssignedColumn
+y
+mAssignedRow
+mOverrideClipName
+mMovie
+_alpha
+mColumnSpan
+mRowSpan
+mIsMultiSized
+mHasMultiSizedElement
+mHasMultiSizedElement
+x
+mCursor
+y
+UP
+DOWN
+UTIL
+DECREMENT
+INCREMENT
+LEFT
+mItemGrid
+Id
+mHasMultiSizedElement
+mInitialX
+mAssignedColumn
+mColumnSeparation
+mColumnSpan
+UTIL
+mHasMultiSizedElement
+mInitialY
+mAssignedRow
+mRowSeparation
+mRowSpan
+UTIL
+mItemGrid
+math
+mElements
+mColumns
+mRows
+mCursor
+mHasMultiSizedElement
+mCachedVisibleElements
+mVisibleElements
+mIsMultiSized
+mRowSpan
+mColumnSpan
+mAssignedColumn
+mAssignedRow
+ERROR: Can't go past visible bounds in grids with multisized grid elements
+mHasMultiSizedElement
+mHasMultiSizedElement
+mHasMultiSizedElement
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  03                 maxstacksize (3)
+                         * code:
+0008  09                 sizecode (9)
+0009  1D000000           [1] getglobal  0   0        ; 954442511
+000D  41000001           [2] vararg     1   2      
+0011  9D400000           [3] getglobal  2   1        ; package
+0015  8E804001           [4] gettable   2   2   258  ; "seeall"
+0019  22408001           [5] call       0   3   1  
+001D  25000000           [6] closure    0   0      
+0021  20C00000           [7] setglobal  0   3        ; CreateMultiSizedElementCategorizedGrid
+0025  20000100           [8] setglobal  0   4        ; 1000430103
+0029  1E008000           [9] return     0   1      
+                         * constants:
+002D  05                 sizek (5)
+002E  01                 const type 3
+002F  0FA3E338           const [0]: (954442511)
+0033  04                 const type 4
+0034  08                 string size (8)
+0035  7061636B61676500   "package\0"
+                         const [1]: "package"
+003D  04                 const type 4
+003E  07                 string size (7)
+003F  736565616C6C00     "seeall\0"
+                         const [2]: "seeall"
+0046  04                 const type 4
+0047  27                 string size (39)
+0048  4372656174654D75+  "CreateMu"
+0050  6C746953697A6564+  "ltiSized"
+0058  456C656D656E7443+  "ElementC"
+0060  617465676F72697A+  "ategoriz"
+0068  65644772696400     "edGrid\0"
+                         const [3]: "CreateMultiSizedElementCategorizedGrid"
+006F  01                 const type 3
+0070  175AA13B           const [4]: (1000430103)
+                         * functions:
+0074  01                 sizep (1)
+                         
+0075                     ** function [0] definition (level 2)
+                         ** start of function **
+0075  00                 string size (0)
+                         source name: (none)
+0076  03                 line defined (3)
+0077  C0                 last line defined (192)
+0078  01                 nups (0)
+0079  00                 numparams (9)
+007A  09                 is_vararg (0)
+007B  00                 maxstacksize (20)
+                         * code:
+007D  41                 sizecode (65)
+007E  5D020000           [01] getglobal  9   0        ; 849075268
+0082  99420000           [02] loadk      10  1        ; "Lotus.Interface.Components.CategorizedGrid"
+0086  62820001           [03] call       9   2   2  
+008A  8E82C004           [04] gettable   10  9   258  ; -1521463585
+008E  D2020000           [05] move       11  0      
+0092  12038000           [06] move       12  1      
+0096  52030001           [07] move       13  2      
+009A  92038001           [08] move       14  3      
+009E  D2030002           [09] move       15  4      
+00A2  12048002           [10] move       16  5      
+00A6  52040003           [11] move       17  6      
+00AA  92048003           [12] move       18  7      
+00AE  D2040004           [13] move       19  8      
+00B2  A2820005           [14] call       10  10  2  
+00B6  D9020100           [15] loadk      11  4        ; "MultiSizedElementCategorizedGrid("
+00BA  12038000           [16] move       12  1      
+00BE  59430100           [17] loadk      13  5        ; ")::"
+00C2  C2428305           [18] concat     11  11  13 
+00C6  8CC28281           [19] settable   10  259 11   ; "mPrefix"
+00CA  DD020000           [20] getglobal  11  0        ; 849075268
+00CE  19C30100           [21] loadk      12  7        ; "Lotus.Interface.LotusUtilities"
+00D2  E2820001           [22] call       11  2   2  
+00D6  8CC20283           [23] settable   10  262 11   ; "LOTUS_UTIL"
+00DA  8C424284           [24] settable   10  264 265  ; "mHasMultiSizedElement" 0
+00DE  CB020000           [25] newtable   11  0   0    ; array=0, hash=0
+00E2  8CC20285           [26] settable   10  266 11   ; "mItemGrid"
+00E6  8C02C385           [27] settable   10  267 268  ; "mCursor" nil
+00EA  CE824305           [28] gettable   11  10  270  ; "GetHowManyVisibleElements"
+00EE  8CC28286           [29] settable   10  269 11   ; "_MultiSizedElementCategorizedGrid_GetHowManyVisibleElements"
+00F2  E5020000           [30] closure    11  0      
+00F6  8CC20287           [31] settable   10  270 11   ; "GetHowManyVisibleElements"
+00FA  CE024405           [32] gettable   11  10  272  ; "FocusElement"
+00FE  8CC28287           [33] settable   10  271 11   ; "_MultiSizedElementCategorizedGrid_FocusElement"
+0102  E5420000           [34] closure    11  1      
+0106  8CC20288           [35] settable   10  272 11   ; "FocusElement"
+010A  E5820000           [36] closure    11  2      
+010E  8CC28288           [37] settable   10  273 11   ; "AddMultiSizedElement"
+0112  CEC24405           [38] gettable   11  10  275  ; "FocusElementInDirection"
+0116  8CC20289           [39] settable   10  274 11   ; "_MultiSizedElementCategorizedGrid_FocusElementInDirection"
+011A  E5C20000           [40] closure    11  3      
+011E  8CC28289           [41] settable   10  275 11   ; "FocusElementInDirection"
+0122  CE424505           [42] gettable   11  10  277  ; "CalculateX"
+0126  8CC2028A           [43] settable   10  276 11   ; "_MultiSizedElementCategorizedGrid_CalculateX"
+012A  E5020100           [44] closure    11  4      
+012E  8CC2828A           [45] settable   10  277 11   ; "CalculateX"
+0132  CEC24505           [46] gettable   11  10  279  ; "CalculateY"
+0136  8CC2028B           [47] settable   10  278 11   ; "_MultiSizedElementCategorizedGrid_CalculateY"
+013A  E5420100           [48] closure    11  5      
+013E  8CC2828B           [49] settable   10  279 11   ; "CalculateY"
+0142  CE424605           [50] gettable   11  10  281  ; "OnFilteredElementsReady"
+0146  8CC2028C           [51] settable   10  280 11   ; "_MultiSizedElementCategorizedGrid_OnFilteredElementsReady"
+014A  E5820100           [52] closure    11  6      
+014E  8CC2828C           [53] settable   10  281 11   ; "OnFilteredElementsReady"
+0152  E5C20100           [54] closure    11  7      
+0156  8CC2028D           [55] settable   10  282 11   ; "CanUseScrollBar"
+015A  CE024705           [56] gettable   11  10  284  ; "RepositionButton"
+015E  8CC2828D           [57] settable   10  283 11   ; "_MultiSizedElementCategorizedGrid_RepositionButton"
+0162  E5020200           [58] closure    11  8      
+0166  8CC2028E           [59] settable   10  284 11   ; "RepositionButton"
+016A  CE824705           [60] gettable   11  10  286  ; "ScrollValueChangedCallback"
+016E  8CC2828E           [61] settable   10  285 11   ; "_MultiSizedElementCategorizedGrid_ScrollValueChangedCallback"
+0172  E5420200           [62] closure    11  9      
+0176  8CC2028F           [63] settable   10  286 11   ; "ScrollValueChangedCallback"
+017A  9E020001           [64] return     10  2      
+017E  1E008000           [65] return     0   1      
+                         * constants:
+0182  1F                 sizek (31)
+0183  01                 const type 3
+0184  44DC9B32           const [0]: (849075268)
+0188  04                 const type 4
+0189  2B                 string size (43)
+018A  4C6F7475732E496E+  "Lotus.In"
+0192  746572666163652E+  "terface."
+019A  436F6D706F6E656E+  "Componen"
+01A2  74732E4361746567+  "ts.Categ"
+01AA  6F72697A65644772+  "orizedGr"
+01B2  696400             "id\0"
+                         const [1]: "Lotus.Interface.Components.CategorizedGrid"
+01B5  01                 const type 3
+01B6  DF4E50A5           const [2]: (-1521463585)
+01BA  04                 const type 4
+01BB  08                 string size (8)
+01BC  6D50726566697800   "mPrefix\0"
+                         const [3]: "mPrefix"
+01C4  04                 const type 4
+01C5  22                 string size (34)
+01C6  4D756C746953697A+  "MultiSiz"
+01CE  6564456C656D656E+  "edElemen"
+01D6  7443617465676F72+  "tCategor"
+01DE  697A656447726964+  "izedGrid"
+01E6  2800               "(\0"
+                         const [4]: "MultiSizedElementCategorizedGrid("
+01E8  04                 const type 4
+01E9  04                 string size (4)
+01EA  293A3A00           ")::\0"
+                         const [5]: ")::"
+01EE  04                 const type 4
+01EF  0B                 string size (11)
+01F0  4C4F5455535F5554+  "LOTUS_UT"
+01F8  494C00             "IL\0"
+                         const [6]: "LOTUS_UTIL"
+01FB  04                 const type 4
+01FC  1F                 string size (31)
+01FD  4C6F7475732E496E+  "Lotus.In"
+0205  746572666163652E+  "terface."
+020D  4C6F747573557469+  "LotusUti"
+0215  6C697469657300     "lities\0"
+                         const [7]: "Lotus.Interface.LotusUtilities"
+021C  04                 const type 4
+021D  16                 string size (22)
+021E  6D4861734D756C74+  "mHasMult"
+0226  6953697A6564456C+  "iSizedEl"
+022E  656D656E7400       "ement\0"
+                         const [8]: "mHasMultiSizedElement"
+0234  01                 const type 3
+0235  00000000           const [9]: (0)
+0239  04                 const type 4
+023A  0A                 string size (10)
+023B  6D4974656D477269+  "mItemGri"
+0243  6400               "d\0"
+                         const [10]: "mItemGrid"
+0245  04                 const type 4
+0246  08                 string size (8)
+0247  6D437572736F7200   "mCursor\0"
+                         const [11]: "mCursor"
+024F  00                 const type 0
+                         const [12]: nil
+0250  04                 const type 4
+0251  3C                 string size (60)
+0252  5F4D756C74695369+  "_MultiSi"
+025A  7A6564456C656D65+  "zedEleme"
+0262  6E7443617465676F+  "ntCatego"
+026A  72697A6564477269+  "rizedGri"
+0272  645F476574486F77+  "d_GetHow"
+027A  4D616E7956697369+  "ManyVisi"
+0282  626C65456C656D65+  "bleEleme"
+028A  6E747300           "nts\0"
+                         const [13]: "_MultiSizedElementCategorizedGrid_GetHowManyVisibleElements"
+028E  04                 const type 4
+028F  1A                 string size (26)
+0290  476574486F774D61+  "GetHowMa"
+0298  6E7956697369626C+  "nyVisibl"
+02A0  65456C656D656E74+  "eElement"
+02A8  7300               "s\0"
+                         const [14]: "GetHowManyVisibleElements"
+02AA  04                 const type 4
+02AB  2F                 string size (47)
+02AC  5F4D756C74695369+  "_MultiSi"
+02B4  7A6564456C656D65+  "zedEleme"
+02BC  6E7443617465676F+  "ntCatego"
+02C4  72697A6564477269+  "rizedGri"
+02CC  645F466F63757345+  "d_FocusE"
+02D4  6C656D656E7400     "lement\0"
+                         const [15]: "_MultiSizedElementCategorizedGrid_FocusElement"
+02DB  04                 const type 4
+02DC  0D                 string size (13)
+02DD  466F637573456C65+  "FocusEle"
+02E5  6D656E7400         "ment\0"
+                         const [16]: "FocusElement"
+02EA  04                 const type 4
+02EB  15                 string size (21)
+02EC  4164644D756C7469+  "AddMulti"
+02F4  53697A6564456C65+  "SizedEle"
+02FC  6D656E7400         "ment\0"
+                         const [17]: "AddMultiSizedElement"
+0301  04                 const type 4
+0302  3A                 string size (58)
+0303  5F4D756C74695369+  "_MultiSi"
+030B  7A6564456C656D65+  "zedEleme"
+0313  6E7443617465676F+  "ntCatego"
+031B  72697A6564477269+  "rizedGri"
+0323  645F466F63757345+  "d_FocusE"
+032B  6C656D656E74496E+  "lementIn"
+0333  446972656374696F+  "Directio"
+033B  6E00               "n\0"
+                         const [18]: "_MultiSizedElementCategorizedGrid_FocusElementInDirection"
+033D  04                 const type 4
+033E  18                 string size (24)
+033F  466F637573456C65+  "FocusEle"
+0347  6D656E74496E4469+  "mentInDi"
+034F  72656374696F6E00   "rection\0"
+                         const [19]: "FocusElementInDirection"
+0357  04                 const type 4
+0358  2D                 string size (45)
+0359  5F4D756C74695369+  "_MultiSi"
+0361  7A6564456C656D65+  "zedEleme"
+0369  6E7443617465676F+  "ntCatego"
+0371  72697A6564477269+  "rizedGri"
+0379  645F43616C63756C+  "d_Calcul"
+0381  6174655800         "ateX\0"
+                         const [20]: "_MultiSizedElementCategorizedGrid_CalculateX"
+0386  04                 const type 4
+0387  0B                 string size (11)
+0388  43616C63756C6174+  "Calculat"
+0390  655800             "eX\0"
+                         const [21]: "CalculateX"
+0393  04                 const type 4
+0394  2D                 string size (45)
+0395  5F4D756C74695369+  "_MultiSi"
+039D  7A6564456C656D65+  "zedEleme"
+03A5  6E7443617465676F+  "ntCatego"
+03AD  72697A6564477269+  "rizedGri"
+03B5  645F43616C63756C+  "d_Calcul"
+03BD  6174655900         "ateY\0"
+                         const [22]: "_MultiSizedElementCategorizedGrid_CalculateY"
+03C2  04                 const type 4
+03C3  0B                 string size (11)
+03C4  43616C63756C6174+  "Calculat"
+03CC  655900             "eY\0"
+                         const [23]: "CalculateY"
+03CF  04                 const type 4
+03D0  3A                 string size (58)
+03D1  5F4D756C74695369+  "_MultiSi"
+03D9  7A6564456C656D65+  "zedEleme"
+03E1  6E7443617465676F+  "ntCatego"
+03E9  72697A6564477269+  "rizedGri"
+03F1  645F4F6E46696C74+  "d_OnFilt"
+03F9  65726564456C656D+  "eredElem"
+0401  656E747352656164+  "entsRead"
+0409  7900               "y\0"
+                         const [24]: "_MultiSizedElementCategorizedGrid_OnFilteredElementsReady"
+040B  04                 const type 4
+040C  18                 string size (24)
+040D  4F6E46696C746572+  "OnFilter"
+0415  6564456C656D656E+  "edElemen"
+041D  7473526561647900   "tsReady\0"
+                         const [25]: "OnFilteredElementsReady"
+0425  04                 const type 4
+0426  10                 string size (16)
+0427  43616E5573655363+  "CanUseSc"
+042F  726F6C6C42617200   "rollBar\0"
+                         const [26]: "CanUseScrollBar"
+0437  04                 const type 4
+0438  33                 string size (51)
+0439  5F4D756C74695369+  "_MultiSi"
+0441  7A6564456C656D65+  "zedEleme"
+0449  6E7443617465676F+  "ntCatego"
+0451  72697A6564477269+  "rizedGri"
+0459  645F5265706F7369+  "d_Reposi"
+0461  74696F6E42757474+  "tionButt"
+0469  6F6E00             "on\0"
+                         const [27]: "_MultiSizedElementCategorizedGrid_RepositionButton"
+046C  04                 const type 4
+046D  11                 string size (17)
+046E  5265706F73697469+  "Repositi"
+0476  6F6E427574746F6E+  "onButton"
+047E  00                 "\0"
+                         const [28]: "RepositionButton"
+047F  04                 const type 4
+0480  3D                 string size (61)
+0481  5F4D756C74695369+  "_MultiSi"
+0489  7A6564456C656D65+  "zedEleme"
+0491  6E7443617465676F+  "ntCatego"
+0499  72697A6564477269+  "rizedGri"
+04A1  645F5363726F6C6C+  "d_Scroll"
+04A9  56616C7565436861+  "ValueCha"
+04B1  6E67656443616C6C+  "ngedCall"
+04B9  6261636B00         "back\0"
+                         const [29]: "_MultiSizedElementCategorizedGrid_ScrollValueChangedCallback"
+04BE  04                 const type 4
+04BF  1B                 string size (27)
+04C0  5363726F6C6C5661+  "ScrollVa"
+04C8  6C75654368616E67+  "lueChang"
+04D0  656443616C6C6261+  "edCallba"
+04D8  636B00             "ck\0"
+                         const [30]: "ScrollValueChangedCallback"
+                         * functions:
+04DB  0A                 sizep (10)
+                         
+04DC                     ** function [0] definition (level 3)
+                         ** start of function **
+04DC  00                 string size (0)
+                         source name: (none)
+04DD  0E                 line defined (14)
+04DE  14                 last line defined (20)
+04DF  00                 nups (0)
+04E0  01                 numparams (1)
+04E1  00                 is_vararg (0)
+04E2  03                 maxstacksize (3)
+                         * code:
+04E3  0A                 sizecode (10)
+04E4  4E004000           [01] gettable   1   0   256  ; "mCachedVisibleElements"
+fail op	35
+04E8  6340C000           [02] close      1  
+04EC  1A800080           [03] jmp        3            ; to [7]
+04F0  4E004000           [04] gettable   1   0   256  ; "mCachedVisibleElements"
+04F4  5E000001           [05] return     1   2      
+04F8  1A800080           [06] jmp        3            ; to [10]
+04FC  64804000           [07] self       1   0   258  ; -1453231133
+0500  62800001           [08] call       1   2   2  
+0504  5E000001           [09] return     1   2      
+0508  1E008000           [10] return     0   1      
+                         * constants:
+050C  03                 sizek (3)
+050D  04                 const type 4
+050E  17                 string size (23)
+050F  6D43616368656456+  "mCachedV"
+0517  697369626C65456C+  "isibleEl"
+051F  656D656E747300     "ements\0"
+                         const [0]: "mCachedVisibleElements"
+0526  00                 const type 0
+                         const [1]: nil
+0527  01                 const type 3
+0528  E37361A9           const [2]: (-1453231133)
+                         * functions:
+052C  00                 sizep (0)
+                         * lines:
+052D  0A                 sizelineinfo (10)
+                         [pc] (line)
+052E  0F                 [01] (15)
+052F  00                 [02] (15)
+0530  00                 [03] (15)
+0531  00                 [04] (16)
+0532  0F                 [05] (16)
+0533  00                 [06] (16)
+0534  00                 [07] (18)
+0535  00                 [08] (18)
+0536  0F                 [09] (18)
+0537  00                 [10] (20)
+                         * locals:
+0556  00                 sizelocvars (0)
+                         * upvalues:
+0557  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0558                     ** function [1] definition (level 3)
+                         ** start of function **
+0558  00                 string size (0)
+                         source name: (none)
+0559  18                 line defined (24)
+055A  1D                 last line defined (29)
+055B  00                 nups (0)
+055C  02                 numparams (2)
+055D  00                 is_vararg (0)
+055E  05                 maxstacksize (5)
+                         * code:
+055F  15                 sizecode (21)
+0560  8E004000           [01] gettable   2   0   256  ; "mCursor"
+fail op	35
+0564  23404001           [02] close      0  
+0568  1A400380           [03] jmp        14           ; to [18]
+056C  8E804000           [04] gettable   2   0   258  ; "mElements"
+0570  8E400001           [05] gettable   2   2   1  
+fail op	35
+0574  63404001           [06] close      1  
+0578  1A400280           [07] jmp        10           ; to [18]
+057C  8B800000           [08] newtable   2   0   2    ; array=0, hash=2
+0580  CE804000           [09] gettable   3   0   258  ; "mElements"
+0584  CE408001           [10] gettable   3   3   1  
+0588  CE00C101           [11] gettable   3   3   260  ; "mAssignedColumn"
+058C  8CC08081           [12] settable   2   259 3    ; "x"
+0590  CE804000           [13] gettable   3   0   258  ; "mElements"
+0594  CE408001           [14] gettable   3   3   1  
+0598  CE80C101           [15] gettable   3   3   262  ; "mAssignedRow"
+059C  8CC08082           [16] settable   2   261 3    ; "y"
+05A0  0C800080           [17] settable   0   256 2    ; "mCursor"
+05A4  A4C04100           [18] self       2   0   263  ; -393926456
+05A8  12018000           [19] move       4   1      
+05AC  A2408001           [20] call       2   3   1  
+05B0  1E008000           [21] return     0   1      
+                         * constants:
+05B4  08                 sizek (8)
+05B5  04                 const type 4
+05B6  08                 string size (8)
+05B7  6D437572736F7200   "mCursor\0"
+                         const [0]: "mCursor"
+05BF  00                 const type 0
+                         const [1]: nil
+05C0  04                 const type 4
+05C1  0A                 string size (10)
+05C2  6D456C656D656E74+  "mElement"
+05CA  7300               "s\0"
+                         const [2]: "mElements"
+05CC  04                 const type 4
+05CD  02                 string size (2)
+05CE  7800               "x\0"
+                         const [3]: "x"
+05D0  04                 const type 4
+05D1  10                 string size (16)
+05D2  6D41737369676E65+  "mAssigne"
+05DA  64436F6C756D6E00   "dColumn\0"
+                         const [4]: "mAssignedColumn"
+05E2  04                 const type 4
+05E3  02                 string size (2)
+05E4  7900               "y\0"
+                         const [5]: "y"
+05E6  04                 const type 4
+05E7  0D                 string size (13)
+05E8  6D41737369676E65+  "mAssigne"
+05F0  64526F7700         "dRow\0"
+                         const [6]: "mAssignedRow"
+05F5  01                 const type 3
+05F6  C82885E8           const [7]: (-393926456)
+                         * functions:
+05FA  00                 sizep (0)
+                         * lines:
+05FB  15                 sizelineinfo (21)
+                         [pc] (line)
+05FC  19                 [01] (25)
+05FD  00                 [02] (25)
+05FE  00                 [03] (25)
+05FF  00                 [04] (25)
+0600  19                 [05] (25)
+0601  00                 [06] (25)
+0602  00                 [07] (25)
+0603  00                 [08] (26)
+0604  19                 [09] (26)
+0605  00                 [10] (26)
+0606  00                 [11] (26)
+0607  00                 [12] (26)
+0608  19                 [13] (26)
+0609  00                 [14] (26)
+060A  00                 [15] (26)
+060B  00                 [16] (26)
+060C  19                 [17] (26)
+060D  00                 [18] (28)
+060E  00                 [19] (28)
+060F  00                 [20] (28)
+0610  19                 [21] (29)
+                         * locals:
+0650  00                 sizelocvars (0)
+                         * upvalues:
+0651  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0652                     ** function [2] definition (level 3)
+                         ** start of function **
+0652  00                 string size (0)
+                         source name: (none)
+0653  20                 line defined (32)
+0654  31                 last line defined (49)
+0655  00                 nups (0)
+0656  05                 numparams (5)
+0657  00                 is_vararg (0)
+0658  0A                 maxstacksize (10)
+                         * code:
+0659  1C                 sizecode (28)
+065A  5D010000           [01] getglobal  5   0        ; 1074689893
+065E  92018001           [02] move       6   3      
+0662  62810001           [03] call       5   2   2  
+0666  58010000           [04] test       5       0    ; to [6] if true
+066A  1A000080           [05] jmp        1            ; to [7]
+066E  D9400000           [06] loadk      3   1        ; 0
+0672  5D010000           [07] getglobal  5   0        ; 1074689893
+0676  92010002           [08] move       6   4      
+067A  62810001           [09] call       5   2   2  
+067E  58010000           [10] test       5       0    ; to [12] if true
+0682  1A000080           [11] jmp        1            ; to [13]
+0686  19410000           [12] loadk      4   1        ; 0
+068A  4C800081           [13] settable   1   258 2    ; "mOverrideClipName"
+068E  4EC14000           [14] gettable   5   0   259  ; "mMovie"
+0692  6401C102           [15] self       5   5   260  ; 471456102
+0696  D2010001           [16] move       7   2      
+069A  19420100           [17] loadk      8   5        ; "_alpha"
+069E  59820100           [18] loadk      9   6        ; 0
+06A2  62418002           [19] call       5   5   1  
+06A6  4CC08083           [20] settable   1   263 3    ; "mColumnSpan"
+06AA  4C000184           [21] settable   1   264 4    ; "mRowSpan"
+06AE  4C80C284           [22] settable   1   265 266  ; "mIsMultiSized" 1
+06B2  0C80C285           [23] settable   0   267 266  ; "mHasMultiSizedElement" 1
+06B6  64014300           [24] self       5   0   268  ; -1484936978
+06BA  D2018000           [25] move       7   1      
+06BE  17028000           [26] loadbool   8   1   0    ; true
+06C2  62410002           [27] call       5   4   1  
+06C6  1E008000           [28] return     0   1      
+                         * constants:
+06CA  0D                 sizek (13)
+06CB  01                 const type 3
+06CC  65770E40           const [0]: (1074689893)
+06D0  03                 const type 3
+06D1  0000803F           const [1]: (0)
+06D5  04                 const type 4
+06D6  12                 string size (18)
+06D7  6D4F766572726964+  "mOverrid"
+06DF  65436C69704E616D+  "eClipNam"
+06E7  6500               "e\0"
+                         const [2]: "mOverrideClipName"
+06E9  04                 const type 4
+06EA  07                 string size (7)
+06EB  6D4D6F76696500     "mMovie\0"
+                         const [3]: "mMovie"
+06F2  01                 const type 3
+06F3  66D9191C           const [4]: (471456102)
+06F7  04                 const type 4
+06F8  07                 string size (7)
+06F9  5F616C70686100     "_alpha\0"
+                         const [5]: "_alpha"
+0700  03                 const type 3
+0701  00000000           const [6]: (0)
+0705  04                 const type 4
+0706  0C                 string size (12)
+0707  6D436F6C756D6E53+  "mColumnS"
+070F  70616E00           "pan\0"
+                         const [7]: "mColumnSpan"
+0713  04                 const type 4
+0714  09                 string size (9)
+0715  6D526F775370616E+  "mRowSpan"
+071D  00                 "\0"
+                         const [8]: "mRowSpan"
+071E  04                 const type 4
+071F  0E                 string size (14)
+0720  6D49734D756C7469+  "mIsMulti"
+0728  53697A656400       "Sized\0"
+                         const [9]: "mIsMultiSized"
+072E  01                 const type 3
+072F  01000000           const [10]: (1)
+0733  04                 const type 4
+0734  16                 string size (22)
+0735  6D4861734D756C74+  "mHasMult"
+073D  6953697A6564456C+  "iSizedEl"
+0745  656D656E7400       "ement\0"
+                         const [11]: "mHasMultiSizedElement"
+074B  01                 const type 3
+074C  EEA87DA7           const [12]: (-1484936978)
+                         * functions:
+0750  00                 sizep (0)
+                         * lines:
+0751  1C                 sizelineinfo (28)
+                         [pc] (line)
+0752  21                 [01] (33)
+0753  00                 [02] (33)
+0754  00                 [03] (33)
+0755  00                 [04] (33)
+0756  21                 [05] (33)
+0757  00                 [06] (34)
+0758  00                 [07] (36)
+0759  00                 [08] (36)
+075A  21                 [09] (36)
+075B  00                 [10] (36)
+075C  00                 [11] (36)
+075D  00                 [12] (37)
+075E  21                 [13] (40)
+075F  00                 [14] (41)
+0760  00                 [15] (41)
+0761  00                 [16] (41)
+0762  21                 [17] (41)
+0763  00                 [18] (41)
+0764  00                 [19] (41)
+0765  00                 [20] (42)
+0766  22                 [21] (43)
+0767  00                 [22] (44)
+0768  00                 [23] (46)
+0769  00                 [24] (48)
+076A  24                 [25] (48)
+076B  00                 [26] (48)
+076C  00                 [27] (48)
+076D  00                 [28] (49)
+                         * locals:
+07C2  00                 sizelocvars (0)
+                         * upvalues:
+07C3  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+07C4                     ** function [3] definition (level 3)
+                         ** start of function **
+07C4  00                 string size (0)
+                         source name: (none)
+07C5  35                 line defined (53)
+07C6  57                 last line defined (87)
+07C7  00                 nups (0)
+07C8  02                 numparams (2)
+07C9  00                 is_vararg (0)
+07CA  0B                 maxstacksize (11)
+                         * code:
+07CB  55                 sizecode (85)
+07CC  8E004000           [01] gettable   2   0   256  ; "mHasMultiSizedElement"
+07D0  98000000           [02] test       2       0    ; to [4] if true
+07D4  1A401380           [03] jmp        78           ; to [82]
+07D8  A4404000           [04] self       2   0   257  ; -1749775947
+07DC  A2800001           [05] call       2   2   2  
+fail op	35
+07E0  23804001           [06] close      0  
+07E4  1AC00080           [07] jmp        4            ; to [12]
+07E8  E4C04000           [08] self       3   0   259  ; 1528679525
+07EC  59010100           [09] loadk      5   4        ; 0
+07F0  E2408001           [10] call       3   3   1  
+07F4  1A001280           [11] jmp        73           ; to [85]
+07F8  C6008002           [12] loadnil    3   5      
+07FC  8B810000           [13] newtable   6   0   2    ; array=0, hash=2
+0800  CE814100           [14] gettable   7   0   262  ; "mCursor"
+0804  CE41C103           [15] gettable   7   7   261  ; "x"
+0808  8CC18182           [16] settable   6   261 7    ; "x"
+080C  CE814100           [17] gettable   7   0   262  ; "mCursor"
+0810  CEC1C103           [18] gettable   7   7   263  ; "y"
+0814  8CC18183           [19] settable   6   263 7    ; "y"
+0818  CE014200           [20] gettable   7   0   264  ; "UP"
+fail op	35
+081C  63C08100           [21] close      1  
+0820  1A800080           [22] jmp        3            ; to [26]
+0824  CE414200           [23] gettable   7   0   265  ; "DOWN"
+fail op	35
+0828  23C08100           [24] close      0  
+082C  1A800380           [25] jmp        15           ; to [41]
+0830  19C10100           [26] loadk      4   7        ; "y"
+0834  CE814200           [27] gettable   7   0   266  ; "UTIL"
+0838  CEC1C203           [28] gettable   7   7   267  ; -132701534
+083C  0E024200           [29] gettable   8   0   264  ; "UP"
+fail op	35
+0840  63008200           [30] close      1  
+0844  1A000080           [31] jmp        1            ; to [33]
+0848  17420000           [32] loadbool   8   0   1    ; false, to [34]
+084C  17028000           [33] loadbool   8   1   0    ; true
+0850  4E824200           [34] gettable   9   0   266  ; "UTIL"
+0854  4E02C304           [35] gettable   9   9   268  ; "DECREMENT"
+0858  8E824200           [36] gettable   10  0   266  ; "UTIL"
+085C  8E424305           [37] gettable   10  10  269  ; "INCREMENT"
+0860  E2810002           [38] call       7   4   2  
+0864  52018003           [39] move       5   7      
+0868  1A400380           [40] jmp        14           ; to [55]
+086C  19410100           [41] loadk      4   5        ; "x"
+0870  CE814200           [42] gettable   7   0   266  ; "UTIL"
+0874  CEC1C203           [43] gettable   7   7   267  ; -132701534
+0878  0E824300           [44] gettable   8   0   270  ; "LEFT"
+fail op	35
+087C  63008200           [45] close      1  
+0880  1A000080           [46] jmp        1            ; to [48]
+0884  17420000           [47] loadbool   8   0   1    ; false, to [49]
+0888  17028000           [48] loadbool   8   1   0    ; true
+088C  4E824200           [49] gettable   9   0   266  ; "UTIL"
+0890  4E02C304           [50] gettable   9   9   268  ; "DECREMENT"
+0894  8E824200           [51] gettable   10  0   266  ; "UTIL"
+0898  8E424305           [52] gettable   10  10  269  ; "INCREMENT"
+089C  E2810002           [53] call       7   4   2  
+08A0  52018003           [54] move       5   7      
+08A4  CE010103           [55] gettable   7   6   4  
+08A8  C3418103           [56] add        7   7   5  
+08AC  8CC10102           [57] settable   6   4   7  
+08B0  C6008001           [58] loadnil    3   3      
+08B4  CEC14300           [59] gettable   7   0   271  ; "mItemGrid"
+08B8  0EC24103           [60] gettable   8   6   263  ; "y"
+08BC  CE018203           [61] gettable   7   7   8  
+fail op	35
+08C0  6380C003           [62] close      1  
+08C4  1A000180           [63] jmp        5            ; to [69]
+08C8  CEC14300           [64] gettable   7   0   271  ; "mItemGrid"
+08CC  0EC24103           [65] gettable   8   6   263  ; "y"
+08D0  CE018203           [66] gettable   7   7   8  
+08D4  0E424103           [67] gettable   8   6   261  ; "x"
+08D8  CE008203           [68] gettable   3   7   8  
+fail op	35
+08DC  6380C001           [69] close      1  
+08E0  1AC00080           [70] jmp        4            ; to [75]
+08E4  CE014401           [71] gettable   7   2   272  ; "Id"
+08E8  0E02C401           [72] gettable   8   3   272  ; "Id"
+fail op	35
+08EC  63008203           [73] close      1  
+08F0  1AC0FA7F           [74] jmp        -20          ; to [55]
+fail op	35
+08F4  6380C001           [75] close      1  
+08F8  1AC00180           [76] jmp        8            ; to [85]
+08FC  0C800183           [77] settable   0   262 6    ; "mCursor"
+0900  E4414400           [78] self       7   0   273  ; -1967297336
+0904  4E02C401           [79] gettable   9   3   272  ; "Id"
+0908  E2418001           [80] call       7   3   1  
+090C  1A800080           [81] jmp        3            ; to [85]
+0910  E4814400           [82] self       7   0   274  ; -957766515
+0914  52028000           [83] move       9   1      
+0918  E2418001           [84] call       7   3   1  
+091C  1E008000           [85] return     0   1      
+                         * constants:
+0920  13                 sizek (19)
+0921  04                 const type 4
+0922  16                 string size (22)
+0923  6D4861734D756C74+  "mHasMult"
+092B  6953697A6564456C+  "iSizedEl"
+0933  656D656E7400       "ement\0"
+                         const [0]: "mHasMultiSizedElement"
+0939  01                 const type 3
+093A  B589B497           const [1]: (-1749775947)
+093E  00                 const type 0
+                         const [2]: nil
+093F  01                 const type 3
+0940  65CC1D5B           const [3]: (1528679525)
+0944  03                 const type 3
+0945  0000803F           const [4]: (0)
+0949  04                 const type 4
+094A  02                 string size (2)
+094B  7800               "x\0"
+                         const [5]: "x"
+094D  04                 const type 4
+094E  08                 string size (8)
+094F  6D437572736F7200   "mCursor\0"
+                         const [6]: "mCursor"
+0957  04                 const type 4
+0958  02                 string size (2)
+0959  7900               "y\0"
+                         const [7]: "y"
+095B  04                 const type 4
+095C  03                 string size (3)
+095D  555000             "UP\0"
+                         const [8]: "UP"
+0960  04                 const type 4
+0961  05                 string size (5)
+0962  444F574E00         "DOWN\0"
+                         const [9]: "DOWN"
+0967  04                 const type 4
+0968  05                 string size (5)
+0969  5554494C00         "UTIL\0"
+                         const [10]: "UTIL"
+096E  01                 const type 3
+096F  A22217F8           const [11]: (-132701534)
+0973  04                 const type 4
+0974  0A                 string size (10)
+0975  44454352454D454E+  "DECREMEN"
+097D  5400               "T\0"
+                         const [12]: "DECREMENT"
+097F  04                 const type 4
+0980  0A                 string size (10)
+0981  494E4352454D454E+  "INCREMEN"
+0989  5400               "T\0"
+                         const [13]: "INCREMENT"
+098B  04                 const type 4
+098C  05                 string size (5)
+098D  4C45465400         "LEFT\0"
+                         const [14]: "LEFT"
+0992  04                 const type 4
+0993  0A                 string size (10)
+0994  6D4974656D477269+  "mItemGri"
+099C  6400               "d\0"
+                         const [15]: "mItemGrid"
+099E  04                 const type 4
+099F  03                 string size (3)
+09A0  496400             "Id\0"
+                         const [16]: "Id"
+09A3  01                 const type 3
+09A4  C86CBD8A           const [17]: (-1967297336)
+09A8  01                 const type 3
+09A9  8DA4E9C6           const [18]: (-957766515)
+                         * functions:
+09AD  00                 sizep (0)
+                         * lines:
+09AE  55                 sizelineinfo (85)
+                         [pc] (line)
+09AF  36                 [01] (54)
+09B0  00                 [02] (54)
+09B1  00                 [03] (54)
+09B2  00                 [04] (55)
+09B3  36                 [05] (55)
+09B4  00                 [06] (56)
+09B5  00                 [07] (56)
+09B6  00                 [08] (57)
+09B7  36                 [09] (57)
+09B8  00                 [10] (57)
+09B9  00                 [11] (57)
+09BA  00                 [12] (59)
+09BB  37                 [13] (62)
+09BC  00                 [14] (62)
+09BD  00                 [15] (62)
+09BE  00                 [16] (62)
+09BF  37                 [17] (62)
+09C0  00                 [18] (62)
+09C1  00                 [19] (62)
+09C2  00                 [20] (63)
+09C3  38                 [21] (63)
+09C4  00                 [22] (63)
+09C5  00                 [23] (63)
+09C6  00                 [24] (63)
+09C7  38                 [25] (63)
+09C8  00                 [26] (64)
+09C9  00                 [27] (65)
+09CA  00                 [28] (65)
+09CB  39                 [29] (65)
+09CC  00                 [30] (65)
+09CD  00                 [31] (65)
+09CE  00                 [32] (65)
+09CF  39                 [33] (65)
+09D0  00                 [34] (65)
+09D1  00                 [35] (65)
+09D2  00                 [36] (65)
+09D3  39                 [37] (65)
+09D4  00                 [38] (65)
+09D5  00                 [39] (65)
+09D6  00                 [40] (65)
+09D7  39                 [41] (67)
+09D8  00                 [42] (68)
+09D9  00                 [43] (68)
+09DA  00                 [44] (68)
+09DB  3B                 [45] (68)
+09DC  00                 [46] (68)
+09DD  00                 [47] (68)
+09DE  00                 [48] (68)
+09DF  3E                 [49] (68)
+09E0  00                 [50] (68)
+09E1  00                 [51] (68)
+09E2  00                 [52] (68)
+09E3  3E                 [53] (68)
+09E4  00                 [54] (68)
+09E5  00                 [55] (72)
+09E6  00                 [56] (72)
+09E7  3E                 [57] (72)
+09E8  00                 [58] (73)
+09E9  00                 [59] (74)
+09EA  00                 [60] (74)
+09EB  3E                 [61] (74)
+09EC  00                 [62] (74)
+09ED  00                 [63] (74)
+09EE  00                 [64] (75)
+09EF  3E                 [65] (75)
+09F0  00                 [66] (75)
+09F1  00                 [67] (75)
+09F2  00                 [68] (75)
+09F3  3E                 [69] (77)
+09F4  00                 [70] (77)
+09F5  00                 [71] (77)
+09F6  00                 [72] (77)
+09F7  3E                 [73] (77)
+09F8  00                 [74] (77)
+09F9  00                 [75] (79)
+09FA  00                 [76] (79)
+09FB  3F                 [77] (80)
+09FC  00                 [78] (81)
+09FD  00                 [79] (81)
+09FE  00                 [80] (81)
+09FF  3F                 [81] (83)
+0A00  00                 [82] (85)
+0A01  00                 [83] (85)
+0A02  00                 [84] (85)
+0A03  3F                 [85] (87)
+                         * locals:
+0B03  00                 sizelocvars (0)
+                         * upvalues:
+0B04  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0B05                     ** function [4] definition (level 3)
+                         ** start of function **
+0B05  00                 string size (0)
+                         source name: (none)
+0B06  5B                 line defined (91)
+0B07  66                 last line defined (102)
+0B08  00                 nups (0)
+0B09  02                 numparams (2)
+0B0A  00                 is_vararg (0)
+0B0B  07                 maxstacksize (7)
+                         * code:
+0B0C  22                 sizecode (34)
+0B0D  8E004000           [01] gettable   2   0   256  ; "mHasMultiSizedElement"
+0B11  98000000           [02] test       2       0    ; to [4] if true
+0B15  1A400680           [03] jmp        26           ; to [30]
+0B19  8E404000           [04] gettable   2   0   257  ; "mInitialX"
+0B1D  CE80C000           [05] gettable   3   1   258  ; "mAssignedColumn"
+0B21  CDC0C001           [06] sub        3   3   259  ; 0
+0B25  0E014100           [07] gettable   4   0   260  ; "mColumnSeparation"
+0B29  C4008101           [08] mul        3   3   4  
+0B2D  83C00001           [09] add        2   2   3  
+0B31  CE40C100           [10] gettable   3   1   261  ; "mColumnSpan"
+fail op	35
+0B35  6380C101           [11] close      1  
+0B39  1A800280           [12] jmp        11           ; to [24]
+0B3D  CE404000           [13] gettable   3   0   257  ; "mInitialX"
+0B41  0E81C000           [14] gettable   4   1   258  ; "mAssignedColumn"
+0B45  4E41C100           [15] gettable   5   1   261  ; "mColumnSpan"
+0B49  03410102           [16] add        4   4   5  
+0B4D  0DC14102           [17] sub        4   4   263  ; 0
+0B51  4E014100           [18] gettable   5   0   260  ; "mColumnSeparation"
+0B55  04410102           [19] mul        4   4   5  
+0B59  C3008101           [20] add        3   3   4  
+0B5D  0D818001           [21] sub        4   3   2  
+0B61  1CC14102           [22] div        4   4   263  ; 0
+0B65  83000101           [23] add        2   2   4  
+0B69  0E014200           [24] gettable   4   0   264  ; "UTIL"
+0B6D  0E414202           [25] gettable   4   4   265  ; -1250011425
+0B71  52010001           [26] move       5   2      
+0B75  22810001           [27] call       4   2   2  
+0B79  1E010001           [28] return     4   2      
+0B7D  1AC00080           [29] jmp        4            ; to [34]
+0B81  24814200           [30] self       4   0   266  ; 272519183
+0B85  92018000           [31] move       6   1      
+0B89  22818001           [32] call       4   3   2  
+0B8D  1E010001           [33] return     4   2      
+0B91  1E008000           [34] return     0   1      
+                         * constants:
+0B95  0B                 sizek (11)
+0B96  04                 const type 4
+0B97  16                 string size (22)
+0B98  6D4861734D756C74+  "mHasMult"
+0BA0  6953697A6564456C+  "iSizedEl"
+0BA8  656D656E7400       "ement\0"
+                         const [0]: "mHasMultiSizedElement"
+0BAE  04                 const type 4
+0BAF  0A                 string size (10)
+0BB0  6D496E697469616C+  "mInitial"
+0BB8  5800               "X\0"
+                         const [1]: "mInitialX"
+0BBA  04                 const type 4
+0BBB  10                 string size (16)
+0BBC  6D41737369676E65+  "mAssigne"
+0BC4  64436F6C756D6E00   "dColumn\0"
+                         const [2]: "mAssignedColumn"
+0BCC  03                 const type 3
+0BCD  0000803F           const [3]: (0)
+0BD1  04                 const type 4
+0BD2  12                 string size (18)
+0BD3  6D436F6C756D6E53+  "mColumnS"
+0BDB  657061726174696F+  "eparatio"
+0BE3  6E00               "n\0"
+                         const [4]: "mColumnSeparation"
+0BE5  04                 const type 4
+0BE6  0C                 string size (12)
+0BE7  6D436F6C756D6E53+  "mColumnS"
+0BEF  70616E00           "pan\0"
+                         const [5]: "mColumnSpan"
+0BF3  00                 const type 0
+                         const [6]: nil
+0BF4  03                 const type 3
+0BF5  00000040           const [7]: (0)
+0BF9  04                 const type 4
+0BFA  05                 string size (5)
+0BFB  5554494C00         "UTIL\0"
+                         const [8]: "UTIL"
+0C00  01                 const type 3
+0C01  DF567EB5           const [9]: (-1250011425)
+0C05  01                 const type 3
+0C06  0F503E10           const [10]: (272519183)
+                         * functions:
+0C0A  00                 sizep (0)
+                         * lines:
+0C0B  22                 sizelineinfo (34)
+                         [pc] (line)
+0C0C  5C                 [01] (92)
+0C0D  00                 [02] (92)
+0C0E  00                 [03] (92)
+0C0F  00                 [04] (93)
+0C10  5C                 [05] (93)
+0C11  00                 [06] (93)
+0C12  00                 [07] (93)
+0C13  00                 [08] (93)
+0C14  5C                 [09] (93)
+0C15  00                 [10] (94)
+0C16  00                 [11] (94)
+0C17  00                 [12] (94)
+0C18  5D                 [13] (95)
+0C19  00                 [14] (95)
+0C1A  00                 [15] (95)
+0C1B  00                 [16] (95)
+0C1C  5D                 [17] (95)
+0C1D  00                 [18] (95)
+0C1E  00                 [19] (95)
+0C1F  00                 [20] (95)
+0C20  5D                 [21] (96)
+0C21  00                 [22] (96)
+0C22  00                 [23] (96)
+0C23  00                 [24] (98)
+0C24  5D                 [25] (98)
+0C25  00                 [26] (98)
+0C26  00                 [27] (98)
+0C27  00                 [28] (98)
+0C28  5D                 [29] (98)
+0C29  00                 [30] (100)
+0C2A  00                 [31] (100)
+0C2B  00                 [32] (100)
+0C2C  5D                 [33] (100)
+0C2D  00                 [34] (102)
+                         * locals:
+0C94  00                 sizelocvars (0)
+                         * upvalues:
+0C95  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0C96                     ** function [5] definition (level 3)
+                         ** start of function **
+0C96  00                 string size (0)
+                         source name: (none)
+0C97  6A                 line defined (106)
+0C98  75                 last line defined (117)
+0C99  00                 nups (0)
+0C9A  02                 numparams (2)
+0C9B  00                 is_vararg (0)
+0C9C  07                 maxstacksize (7)
+                         * code:
+0C9D  22                 sizecode (34)
+0C9E  8E004000           [01] gettable   2   0   256  ; "mHasMultiSizedElement"
+0CA2  98000000           [02] test       2       0    ; to [4] if true
+0CA6  1A400680           [03] jmp        26           ; to [30]
+0CAA  8E404000           [04] gettable   2   0   257  ; "mInitialY"
+0CAE  CE80C000           [05] gettable   3   1   258  ; "mAssignedRow"
+0CB2  CDC0C001           [06] sub        3   3   259  ; 0
+0CB6  0E014100           [07] gettable   4   0   260  ; "mRowSeparation"
+0CBA  C4008101           [08] mul        3   3   4  
+0CBE  83C00001           [09] add        2   2   3  
+0CC2  CE40C100           [10] gettable   3   1   261  ; "mRowSpan"
+fail op	35
+0CC6  6380C101           [11] close      1  
+0CCA  1A800280           [12] jmp        11           ; to [24]
+0CCE  CE404000           [13] gettable   3   0   257  ; "mInitialY"
+0CD2  0E81C000           [14] gettable   4   1   258  ; "mAssignedRow"
+0CD6  4E41C100           [15] gettable   5   1   261  ; "mRowSpan"
+0CDA  03410102           [16] add        4   4   5  
+0CDE  0DC14102           [17] sub        4   4   263  ; 0
+0CE2  4E014100           [18] gettable   5   0   260  ; "mRowSeparation"
+0CE6  04410102           [19] mul        4   4   5  
+0CEA  C3008101           [20] add        3   3   4  
+0CEE  0D818001           [21] sub        4   3   2  
+0CF2  1CC14102           [22] div        4   4   263  ; 0
+0CF6  83000101           [23] add        2   2   4  
+0CFA  0E014200           [24] gettable   4   0   264  ; "UTIL"
+0CFE  0E414202           [25] gettable   4   4   265  ; -1250011425
+0D02  52010001           [26] move       5   2      
+0D06  22810001           [27] call       4   2   2  
+0D0A  1E010001           [28] return     4   2      
+0D0E  1AC00080           [29] jmp        4            ; to [34]
+0D12  24814200           [30] self       4   0   266  ; 949059612
+0D16  92018000           [31] move       6   1      
+0D1A  22818001           [32] call       4   3   2  
+0D1E  1E010001           [33] return     4   2      
+0D22  1E008000           [34] return     0   1      
+                         * constants:
+0D26  0B                 sizek (11)
+0D27  04                 const type 4
+0D28  16                 string size (22)
+0D29  6D4861734D756C74+  "mHasMult"
+0D31  6953697A6564456C+  "iSizedEl"
+0D39  656D656E7400       "ement\0"
+                         const [0]: "mHasMultiSizedElement"
+0D3F  04                 const type 4
+0D40  0A                 string size (10)
+0D41  6D496E697469616C+  "mInitial"
+0D49  5900               "Y\0"
+                         const [1]: "mInitialY"
+0D4B  04                 const type 4
+0D4C  0D                 string size (13)
+0D4D  6D41737369676E65+  "mAssigne"
+0D55  64526F7700         "dRow\0"
+                         const [2]: "mAssignedRow"
+0D5A  03                 const type 3
+0D5B  0000803F           const [3]: (0)
+0D5F  04                 const type 4
+0D60  0F                 string size (15)
+0D61  6D526F7753657061+  "mRowSepa"
+0D69  726174696F6E00     "ration\0"
+                         const [4]: "mRowSeparation"
+0D70  04                 const type 4
+0D71  09                 string size (9)
+0D72  6D526F775370616E+  "mRowSpan"
+0D7A  00                 "\0"
+                         const [5]: "mRowSpan"
+0D7B  00                 const type 0
+                         const [6]: nil
+0D7C  03                 const type 3
+0D7D  00000040           const [7]: (0)
+0D81  04                 const type 4
+0D82  05                 string size (5)
+0D83  5554494C00         "UTIL\0"
+                         const [8]: "UTIL"
+0D88  01                 const type 3
+0D89  DF567EB5           const [9]: (-1250011425)
+0D8D  01                 const type 3
+0D8E  1C809138           const [10]: (949059612)
+                         * functions:
+0D92  00                 sizep (0)
+                         * lines:
+0D93  22                 sizelineinfo (34)
+                         [pc] (line)
+0D94  6B                 [01] (107)
+0D95  00                 [02] (107)
+0D96  00                 [03] (107)
+0D97  00                 [04] (108)
+0D98  6B                 [05] (108)
+0D99  00                 [06] (108)
+0D9A  00                 [07] (108)
+0D9B  00                 [08] (108)
+0D9C  6B                 [09] (108)
+0D9D  00                 [10] (109)
+0D9E  00                 [11] (109)
+0D9F  00                 [12] (109)
+0DA0  6C                 [13] (110)
+0DA1  00                 [14] (110)
+0DA2  00                 [15] (110)
+0DA3  00                 [16] (110)
+0DA4  6C                 [17] (110)
+0DA5  00                 [18] (110)
+0DA6  00                 [19] (110)
+0DA7  00                 [20] (110)
+0DA8  6C                 [21] (111)
+0DA9  00                 [22] (111)
+0DAA  00                 [23] (111)
+0DAB  00                 [24] (113)
+0DAC  6C                 [25] (113)
+0DAD  00                 [26] (113)
+0DAE  00                 [27] (113)
+0DAF  00                 [28] (113)
+0DB0  6C                 [29] (113)
+0DB1  00                 [30] (115)
+0DB2  00                 [31] (115)
+0DB3  00                 [32] (115)
+0DB4  6C                 [33] (115)
+0DB5  00                 [34] (117)
+                         * locals:
+0E1C  00                 sizelocvars (0)
+                         * upvalues:
+0E1D  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0E1E                     ** function [6] definition (level 3)
+                         ** start of function **
+0E1E  00                 string size (0)
+                         source name: (none)
+0E1F  79                 line defined (121)
+0E20  A6                 last line defined (166)
+0E21  01                 nups (0)
+0E22  00                 numparams (1)
+0E23  01                 is_vararg (0)
+0E24  00                 maxstacksize (24)
+                         * code:
+0E26  76                 sizecode (118)
+0E27  4B000000           [001] newtable   1   0   0    ; array=0, hash=0
+0E2B  0C400080           [002] settable   0   256 1    ; "mItemGrid"
+0E2F  5D400000           [003] getglobal  1   1        ; math
+0E33  4E80C000           [004] gettable   1   1   258  ; -1124579617
+0E37  8EC04000           [005] gettable   2   0   259  ; "mElements"
+0E3B  8A000001           [006] len        2   2      
+0E3F  8D004101           [007] sub        2   2   260  ; 0
+0E43  CE404100           [008] gettable   3   0   261  ; "mColumns"
+0E47  9CC00001           [009] div        2   2   3  
+0E4B  62800001           [010] call       1   2   2  
+0E4F  4300C100           [011] add        1   1   260  ; 0
+0E53  99000100           [012] loadk      2   4        ; 0
+0E57  DD400000           [013] getglobal  3   1        ; math
+0E5B  CE80C101           [014] gettable   3   3   262  ; -1962864584
+0E5F  0EC14100           [015] gettable   4   0   263  ; "mRows"
+0E63  52018000           [016] move       5   1      
+0E67  E2808001           [017] call       3   3   2  
+0E6B  19010100           [018] loadk      4   4        ; 0
+0E6F  90800080           [019] forprep    2   3        ; to [23]
+0E73  8E014000           [020] gettable   6   0   256  ; "mItemGrid"
+0E77  CB010000           [021] newtable   7   0   0    ; array=0, hash=0
+0E7B  8CC18102           [022] settable   6   5   7  
+0E7F  94C0FE7F           [023] forloop    2   -4       ; to [20] if loop
+0E83  0C404284           [024] settable   0   264 265  ; "mCursor" nil
+0E87  0CC04285           [025] settable   0   266 267  ; "mHasMultiSizedElement" 0
+0E8B  8E414300           [026] gettable   6   0   269  ; "mVisibleElements"
+0E8F  0C800186           [027] settable   0   268 6    ; "mCachedVisibleElements"
+0E93  99010100           [028] loadk      6   4        ; 0
+0E97  D9010100           [029] loadk      7   4        ; 0
+0E9B  19020100           [030] loadk      8   4        ; 0
+0E9F  4EC24000           [031] gettable   9   0   259  ; "mElements"
+0EA3  4A028004           [032] len        9   9      
+0EA7  99020100           [033] loadk      10  4        ; 0
+0EAB  10021080           [034] forprep    8   65       ; to [100]
+0EAF  1D830300           [035] getglobal  12  14       ; 469076166
+0EB3  59C30300           [036] loadk      13  15       ; 0
+0EB7  22430001           [037] call       12  2   1  
+0EBB  0E034000           [038] gettable   12  0   256  ; "mItemGrid"
+0EBF  0E830106           [039] gettable   12  12  6  
+fail op	35
+0EC3  63404206           [040] close      1  
+0EC7  1AC00280           [041] jmp        12           ; to [54]
+0ECB  0E034000           [042] gettable   12  0   256  ; "mItemGrid"
+0ECF  0E830106           [043] gettable   12  12  6  
+0ED3  0EC30106           [044] gettable   12  12  7  
+fail op	35
+0ED7  63404206           [045] close      1  
+0EDB  1A800180           [046] jmp        7            ; to [54]
+0EDF  C301C103           [047] add        7   7   260  ; 0
+0EE3  0E434100           [048] gettable   12  0   261  ; "mColumns"
+fail op	21
+0EE7  15C00106           [049] concat     0   12  7  
+0EEB  1A80FC7F           [050] jmp        -13          ; to [38]
+0EEF  83014103           [051] add        6   6   260  ; 0
+0EF3  D9010100           [052] loadk      7   4        ; 0
+0EF7  1AC0FB7F           [053] jmp        -16          ; to [38]
+0EFB  0EC34000           [054] gettable   12  0   259  ; "mElements"
+0EFF  0EC30206           [055] gettable   12  12  11 
+0F03  0E034406           [056] gettable   12  12  272  ; "mIsMultiSized"
+0F07  18030000           [057] test       12      0    ; to [59] if true
+0F0B  1A400780           [058] jmp        30           ; to [89]
+0F0F  0C404485           [059] settable   0   266 273  ; "mHasMultiSizedElement" 1
+0F13  0EC34000           [060] gettable   12  0   259  ; "mElements"
+0F17  0EC30206           [061] gettable   12  12  11 
+0F1B  0E834406           [062] gettable   12  12  274  ; "mRowSpan"
+0F1F  4EC34000           [063] gettable   13  0   259  ; "mElements"
+0F23  4EC38206           [064] gettable   13  13  11 
+0F27  4EC3C406           [065] gettable   13  13  275  ; "mColumnSpan"
+0F2B  8E034300           [066] gettable   14  0   268  ; "mCachedVisibleElements"
+0F2F  C4430306           [067] mul        15  12  13 
+0F33  8DC30307           [068] sub        14  14  15 
+0F37  83034107           [069] add        14  14  260  ; 0
+0F3B  0C800386           [070] settable   0   268 14   ; "mCachedVisibleElements"
+0F3F  92038003           [071] move       14  7      
+0F43  C3438303           [072] add        15  7   13 
+0F47  CD03C107           [073] sub        15  15  260  ; 0
+0F4B  19040100           [074] loadk      16  4        ; 0
+0F4F  90830280           [075] forprep    14  11       ; to [87]
+0F53  92040003           [076] move       18  6      
+0F57  C3040303           [077] add        19  6   12 
+0F5B  CD04C109           [078] sub        19  19  260  ; 0
+0F5F  19050100           [079] loadk      20  4        ; 0
+0F63  90040180           [080] forprep    18  5        ; to [86]
+0F67  8E054000           [081] gettable   22  0   256  ; "mItemGrid"
+0F6B  8E45050B           [082] gettable   22  22  21 
+0F6F  CEC54000           [083] gettable   23  0   259  ; "mElements"
+0F73  CEC5820B           [084] gettable   23  23  11 
+0F77  8CC58508           [085] settable   22  17  23 
+0F7B  9444FE7F           [086] forloop    18  -6       ; to [81] if loop
+0F7F  94C3FC7F           [087] forloop    14  -12      ; to [76] if loop
+0F83  1A000180           [088] jmp        5            ; to [94]
+0F87  8E054000           [089] gettable   22  0   256  ; "mItemGrid"
+0F8B  8E85010B           [090] gettable   22  22  6  
+0F8F  CEC54000           [091] gettable   23  0   259  ; "mElements"
+0F93  CEC5820B           [092] gettable   23  23  11 
+0F97  8CC58503           [093] settable   22  7   23 
+0F9B  8EC54000           [094] gettable   22  0   259  ; "mElements"
+0F9F  8EC5020B           [095] gettable   22  22  11 
+0FA3  8CC5018A           [096] settable   22  276 7    ; "mAssignedColumn"
+0FA7  8EC54000           [097] gettable   22  0   259  ; "mElements"
+0FAB  8EC5020B           [098] gettable   22  22  11 
+0FAF  8C85818A           [099] settable   22  277 6    ; "mAssignedRow"
+0FB3  1442EF7F           [100] forloop    8   -66      ; to [35] if loop
+0FB7  8E854200           [101] gettable   22  0   266  ; "mHasMultiSizedElement"
+0FBB  98050000           [102] test       22      0    ; to [104] if true
+0FBF  1A000280           [103] jmp        9            ; to [113]
+0FC3  8EC54100           [104] gettable   22  0   263  ; "mRows"
+fail op	21
+0FC7  1540000B           [105] concat     0   22  1  
+0FCB  1A400180           [106] jmp        6            ; to [113]
+0FCF  9D850500           [107] getglobal  22  22       ; -1817107093
+0FD3  D9C50500           [108] loadk      23  23       ; "ERROR: Can't go past visible bounds in grids with multisized grid elements"
+0FD7  A2450001           [109] call       22  2   1  
+0FDB  9D050600           [110] getglobal  22  24       ; 317968122
+0FDF  D7050000           [111] loadbool   23  0   0    ; false
+0FE3  A2450001           [112] call       22  2   1  
+0FE7  8E854200           [113] gettable   22  0   266  ; "mHasMultiSizedElement"
+0FEB  98450000           [114] test       22      1    ; to [116] if false
+0FEF  1A400080           [115] jmp        2            ; to [118]
+0FF3  A4454600           [116] self       22  0   281  ; -63262455
+0FF7  A2450001           [117] call       22  2   1  
+0FFB  1E008000           [118] return     0   1      
+                         * constants:
+0FFF  1A                 sizek (26)
+1000  04                 const type 4
+1001  0A                 string size (10)
+1002  6D4974656D477269+  "mItemGri"
+100A  6400               "d\0"
+                         const [0]: "mItemGrid"
+100C  04                 const type 4
+100D  05                 string size (5)
+100E  6D61746800         "math\0"
+                         const [1]: "math"
+1013  01                 const type 3
+1014  DF46F8BC           const [2]: (-1124579617)
+1018  04                 const type 4
+1019  0A                 string size (10)
+101A  6D456C656D656E74+  "mElement"
+1022  7300               "s\0"
+                         const [3]: "mElements"
+1024  03                 const type 3
+1025  0000803F           const [4]: (0)
+1029  04                 const type 4
+102A  09                 string size (9)
+102B  6D436F6C756D6E73+  "mColumns"
+1033  00                 "\0"
+                         const [5]: "mColumns"
+1034  01                 const type 3
+1035  3810018B           const [6]: (-1962864584)
+1039  04                 const type 4
+103A  06                 string size (6)
+103B  6D526F777300       "mRows\0"
+                         const [7]: "mRows"
+1041  04                 const type 4
+1042  08                 string size (8)
+1043  6D437572736F7200   "mCursor\0"
+                         const [8]: "mCursor"
+104B  00                 const type 0
+                         const [9]: nil
+104C  04                 const type 4
+104D  16                 string size (22)
+104E  6D4861734D756C74+  "mHasMult"
+1056  6953697A6564456C+  "iSizedEl"
+105E  656D656E7400       "ement\0"
+                         const [10]: "mHasMultiSizedElement"
+1064  01                 const type 3
+1065  00000000           const [11]: (0)
+1069  04                 const type 4
+106A  17                 string size (23)
+106B  6D43616368656456+  "mCachedV"
+1073  697369626C65456C+  "isibleEl"
+107B  656D656E747300     "ements\0"
+                         const [12]: "mCachedVisibleElements"
+1082  04                 const type 4
+1083  11                 string size (17)
+1084  6D56697369626C65+  "mVisible"
+108C  456C656D656E7473+  "Elements"
+1094  00                 "\0"
+                         const [13]: "mVisibleElements"
+1095  01                 const type 3
+1096  C688F51B           const [14]: (469076166)
+109A  03                 const type 3
+109B  00000000           const [15]: (0)
+109F  04                 const type 4
+10A0  0E                 string size (14)
+10A1  6D49734D756C7469+  "mIsMulti"
+10A9  53697A656400       "Sized\0"
+                         const [16]: "mIsMultiSized"
+10AF  01                 const type 3
+10B0  01000000           const [17]: (1)
+10B4  04                 const type 4
+10B5  09                 string size (9)
+10B6  6D526F775370616E+  "mRowSpan"
+10BE  00                 "\0"
+                         const [18]: "mRowSpan"
+10BF  04                 const type 4
+10C0  0C                 string size (12)
+10C1  6D436F6C756D6E53+  "mColumnS"
+10C9  70616E00           "pan\0"
+                         const [19]: "mColumnSpan"
+10CD  04                 const type 4
+10CE  10                 string size (16)
+10CF  6D41737369676E65+  "mAssigne"
+10D7  64436F6C756D6E00   "dColumn\0"
+                         const [20]: "mAssignedColumn"
+10DF  04                 const type 4
+10E0  0D                 string size (13)
+10E1  6D41737369676E65+  "mAssigne"
+10E9  64526F7700         "dRow\0"
+                         const [21]: "mAssignedRow"
+10EE  01                 const type 3
+10EF  6B25B193           const [22]: (-1817107093)
+10F3  04                 const type 4
+10F4  4B                 string size (75)
+10F5  4552524F523A2043+  "ERROR: C"
+10FD  616E277420676F20+  "an't go "
+1105  7061737420766973+  "past vis"
+110D  69626C6520626F75+  "ible bou"
+1115  6E647320696E2067+  "nds in g"
+111D  7269647320776974+  "rids wit"
+1125  68206D756C746973+  "h multis"
+112D  697A656420677269+  "ized gri"
+1135  6420656C656D656E+  "d elemen"
+113D  747300             "ts\0"
+                         const [23]: "ERROR: Can't go past visible bounds in grids with multisized grid elements"
+1140  01                 const type 3
+1141  FACEF312           const [24]: (317968122)
+1145  01                 const type 3
+1146  09B13AFC           const [25]: (-63262455)
+                         * functions:
+114A  00                 sizep (0)
+                         * lines:
+114B  76                 sizelineinfo (118)
+                         [pc] (line)
+114C  7A                 [001] (122)
+114D  00                 [002] (122)
+114E  00                 [003] (123)
+114F  00                 [004] (123)
+1150  7A                 [005] (123)
+1151  00                 [006] (123)
+1152  00                 [007] (123)
+1153  00                 [008] (123)
+1154  7B                 [009] (123)
+1155  00                 [010] (123)
+1156  00                 [011] (123)
+1157  00                 [012] (124)
+1158  7B                 [013] (124)
+1159  00                 [014] (124)
+115A  00                 [015] (124)
+115B  00                 [016] (124)
+115C  7B                 [017] (124)
+115D  00                 [018] (124)
+115E  00                 [019] (124)
+115F  00                 [020] (125)
+1160  7B                 [021] (125)
+1161  00                 [022] (125)
+1162  00                 [023] (124)
+1163  00                 [024] (127)
+1164  7B                 [025] (-128)
+1165  00                 [026] (-127)
+1166  00                 [027] (-127)
+1167  00                 [028] (-126)
+1168  7B                 [029] (-125)
+1169  00                 [030] (-124)
+116A  00                 [031] (-124)
+116B  00                 [032] (-124)
+116C  7B                 [033] (-124)
+116D  00                 [034] (-124)
+116E  00                 [035] (-123)
+116F  00                 [036] (-123)
+1170  7B                 [037] (-123)
+1171  00                 [038] (-122)
+1172  00                 [039] (-122)
+1173  00                 [040] (-122)
+1174  7B                 [041] (-122)
+1175  00                 [042] (-122)
+1176  00                 [043] (-122)
+1177  00                 [044] (-122)
+1178  7C                 [045] (-122)
+1179  00                 [046] (-122)
+117A  00                 [047] (-121)
+117B  00                 [048] (-120)
+117C  7C                 [049] (-120)
+117D  00                 [050] (-120)
+117E  00                 [051] (-119)
+117F  00                 [052] (-118)
+1180  7C                 [053] (-117)
+1181  00                 [054] (-115)
+1182  00                 [055] (-115)
+1183  00                 [056] (-115)
+1184  7C                 [057] (-115)
+1185  00                 [058] (-115)
+1186  00                 [059] (-114)
+1187  00                 [060] (-112)
+1188  7C                 [061] (-112)
+1189  00                 [062] (-112)
+118A  00                 [063] (-111)
+118B  00                 [064] (-111)
+118C  7C                 [065] (-111)
+118D  00                 [066] (-110)
+118E  00                 [067] (-110)
+118F  00                 [068] (-110)
+1190  7C                 [069] (-110)
+1191  00                 [070] (-110)
+1192  00                 [071] (-109)
+1193  00                 [072] (-109)
+1194  7C                 [073] (-109)
+1195  00                 [074] (-109)
+1196  00                 [075] (-109)
+1197  00                 [076] (-108)
+1198  7D                 [077] (-108)
+1199  00                 [078] (-108)
+119A  00                 [079] (-108)
+119B  00                 [080] (-108)
+119C  7D                 [081] (-106)
+119D  00                 [082] (-106)
+119E  00                 [083] (-106)
+119F  00                 [084] (-106)
+11A0  7D                 [085] (-106)
+11A1  00                 [086] (-108)
+11A2  00                 [087] (-109)
+11A3  00                 [088] (-104)
+11A4  7C                 [089] (-102)
+11A5  00                 [090] (-102)
+11A6  00                 [091] (-102)
+11A7  00                 [092] (-102)
+11A8  7F                 [093] (-102)
+11A9  00                 [094] (-100)
+11AA  00                 [095] (-100)
+11AB  00                 [096] (-100)
+11AC  80                 [097] (-99)
+11AD  00                 [098] (-99)
+11AE  00                 [099] (-99)
+11AF  00                 [100] (-124)
+11B0  81                 [101] (-97)
+11B1  00                 [102] (-97)
+11B2  00                 [103] (-97)
+11B3  00                 [104] (-97)
+11B4  81                 [105] (-97)
+11B5  00                 [106] (-97)
+11B6  00                 [107] (-96)
+11B7  00                 [108] (-96)
+11B8  82                 [109] (-96)
+11B9  00                 [110] (-95)
+11BA  00                 [111] (-95)
+11BB  00                 [112] (-95)
+11BC  83                 [113] (-93)
+11BD  00                 [114] (-93)
+11BE  00                 [115] (-93)
+11BF  00                 [116] (-92)
+11C0  84                 [117] (-92)
+11C1  00                 [118] (-90)
+                         * locals:
+1324  00                 sizelocvars (0)
+                         * upvalues:
+1325  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+1326                     ** function [7] definition (level 3)
+                         ** start of function **
+1326  00                 string size (0)
+                         source name: (none)
+1328  01                 line defined (169)
+1329  AB                 last line defined (171)
+132A  01                 nups (0)
+132B  00                 numparams (1)
+132C  01                 is_vararg (0)
+132D  00                 maxstacksize (2)
+                         * code:
+132F  04                 sizecode (4)
+1330  4E004000           [1] gettable   1   0   256  ; "mHasMultiSizedElement"
+fail op	9
+1334  49008000           [2] settable   1   1   0  
+1338  5E000001           [3] return     1   2      
+133C  1E008000           [4] return     0   1      
+                         * constants:
+1340  01                 sizek (1)
+1341  04                 const type 4
+1342  16                 string size (22)
+1343  6D4861734D756C74+  "mHasMult"
+134B  6953697A6564456C+  "iSizedEl"
+1353  656D656E7400       "ement\0"
+                         const [0]: "mHasMultiSizedElement"
+                         * functions:
+1359  00                 sizep (0)
+                         * lines:
+135A  04                 sizelineinfo (4)
+                         [pc] (line)
+135B  AA                 [1] (-86)
+135C  00                 [2] (-86)
+135D  00                 [3] (-86)
+135E  00                 [4] (-85)
+                         * locals:
+136B  00                 sizelocvars (0)
+                         * upvalues:
+136C  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+136D                     ** function [8] definition (level 3)
+                         ** start of function **
+136D  00                 string size (0)
+                         source name: (none)
+136F  01                 line defined (175)
+1370  B5                 last line defined (181)
+1371  01                 nups (0)
+1372  00                 numparams (2)
+1373  02                 is_vararg (0)
+1374  00                 maxstacksize (5)
+                         * code:
+1376  08                 sizecode (8)
+1377  8E004000           [1] gettable   2   0   256  ; "mHasMultiSizedElement"
+137B  98000000           [2] test       2       0    ; to [4] if true
+137F  1A000080           [3] jmp        1            ; to [5]
+1383  1E008000           [4] return     0   1      
+1387  A4404000           [5] self       2   0   257  ; 1002718021
+138B  12018000           [6] move       4   1      
+138F  A2408001           [7] call       2   3   1  
+1393  1E008000           [8] return     0   1      
+                         * constants:
+1397  02                 sizek (2)
+1398  04                 const type 4
+1399  16                 string size (22)
+139A  6D4861734D756C74+  "mHasMult"
+13A2  6953697A6564456C+  "iSizedEl"
+13AA  656D656E7400       "ement\0"
+                         const [0]: "mHasMultiSizedElement"
+13B0  01                 const type 3
+13B1  4543C43B           const [1]: (1002718021)
+                         * functions:
+13B5  00                 sizep (0)
+                         * lines:
+13B6  08                 sizelineinfo (8)
+                         [pc] (line)
+13B7  B0                 [1] (-80)
+13B8  00                 [2] (-80)
+13B9  00                 [3] (-80)
+13BA  00                 [4] (-79)
+13BB  B0                 [5] (-76)
+13BC  00                 [6] (-76)
+13BD  00                 [7] (-76)
+13BE  00                 [8] (-75)
+                         * locals:
+13D7  00                 sizelocvars (0)
+                         * upvalues:
+13D8  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+13D9                     ** function [9] definition (level 3)
+                         ** start of function **
+13D9  00                 string size (0)
+                         source name: (none)
+13DB  01                 line defined (184)
+13DC  BE                 last line defined (190)
+13DD  01                 nups (0)
+13DE  00                 numparams (3)
+13DF  03                 is_vararg (0)
+13E0  00                 maxstacksize (7)
+                         * code:
+13E2  09                 sizecode (9)
+13E3  CE004000           [1] gettable   3   0   256  ; "mHasMultiSizedElement"
+13E7  D8000000           [2] test       3       0    ; to [4] if true
+13EB  1A000080           [3] jmp        1            ; to [5]
+13EF  1E008000           [4] return     0   1      
+13F3  E4404000           [5] self       3   0   257  ; -1451188525
+13F7  52018000           [6] move       5   1      
+13FB  92010001           [7] move       6   2      
+13FF  E2400002           [8] call       3   4   1  
+1403  1E008000           [9] return     0   1      
+                         * constants:
+1407  02                 sizek (2)
+1408  04                 const type 4
+1409  16                 string size (22)
+140A  6D4861734D756C74+  "mHasMult"
+1412  6953697A6564456C+  "iSizedEl"
+141A  656D656E7400       "ement\0"
+                         const [0]: "mHasMultiSizedElement"
+1420  01                 const type 3
+1421  D39E80A9           const [1]: (-1451188525)
+                         * functions:
+1425  00                 sizep (0)
+                         * lines:
+1426  09                 sizelineinfo (9)
+                         [pc] (line)
+1427  B9                 [1] (-71)
+1428  00                 [2] (-71)
+1429  00                 [3] (-71)
+142A  00                 [4] (-70)
+142B  B9                 [5] (-67)
+142C  00                 [6] (-67)
+142D  00                 [7] (-67)
+142E  00                 [8] (-67)
+142F  B9                 [9] (-66)
+                         * locals:
+144B  00                 sizelocvars (0)
+                         * upvalues:
+144C  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+144D  41                 sizelineinfo (65)
+                         [pc] (line)
+144E  04                 [01] (4)
+144F  00                 [02] (4)
+1450  00                 [03] (4)
+1451  00                 [04] (5)
+1452  04                 [05] (5)
+1453  00                 [06] (5)
+1454  00                 [07] (5)
+1455  00                 [08] (5)
+1456  04                 [09] (5)
+1457  00                 [10] (5)
+1458  00                 [11] (5)
+1459  00                 [12] (5)
+145A  05                 [13] (5)
+145B  00                 [14] (5)
+145C  00                 [15] (6)
+145D  00                 [16] (6)
+145E  05                 [17] (6)
+145F  00                 [18] (6)
+1460  00                 [19] (6)
+1461  00                 [20] (7)
+1462  05                 [21] (7)
+1463  00                 [22] (7)
+1464  00                 [23] (7)
+1465  00                 [24] (8)
+1466  05                 [25] (9)
+1467  00                 [26] (9)
+1468  00                 [27] (10)
+1469  00                 [28] (12)
+146A  05                 [29] (12)
+146B  00                 [30] (20)
+146C  00                 [31] (20)
+146D  00                 [32] (22)
+146E  05                 [33] (22)
+146F  00                 [34] (29)
+1470  00                 [35] (29)
+1471  00                 [36] (49)
+1472  05                 [37] (49)
+1473  00                 [38] (51)
+1474  00                 [39] (51)
+1475  00                 [40] (87)
+1476  05                 [41] (87)
+1477  00                 [42] (89)
+1478  00                 [43] (89)
+1479  00                 [44] (102)
+147A  05                 [45] (102)
+147B  00                 [46] (104)
+147C  00                 [47] (104)
+147D  00                 [48] (117)
+147E  05                 [49] (117)
+147F  00                 [50] (119)
+1480  00                 [51] (119)
+1481  00                 [52] (-90)
+1482  05                 [53] (-90)
+1483  00                 [54] (-85)
+1484  00                 [55] (-85)
+1485  00                 [56] (-83)
+1486  06                 [57] (-83)
+1487  00                 [58] (-75)
+1488  00                 [59] (-75)
+1489  00                 [60] (-74)
+148A  06                 [61] (-74)
+148B  00                 [62] (-66)
+148C  00                 [63] (-66)
+148D  00                 [64] (-65)
+148E  06                 [65] (-64)
+                         * locals:
+1552  00                 sizelocvars (0)
+                         * upvalues:
+1553  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+1554  09                 sizelineinfo (9)
+                         [pc] (line)
+1555  01                 [1] (1)
+1556  00                 [2] (1)
+1557  00                 [3] (1)
+1558  00                 [4] (1)
+1559  01                 [5] (1)
+155A  00                 [6] (-64)
+155B  00                 [7] (-64)
+155C  00                 [8] (3)
+155D  01                 [9] (-64)
+                         * locals:
+1579  00                 sizelocvars (0)
+                         * upvalues:
+157A  00                 sizeupvalues (0)
+                         ** end of function **
+
+157B                     ** end of chunk **

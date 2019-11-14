@@ -1,0 +1,133 @@
+1	C:\wlua_dump\path\Lotus\Scripts\ChallengesMatchMultipleItems.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Scripts\ChallengesMatchMultipleItems.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  02                 size of number (bytes)
+0008  04                 integral (1=integral)
+44
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+MatchTagEvent
+items
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  02                 maxstacksize (2)
+                         * code:
+0008  04                 sizecode (4)
+0009  25000000           [1] closure    0   0      
+000D  20000000           [2] setglobal  0   0        ; MatchTagEvent
+0011  20400000           [3] setglobal  0   1        ; -1299341210
+0015  1E008000           [4] return     0   1      
+                         * constants:
+0019  02                 sizek (2)
+001A  04                 const type 4
+001B  0E                 string size (14)
+001C  4D61746368546167+  "MatchTag"
+0024  4576656E7400       "Event\0"
+                         const [0]: "MatchTagEvent"
+002A  01                 const type 3
+002B  66A08DB2           const [1]: (-1299341210)
+                         * functions:
+002F  01                 sizep (1)
+                         
+0030                     ** function [0] definition (level 2)
+                         ** start of function **
+0030  00                 string size (0)
+                         source name: (none)
+0031  04                 line defined (4)
+0032  0E                 last line defined (14)
+0033  00                 nups (0)
+0034  05                 numparams (5)
+0035  00                 is_vararg (0)
+0036  0B                 maxstacksize (11)
+                         * code:
+0037  12                 sizecode (18)
+0038  5D010000           [01] getglobal  5   0        ; 1074689893
+003C  92010002           [02] move       6   4      
+0040  62810001           [03] call       5   2   2  
+0044  58410000           [04] test       5       1    ; to [6] if false
+0048  1A400280           [05] jmp        10           ; to [16]
+004C  5D410000           [06] getglobal  5   1        ; 1672515847
+0050  9D810000           [07] getglobal  6   2        ; items
+0054  62010101           [08] call       5   2   4  
+0058  1AC00080           [09] jmp        4            ; to [14]
+fail op	35
+005C  23400202           [10] close      0  
+0060  1A400080           [11] jmp        2            ; to [14]
+0064  97028000           [12] loadbool   10  1   0    ; true
+0068  9E020001           [13] return     10  2      
+006C  56810000           [14] tforloop   5       2    ; to [16] if exit
+0070  1A40FE7F           [15] jmp        -6           ; to [10]
+0074  97020000           [16] loadbool   10  0   0    ; false
+0078  9E020001           [17] return     10  2      
+007C  1E008000           [18] return     0   1      
+                         * constants:
+0080  03                 sizek (3)
+0081  01                 const type 3
+0082  65770E40           const [0]: (1074689893)
+0086  01                 const type 3
+0087  0791B063           const [1]: (1672515847)
+008B  04                 const type 4
+008C  06                 string size (6)
+008D  6974656D7300       "items\0"
+                         const [2]: "items"
+                         * functions:
+0093  00                 sizep (0)
+                         * lines:
+0094  12                 sizelineinfo (18)
+                         [pc] (line)
+0095  05                 [01] (5)
+0096  00                 [02] (5)
+0097  00                 [03] (5)
+0098  00                 [04] (5)
+0099  05                 [05] (5)
+009A  00                 [06] (6)
+009B  00                 [07] (6)
+009C  00                 [08] (6)
+009D  05                 [09] (6)
+009E  00                 [10] (7)
+009F  00                 [11] (7)
+00A0  00                 [12] (8)
+00A1  05                 [13] (8)
+00A2  00                 [14] (6)
+00A3  00                 [15] (9)
+00A4  00                 [16] (13)
+00A5  05                 [17] (13)
+00A6  00                 [18] (14)
+                         * locals:
+00DD  00                 sizelocvars (0)
+                         * upvalues:
+00DE  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+00DF  04                 sizelineinfo (4)
+                         [pc] (line)
+00E0  0E                 [1] (14)
+00E1  00                 [2] (14)
+00E2  00                 [3] (4)
+00E3  00                 [4] (14)
+                         * locals:
+00F0  00                 sizelocvars (0)
+                         * upvalues:
+00F1  00                 sizeupvalues (0)
+                         ** end of function **
+
+00F2                     ** end of chunk **

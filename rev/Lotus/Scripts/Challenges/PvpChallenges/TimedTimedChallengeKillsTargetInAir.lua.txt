@@ -1,0 +1,427 @@
+1	C:\wlua_dump\path\Lotus\Scripts\Challenges\PvpChallenges\TimedTimedChallengeKillsTargetInAir.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Scripts\Challenges\PvpChallenges\TimedTimedChallengeKillsTargetInAir.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  03                 size of number (bytes)
+0008  0F                 integral (1=integral)
+415
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+Lotus.Scripts.Challenges.PvpChallenges.Timed.TimedChallengeKillsCommon
+Start
+MatchAttackEvent
+ChallengeInstanceID
+MyPlayer
+lastHitWasFalling
+CallBackOnKill
+CallBackOnDamageEx
+lastHitWasFalling
+MyPlayer
+lastHitWasFalling
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  03                 maxstacksize (3)
+                         * code:
+0008  0F                 sizecode (15)
+0009  1D000000           [01] getglobal  0   0        ; 849075268
+000D  59400000           [02] loadk      1   1        ; "Lotus.Scripts.Challenges.PvpChallenges.Timed.TimedChallengeKillsCommon"
+0011  22800001           [03] call       0   2   2  
+0015  46008000           [04] loadnil    1   1      
+0019  A5000000           [05] closure    2   0      
+001D  12008000           [06] move       0   1      
+0021  12000000           [07] move       0   0      
+0025  A0800000           [08] setglobal  2   2        ; Start
+0029  A0C00000           [09] setglobal  2   3        ; 1868177976
+002D  A5400000           [10] closure    2   1      
+0031  12008000           [11] move       0   1      
+0035  12000000           [12] move       0   0      
+0039  A0000100           [13] setglobal  2   4        ; MatchAttackEvent
+003D  A0400100           [14] setglobal  2   5        ; -1021051096
+0041  1E008000           [15] return     0   1      
+                         * constants:
+0045  06                 sizek (6)
+0046  01                 const type 3
+0047  44DC9B32           const [0]: (849075268)
+004B  04                 const type 4
+004C  47                 string size (71)
+004D  4C6F7475732E5363+  "Lotus.Sc"
+0055  72697074732E4368+  "ripts.Ch"
+005D  616C6C656E676573+  "allenges"
+0065  2E5076704368616C+  ".PvpChal"
+006D  6C656E6765732E54+  "lenges.T"
+0075  696D65642E54696D+  "imed.Tim"
+007D  65644368616C6C65+  "edChalle"
+0085  6E67654B696C6C73+  "ngeKills"
+008D  436F6D6D6F6E00     "Common\0"
+                         const [1]: "Lotus.Scripts.Challenges.PvpChallenges.Timed.TimedChallengeKillsCommon"
+0094  04                 const type 4
+0095  06                 string size (6)
+0096  537461727400       "Start\0"
+                         const [2]: "Start"
+009C  01                 const type 3
+009D  38225A6F           const [3]: (1868177976)
+00A1  04                 const type 4
+00A2  11                 string size (17)
+00A3  4D61746368417474+  "MatchAtt"
+00AB  61636B4576656E74+  "ackEvent"
+00B3  00                 "\0"
+                         const [4]: "MatchAttackEvent"
+00B4  01                 const type 3
+00B5  28FF23C3           const [5]: (-1021051096)
+                         * functions:
+00B9  02                 sizep (2)
+                         
+00BA                     ** function [0] definition (level 2)
+                         ** start of function **
+00BA  00                 string size (0)
+                         source name: (none)
+00BB  08                 line defined (8)
+00BC  1B                 last line defined (27)
+00BD  02                 nups (2)
+00BE  00                 numparams (0)
+00BF  00                 is_vararg (0)
+00C0  03                 maxstacksize (3)
+                         * code:
+00C1  13                 sizecode (19)
+00C2  13008000           [01] getupval   0   1      
+00C6  0E004000           [02] gettable   0   0   256  ; 639848327
+00CA  5D400000           [03] getglobal  1   1        ; ChallengeInstanceID
+00CE  9D800000           [04] getglobal  2   2        ; MyPlayer
+00D2  22808001           [05] call       0   3   2  
+fail op	8
+00D6  08000000           [06] setupval   0   0      
+00DA  13000000           [07] getupval   0   0      
+00DE  4B000000           [08] newtable   1   0   0    ; array=0, hash=0
+00E2  0C408081           [09] settable   0   259 1    ; "lastHitWasFalling"
+00E6  13000000           [10] getupval   0   0      
+00EA  65000000           [11] closure    1   0      
+00EE  13000000           [12] getupval   0   0      
+00F2  13008000           [13] getupval   0   1      
+00F6  0C400082           [14] settable   0   260 1    ; "CallBackOnKill"
+00FA  13000000           [15] getupval   0   0      
+00FE  65400000           [16] closure    1   1      
+0102  13000000           [17] getupval   0   0      
+0106  0C408082           [18] settable   0   261 1    ; "CallBackOnDamageEx"
+010A  1E008000           [19] return     0   1      
+                         * constants:
+010E  06                 sizek (6)
+010F  01                 const type 3
+0110  874F2326           const [0]: (639848327)
+0114  04                 const type 4
+0115  14                 string size (20)
+0116  4368616C6C656E67+  "Challeng"
+011E  65496E7374616E63+  "eInstanc"
+0126  65494400           "eID\0"
+                         const [1]: "ChallengeInstanceID"
+012A  04                 const type 4
+012B  09                 string size (9)
+012C  4D79506C61796572+  "MyPlayer"
+0134  00                 "\0"
+                         const [2]: "MyPlayer"
+0135  04                 const type 4
+0136  12                 string size (18)
+0137  6C61737448697457+  "lastHitW"
+013F  617346616C6C696E+  "asFallin"
+0147  6700               "g\0"
+                         const [3]: "lastHitWasFalling"
+0149  04                 const type 4
+014A  0F                 string size (15)
+014B  43616C6C4261636B+  "CallBack"
+0153  4F6E4B696C6C00     "OnKill\0"
+                         const [4]: "CallBackOnKill"
+015A  04                 const type 4
+015B  13                 string size (19)
+015C  43616C6C4261636B+  "CallBack"
+0164  4F6E44616D616765+  "OnDamage"
+016C  457800             "Ex\0"
+                         const [5]: "CallBackOnDamageEx"
+                         * functions:
+016F  02                 sizep (2)
+                         
+0170                     ** function [0] definition (level 3)
+                         ** start of function **
+0170  00                 string size (0)
+                         source name: (none)
+0171  0D                 line defined (13)
+0172  14                 last line defined (20)
+0173  02                 nups (2)
+0174  05                 numparams (5)
+0175  00                 is_vararg (0)
+0176  08                 maxstacksize (8)
+                         * code:
+0177  11                 sizecode (17)
+0178  5D010000           [01] getglobal  5   0        ; 1074689893
+017C  92010000           [02] move       6   0      
+0180  62810001           [03] call       5   2   2  
+0184  58410000           [04] test       5       1    ; to [6] if false
+0188  1A800280           [05] jmp        11           ; to [17]
+018C  53010000           [06] getupval   5   0      
+0190  4E41C002           [07] gettable   5   5   257  ; "lastHitWasFalling"
+0194  A4814000           [08] self       6   0   258  ; 340404473
+0198  A2810001           [09] call       6   2   2  
+019C  4E818102           [10] gettable   5   5   6  
+01A0  58010000           [11] test       5       0    ; to [13] if true
+01A4  1AC00080           [12] jmp        4            ; to [17]
+01A8  53018000           [13] getupval   5   1      
+01AC  4EC1C002           [14] gettable   5   5   259  ; 1651871118
+01B0  93010000           [15] getupval   6   0      
+01B4  62410001           [16] call       5   2   1  
+01B8  1E008000           [17] return     0   1      
+                         * constants:
+01BC  04                 sizek (4)
+01BD  01                 const type 3
+01BE  65770E40           const [0]: (1074689893)
+01C2  04                 const type 4
+01C3  12                 string size (18)
+01C4  6C61737448697457+  "lastHitW"
+01CC  617346616C6C696E+  "asFallin"
+01D4  6700               "g\0"
+                         const [1]: "lastHitWasFalling"
+01D6  01                 const type 3
+01D7  F9284A14           const [2]: (340404473)
+01DB  01                 const type 3
+01DC  8E8D7562           const [3]: (1651871118)
+                         * functions:
+01E0  00                 sizep (0)
+                         * lines:
+01E1  11                 sizelineinfo (17)
+                         [pc] (line)
+01E2  0E                 [01] (14)
+01E3  00                 [02] (14)
+01E4  00                 [03] (14)
+01E5  00                 [04] (14)
+01E6  0E                 [05] (14)
+01E7  00                 [06] (15)
+01E8  00                 [07] (15)
+01E9  00                 [08] (15)
+01EA  0E                 [09] (15)
+01EB  00                 [10] (15)
+01EC  00                 [11] (15)
+01ED  00                 [12] (15)
+01EE  0E                 [13] (16)
+01EF  00                 [14] (16)
+01F0  00                 [15] (16)
+01F1  00                 [16] (16)
+01F2  0E                 [17] (20)
+                         * locals:
+0226  00                 sizelocvars (0)
+                         * upvalues:
+0227  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0228                     ** function [1] definition (level 3)
+                         ** start of function **
+0228  00                 string size (0)
+                         source name: (none)
+0229  16                 line defined (22)
+022A  1A                 last line defined (26)
+022B  01                 nups (1)
+022C  08                 numparams (8)
+022D  00                 is_vararg (0)
+022E  0C                 maxstacksize (12)
+                         * code:
+022F  19                 sizecode (25)
+0230  1D020000           [01] getglobal  8   0        ; 1074689893
+0234  64424000           [02] self       9   0   257  ; -2135866365
+0238  62020001           [03] call       9   2   0  
+023C  22820000           [04] call       8   0   2  
+0240  18420000           [05] test       8       1    ; to [7] if false
+0244  1A400480           [06] jmp        18           ; to [25]
+0248  D8010000           [07] test       7       0    ; to [9] if true
+024C  1AC00380           [08] jmp        16           ; to [25]
+0250  2482C000           [09] self       8   1   258  ; 340404473
+0254  22820001           [10] call       8   2   2  
+0258  5DC20000           [11] getglobal  9   3        ; MyPlayer
+025C  6482C004           [12] self       9   9   258  ; 340404473
+0260  62820001           [13] call       9   2   2  
+fail op	35
+0264  23400204           [14] close      0  
+0268  1A000280           [15] jmp        9            ; to [25]
+026C  13020000           [16] getupval   8   0      
+0270  0E024104           [17] gettable   8   8   260  ; "lastHitWasFalling"
+0274  64824000           [18] self       9   0   258  ; 340404473
+0278  62820001           [19] call       9   2   2  
+027C  A4424000           [20] self       10  0   257  ; -2135866365
+0280  A2820001           [21] call       10  2   2  
+0284  A4424105           [22] self       10  10  261  ; 417207641
+0288  A2820001           [23] call       10  2   2  
+028C  0C828204           [24] settable   8   9   10 
+0290  1E008000           [25] return     0   1      
+                         * constants:
+0294  06                 sizek (6)
+0295  01                 const type 3
+0296  65770E40           const [0]: (1074689893)
+029A  01                 const type 3
+029B  0344B180           const [1]: (-2135866365)
+029F  01                 const type 3
+02A0  F9284A14           const [2]: (340404473)
+02A4  04                 const type 4
+02A5  09                 string size (9)
+02A6  4D79506C61796572+  "MyPlayer"
+02AE  00                 "\0"
+                         const [3]: "MyPlayer"
+02AF  04                 const type 4
+02B0  12                 string size (18)
+02B1  6C61737448697457+  "lastHitW"
+02B9  617346616C6C696E+  "asFallin"
+02C1  6700               "g\0"
+                         const [4]: "lastHitWasFalling"
+02C3  01                 const type 3
+02C4  5915DE18           const [5]: (417207641)
+                         * functions:
+02C8  00                 sizep (0)
+                         * lines:
+02C9  19                 sizelineinfo (25)
+                         [pc] (line)
+02CA  17                 [01] (23)
+02CB  00                 [02] (23)
+02CC  00                 [03] (23)
+02CD  00                 [04] (23)
+02CE  17                 [05] (23)
+02CF  00                 [06] (23)
+02D0  00                 [07] (23)
+02D1  00                 [08] (23)
+02D2  17                 [09] (23)
+02D3  00                 [10] (23)
+02D4  00                 [11] (23)
+02D5  00                 [12] (23)
+02D6  17                 [13] (23)
+02D7  00                 [14] (23)
+02D8  00                 [15] (23)
+02D9  00                 [16] (24)
+02DA  17                 [17] (24)
+02DB  00                 [18] (24)
+02DC  00                 [19] (24)
+02DD  00                 [20] (24)
+02DE  17                 [21] (24)
+02DF  00                 [22] (24)
+02E0  00                 [23] (24)
+02E1  00                 [24] (24)
+02E2  17                 [25] (26)
+                         * locals:
+032E  00                 sizelocvars (0)
+                         * upvalues:
+032F  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+0330  13                 sizelineinfo (19)
+                         [pc] (line)
+0331  09                 [01] (9)
+0332  00                 [02] (9)
+0333  00                 [03] (9)
+0334  00                 [04] (9)
+0335  09                 [05] (9)
+0336  00                 [06] (9)
+0337  00                 [07] (12)
+0338  00                 [08] (12)
+0339  09                 [09] (12)
+033A  00                 [10] (13)
+033B  00                 [11] (20)
+033C  00                 [12] (20)
+033D  09                 [13] (20)
+033E  00                 [14] (20)
+033F  00                 [15] (22)
+0340  00                 [16] (26)
+0341  09                 [17] (26)
+0342  00                 [18] (26)
+0343  00                 [19] (27)
+                         * locals:
+037D  00                 sizelocvars (0)
+                         * upvalues:
+037E  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+037F                     ** function [1] definition (level 2)
+                         ** start of function **
+037F  00                 string size (0)
+                         source name: (none)
+0380  1D                 line defined (29)
+0381  21                 last line defined (33)
+0382  02                 nups (2)
+0383  03                 numparams (3)
+0384  00                 is_vararg (0)
+0385  08                 maxstacksize (8)
+                         * code:
+0386  0B                 sizecode (11)
+0387  D3000000           [01] getupval   3   0      
+038B  D8000000           [02] test       3       0    ; to [4] if true
+038F  1A800180           [03] jmp        7            ; to [11]
+0393  D3008000           [04] getupval   3   1      
+0397  CE00C001           [05] gettable   3   3   256  ; -1122334020
+039B  13010000           [06] getupval   4   0      
+039F  52010000           [07] move       5   0      
+03A3  92018000           [08] move       6   1      
+03A7  D2010001           [09] move       7   2      
+03AB  E2408002           [10] call       3   5   1  
+03AF  1E008000           [11] return     0   1      
+                         * constants:
+03B3  01                 sizek (1)
+03B4  01                 const type 3
+03B5  BC8A1ABD           const [0]: (-1122334020)
+                         * functions:
+03B9  00                 sizep (0)
+                         * lines:
+03BA  0B                 sizelineinfo (11)
+                         [pc] (line)
+03BB  1E                 [01] (30)
+03BC  00                 [02] (30)
+03BD  00                 [03] (30)
+03BE  00                 [04] (31)
+03BF  1E                 [05] (31)
+03C0  00                 [06] (31)
+03C1  00                 [07] (31)
+03C2  00                 [08] (31)
+03C3  1E                 [09] (31)
+03C4  00                 [10] (31)
+03C5  00                 [11] (33)
+                         * locals:
+03E7  00                 sizelocvars (0)
+                         * upvalues:
+03E8  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+03E9  0F                 sizelineinfo (15)
+                         [pc] (line)
+03EA  04                 [01] (4)
+03EB  00                 [02] (4)
+03EC  00                 [03] (4)
+03ED  00                 [04] (6)
+03EE  04                 [05] (27)
+03EF  00                 [06] (27)
+03F0  00                 [07] (27)
+03F1  00                 [08] (27)
+03F2  04                 [09] (8)
+03F3  00                 [10] (33)
+03F4  00                 [11] (33)
+03F5  00                 [12] (33)
+03F6  06                 [13] (33)
+03F7  00                 [14] (29)
+03F8  00                 [15] (33)
+                         * locals:
+0426  00                 sizelocvars (0)
+                         * upvalues:
+0427  00                 sizeupvalues (0)
+                         ** end of function **
+
+0428                     ** end of chunk **

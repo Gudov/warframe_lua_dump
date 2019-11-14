@@ -1,0 +1,864 @@
+1	C:\wlua_dump\path\Lotus\Scripts\QuestsStreamShipQuestLayers.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Scripts\QuestsStreamShipQuestLayers.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  0E                 size of number (bytes)
+0008  2F                 integral (1=integral)
+447
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+OnLayerStreamed
+OnLayerRemoved
+ShipQuestLayers
+table
+ZERO_VECTOR
+ZERO_ROTATION
+table
+level
+pos
+rot
+layer
+_T
+RemoveShipQuestLayer
+StreamShipQuestLayer
+IsShipQuestLayerLoaded
+Engine
+level
+streamingLayer
+layer
+streamingMode
+GraphicsRes
+StreamRegion_InPlace
+OnLayerStreamed
+pos
+rot
+table
+OnLayerRemoved
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  0E                 maxstacksize (14)
+                         * code:
+0008  2F                 sizecode (47)
+0009  0B000000           [01] newtable   0   0   0    ; array=0, hash=0
+000D  4B000000           [02] newtable   1   0   0    ; array=0, hash=0
+0011  8B000000           [03] newtable   2   0   0    ; array=0, hash=0
+0015  CB000000           [04] newtable   3   0   0    ; array=0, hash=0
+0019  19010000           [05] loadk      4   0        ; 0
+001D  59410000           [06] loadk      5   1        ; 0
+0021  99810000           [07] loadk      6   2        ; 0
+0025  D9C10000           [08] loadk      7   3        ; 0
+0029  19020100           [09] loadk      8   4        ; 0
+002D  65020000           [10] closure    9   0      
+0031  12000000           [11] move       0   0      
+0035  12000003           [12] move       0   6      
+0039  60420100           [13] setglobal  9   5        ; OnLayerStreamed
+003D  60820100           [14] setglobal  9   6        ; -1577300946
+0041  65420000           [15] closure    9   1      
+0045  12000000           [16] move       0   0      
+0049  12008000           [17] move       0   1      
+004D  60C20100           [18] setglobal  9   7        ; OnLayerRemoved
+0051  60020200           [19] setglobal  9   8        ; -573667944
+0055  65820000           [20] closure    9   2      
+0059  12000000           [21] move       0   0      
+005D  12000003           [22] move       0   6      
+0061  12008002           [23] move       0   5      
+0065  12008001           [24] move       0   3      
+0069  A5C20000           [25] closure    10  3      
+006D  12008003           [26] move       0   7      
+0071  12000004           [27] move       0   8      
+0075  12000000           [28] move       0   0      
+0079  E5020100           [29] closure    11  4      
+007D  12000005           [30] move       0   10     
+0081  12000000           [31] move       0   0      
+0085  12000002           [32] move       0   4      
+0089  12008000           [33] move       0   1      
+008D  12000001           [34] move       0   2      
+0091  25430100           [35] closure    12  5      
+0095  12000000           [36] move       0   0      
+0099  12000003           [37] move       0   6      
+009D  65830100           [38] closure    13  6      
+00A1  12008004           [39] move       0   9      
+00A5  12008005           [40] move       0   11     
+00A9  12000006           [41] move       0   12     
+00AD  12000001           [42] move       0   2      
+00B1  12008001           [43] move       0   3      
+00B5  12008000           [44] move       0   1      
+00B9  60430200           [45] setglobal  13  9        ; ShipQuestLayers
+00BD  60830200           [46] setglobal  13  10       ; -1364618885
+00C1  1E008000           [47] return     0   1      
+                         * constants:
+00C5  0B                 sizek (11)
+00C6  03                 const type 3
+00C7  0000803F           const [0]: (0)
+00CB  03                 const type 3
+00CC  00000040           const [1]: (0)
+00D0  03                 const type 3
+00D1  00004040           const [2]: (0)
+00D5  03                 const type 3
+00D6  0000C843           const [3]: (0)
+00DA  03                 const type 3
+00DB  0080CF43           const [4]: (0)
+00DF  04                 const type 4
+00E0  10                 string size (16)
+00E1  4F6E4C6179657253+  "OnLayerS"
+00E9  747265616D656400   "treamed\0"
+                         const [5]: "OnLayerStreamed"
+00F1  01                 const type 3
+00F2  2E4CFCA1           const [6]: (-1577300946)
+00F6  04                 const type 4
+00F7  0F                 string size (15)
+00F8  4F6E4C6179657252+  "OnLayerR"
+0100  656D6F76656400     "emoved\0"
+                         const [7]: "OnLayerRemoved"
+0107  01                 const type 3
+0108  9885CEDD           const [8]: (-573667944)
+010C  04                 const type 4
+010D  10                 string size (16)
+010E  5368697051756573+  "ShipQues"
+0116  744C617965727300   "tLayers\0"
+                         const [9]: "ShipQuestLayers"
+011E  01                 const type 3
+011F  7B91A9AE           const [10]: (-1364618885)
+                         * functions:
+0123  07                 sizep (7)
+                         
+0124                     ** function [0] definition (level 2)
+                         ** start of function **
+0124  00                 string size (0)
+                         source name: (none)
+0125  0F                 line defined (15)
+0126  11                 last line defined (17)
+0127  02                 nups (2)
+0128  02                 numparams (2)
+0129  00                 is_vararg (0)
+012A  04                 maxstacksize (4)
+                         * code:
+012B  04                 sizecode (4)
+012C  93000000           [1] getupval   2   0      
+0130  D3008000           [2] getupval   3   1      
+0134  8CC08000           [3] settable   2   1   3  
+0138  1E008000           [4] return     0   1      
+                         * constants:
+013C  00                 sizek (0)
+                         * functions:
+013D  00                 sizep (0)
+                         * lines:
+013E  04                 sizelineinfo (4)
+                         [pc] (line)
+013F  10                 [1] (16)
+0140  00                 [2] (16)
+0141  00                 [3] (16)
+0142  00                 [4] (17)
+                         * locals:
+014F  00                 sizelocvars (0)
+                         * upvalues:
+0150  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0151                     ** function [1] definition (level 2)
+                         ** start of function **
+0151  00                 string size (0)
+                         source name: (none)
+0152  13                 line defined (19)
+0153  16                 last line defined (22)
+0154  02                 nups (2)
+0155  02                 numparams (2)
+0156  00                 is_vararg (0)
+0157  03                 maxstacksize (3)
+                         * code:
+0158  05                 sizecode (5)
+0159  93000000           [1] getupval   2   0      
+015D  8C00C000           [2] settable   2   1   256  ; nil
+0161  93008000           [3] getupval   2   1      
+0165  8C00C000           [4] settable   2   1   256  ; nil
+0169  1E008000           [5] return     0   1      
+                         * constants:
+016D  01                 sizek (1)
+016E  00                 const type 0
+                         const [0]: nil
+                         * functions:
+016F  00                 sizep (0)
+                         * lines:
+0170  05                 sizelineinfo (5)
+                         [pc] (line)
+0171  14                 [1] (20)
+0172  00                 [2] (20)
+0173  00                 [3] (21)
+0174  00                 [4] (21)
+0175  14                 [5] (22)
+                         * locals:
+0185  00                 sizelocvars (0)
+                         * upvalues:
+0186  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0187                     ** function [2] definition (level 2)
+                         ** start of function **
+0187  00                 string size (0)
+                         source name: (none)
+0188  18                 line defined (24)
+0189  1D                 last line defined (29)
+018A  04                 nups (4)
+018B  01                 numparams (1)
+018C  00                 is_vararg (0)
+018D  04                 maxstacksize (4)
+                         * code:
+018E  12                 sizecode (18)
+018F  5D000000           [01] getglobal  1   0        ; 317968122
+0193  93000000           [02] getupval   2   0      
+0197  8E000001           [03] gettable   2   2   0  
+019B  D3008000           [04] getupval   3   1      
+fail op	35
+019F  63C00001           [05] close      1  
+01A3  1A000080           [06] jmp        1            ; to [8]
+01A7  97400000           [07] loadbool   2   0   1    ; false, to [9]
+01AB  97008000           [08] loadbool   2   1   0    ; true
+01AF  62400001           [09] call       1   2   1  
+01B3  53000000           [10] getupval   1   0      
+01B7  93000001           [11] getupval   2   2      
+01BB  4C800000           [12] settable   1   0   2  
+01BF  5D400000           [13] getglobal  1   1        ; table
+01C3  4E80C000           [14] gettable   1   1   258  ; -431682403
+01C7  93008001           [15] getupval   2   3      
+01CB  D2000000           [16] move       3   0      
+01CF  62408001           [17] call       1   3   1  
+01D3  1E008000           [18] return     0   1      
+                         * constants:
+01D7  03                 sizek (3)
+01D8  01                 const type 3
+01D9  FACEF312           const [0]: (317968122)
+01DD  04                 const type 4
+01DE  06                 string size (6)
+01DF  7461626C6500       "table\0"
+                         const [1]: "table"
+01E5  01                 const type 3
+01E6  9D0C45E6           const [2]: (-431682403)
+                         * functions:
+01EA  00                 sizep (0)
+                         * lines:
+01EB  12                 sizelineinfo (18)
+                         [pc] (line)
+01EC  19                 [01] (25)
+01ED  00                 [02] (25)
+01EE  00                 [03] (25)
+01EF  00                 [04] (25)
+01F0  19                 [05] (25)
+01F1  00                 [06] (25)
+01F2  00                 [07] (25)
+01F3  00                 [08] (25)
+01F4  19                 [09] (25)
+01F5  00                 [10] (26)
+01F6  00                 [11] (26)
+01F7  00                 [12] (26)
+01F8  19                 [13] (28)
+01F9  00                 [14] (28)
+01FA  00                 [15] (28)
+01FB  00                 [16] (28)
+01FC  19                 [17] (28)
+01FD  00                 [18] (29)
+                         * locals:
+0234  00                 sizelocvars (0)
+                         * upvalues:
+0235  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0236                     ** function [3] definition (level 2)
+                         ** start of function **
+0236  00                 string size (0)
+                         source name: (none)
+0237  1F                 line defined (31)
+0238  27                 last line defined (39)
+0239  03                 nups (3)
+023A  00                 numparams (0)
+023B  00                 is_vararg (0)
+023C  05                 maxstacksize (5)
+                         * code:
+023D  0D                 sizecode (13)
+023E  13000000           [01] getupval   0   0      
+0242  53008000           [02] getupval   1   1      
+0246  99000000           [03] loadk      2   0        ; 0
+024A  10000180           [04] forprep    0   5        ; to [10]
+024E  13010001           [05] getupval   4   2      
+0252  0EC10002           [06] gettable   4   4   3  
+fail op	35
+0256  23404002           [07] close      0  
+025A  1A000080           [08] jmp        1            ; to [10]
+025E  DE000001           [09] return     3   2      
+0262  1440FE7F           [10] forloop    0   -6       ; to [5] if loop
+0266  06010002           [11] loadnil    4   4      
+026A  1E010001           [12] return     4   2      
+026E  1E008000           [13] return     0   1      
+                         * constants:
+0272  02                 sizek (2)
+0273  03                 const type 3
+0274  0000803F           const [0]: (0)
+0278  00                 const type 0
+                         const [1]: nil
+                         * functions:
+0279  00                 sizep (0)
+                         * lines:
+027A  0D                 sizelineinfo (13)
+                         [pc] (line)
+027B  20                 [01] (32)
+027C  00                 [02] (32)
+027D  00                 [03] (32)
+027E  00                 [04] (32)
+027F  20                 [05] (33)
+0280  00                 [06] (33)
+0281  00                 [07] (33)
+0282  00                 [08] (33)
+0283  20                 [09] (34)
+0284  00                 [10] (32)
+0285  00                 [11] (38)
+0286  00                 [12] (38)
+0287  20                 [13] (39)
+                         * locals:
+02AF  00                 sizelocvars (0)
+                         * upvalues:
+02B0  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+02B1                     ** function [4] definition (level 2)
+                         ** start of function **
+02B1  00                 string size (0)
+                         source name: (none)
+02B2  29                 line defined (41)
+02B3  40                 last line defined (64)
+02B4  05                 nups (5)
+02B5  03                 numparams (3)
+02B6  00                 is_vararg (0)
+02B7  08                 maxstacksize (8)
+                         * code:
+02B8  27                 sizecode (39)
+02B9  DD000000           [01] getglobal  3   0        ; 317968122
+02BD  1D410000           [02] getglobal  4   1        ; 1074689893
+02C1  52010000           [03] move       5   0      
+02C5  22810001           [04] call       4   2   2  
+fail op	9
+02C9  09010002           [05] settable   4   4   0  
+02CD  E2400001           [06] call       3   2   1  
+02D1  58400000           [07] test       1       1    ; to [9] if false
+02D5  1A000080           [08] jmp        1            ; to [10]
+02D9  5D800000           [09] getglobal  1   2        ; ZERO_VECTOR
+02DD  98400000           [10] test       2       1    ; to [12] if false
+02E1  1A000080           [11] jmp        1            ; to [13]
+02E5  9DC00000           [12] getglobal  2   3        ; ZERO_ROTATION
+02E9  D3000000           [13] getupval   3   0      
+02ED  E2808000           [14] call       3   1   2  
+02F1  1D010000           [15] getglobal  4   0        ; 317968122
+02F5  52018001           [16] move       5   3      
+02F9  22410001           [17] call       4   2   1  
+02FD  13018000           [18] getupval   4   1      
+0301  53010001           [19] getupval   5   2      
+0305  0C418101           [20] settable   4   3   5  
+0309  13018001           [21] getupval   4   3      
+030D  0C018001           [22] settable   4   3   0  
+0311  1D010100           [23] getglobal  4   4        ; table
+0315  0E414102           [24] gettable   4   4   261  ; -431682403
+0319  53010002           [25] getupval   5   4      
+031D  8B010100           [26] newtable   6   0   4    ; array=0, hash=4
+0321  8C010083           [27] settable   6   262 0    ; "level"
+fail op	5
+0325  C5418000           [28] getglobal  7   513      ; nil
+0329  1A000080           [29] jmp        1            ; to [31]
+032D  DD810000           [30] getglobal  7   2        ; ZERO_VECTOR
+0331  8CC18183           [31] settable   6   263 7    ; "pos"
+fail op	5
+0335  C5410001           [32] getglobal  7   1025     ; nil
+0339  1A000080           [33] jmp        1            ; to [35]
+033D  DD810000           [34] getglobal  7   2        ; ZERO_VECTOR
+0341  8CC10184           [35] settable   6   264 7    ; "rot"
+0345  8CC18084           [36] settable   6   265 3    ; "layer"
+0349  22418001           [37] call       4   3   1  
+034D  DE000001           [38] return     3   2      
+0351  1E008000           [39] return     0   1      
+                         * constants:
+0355  0A                 sizek (10)
+0356  01                 const type 3
+0357  FACEF312           const [0]: (317968122)
+035B  01                 const type 3
+035C  65770E40           const [1]: (1074689893)
+0360  04                 const type 4
+0361  0C                 string size (12)
+0362  5A45524F5F564543+  "ZERO_VEC"
+036A  544F5200           "TOR\0"
+                         const [2]: "ZERO_VECTOR"
+036E  04                 const type 4
+036F  0E                 string size (14)
+0370  5A45524F5F524F54+  "ZERO_ROT"
+0378  4154494F4E00       "ATION\0"
+                         const [3]: "ZERO_ROTATION"
+037E  04                 const type 4
+037F  06                 string size (6)
+0380  7461626C6500       "table\0"
+                         const [4]: "table"
+0386  01                 const type 3
+0387  9D0C45E6           const [5]: (-431682403)
+038B  04                 const type 4
+038C  06                 string size (6)
+038D  6C6576656C00       "level\0"
+                         const [6]: "level"
+0393  04                 const type 4
+0394  04                 string size (4)
+0395  706F7300           "pos\0"
+                         const [7]: "pos"
+0399  04                 const type 4
+039A  04                 string size (4)
+039B  726F7400           "rot\0"
+                         const [8]: "rot"
+039F  04                 const type 4
+03A0  06                 string size (6)
+03A1  6C6179657200       "layer\0"
+                         const [9]: "layer"
+                         * functions:
+03A7  00                 sizep (0)
+                         * lines:
+03A8  27                 sizelineinfo (39)
+                         [pc] (line)
+03A9  2A                 [01] (42)
+03AA  00                 [02] (42)
+03AB  00                 [03] (42)
+03AC  00                 [04] (42)
+03AD  2A                 [05] (42)
+03AE  00                 [06] (42)
+03AF  00                 [07] (44)
+03B0  00                 [08] (44)
+03B1  2A                 [09] (44)
+03B2  00                 [10] (45)
+03B3  00                 [11] (45)
+03B4  00                 [12] (45)
+03B5  2A                 [13] (47)
+03B6  00                 [14] (47)
+03B7  00                 [15] (48)
+03B8  00                 [16] (48)
+03B9  2A                 [17] (48)
+03BA  00                 [18] (50)
+03BB  00                 [19] (50)
+03BC  00                 [20] (50)
+03BD  2A                 [21] (51)
+03BE  00                 [22] (51)
+03BF  00                 [23] (53)
+03C0  00                 [24] (53)
+03C1  2C                 [25] (54)
+03C2  00                 [26] (54)
+03C3  00                 [27] (56)
+03C4  00                 [28] (57)
+03C5  2C                 [29] (57)
+03C6  00                 [30] (57)
+03C7  00                 [31] (57)
+03C8  00                 [32] (58)
+03C9  2C                 [33] (58)
+03CA  00                 [34] (58)
+03CB  00                 [35] (58)
+03CC  00                 [36] (59)
+03CD  2D                 [37] (53)
+03CE  00                 [38] (63)
+03CF  00                 [39] (64)
+                         * locals:
+0445  00                 sizelocvars (0)
+                         * upvalues:
+0446  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0447                     ** function [5] definition (level 2)
+                         ** start of function **
+0447  00                 string size (0)
+                         source name: (none)
+0448  42                 line defined (66)
+0449  44                 last line defined (68)
+044A  02                 nups (2)
+044B  01                 numparams (1)
+044C  00                 is_vararg (0)
+044D  03                 maxstacksize (3)
+                         * code:
+044E  09                 sizecode (9)
+044F  53000000           [1] getupval   1   0      
+0453  4E008000           [2] gettable   1   1   0  
+0457  93008000           [3] getupval   2   1      
+fail op	35
+045B  63808000           [4] close      1  
+045F  1A000080           [5] jmp        1            ; to [7]
+0463  57400000           [6] loadbool   1   0   1    ; false, to [8]
+0467  57008000           [7] loadbool   1   1   0    ; true
+046B  5E000001           [8] return     1   2      
+046F  1E008000           [9] return     0   1      
+                         * constants:
+0473  00                 sizek (0)
+                         * functions:
+0474  00                 sizep (0)
+                         * lines:
+0475  09                 sizelineinfo (9)
+                         [pc] (line)
+0476  43                 [1] (67)
+0477  00                 [2] (67)
+0478  00                 [3] (67)
+0479  00                 [4] (67)
+047A  43                 [5] (67)
+047B  00                 [6] (67)
+047C  00                 [7] (67)
+047D  00                 [8] (67)
+047E  43                 [9] (68)
+                         * locals:
+049A  00                 sizelocvars (0)
+                         * upvalues:
+049B  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+049C                     ** function [6] definition (level 2)
+                         ** start of function **
+049C  00                 string size (0)
+                         source name: (none)
+049D  46                 line defined (70)
+049E  69                 last line defined (105)
+049F  06                 nups (6)
+04A0  00                 numparams (0)
+04A1  00                 is_vararg (0)
+04A2  0F                 maxstacksize (15)
+                         * code:
+04A3  4E                 sizecode (78)
+04A4  1D000000           [01] getglobal  0   0        ; _T
+04A8  53000000           [02] getupval   1   0      
+04AC  0C408080           [03] settable   0   257 1    ; "RemoveShipQuestLayer"
+04B0  1D000000           [04] getglobal  0   0        ; _T
+04B4  53008000           [05] getupval   1   1      
+04B8  0C400081           [06] settable   0   258 1    ; "StreamShipQuestLayer"
+04BC  1D000000           [07] getglobal  0   0        ; _T
+04C0  53000001           [08] getupval   1   2      
+04C4  0C408081           [09] settable   0   259 1    ; "IsShipQuestLayerLoaded"
+04C8  1D000100           [10] getglobal  0   4        ; 538022378
+04CC  59400100           [11] loadk      1   5        ; 0
+04D0  22400001           [12] call       0   2   1  
+04D4  13008001           [13] getupval   0   3      
+04D8  0A000000           [14] len        0   0      
+04DC  59800100           [15] loadk      1   6        ; 0
+04E0  99C00100           [16] loadk      2   7        ; 0
+04E4  10C00680           [17] forprep    0   28       ; to [46]
+04E8  13018001           [18] getupval   4   3      
+04EC  0EC10002           [19] gettable   4   4   3  
+04F0  5D010200           [20] getglobal  5   8        ; Engine
+04F4  4E41C202           [21] gettable   5   5   265  ; 140909057
+04F8  62818000           [22] call       5   1   2  
+04FC  8E814202           [23] gettable   6   4   266  ; "level"
+0500  4C810185           [24] settable   5   266 6    ; "level"
+0504  8E014302           [25] gettable   6   4   268  ; "layer"
+0508  4C818185           [26] settable   5   267 6    ; "streamingLayer"
+050C  9D810300           [27] getglobal  6   14       ; GraphicsRes
+0510  8EC14303           [28] gettable   6   6   271  ; "StreamRegion_InPlace"
+0514  4C818186           [29] settable   5   269 6    ; "streamingMode"
+0518  A401C402           [30] self       6   5   272  ; -1321991990
+051C  19420400           [31] loadk      8   17       ; "OnLayerStreamed"
+0520  A2418001           [32] call       6   3   1  
+0524  A481C402           [33] self       6   5   274  ; -439994597
+0528  0EC24402           [34] gettable   8   4   275  ; "pos"
+052C  4E024502           [35] gettable   9   4   276  ; "rot"
+0530  A2410002           [36] call       6   4   1  
+0534  9D010200           [37] getglobal  6   8        ; Engine
+0538  8E414503           [38] gettable   6   6   277  ; 1871035568
+053C  D2018002           [39] move       7   5      
+0540  A2410001           [40] call       6   2   1  
+0544  9D810500           [41] getglobal  6   22       ; table
+0548  8EC14503           [42] gettable   6   6   279  ; -843973282
+054C  D3018001           [43] getupval   7   3      
+0550  12028001           [44] move       8   3      
+0554  A2418001           [45] call       6   3   1  
+0558  1480F87F           [46] forloop    0   -29      ; to [18] if loop
+055C  93010002           [47] getupval   6   4      
+0560  8A010003           [48] len        6   6      
+0564  D9810100           [49] loadk      7   6        ; 0
+0568  19C20100           [50] loadk      8   7        ; 0
+056C  90C10580           [51] forprep    6   24       ; to [76]
+0570  93020002           [52] getupval   10  4      
+0574  8E420205           [53] gettable   10  10  9  
+0578  DD020200           [54] getglobal  11  8        ; Engine
+057C  CE42C205           [55] gettable   11  11  265  ; 140909057
+0580  E2828000           [56] call       11  1   2  
+0584  13038002           [57] getupval   12  5      
+0588  0E830206           [58] gettable   12  12  10 
+058C  CC020385           [59] settable   11  266 12   ; "level"
+0590  CC828285           [60] settable   11  267 10   ; "streamingLayer"
+0594  1D830300           [61] getglobal  12  14       ; GraphicsRes
+0598  0EC34306           [62] gettable   12  12  271  ; "StreamRegion_InPlace"
+059C  CC028386           [63] settable   11  269 12   ; "streamingMode"
+05A0  2403C405           [64] self       12  11  272  ; -1321991990
+05A4  99030600           [65] loadk      14  24       ; "OnLayerRemoved"
+05A8  22438001           [66] call       12  3   1  
+05AC  1D030200           [67] getglobal  12  8        ; Engine
+05B0  0E434606           [68] gettable   12  12  281  ; 1109773596
+05B4  52038005           [69] move       13  11     
+05B8  22430001           [70] call       12  2   1  
+05BC  1D830500           [71] getglobal  12  22       ; table
+05C0  0EC34506           [72] gettable   12  12  279  ; -843973282
+05C4  53030002           [73] getupval   13  4      
+05C8  92038004           [74] move       14  9      
+05CC  22438001           [75] call       12  3   1  
+05D0  9481F97F           [76] forloop    6   -25      ; to [52] if loop
+05D4  1AC0EE7F           [77] jmp        -68          ; to [10]
+05D8  1E008000           [78] return     0   1      
+                         * constants:
+05DC  1A                 sizek (26)
+05DD  04                 const type 4
+05DE  03                 string size (3)
+05DF  5F5400             "_T\0"
+                         const [0]: "_T"
+05E2  04                 const type 4
+05E3  15                 string size (21)
+05E4  52656D6F76655368+  "RemoveSh"
+05EC  697051756573744C+  "ipQuestL"
+05F4  6179657200         "ayer\0"
+                         const [1]: "RemoveShipQuestLayer"
+05F9  04                 const type 4
+05FA  15                 string size (21)
+05FB  53747265616D5368+  "StreamSh"
+0603  697051756573744C+  "ipQuestL"
+060B  6179657200         "ayer\0"
+                         const [2]: "StreamShipQuestLayer"
+0610  04                 const type 4
+0611  17                 string size (23)
+0612  4973536869705175+  "IsShipQu"
+061A  6573744C61796572+  "estLayer"
+0622  4C6F6164656400     "Loaded\0"
+                         const [3]: "IsShipQuestLayerLoaded"
+0629  01                 const type 3
+062A  EA911120           const [4]: (538022378)
+062E  03                 const type 3
+062F  00000000           const [5]: (0)
+0633  03                 const type 3
+0634  0000803F           const [6]: (0)
+0638  03                 const type 3
+0639  000080BF           const [7]: (0)
+063D  04                 const type 4
+063E  07                 string size (7)
+063F  456E67696E6500     "Engine\0"
+                         const [8]: "Engine"
+0646  01                 const type 3
+0647  011A6608           const [9]: (140909057)
+064B  04                 const type 4
+064C  06                 string size (6)
+064D  6C6576656C00       "level\0"
+                         const [10]: "level"
+0653  04                 const type 4
+0654  0F                 string size (15)
+0655  73747265616D696E+  "streamin"
+065D  674C6179657200     "gLayer\0"
+                         const [11]: "streamingLayer"
+0664  04                 const type 4
+0665  06                 string size (6)
+0666  6C6179657200       "layer\0"
+                         const [12]: "layer"
+066C  04                 const type 4
+066D  0E                 string size (14)
+066E  73747265616D696E+  "streamin"
+0676  674D6F646500       "gMode\0"
+                         const [13]: "streamingMode"
+067C  04                 const type 4
+067D  0C                 string size (12)
+067E  4772617068696373+  "Graphics"
+0686  52657300           "Res\0"
+                         const [14]: "GraphicsRes"
+068A  04                 const type 4
+068B  15                 string size (21)
+068C  53747265616D5265+  "StreamRe"
+0694  67696F6E5F496E50+  "gion_InP"
+069C  6C61636500         "lace\0"
+                         const [15]: "StreamRegion_InPlace"
+06A1  01                 const type 3
+06A2  CA0034B1           const [16]: (-1321991990)
+06A6  04                 const type 4
+06A7  10                 string size (16)
+06A8  4F6E4C6179657253+  "OnLayerS"
+06B0  747265616D656400   "treamed\0"
+                         const [17]: "OnLayerStreamed"
+06B8  01                 const type 3
+06B9  1B37C6E5           const [18]: (-439994597)
+06BD  04                 const type 4
+06BE  04                 string size (4)
+06BF  706F7300           "pos\0"
+                         const [19]: "pos"
+06C3  04                 const type 4
+06C4  04                 string size (4)
+06C5  726F7400           "rot\0"
+                         const [20]: "rot"
+06C9  01                 const type 3
+06CA  B0BC856F           const [21]: (1871035568)
+06CE  04                 const type 4
+06CF  06                 string size (6)
+06D0  7461626C6500       "table\0"
+                         const [22]: "table"
+06D6  01                 const type 3
+06D7  5EFDB1CD           const [23]: (-843973282)
+06DB  04                 const type 4
+06DC  0F                 string size (15)
+06DD  4F6E4C6179657252+  "OnLayerR"
+06E5  656D6F76656400     "emoved\0"
+                         const [24]: "OnLayerRemoved"
+06EC  01                 const type 3
+06ED  1CCD2542           const [25]: (1109773596)
+                         * functions:
+06F1  00                 sizep (0)
+                         * lines:
+06F2  4E                 sizelineinfo (78)
+                         [pc] (line)
+06F3  47                 [01] (71)
+06F4  00                 [02] (71)
+06F5  00                 [03] (71)
+06F6  00                 [04] (72)
+06F7  47                 [05] (72)
+06F8  00                 [06] (72)
+06F9  00                 [07] (73)
+06FA  00                 [08] (73)
+06FB  47                 [09] (73)
+06FC  00                 [10] (76)
+06FD  00                 [11] (76)
+06FE  00                 [12] (76)
+06FF  48                 [13] (78)
+0700  00                 [14] (78)
+0701  00                 [15] (78)
+0702  00                 [16] (78)
+0703  48                 [17] (78)
+0704  00                 [18] (79)
+0705  00                 [19] (79)
+0706  00                 [20] (80)
+0707  48                 [21] (80)
+0708  00                 [22] (80)
+0709  00                 [23] (81)
+070A  00                 [24] (81)
+070B  49                 [25] (82)
+070C  00                 [26] (82)
+070D  00                 [27] (83)
+070E  00                 [28] (83)
+070F  49                 [29] (83)
+0710  00                 [30] (84)
+0711  00                 [31] (84)
+0712  00                 [32] (84)
+0713  49                 [33] (85)
+0714  00                 [34] (85)
+0715  00                 [35] (85)
+0716  00                 [36] (85)
+0717  4C                 [37] (87)
+0718  00                 [38] (87)
+0719  00                 [39] (87)
+071A  00                 [40] (87)
+071B  4C                 [41] (89)
+071C  00                 [42] (89)
+071D  00                 [43] (89)
+071E  00                 [44] (89)
+071F  4C                 [45] (89)
+0720  00                 [46] (78)
+0721  00                 [47] (92)
+0722  00                 [48] (92)
+0723  4E                 [49] (92)
+0724  00                 [50] (92)
+0725  00                 [51] (92)
+0726  00                 [52] (93)
+0727  4E                 [53] (93)
+0728  00                 [54] (94)
+0729  00                 [55] (94)
+072A  00                 [56] (94)
+072B  4E                 [57] (95)
+072C  00                 [58] (95)
+072D  00                 [59] (95)
+072E  00                 [60] (96)
+072F  4E                 [61] (97)
+0730  00                 [62] (97)
+0731  00                 [63] (97)
+0732  00                 [64] (98)
+0733  4E                 [65] (98)
+0734  00                 [66] (98)
+0735  00                 [67] (100)
+0736  00                 [68] (100)
+0737  4F                 [69] (100)
+0738  00                 [70] (100)
+0739  00                 [71] (102)
+073A  00                 [72] (102)
+073B  4F                 [73] (102)
+073C  00                 [74] (102)
+073D  00                 [75] (102)
+073E  00                 [76] (92)
+073F  50                 [77] (103)
+0740  00                 [78] (105)
+                         * locals:
+082B  00                 sizelocvars (0)
+                         * upvalues:
+082C  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+082D  2F                 sizelineinfo (47)
+                         [pc] (line)
+082E  01                 [01] (1)
+082F  00                 [02] (2)
+0830  00                 [03] (4)
+0831  00                 [04] (5)
+0832  02                 [05] (7)
+0833  00                 [06] (8)
+0834  00                 [07] (9)
+0835  00                 [08] (11)
+0836  04                 [09] (12)
+0837  00                 [10] (17)
+0838  00                 [11] (17)
+0839  00                 [12] (17)
+083A  05                 [13] (17)
+083B  00                 [14] (15)
+083C  00                 [15] (22)
+083D  00                 [16] (22)
+083E  07                 [17] (22)
+083F  00                 [18] (22)
+0840  00                 [19] (19)
+0841  00                 [20] (29)
+0842  08                 [21] (29)
+0843  00                 [22] (29)
+0844  00                 [23] (29)
+0845  00                 [24] (29)
+0846  09                 [25] (39)
+0847  00                 [26] (39)
+0848  00                 [27] (39)
+0849  00                 [28] (39)
+084A  0B                 [29] (64)
+084B  00                 [30] (64)
+084C  00                 [31] (64)
+084D  00                 [32] (64)
+084E  0C                 [33] (64)
+084F  00                 [34] (64)
+0850  00                 [35] (68)
+0851  00                 [36] (68)
+0852  11                 [37] (68)
+0853  00                 [38] (105)
+0854  00                 [39] (105)
+0855  00                 [40] (105)
+0856  11                 [41] (105)
+0857  00                 [42] (105)
+0858  00                 [43] (105)
+0859  00                 [44] (105)
+085A  11                 [45] (105)
+085B  00                 [46] (70)
+085C  00                 [47] (105)
+                         * locals:
+08EA  00                 sizelocvars (0)
+                         * upvalues:
+08EB  00                 sizeupvalues (0)
+                         ** end of function **
+
+08EC                     ** end of chunk **

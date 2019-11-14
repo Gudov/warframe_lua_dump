@@ -1,0 +1,288 @@
+1	C:\wlua_dump\path\Lotus\Scripts\CmdsCmdExecTag.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Scripts\CmdsCmdExecTag.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  02                 size of number (bytes)
+0008  08                 integral (1=integral)
+48
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+/EE/Types/Effects/PortForwarder
+ExecTag
+string
+EMPTY_SYMBOL
+gRegion
+gScriptTriggerType
+Execute
+TriggerPort
+gCinematicType
+StartPlaying
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  02                 maxstacksize (2)
+                         * code:
+0008  08                 sizecode (8)
+0009  1D000000           [1] getglobal  0   0        ; 738251817
+000D  59400000           [2] loadk      1   1        ; "/EE/Types/Effects/PortForwarder"
+0011  22800001           [3] call       0   2   2  
+0015  65000000           [4] closure    1   0      
+0019  12000000           [5] move       0   0      
+001D  60800000           [6] setglobal  1   2        ; ExecTag
+0021  60C00000           [7] setglobal  1   3        ; -1025630231
+0025  1E008000           [8] return     0   1      
+                         * constants:
+0029  04                 sizek (4)
+002A  01                 const type 3
+002B  29D4002C           const [0]: (738251817)
+002F  04                 const type 4
+0030  20                 string size (32)
+0031  2F45452F54797065+  "/EE/Type"
+0039  732F456666656374+  "s/Effect"
+0041  732F506F7274466F+  "s/PortFo"
+0049  7277617264657200   "rwarder\0"
+                         const [1]: "/EE/Types/Effects/PortForwarder"
+0051  04                 const type 4
+0052  08                 string size (8)
+0053  4578656354616700   "ExecTag\0"
+                         const [2]: "ExecTag"
+005B  01                 const type 3
+005C  E91FDEC2           const [3]: (-1025630231)
+                         * functions:
+0060  01                 sizep (1)
+                         
+0061                     ** function [0] definition (level 2)
+                         ** start of function **
+0061  00                 string size (0)
+                         source name: (none)
+0062  03                 line defined (3)
+0063  1B                 last line defined (27)
+0064  01                 nups (1)
+0065  01                 numparams (1)
+0066  00                 is_vararg (0)
+0067  0A                 maxstacksize (10)
+                         * code:
+0068  3C                 sizecode (60)
+0069  5D000000           [01] getglobal  1   0        ; 1780700712
+006D  92000000           [02] move       2   0      
+0071  62800001           [03] call       1   2   2  
+fail op	35
+0075  6340C000           [04] close      1  
+0079  1A000080           [05] jmp        1            ; to [7]
+007D  1E008000           [06] return     0   1      
+0081  5D800000           [07] getglobal  1   2        ; -332969190
+0085  92000000           [08] move       2   0      
+0089  62800001           [09] call       1   2   2  
+008D  12008000           [10] move       0   1      
+0091  64C04000           [11] self       1   0   259  ; 828278287
+0095  62800001           [12] call       1   2   2  
+0099  58000000           [13] test       1       0    ; to [15] if true
+009D  1A800080           [14] jmp        3            ; to [18]
+00A1  5D000100           [15] getglobal  1   4        ; EMPTY_SYMBOL
+fail op	35
+00A5  23400000           [16] close      0  
+00A9  1A000080           [17] jmp        1            ; to [19]
+00AD  1E008000           [18] return     0   1      
+00B1  5D400100           [19] getglobal  1   5        ; gRegion
+00B5  6480C100           [20] self       1   1   262  ; -1485896174
+00B9  D2000000           [21] move       3   0      
+00BD  62808001           [22] call       1   3   2  
+00C1  99C00100           [23] loadk      2   7        ; 0
+00C5  CA008000           [24] len        3   1      
+00C9  19C10100           [25] loadk      4   7        ; 0
+00CD  90C00780           [26] forprep    2   32       ; to [59]
+00D1  8E418100           [27] gettable   6   1   5  
+00D5  DD010200           [28] getglobal  7   8        ; 1074689893
+00D9  12020003           [29] move       8   6      
+00DD  E2810001           [30] call       7   2   2  
+00E1  D8410000           [31] test       7       1    ; to [33] if false
+00E5  1A400680           [32] jmp        26           ; to [59]
+00E9  E4414203           [33] self       7   6   265  ; -1957065004
+00ED  5D820200           [34] getglobal  9   10       ; gScriptTriggerType
+00F1  E2818001           [35] call       7   3   2  
+00F5  D8010000           [36] test       7       0    ; to [38] if true
+00F9  1AC00080           [37] jmp        4            ; to [42]
+00FD  E4C14203           [38] self       7   6   267  ; -1923578185
+0101  59020300           [39] loadk      9   12       ; "Execute"
+0105  E2418001           [40] call       7   3   1  
+0109  1A000480           [41] jmp        17           ; to [59]
+010D  E4414203           [42] self       7   6   265  ; -1957065004
+0111  53020000           [43] getupval   9   0      
+0115  E2818001           [44] call       7   3   2  
+0119  D8010000           [45] test       7       0    ; to [47] if true
+011D  1AC00080           [46] jmp        4            ; to [51]
+0121  E4C14203           [47] self       7   6   267  ; -1923578185
+0125  59420300           [48] loadk      9   13       ; "TriggerPort"
+0129  E2418001           [49] call       7   3   1  
+012D  1AC00180           [50] jmp        8            ; to [59]
+0131  E4414203           [51] self       7   6   265  ; -1957065004
+0135  5D820300           [52] getglobal  9   14       ; gCinematicType
+0139  E2818001           [53] call       7   3   2  
+013D  D8010000           [54] test       7       0    ; to [56] if true
+0141  1A800080           [55] jmp        3            ; to [59]
+0145  E4C14203           [56] self       7   6   267  ; -1923578185
+0149  59C20300           [57] loadk      9   15       ; "StartPlaying"
+014D  E2418001           [58] call       7   3   1  
+0151  9480F77F           [59] forloop    2   -33      ; to [27] if loop
+0155  1E008000           [60] return     0   1      
+                         * constants:
+0159  10                 sizek (16)
+015A  01                 const type 3
+015B  2856236A           const [0]: (1780700712)
+015F  04                 const type 4
+0160  07                 string size (7)
+0161  737472696E6700     "string\0"
+                         const [1]: "string"
+0168  01                 const type 3
+0169  1A4B27EC           const [2]: (-332969190)
+016D  01                 const type 3
+016E  0F865E31           const [3]: (828278287)
+0172  04                 const type 4
+0173  0D                 string size (13)
+0174  454D5054595F5359+  "EMPTY_SY"
+017C  4D424F4C00         "MBOL\0"
+                         const [4]: "EMPTY_SYMBOL"
+0181  04                 const type 4
+0182  08                 string size (8)
+0183  67526567696F6E00   "gRegion\0"
+                         const [5]: "gRegion"
+018B  01                 const type 3
+018C  12066FA7           const [6]: (-1485896174)
+0190  03                 const type 3
+0191  0000803F           const [7]: (0)
+0195  01                 const type 3
+0196  65770E40           const [8]: (1074689893)
+019A  01                 const type 3
+019B  D48E598B           const [9]: (-1957065004)
+019F  04                 const type 4
+01A0  13                 string size (19)
+01A1  6753637269707454+  "gScriptT"
+01A9  7269676765725479+  "riggerTy"
+01B1  706500             "pe\0"
+                         const [10]: "gScriptTriggerType"
+01B4  01                 const type 3
+01B5  B786588D           const [11]: (-1923578185)
+01B9  04                 const type 4
+01BA  08                 string size (8)
+01BB  4578656375746500   "Execute\0"
+                         const [12]: "Execute"
+01C3  04                 const type 4
+01C4  0C                 string size (12)
+01C5  5472696767657250+  "TriggerP"
+01CD  6F727400           "ort\0"
+                         const [13]: "TriggerPort"
+01D1  04                 const type 4
+01D2  0F                 string size (15)
+01D3  6743696E656D6174+  "gCinemat"
+01DB  69635479706500     "icType\0"
+                         const [14]: "gCinematicType"
+01E2  04                 const type 4
+01E3  0D                 string size (13)
+01E4  5374617274506C61+  "StartPla"
+01EC  79696E6700         "ying\0"
+                         const [15]: "StartPlaying"
+                         * functions:
+01F1  00                 sizep (0)
+                         * lines:
+01F2  3C                 sizelineinfo (60)
+                         [pc] (line)
+01F3  04                 [01] (4)
+01F4  00                 [02] (4)
+01F5  00                 [03] (4)
+01F6  00                 [04] (4)
+01F7  04                 [05] (4)
+01F8  00                 [06] (5)
+01F9  00                 [07] (8)
+01FA  00                 [08] (8)
+01FB  04                 [09] (8)
+01FC  00                 [10] (8)
+01FD  00                 [11] (10)
+01FE  00                 [12] (10)
+01FF  04                 [13] (10)
+0200  00                 [14] (10)
+0201  00                 [15] (10)
+0202  00                 [16] (10)
+0203  04                 [17] (10)
+0204  00                 [18] (11)
+0205  00                 [19] (14)
+0206  00                 [20] (14)
+0207  05                 [21] (14)
+0208  00                 [22] (14)
+0209  00                 [23] (15)
+020A  00                 [24] (15)
+020B  08                 [25] (15)
+020C  00                 [26] (15)
+020D  00                 [27] (16)
+020E  00                 [28] (17)
+020F  08                 [29] (17)
+0210  00                 [30] (17)
+0211  00                 [31] (17)
+0212  00                 [32] (17)
+0213  08                 [33] (18)
+0214  00                 [34] (18)
+0215  00                 [35] (18)
+0216  00                 [36] (18)
+0217  08                 [37] (18)
+0218  00                 [38] (19)
+0219  00                 [39] (19)
+021A  00                 [40] (19)
+021B  0A                 [41] (19)
+021C  00                 [42] (20)
+021D  00                 [43] (20)
+021E  00                 [44] (20)
+021F  0A                 [45] (20)
+0220  00                 [46] (20)
+0221  00                 [47] (21)
+0222  00                 [48] (21)
+0223  0A                 [49] (21)
+0224  00                 [50] (21)
+0225  00                 [51] (22)
+0226  00                 [52] (22)
+0227  0A                 [53] (22)
+0228  00                 [54] (22)
+0229  00                 [55] (22)
+022A  00                 [56] (23)
+022B  0A                 [57] (23)
+022C  00                 [58] (23)
+022D  00                 [59] (15)
+022E  00                 [60] (27)
+                         * locals:
+02E3  00                 sizelocvars (0)
+                         * upvalues:
+02E4  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+02E5  08                 sizelineinfo (8)
+                         [pc] (line)
+02E6  01                 [1] (1)
+02E7  00                 [2] (1)
+02E8  00                 [3] (1)
+02E9  00                 [4] (27)
+02EA  01                 [5] (27)
+02EB  00                 [6] (27)
+02EC  00                 [7] (3)
+02ED  00                 [8] (27)
+                         * locals:
+0306  00                 sizelocvars (0)
+                         * upvalues:
+0307  00                 sizeupvalues (0)
+                         ** end of function **
+
+0308                     ** end of chunk **

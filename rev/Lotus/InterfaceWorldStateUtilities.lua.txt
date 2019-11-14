@@ -1,0 +1,253 @@
+1	C:\wlua_dump\path\Lotus\InterfaceWorldStateUtilities.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\InterfaceWorldStateUtilities.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  03                 size of number (bytes)
+0008  09                 integral (1=integral)
+49
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+package
+seeall
+GetSeasonParamOverride
+_T
+SeasonParamString
+SeasonParams
+gGameData
+mSeasonInfo
+mParams
+cjson
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  03                 maxstacksize (3)
+                         * code:
+0008  09                 sizecode (9)
+0009  1D000000           [1] getglobal  0   0        ; 954442511
+000D  41000001           [2] vararg     1   2      
+0011  9D400000           [3] getglobal  2   1        ; package
+0015  8E804001           [4] gettable   2   2   258  ; "seeall"
+0019  22408001           [5] call       0   3   1  
+001D  25000000           [6] closure    0   0      
+0021  20C00000           [7] setglobal  0   3        ; GetSeasonParamOverride
+0025  20000100           [8] setglobal  0   4        ; 762906652
+0029  1E008000           [9] return     0   1      
+                         * constants:
+002D  05                 sizek (5)
+002E  01                 const type 3
+002F  0FA3E338           const [0]: (954442511)
+0033  04                 const type 4
+0034  08                 string size (8)
+0035  7061636B61676500   "package\0"
+                         const [1]: "package"
+003D  04                 const type 4
+003E  07                 string size (7)
+003F  736565616C6C00     "seeall\0"
+                         const [2]: "seeall"
+0046  04                 const type 4
+0047  17                 string size (23)
+0048  476574536561736F+  "GetSeaso"
+0050  6E506172616D4F76+  "nParamOv"
+0058  65727269646500     "erride\0"
+                         const [3]: "GetSeasonParamOverride"
+005F  01                 const type 3
+0060  1C08792D           const [4]: (762906652)
+                         * functions:
+0064  01                 sizep (1)
+                         
+0065                     ** function [0] definition (level 2)
+                         ** start of function **
+0065  00                 string size (0)
+                         source name: (none)
+0066  03                 line defined (3)
+0067  0F                 last line defined (15)
+0068  00                 nups (0)
+0069  02                 numparams (2)
+006A  00                 is_vararg (0)
+006B  05                 maxstacksize (5)
+                         * code:
+006C  2E                 sizecode (46)
+006D  9D000000           [01] getglobal  2   0        ; _T
+0071  8E404001           [02] gettable   2   2   257  ; "SeasonParamString"
+fail op	35
+0075  63804001           [03] close      1  
+0079  1A000380           [04] jmp        13           ; to [18]
+007D  9D000000           [05] getglobal  2   0        ; _T
+0081  8EC04001           [06] gettable   2   2   259  ; "SeasonParams"
+fail op	35
+0085  63804001           [07] close      1  
+0089  1A000280           [08] jmp        9            ; to [18]
+008D  9D000000           [09] getglobal  2   0        ; _T
+0091  8E404001           [10] gettable   2   2   257  ; "SeasonParamString"
+0095  DD000100           [11] getglobal  3   4        ; gGameData
+0099  E440C101           [12] self       3   3   261  ; 755731078
+009D  E2800001           [13] call       3   2   2  
+00A1  CE80C101           [14] gettable   3   3   262  ; "mSeasonInfo"
+00A5  CEC0C101           [15] gettable   3   3   263  ; "mParams"
+fail op	35
+00A9  63C00001           [16] close      1  
+00AD  1A400380           [17] jmp        14           ; to [32]
+00B1  9D000000           [18] getglobal  2   0        ; _T
+00B5  DD000100           [19] getglobal  3   4        ; gGameData
+00B9  E440C101           [20] self       3   3   261  ; 755731078
+00BD  E2800001           [21] call       3   2   2  
+00C1  CE80C101           [22] gettable   3   3   262  ; "mSeasonInfo"
+00C5  CEC0C101           [23] gettable   3   3   263  ; "mParams"
+00C9  8CC08080           [24] settable   2   257 3    ; "SeasonParamString"
+00CD  9D000000           [25] getglobal  2   0        ; _T
+00D1  DD000200           [26] getglobal  3   8        ; cjson
+00D5  CE40C201           [27] gettable   3   3   265  ; -1976663275
+00D9  1D010000           [28] getglobal  4   0        ; _T
+00DD  0E414002           [29] gettable   4   4   257  ; "SeasonParamString"
+00E1  E2800001           [30] call       3   2   2  
+00E5  8CC08081           [31] settable   2   259 3    ; "SeasonParams"
+00E9  9D000000           [32] getglobal  2   0        ; _T
+00ED  8EC04001           [33] gettable   2   2   259  ; "SeasonParams"
+fail op	35
+00F1  63804001           [34] close      1  
+00F5  1A000280           [35] jmp        9            ; to [45]
+00F9  9D000000           [36] getglobal  2   0        ; _T
+00FD  8EC04001           [37] gettable   2   2   259  ; "SeasonParams"
+0101  8E000001           [38] gettable   2   2   0  
+fail op	35
+0105  63804001           [39] close      1  
+0109  1AC00080           [40] jmp        4            ; to [45]
+010D  9D000000           [41] getglobal  2   0        ; _T
+0111  8EC04001           [42] gettable   2   2   259  ; "SeasonParams"
+0115  8E000001           [43] gettable   2   2   0  
+0119  9E000001           [44] return     2   2      
+011D  5E000001           [45] return     1   2      
+0121  1E008000           [46] return     0   1      
+                         * constants:
+0125  0A                 sizek (10)
+0126  04                 const type 4
+0127  03                 string size (3)
+0128  5F5400             "_T\0"
+                         const [0]: "_T"
+012B  04                 const type 4
+012C  12                 string size (18)
+012D  536561736F6E5061+  "SeasonPa"
+0135  72616D537472696E+  "ramStrin"
+013D  6700               "g\0"
+                         const [1]: "SeasonParamString"
+013F  00                 const type 0
+                         const [2]: nil
+0140  04                 const type 4
+0141  0D                 string size (13)
+0142  536561736F6E5061+  "SeasonPa"
+014A  72616D7300         "rams\0"
+                         const [3]: "SeasonParams"
+014F  04                 const type 4
+0150  0A                 string size (10)
+0151  6747616D65446174+  "gGameDat"
+0159  6100               "a\0"
+                         const [4]: "gGameData"
+015B  01                 const type 3
+015C  868A0B2D           const [5]: (755731078)
+0160  04                 const type 4
+0161  0C                 string size (12)
+0162  6D536561736F6E49+  "mSeasonI"
+016A  6E666F00           "nfo\0"
+                         const [6]: "mSeasonInfo"
+016E  04                 const type 4
+016F  08                 string size (8)
+0170  6D506172616D7300   "mParams\0"
+                         const [7]: "mParams"
+0178  04                 const type 4
+0179  06                 string size (6)
+017A  636A736F6E00       "cjson\0"
+                         const [8]: "cjson"
+0180  01                 const type 3
+0181  15832E8A           const [9]: (-1976663275)
+                         * functions:
+0185  00                 sizep (0)
+                         * lines:
+0186  2E                 sizelineinfo (46)
+                         [pc] (line)
+0187  05                 [01] (5)
+0188  00                 [02] (5)
+0189  00                 [03] (5)
+018A  00                 [04] (5)
+018B  05                 [05] (5)
+018C  00                 [06] (5)
+018D  00                 [07] (5)
+018E  00                 [08] (5)
+018F  05                 [09] (5)
+0190  00                 [10] (5)
+0191  00                 [11] (5)
+0192  00                 [12] (5)
+0193  05                 [13] (5)
+0194  00                 [14] (5)
+0195  00                 [15] (5)
+0196  00                 [16] (5)
+0197  05                 [17] (5)
+0198  00                 [18] (6)
+0199  00                 [19] (6)
+019A  00                 [20] (6)
+019B  05                 [21] (6)
+019C  00                 [22] (6)
+019D  00                 [23] (6)
+019E  00                 [24] (6)
+019F  05                 [25] (7)
+01A0  00                 [26] (7)
+01A1  00                 [27] (7)
+01A2  00                 [28] (7)
+01A3  05                 [29] (7)
+01A4  00                 [30] (7)
+01A5  00                 [31] (7)
+01A6  00                 [32] (10)
+01A7  05                 [33] (10)
+01A8  00                 [34] (10)
+01A9  00                 [35] (10)
+01AA  00                 [36] (10)
+01AB  05                 [37] (10)
+01AC  00                 [38] (10)
+01AD  00                 [39] (10)
+01AE  00                 [40] (10)
+01AF  05                 [41] (11)
+01B0  00                 [42] (11)
+01B1  00                 [43] (11)
+01B2  00                 [44] (11)
+01B3  05                 [45] (14)
+01B4  00                 [46] (15)
+                         * locals:
+023F  00                 sizelocvars (0)
+                         * upvalues:
+0240  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+0241  09                 sizelineinfo (9)
+                         [pc] (line)
+0242  01                 [1] (1)
+0243  00                 [2] (1)
+0244  00                 [3] (1)
+0245  00                 [4] (1)
+0246  01                 [5] (1)
+0247  00                 [6] (15)
+0248  00                 [7] (15)
+0249  00                 [8] (3)
+024A  01                 [9] (15)
+                         * locals:
+0266  00                 sizelocvars (0)
+                         * upvalues:
+0267  00                 sizeupvalues (0)
+                         ** end of function **
+
+0268                     ** end of chunk **

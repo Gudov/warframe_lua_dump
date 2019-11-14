@@ -1,0 +1,1246 @@
+1	C:\wlua_dump\path\Lotus\ScriptsHelminthTransmissions.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\ScriptsHelminthTransmissions.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  0A                 size of number (bytes)
+0008  2B                 integral (1=integral)
+443
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+InfestedGlow
+ChairLight
+/Lotus/Types/Friendly/Tenno/OperatorHubAvatar
+/Lotus/Types/Items/ShipFeatureItems/AlchemyRoomFeatureItem
+Lotus.Interface.LotusUtilities
+AlchemyRoomLights
+OrdisIdleTransmissions
+AlchemyRoomTransmissions
+HelminthTransmission
+_T
+AlchemyRoomInfestedLights
+gRegion
+Engine
+infestedLightsLowPassCoefficient
+chairLightLowPassCoefficient
+infestedLightsMax
+infestedLightsMin
+chairLightMax
+chairLightMin
+gRegion
+NidusInjectionCin
+_T
+InfestedAlchemyActive
+dormantTransmissions
+LastInfestedRoomTransmission
+_T
+LastInfestedRoomTransmission
+gPlayerProfileMgr
+dormantTransmissions
+awakeTransmissions
+mAlignment
+operatorSunTransmissions
+operatorMoonTransmissions
+operatorNeutralTransmissions
+gTennoAvatarType
+OrdisIdleTransmissions
+_T
+curTransmission
+AlchemyRoomInfestedLights
+TransmissionSoundInstance
+math
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  0A                 maxstacksize (10)
+                         * code:
+0008  2B                 sizecode (43)
+0009  1D000000           [01] getglobal  0   0        ; -332969190
+000D  59400000           [02] loadk      1   1        ; "InfestedGlow"
+0011  22800001           [03] call       0   2   2  
+0015  5D000000           [04] getglobal  1   0        ; -332969190
+0019  99800000           [05] loadk      2   2        ; "ChairLight"
+001D  62800001           [06] call       1   2   2  
+0021  9DC00000           [07] getglobal  2   3        ; 738251817
+0025  D9000100           [08] loadk      3   4        ; "/Lotus/Types/Friendly/Tenno/OperatorHubAvatar"
+0029  A2800001           [09] call       2   2   2  
+002D  DDC00000           [10] getglobal  3   3        ; 738251817
+0031  19410100           [11] loadk      4   5        ; "/Lotus/Types/Items/ShipFeatureItems/AlchemyRoomFeatureItem"
+0035  E2800001           [12] call       3   2   2  
+0039  19810100           [13] loadk      4   6        ; -6
+003D  59C10100           [14] loadk      5   7        ; -6
+0041  99010200           [15] loadk      6   8        ; -51
+0045  C6018003           [16] loadnil    7   7      
+0049  1D420200           [17] getglobal  8   9        ; 849075268
+004D  59820200           [18] loadk      9   10       ; "Lotus.Interface.LotusUtilities"
+0051  22820001           [19] call       8   2   2  
+0055  65020000           [20] closure    9   0      
+0059  12000000           [21] move       0   0      
+005D  12008000           [22] move       0   1      
+0061  60C20200           [23] setglobal  9   11       ; AlchemyRoomLights
+0065  60020300           [24] setglobal  9   12       ; -277661057
+0069  65420000           [25] closure    9   1      
+006D  12008003           [26] move       0   7      
+0071  12000004           [27] move       0   8      
+0075  60420300           [28] setglobal  9   13       ; OrdisIdleTransmissions
+0079  60820300           [29] setglobal  9   14       ; 492253587
+007D  65820000           [30] closure    9   2      
+0081  12008001           [31] move       0   3      
+0085  12000001           [32] move       0   2      
+0089  12000002           [33] move       0   4      
+008D  12008002           [34] move       0   5      
+0091  12000004           [35] move       0   8      
+0095  12008003           [36] move       0   7      
+0099  60C20300           [37] setglobal  9   15       ; AlchemyRoomTransmissions
+009D  60020400           [38] setglobal  9   16       ; 1319414894
+00A1  65C20000           [39] closure    9   3      
+00A5  12000003           [40] move       0   6      
+00A9  60420400           [41] setglobal  9   17       ; HelminthTransmission
+00AD  60820400           [42] setglobal  9   18       ; -2057571898
+00B1  1E008000           [43] return     0   1      
+                         * constants:
+00B5  13                 sizek (19)
+00B6  01                 const type 3
+00B7  1A4B27EC           const [0]: (-332969190)
+00BB  04                 const type 4
+00BC  0D                 string size (13)
+00BD  496E666573746564+  "Infested"
+00C5  476C6F7700         "Glow\0"
+                         const [1]: "InfestedGlow"
+00CA  04                 const type 4
+00CB  0B                 string size (11)
+00CC  43686169724C6967+  "ChairLig"
+00D4  687400             "ht\0"
+                         const [2]: "ChairLight"
+00D7  01                 const type 3
+00D8  29D4002C           const [3]: (738251817)
+00DC  04                 const type 4
+00DD  2E                 string size (46)
+00DE  2F4C6F7475732F54+  "/Lotus/T"
+00E6  797065732F467269+  "ypes/Fri"
+00EE  656E646C792F5465+  "endly/Te"
+00F6  6E6E6F2F4F706572+  "nno/Oper"
+00FE  61746F7248756241+  "atorHubA"
+0106  766174617200       "vatar\0"
+                         const [4]: "/Lotus/Types/Friendly/Tenno/OperatorHubAvatar"
+010C  04                 const type 4
+010D  3B                 string size (59)
+010E  2F4C6F7475732F54+  "/Lotus/T"
+0116  797065732F497465+  "ypes/Ite"
+011E  6D732F5368697046+  "ms/ShipF"
+0126  6561747572654974+  "eatureIt"
+012E  656D732F416C6368+  "ems/Alch"
+0136  656D79526F6F6D46+  "emyRoomF"
+013E  6561747572654974+  "eatureIt"
+0146  656D00             "em\0"
+                         const [5]: "/Lotus/Types/Items/ShipFeatureItems/AlchemyRoomFeatureItem"
+0149  03                 const type 3
+014A  FA7EAA3E           const [6]: (-6)
+014E  03                 const type 3
+014F  FA7EAABE           const [7]: (-6)
+0153  03                 const type 3
+0154  CDCC8C3F           const [8]: (-51)
+0158  01                 const type 3
+0159  44DC9B32           const [9]: (849075268)
+015D  04                 const type 4
+015E  1F                 string size (31)
+015F  4C6F7475732E496E+  "Lotus.In"
+0167  746572666163652E+  "terface."
+016F  4C6F747573557469+  "LotusUti"
+0177  6C697469657300     "lities\0"
+                         const [10]: "Lotus.Interface.LotusUtilities"
+017E  04                 const type 4
+017F  12                 string size (18)
+0180  416C6368656D7952+  "AlchemyR"
+0188  6F6F6D4C69676874+  "oomLight"
+0190  7300               "s\0"
+                         const [11]: "AlchemyRoomLights"
+0192  01                 const type 3
+0193  7F3A73EF           const [12]: (-277661057)
+0197  04                 const type 4
+0198  17                 string size (23)
+0199  4F7264697349646C+  "OrdisIdl"
+01A1  655472616E736D69+  "eTransmi"
+01A9  7373696F6E7300     "ssions\0"
+                         const [13]: "OrdisIdleTransmissions"
+01B0  01                 const type 3
+01B1  9331571D           const [14]: (492253587)
+01B5  04                 const type 4
+01B6  19                 string size (25)
+01B7  416C6368656D7952+  "AlchemyR"
+01BF  6F6F6D5472616E73+  "oomTrans"
+01C7  6D697373696F6E73+  "missions"
+01CF  00                 "\0"
+                         const [15]: "AlchemyRoomTransmissions"
+01D0  01                 const type 3
+01D1  6EACA44E           const [16]: (1319414894)
+01D5  04                 const type 4
+01D6  15                 string size (21)
+01D7  48656C6D696E7468+  "Helminth"
+01DF  5472616E736D6973+  "Transmis"
+01E7  73696F6E00         "sion\0"
+                         const [17]: "HelminthTransmission"
+01EC  01                 const type 3
+01ED  C6F15B85           const [18]: (-2057571898)
+                         * functions:
+01F1  04                 sizep (4)
+                         
+01F2                     ** function [0] definition (level 2)
+                         ** start of function **
+01F2  00                 string size (0)
+                         source name: (none)
+01F3  1E                 line defined (30)
+01F4  3D                 last line defined (61)
+01F5  02                 nups (2)
+01F6  00                 numparams (0)
+01F7  00                 is_vararg (0)
+01F8  14                 maxstacksize (20)
+                         * code:
+01F9  4D                 sizecode (77)
+01FA  1D000000           [01] getglobal  0   0        ; _T
+01FE  0E404000           [02] gettable   0   0   257  ; "AlchemyRoomInfestedLights"
+fail op	35
+0202  23804000           [03] close      0  
+0206  1A400080           [04] jmp        2            ; to [7]
+020A  1D000000           [05] getglobal  0   0        ; _T
+020E  0CC0C080           [06] settable   0   257 259  ; "AlchemyRoomInfestedLights" 0
+0212  1D000100           [07] getglobal  0   4        ; gRegion
+0216  24404100           [08] self       0   0   261  ; -1485896174
+021A  93000000           [09] getupval   2   0      
+021E  22808001           [10] call       0   3   2  
+0222  5D000100           [11] getglobal  1   4        ; gRegion
+0226  6440C100           [12] self       1   1   261  ; -1485896174
+022A  D3008000           [13] getupval   3   1      
+022E  62808001           [14] call       1   3   2  
+0232  99800100           [15] loadk      2   6        ; 0
+0236  D9C00000           [16] loadk      3   3        ; 0
+023A  19C10000           [17] loadk      4   3        ; 0
+023E  5DC10100           [18] getglobal  5   7        ; Engine
+0242  4E01C202           [19] gettable   5   5   264  ; 207358505
+0246  8E814100           [20] gettable   6   0   262  ; 0
+024A  62410001           [21] call       5   2   1  
+024E  5D010000           [22] getglobal  5   0        ; _T
+0252  4E41C002           [23] gettable   5   5   257  ; "AlchemyRoomInfestedLights"
+fail op	35
+0256  63808002           [24] close      1  
+025A  1A800B80           [25] jmp        47           ; to [73]
+025E  5D410200           [26] getglobal  5   9        ; infestedLightsLowPassCoefficient
+0262  9D010000           [27] getglobal  6   0        ; _T
+0266  8E414003           [28] gettable   6   6   257  ; "AlchemyRoomInfestedLights"
+026A  8D818101           [29] sub        6   3   6  
+026E  44818102           [30] mul        5   5   6  
+0272  CD408101           [31] sub        3   3   5  
+0276  5D810200           [32] getglobal  5   10       ; chairLightLowPassCoefficient
+027A  9D010000           [33] getglobal  6   0        ; _T
+027E  8E414003           [34] gettable   6   6   257  ; "AlchemyRoomInfestedLights"
+0282  8D810102           [35] sub        6   4   6  
+0286  44818102           [36] mul        5   5   6  
+028A  0D410102           [37] sub        4   4   5  
+028E  5DC10200           [38] getglobal  5   11       ; infestedLightsMax
+0292  9D010300           [39] getglobal  6   12       ; infestedLightsMin
+0296  4D818102           [40] sub        5   5   6  
+029A  44418101           [41] mul        5   3   5  
+029E  9D010300           [42] getglobal  6   12       ; infestedLightsMin
+02A2  43818102           [43] add        5   5   6  
+02A6  9D410300           [44] getglobal  6   13       ; -1642362560
+02AA  CD010183           [45] sub        7   262 4    ; 0
+02AE  1D820300           [46] getglobal  8   14       ; chairLightMax
+02B2  5DC20300           [47] getglobal  9   15       ; chairLightMin
+02B6  0D420204           [48] sub        8   8   9  
+02BA  C4018203           [49] mul        7   7   8  
+02BE  1DC20300           [50] getglobal  8   15       ; chairLightMin
+02C2  C3018203           [51] add        7   7   8  
+02C6  A2810001           [52] call       6   2   2  
+02CA  DD010400           [53] getglobal  7   16       ; 1672515847
+02CE  12020000           [54] move       8   0      
+02D2  E2010101           [55] call       7   2   4  
+02D6  1A800080           [56] jmp        3            ; to [60]
+02DA  2443C405           [57] self       12  11  273  ; -55695066
+02DE  92038002           [58] move       14  5      
+02E2  22438001           [59] call       12  3   1  
+02E6  D6810000           [60] tforloop   7       2    ; to [62] if exit
+02EA  1A80FE7F           [61] jmp        -5           ; to [57]
+02EE  1D030400           [62] getglobal  12  16       ; 1672515847
+02F2  52038000           [63] move       13  1      
+02F6  22030101           [64] call       12  2   4  
+02FA  1A800080           [65] jmp        3            ; to [69]
+02FE  64444408           [66] self       17  16  273  ; -55695066
+0302  D2040003           [67] move       19  6      
+0306  62448001           [68] call       17  3   1  
+030A  16830000           [69] tforloop   12      2    ; to [71] if exit
+030E  1A80FE7F           [70] jmp        -5           ; to [66]
+0312  5D040000           [71] getglobal  17  0        ; _T
+0316  8E40C008           [72] gettable   2   17  257  ; "AlchemyRoomInfestedLights"
+031A  5D840400           [73] getglobal  17  18       ; 538022378
+031E  99C40000           [74] loadk      18  3        ; 0
+0322  62440001           [75] call       17  2   1  
+0326  1A00F27F           [76] jmp        -55          ; to [22]
+032A  1E008000           [77] return     0   1      
+                         * constants:
+032E  13                 sizek (19)
+032F  04                 const type 4
+0330  03                 string size (3)
+0331  5F5400             "_T\0"
+                         const [0]: "_T"
+0334  04                 const type 4
+0335  1A                 string size (26)
+0336  416C6368656D7952+  "AlchemyR"
+033E  6F6F6D496E666573+  "oomInfes"
+0346  7465644C69676874+  "tedLight"
+034E  7300               "s\0"
+                         const [1]: "AlchemyRoomInfestedLights"
+0350  00                 const type 0
+                         const [2]: nil
+0351  03                 const type 3
+0352  00000000           const [3]: (0)
+0356  04                 const type 4
+0357  08                 string size (8)
+0358  67526567696F6E00   "gRegion\0"
+                         const [4]: "gRegion"
+0360  01                 const type 3
+0361  12066FA7           const [5]: (-1485896174)
+0365  03                 const type 3
+0366  0000803F           const [6]: (0)
+036A  04                 const type 4
+036B  07                 string size (7)
+036C  456E67696E6500     "Engine\0"
+                         const [7]: "Engine"
+0373  01                 const type 3
+0374  290A5C0C           const [8]: (207358505)
+0378  04                 const type 4
+0379  21                 string size (33)
+037A  696E666573746564+  "infested"
+0382  4C69676874734C6F+  "LightsLo"
+038A  7750617373436F65+  "wPassCoe"
+0392  6666696369656E74+  "fficient"
+039A  00                 "\0"
+                         const [9]: "infestedLightsLowPassCoefficient"
+039B  04                 const type 4
+039C  1D                 string size (29)
+039D  63686169724C6967+  "chairLig"
+03A5  68744C6F77506173+  "htLowPas"
+03AD  73436F6566666963+  "sCoeffic"
+03B5  69656E7400         "ient\0"
+                         const [10]: "chairLightLowPassCoefficient"
+03BA  04                 const type 4
+03BB  12                 string size (18)
+03BC  696E666573746564+  "infested"
+03C4  4C69676874734D61+  "LightsMa"
+03CC  7800               "x\0"
+                         const [11]: "infestedLightsMax"
+03CE  04                 const type 4
+03CF  12                 string size (18)
+03D0  696E666573746564+  "infested"
+03D8  4C69676874734D69+  "LightsMi"
+03E0  6E00               "n\0"
+                         const [12]: "infestedLightsMin"
+03E2  01                 const type 3
+03E3  40891B9E           const [13]: (-1642362560)
+03E7  04                 const type 4
+03E8  0E                 string size (14)
+03E9  63686169724C6967+  "chairLig"
+03F1  68744D617800       "htMax\0"
+                         const [14]: "chairLightMax"
+03F7  04                 const type 4
+03F8  0E                 string size (14)
+03F9  63686169724C6967+  "chairLig"
+0401  68744D696E00       "htMin\0"
+                         const [15]: "chairLightMin"
+0407  01                 const type 3
+0408  0791B063           const [16]: (1672515847)
+040C  01                 const type 3
+040D  2629AEFC           const [17]: (-55695066)
+0411  01                 const type 3
+0412  EA911120           const [18]: (538022378)
+                         * functions:
+0416  00                 sizep (0)
+                         * lines:
+0417  4D                 sizelineinfo (77)
+                         [pc] (line)
+0418  1F                 [01] (31)
+0419  00                 [02] (31)
+041A  00                 [03] (31)
+041B  00                 [04] (31)
+041C  1F                 [05] (32)
+041D  00                 [06] (32)
+041E  00                 [07] (35)
+041F  00                 [08] (35)
+0420  1F                 [09] (35)
+0421  00                 [10] (35)
+0422  00                 [11] (36)
+0423  00                 [12] (36)
+0424  1F                 [13] (36)
+0425  00                 [14] (36)
+0426  00                 [15] (38)
+0427  00                 [16] (39)
+0428  20                 [17] (40)
+0429  00                 [18] (42)
+042A  00                 [19] (42)
+042B  00                 [20] (42)
+042C  20                 [21] (42)
+042D  00                 [22] (45)
+042E  00                 [23] (45)
+042F  00                 [24] (45)
+0430  23                 [25] (45)
+0431  00                 [26] (47)
+0432  00                 [27] (47)
+0433  00                 [28] (47)
+0434  23                 [29] (47)
+0435  00                 [30] (47)
+0436  00                 [31] (47)
+0437  00                 [32] (48)
+0438  23                 [33] (48)
+0439  00                 [34] (48)
+043A  00                 [35] (48)
+043B  00                 [36] (48)
+043C  23                 [37] (48)
+043D  00                 [38] (49)
+043E  00                 [39] (49)
+043F  00                 [40] (49)
+0440  24                 [41] (49)
+0441  00                 [42] (49)
+0442  00                 [43] (49)
+0443  00                 [44] (50)
+0444  24                 [45] (50)
+0445  00                 [46] (50)
+0446  00                 [47] (50)
+0447  00                 [48] (50)
+0448  24                 [49] (50)
+0449  00                 [50] (50)
+044A  00                 [51] (50)
+044B  00                 [52] (50)
+044C  24                 [53] (51)
+044D  00                 [54] (51)
+044E  00                 [55] (51)
+044F  00                 [56] (51)
+0450  26                 [57] (52)
+0451  00                 [58] (52)
+0452  00                 [59] (52)
+0453  00                 [60] (51)
+0454  27                 [61] (52)
+0455  00                 [62] (54)
+0456  00                 [63] (54)
+0457  00                 [64] (54)
+0458  28                 [65] (54)
+0459  00                 [66] (55)
+045A  00                 [67] (55)
+045B  00                 [68] (55)
+045C  2A                 [69] (54)
+045D  00                 [70] (55)
+045E  00                 [71] (57)
+045F  00                 [72] (57)
+0460  2A                 [73] (59)
+0461  00                 [74] (59)
+0462  00                 [75] (59)
+0463  00                 [76] (59)
+0464  2A                 [77] (61)
+                         * locals:
+054C  00                 sizelocvars (0)
+                         * upvalues:
+054D  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+054E                     ** function [1] definition (level 2)
+                         ** start of function **
+054E  00                 string size (0)
+                         source name: (none)
+054F  3F                 line defined (63)
+0550  58                 last line defined (88)
+0551  02                 nups (2)
+0552  00                 numparams (0)
+0553  00                 is_vararg (0)
+0554  0B                 maxstacksize (11)
+                         * code:
+0555  36                 sizecode (54)
+0556  17008000           [01] loadbool   0   1   0    ; true
+055A  59000000           [02] loadk      1   0        ; 0
+055E  9D400000           [03] getglobal  2   1        ; gRegion
+0562  A4804001           [04] self       2   2   258  ; -1875307917
+0566  1DC10000           [05] getglobal  4   3        ; -332969190
+056A  59010100           [06] loadk      5   4        ; "NidusInjectionCin"
+056E  22010001           [07] call       4   2   0  
+0572  A2800000           [08] call       2   0   2  
+0576  D3000000           [09] getupval   3   0      
+057A  E440C101           [10] self       3   3   261  ; 1916070914
+057E  E2800001           [11] call       3   2   2  
+0582  17000000           [12] loadbool   0   0   0    ; false
+0586  1D810100           [13] getglobal  4   6        ; 1672515847
+058A  52018001           [14] move       5   3      
+058E  22010101           [15] call       4   2   4  
+0592  1A800180           [16] jmp        7            ; to [24]
+0596  5D420000           [17] getglobal  9   1        ; gRegion
+059A  64C2C104           [18] self       9   9   263  ; 65205951
+059E  62820001           [19] call       9   2   2  
+fail op	35
+05A2  23400204           [20] close      0  
+05A6  1A400080           [21] jmp        2            ; to [24]
+05AA  17008000           [22] loadbool   0   1   0    ; true
+05AE  1A400080           [23] jmp        2            ; to [26]
+05B2  16810000           [24] tforloop   4       2    ; to [26] if exit
+05B6  1A80FD7F           [25] jmp        -9           ; to [17]
+05BA  64024201           [26] self       9   2   264  ; 1438910546
+05BE  62820001           [27] call       9   2   2  
+05C2  58420000           [28] test       9       1    ; to [30] if false
+05C6  1A400180           [29] jmp        6            ; to [36]
+05CA  5D420200           [30] getglobal  9   9        ; _T
+05CE  4E82C204           [31] gettable   9   9   266  ; "InfestedAlchemyActive"
+05D2  58420000           [32] test       9       1    ; to [34] if false
+05D6  1A400080           [33] jmp        2            ; to [36]
+05DA  18400000           [34] test       0       1    ; to [36] if false
+05DE  1A000080           [35] jmp        1            ; to [37]
+05E2  1E008000           [36] return     0   1      
+fail op	21
+05E6  15408085           [37] concat     0   267 1  
+05EA  1A000080           [38] jmp        1            ; to [40]
+05EE  1A000180           [39] jmp        5            ; to [45]
+05F2  5D020300           [40] getglobal  9   12       ; 538022378
+05F6  99420300           [41] loadk      10  13       ; -51
+05FA  62420001           [42] call       9   2   1  
+05FE  4340C300           [43] add        1   1   269  ; -51
+0602  1AC0F67F           [44] jmp        -36          ; to [9]
+0606  53028000           [45] getupval   9   1      
+060A  4E82C304           [46] gettable   9   9   270  ; 910246418
+060E  9DC20300           [47] getglobal  10  15       ; dormantTransmissions
+0612  8E024405           [48] gettable   10  10  272  ; 0
+0616  62420001           [49] call       9   2   1  
+061A  5D420200           [50] getglobal  9   9        ; _T
+061E  9D820400           [51] getglobal  10  18       ; 1491452635
+0622  A2828000           [52] call       10  1   2  
+0626  4C828288           [53] settable   9   273 10   ; "LastInfestedRoomTransmission"
+062A  1E008000           [54] return     0   1      
+                         * constants:
+062E  13                 sizek (19)
+062F  03                 const type 3
+0630  00000000           const [0]: (0)
+0634  04                 const type 4
+0635  08                 string size (8)
+0636  67526567696F6E00   "gRegion\0"
+                         const [1]: "gRegion"
+063E  01                 const type 3
+063F  73123990           const [2]: (-1875307917)
+0643  01                 const type 3
+0644  1A4B27EC           const [3]: (-332969190)
+0648  04                 const type 4
+0649  12                 string size (18)
+064A  4E69647573496E6A+  "NidusInj"
+0652  656374696F6E4369+  "ectionCi"
+065A  6E00               "n\0"
+                         const [4]: "NidusInjectionCin"
+065C  01                 const type 3
+065D  02EC3472           const [5]: (1916070914)
+0661  01                 const type 3
+0662  0791B063           const [6]: (1672515847)
+0666  01                 const type 3
+0667  BFF6E203           const [7]: (65205951)
+066B  01                 const type 3
+066C  5208C455           const [8]: (1438910546)
+0670  04                 const type 4
+0671  03                 string size (3)
+0672  5F5400             "_T\0"
+                         const [9]: "_T"
+0675  04                 const type 4
+0676  16                 string size (22)
+0677  496E666573746564+  "Infested"
+067F  416C6368656D7941+  "AlchemyA"
+0687  637469766500       "ctive\0"
+                         const [10]: "InfestedAlchemyActive"
+068D  03                 const type 3
+068E  0000C841           const [11]: (0)
+0692  01                 const type 3
+0693  EA911120           const [12]: (538022378)
+0697  03                 const type 3
+0698  CDCCCC3D           const [13]: (-51)
+069C  01                 const type 3
+069D  12424136           const [14]: (910246418)
+06A1  04                 const type 4
+06A2  15                 string size (21)
+06A3  646F726D616E7454+  "dormantT"
+06AB  72616E736D697373+  "ransmiss"
+06B3  696F6E7300         "ions\0"
+                         const [15]: "dormantTransmissions"
+06B8  03                 const type 3
+06B9  00000040           const [16]: (0)
+06BD  04                 const type 4
+06BE  1D                 string size (29)
+06BF  4C617374496E6665+  "LastInfe"
+06C7  73746564526F6F6D+  "stedRoom"
+06CF  5472616E736D6973+  "Transmis"
+06D7  73696F6E00         "sion\0"
+                         const [17]: "LastInfestedRoomTransmission"
+06DC  01                 const type 3
+06DD  DBC2E558           const [18]: (1491452635)
+                         * functions:
+06E1  00                 sizep (0)
+                         * lines:
+06E2  36                 sizelineinfo (54)
+                         [pc] (line)
+06E3  41                 [01] (65)
+06E4  00                 [02] (66)
+06E5  00                 [03] (67)
+06E6  00                 [04] (67)
+06E7  42                 [05] (67)
+06E8  00                 [06] (67)
+06E9  00                 [07] (67)
+06EA  00                 [08] (67)
+06EB  43                 [09] (69)
+06EC  00                 [10] (69)
+06ED  00                 [11] (69)
+06EE  00                 [12] (70)
+06EF  43                 [13] (71)
+06F0  00                 [14] (71)
+06F1  00                 [15] (71)
+06F2  00                 [16] (71)
+06F3  43                 [17] (72)
+06F4  00                 [18] (72)
+06F5  00                 [19] (72)
+06F6  00                 [20] (72)
+06F7  43                 [21] (72)
+06F8  00                 [22] (73)
+06F9  00                 [23] (74)
+06FA  00                 [24] (71)
+06FB  43                 [25] (75)
+06FC  00                 [26] (77)
+06FD  00                 [27] (77)
+06FE  00                 [28] (77)
+06FF  43                 [29] (77)
+0700  00                 [30] (77)
+0701  00                 [31] (77)
+0702  00                 [32] (77)
+0703  45                 [33] (77)
+0704  00                 [34] (77)
+0705  00                 [35] (77)
+0706  00                 [36] (78)
+0707  45                 [37] (80)
+0708  00                 [38] (80)
+0709  00                 [39] (81)
+070A  00                 [40] (83)
+070B  45                 [41] (83)
+070C  00                 [42] (83)
+070D  00                 [43] (84)
+070E  00                 [44] (84)
+070F  46                 [45] (86)
+0710  00                 [46] (86)
+0711  00                 [47] (86)
+0712  00                 [48] (86)
+0713  47                 [49] (86)
+0714  00                 [50] (87)
+0715  00                 [51] (87)
+0716  00                 [52] (87)
+0717  47                 [53] (87)
+0718  00                 [54] (88)
+                         * locals:
+07BB  00                 sizelocvars (0)
+                         * upvalues:
+07BC  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+07BD                     ** function [2] definition (level 2)
+                         ** start of function **
+07BD  00                 string size (0)
+                         source name: (none)
+07BE  5A                 line defined (90)
+07BF  8E                 last line defined (142)
+07C0  01                 nups (6)
+07C1  06                 numparams (1)
+07C2  01                 is_vararg (0)
+07C3  00                 maxstacksize (12)
+                         * code:
+07C5  6D                 sizecode (109)
+07C6  5D000000           [001] getglobal  1   0        ; _T
+07CA  4E40C000           [002] gettable   1   1   257  ; "LastInfestedRoomTransmission"
+fail op	35
+07CE  6380C000           [003] close      1  
+07D2  1AC00180           [004] jmp        8            ; to [13]
+07D6  5DC00000           [005] getglobal  1   3        ; 1491452635
+07DA  62808000           [006] call       1   1   2  
+07DE  9D000000           [007] getglobal  2   0        ; _T
+07E2  8E404001           [008] gettable   2   2   257  ; "LastInfestedRoomTransmission"
+07E6  4D808000           [009] sub        1   1   2  
+fail op	21
+07EA  1500C100           [010] concat     0   1   260
+07EE  1A000080           [011] jmp        1            ; to [13]
+07F2  1E008000           [012] return     0   1      
+07F6  64404100           [013] self       1   0   261  ; 2082429591
+07FA  62800001           [014] call       1   2   2  
+07FE  9D800100           [015] getglobal  2   6        ; gPlayerProfileMgr
+0802  A4C04101           [016] self       2   2   263  ; 569342746
+0806  19010200           [017] loadk      4   8        ; 0
+080A  A2808001           [018] call       2   3   2  
+080E  DD400200           [019] getglobal  3   9        ; 1074689893
+0812  12010001           [020] move       4   2      
+0816  E2800001           [021] call       3   2   2  
+081A  D8000000           [022] test       3       0    ; to [24] if true
+081E  1A000080           [023] jmp        1            ; to [25]
+0822  1E008000           [024] return     0   1      
+0826  E4804201           [025] self       3   2   266  ; 1699680402
+082A  E2800001           [026] call       3   2   2  
+082E  1DC10200           [027] getglobal  4   11       ; dormantTransmissions
+0832  6401C301           [028] self       5   3   268  ; -1269704954
+0836  D3010000           [029] getupval   7   0      
+083A  62818001           [030] call       5   3   2  
+083E  58010000           [031] test       5       0    ; to [33] if true
+0842  1A000080           [032] jmp        1            ; to [34]
+0846  1D410300           [033] getglobal  4   13       ; awakeTransmissions
+084A  A481C300           [034] self       6   1   270  ; -1957065004
+084E  13028000           [035] getupval   8   1      
+0852  A2818001           [036] call       6   3   2  
+0856  98010000           [037] test       6       0    ; to [39] if true
+085A  1AC00580           [038] jmp        24           ; to [63]
+085E  58410000           [039] test       5       1    ; to [41] if false
+0862  1A000080           [040] jmp        1            ; to [42]
+0866  1E008000           [041] return     0   1      
+086A  9D810100           [042] getglobal  6   6        ; gPlayerProfileMgr
+086E  A4C14103           [043] self       6   6   263  ; 569342746
+0872  19020200           [044] loadk      8   8        ; 0
+0876  A2818001           [045] call       6   3   2  
+087A  A4814203           [046] self       6   6   266  ; 1699680402
+087E  A2810001           [047] call       6   2   2  
+0882  E4C14303           [048] self       7   6   271  ; 568520434
+0886  E2810001           [049] call       7   2   2  
+088A  CE01C403           [050] gettable   7   7   272  ; "mAlignment"
+088E  13020001           [051] getupval   8   2      
+fail op	21
+0892  15C00104           [052] concat     0   8   7  
+0896  1A400080           [053] jmp        2            ; to [56]
+089A  1D410400           [054] getglobal  4   17       ; operatorSunTransmissions
+089E  1A000380           [055] jmp        13           ; to [69]
+08A2  13028001           [056] getupval   8   3      
+fail op	21
+08A6  15008203           [057] concat     0   7   8  
+08AA  1A400080           [058] jmp        2            ; to [61]
+08AE  1D810400           [059] getglobal  4   18       ; operatorMoonTransmissions
+08B2  1AC00180           [060] jmp        8            ; to [69]
+08B6  1DC10400           [061] getglobal  4   19       ; operatorNeutralTransmissions
+08BA  1A400180           [062] jmp        6            ; to [69]
+08BE  2482C300           [063] self       8   1   270  ; -1957065004
+08C2  9D020500           [064] getglobal  10  20       ; gTennoAvatarType
+08C6  22828001           [065] call       8   3   2  
+08CA  18420000           [066] test       8       1    ; to [68] if false
+08CE  1A000080           [067] jmp        1            ; to [69]
+08D2  1E008000           [068] return     0   1      
+08D6  0A020002           [069] len        8   4      
+fail op	35
+08DA  23004204           [070] close      0  
+08DE  1A000080           [071] jmp        1            ; to [73]
+08E2  1E008000           [072] return     0   1      
+08E6  1DC20200           [073] getglobal  8   11       ; dormantTransmissions
+fail op	35
+08EA  23000202           [074] close      0  
+08EE  1A000580           [075] jmp        21           ; to [97]
+08F2  1D020000           [076] getglobal  8   0        ; _T
+08F6  0E424004           [077] gettable   8   8   257  ; "LastInfestedRoomTransmission"
+fail op	35
+08FA  63804004           [078] close      1  
+08FE  1A000180           [079] jmp        5            ; to [85]
+0902  13020002           [080] getupval   8   4      
+0906  0E424504           [081] gettable   8   8   277  ; 910246418
+090A  4E824502           [082] gettable   9   4   278  ; 0
+090E  22420001           [083] call       8   2   1  
+0912  1AC00480           [084] jmp        20           ; to [105]
+0916  13020002           [085] getupval   8   4      
+091A  0E424504           [086] gettable   8   8   277  ; 910246418
+091E  4EC24502           [087] gettable   9   4   279  ; 0
+0922  22420001           [088] call       8   2   1  
+fail op	8
+0926  08008002           [089] setupval   0   5      
+092A  24024600           [090] self       8   0   280  ; -1302048094
+092E  9D420600           [091] getglobal  10  25       ; -332969190
+0932  D9820600           [092] loadk      11  26       ; "OrdisIdleTransmissions"
+0936  A2820001           [093] call       10  2   2  
+093A  D7020000           [094] loadbool   11  0   0    ; false
+093E  22420002           [095] call       8   4   1  
+0942  1AC00180           [096] jmp        8            ; to [105]
+0946  13020002           [097] getupval   8   4      
+094A  0E424504           [098] gettable   8   8   277  ; 910246418
+094E  5DC20600           [099] getglobal  9   27       ; 2144646525
+0952  99C20500           [100] loadk      10  23       ; 0
+0956  CA020002           [101] len        11  4      
+095A  62828001           [102] call       9   3   2  
+095E  4E420202           [103] gettable   9   4   9  
+0962  22420001           [104] call       8   2   1  
+0966  1D020000           [105] getglobal  8   0        ; _T
+096A  5DC20000           [106] getglobal  9   3        ; 1491452635
+096E  62828000           [107] call       9   1   2  
+0972  0C428280           [108] settable   8   257 9    ; "LastInfestedRoomTransmission"
+0976  1E008000           [109] return     0   1      
+                         * constants:
+097A  1C                 sizek (28)
+097B  04                 const type 4
+097C  03                 string size (3)
+097D  5F5400             "_T\0"
+                         const [0]: "_T"
+0980  04                 const type 4
+0981  1D                 string size (29)
+0982  4C617374496E6665+  "LastInfe"
+098A  73746564526F6F6D+  "stedRoom"
+0992  5472616E736D6973+  "Transmis"
+099A  73696F6E00         "sion\0"
+                         const [1]: "LastInfestedRoomTransmission"
+099F  00                 const type 0
+                         const [2]: nil
+09A0  01                 const type 3
+09A1  DBC2E558           const [3]: (1491452635)
+09A5  03                 const type 3
+09A6  00002042           const [4]: (0)
+09AA  01                 const type 3
+09AB  975A1F7C           const [5]: (2082429591)
+09AF  04                 const type 4
+09B0  12                 string size (18)
+09B1  67506C6179657250+  "gPlayerP"
+09B9  726F66696C654D67+  "rofileMg"
+09C1  7200               "r\0"
+                         const [6]: "gPlayerProfileMgr"
+09C3  01                 const type 3
+09C4  1A7BEF21           const [7]: (569342746)
+09C8  03                 const type 3
+09C9  00000000           const [8]: (0)
+09CD  01                 const type 3
+09CE  65770E40           const [9]: (1074689893)
+09D2  01                 const type 3
+09D3  92104F65           const [10]: (1699680402)
+09D7  04                 const type 4
+09D8  15                 string size (21)
+09D9  646F726D616E7454+  "dormantT"
+09E1  72616E736D697373+  "ransmiss"
+09E9  696F6E7300         "ions\0"
+                         const [11]: "dormantTransmissions"
+09EE  01                 const type 3
+09EF  06D751B4           const [12]: (-1269704954)
+09F3  04                 const type 4
+09F4  13                 string size (19)
+09F5  6177616B65547261+  "awakeTra"
+09FD  6E736D697373696F+  "nsmissio"
+0A05  6E7300             "ns\0"
+                         const [13]: "awakeTransmissions"
+0A08  01                 const type 3
+0A09  D48E598B           const [14]: (-1957065004)
+0A0D  01                 const type 3
+0A0E  F2EEE221           const [15]: (568520434)
+0A12  04                 const type 4
+0A13  0B                 string size (11)
+0A14  6D416C69676E6D65+  "mAlignme"
+0A1C  6E7400             "nt\0"
+                         const [16]: "mAlignment"
+0A1F  04                 const type 4
+0A20  19                 string size (25)
+0A21  6F70657261746F72+  "operator"
+0A29  53756E5472616E73+  "SunTrans"
+0A31  6D697373696F6E73+  "missions"
+0A39  00                 "\0"
+                         const [17]: "operatorSunTransmissions"
+0A3A  04                 const type 4
+0A3B  1A                 string size (26)
+0A3C  6F70657261746F72+  "operator"
+0A44  4D6F6F6E5472616E+  "MoonTran"
+0A4C  736D697373696F6E+  "smission"
+0A54  7300               "s\0"
+                         const [18]: "operatorMoonTransmissions"
+0A56  04                 const type 4
+0A57  1D                 string size (29)
+0A58  6F70657261746F72+  "operator"
+0A60  4E65757472616C54+  "NeutralT"
+0A68  72616E736D697373+  "ransmiss"
+0A70  696F6E7300         "ions\0"
+                         const [19]: "operatorNeutralTransmissions"
+0A75  04                 const type 4
+0A76  11                 string size (17)
+0A77  6754656E6E6F4176+  "gTennoAv"
+0A7F  6174617254797065+  "atarType"
+0A87  00                 "\0"
+                         const [20]: "gTennoAvatarType"
+0A88  01                 const type 3
+0A89  12424136           const [21]: (910246418)
+0A8D  03                 const type 3
+0A8E  00000040           const [22]: (0)
+0A92  03                 const type 3
+0A93  0000803F           const [23]: (0)
+0A97  01                 const type 3
+0A98  A25264B2           const [24]: (-1302048094)
+0A9C  01                 const type 3
+0A9D  1A4B27EC           const [25]: (-332969190)
+0AA1  04                 const type 4
+0AA2  17                 string size (23)
+0AA3  4F7264697349646C+  "OrdisIdl"
+0AAB  655472616E736D69+  "eTransmi"
+0AB3  7373696F6E7300     "ssions\0"
+                         const [26]: "OrdisIdleTransmissions"
+0ABA  01                 const type 3
+0ABB  7DB5D47F           const [27]: (2144646525)
+                         * functions:
+0ABF  00                 sizep (0)
+                         * lines:
+0AC0  6D                 sizelineinfo (109)
+                         [pc] (line)
+0AC1  5B                 [001] (91)
+0AC2  00                 [002] (91)
+0AC3  00                 [003] (91)
+0AC4  00                 [004] (91)
+0AC5  5B                 [005] (91)
+0AC6  00                 [006] (91)
+0AC7  00                 [007] (91)
+0AC8  00                 [008] (91)
+0AC9  5B                 [009] (91)
+0ACA  00                 [010] (91)
+0ACB  00                 [011] (91)
+0ACC  00                 [012] (92)
+0ACD  5B                 [013] (95)
+0ACE  00                 [014] (95)
+0ACF  00                 [015] (96)
+0AD0  00                 [016] (96)
+0AD1  5B                 [017] (96)
+0AD2  00                 [018] (96)
+0AD3  00                 [019] (97)
+0AD4  00                 [020] (97)
+0AD5  5B                 [021] (97)
+0AD6  00                 [022] (97)
+0AD7  00                 [023] (97)
+0AD8  00                 [024] (98)
+0AD9  5B                 [025] (100)
+0ADA  00                 [026] (100)
+0ADB  00                 [027] (102)
+0ADC  00                 [028] (103)
+0ADD  5B                 [029] (103)
+0ADE  00                 [030] (103)
+0ADF  00                 [031] (104)
+0AE0  00                 [032] (104)
+0AE1  5B                 [033] (105)
+0AE2  00                 [034] (108)
+0AE3  00                 [035] (108)
+0AE4  00                 [036] (108)
+0AE5  5B                 [037] (108)
+0AE6  00                 [038] (108)
+0AE7  00                 [039] (109)
+0AE8  00                 [040] (109)
+0AE9  5B                 [041] (110)
+0AEA  00                 [042] (112)
+0AEB  00                 [043] (112)
+0AEC  00                 [044] (112)
+0AED  5C                 [045] (112)
+0AEE  00                 [046] (112)
+0AEF  00                 [047] (112)
+0AF0  00                 [048] (113)
+0AF1  5F                 [049] (113)
+0AF2  00                 [050] (113)
+0AF3  00                 [051] (114)
+0AF4  00                 [052] (114)
+0AF5  5F                 [053] (114)
+0AF6  00                 [054] (115)
+0AF7  00                 [055] (115)
+0AF8  00                 [056] (116)
+0AF9  60                 [057] (116)
+0AFA  00                 [058] (116)
+0AFB  00                 [059] (117)
+0AFC  00                 [060] (117)
+0AFD  60                 [061] (119)
+0AFE  00                 [062] (120)
+0AFF  00                 [063] (121)
+0B00  00                 [064] (121)
+0B01  60                 [065] (121)
+0B02  00                 [066] (121)
+0B03  00                 [067] (121)
+0B04  00                 [068] (122)
+0B05  60                 [069] (125)
+0B06  00                 [070] (125)
+0B07  00                 [071] (125)
+0B08  00                 [072] (126)
+0B09  61                 [073] (-127)
+0B0A  00                 [074] (-127)
+0B0B  00                 [075] (-127)
+0B0C  00                 [076] (-126)
+0B0D  61                 [077] (-126)
+0B0E  00                 [078] (-126)
+0B0F  00                 [079] (-126)
+0B10  00                 [080] (-125)
+0B11  61                 [081] (-125)
+0B12  00                 [082] (-125)
+0B13  00                 [083] (-125)
+0B14  00                 [084] (-125)
+0B15  61                 [085] (-123)
+0B16  00                 [086] (-123)
+0B17  00                 [087] (-123)
+0B18  00                 [088] (-123)
+0B19  61                 [089] (-122)
+0B1A  00                 [090] (-121)
+0B1B  00                 [091] (-121)
+0B1C  00                 [092] (-121)
+0B1D  62                 [093] (-121)
+0B1E  00                 [094] (-121)
+0B1F  00                 [095] (-121)
+0B20  00                 [096] (-120)
+0B21  64                 [097] (-118)
+0B22  00                 [098] (-118)
+0B23  00                 [099] (-118)
+0B24  00                 [100] (-118)
+0B25  64                 [101] (-118)
+0B26  00                 [102] (-118)
+0B27  00                 [103] (-118)
+0B28  00                 [104] (-118)
+0B29  66                 [105] (-115)
+0B2A  00                 [106] (-115)
+0B2B  00                 [107] (-115)
+0B2C  00                 [108] (-115)
+0B2D  67                 [109] (-114)
+                         * locals:
+0C75  00                 sizelocvars (0)
+                         * upvalues:
+0C76  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0C77                     ** function [3] definition (level 2)
+                         ** start of function **
+0C77  00                 string size (0)
+                         source name: (none)
+0C79  01                 line defined (144)
+0C7A  A6                 last line defined (166)
+0C7B  01                 nups (1)
+0C7C  01                 numparams (0)
+0C7D  00                 is_vararg (0)
+0C7E  00                 maxstacksize (9)
+                         * code:
+0C80  38                 sizecode (56)
+0C81  1D000000           [01] getglobal  0   0        ; _T
+0C85  0E404000           [02] gettable   0   0   257  ; "curTransmission"
+0C89  5D000000           [03] getglobal  1   0        ; _T
+0C8D  4E80C000           [04] gettable   1   1   258  ; "AlchemyRoomInfestedLights"
+fail op	35
+0C91  23C0C000           [05] close      0  
+0C95  1A400080           [06] jmp        2            ; to [9]
+0C99  5D000000           [07] getglobal  1   0        ; _T
+0C9D  4C004181           [08] settable   1   258 260  ; "AlchemyRoomInfestedLights" 0
+0CA1  5D000000           [09] getglobal  1   0        ; _T
+0CA5  4E40C000           [10] gettable   1   1   257  ; "curTransmission"
+fail op	35
+0CA9  23008000           [11] close      0  
+0CAD  1A000580           [12] jmp        21           ; to [34]
+0CB1  5D000000           [13] getglobal  1   0        ; _T
+0CB5  4E40C100           [14] gettable   1   1   261  ; "TransmissionSoundInstance"
+0CB9  9D800100           [15] getglobal  2   6        ; 1074689893
+0CBD  D2008000           [16] move       3   1      
+0CC1  A2800001           [17] call       2   2   2  
+0CC5  98400000           [18] test       2       1    ; to [20] if false
+0CC9  1A400280           [19] jmp        10           ; to [30]
+0CCD  9D000000           [20] getglobal  2   0        ; _T
+0CD1  DDC00100           [21] getglobal  3   7        ; math
+0CD5  CE00C201           [22] gettable   3   3   264  ; 1710846250
+0CD9  19410200           [23] loadk      4   9        ; 0
+0CDD  6481C200           [24] self       5   1   266  ; -688523144
+0CE1  62810001           [25] call       5   2   2  
+0CE5  93010000           [26] getupval   6   0      
+0CE9  44818102           [27] mul        5   5   6  
+0CED  E2808001           [28] call       3   3   2  
+0CF1  8CC00081           [29] settable   2   258 3    ; "AlchemyRoomInfestedLights"
+0CF5  9DC00200           [30] getglobal  2   11       ; 538022378
+0CF9  D9000100           [31] loadk      3   4        ; 0
+0CFD  A2400001           [32] call       2   2   1  
+0D01  1A80F97F           [33] jmp        -25          ; to [9]
+0D05  9D000000           [34] getglobal  2   0        ; _T
+0D09  8E804001           [35] gettable   2   2   258  ; "AlchemyRoomInfestedLights"
+0D0D  D9000100           [36] loadk      3   4        ; 0
+fail op	21
+0D11  1540C201           [37] concat     0   3   265
+0D15  1A800380           [38] jmp        15           ; to [54]
+0D19  1D010300           [39] getglobal  4   12       ; 1289681407
+0D1D  22818000           [40] call       4   1   2  
+0D21  1C414302           [41] div        4   4   269  ; -102
+0D25  C3008101           [42] add        3   3   4  
+0D29  1D010000           [43] getglobal  4   0        ; _T
+0D2D  5D810300           [44] getglobal  5   14       ; -1828500651
+0D31  92010001           [45] move       6   2      
+0D35  D9010100           [46] loadk      7   4        ; 0
+0D39  12028001           [47] move       8   3      
+0D3D  62810002           [48] call       5   4   2  
+0D41  0C410181           [49] settable   4   258 5    ; "AlchemyRoomInfestedLights"
+0D45  1DC10200           [50] getglobal  4   11       ; 538022378
+0D49  59010100           [51] loadk      5   4        ; 0
+0D4D  22410001           [52] call       4   2   1  
+0D51  1A80FB7F           [53] jmp        -17          ; to [37]
+0D55  1D010000           [54] getglobal  4   0        ; _T
+0D59  0C014181           [55] settable   4   258 260  ; "AlchemyRoomInfestedLights" 0
+0D5D  1E008000           [56] return     0   1      
+                         * constants:
+0D61  0F                 sizek (15)
+0D62  04                 const type 4
+0D63  03                 string size (3)
+0D64  5F5400             "_T\0"
+                         const [0]: "_T"
+0D67  04                 const type 4
+0D68  10                 string size (16)
+0D69  6375725472616E73+  "curTrans"
+0D71  6D697373696F6E00   "mission\0"
+                         const [1]: "curTransmission"
+0D79  04                 const type 4
+0D7A  1A                 string size (26)
+0D7B  416C6368656D7952+  "AlchemyR"
+0D83  6F6F6D496E666573+  "oomInfes"
+0D8B  7465644C69676874+  "tedLight"
+0D93  7300               "s\0"
+                         const [2]: "AlchemyRoomInfestedLights"
+0D95  00                 const type 0
+                         const [3]: nil
+0D96  03                 const type 3
+0D97  00000000           const [4]: (0)
+0D9B  04                 const type 4
+0D9C  1A                 string size (26)
+0D9D  5472616E736D6973+  "Transmis"
+0DA5  73696F6E536F756E+  "sionSoun"
+0DAD  64496E7374616E63+  "dInstanc"
+0DB5  6500               "e\0"
+                         const [5]: "TransmissionSoundInstance"
+0DB7  01                 const type 3
+0DB8  65770E40           const [6]: (1074689893)
+0DBC  04                 const type 4
+0DBD  05                 string size (5)
+0DBE  6D61746800         "math\0"
+                         const [7]: "math"
+0DC3  01                 const type 3
+0DC4  2A71F965           const [8]: (1710846250)
+0DC8  03                 const type 3
+0DC9  0000803F           const [9]: (0)
+0DCD  01                 const type 3
+0DCE  78F8F5D6           const [10]: (-688523144)
+0DD2  01                 const type 3
+0DD3  EA911120           const [11]: (538022378)
+0DD7  01                 const type 3
+0DD8  FFF9DE4C           const [12]: (1289681407)
+0DDC  03                 const type 3
+0DDD  9A99993E           const [13]: (-102)
+0DE1  01                 const type 3
+0DE2  554B0393           const [14]: (-1828500651)
+                         * functions:
+0DE6  00                 sizep (0)
+                         * lines:
+0DE7  38                 sizelineinfo (56)
+                         [pc] (line)
+0DE8  91                 [01] (-111)
+0DE9  00                 [02] (-111)
+0DEA  00                 [03] (-110)
+0DEB  00                 [04] (-110)
+0DEC  91                 [05] (-110)
+0DED  00                 [06] (-110)
+0DEE  00                 [07] (-109)
+0DEF  00                 [08] (-109)
+0DF0  92                 [09] (-106)
+0DF1  00                 [10] (-106)
+0DF2  00                 [11] (-106)
+0DF3  00                 [12] (-106)
+0DF4  92                 [13] (-105)
+0DF5  00                 [14] (-105)
+0DF6  00                 [15] (-104)
+0DF7  00                 [16] (-104)
+0DF8  92                 [17] (-104)
+0DF9  00                 [18] (-104)
+0DFA  00                 [19] (-104)
+0DFB  00                 [20] (-103)
+0DFC  92                 [21] (-103)
+0DFD  00                 [22] (-103)
+0DFE  00                 [23] (-103)
+0DFF  00                 [24] (-103)
+0E00  93                 [25] (-103)
+0E01  00                 [26] (-103)
+0E02  00                 [27] (-103)
+0E03  00                 [28] (-103)
+0E04  93                 [29] (-103)
+0E05  00                 [30] (-101)
+0E06  00                 [31] (-101)
+0E07  00                 [32] (-101)
+0E08  96                 [33] (-101)
+0E09  00                 [34] (-99)
+0E0A  00                 [35] (-99)
+0E0B  00                 [36] (-97)
+0E0C  96                 [37] (-96)
+0E0D  00                 [38] (-96)
+0E0E  00                 [39] (-95)
+0E0F  00                 [40] (-95)
+0E10  96                 [41] (-95)
+0E11  00                 [42] (-95)
+0E12  00                 [43] (-94)
+0E13  00                 [44] (-94)
+0E14  96                 [45] (-94)
+0E15  00                 [46] (-94)
+0E16  00                 [47] (-94)
+0E17  00                 [48] (-94)
+0E18  97                 [49] (-94)
+0E19  00                 [50] (-93)
+0E1A  00                 [51] (-93)
+0E1B  00                 [52] (-93)
+0E1C  97                 [53] (-93)
+0E1D  00                 [54] (-91)
+0E1E  00                 [55] (-91)
+0E1F  00                 [56] (-90)
+                         * locals:
+0EC8  00                 sizelocvars (0)
+                         * upvalues:
+0EC9  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+0ECA  2B                 sizelineinfo (43)
+                         [pc] (line)
+0ECB  07                 [01] (7)
+0ECC  00                 [02] (7)
+0ECD  00                 [03] (7)
+0ECE  00                 [04] (8)
+0ECF  07                 [05] (8)
+0ED0  00                 [06] (8)
+0ED1  00                 [07] (17)
+0ED2  00                 [08] (17)
+0ED3  07                 [09] (17)
+0ED4  00                 [10] (18)
+0ED5  00                 [11] (18)
+0ED6  00                 [12] (18)
+0ED7  08                 [13] (20)
+0ED8  00                 [14] (21)
+0ED9  00                 [15] (23)
+0EDA  00                 [16] (25)
+0EDB  08                 [17] (27)
+0EDC  00                 [18] (27)
+0EDD  00                 [19] (27)
+0EDE  00                 [20] (61)
+0EDF  08                 [21] (61)
+0EE0  00                 [22] (61)
+0EE1  00                 [23] (61)
+0EE2  00                 [24] (30)
+0EE3  11                 [25] (88)
+0EE4  00                 [26] (88)
+0EE5  00                 [27] (88)
+0EE6  00                 [28] (88)
+0EE7  11                 [29] (63)
+0EE8  00                 [30] (-114)
+0EE9  00                 [31] (-114)
+0EEA  00                 [32] (-114)
+0EEB  11                 [33] (-114)
+0EEC  00                 [34] (-114)
+0EED  00                 [35] (-114)
+0EEE  00                 [36] (-114)
+0EEF  12                 [37] (-114)
+0EF0  00                 [38] (90)
+0EF1  00                 [39] (-90)
+0EF2  00                 [40] (-90)
+0EF3  12                 [41] (-90)
+0EF4  00                 [42] (-112)
+0EF5  00                 [43] (-90)
+                         * locals:
+0F77  00                 sizelocvars (0)
+                         * upvalues:
+0F78  00                 sizeupvalues (0)
+                         ** end of function **
+
+0F79                     ** end of chunk **

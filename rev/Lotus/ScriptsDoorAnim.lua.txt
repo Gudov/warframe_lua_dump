@@ -1,0 +1,657 @@
+1	C:\wlua_dump\path\Lotus\ScriptsDoorAnim.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\ScriptsDoorAnim.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  02                 size of number (bytes)
+0008  07                 integral (1=integral)
+47
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+AnimateDoor
+AnimateDoors
+doorInstance
+lockedMaterial
+openMaterial
+Npc
+NpcDoorHint_DS_LOCKED
+materialSlot
+NpcDoorHint_DS_OPEN
+NpcDoorHint_DS_BLOCKED
+delayOpen
+OpenOccluder
+openAnim
+openAnimRateOverride
+NpcDoorHint_DS_CLOSED
+delayClose
+closeAnim
+closeAnimRateOverride
+CloseOccluder
+openAnim
+closeAnim
+Npc
+NpcDoorHint_DS_OPEN
+NpcDoorHint_DS_BLOCKED
+delayOpen
+doorInstances
+OpenOccluder
+NpcDoorHint_DS_CLOSED
+delayClose
+CloseOccluder
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  02                 maxstacksize (2)
+                         * code:
+0008  07                 sizecode (7)
+0009  25000000           [1] closure    0   0      
+000D  20000000           [2] setglobal  0   0        ; AnimateDoor
+0011  20400000           [3] setglobal  0   1        ; -1786658676
+0015  25400000           [4] closure    0   1      
+0019  20800000           [5] setglobal  0   2        ; AnimateDoors
+001D  20C00000           [6] setglobal  0   3        ; -515069544
+0021  1E008000           [7] return     0   1      
+                         * constants:
+0025  04                 sizek (4)
+0026  04                 const type 4
+0027  0C                 string size (12)
+0028  416E696D61746544+  "AnimateD"
+0030  6F6F7200           "oor\0"
+                         const [0]: "AnimateDoor"
+0034  01                 const type 3
+0035  8CC08195           const [1]: (-1786658676)
+0039  04                 const type 4
+003A  0D                 string size (13)
+003B  416E696D61746544+  "AnimateD"
+0043  6F6F727300         "oors\0"
+                         const [2]: "AnimateDoors"
+0048  01                 const type 3
+0049  98A94CE1           const [3]: (-515069544)
+                         * functions:
+004D  02                 sizep (2)
+                         
+004E                     ** function [0] definition (level 2)
+                         ** start of function **
+004E  00                 string size (0)
+                         source name: (none)
+004F  0D                 line defined (13)
+0050  2B                 last line defined (43)
+0051  00                 nups (0)
+0052  02                 numparams (2)
+0053  00                 is_vararg (0)
+0054  0C                 maxstacksize (12)
+                         * code:
+0055  54                 sizecode (84)
+0056  A4004000           [01] self       2   0   256  ; 864532941
+005A  A2800001           [02] call       2   2   2  
+005E  DD400000           [03] getglobal  3   1        ; 1074689893
+0062  1D810000           [04] getglobal  4   2        ; doorInstance
+0066  E2800001           [05] call       3   2   2  
+006A  D8400000           [06] test       3       1    ; to [8] if false
+006E  1A800580           [07] jmp        23           ; to [31]
+0072  DD400000           [08] getglobal  3   1        ; 1074689893
+0076  1DC10000           [09] getglobal  4   3        ; lockedMaterial
+007A  E2800001           [10] call       3   2   2  
+007E  D8400000           [11] test       3       1    ; to [13] if false
+0082  1A400480           [12] jmp        18           ; to [31]
+0086  DD400000           [13] getglobal  3   1        ; 1074689893
+008A  1D010100           [14] getglobal  4   4        ; openMaterial
+008E  E2800001           [15] call       3   2   2  
+0092  D8400000           [16] test       3       1    ; to [18] if false
+0096  1A000380           [17] jmp        13           ; to [31]
+009A  DD000100           [18] getglobal  3   4        ; openMaterial
+009E  1D410100           [19] getglobal  4   5        ; Npc
+00A2  0E814102           [20] gettable   4   4   262  ; "NpcDoorHint_DS_LOCKED"
+fail op	35
+00A6  23000101           [21] close      0  
+00AA  1A400080           [22] jmp        2            ; to [25]
+00AE  DDC00000           [23] getglobal  3   3        ; lockedMaterial
+00B2  1A000080           [24] jmp        1            ; to [26]
+00B6  DD000100           [25] getglobal  3   4        ; openMaterial
+00BA  1D810000           [26] getglobal  4   2        ; doorInstance
+00BE  24C14102           [27] self       4   4   263  ; 1728877662
+00C2  9D010200           [28] getglobal  6   8        ; materialSlot
+00C6  D2018001           [29] move       7   3      
+00CA  22410002           [30] call       4   4   1  
+00CE  1D410100           [31] getglobal  4   5        ; Npc
+00D2  0E414202           [32] gettable   4   4   265  ; "NpcDoorHint_DS_OPEN"
+fail op	35
+00D6  23000101           [33] close      0  
+00DA  1A000680           [34] jmp        25           ; to [60]
+00DE  1D410100           [35] getglobal  4   5        ; Npc
+00E2  0E814202           [36] gettable   4   4   266  ; "NpcDoorHint_DS_BLOCKED"
+fail op	35
+00E6  63008100           [37] close      1  
+00EA  1A000580           [38] jmp        21           ; to [60]
+00EE  1DC10200           [39] getglobal  4   11       ; delayOpen
+fail op	21
+00F2  15000186           [40] concat     0   268 4  
+00F6  1A800080           [41] jmp        3            ; to [45]
+00FA  1D410300           [42] getglobal  4   13       ; 538022378
+00FE  5DC10200           [43] getglobal  5   11       ; delayOpen
+0102  22410001           [44] call       4   2   1  
+0106  1D810000           [45] getglobal  4   2        ; doorInstance
+010A  24814302           [46] self       4   4   270  ; -1923578185
+010E  99C10300           [47] loadk      6   15       ; "OpenOccluder"
+0112  22418001           [48] call       4   3   1  
+0116  1D810000           [49] getglobal  4   2        ; doorInstance
+011A  24014402           [50] self       4   4   272  ; 2056776437
+011E  9D410400           [51] getglobal  6   17       ; openAnim
+0122  D7018000           [52] loadbool   7   1   0    ; true
+0126  17020000           [53] loadbool   8   0   0    ; false
+012A  59820400           [54] loadk      9   18       ; 0
+012E  9DC20400           [55] getglobal  10  19       ; -332969190
+0132  A2828000           [56] call       10  1   2  
+0136  DD020500           [57] getglobal  11  20       ; openAnimRateOverride
+013A  22410004           [58] call       4   8   1  
+013E  1AC00580           [59] jmp        24           ; to [84]
+0142  1D410100           [60] getglobal  4   5        ; Npc
+0146  0E414502           [61] gettable   4   4   277  ; "NpcDoorHint_DS_CLOSED"
+fail op	35
+014A  23000101           [62] close      0  
+014E  1AC00480           [63] jmp        20           ; to [84]
+0152  1D810500           [64] getglobal  4   22       ; delayClose
+fail op	21
+0156  15000186           [65] concat     0   268 4  
+015A  1A800080           [66] jmp        3            ; to [70]
+015E  1D410300           [67] getglobal  4   13       ; 538022378
+0162  5D810500           [68] getglobal  5   22       ; delayClose
+0166  22410001           [69] call       4   2   1  
+016A  1D810000           [70] getglobal  4   2        ; doorInstance
+016E  24014402           [71] self       4   4   272  ; 2056776437
+0172  9DC10500           [72] getglobal  6   23       ; closeAnim
+0176  D7018000           [73] loadbool   7   1   0    ; true
+017A  17020000           [74] loadbool   8   0   0    ; false
+017E  59820400           [75] loadk      9   18       ; 0
+0182  9DC20400           [76] getglobal  10  19       ; -332969190
+0186  A2828000           [77] call       10  1   2  
+018A  DD020600           [78] getglobal  11  24       ; closeAnimRateOverride
+018E  22410004           [79] call       4   8   1  
+0192  1D810000           [80] getglobal  4   2        ; doorInstance
+0196  24814302           [81] self       4   4   270  ; -1923578185
+019A  99410600           [82] loadk      6   25       ; "CloseOccluder"
+019E  22418001           [83] call       4   3   1  
+01A2  1E008000           [84] return     0   1      
+                         * constants:
+01A6  1A                 sizek (26)
+01A7  01                 const type 3
+01A8  CDB98733           const [0]: (864532941)
+01AC  01                 const type 3
+01AD  65770E40           const [1]: (1074689893)
+01B1  04                 const type 4
+01B2  0D                 string size (13)
+01B3  646F6F72496E7374+  "doorInst"
+01BB  616E636500         "ance\0"
+                         const [2]: "doorInstance"
+01C0  04                 const type 4
+01C1  0F                 string size (15)
+01C2  6C6F636B65644D61+  "lockedMa"
+01CA  74657269616C00     "terial\0"
+                         const [3]: "lockedMaterial"
+01D1  04                 const type 4
+01D2  0D                 string size (13)
+01D3  6F70656E4D617465+  "openMate"
+01DB  7269616C00         "rial\0"
+                         const [4]: "openMaterial"
+01E0  04                 const type 4
+01E1  04                 string size (4)
+01E2  4E706300           "Npc\0"
+                         const [5]: "Npc"
+01E6  04                 const type 4
+01E7  16                 string size (22)
+01E8  4E7063446F6F7248+  "NpcDoorH"
+01F0  696E745F44535F4C+  "int_DS_L"
+01F8  4F434B454400       "OCKED\0"
+                         const [6]: "NpcDoorHint_DS_LOCKED"
+01FE  01                 const type 3
+01FF  5E940C67           const [7]: (1728877662)
+0203  04                 const type 4
+0204  0D                 string size (13)
+0205  6D6174657269616C+  "material"
+020D  536C6F7400         "Slot\0"
+                         const [8]: "materialSlot"
+0212  04                 const type 4
+0213  14                 string size (20)
+0214  4E7063446F6F7248+  "NpcDoorH"
+021C  696E745F44535F4F+  "int_DS_O"
+0224  50454E00           "PEN\0"
+                         const [9]: "NpcDoorHint_DS_OPEN"
+0228  04                 const type 4
+0229  17                 string size (23)
+022A  4E7063446F6F7248+  "NpcDoorH"
+0232  696E745F44535F42+  "int_DS_B"
+023A  4C4F434B454400     "LOCKED\0"
+                         const [10]: "NpcDoorHint_DS_BLOCKED"
+0241  04                 const type 4
+0242  0A                 string size (10)
+0243  64656C61794F7065+  "delayOpe"
+024B  6E00               "n\0"
+                         const [11]: "delayOpen"
+024D  03                 const type 3
+024E  0AD7233C           const [12]: (10)
+0252  01                 const type 3
+0253  EA911120           const [13]: (538022378)
+0257  01                 const type 3
+0258  B786588D           const [14]: (-1923578185)
+025C  04                 const type 4
+025D  0D                 string size (13)
+025E  4F70656E4F63636C+  "OpenOccl"
+0266  7564657200         "uder\0"
+                         const [15]: "OpenOccluder"
+026B  01                 const type 3
+026C  F5EA977A           const [16]: (2056776437)
+0270  04                 const type 4
+0271  09                 string size (9)
+0272  6F70656E416E696D+  "openAnim"
+027A  00                 "\0"
+                         const [17]: "openAnim"
+027B  03                 const type 3
+027C  00000000           const [18]: (0)
+0280  01                 const type 3
+0281  1A4B27EC           const [19]: (-332969190)
+0285  04                 const type 4
+0286  15                 string size (21)
+0287  6F70656E416E696D+  "openAnim"
+028F  526174654F766572+  "RateOver"
+0297  7269646500         "ride\0"
+                         const [20]: "openAnimRateOverride"
+029C  04                 const type 4
+029D  16                 string size (22)
+029E  4E7063446F6F7248+  "NpcDoorH"
+02A6  696E745F44535F43+  "int_DS_C"
+02AE  4C4F53454400       "LOSED\0"
+                         const [21]: "NpcDoorHint_DS_CLOSED"
+02B4  04                 const type 4
+02B5  0B                 string size (11)
+02B6  64656C6179436C6F+  "delayClo"
+02BE  736500             "se\0"
+                         const [22]: "delayClose"
+02C1  04                 const type 4
+02C2  0A                 string size (10)
+02C3  636C6F7365416E69+  "closeAni"
+02CB  6D00               "m\0"
+                         const [23]: "closeAnim"
+02CD  04                 const type 4
+02CE  16                 string size (22)
+02CF  636C6F7365416E69+  "closeAni"
+02D7  6D526174654F7665+  "mRateOve"
+02DF  727269646500       "rride\0"
+                         const [24]: "closeAnimRateOverride"
+02E5  04                 const type 4
+02E6  0E                 string size (14)
+02E7  436C6F73654F6363+  "CloseOcc"
+02EF  6C7564657200       "luder\0"
+                         const [25]: "CloseOccluder"
+                         * functions:
+02F5  00                 sizep (0)
+                         * lines:
+02F6  54                 sizelineinfo (84)
+                         [pc] (line)
+02F7  0F                 [01] (15)
+02F8  00                 [02] (15)
+02F9  00                 [03] (19)
+02FA  00                 [04] (19)
+02FB  0F                 [05] (19)
+02FC  00                 [06] (19)
+02FD  00                 [07] (19)
+02FE  00                 [08] (19)
+02FF  13                 [09] (19)
+0300  00                 [10] (19)
+0301  00                 [11] (19)
+0302  00                 [12] (19)
+0303  13                 [13] (19)
+0304  00                 [14] (19)
+0305  00                 [15] (19)
+0306  00                 [16] (19)
+0307  13                 [17] (19)
+0308  00                 [18] (20)
+0309  00                 [19] (21)
+030A  00                 [20] (21)
+030B  13                 [21] (21)
+030C  00                 [22] (21)
+030D  00                 [23] (22)
+030E  00                 [24] (22)
+030F  13                 [25] (24)
+0310  00                 [26] (26)
+0311  00                 [27] (26)
+0312  00                 [28] (26)
+0313  13                 [29] (26)
+0314  00                 [30] (26)
+0315  00                 [31] (30)
+0316  00                 [32] (30)
+0317  13                 [33] (30)
+0318  00                 [34] (30)
+0319  00                 [35] (30)
+031A  00                 [36] (30)
+031B  13                 [37] (30)
+031C  00                 [38] (30)
+031D  00                 [39] (31)
+031E  00                 [40] (31)
+031F  13                 [41] (31)
+0320  00                 [42] (32)
+0321  00                 [43] (32)
+0322  00                 [44] (32)
+0323  13                 [45] (34)
+0324  00                 [46] (34)
+0325  00                 [47] (34)
+0326  00                 [48] (34)
+0327  13                 [49] (35)
+0328  00                 [50] (35)
+0329  00                 [51] (35)
+032A  00                 [52] (35)
+032B  13                 [53] (35)
+032C  00                 [54] (35)
+032D  00                 [55] (35)
+032E  00                 [56] (35)
+032F  13                 [57] (35)
+0330  00                 [58] (35)
+0331  00                 [59] (35)
+0332  00                 [60] (36)
+0333  13                 [61] (36)
+0334  00                 [62] (36)
+0335  00                 [63] (36)
+0336  00                 [64] (37)
+0337  13                 [65] (37)
+0338  00                 [66] (37)
+0339  00                 [67] (38)
+033A  00                 [68] (38)
+033B  14                 [69] (38)
+033C  00                 [70] (40)
+033D  00                 [71] (40)
+033E  00                 [72] (40)
+033F  15                 [73] (40)
+0340  00                 [74] (40)
+0341  00                 [75] (40)
+0342  00                 [76] (40)
+0343  15                 [77] (40)
+0344  00                 [78] (40)
+0345  00                 [79] (40)
+0346  00                 [80] (41)
+0347  15                 [81] (41)
+0348  00                 [82] (41)
+0349  00                 [83] (41)
+034A  00                 [84] (43)
+                         * locals:
+0447  00                 sizelocvars (0)
+                         * upvalues:
+0448  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0449                     ** function [1] definition (level 2)
+                         ** start of function **
+0449  00                 string size (0)
+                         source name: (none)
+044A  2D                 line defined (45)
+044B  4C                 last line defined (76)
+044C  00                 nups (0)
+044D  02                 numparams (2)
+044E  00                 is_vararg (0)
+044F  17                 maxstacksize (23)
+                         * code:
+0450  48                 sizecode (72)
+0451  A4004000           [01] self       2   0   256  ; 864532941
+0455  A2800001           [02] call       2   2   2  
+0459  DD400000           [03] getglobal  3   1        ; openAnim
+045D  E480C001           [04] self       3   3   258  ; -975772479
+0461  E2800001           [05] call       3   2   2  
+0465  1DC10000           [06] getglobal  4   3        ; closeAnim
+0469  24814002           [07] self       4   4   258  ; -975772479
+046D  22810001           [08] call       4   2   2  
+0471  5D010100           [09] getglobal  5   4        ; Npc
+0475  4E41C102           [10] gettable   5   5   261  ; "NpcDoorHint_DS_OPEN"
+fail op	35
+0479  23400101           [11] close      0  
+047D  1A800680           [12] jmp        27           ; to [40]
+0481  5D010100           [13] getglobal  5   4        ; Npc
+0485  4E81C102           [14] gettable   5   5   262  ; "NpcDoorHint_DS_BLOCKED"
+fail op	35
+0489  63408100           [15] close      1  
+048D  1A800580           [16] jmp        23           ; to [40]
+0491  5DC10100           [17] getglobal  5   7        ; delayOpen
+fail op	21
+0495  15400184           [18] concat     0   264 5  
+0499  1A800080           [19] jmp        3            ; to [23]
+049D  5D410200           [20] getglobal  5   9        ; 538022378
+04A1  9DC10100           [21] getglobal  6   7        ; delayOpen
+04A5  62410001           [22] call       5   2   1  
+04A9  5D810200           [23] getglobal  5   10       ; 1672515847
+04AD  9DC10200           [24] getglobal  6   11       ; doorInstances
+04B1  62010101           [25] call       5   2   4  
+04B5  1A800180           [26] jmp        7            ; to [34]
+04B9  A402C304           [27] self       10  9   268  ; -1923578185
+04BD  19430300           [28] loadk      12  13       ; "OpenOccluder"
+04C1  A2428001           [29] call       10  3   1  
+04C5  A482C304           [30] self       10  9   270  ; 2056776437
+04C9  1D430000           [31] getglobal  12  1        ; openAnim
+04CD  57030000           [32] loadbool   13  0   0    ; false
+04D1  A2420002           [33] call       10  4   1  
+04D5  56810000           [34] tforloop   5       2    ; to [36] if exit
+04D9  1A80FD7F           [35] jmp        -9           ; to [27]
+04DD  9D420200           [36] getglobal  10  9        ; 538022378
+04E1  D2028001           [37] move       11  3      
+04E5  A2420001           [38] call       10  2   1  
+04E9  1AC00780           [39] jmp        32           ; to [72]
+04ED  9D020100           [40] getglobal  10  4        ; Npc
+04F1  8EC24305           [41] gettable   10  10  271  ; "NpcDoorHint_DS_CLOSED"
+fail op	35
+04F5  23800201           [42] close      0  
+04F9  1AC00680           [43] jmp        28           ; to [72]
+04FD  9D020400           [44] getglobal  10  16       ; delayClose
+fail op	21
+0501  15800284           [45] concat     0   264 10 
+0505  1A800080           [46] jmp        3            ; to [50]
+0509  9D420200           [47] getglobal  10  9        ; 538022378
+050D  DD020400           [48] getglobal  11  16       ; delayClose
+0511  A2420001           [49] call       10  2   1  
+0515  9D820200           [50] getglobal  10  10       ; 1672515847
+0519  DDC20200           [51] getglobal  11  11       ; doorInstances
+051D  A2020101           [52] call       10  2   4  
+0521  1AC00080           [53] jmp        4            ; to [58]
+0525  E4834307           [54] self       15  14  270  ; 2056776437
+0529  5DC40000           [55] getglobal  17  3        ; closeAnim
+052D  97040000           [56] loadbool   18  0   0    ; false
+0531  E2430002           [57] call       15  4   1  
+0535  96820000           [58] tforloop   10      2    ; to [60] if exit
+0539  1A40FE7F           [59] jmp        -6           ; to [54]
+053D  DD430200           [60] getglobal  15  9        ; 538022378
+0541  12040002           [61] move       16  4      
+0545  E2430001           [62] call       15  2   1  
+0549  DD830200           [63] getglobal  15  10       ; 1672515847
+054D  1DC40200           [64] getglobal  16  11       ; doorInstances
+0551  E2030101           [65] call       15  2   4  
+0555  1A800080           [66] jmp        3            ; to [70]
+0559  2405C309           [67] self       20  19  268  ; -1923578185
+055D  99450400           [68] loadk      22  17       ; "CloseOccluder"
+0561  22458001           [69] call       20  3   1  
+0565  D6830000           [70] tforloop   15      2    ; to [72] if exit
+0569  1A80FE7F           [71] jmp        -5           ; to [67]
+056D  1E008000           [72] return     0   1      
+                         * constants:
+0571  12                 sizek (18)
+0572  01                 const type 3
+0573  CDB98733           const [0]: (864532941)
+0577  04                 const type 4
+0578  09                 string size (9)
+0579  6F70656E416E696D+  "openAnim"
+0581  00                 "\0"
+                         const [1]: "openAnim"
+0582  01                 const type 3
+0583  C1E4D6C5           const [2]: (-975772479)
+0587  04                 const type 4
+0588  0A                 string size (10)
+0589  636C6F7365416E69+  "closeAni"
+0591  6D00               "m\0"
+                         const [3]: "closeAnim"
+0593  04                 const type 4
+0594  04                 string size (4)
+0595  4E706300           "Npc\0"
+                         const [4]: "Npc"
+0599  04                 const type 4
+059A  14                 string size (20)
+059B  4E7063446F6F7248+  "NpcDoorH"
+05A3  696E745F44535F4F+  "int_DS_O"
+05AB  50454E00           "PEN\0"
+                         const [5]: "NpcDoorHint_DS_OPEN"
+05AF  04                 const type 4
+05B0  17                 string size (23)
+05B1  4E7063446F6F7248+  "NpcDoorH"
+05B9  696E745F44535F42+  "int_DS_B"
+05C1  4C4F434B454400     "LOCKED\0"
+                         const [6]: "NpcDoorHint_DS_BLOCKED"
+05C8  04                 const type 4
+05C9  0A                 string size (10)
+05CA  64656C61794F7065+  "delayOpe"
+05D2  6E00               "n\0"
+                         const [7]: "delayOpen"
+05D4  03                 const type 3
+05D5  0AD7233C           const [8]: (10)
+05D9  01                 const type 3
+05DA  EA911120           const [9]: (538022378)
+05DE  01                 const type 3
+05DF  0791B063           const [10]: (1672515847)
+05E3  04                 const type 4
+05E4  0E                 string size (14)
+05E5  646F6F72496E7374+  "doorInst"
+05ED  616E63657300       "ances\0"
+                         const [11]: "doorInstances"
+05F3  01                 const type 3
+05F4  B786588D           const [12]: (-1923578185)
+05F8  04                 const type 4
+05F9  0D                 string size (13)
+05FA  4F70656E4F63636C+  "OpenOccl"
+0602  7564657200         "uder\0"
+                         const [13]: "OpenOccluder"
+0607  01                 const type 3
+0608  F5EA977A           const [14]: (2056776437)
+060C  04                 const type 4
+060D  16                 string size (22)
+060E  4E7063446F6F7248+  "NpcDoorH"
+0616  696E745F44535F43+  "int_DS_C"
+061E  4C4F53454400       "LOSED\0"
+                         const [15]: "NpcDoorHint_DS_CLOSED"
+0624  04                 const type 4
+0625  0B                 string size (11)
+0626  64656C6179436C6F+  "delayClo"
+062E  736500             "se\0"
+                         const [16]: "delayClose"
+0631  04                 const type 4
+0632  0E                 string size (14)
+0633  436C6F73654F6363+  "CloseOcc"
+063B  6C7564657200       "luder\0"
+                         const [17]: "CloseOccluder"
+                         * functions:
+0641  00                 sizep (0)
+                         * lines:
+0642  48                 sizelineinfo (72)
+                         [pc] (line)
+0643  2F                 [01] (47)
+0644  00                 [02] (47)
+0645  00                 [03] (49)
+0646  00                 [04] (49)
+0647  2F                 [05] (49)
+0648  00                 [06] (50)
+0649  00                 [07] (50)
+064A  00                 [08] (50)
+064B  31                 [09] (52)
+064C  00                 [10] (52)
+064D  00                 [11] (52)
+064E  00                 [12] (52)
+064F  31                 [13] (52)
+0650  00                 [14] (52)
+0651  00                 [15] (52)
+0652  00                 [16] (52)
+0653  31                 [17] (53)
+0654  00                 [18] (53)
+0655  00                 [19] (53)
+0656  00                 [20] (54)
+0657  32                 [21] (54)
+0658  00                 [22] (54)
+0659  00                 [23] (57)
+065A  00                 [24] (57)
+065B  32                 [25] (57)
+065C  00                 [26] (57)
+065D  00                 [27] (58)
+065E  00                 [28] (58)
+065F  32                 [29] (58)
+0660  00                 [30] (59)
+0661  00                 [31] (59)
+0662  00                 [32] (59)
+0663  34                 [33] (59)
+0664  00                 [34] (57)
+0665  00                 [35] (59)
+0666  00                 [36] (61)
+0667  34                 [37] (61)
+0668  00                 [38] (61)
+0669  00                 [39] (61)
+066A  00                 [40] (63)
+066B  34                 [41] (63)
+066C  00                 [42] (63)
+066D  00                 [43] (63)
+066E  00                 [44] (64)
+066F  34                 [45] (64)
+0670  00                 [46] (64)
+0671  00                 [47] (65)
+0672  00                 [48] (65)
+0673  34                 [49] (65)
+0674  00                 [50] (68)
+0675  00                 [51] (68)
+0676  00                 [52] (68)
+0677  34                 [53] (68)
+0678  00                 [54] (69)
+0679  00                 [55] (69)
+067A  00                 [56] (69)
+067B  34                 [57] (69)
+067C  00                 [58] (68)
+067D  00                 [59] (69)
+067E  00                 [60] (71)
+067F  34                 [61] (71)
+0680  00                 [62] (71)
+0681  00                 [63] (72)
+0682  00                 [64] (72)
+0683  35                 [65] (72)
+0684  00                 [66] (72)
+0685  00                 [67] (73)
+0686  00                 [68] (73)
+0687  35                 [69] (73)
+0688  00                 [70] (72)
+0689  00                 [71] (73)
+068A  00                 [72] (76)
+                         * locals:
+0763  00                 sizelocvars (0)
+                         * upvalues:
+0764  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+0765  07                 sizelineinfo (7)
+                         [pc] (line)
+0766  2B                 [1] (43)
+0767  00                 [2] (43)
+0768  00                 [3] (13)
+0769  00                 [4] (76)
+076A  2B                 [5] (76)
+076B  00                 [6] (45)
+076C  00                 [7] (76)
+                         * locals:
+0782  00                 sizelocvars (0)
+                         * upvalues:
+0783  00                 sizeupvalues (0)
+                         ** end of function **
+
+0784                     ** end of chunk **

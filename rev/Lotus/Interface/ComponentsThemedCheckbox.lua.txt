@@ -1,0 +1,1434 @@
+1	C:\wlua_dump\path\Lotus\Interface\ComponentsThemedCheckbox.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Interface\ComponentsThemedCheckbox.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  03                 size of number (bytes)
+0008  09                 integral (1=integral)
+49
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+package
+seeall
+Create
+EE.Interface.Utilities
+Lotus.Interface.UIStyleUtilities
+Lotus.Interface.Components.ThemedButton
+mIconOn
+mIconOff
+mIconDefault
+mIconOnSize
+mIconOffSize
+mIconDefaultSize
+mChecked
+UpdateIcons
+SetValue
+ButtonPressed
+Pressed
+ButtonResize
+Resize
+ButtonUpdateColors
+UpdateColors
+ButtonRedraw
+Redraw
+mMovie
+mClipName
+mChecked
+IconOn
+_width
+mIconOnSize
+_height
+IconOff
+mIconDefaultSize
+Inner
+_x
+.IconOn
+mIconOn
+.IconOff
+mIconDefault
+mIconOffSize
+mWidth
+mIconOff
+mChecked
+mChecked
+mMovie
+mClipName
+Inner
+_width
+mWidth
+_height
+mHeight
+IconOn
+_x
+_y
+IconOff
+mApplyThemes
+Lotus_Game
+UIStyle_FloatingContent
+UIStyle_FloatingContentHighlight
+mMovie
+mClipName
+IconOn
+_color
+mFocused
+mChecked
+IconOff
+Inner
+_G
+UIMaterial_Button
+mVisRangeMaterials
+mMovie
+mClipName
+.IconOn
+BaseMaterial
+.IconOff
+BackerMaterial
+.Inner
+RectEdgeColor
+RectInnerColor
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  03                 maxstacksize (3)
+                         * code:
+0008  09                 sizecode (9)
+0009  1D000000           [1] getglobal  0   0        ; 954442511
+000D  41000001           [2] vararg     1   2      
+0011  9D400000           [3] getglobal  2   1        ; package
+0015  8E804001           [4] gettable   2   2   258  ; "seeall"
+0019  22408001           [5] call       0   3   1  
+001D  25000000           [6] closure    0   0      
+0021  20C00000           [7] setglobal  0   3        ; Create
+0025  20000100           [8] setglobal  0   4        ; 1191123516
+0029  1E008000           [9] return     0   1      
+                         * constants:
+002D  05                 sizek (5)
+002E  01                 const type 3
+002F  0FA3E338           const [0]: (954442511)
+0033  04                 const type 4
+0034  08                 string size (8)
+0035  7061636B61676500   "package\0"
+                         const [1]: "package"
+003D  04                 const type 4
+003E  07                 string size (7)
+003F  736565616C6C00     "seeall\0"
+                         const [2]: "seeall"
+0046  04                 const type 4
+0047  07                 string size (7)
+0048  43726561746500     "Create\0"
+                         const [3]: "Create"
+004F  01                 const type 3
+0050  3C1AFF46           const [4]: (1191123516)
+                         * functions:
+0054  01                 sizep (1)
+                         
+0055                     ** function [0] definition (level 2)
+                         ** start of function **
+0055  00                 string size (0)
+                         source name: (none)
+0056  03                 line defined (3)
+0057  6E                 last line defined (110)
+0058  00                 nups (0)
+0059  03                 numparams (3)
+005A  00                 is_vararg (0)
+005B  09                 maxstacksize (9)
+                         * code:
+005C  32                 sizecode (50)
+005D  DD000000           [01] getglobal  3   0        ; 849075268
+0061  19410000           [02] loadk      4   1        ; "EE.Interface.Utilities"
+0065  E2800001           [03] call       3   2   2  
+0069  1D010000           [04] getglobal  4   0        ; 849075268
+006D  59810000           [05] loadk      5   2        ; "Lotus.Interface.UIStyleUtilities"
+0071  22810001           [06] call       4   2   2  
+0075  5D010000           [07] getglobal  5   0        ; 849075268
+0079  99C10000           [08] loadk      6   3        ; "Lotus.Interface.Components.ThemedButton"
+007D  62810001           [09] call       5   2   2  
+fail op	35
+0081  23004101           [10] close      0  
+0085  1A000080           [11] jmp        1            ; to [13]
+0089  97008000           [12] loadbool   2   1   0    ; true
+008D  8E41C102           [13] gettable   6   5   261  ; 1191123516
+0091  D2010000           [14] move       7   0      
+0095  12028000           [15] move       8   1      
+0099  A2818001           [16] call       6   3   2  
+009D  8C014183           [17] settable   6   262 260  ; "mIconOn" nil
+00A1  8C01C183           [18] settable   6   263 260  ; "mIconOff" nil
+00A5  8C014184           [19] settable   6   264 260  ; "mIconDefault" nil
+00A9  8C81C284           [20] settable   6   265 266  ; "mIconOnSize" 0
+00AD  8C01C385           [21] settable   6   267 268  ; "mIconOffSize" 0
+00B1  8C81C386           [22] settable   6   269 270  ; "mIconDefaultSize" 0
+00B5  8C818087           [23] settable   6   271 2    ; "mChecked"
+00B9  E5010000           [24] closure    7   0      
+00BD  12000003           [25] move       0   6      
+00C1  8CC10188           [26] settable   6   272 7    ; "UpdateIcons"
+00C5  E5410000           [27] closure    7   1      
+00C9  8CC18188           [28] settable   6   273 7    ; "SetValue"
+00CD  CEC14403           [29] gettable   7   6   275  ; "Pressed"
+00D1  8CC10189           [30] settable   6   274 7    ; "ButtonPressed"
+00D5  E5810000           [31] closure    7   2      
+00D9  8CC18189           [32] settable   6   275 7    ; "Pressed"
+00DD  CE414503           [33] gettable   7   6   277  ; "Resize"
+00E1  8CC1018A           [34] settable   6   276 7    ; "ButtonResize"
+00E5  E5C10000           [35] closure    7   3      
+00E9  8CC1818A           [36] settable   6   277 7    ; "Resize"
+00ED  CEC14503           [37] gettable   7   6   279  ; "UpdateColors"
+00F1  8CC1018B           [38] settable   6   278 7    ; "ButtonUpdateColors"
+00F5  E5010100           [39] closure    7   4      
+00F9  12000002           [40] move       0   4      
+00FD  12008001           [41] move       0   3      
+0101  8CC1818B           [42] settable   6   279 7    ; "UpdateColors"
+0105  CE414603           [43] gettable   7   6   281  ; "Redraw"
+0109  8CC1018C           [44] settable   6   280 7    ; "ButtonRedraw"
+010D  E5410100           [45] closure    7   5      
+0111  8CC1818C           [46] settable   6   281 7    ; "Redraw"
+0115  E4814603           [47] self       7   6   282  ; 1685109492
+0119  E2410001           [48] call       7   2   1  
+011D  9E010001           [49] return     6   2      
+0121  1E008000           [50] return     0   1      
+                         * constants:
+0125  1B                 sizek (27)
+0126  01                 const type 3
+0127  44DC9B32           const [0]: (849075268)
+012B  04                 const type 4
+012C  17                 string size (23)
+012D  45452E496E746572+  "EE.Inter"
+0135  666163652E557469+  "face.Uti"
+013D  6C697469657300     "lities\0"
+                         const [1]: "EE.Interface.Utilities"
+0144  04                 const type 4
+0145  21                 string size (33)
+0146  4C6F7475732E496E+  "Lotus.In"
+014E  746572666163652E+  "terface."
+0156  55495374796C6555+  "UIStyleU"
+015E  74696C6974696573+  "tilities"
+0166  00                 "\0"
+                         const [2]: "Lotus.Interface.UIStyleUtilities"
+0167  04                 const type 4
+0168  28                 string size (40)
+0169  4C6F7475732E496E+  "Lotus.In"
+0171  746572666163652E+  "terface."
+0179  436F6D706F6E656E+  "Componen"
+0181  74732E5468656D65+  "ts.Theme"
+0189  64427574746F6E00   "dButton\0"
+                         const [3]: "Lotus.Interface.Components.ThemedButton"
+0191  00                 const type 0
+                         const [4]: nil
+0192  01                 const type 3
+0193  3C1AFF46           const [5]: (1191123516)
+0197  04                 const type 4
+0198  08                 string size (8)
+0199  6D49636F6E4F6E00   "mIconOn\0"
+                         const [6]: "mIconOn"
+01A1  04                 const type 4
+01A2  09                 string size (9)
+01A3  6D49636F6E4F6666+  "mIconOff"
+01AB  00                 "\0"
+                         const [7]: "mIconOff"
+01AC  04                 const type 4
+01AD  0D                 string size (13)
+01AE  6D49636F6E446566+  "mIconDef"
+01B6  61756C7400         "ault\0"
+                         const [8]: "mIconDefault"
+01BB  04                 const type 4
+01BC  0C                 string size (12)
+01BD  6D49636F6E4F6E53+  "mIconOnS"
+01C5  697A6500           "ize\0"
+                         const [9]: "mIconOnSize"
+01C9  03                 const type 3
+01CA  0000B041           const [10]: (0)
+01CE  04                 const type 4
+01CF  0D                 string size (13)
+01D0  6D49636F6E4F6666+  "mIconOff"
+01D8  53697A6500         "Size\0"
+                         const [11]: "mIconOffSize"
+01DD  03                 const type 3
+01DE  00006041           const [12]: (0)
+01E2  04                 const type 4
+01E3  11                 string size (17)
+01E4  6D49636F6E446566+  "mIconDef"
+01EC  61756C7453697A65+  "aultSize"
+01F4  00                 "\0"
+                         const [13]: "mIconDefaultSize"
+01F5  03                 const type 3
+01F6  00008041           const [14]: (0)
+01FA  04                 const type 4
+01FB  09                 string size (9)
+01FC  6D436865636B6564+  "mChecked"
+0204  00                 "\0"
+                         const [15]: "mChecked"
+0205  04                 const type 4
+0206  0C                 string size (12)
+0207  5570646174654963+  "UpdateIc"
+020F  6F6E7300           "ons\0"
+                         const [16]: "UpdateIcons"
+0213  04                 const type 4
+0214  09                 string size (9)
+0215  53657456616C7565+  "SetValue"
+021D  00                 "\0"
+                         const [17]: "SetValue"
+021E  04                 const type 4
+021F  0E                 string size (14)
+0220  427574746F6E5072+  "ButtonPr"
+0228  657373656400       "essed\0"
+                         const [18]: "ButtonPressed"
+022E  04                 const type 4
+022F  08                 string size (8)
+0230  5072657373656400   "Pressed\0"
+                         const [19]: "Pressed"
+0238  04                 const type 4
+0239  0D                 string size (13)
+023A  427574746F6E5265+  "ButtonRe"
+0242  73697A6500         "size\0"
+                         const [20]: "ButtonResize"
+0247  04                 const type 4
+0248  07                 string size (7)
+0249  526573697A6500     "Resize\0"
+                         const [21]: "Resize"
+0250  04                 const type 4
+0251  13                 string size (19)
+0252  427574746F6E5570+  "ButtonUp"
+025A  64617465436F6C6F+  "dateColo"
+0262  727300             "rs\0"
+                         const [22]: "ButtonUpdateColors"
+0265  04                 const type 4
+0266  0D                 string size (13)
+0267  557064617465436F+  "UpdateCo"
+026F  6C6F727300         "lors\0"
+                         const [23]: "UpdateColors"
+0274  04                 const type 4
+0275  0D                 string size (13)
+0276  427574746F6E5265+  "ButtonRe"
+027E  6472617700         "draw\0"
+                         const [24]: "ButtonRedraw"
+0283  04                 const type 4
+0284  07                 string size (7)
+0285  52656472617700     "Redraw\0"
+                         const [25]: "Redraw"
+028C  01                 const type 3
+028D  F4BA7064           const [26]: (1685109492)
+                         * functions:
+0291  06                 sizep (6)
+                         
+0292                     ** function [0] definition (level 3)
+                         ** start of function **
+0292  00                 string size (0)
+                         source name: (none)
+0293  16                 line defined (22)
+0294  2B                 last line defined (43)
+0295  01                 nups (1)
+0296  01                 numparams (1)
+0297  00                 is_vararg (0)
+0298  09                 maxstacksize (9)
+                         * code:
+0299  5E                 sizecode (94)
+029A  4E004000           [01] gettable   1   0   256  ; "mMovie"
+029E  8E404000           [02] gettable   2   0   257  ; "mClipName"
+02A2  D3000000           [03] getupval   3   0      
+02A6  CE80C001           [04] gettable   3   3   258  ; "mChecked"
+02AA  D8000000           [05] test       3       0    ; to [7] if true
+02AE  1A800A80           [06] jmp        43           ; to [50]
+02B2  E4C0C000           [07] self       3   1   259  ; -2013161817
+02B6  52010001           [08] move       5   2      
+02BA  99010100           [09] loadk      6   4        ; "IconOn"
+02BE  D9410100           [10] loadk      7   5        ; "_width"
+02C2  0E824100           [11] gettable   8   0   262  ; "mIconOnSize"
+02C6  E2400003           [12] call       3   6   1  
+02CA  E4C0C000           [13] self       3   1   259  ; -2013161817
+02CE  52010001           [14] move       5   2      
+02D2  99010100           [15] loadk      6   4        ; "IconOn"
+02D6  D9C10100           [16] loadk      7   7        ; "_height"
+02DA  0E824100           [17] gettable   8   0   262  ; "mIconOnSize"
+02DE  E2400003           [18] call       3   6   1  
+02E2  E4C0C000           [19] self       3   1   259  ; -2013161817
+02E6  52010001           [20] move       5   2      
+02EA  99010200           [21] loadk      6   8        ; "IconOff"
+02EE  D9410100           [22] loadk      7   5        ; "_width"
+02F2  0E424200           [23] gettable   8   0   265  ; "mIconDefaultSize"
+02F6  E2400003           [24] call       3   6   1  
+02FA  E4C0C000           [25] self       3   1   259  ; -2013161817
+02FE  52010001           [26] move       5   2      
+0302  99010200           [27] loadk      6   8        ; "IconOff"
+0306  D9C10100           [28] loadk      7   7        ; "_height"
+030A  0E424200           [29] gettable   8   0   265  ; "mIconDefaultSize"
+030E  E2400003           [30] call       3   6   1  
+0312  E4C0C000           [31] self       3   1   259  ; -2013161817
+0316  52010001           [32] move       5   2      
+031A  99810200           [33] loadk      6   10       ; "Inner"
+031E  D9C10200           [34] loadk      7   11       ; "_x"
+0322  19020300           [35] loadk      8   12       ; 0
+0326  E2400003           [36] call       3   6   1  
+032A  E440C300           [37] self       3   1   269  ; 643307062
+032E  52010001           [38] move       5   2      
+0332  99810300           [39] loadk      6   14       ; ".IconOn"
+0336  42818102           [40] concat     5   5   6  
+033A  8EC14300           [41] gettable   6   0   271  ; "mIconOn"
+033E  E2400002           [42] call       3   4   1  
+0342  E440C300           [43] self       3   1   269  ; 643307062
+0346  52010001           [44] move       5   2      
+034A  99010400           [45] loadk      6   16       ; ".IconOff"
+034E  42818102           [46] concat     5   5   6  
+0352  8E414400           [47] gettable   6   0   273  ; "mIconDefault"
+0356  E2400002           [48] call       3   4   1  
+035A  1AC00A80           [49] jmp        44           ; to [94]
+035E  E4C0C000           [50] self       3   1   259  ; -2013161817
+0362  52010001           [51] move       5   2      
+0366  99010100           [52] loadk      6   4        ; "IconOn"
+036A  D9410100           [53] loadk      7   5        ; "_width"
+036E  0E424200           [54] gettable   8   0   265  ; "mIconDefaultSize"
+0372  E2400003           [55] call       3   6   1  
+0376  E4C0C000           [56] self       3   1   259  ; -2013161817
+037A  52010001           [57] move       5   2      
+037E  99010100           [58] loadk      6   4        ; "IconOn"
+0382  D9C10100           [59] loadk      7   7        ; "_height"
+0386  0E424200           [60] gettable   8   0   265  ; "mIconDefaultSize"
+038A  E2400003           [61] call       3   6   1  
+038E  E4C0C000           [62] self       3   1   259  ; -2013161817
+0392  52010001           [63] move       5   2      
+0396  99010200           [64] loadk      6   8        ; "IconOff"
+039A  D9410100           [65] loadk      7   5        ; "_width"
+039E  0E824400           [66] gettable   8   0   274  ; "mIconOffSize"
+03A2  E2400003           [67] call       3   6   1  
+03A6  E4C0C000           [68] self       3   1   259  ; -2013161817
+03AA  52010001           [69] move       5   2      
+03AE  99010200           [70] loadk      6   8        ; "IconOff"
+03B2  D9C10100           [71] loadk      7   7        ; "_height"
+03B6  0E824400           [72] gettable   8   0   274  ; "mIconOffSize"
+03BA  E2400003           [73] call       3   6   1  
+03BE  E4C0C000           [74] self       3   1   259  ; -2013161817
+03C2  52010001           [75] move       5   2      
+03C6  99810200           [76] loadk      6   10       ; "Inner"
+03CA  D9C10200           [77] loadk      7   11       ; "_x"
+03CE  0EC24400           [78] gettable   8   0   275  ; "mWidth"
+03D2  1C024504           [79] div        8   8   276  ; 0
+03D6  0D024504           [80] sub        8   8   276  ; 0
+03DA  E2400003           [81] call       3   6   1  
+03DE  E440C300           [82] self       3   1   269  ; 643307062
+03E2  52010001           [83] move       5   2      
+03E6  99810300           [84] loadk      6   14       ; ".IconOn"
+03EA  42818102           [85] concat     5   5   6  
+03EE  8E414400           [86] gettable   6   0   273  ; "mIconDefault"
+03F2  E2400002           [87] call       3   4   1  
+03F6  E440C300           [88] self       3   1   269  ; 643307062
+03FA  52010001           [89] move       5   2      
+03FE  99010400           [90] loadk      6   16       ; ".IconOff"
+0402  42818102           [91] concat     5   5   6  
+0406  8E414500           [92] gettable   6   0   277  ; "mIconOff"
+040A  E2400002           [93] call       3   4   1  
+040E  1E008000           [94] return     0   1      
+                         * constants:
+0412  16                 sizek (22)
+0413  04                 const type 4
+0414  07                 string size (7)
+0415  6D4D6F76696500     "mMovie\0"
+                         const [0]: "mMovie"
+041C  04                 const type 4
+041D  0A                 string size (10)
+041E  6D436C69704E616D+  "mClipNam"
+0426  6500               "e\0"
+                         const [1]: "mClipName"
+0428  04                 const type 4
+0429  09                 string size (9)
+042A  6D436865636B6564+  "mChecked"
+0432  00                 "\0"
+                         const [2]: "mChecked"
+0433  01                 const type 3
+0434  A7960188           const [3]: (-2013161817)
+0438  04                 const type 4
+0439  07                 string size (7)
+043A  49636F6E4F6E00     "IconOn\0"
+                         const [4]: "IconOn"
+0441  04                 const type 4
+0442  07                 string size (7)
+0443  5F776964746800     "_width\0"
+                         const [5]: "_width"
+044A  04                 const type 4
+044B  0C                 string size (12)
+044C  6D49636F6E4F6E53+  "mIconOnS"
+0454  697A6500           "ize\0"
+                         const [6]: "mIconOnSize"
+0458  04                 const type 4
+0459  08                 string size (8)
+045A  5F68656967687400   "_height\0"
+                         const [7]: "_height"
+0462  04                 const type 4
+0463  08                 string size (8)
+0464  49636F6E4F666600   "IconOff\0"
+                         const [8]: "IconOff"
+046C  04                 const type 4
+046D  11                 string size (17)
+046E  6D49636F6E446566+  "mIconDef"
+0476  61756C7453697A65+  "aultSize"
+047E  00                 "\0"
+                         const [9]: "mIconDefaultSize"
+047F  04                 const type 4
+0480  06                 string size (6)
+0481  496E6E657200       "Inner\0"
+                         const [10]: "Inner"
+0487  04                 const type 4
+0488  03                 string size (3)
+0489  5F7800             "_x\0"
+                         const [11]: "_x"
+048C  03                 const type 3
+048D  000080BF           const [12]: (0)
+0491  01                 const type 3
+0492  36165826           const [13]: (643307062)
+0496  04                 const type 4
+0497  08                 string size (8)
+0498  2E49636F6E4F6E00   ".IconOn\0"
+                         const [14]: ".IconOn"
+04A0  04                 const type 4
+04A1  08                 string size (8)
+04A2  6D49636F6E4F6E00   "mIconOn\0"
+                         const [15]: "mIconOn"
+04AA  04                 const type 4
+04AB  09                 string size (9)
+04AC  2E49636F6E4F6666+  ".IconOff"
+04B4  00                 "\0"
+                         const [16]: ".IconOff"
+04B5  04                 const type 4
+04B6  0D                 string size (13)
+04B7  6D49636F6E446566+  "mIconDef"
+04BF  61756C7400         "ault\0"
+                         const [17]: "mIconDefault"
+04C4  04                 const type 4
+04C5  0D                 string size (13)
+04C6  6D49636F6E4F6666+  "mIconOff"
+04CE  53697A6500         "Size\0"
+                         const [18]: "mIconOffSize"
+04D3  04                 const type 4
+04D4  07                 string size (7)
+04D5  6D576964746800     "mWidth\0"
+                         const [19]: "mWidth"
+04DC  03                 const type 3
+04DD  00000040           const [20]: (0)
+04E1  04                 const type 4
+04E2  09                 string size (9)
+04E3  6D49636F6E4F6666+  "mIconOff"
+04EB  00                 "\0"
+                         const [21]: "mIconOff"
+                         * functions:
+04EC  00                 sizep (0)
+                         * lines:
+04ED  5E                 sizelineinfo (94)
+                         [pc] (line)
+04EE  17                 [01] (23)
+04EF  00                 [02] (24)
+04F0  00                 [03] (26)
+04F1  00                 [04] (26)
+04F2  18                 [05] (26)
+04F3  00                 [06] (26)
+04F4  00                 [07] (27)
+04F5  00                 [08] (27)
+04F6  1A                 [09] (27)
+04F7  00                 [10] (27)
+04F8  00                 [11] (27)
+04F9  00                 [12] (27)
+04FA  1A                 [13] (28)
+04FB  00                 [14] (28)
+04FC  00                 [15] (28)
+04FD  00                 [16] (28)
+04FE  1A                 [17] (28)
+04FF  00                 [18] (28)
+0500  00                 [19] (29)
+0501  00                 [20] (29)
+0502  1A                 [21] (29)
+0503  00                 [22] (29)
+0504  00                 [23] (29)
+0505  00                 [24] (29)
+0506  1B                 [25] (30)
+0507  00                 [26] (30)
+0508  00                 [27] (30)
+0509  00                 [28] (30)
+050A  1B                 [29] (30)
+050B  00                 [30] (30)
+050C  00                 [31] (31)
+050D  00                 [32] (31)
+050E  1B                 [33] (31)
+050F  00                 [34] (31)
+0510  00                 [35] (31)
+0511  00                 [36] (31)
+0512  1B                 [37] (32)
+0513  00                 [38] (32)
+0514  00                 [39] (32)
+0515  00                 [40] (32)
+0516  1B                 [41] (32)
+0517  00                 [42] (32)
+0518  00                 [43] (33)
+0519  00                 [44] (33)
+051A  1B                 [45] (33)
+051B  00                 [46] (33)
+051C  00                 [47] (33)
+051D  00                 [48] (33)
+051E  1C                 [49] (33)
+051F  00                 [50] (35)
+0520  00                 [51] (35)
+0521  00                 [52] (35)
+0522  1C                 [53] (35)
+0523  00                 [54] (35)
+0524  00                 [55] (35)
+0525  00                 [56] (36)
+0526  1C                 [57] (36)
+0527  00                 [58] (36)
+0528  00                 [59] (36)
+0529  00                 [60] (36)
+052A  1C                 [61] (36)
+052B  00                 [62] (37)
+052C  00                 [63] (37)
+052D  00                 [64] (37)
+052E  1C                 [65] (37)
+052F  00                 [66] (37)
+0530  00                 [67] (37)
+0531  00                 [68] (38)
+0532  1C                 [69] (38)
+0533  00                 [70] (38)
+0534  00                 [71] (38)
+0535  00                 [72] (38)
+0536  1D                 [73] (38)
+0537  00                 [74] (39)
+0538  00                 [75] (39)
+0539  00                 [76] (39)
+053A  1D                 [77] (39)
+053B  00                 [78] (39)
+053C  00                 [79] (39)
+053D  00                 [80] (39)
+053E  1D                 [81] (39)
+053F  00                 [82] (40)
+0540  00                 [83] (40)
+0541  00                 [84] (40)
+0542  1D                 [85] (40)
+0543  00                 [86] (40)
+0544  00                 [87] (40)
+0545  00                 [88] (41)
+0546  1D                 [89] (41)
+0547  00                 [90] (41)
+0548  00                 [91] (41)
+0549  00                 [92] (41)
+054A  1D                 [93] (41)
+054B  00                 [94] (43)
+                         * locals:
+0666  00                 sizelocvars (0)
+                         * upvalues:
+0667  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0668                     ** function [1] definition (level 3)
+                         ** start of function **
+0668  00                 string size (0)
+                         source name: (none)
+0669  2E                 line defined (46)
+066A  33                 last line defined (51)
+066B  00                 nups (0)
+066C  02                 numparams (2)
+066D  00                 is_vararg (0)
+066E  04                 maxstacksize (4)
+                         * code:
+066F  08                 sizecode (8)
+0670  0C400080           [1] settable   0   256 1    ; "mChecked"
+0674  A4404000           [2] self       2   0   257  ; 1342327833
+0678  A2400001           [3] call       2   2   1  
+067C  A4804000           [4] self       2   0   258  ; -1953709510
+0680  A2400001           [5] call       2   2   1  
+0684  A4C04000           [6] self       2   0   259  ; 367884032
+0688  A2400001           [7] call       2   2   1  
+068C  1E008000           [8] return     0   1      
+                         * constants:
+0690  04                 sizek (4)
+0691  04                 const type 4
+0692  09                 string size (9)
+0693  6D436865636B6564+  "mChecked"
+069B  00                 "\0"
+                         const [0]: "mChecked"
+069C  01                 const type 3
+069D  194C0250           const [1]: (1342327833)
+06A1  01                 const type 3
+06A2  3AC28C8B           const [2]: (-1953709510)
+06A6  01                 const type 3
+06A7  0077ED15           const [3]: (367884032)
+                         * functions:
+06AB  00                 sizep (0)
+                         * lines:
+06AC  08                 sizelineinfo (8)
+                         [pc] (line)
+06AD  2F                 [1] (47)
+06AE  00                 [2] (48)
+06AF  00                 [3] (48)
+06B0  00                 [4] (49)
+06B1  30                 [5] (49)
+06B2  00                 [6] (50)
+06B3  00                 [7] (50)
+06B4  00                 [8] (51)
+                         * locals:
+06CD  00                 sizelocvars (0)
+                         * upvalues:
+06CE  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+06CF                     ** function [2] definition (level 3)
+                         ** start of function **
+06CF  00                 string size (0)
+                         source name: (none)
+06D0  37                 line defined (55)
+06D1  3D                 last line defined (61)
+06D2  00                 nups (0)
+06D3  03                 numparams (3)
+06D4  00                 is_vararg (0)
+06D5  07                 maxstacksize (7)
+                         * code:
+06D6  0F                 sizecode (15)
+06D7  E4004000           [01] self       3   0   256  ; 216079251
+06DB  52018000           [02] move       5   1      
+06DF  92010001           [03] move       6   2      
+06E3  E2400002           [04] call       3   4   1  
+06E7  58000000           [05] test       1       0    ; to [7] if true
+06EB  1AC00180           [06] jmp        8            ; to [15]
+06EF  E4404000           [07] self       3   0   257  ; 188678183
+06F3  E2800001           [08] call       3   2   2  
+06F7  D8000000           [09] test       3       0    ; to [11] if true
+06FB  1AC00080           [10] jmp        4            ; to [15]
+06FF  E4804000           [11] self       3   0   258  ; 1731445362
+0703  4EC14000           [12] gettable   5   0   259  ; "mChecked"
+fail op	9
+0707  49018002           [13] settable   5   5   0  
+070B  E2408001           [14] call       3   3   1  
+070F  1E008000           [15] return     0   1      
+                         * constants:
+0713  04                 sizek (4)
+0714  01                 const type 3
+0715  931BE10C           const [0]: (216079251)
+0719  01                 const type 3
+071A  27003F0B           const [1]: (188678183)
+071E  01                 const type 3
+071F  72C23367           const [2]: (1731445362)
+0723  04                 const type 4
+0724  09                 string size (9)
+0725  6D436865636B6564+  "mChecked"
+072D  00                 "\0"
+                         const [3]: "mChecked"
+                         * functions:
+072E  00                 sizep (0)
+                         * lines:
+072F  0F                 sizelineinfo (15)
+                         [pc] (line)
+0730  38                 [01] (56)
+0731  00                 [02] (56)
+0732  00                 [03] (56)
+0733  00                 [04] (56)
+0734  38                 [05] (58)
+0735  00                 [06] (58)
+0736  00                 [07] (58)
+0737  00                 [08] (58)
+0738  38                 [09] (58)
+0739  00                 [10] (58)
+073A  00                 [11] (59)
+073B  00                 [12] (59)
+073C  38                 [13] (59)
+073D  00                 [14] (59)
+073E  00                 [15] (61)
+                         * locals:
+076C  00                 sizelocvars (0)
+                         * upvalues:
+076D  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+076E                     ** function [3] definition (level 3)
+                         ** start of function **
+076E  00                 string size (0)
+                         source name: (none)
+076F  41                 line defined (65)
+0770  49                 last line defined (73)
+0771  00                 nups (0)
+0772  01                 numparams (1)
+0773  00                 is_vararg (0)
+0774  07                 maxstacksize (7)
+                         * code:
+0775  33                 sizecode (51)
+0776  64004000           [01] self       1   0   256  ; -1941053260
+077A  62400001           [02] call       1   2   1  
+077E  4E404000           [03] gettable   1   0   257  ; "mMovie"
+0782  6480C000           [04] self       1   1   258  ; -2013161817
+0786  CEC04000           [05] gettable   3   0   259  ; "mClipName"
+078A  19010100           [06] loadk      4   4        ; "Inner"
+078E  59410100           [07] loadk      5   5        ; "_width"
+0792  8E814100           [08] gettable   6   0   262  ; "mWidth"
+0796  9CC14103           [09] div        6   6   263  ; 0
+079A  83014203           [10] add        6   6   264  ; 0
+079E  62400003           [11] call       1   6   1  
+07A2  4E404000           [12] gettable   1   0   257  ; "mMovie"
+07A6  6480C000           [13] self       1   1   258  ; -2013161817
+07AA  CEC04000           [14] gettable   3   0   259  ; "mClipName"
+07AE  19010100           [15] loadk      4   4        ; "Inner"
+07B2  59410200           [16] loadk      5   9        ; "_height"
+07B6  8E814200           [17] gettable   6   0   266  ; "mHeight"
+07BA  62400003           [18] call       1   6   1  
+07BE  4E404000           [19] gettable   1   0   257  ; "mMovie"
+07C2  6480C000           [20] self       1   1   258  ; -2013161817
+07C6  CEC04000           [21] gettable   3   0   259  ; "mClipName"
+07CA  19C10200           [22] loadk      4   11       ; "IconOn"
+07CE  59010300           [23] loadk      5   12       ; "_x"
+07D2  8E814100           [24] gettable   6   0   262  ; "mWidth"
+07D6  9C414303           [25] div        6   6   269  ; 0
+07DA  62400003           [26] call       1   6   1  
+07DE  4E404000           [27] gettable   1   0   257  ; "mMovie"
+07E2  6480C000           [28] self       1   1   258  ; -2013161817
+07E6  CEC04000           [29] gettable   3   0   259  ; "mClipName"
+07EA  19C10200           [30] loadk      4   11       ; "IconOn"
+07EE  59810300           [31] loadk      5   14       ; "_y"
+07F2  8E814200           [32] gettable   6   0   266  ; "mHeight"
+07F6  9CC14103           [33] div        6   6   263  ; 0
+07FA  62400003           [34] call       1   6   1  
+07FE  4E404000           [35] gettable   1   0   257  ; "mMovie"
+0802  6480C000           [36] self       1   1   258  ; -2013161817
+0806  CEC04000           [37] gettable   3   0   259  ; "mClipName"
+080A  19C10300           [38] loadk      4   15       ; "IconOff"
+080E  59010300           [39] loadk      5   12       ; "_x"
+0812  8E814100           [40] gettable   6   0   262  ; "mWidth"
+0816  84014403           [41] mul        6   6   272  ; 0
+081A  62400003           [42] call       1   6   1  
+081E  4E404000           [43] gettable   1   0   257  ; "mMovie"
+0822  6480C000           [44] self       1   1   258  ; -2013161817
+0826  CEC04000           [45] gettable   3   0   259  ; "mClipName"
+082A  19C10300           [46] loadk      4   15       ; "IconOff"
+082E  59810300           [47] loadk      5   14       ; "_y"
+0832  8E814200           [48] gettable   6   0   266  ; "mHeight"
+0836  9CC14103           [49] div        6   6   263  ; 0
+083A  62400003           [50] call       1   6   1  
+083E  1E008000           [51] return     0   1      
+                         * constants:
+0842  11                 sizek (17)
+0843  01                 const type 3
+0844  B4E04D8C           const [0]: (-1941053260)
+0848  04                 const type 4
+0849  07                 string size (7)
+084A  6D4D6F76696500     "mMovie\0"
+                         const [1]: "mMovie"
+0851  01                 const type 3
+0852  A7960188           const [2]: (-2013161817)
+0856  04                 const type 4
+0857  0A                 string size (10)
+0858  6D436C69704E616D+  "mClipNam"
+0860  6500               "e\0"
+                         const [3]: "mClipName"
+0862  04                 const type 4
+0863  06                 string size (6)
+0864  496E6E657200       "Inner\0"
+                         const [4]: "Inner"
+086A  04                 const type 4
+086B  07                 string size (7)
+086C  5F776964746800     "_width\0"
+                         const [5]: "_width"
+0873  04                 const type 4
+0874  07                 string size (7)
+0875  6D576964746800     "mWidth\0"
+                         const [6]: "mWidth"
+087C  03                 const type 3
+087D  00000040           const [7]: (0)
+0881  03                 const type 3
+0882  00004040           const [8]: (0)
+0886  04                 const type 4
+0887  08                 string size (8)
+0888  5F68656967687400   "_height\0"
+                         const [9]: "_height"
+0890  04                 const type 4
+0891  08                 string size (8)
+0892  6D48656967687400   "mHeight\0"
+                         const [10]: "mHeight"
+089A  04                 const type 4
+089B  07                 string size (7)
+089C  49636F6E4F6E00     "IconOn\0"
+                         const [11]: "IconOn"
+08A3  04                 const type 4
+08A4  03                 string size (3)
+08A5  5F7800             "_x\0"
+                         const [12]: "_x"
+08A8  03                 const type 3
+08A9  00008040           const [13]: (0)
+08AD  04                 const type 4
+08AE  03                 string size (3)
+08AF  5F7900             "_y\0"
+                         const [14]: "_y"
+08B2  04                 const type 4
+08B3  08                 string size (8)
+08B4  49636F6E4F666600   "IconOff\0"
+                         const [15]: "IconOff"
+08BC  03                 const type 3
+08BD  0000403F           const [16]: (0)
+                         * functions:
+08C1  00                 sizep (0)
+                         * lines:
+08C2  33                 sizelineinfo (51)
+                         [pc] (line)
+08C3  42                 [01] (66)
+08C4  00                 [02] (66)
+08C5  00                 [03] (67)
+08C6  00                 [04] (67)
+08C7  42                 [05] (67)
+08C8  00                 [06] (67)
+08C9  00                 [07] (67)
+08CA  00                 [08] (67)
+08CB  43                 [09] (67)
+08CC  00                 [10] (67)
+08CD  00                 [11] (67)
+08CE  00                 [12] (68)
+08CF  43                 [13] (68)
+08D0  00                 [14] (68)
+08D1  00                 [15] (68)
+08D2  00                 [16] (68)
+08D3  43                 [17] (68)
+08D4  00                 [18] (68)
+08D5  00                 [19] (69)
+08D6  00                 [20] (69)
+08D7  43                 [21] (69)
+08D8  00                 [22] (69)
+08D9  00                 [23] (69)
+08DA  00                 [24] (69)
+08DB  43                 [25] (69)
+08DC  00                 [26] (69)
+08DD  00                 [27] (70)
+08DE  00                 [28] (70)
+08DF  43                 [29] (70)
+08E0  00                 [30] (70)
+08E1  00                 [31] (70)
+08E2  00                 [32] (70)
+08E3  43                 [33] (70)
+08E4  00                 [34] (70)
+08E5  00                 [35] (71)
+08E6  00                 [36] (71)
+08E7  43                 [37] (71)
+08E8  00                 [38] (71)
+08E9  00                 [39] (71)
+08EA  00                 [40] (71)
+08EB  43                 [41] (71)
+08EC  00                 [42] (71)
+08ED  00                 [43] (72)
+08EE  00                 [44] (72)
+08EF  44                 [45] (72)
+08F0  00                 [46] (72)
+08F1  00                 [47] (72)
+08F2  00                 [48] (72)
+08F3  44                 [49] (72)
+08F4  00                 [50] (72)
+08F5  00                 [51] (73)
+                         * locals:
+098F  00                 sizelocvars (0)
+                         * upvalues:
+0990  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0991                     ** function [4] definition (level 3)
+                         ** start of function **
+0991  00                 string size (0)
+                         source name: (none)
+0992  4D                 line defined (77)
+0993  56                 last line defined (86)
+0994  02                 nups (2)
+0995  01                 numparams (1)
+0996  00                 is_vararg (0)
+0997  0D                 maxstacksize (13)
+                         * code:
+0998  38                 sizecode (56)
+0999  64004000           [01] self       1   0   256  ; -102572169
+099D  62400001           [02] call       1   2   1  
+09A1  4E404000           [03] gettable   1   0   257  ; "mApplyThemes"
+09A5  93000000           [04] getupval   2   0      
+09A9  8E804001           [05] gettable   2   2   258  ; -576482948
+09AD  DDC00000           [06] getglobal  3   3        ; Lotus_Game
+09B1  CE00C101           [07] gettable   3   3   260  ; "UIStyle_FloatingContent"
+09B5  17018000           [08] loadbool   4   1   0    ; true
+09B9  52018000           [09] move       5   1      
+09BD  A2800002           [10] call       2   4   2  
+09C1  D3000000           [11] getupval   3   0      
+09C5  CE80C001           [12] gettable   3   3   258  ; -576482948
+09C9  1DC10000           [13] getglobal  4   3        ; Lotus_Game
+09CD  0E414102           [14] gettable   4   4   261  ; "UIStyle_FloatingContentHighlight"
+09D1  57018000           [15] loadbool   5   1   0    ; true
+09D5  92018000           [16] move       6   1      
+09D9  E2800002           [17] call       3   4   2  
+09DD  0E814100           [18] gettable   4   0   262  ; "mMovie"
+09E1  24C14102           [19] self       4   4   263  ; -2013161817
+09E5  8E014200           [20] gettable   6   0   264  ; "mClipName"
+09E9  D9410200           [21] loadk      7   9        ; "IconOn"
+09ED  19820200           [22] loadk      8   10       ; "_color"
+09F1  53028000           [23] getupval   9   1      
+09F5  4EC2C204           [24] gettable   9   9   267  ; -132701534
+09F9  8E024300           [25] gettable   10  0   268  ; "mFocused"
+09FD  98020000           [26] test       10      0    ; to [28] if true
+0A01  1A000080           [27] jmp        1            ; to [29]
+0A05  8E424300           [28] gettable   10  0   269  ; "mChecked"
+0A09  D2028001           [29] move       11  3      
+0A0D  12030001           [30] move       12  2      
+0A11  62020002           [31] call       9   4   0  
+0A15  22410000           [32] call       4   0   1  
+0A19  0E814100           [33] gettable   4   0   262  ; "mMovie"
+0A1D  24C14102           [34] self       4   4   263  ; -2013161817
+0A21  8E014200           [35] gettable   6   0   264  ; "mClipName"
+0A25  D9810300           [36] loadk      7   14       ; "IconOff"
+0A29  19820200           [37] loadk      8   10       ; "_color"
+0A2D  53028000           [38] getupval   9   1      
+0A31  4EC2C204           [39] gettable   9   9   267  ; -132701534
+0A35  8E024300           [40] gettable   10  0   268  ; "mFocused"
+0A39  98020000           [41] test       10      0    ; to [43] if true
+0A3D  1A400080           [42] jmp        2            ; to [45]
+0A41  8E424300           [43] gettable   10  0   269  ; "mChecked"
+fail op	9
+0A45  89020005           [44] settable   10  10  0  
+0A49  D2028001           [45] move       11  3      
+0A4D  12030001           [46] move       12  2      
+0A51  62020002           [47] call       9   4   0  
+0A55  22410000           [48] call       4   0   1  
+0A59  0E814100           [49] gettable   4   0   262  ; "mMovie"
+0A5D  24C14102           [50] self       4   4   263  ; -2013161817
+0A61  8E014200           [51] gettable   6   0   264  ; "mClipName"
+0A65  D9C10300           [52] loadk      7   15       ; "Inner"
+0A69  19820200           [53] loadk      8   10       ; "_color"
+0A6D  52020001           [54] move       9   2      
+0A71  22410003           [55] call       4   6   1  
+0A75  1E008000           [56] return     0   1      
+                         * constants:
+0A79  10                 sizek (16)
+0A7A  01                 const type 3
+0A7B  77DFE2F9           const [0]: (-102572169)
+0A7F  04                 const type 4
+0A80  0D                 string size (13)
+0A81  6D4170706C795468+  "mApplyTh"
+0A89  656D657300         "emes\0"
+                         const [1]: "mApplyThemes"
+0A8E  01                 const type 3
+0A8F  7C91A3DD           const [2]: (-576482948)
+0A93  04                 const type 4
+0A94  0B                 string size (11)
+0A95  4C6F7475735F4761+  "Lotus_Ga"
+0A9D  6D6500             "me\0"
+                         const [3]: "Lotus_Game"
+0AA0  04                 const type 4
+0AA1  18                 string size (24)
+0AA2  55495374796C655F+  "UIStyle_"
+0AAA  466C6F6174696E67+  "Floating"
+0AB2  436F6E74656E7400   "Content\0"
+                         const [4]: "UIStyle_FloatingContent"
+0ABA  04                 const type 4
+0ABB  21                 string size (33)
+0ABC  55495374796C655F+  "UIStyle_"
+0AC4  466C6F6174696E67+  "Floating"
+0ACC  436F6E74656E7448+  "ContentH"
+0AD4  6967686C69676874+  "ighlight"
+0ADC  00                 "\0"
+                         const [5]: "UIStyle_FloatingContentHighlight"
+0ADD  04                 const type 4
+0ADE  07                 string size (7)
+0ADF  6D4D6F76696500     "mMovie\0"
+                         const [6]: "mMovie"
+0AE6  01                 const type 3
+0AE7  A7960188           const [7]: (-2013161817)
+0AEB  04                 const type 4
+0AEC  0A                 string size (10)
+0AED  6D436C69704E616D+  "mClipNam"
+0AF5  6500               "e\0"
+                         const [8]: "mClipName"
+0AF7  04                 const type 4
+0AF8  07                 string size (7)
+0AF9  49636F6E4F6E00     "IconOn\0"
+                         const [9]: "IconOn"
+0B00  04                 const type 4
+0B01  07                 string size (7)
+0B02  5F636F6C6F7200     "_color\0"
+                         const [10]: "_color"
+0B09  01                 const type 3
+0B0A  A22217F8           const [11]: (-132701534)
+0B0E  04                 const type 4
+0B0F  09                 string size (9)
+0B10  6D466F6375736564+  "mFocused"
+0B18  00                 "\0"
+                         const [12]: "mFocused"
+0B19  04                 const type 4
+0B1A  09                 string size (9)
+0B1B  6D436865636B6564+  "mChecked"
+0B23  00                 "\0"
+                         const [13]: "mChecked"
+0B24  04                 const type 4
+0B25  08                 string size (8)
+0B26  49636F6E4F666600   "IconOff\0"
+                         const [14]: "IconOff"
+0B2E  04                 const type 4
+0B2F  06                 string size (6)
+0B30  496E6E657200       "Inner\0"
+                         const [15]: "Inner"
+                         * functions:
+0B36  00                 sizep (0)
+                         * lines:
+0B37  38                 sizelineinfo (56)
+                         [pc] (line)
+0B38  4E                 [01] (78)
+0B39  00                 [02] (78)
+0B3A  00                 [03] (79)
+0B3B  00                 [04] (80)
+0B3C  4E                 [05] (80)
+0B3D  00                 [06] (80)
+0B3E  00                 [07] (80)
+0B3F  00                 [08] (80)
+0B40  4F                 [09] (80)
+0B41  00                 [10] (80)
+0B42  00                 [11] (81)
+0B43  00                 [12] (81)
+0B44  50                 [13] (81)
+0B45  00                 [14] (81)
+0B46  00                 [15] (81)
+0B47  00                 [16] (81)
+0B48  50                 [17] (81)
+0B49  00                 [18] (83)
+0B4A  00                 [19] (83)
+0B4B  00                 [20] (83)
+0B4C  50                 [21] (83)
+0B4D  00                 [22] (83)
+0B4E  00                 [23] (83)
+0B4F  00                 [24] (83)
+0B50  50                 [25] (83)
+0B51  00                 [26] (83)
+0B52  00                 [27] (83)
+0B53  00                 [28] (83)
+0B54  50                 [29] (83)
+0B55  00                 [30] (83)
+0B56  00                 [31] (83)
+0B57  00                 [32] (83)
+0B58  50                 [33] (84)
+0B59  00                 [34] (84)
+0B5A  00                 [35] (84)
+0B5B  00                 [36] (84)
+0B5C  50                 [37] (84)
+0B5D  00                 [38] (84)
+0B5E  00                 [39] (84)
+0B5F  00                 [40] (84)
+0B60  51                 [41] (84)
+0B61  00                 [42] (84)
+0B62  00                 [43] (84)
+0B63  00                 [44] (84)
+0B64  51                 [45] (84)
+0B65  00                 [46] (84)
+0B66  00                 [47] (84)
+0B67  00                 [48] (84)
+0B68  51                 [49] (85)
+0B69  00                 [50] (85)
+0B6A  00                 [51] (85)
+0B6B  00                 [52] (85)
+0B6C  51                 [53] (85)
+0B6D  00                 [54] (85)
+0B6E  00                 [55] (85)
+0B6F  00                 [56] (86)
+                         * locals:
+0C18  00                 sizelocvars (0)
+                         * upvalues:
+0C19  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0C1A                     ** function [5] definition (level 3)
+                         ** start of function **
+0C1A  00                 string size (0)
+                         source name: (none)
+0C1B  5A                 line defined (90)
+0C1C  68                 last line defined (104)
+0C1D  00                 nups (0)
+0C1E  01                 numparams (1)
+0C1F  00                 is_vararg (0)
+0C20  0A                 maxstacksize (10)
+                         * code:
+0C21  3B                 sizecode (59)
+0C22  64004000           [01] self       1   0   256  ; -110058463
+0C26  62400001           [02] call       1   2   1  
+0C2A  64404000           [03] self       1   0   257  ; -1953709510
+0C2E  62400001           [04] call       1   2   1  
+0C32  5D800000           [05] getglobal  1   2        ; _G
+0C36  4EC0C000           [06] gettable   1   1   259  ; "UIMaterial_Button"
+0C3A  9D000100           [07] getglobal  2   4        ; 1074689893
+0C3E  CE404100           [08] gettable   3   0   261  ; "mVisRangeMaterials"
+0C42  A2800001           [09] call       2   2   2  
+0C46  98400000           [10] test       2       1    ; to [12] if false
+0C4A  1A400480           [11] jmp        18           ; to [30]
+0C4E  8E804100           [12] gettable   2   0   262  ; "mMovie"
+0C52  A4C04101           [13] self       2   2   263  ; 2115970775
+0C56  0E014200           [14] gettable   4   0   264  ; "mClipName"
+0C5A  59410200           [15] loadk      5   9        ; ".IconOn"
+0C5E  02410102           [16] concat     4   4   5  
+0C62  4E414100           [17] gettable   5   0   261  ; "mVisRangeMaterials"
+0C66  4E81C202           [18] gettable   5   5   266  ; "BaseMaterial"
+0C6A  A2400002           [19] call       2   4   1  
+0C6E  8E804100           [20] gettable   2   0   262  ; "mMovie"
+0C72  A4C04101           [21] self       2   2   263  ; 2115970775
+0C76  0E014200           [22] gettable   4   0   264  ; "mClipName"
+0C7A  59C10200           [23] loadk      5   11       ; ".IconOff"
+0C7E  02410102           [24] concat     4   4   5  
+0C82  4E414100           [25] gettable   5   0   261  ; "mVisRangeMaterials"
+0C86  4E81C202           [26] gettable   5   5   266  ; "BaseMaterial"
+0C8A  A2400002           [27] call       2   4   1  
+0C8E  8E404100           [28] gettable   2   0   261  ; "mVisRangeMaterials"
+0C92  4E004301           [29] gettable   1   2   268  ; "BackerMaterial"
+0C96  8E804100           [30] gettable   2   0   262  ; "mMovie"
+0C9A  A4C04101           [31] self       2   2   263  ; 2115970775
+0C9E  0E014200           [32] gettable   4   0   264  ; "mClipName"
+0CA2  59410300           [33] loadk      5   13       ; ".Inner"
+0CA6  02410102           [34] concat     4   4   5  
+0CAA  52018000           [35] move       5   1      
+0CAE  A2400002           [36] call       2   4   1  
+0CB2  8E804100           [37] gettable   2   0   262  ; "mMovie"
+0CB6  A4804301           [38] self       2   2   270  ; 808102703
+0CBA  0E014200           [39] gettable   4   0   264  ; "mClipName"
+0CBE  59410300           [40] loadk      5   13       ; ".Inner"
+0CC2  02410102           [41] concat     4   4   5  
+0CC6  59C10300           [42] loadk      5   15       ; "RectEdgeColor"
+0CCA  99010400           [43] loadk      6   16       ; 0
+0CCE  D9010400           [44] loadk      7   16       ; 0
+0CD2  19020400           [45] loadk      8   16       ; 0
+0CD6  59020400           [46] loadk      9   16       ; 0
+0CDA  A2400004           [47] call       2   8   1  
+0CDE  8E804100           [48] gettable   2   0   262  ; "mMovie"
+0CE2  A4804301           [49] self       2   2   270  ; 808102703
+0CE6  0E014200           [50] gettable   4   0   264  ; "mClipName"
+0CEA  59410300           [51] loadk      5   13       ; ".Inner"
+0CEE  02410102           [52] concat     4   4   5  
+0CF2  59410400           [53] loadk      5   17       ; "RectInnerColor"
+0CF6  99810400           [54] loadk      6   18       ; 0
+0CFA  D9810400           [55] loadk      7   18       ; 0
+0CFE  19820400           [56] loadk      8   18       ; 0
+0D02  59820400           [57] loadk      9   18       ; 0
+0D06  A2400004           [58] call       2   8   1  
+0D0A  1E008000           [59] return     0   1      
+                         * constants:
+0D0E  13                 sizek (19)
+0D0F  01                 const type 3
+0D10  21A470F9           const [0]: (-110058463)
+0D14  01                 const type 3
+0D15  3AC28C8B           const [1]: (-1953709510)
+0D19  04                 const type 4
+0D1A  03                 string size (3)
+0D1B  5F4700             "_G\0"
+                         const [2]: "_G"
+0D1E  04                 const type 4
+0D1F  12                 string size (18)
+0D20  55494D6174657269+  "UIMateri"
+0D28  616C5F427574746F+  "al_Butto"
+0D30  6E00               "n\0"
+                         const [3]: "UIMaterial_Button"
+0D32  01                 const type 3
+0D33  65770E40           const [4]: (1074689893)
+0D37  04                 const type 4
+0D38  13                 string size (19)
+0D39  6D56697352616E67+  "mVisRang"
+0D41  654D617465726961+  "eMateria"
+0D49  6C7300             "ls\0"
+                         const [5]: "mVisRangeMaterials"
+0D4C  04                 const type 4
+0D4D  07                 string size (7)
+0D4E  6D4D6F76696500     "mMovie\0"
+                         const [6]: "mMovie"
+0D55  01                 const type 3
+0D56  D7261F7E           const [7]: (2115970775)
+0D5A  04                 const type 4
+0D5B  0A                 string size (10)
+0D5C  6D436C69704E616D+  "mClipNam"
+0D64  6500               "e\0"
+                         const [8]: "mClipName"
+0D66  04                 const type 4
+0D67  08                 string size (8)
+0D68  2E49636F6E4F6E00   ".IconOn\0"
+                         const [9]: ".IconOn"
+0D70  04                 const type 4
+0D71  0D                 string size (13)
+0D72  426173654D617465+  "BaseMate"
+0D7A  7269616C00         "rial\0"
+                         const [10]: "BaseMaterial"
+0D7F  04                 const type 4
+0D80  09                 string size (9)
+0D81  2E49636F6E4F6666+  ".IconOff"
+0D89  00                 "\0"
+                         const [11]: ".IconOff"
+0D8A  04                 const type 4
+0D8B  0F                 string size (15)
+0D8C  4261636B65724D61+  "BackerMa"
+0D94  74657269616C00     "terial\0"
+                         const [12]: "BackerMaterial"
+0D9B  04                 const type 4
+0D9C  07                 string size (7)
+0D9D  2E496E6E657200     ".Inner\0"
+                         const [13]: ".Inner"
+0DA4  01                 const type 3
+0DA5  2FAB2A30           const [14]: (808102703)
+0DA9  04                 const type 4
+0DAA  0E                 string size (14)
+0DAB  5265637445646765+  "RectEdge"
+0DB3  436F6C6F7200       "Color\0"
+                         const [15]: "RectEdgeColor"
+0DB9  03                 const type 3
+0DBA  00000000           const [16]: (0)
+0DBE  04                 const type 4
+0DBF  0F                 string size (15)
+0DC0  52656374496E6E65+  "RectInne"
+0DC8  72436F6C6F7200     "rColor\0"
+                         const [17]: "RectInnerColor"
+0DCF  03                 const type 3
+0DD0  0000803F           const [18]: (0)
+                         * functions:
+0DD4  00                 sizep (0)
+                         * lines:
+0DD5  3B                 sizelineinfo (59)
+                         [pc] (line)
+0DD6  5B                 [01] (91)
+0DD7  00                 [02] (91)
+0DD8  00                 [03] (92)
+0DD9  00                 [04] (92)
+0DDA  5B                 [05] (94)
+0DDB  00                 [06] (94)
+0DDC  00                 [07] (95)
+0DDD  00                 [08] (95)
+0DDE  5C                 [09] (95)
+0DDF  00                 [10] (95)
+0DE0  00                 [11] (95)
+0DE1  00                 [12] (96)
+0DE2  5C                 [13] (96)
+0DE3  00                 [14] (96)
+0DE4  00                 [15] (96)
+0DE5  00                 [16] (96)
+0DE6  5E                 [17] (96)
+0DE7  00                 [18] (96)
+0DE8  00                 [19] (96)
+0DE9  00                 [20] (97)
+0DEA  5E                 [21] (97)
+0DEB  00                 [22] (97)
+0DEC  00                 [23] (97)
+0DED  00                 [24] (97)
+0DEE  5F                 [25] (97)
+0DEF  00                 [26] (97)
+0DF0  00                 [27] (97)
+0DF1  00                 [28] (98)
+0DF2  5F                 [29] (98)
+0DF3  00                 [30] (101)
+0DF4  00                 [31] (101)
+0DF5  00                 [32] (101)
+0DF6  5F                 [33] (101)
+0DF7  00                 [34] (101)
+0DF8  00                 [35] (101)
+0DF9  00                 [36] (101)
+0DFA  5F                 [37] (102)
+0DFB  00                 [38] (102)
+0DFC  00                 [39] (102)
+0DFD  00                 [40] (102)
+0DFE  5F                 [41] (102)
+0DFF  00                 [42] (102)
+0E00  00                 [43] (102)
+0E01  00                 [44] (102)
+0E02  60                 [45] (102)
+0E03  00                 [46] (102)
+0E04  00                 [47] (102)
+0E05  00                 [48] (103)
+0E06  60                 [49] (103)
+0E07  00                 [50] (103)
+0E08  00                 [51] (103)
+0E09  00                 [52] (103)
+0E0A  60                 [53] (103)
+0E0B  00                 [54] (103)
+0E0C  00                 [55] (103)
+0E0D  00                 [56] (103)
+0E0E  60                 [57] (103)
+0E0F  00                 [58] (103)
+0E10  00                 [59] (104)
+                         * locals:
+0EC2  00                 sizelocvars (0)
+                         * upvalues:
+0EC3  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+0EC4  32                 sizelineinfo (50)
+                         [pc] (line)
+0EC5  04                 [01] (4)
+0EC6  00                 [02] (4)
+0EC7  00                 [03] (4)
+0EC8  00                 [04] (5)
+0EC9  04                 [05] (5)
+0ECA  00                 [06] (5)
+0ECB  00                 [07] (6)
+0ECC  00                 [08] (6)
+0ECD  04                 [09] (6)
+0ECE  00                 [10] (8)
+0ECF  00                 [11] (8)
+0ED0  00                 [12] (9)
+0ED1  05                 [13] (12)
+0ED2  00                 [14] (12)
+0ED3  00                 [15] (12)
+0ED4  00                 [16] (12)
+0ED5  05                 [17] (13)
+0ED6  00                 [18] (14)
+0ED7  00                 [19] (15)
+0ED8  00                 [20] (16)
+0ED9  05                 [21] (17)
+0EDA  00                 [22] (18)
+0EDB  00                 [23] (19)
+0EDC  00                 [24] (43)
+0EDD  06                 [25] (43)
+0EDE  00                 [26] (43)
+0EDF  00                 [27] (51)
+0EE0  00                 [28] (51)
+0EE1  06                 [29] (53)
+0EE2  00                 [30] (53)
+0EE3  00                 [31] (61)
+0EE4  00                 [32] (61)
+0EE5  06                 [33] (63)
+0EE6  00                 [34] (63)
+0EE7  00                 [35] (73)
+0EE8  00                 [36] (73)
+0EE9  08                 [37] (75)
+0EEA  00                 [38] (75)
+0EEB  00                 [39] (86)
+0EEC  00                 [40] (86)
+0EED  08                 [41] (86)
+0EEE  00                 [42] (86)
+0EEF  00                 [43] (88)
+0EF0  00                 [44] (88)
+0EF1  09                 [45] (104)
+0EF2  00                 [46] (104)
+0EF3  00                 [47] (107)
+0EF4  00                 [48] (107)
+0EF5  0C                 [49] (109)
+0EF6  00                 [50] (110)
+                         * locals:
+0F8D  00                 sizelocvars (0)
+                         * upvalues:
+0F8E  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+0F8F  09                 sizelineinfo (9)
+                         [pc] (line)
+0F90  01                 [1] (1)
+0F91  00                 [2] (1)
+0F92  00                 [3] (1)
+0F93  00                 [4] (1)
+0F94  01                 [5] (1)
+0F95  00                 [6] (110)
+0F96  00                 [7] (110)
+0F97  00                 [8] (3)
+0F98  01                 [9] (110)
+                         * locals:
+0FB4  00                 sizelocvars (0)
+                         * upvalues:
+0FB5  00                 sizeupvalues (0)
+                         ** end of function **
+
+0FB6                     ** end of chunk **

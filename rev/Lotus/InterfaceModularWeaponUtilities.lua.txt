@@ -1,0 +1,1680 @@
+1	C:\wlua_dump\path\Lotus\InterfaceModularWeaponUtilities.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\InterfaceModularWeaponUtilities.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  1A                 size of number (bytes)
+0008  DC                 integral (1=integral)
+4220
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+package
+seeall
+Lotus.Interface.UIStyleUtilities
+EE.Interface.Utilities
+Type
+/Lotus/Types/Weapon/LotusWeaponBlade
+Tag
+/Lotus/Language/OstronCrafting/Crafting_PartBlade
+/Lotus/Types/Weapon/LotusWeaponHilt
+/Lotus/Language/OstronCrafting/Crafting_PartHilt
+/Lotus/Types/Weapon/LotusWeaponWeight
+/Lotus/Language/OstronCrafting/Crafting_PartBalance
+/Lotus/Types/Weapon/LotusWeaponAmpOculus
+/Lotus/Language/OstronCrafting/AmpMod_PartBarrel
+/Lotus/Types/Weapon/LotusWeaponAmpCore
+/Lotus/Language/OstronCrafting/AmpMod_PartChassis
+/Lotus/Types/Weapon/LotusWeaponAmpBrace
+/Lotus/Language/OstronCrafting/AmpMod_PartGrip
+/Lotus/Types/Game/MoaPetParts/LotusMoaPetHead
+/Lotus/Language/SolarisVenus/MoaPet_PartHead
+/Lotus/Types/Game/MoaPetParts/LotusMoaPetEngine
+/Lotus/Language/SolarisVenus/MoaPet_PartEngine
+/Lotus/Types/Game/MoaPetParts/LotusMoaPetPayload
+/Lotus/Language/SolarisVenus/MoaPet_PartPayload
+/Lotus/Types/Game/MoaPetParts/LotusMoaPetLeg
+/Lotus/Language/SolarisVenus/MoaPet_PartLeg
+/Lotus/Types/Game/HoverboardParts/LotusHoverboardDeck
+/Lotus/Language/Hoverboards/HoverboardPartDeck
+/Lotus/Types/Game/HoverboardParts/LotusHoverboardEngine
+/Lotus/Language/Hoverboards/HoverboardPartEngine
+/Lotus/Types/Game/HoverboardParts/LotusHoverboardFront
+/Lotus/Language/Hoverboards/HoverboardPartFront
+/Lotus/Types/Game/HoverboardParts/LotusHoverboardJet
+/Lotus/Language/Hoverboards/HoverboardPartJet
+/Lotus/Types/Weapon/LotusGunBarrel
+/Lotus/Language/SolarisVenus/Gun_Barrels
+/Lotus/Types/Weapon/LotusGunSecondaryHandle
+/Lotus/Language/SolarisVenus/Gun_Handles
+/Lotus/Types/Weapon/LotusGunPrimaryHandle
+/Lotus/Types/Weapon/LotusGunClip
+/Lotus/Language/SolarisVenus/Gun_Clips
+/Lotus/Types/Game/ArchwingParts/LotusArchwingEngine
+/Lotus/Language/ModularArchwing/ModularAWCrafting_PartEngine
+/Lotus/Types/Game/ArchwingParts/LotusArchwingGenerator
+/Lotus/Language/ModularArchwing/ModularAWCrafting_PartGenerator
+/Lotus/Types/Game/ArchwingParts/LotusArchwingWing
+/Lotus/Language/ModularArchwing/ModularAWCrafting_PartWing
+/Lotus/Weapons/Ostron/Melee/LotusModularWeapon
+Parts
+/Lotus/Weapons/SolarisUnited/Primary/LotusModularPrimary
+/Lotus/Weapons/SolarisUnited/Primary/LotusModularPrimaryLauncher
+/Lotus/Weapons/SolarisUnited/Primary/LotusModularPrimaryShotgun
+/Lotus/Weapons/SolarisUnited/Primary/LotusModularPrimarySniper
+/Lotus/Weapons/SolarisUnited/Secondary/LotusModularSecondary
+/Lotus/Weapons/SolarisUnited/Secondary/LotusModularSecondaryBeam
+/Lotus/Weapons/SolarisUnited/Secondary/LotusModularSecondaryShotgun
+/Lotus/Types/Vehicles/Hoverboard/HoverboardSuit
+/Lotus/Types/Friendly/Pets/MoaPets/MoaPetPowerSuit
+/Lotus/Powersuits/Archwing/ModularJetPack/ModularJetPack
+GetPartsText
+GetModularType
+
+Type
+Tag
+
+#999999
+#FFFFFF
+SupportsThemes
+Lotus_Game
+UIStyle_FloatingContent
+UIStyle_Content
+<font color="
+"><br><b>
+/Lotus/Language/OstronCrafting/Crafting_PartsHeader
+<br></font>
+table
+"><b>
+: </b></font><font color="
+">
+<br>
+</font>
+Type
+Parts
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  1A                 maxstacksize (26)
+                         * code:
+0009  01                 sizecode (220)
+000A  1D000000           [001] getglobal  0   0        ; 954442511
+000E  41000001           [002] vararg     1   2      
+0012  9D400000           [003] getglobal  2   1        ; package
+0016  8E804001           [004] gettable   2   2   258  ; "seeall"
+001A  22408001           [005] call       0   3   1  
+001E  1DC00000           [006] getglobal  0   3        ; 849075268
+0022  59000100           [007] loadk      1   4        ; "Lotus.Interface.UIStyleUtilities"
+0026  22800001           [008] call       0   2   2  
+002A  5DC00000           [009] getglobal  1   3        ; 849075268
+002E  99400100           [010] loadk      2   5        ; "EE.Interface.Utilities"
+0032  62800001           [011] call       1   2   2  
+0036  8B008009           [012] newtable   2   19  0    ; array=22, hash=0
+003A  CB800000           [013] newtable   3   0   2    ; array=0, hash=2
+003E  1DC10100           [014] getglobal  4   7        ; 738251817
+0042  59010200           [015] loadk      5   8        ; "/Lotus/Types/Weapon/LotusWeaponBlade"
+0046  22810001           [016] call       4   2   2  
+004A  CC000183           [017] settable   3   262 4    ; "Type"
+004E  CC80C284           [018] settable   3   265 266  ; "Tag" "/Lotus/Language/OstronCrafting/Crafting_PartBlade"
+0052  0B810000           [019] newtable   4   0   2    ; array=0, hash=2
+0056  5DC10100           [020] getglobal  5   7        ; 738251817
+005A  99C10200           [021] loadk      6   11       ; "/Lotus/Types/Weapon/LotusWeaponHilt"
+005E  62810001           [022] call       5   2   2  
+0062  0C410183           [023] settable   4   262 5    ; "Type"
+0066  0C01C384           [024] settable   4   265 268  ; "Tag" "/Lotus/Language/OstronCrafting/Crafting_PartHilt"
+006A  4B810000           [025] newtable   5   0   2    ; array=0, hash=2
+006E  9DC10100           [026] getglobal  6   7        ; 738251817
+0072  D9410300           [027] loadk      7   13       ; "/Lotus/Types/Weapon/LotusWeaponWeight"
+0076  A2810001           [028] call       6   2   2  
+007A  4C810183           [029] settable   5   262 6    ; "Type"
+007E  4C81C384           [030] settable   5   265 270  ; "Tag" "/Lotus/Language/OstronCrafting/Crafting_PartBalance"
+0082  8B810000           [031] newtable   6   0   2    ; array=0, hash=2
+0086  DDC10100           [032] getglobal  7   7        ; 738251817
+008A  19C20300           [033] loadk      8   15       ; "/Lotus/Types/Weapon/LotusWeaponAmpOculus"
+008E  E2810001           [034] call       7   2   2  
+0092  8CC10183           [035] settable   6   262 7    ; "Type"
+0096  8C01C484           [036] settable   6   265 272  ; "Tag" "/Lotus/Language/OstronCrafting/AmpMod_PartBarrel"
+009A  CB810000           [037] newtable   7   0   2    ; array=0, hash=2
+009E  1DC20100           [038] getglobal  8   7        ; 738251817
+00A2  59420400           [039] loadk      9   17       ; "/Lotus/Types/Weapon/LotusWeaponAmpCore"
+00A6  22820001           [040] call       8   2   2  
+00AA  CC010283           [041] settable   7   262 8    ; "Type"
+00AE  CC81C484           [042] settable   7   265 274  ; "Tag" "/Lotus/Language/OstronCrafting/AmpMod_PartChassis"
+00B2  0B820000           [043] newtable   8   0   2    ; array=0, hash=2
+00B6  5DC20100           [044] getglobal  9   7        ; 738251817
+00BA  99C20400           [045] loadk      10  19       ; "/Lotus/Types/Weapon/LotusWeaponAmpBrace"
+00BE  62820001           [046] call       9   2   2  
+00C2  0C420283           [047] settable   8   262 9    ; "Type"
+00C6  0C02C584           [048] settable   8   265 276  ; "Tag" "/Lotus/Language/OstronCrafting/AmpMod_PartGrip"
+00CA  4B820000           [049] newtable   9   0   2    ; array=0, hash=2
+00CE  9DC20100           [050] getglobal  10  7        ; 738251817
+00D2  D9420500           [051] loadk      11  21       ; "/Lotus/Types/Game/MoaPetParts/LotusMoaPetHead"
+00D6  A2820001           [052] call       10  2   2  
+00DA  4C820283           [053] settable   9   262 10   ; "Type"
+00DE  4C82C584           [054] settable   9   265 278  ; "Tag" "/Lotus/Language/SolarisVenus/MoaPet_PartHead"
+00E2  8B820000           [055] newtable   10  0   2    ; array=0, hash=2
+00E6  DDC20100           [056] getglobal  11  7        ; 738251817
+00EA  19C30500           [057] loadk      12  23       ; "/Lotus/Types/Game/MoaPetParts/LotusMoaPetEngine"
+00EE  E2820001           [058] call       11  2   2  
+00F2  8CC20283           [059] settable   10  262 11   ; "Type"
+00F6  8C02C684           [060] settable   10  265 280  ; "Tag" "/Lotus/Language/SolarisVenus/MoaPet_PartEngine"
+00FA  CB820000           [061] newtable   11  0   2    ; array=0, hash=2
+00FE  1DC30100           [062] getglobal  12  7        ; 738251817
+0102  59430600           [063] loadk      13  25       ; "/Lotus/Types/Game/MoaPetParts/LotusMoaPetPayload"
+0106  22830001           [064] call       12  2   2  
+010A  CC020383           [065] settable   11  262 12   ; "Type"
+010E  CC82C684           [066] settable   11  265 282  ; "Tag" "/Lotus/Language/SolarisVenus/MoaPet_PartPayload"
+0112  0B830000           [067] newtable   12  0   2    ; array=0, hash=2
+0116  5DC30100           [068] getglobal  13  7        ; 738251817
+011A  99C30600           [069] loadk      14  27       ; "/Lotus/Types/Game/MoaPetParts/LotusMoaPetLeg"
+011E  62830001           [070] call       13  2   2  
+0122  0C430383           [071] settable   12  262 13   ; "Type"
+0126  0C03C784           [072] settable   12  265 284  ; "Tag" "/Lotus/Language/SolarisVenus/MoaPet_PartLeg"
+012A  4B830000           [073] newtable   13  0   2    ; array=0, hash=2
+012E  9DC30100           [074] getglobal  14  7        ; 738251817
+0132  D9430700           [075] loadk      15  29       ; "/Lotus/Types/Game/HoverboardParts/LotusHoverboardDeck"
+0136  A2830001           [076] call       14  2   2  
+013A  4C830383           [077] settable   13  262 14   ; "Type"
+013E  4C83C784           [078] settable   13  265 286  ; "Tag" "/Lotus/Language/Hoverboards/HoverboardPartDeck"
+0142  8B830000           [079] newtable   14  0   2    ; array=0, hash=2
+0146  DDC30100           [080] getglobal  15  7        ; 738251817
+014A  19C40700           [081] loadk      16  31       ; "/Lotus/Types/Game/HoverboardParts/LotusHoverboardEngine"
+014E  E2830001           [082] call       15  2   2  
+0152  8CC30383           [083] settable   14  262 15   ; "Type"
+0156  8C03C884           [084] settable   14  265 288  ; "Tag" "/Lotus/Language/Hoverboards/HoverboardPartEngine"
+015A  CB830000           [085] newtable   15  0   2    ; array=0, hash=2
+015E  1DC40100           [086] getglobal  16  7        ; 738251817
+0162  59440800           [087] loadk      17  33       ; "/Lotus/Types/Game/HoverboardParts/LotusHoverboardFront"
+0166  22840001           [088] call       16  2   2  
+016A  CC030483           [089] settable   15  262 16   ; "Type"
+016E  CC83C884           [090] settable   15  265 290  ; "Tag" "/Lotus/Language/Hoverboards/HoverboardPartFront"
+0172  0B840000           [091] newtable   16  0   2    ; array=0, hash=2
+0176  5DC40100           [092] getglobal  17  7        ; 738251817
+017A  99C40800           [093] loadk      18  35       ; "/Lotus/Types/Game/HoverboardParts/LotusHoverboardJet"
+017E  62840001           [094] call       17  2   2  
+0182  0C440483           [095] settable   16  262 17   ; "Type"
+0186  0C04C984           [096] settable   16  265 292  ; "Tag" "/Lotus/Language/Hoverboards/HoverboardPartJet"
+018A  4B840000           [097] newtable   17  0   2    ; array=0, hash=2
+018E  9DC40100           [098] getglobal  18  7        ; 738251817
+0192  D9440900           [099] loadk      19  37       ; "/Lotus/Types/Weapon/LotusGunBarrel"
+0196  A2840001           [100] call       18  2   2  
+019A  4C840483           [101] settable   17  262 18   ; "Type"
+019E  4C84C984           [102] settable   17  265 294  ; "Tag" "/Lotus/Language/SolarisVenus/Gun_Barrels"
+01A2  8B840000           [103] newtable   18  0   2    ; array=0, hash=2
+01A6  DDC40100           [104] getglobal  19  7        ; 738251817
+01AA  19C50900           [105] loadk      20  39       ; "/Lotus/Types/Weapon/LotusGunSecondaryHandle"
+01AE  E2840001           [106] call       19  2   2  
+01B2  8CC40483           [107] settable   18  262 19   ; "Type"
+01B6  8C04CA84           [108] settable   18  265 296  ; "Tag" "/Lotus/Language/SolarisVenus/Gun_Handles"
+01BA  CB840000           [109] newtable   19  0   2    ; array=0, hash=2
+01BE  1DC50100           [110] getglobal  20  7        ; 738251817
+01C2  59450A00           [111] loadk      21  41       ; "/Lotus/Types/Weapon/LotusGunPrimaryHandle"
+01C6  22850001           [112] call       20  2   2  
+01CA  CC040583           [113] settable   19  262 20   ; "Type"
+01CE  CC04CA84           [114] settable   19  265 296  ; "Tag" "/Lotus/Language/SolarisVenus/Gun_Handles"
+01D2  0B850000           [115] newtable   20  0   2    ; array=0, hash=2
+01D6  5DC50100           [116] getglobal  21  7        ; 738251817
+01DA  99850A00           [117] loadk      22  42       ; "/Lotus/Types/Weapon/LotusGunClip"
+01DE  62850001           [118] call       21  2   2  
+01E2  0C450583           [119] settable   20  262 21   ; "Type"
+01E6  0CC5CA84           [120] settable   20  265 299  ; "Tag" "/Lotus/Language/SolarisVenus/Gun_Clips"
+01EA  4B850000           [121] newtable   21  0   2    ; array=0, hash=2
+01EE  9DC50100           [122] getglobal  22  7        ; 738251817
+01F2  D9050B00           [123] loadk      23  44       ; "/Lotus/Types/Game/ArchwingParts/LotusArchwingEngine"
+01F6  A2850001           [124] call       22  2   2  
+01FA  4C850583           [125] settable   21  262 22   ; "Type"
+01FE  4C45CB84           [126] settable   21  265 301  ; "Tag" "/Lotus/Language/ModularArchwing/ModularAWCrafting_PartEngine"
+0202  8B850000           [127] newtable   22  0   2    ; array=0, hash=2
+0206  DDC50100           [128] getglobal  23  7        ; 738251817
+020A  19860B00           [129] loadk      24  46       ; "/Lotus/Types/Game/ArchwingParts/LotusArchwingGenerator"
+020E  E2850001           [130] call       23  2   2  
+0212  8CC50583           [131] settable   22  262 23   ; "Type"
+0216  8CC5CB84           [132] settable   22  265 303  ; "Tag" "/Lotus/Language/ModularArchwing/ModularAWCrafting_PartGenerator"
+021A  CB850000           [133] newtable   23  0   2    ; array=0, hash=2
+021E  1DC60100           [134] getglobal  24  7        ; 738251817
+0222  59060C00           [135] loadk      25  48       ; "/Lotus/Types/Game/ArchwingParts/LotusArchwingWing"
+0226  22860001           [136] call       24  2   2  
+022A  CC050683           [137] settable   23  262 24   ; "Type"
+022E  CC45CC84           [138] settable   23  265 305  ; "Tag" "/Lotus/Language/ModularArchwing/ModularAWCrafting_PartWing"
+0232  9B40800A           [139] setlist    2   21  1    ; index 1 to 21
+0236  CB008005           [140] newtable   3   11  0    ; array=11, hash=0
+023A  0B810000           [141] newtable   4   0   2    ; array=0, hash=2
+023E  5DC10100           [142] getglobal  5   7        ; 738251817
+0242  99810C00           [143] loadk      6   50       ; "/Lotus/Weapons/Ostron/Melee/LotusModularWeapon"
+0246  62810001           [144] call       5   2   2  
+024A  0C410183           [145] settable   4   262 5    ; "Type"
+024E  0C01CD99           [146] settable   4   307 308  ; "Parts" 0
+0252  4B810000           [147] newtable   5   0   2    ; array=0, hash=2
+0256  9DC10100           [148] getglobal  6   7        ; 738251817
+025A  D9410D00           [149] loadk      7   53       ; "/Lotus/Weapons/SolarisUnited/Primary/LotusModularPrimary"
+025E  A2810001           [150] call       6   2   2  
+0262  4C810183           [151] settable   5   262 6    ; "Type"
+0266  4C01CD99           [152] settable   5   307 308  ; "Parts" 0
+026A  8B810000           [153] newtable   6   0   2    ; array=0, hash=2
+026E  DDC10100           [154] getglobal  7   7        ; 738251817
+0272  19820D00           [155] loadk      8   54       ; "/Lotus/Weapons/SolarisUnited/Primary/LotusModularPrimaryLauncher"
+0276  E2810001           [156] call       7   2   2  
+027A  8CC10183           [157] settable   6   262 7    ; "Type"
+027E  8C01CD99           [158] settable   6   307 308  ; "Parts" 0
+0282  CB810000           [159] newtable   7   0   2    ; array=0, hash=2
+0286  1DC20100           [160] getglobal  8   7        ; 738251817
+028A  59C20D00           [161] loadk      9   55       ; "/Lotus/Weapons/SolarisUnited/Primary/LotusModularPrimaryShotgun"
+028E  22820001           [162] call       8   2   2  
+0292  CC010283           [163] settable   7   262 8    ; "Type"
+0296  CC01CD99           [164] settable   7   307 308  ; "Parts" 0
+029A  0B820000           [165] newtable   8   0   2    ; array=0, hash=2
+029E  5DC20100           [166] getglobal  9   7        ; 738251817
+02A2  99020E00           [167] loadk      10  56       ; "/Lotus/Weapons/SolarisUnited/Primary/LotusModularPrimarySniper"
+02A6  62820001           [168] call       9   2   2  
+02AA  0C420283           [169] settable   8   262 9    ; "Type"
+02AE  0C02CD99           [170] settable   8   307 308  ; "Parts" 0
+02B2  4B820000           [171] newtable   9   0   2    ; array=0, hash=2
+02B6  9DC20100           [172] getglobal  10  7        ; 738251817
+02BA  D9420E00           [173] loadk      11  57       ; "/Lotus/Weapons/SolarisUnited/Secondary/LotusModularSecondary"
+02BE  A2820001           [174] call       10  2   2  
+02C2  4C820283           [175] settable   9   262 10   ; "Type"
+02C6  4C02CD99           [176] settable   9   307 308  ; "Parts" 0
+02CA  8B820000           [177] newtable   10  0   2    ; array=0, hash=2
+02CE  DDC20100           [178] getglobal  11  7        ; 738251817
+02D2  19830E00           [179] loadk      12  58       ; "/Lotus/Weapons/SolarisUnited/Secondary/LotusModularSecondaryBeam"
+02D6  E2820001           [180] call       11  2   2  
+02DA  8CC20283           [181] settable   10  262 11   ; "Type"
+02DE  8C02CD99           [182] settable   10  307 308  ; "Parts" 0
+02E2  CB820000           [183] newtable   11  0   2    ; array=0, hash=2
+02E6  1DC30100           [184] getglobal  12  7        ; 738251817
+02EA  59C30E00           [185] loadk      13  59       ; "/Lotus/Weapons/SolarisUnited/Secondary/LotusModularSecondaryShotgun"
+02EE  22830001           [186] call       12  2   2  
+02F2  CC020383           [187] settable   11  262 12   ; "Type"
+02F6  CC02CD99           [188] settable   11  307 308  ; "Parts" 0
+02FA  0B830000           [189] newtable   12  0   2    ; array=0, hash=2
+02FE  5DC30100           [190] getglobal  13  7        ; 738251817
+0302  99030F00           [191] loadk      14  60       ; "/Lotus/Types/Vehicles/Hoverboard/HoverboardSuit"
+0306  62830001           [192] call       13  2   2  
+030A  0C430383           [193] settable   12  262 13   ; "Type"
+030E  0C43CF99           [194] settable   12  307 317  ; "Parts" 0
+0312  4B830000           [195] newtable   13  0   2    ; array=0, hash=2
+0316  9DC30100           [196] getglobal  14  7        ; 738251817
+031A  D9830F00           [197] loadk      15  62       ; "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetPowerSuit"
+031E  A2830001           [198] call       14  2   2  
+0322  4C830383           [199] settable   13  262 14   ; "Type"
+0326  4C43CF99           [200] settable   13  307 317  ; "Parts" 0
+032A  8B830000           [201] newtable   14  0   2    ; array=0, hash=2
+032E  DDC30100           [202] getglobal  15  7        ; 738251817
+0332  19C40F00           [203] loadk      16  63       ; "/Lotus/Powersuits/Archwing/ModularJetPack/ModularJetPack"
+0336  E2830001           [204] call       15  2   2  
+033A  8CC30383           [205] settable   14  262 15   ; "Type"
+033E  8C03CD99           [206] settable   14  307 308  ; "Parts" 0
+0342  DB408005           [207] setlist    3   11  1    ; index 1 to 11
+0346  25010000           [208] closure    4   0      
+034A  12000001           [209] move       0   2      
+034E  65410000           [210] closure    5   1      
+0352  12008000           [211] move       0   1      
+0356  12000000           [212] move       0   0      
+035A  12000002           [213] move       0   4      
+035E  60011000           [214] setglobal  5   64       ; GetPartsText
+0362  60411000           [215] setglobal  5   65       ; -1040959425
+0366  65810000           [216] closure    5   2      
+036A  12008001           [217] move       0   3      
+036E  60811000           [218] setglobal  5   66       ; GetModularType
+0372  60C11000           [219] setglobal  5   67       ; 1032202902
+0376  1E008000           [220] return     0   1      
+                         * constants:
+037A  44                 sizek (68)
+037B  01                 const type 3
+037C  0FA3E338           const [0]: (954442511)
+0380  04                 const type 4
+0381  08                 string size (8)
+0382  7061636B61676500   "package\0"
+                         const [1]: "package"
+038A  04                 const type 4
+038B  07                 string size (7)
+038C  736565616C6C00     "seeall\0"
+                         const [2]: "seeall"
+0393  01                 const type 3
+0394  44DC9B32           const [3]: (849075268)
+0398  04                 const type 4
+0399  21                 string size (33)
+039A  4C6F7475732E496E+  "Lotus.In"
+03A2  746572666163652E+  "terface."
+03AA  55495374796C6555+  "UIStyleU"
+03B2  74696C6974696573+  "tilities"
+03BA  00                 "\0"
+                         const [4]: "Lotus.Interface.UIStyleUtilities"
+03BB  04                 const type 4
+03BC  17                 string size (23)
+03BD  45452E496E746572+  "EE.Inter"
+03C5  666163652E557469+  "face.Uti"
+03CD  6C697469657300     "lities\0"
+                         const [5]: "EE.Interface.Utilities"
+03D4  04                 const type 4
+03D5  05                 string size (5)
+03D6  5479706500         "Type\0"
+                         const [6]: "Type"
+03DB  01                 const type 3
+03DC  29D4002C           const [7]: (738251817)
+03E0  04                 const type 4
+03E1  25                 string size (37)
+03E2  2F4C6F7475732F54+  "/Lotus/T"
+03EA  797065732F576561+  "ypes/Wea"
+03F2  706F6E2F4C6F7475+  "pon/Lotu"
+03FA  73576561706F6E42+  "sWeaponB"
+0402  6C61646500         "lade\0"
+                         const [8]: "/Lotus/Types/Weapon/LotusWeaponBlade"
+0407  04                 const type 4
+0408  04                 string size (4)
+0409  54616700           "Tag\0"
+                         const [9]: "Tag"
+040D  04                 const type 4
+040E  32                 string size (50)
+040F  2F4C6F7475732F4C+  "/Lotus/L"
+0417  616E67756167652F+  "anguage/"
+041F  4F7374726F6E4372+  "OstronCr"
+0427  616674696E672F43+  "afting/C"
+042F  72616674696E675F+  "rafting_"
+0437  50617274426C6164+  "PartBlad"
+043F  6500               "e\0"
+                         const [10]: "/Lotus/Language/OstronCrafting/Crafting_PartBlade"
+0441  04                 const type 4
+0442  24                 string size (36)
+0443  2F4C6F7475732F54+  "/Lotus/T"
+044B  797065732F576561+  "ypes/Wea"
+0453  706F6E2F4C6F7475+  "pon/Lotu"
+045B  73576561706F6E48+  "sWeaponH"
+0463  696C7400           "ilt\0"
+                         const [11]: "/Lotus/Types/Weapon/LotusWeaponHilt"
+0467  04                 const type 4
+0468  31                 string size (49)
+0469  2F4C6F7475732F4C+  "/Lotus/L"
+0471  616E67756167652F+  "anguage/"
+0479  4F7374726F6E4372+  "OstronCr"
+0481  616674696E672F43+  "afting/C"
+0489  72616674696E675F+  "rafting_"
+0491  5061727448696C74+  "PartHilt"
+0499  00                 "\0"
+                         const [12]: "/Lotus/Language/OstronCrafting/Crafting_PartHilt"
+049A  04                 const type 4
+049B  26                 string size (38)
+049C  2F4C6F7475732F54+  "/Lotus/T"
+04A4  797065732F576561+  "ypes/Wea"
+04AC  706F6E2F4C6F7475+  "pon/Lotu"
+04B4  73576561706F6E57+  "sWeaponW"
+04BC  656967687400       "eight\0"
+                         const [13]: "/Lotus/Types/Weapon/LotusWeaponWeight"
+04C2  04                 const type 4
+04C3  34                 string size (52)
+04C4  2F4C6F7475732F4C+  "/Lotus/L"
+04CC  616E67756167652F+  "anguage/"
+04D4  4F7374726F6E4372+  "OstronCr"
+04DC  616674696E672F43+  "afting/C"
+04E4  72616674696E675F+  "rafting_"
+04EC  5061727442616C61+  "PartBala"
+04F4  6E636500           "nce\0"
+                         const [14]: "/Lotus/Language/OstronCrafting/Crafting_PartBalance"
+04F8  04                 const type 4
+04F9  29                 string size (41)
+04FA  2F4C6F7475732F54+  "/Lotus/T"
+0502  797065732F576561+  "ypes/Wea"
+050A  706F6E2F4C6F7475+  "pon/Lotu"
+0512  73576561706F6E41+  "sWeaponA"
+051A  6D704F63756C7573+  "mpOculus"
+0522  00                 "\0"
+                         const [15]: "/Lotus/Types/Weapon/LotusWeaponAmpOculus"
+0523  04                 const type 4
+0524  31                 string size (49)
+0525  2F4C6F7475732F4C+  "/Lotus/L"
+052D  616E67756167652F+  "anguage/"
+0535  4F7374726F6E4372+  "OstronCr"
+053D  616674696E672F41+  "afting/A"
+0545  6D704D6F645F5061+  "mpMod_Pa"
+054D  727442617272656C+  "rtBarrel"
+0555  00                 "\0"
+                         const [16]: "/Lotus/Language/OstronCrafting/AmpMod_PartBarrel"
+0556  04                 const type 4
+0557  27                 string size (39)
+0558  2F4C6F7475732F54+  "/Lotus/T"
+0560  797065732F576561+  "ypes/Wea"
+0568  706F6E2F4C6F7475+  "pon/Lotu"
+0570  73576561706F6E41+  "sWeaponA"
+0578  6D70436F726500     "mpCore\0"
+                         const [17]: "/Lotus/Types/Weapon/LotusWeaponAmpCore"
+057F  04                 const type 4
+0580  32                 string size (50)
+0581  2F4C6F7475732F4C+  "/Lotus/L"
+0589  616E67756167652F+  "anguage/"
+0591  4F7374726F6E4372+  "OstronCr"
+0599  616674696E672F41+  "afting/A"
+05A1  6D704D6F645F5061+  "mpMod_Pa"
+05A9  7274436861737369+  "rtChassi"
+05B1  7300               "s\0"
+                         const [18]: "/Lotus/Language/OstronCrafting/AmpMod_PartChassis"
+05B3  04                 const type 4
+05B4  28                 string size (40)
+05B5  2F4C6F7475732F54+  "/Lotus/T"
+05BD  797065732F576561+  "ypes/Wea"
+05C5  706F6E2F4C6F7475+  "pon/Lotu"
+05CD  73576561706F6E41+  "sWeaponA"
+05D5  6D70427261636500   "mpBrace\0"
+                         const [19]: "/Lotus/Types/Weapon/LotusWeaponAmpBrace"
+05DD  04                 const type 4
+05DE  2F                 string size (47)
+05DF  2F4C6F7475732F4C+  "/Lotus/L"
+05E7  616E67756167652F+  "anguage/"
+05EF  4F7374726F6E4372+  "OstronCr"
+05F7  616674696E672F41+  "afting/A"
+05FF  6D704D6F645F5061+  "mpMod_Pa"
+0607  72744772697000     "rtGrip\0"
+                         const [20]: "/Lotus/Language/OstronCrafting/AmpMod_PartGrip"
+060E  04                 const type 4
+060F  2E                 string size (46)
+0610  2F4C6F7475732F54+  "/Lotus/T"
+0618  797065732F47616D+  "ypes/Gam"
+0620  652F4D6F61506574+  "e/MoaPet"
+0628  50617274732F4C6F+  "Parts/Lo"
+0630  7475734D6F615065+  "tusMoaPe"
+0638  744865616400       "tHead\0"
+                         const [21]: "/Lotus/Types/Game/MoaPetParts/LotusMoaPetHead"
+063E  04                 const type 4
+063F  2D                 string size (45)
+0640  2F4C6F7475732F4C+  "/Lotus/L"
+0648  616E67756167652F+  "anguage/"
+0650  536F6C6172697356+  "SolarisV"
+0658  656E75732F4D6F61+  "enus/Moa"
+0660  5065745F50617274+  "Pet_Part"
+0668  4865616400         "Head\0"
+                         const [22]: "/Lotus/Language/SolarisVenus/MoaPet_PartHead"
+066D  04                 const type 4
+066E  30                 string size (48)
+066F  2F4C6F7475732F54+  "/Lotus/T"
+0677  797065732F47616D+  "ypes/Gam"
+067F  652F4D6F61506574+  "e/MoaPet"
+0687  50617274732F4C6F+  "Parts/Lo"
+068F  7475734D6F615065+  "tusMoaPe"
+0697  74456E67696E6500   "tEngine\0"
+                         const [23]: "/Lotus/Types/Game/MoaPetParts/LotusMoaPetEngine"
+069F  04                 const type 4
+06A0  2F                 string size (47)
+06A1  2F4C6F7475732F4C+  "/Lotus/L"
+06A9  616E67756167652F+  "anguage/"
+06B1  536F6C6172697356+  "SolarisV"
+06B9  656E75732F4D6F61+  "enus/Moa"
+06C1  5065745F50617274+  "Pet_Part"
+06C9  456E67696E6500     "Engine\0"
+                         const [24]: "/Lotus/Language/SolarisVenus/MoaPet_PartEngine"
+06D0  04                 const type 4
+06D1  31                 string size (49)
+06D2  2F4C6F7475732F54+  "/Lotus/T"
+06DA  797065732F47616D+  "ypes/Gam"
+06E2  652F4D6F61506574+  "e/MoaPet"
+06EA  50617274732F4C6F+  "Parts/Lo"
+06F2  7475734D6F615065+  "tusMoaPe"
+06FA  745061796C6F6164+  "tPayload"
+0702  00                 "\0"
+                         const [25]: "/Lotus/Types/Game/MoaPetParts/LotusMoaPetPayload"
+0703  04                 const type 4
+0704  30                 string size (48)
+0705  2F4C6F7475732F4C+  "/Lotus/L"
+070D  616E67756167652F+  "anguage/"
+0715  536F6C6172697356+  "SolarisV"
+071D  656E75732F4D6F61+  "enus/Moa"
+0725  5065745F50617274+  "Pet_Part"
+072D  5061796C6F616400   "Payload\0"
+                         const [26]: "/Lotus/Language/SolarisVenus/MoaPet_PartPayload"
+0735  04                 const type 4
+0736  2D                 string size (45)
+0737  2F4C6F7475732F54+  "/Lotus/T"
+073F  797065732F47616D+  "ypes/Gam"
+0747  652F4D6F61506574+  "e/MoaPet"
+074F  50617274732F4C6F+  "Parts/Lo"
+0757  7475734D6F615065+  "tusMoaPe"
+075F  744C656700         "tLeg\0"
+                         const [27]: "/Lotus/Types/Game/MoaPetParts/LotusMoaPetLeg"
+0764  04                 const type 4
+0765  2C                 string size (44)
+0766  2F4C6F7475732F4C+  "/Lotus/L"
+076E  616E67756167652F+  "anguage/"
+0776  536F6C6172697356+  "SolarisV"
+077E  656E75732F4D6F61+  "enus/Moa"
+0786  5065745F50617274+  "Pet_Part"
+078E  4C656700           "Leg\0"
+                         const [28]: "/Lotus/Language/SolarisVenus/MoaPet_PartLeg"
+0792  04                 const type 4
+0793  36                 string size (54)
+0794  2F4C6F7475732F54+  "/Lotus/T"
+079C  797065732F47616D+  "ypes/Gam"
+07A4  652F486F76657262+  "e/Hoverb"
+07AC  6F61726450617274+  "oardPart"
+07B4  732F4C6F74757348+  "s/LotusH"
+07BC  6F766572626F6172+  "overboar"
+07C4  644465636B00       "dDeck\0"
+                         const [29]: "/Lotus/Types/Game/HoverboardParts/LotusHoverboardDeck"
+07CA  04                 const type 4
+07CB  2F                 string size (47)
+07CC  2F4C6F7475732F4C+  "/Lotus/L"
+07D4  616E67756167652F+  "anguage/"
+07DC  486F766572626F61+  "Hoverboa"
+07E4  7264732F486F7665+  "rds/Hove"
+07EC  72626F6172645061+  "rboardPa"
+07F4  72744465636B00     "rtDeck\0"
+                         const [30]: "/Lotus/Language/Hoverboards/HoverboardPartDeck"
+07FB  04                 const type 4
+07FC  38                 string size (56)
+07FD  2F4C6F7475732F54+  "/Lotus/T"
+0805  797065732F47616D+  "ypes/Gam"
+080D  652F486F76657262+  "e/Hoverb"
+0815  6F61726450617274+  "oardPart"
+081D  732F4C6F74757348+  "s/LotusH"
+0825  6F766572626F6172+  "overboar"
+082D  64456E67696E6500   "dEngine\0"
+                         const [31]: "/Lotus/Types/Game/HoverboardParts/LotusHoverboardEngine"
+0835  04                 const type 4
+0836  31                 string size (49)
+0837  2F4C6F7475732F4C+  "/Lotus/L"
+083F  616E67756167652F+  "anguage/"
+0847  486F766572626F61+  "Hoverboa"
+084F  7264732F486F7665+  "rds/Hove"
+0857  72626F6172645061+  "rboardPa"
+085F  7274456E67696E65+  "rtEngine"
+0867  00                 "\0"
+                         const [32]: "/Lotus/Language/Hoverboards/HoverboardPartEngine"
+0868  04                 const type 4
+0869  37                 string size (55)
+086A  2F4C6F7475732F54+  "/Lotus/T"
+0872  797065732F47616D+  "ypes/Gam"
+087A  652F486F76657262+  "e/Hoverb"
+0882  6F61726450617274+  "oardPart"
+088A  732F4C6F74757348+  "s/LotusH"
+0892  6F766572626F6172+  "overboar"
+089A  6446726F6E7400     "dFront\0"
+                         const [33]: "/Lotus/Types/Game/HoverboardParts/LotusHoverboardFront"
+08A1  04                 const type 4
+08A2  30                 string size (48)
+08A3  2F4C6F7475732F4C+  "/Lotus/L"
+08AB  616E67756167652F+  "anguage/"
+08B3  486F766572626F61+  "Hoverboa"
+08BB  7264732F486F7665+  "rds/Hove"
+08C3  72626F6172645061+  "rboardPa"
+08CB  727446726F6E7400   "rtFront\0"
+                         const [34]: "/Lotus/Language/Hoverboards/HoverboardPartFront"
+08D3  04                 const type 4
+08D4  35                 string size (53)
+08D5  2F4C6F7475732F54+  "/Lotus/T"
+08DD  797065732F47616D+  "ypes/Gam"
+08E5  652F486F76657262+  "e/Hoverb"
+08ED  6F61726450617274+  "oardPart"
+08F5  732F4C6F74757348+  "s/LotusH"
+08FD  6F766572626F6172+  "overboar"
+0905  644A657400         "dJet\0"
+                         const [35]: "/Lotus/Types/Game/HoverboardParts/LotusHoverboardJet"
+090A  04                 const type 4
+090B  2E                 string size (46)
+090C  2F4C6F7475732F4C+  "/Lotus/L"
+0914  616E67756167652F+  "anguage/"
+091C  486F766572626F61+  "Hoverboa"
+0924  7264732F486F7665+  "rds/Hove"
+092C  72626F6172645061+  "rboardPa"
+0934  72744A657400       "rtJet\0"
+                         const [36]: "/Lotus/Language/Hoverboards/HoverboardPartJet"
+093A  04                 const type 4
+093B  23                 string size (35)
+093C  2F4C6F7475732F54+  "/Lotus/T"
+0944  797065732F576561+  "ypes/Wea"
+094C  706F6E2F4C6F7475+  "pon/Lotu"
+0954  7347756E42617272+  "sGunBarr"
+095C  656C00             "el\0"
+                         const [37]: "/Lotus/Types/Weapon/LotusGunBarrel"
+095F  04                 const type 4
+0960  29                 string size (41)
+0961  2F4C6F7475732F4C+  "/Lotus/L"
+0969  616E67756167652F+  "anguage/"
+0971  536F6C6172697356+  "SolarisV"
+0979  656E75732F47756E+  "enus/Gun"
+0981  5F42617272656C73+  "_Barrels"
+0989  00                 "\0"
+                         const [38]: "/Lotus/Language/SolarisVenus/Gun_Barrels"
+098A  04                 const type 4
+098B  2C                 string size (44)
+098C  2F4C6F7475732F54+  "/Lotus/T"
+0994  797065732F576561+  "ypes/Wea"
+099C  706F6E2F4C6F7475+  "pon/Lotu"
+09A4  7347756E5365636F+  "sGunSeco"
+09AC  6E6461727948616E+  "ndaryHan"
+09B4  646C6500           "dle\0"
+                         const [39]: "/Lotus/Types/Weapon/LotusGunSecondaryHandle"
+09B8  04                 const type 4
+09B9  29                 string size (41)
+09BA  2F4C6F7475732F4C+  "/Lotus/L"
+09C2  616E67756167652F+  "anguage/"
+09CA  536F6C6172697356+  "SolarisV"
+09D2  656E75732F47756E+  "enus/Gun"
+09DA  5F48616E646C6573+  "_Handles"
+09E2  00                 "\0"
+                         const [40]: "/Lotus/Language/SolarisVenus/Gun_Handles"
+09E3  04                 const type 4
+09E4  2A                 string size (42)
+09E5  2F4C6F7475732F54+  "/Lotus/T"
+09ED  797065732F576561+  "ypes/Wea"
+09F5  706F6E2F4C6F7475+  "pon/Lotu"
+09FD  7347756E5072696D+  "sGunPrim"
+0A05  61727948616E646C+  "aryHandl"
+0A0D  6500               "e\0"
+                         const [41]: "/Lotus/Types/Weapon/LotusGunPrimaryHandle"
+0A0F  04                 const type 4
+0A10  21                 string size (33)
+0A11  2F4C6F7475732F54+  "/Lotus/T"
+0A19  797065732F576561+  "ypes/Wea"
+0A21  706F6E2F4C6F7475+  "pon/Lotu"
+0A29  7347756E436C6970+  "sGunClip"
+0A31  00                 "\0"
+                         const [42]: "/Lotus/Types/Weapon/LotusGunClip"
+0A32  04                 const type 4
+0A33  27                 string size (39)
+0A34  2F4C6F7475732F4C+  "/Lotus/L"
+0A3C  616E67756167652F+  "anguage/"
+0A44  536F6C6172697356+  "SolarisV"
+0A4C  656E75732F47756E+  "enus/Gun"
+0A54  5F436C69707300     "_Clips\0"
+                         const [43]: "/Lotus/Language/SolarisVenus/Gun_Clips"
+0A5B  04                 const type 4
+0A5C  34                 string size (52)
+0A5D  2F4C6F7475732F54+  "/Lotus/T"
+0A65  797065732F47616D+  "ypes/Gam"
+0A6D  652F417263687769+  "e/Archwi"
+0A75  6E6750617274732F+  "ngParts/"
+0A7D  4C6F747573417263+  "LotusArc"
+0A85  6877696E67456E67+  "hwingEng"
+0A8D  696E6500           "ine\0"
+                         const [44]: "/Lotus/Types/Game/ArchwingParts/LotusArchwingEngine"
+0A91  04                 const type 4
+0A92  3D                 string size (61)
+0A93  2F4C6F7475732F4C+  "/Lotus/L"
+0A9B  616E67756167652F+  "anguage/"
+0AA3  4D6F64756C617241+  "ModularA"
+0AAB  72636877696E672F+  "rchwing/"
+0AB3  4D6F64756C617241+  "ModularA"
+0ABB  574372616674696E+  "WCraftin"
+0AC3  675F50617274456E+  "g_PartEn"
+0ACB  67696E6500         "gine\0"
+                         const [45]: "/Lotus/Language/ModularArchwing/ModularAWCrafting_PartEngine"
+0AD0  04                 const type 4
+0AD1  37                 string size (55)
+0AD2  2F4C6F7475732F54+  "/Lotus/T"
+0ADA  797065732F47616D+  "ypes/Gam"
+0AE2  652F417263687769+  "e/Archwi"
+0AEA  6E6750617274732F+  "ngParts/"
+0AF2  4C6F747573417263+  "LotusArc"
+0AFA  6877696E6747656E+  "hwingGen"
+0B02  657261746F7200     "erator\0"
+                         const [46]: "/Lotus/Types/Game/ArchwingParts/LotusArchwingGenerator"
+0B09  04                 const type 4
+0B0A  40                 string size (64)
+0B0B  2F4C6F7475732F4C+  "/Lotus/L"
+0B13  616E67756167652F+  "anguage/"
+0B1B  4D6F64756C617241+  "ModularA"
+0B23  72636877696E672F+  "rchwing/"
+0B2B  4D6F64756C617241+  "ModularA"
+0B33  574372616674696E+  "WCraftin"
+0B3B  675F506172744765+  "g_PartGe"
+0B43  6E657261746F7200   "nerator\0"
+                         const [47]: "/Lotus/Language/ModularArchwing/ModularAWCrafting_PartGenerator"
+0B4B  04                 const type 4
+0B4C  32                 string size (50)
+0B4D  2F4C6F7475732F54+  "/Lotus/T"
+0B55  797065732F47616D+  "ypes/Gam"
+0B5D  652F417263687769+  "e/Archwi"
+0B65  6E6750617274732F+  "ngParts/"
+0B6D  4C6F747573417263+  "LotusArc"
+0B75  6877696E6757696E+  "hwingWin"
+0B7D  6700               "g\0"
+                         const [48]: "/Lotus/Types/Game/ArchwingParts/LotusArchwingWing"
+0B7F  04                 const type 4
+0B80  3B                 string size (59)
+0B81  2F4C6F7475732F4C+  "/Lotus/L"
+0B89  616E67756167652F+  "anguage/"
+0B91  4D6F64756C617241+  "ModularA"
+0B99  72636877696E672F+  "rchwing/"
+0BA1  4D6F64756C617241+  "ModularA"
+0BA9  574372616674696E+  "WCraftin"
+0BB1  675F506172745769+  "g_PartWi"
+0BB9  6E6700             "ng\0"
+                         const [49]: "/Lotus/Language/ModularArchwing/ModularAWCrafting_PartWing"
+0BBC  04                 const type 4
+0BBD  2F                 string size (47)
+0BBE  2F4C6F7475732F57+  "/Lotus/W"
+0BC6  6561706F6E732F4F+  "eapons/O"
+0BCE  7374726F6E2F4D65+  "stron/Me"
+0BD6  6C65652F4C6F7475+  "lee/Lotu"
+0BDE  734D6F64756C6172+  "sModular"
+0BE6  576561706F6E00     "Weapon\0"
+                         const [50]: "/Lotus/Weapons/Ostron/Melee/LotusModularWeapon"
+0BED  04                 const type 4
+0BEE  06                 string size (6)
+0BEF  506172747300       "Parts\0"
+                         const [51]: "Parts"
+0BF5  03                 const type 3
+0BF6  00004040           const [52]: (0)
+0BFA  04                 const type 4
+0BFB  39                 string size (57)
+0BFC  2F4C6F7475732F57+  "/Lotus/W"
+0C04  6561706F6E732F53+  "eapons/S"
+0C0C  6F6C61726973556E+  "olarisUn"
+0C14  697465642F507269+  "ited/Pri"
+0C1C  6D6172792F4C6F74+  "mary/Lot"
+0C24  75734D6F64756C61+  "usModula"
+0C2C  725072696D617279+  "rPrimary"
+0C34  00                 "\0"
+                         const [53]: "/Lotus/Weapons/SolarisUnited/Primary/LotusModularPrimary"
+0C35  04                 const type 4
+0C36  41                 string size (65)
+0C37  2F4C6F7475732F57+  "/Lotus/W"
+0C3F  6561706F6E732F53+  "eapons/S"
+0C47  6F6C61726973556E+  "olarisUn"
+0C4F  697465642F507269+  "ited/Pri"
+0C57  6D6172792F4C6F74+  "mary/Lot"
+0C5F  75734D6F64756C61+  "usModula"
+0C67  725072696D617279+  "rPrimary"
+0C6F  4C61756E63686572+  "Launcher"
+0C77  00                 "\0"
+                         const [54]: "/Lotus/Weapons/SolarisUnited/Primary/LotusModularPrimaryLauncher"
+0C78  04                 const type 4
+0C79  40                 string size (64)
+0C7A  2F4C6F7475732F57+  "/Lotus/W"
+0C82  6561706F6E732F53+  "eapons/S"
+0C8A  6F6C61726973556E+  "olarisUn"
+0C92  697465642F507269+  "ited/Pri"
+0C9A  6D6172792F4C6F74+  "mary/Lot"
+0CA2  75734D6F64756C61+  "usModula"
+0CAA  725072696D617279+  "rPrimary"
+0CB2  53686F7467756E00   "Shotgun\0"
+                         const [55]: "/Lotus/Weapons/SolarisUnited/Primary/LotusModularPrimaryShotgun"
+0CBA  04                 const type 4
+0CBB  3F                 string size (63)
+0CBC  2F4C6F7475732F57+  "/Lotus/W"
+0CC4  6561706F6E732F53+  "eapons/S"
+0CCC  6F6C61726973556E+  "olarisUn"
+0CD4  697465642F507269+  "ited/Pri"
+0CDC  6D6172792F4C6F74+  "mary/Lot"
+0CE4  75734D6F64756C61+  "usModula"
+0CEC  725072696D617279+  "rPrimary"
+0CF4  536E6970657200     "Sniper\0"
+                         const [56]: "/Lotus/Weapons/SolarisUnited/Primary/LotusModularPrimarySniper"
+0CFB  04                 const type 4
+0CFC  3D                 string size (61)
+0CFD  2F4C6F7475732F57+  "/Lotus/W"
+0D05  6561706F6E732F53+  "eapons/S"
+0D0D  6F6C61726973556E+  "olarisUn"
+0D15  697465642F536563+  "ited/Sec"
+0D1D  6F6E646172792F4C+  "ondary/L"
+0D25  6F7475734D6F6475+  "otusModu"
+0D2D  6C61725365636F6E+  "larSecon"
+0D35  6461727900         "dary\0"
+                         const [57]: "/Lotus/Weapons/SolarisUnited/Secondary/LotusModularSecondary"
+0D3A  04                 const type 4
+0D3B  41                 string size (65)
+0D3C  2F4C6F7475732F57+  "/Lotus/W"
+0D44  6561706F6E732F53+  "eapons/S"
+0D4C  6F6C61726973556E+  "olarisUn"
+0D54  697465642F536563+  "ited/Sec"
+0D5C  6F6E646172792F4C+  "ondary/L"
+0D64  6F7475734D6F6475+  "otusModu"
+0D6C  6C61725365636F6E+  "larSecon"
+0D74  646172794265616D+  "daryBeam"
+0D7C  00                 "\0"
+                         const [58]: "/Lotus/Weapons/SolarisUnited/Secondary/LotusModularSecondaryBeam"
+0D7D  04                 const type 4
+0D7E  44                 string size (68)
+0D7F  2F4C6F7475732F57+  "/Lotus/W"
+0D87  6561706F6E732F53+  "eapons/S"
+0D8F  6F6C61726973556E+  "olarisUn"
+0D97  697465642F536563+  "ited/Sec"
+0D9F  6F6E646172792F4C+  "ondary/L"
+0DA7  6F7475734D6F6475+  "otusModu"
+0DAF  6C61725365636F6E+  "larSecon"
+0DB7  6461727953686F74+  "daryShot"
+0DBF  67756E00           "gun\0"
+                         const [59]: "/Lotus/Weapons/SolarisUnited/Secondary/LotusModularSecondaryShotgun"
+0DC3  04                 const type 4
+0DC4  30                 string size (48)
+0DC5  2F4C6F7475732F54+  "/Lotus/T"
+0DCD  797065732F566568+  "ypes/Veh"
+0DD5  69636C65732F486F+  "icles/Ho"
+0DDD  766572626F617264+  "verboard"
+0DE5  2F486F766572626F+  "/Hoverbo"
+0DED  6172645375697400   "ardSuit\0"
+                         const [60]: "/Lotus/Types/Vehicles/Hoverboard/HoverboardSuit"
+0DF5  03                 const type 3
+0DF6  00008040           const [61]: (0)
+0DFA  04                 const type 4
+0DFB  33                 string size (51)
+0DFC  2F4C6F7475732F54+  "/Lotus/T"
+0E04  797065732F467269+  "ypes/Fri"
+0E0C  656E646C792F5065+  "endly/Pe"
+0E14  74732F4D6F615065+  "ts/MoaPe"
+0E1C  74732F4D6F615065+  "ts/MoaPe"
+0E24  74506F7765725375+  "tPowerSu"
+0E2C  697400             "it\0"
+                         const [62]: "/Lotus/Types/Friendly/Pets/MoaPets/MoaPetPowerSuit"
+0E2F  04                 const type 4
+0E30  39                 string size (57)
+0E31  2F4C6F7475732F50+  "/Lotus/P"
+0E39  6F77657273756974+  "owersuit"
+0E41  732F417263687769+  "s/Archwi"
+0E49  6E672F4D6F64756C+  "ng/Modul"
+0E51  61724A6574506163+  "arJetPac"
+0E59  6B2F4D6F64756C61+  "k/Modula"
+0E61  724A65745061636B+  "rJetPack"
+0E69  00                 "\0"
+                         const [63]: "/Lotus/Powersuits/Archwing/ModularJetPack/ModularJetPack"
+0E6A  04                 const type 4
+0E6B  0D                 string size (13)
+0E6C  4765745061727473+  "GetParts"
+0E74  5465787400         "Text\0"
+                         const [64]: "GetPartsText"
+0E79  01                 const type 3
+0E7A  3F38F4C1           const [65]: (-1040959425)
+0E7E  04                 const type 4
+0E7F  0F                 string size (15)
+0E80  4765744D6F64756C+  "GetModul"
+0E88  61725479706500     "arType\0"
+                         const [66]: "GetModularType"
+0E8F  01                 const type 3
+0E90  962A863D           const [67]: (1032202902)
+                         * functions:
+0E94  03                 sizep (3)
+                         
+0E95                     ** function [0] definition (level 2)
+                         ** start of function **
+0E95  00                 string size (0)
+                         source name: (none)
+0E96  2C                 line defined (44)
+0E97  38                 last line defined (56)
+0E98  01                 nups (1)
+0E99  02                 numparams (2)
+0E9A  00                 is_vararg (0)
+0E9B  0B                 maxstacksize (11)
+                         * code:
+0E9C  18                 sizecode (24)
+0E9D  99000000           [01] loadk      2   0        ; ""
+0EA1  D9400000           [02] loadk      3   1        ; 0
+0EA5  13010000           [03] getupval   4   0      
+0EA9  0A010002           [04] len        4   4      
+0EAD  59410000           [05] loadk      5   1        ; 0
+0EB1  D0800380           [06] forprep    3   15       ; to [22]
+0EB5  E481C000           [07] self       7   1   258  ; -1957065004
+0EB9  53020000           [08] getupval   9   0      
+0EBD  4E828104           [09] gettable   9   9   6  
+0EC1  4EC2C004           [10] gettable   9   9   259  ; "Type"
+0EC5  E2818001           [11] call       7   3   2  
+0EC9  D8010000           [12] test       7       0    ; to [14] if true
+0ECD  1AC00180           [13] jmp        8            ; to [22]
+0ED1  E4014100           [14] self       7   0   260  ; 98241492
+0ED5  53020000           [15] getupval   9   0      
+0ED9  4E828104           [16] gettable   9   9   6  
+0EDD  4E42C104           [17] gettable   9   9   261  ; "Tag"
+0EE1  97020000           [18] loadbool   10  0   0    ; false
+0EE5  E2810002           [19] call       7   4   2  
+0EE9  92008003           [20] move       2   7      
+0EED  1A000080           [21] jmp        1            ; to [23]
+0EF1  D4C0FB7F           [22] forloop    3   -16      ; to [7] if loop
+0EF5  9E000001           [23] return     2   2      
+0EF9  1E008000           [24] return     0   1      
+                         * constants:
+0EFD  06                 sizek (6)
+0EFE  04                 const type 4
+0EFF  01                 string size (0)
+                         const [0]: ""
+0F01  03                 const type 3
+0F02  0000803F           const [1]: (0)
+0F06  01                 const type 3
+0F07  D48E598B           const [2]: (-1957065004)
+0F0B  04                 const type 4
+0F0C  05                 string size (5)
+0F0D  5479706500         "Type\0"
+                         const [3]: "Type"
+0F12  01                 const type 3
+0F13  D40BDB05           const [4]: (98241492)
+0F17  04                 const type 4
+0F18  04                 string size (4)
+0F19  54616700           "Tag\0"
+                         const [5]: "Tag"
+                         * functions:
+0F1D  00                 sizep (0)
+                         * lines:
+0F1E  18                 sizelineinfo (24)
+                         [pc] (line)
+0F1F  2D                 [01] (45)
+0F20  00                 [02] (47)
+0F21  00                 [03] (47)
+0F22  00                 [04] (47)
+0F23  2F                 [05] (47)
+0F24  00                 [06] (47)
+0F25  00                 [07] (48)
+0F26  00                 [08] (48)
+0F27  2F                 [09] (48)
+0F28  00                 [10] (48)
+0F29  00                 [11] (48)
+0F2A  00                 [12] (48)
+0F2B  2F                 [13] (48)
+0F2C  00                 [14] (49)
+0F2D  00                 [15] (49)
+0F2E  00                 [16] (49)
+0F2F  2F                 [17] (49)
+0F30  00                 [18] (49)
+0F31  00                 [19] (49)
+0F32  00                 [20] (49)
+0F33  2F                 [21] (51)
+0F34  00                 [22] (47)
+0F35  00                 [23] (55)
+0F36  00                 [24] (56)
+                         * locals:
+0F7F  00                 sizelocvars (0)
+                         * upvalues:
+0F80  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0F81                     ** function [1] definition (level 2)
+                         ** start of function **
+0F81  00                 string size (0)
+                         source name: (none)
+0F82  3A                 line defined (58)
+0F83  61                 last line defined (97)
+0F84  03                 nups (3)
+0F85  06                 numparams (6)
+0F86  00                 is_vararg (0)
+0F87  1B                 maxstacksize (27)
+                         * code:
+0F88  76                 sizecode (118)
+0F89  9D010000           [001] getglobal  6   0        ; 1074689893
+0F8D  D2010000           [002] move       7   0      
+0F91  A2810001           [003] call       6   2   2  
+0F95  98410000           [004] test       6       1    ; to [6] if false
+0F99  1A400280           [005] jmp        10           ; to [16]
+0F9D  9D010000           [006] getglobal  6   0        ; 1074689893
+0FA1  D2018000           [007] move       7   1      
+0FA5  A2810001           [008] call       6   2   2  
+0FA9  98410000           [009] test       6       1    ; to [11] if false
+0FAD  1A000180           [010] jmp        5            ; to [16]
+0FB1  9D010000           [011] getglobal  6   0        ; 1074689893
+0FB5  D2010001           [012] move       7   2      
+0FB9  A2810001           [013] call       6   2   2  
+0FBD  98010000           [014] test       6       0    ; to [16] if true
+0FC1  1A400080           [015] jmp        2            ; to [18]
+0FC5  99410000           [016] loadk      6   1        ; ""
+0FC9  9E010001           [017] return     6   2      
+0FCD  8B010000           [018] newtable   6   0   0    ; array=0, hash=0
+0FD1  D9410000           [019] loadk      7   1        ; ""
+0FD5  19820000           [020] loadk      8   2        ; "#999999"
+0FD9  59C20000           [021] loadk      9   3        ; "#FFFFFF"
+0FDD  A4024100           [022] self       10  0   260  ; 1167009705
+0FE1  19430100           [023] loadk      12  5        ; "SupportsThemes"
+0FE5  59430000           [024] loadk      13  1        ; ""
+0FE9  A2820002           [025] call       10  4   2  
+0FED  98020000           [026] test       10      0    ; to [28] if true
+0FF1  1AC00480           [027] jmp        20           ; to [48]
+0FF5  93020000           [028] getupval   10  0      
+0FF9  8E824105           [029] gettable   10  10  262  ; 154962144
+0FFD  D3028000           [030] getupval   11  1      
+1001  CEC2C105           [031] gettable   11  11  263  ; -576482948
+1005  1D030200           [032] getglobal  12  8        ; Lotus_Game
+1009  0E434206           [033] gettable   12  12  265  ; "UIStyle_FloatingContent"
+100D  57038000           [034] loadbool   13  1   0    ; true
+1011  E2028001           [035] call       11  3   0  
+1015  A2820000           [036] call       10  0   2  
+1019  12020005           [037] move       8   10     
+101D  93020000           [038] getupval   10  0      
+1021  8E824105           [039] gettable   10  10  262  ; 154962144
+1025  D3028000           [040] getupval   11  1      
+1029  CEC2C105           [041] gettable   11  11  263  ; -576482948
+102D  1D030200           [042] getglobal  12  8        ; Lotus_Game
+1031  0E834206           [043] gettable   12  12  266  ; "UIStyle_Content"
+1035  57038000           [044] loadbool   13  1   0    ; true
+1039  E2028001           [045] call       11  3   0  
+103D  A2820000           [046] call       10  0   2  
+1041  52020005           [047] move       9   10     
+1045  D8000000           [048] test       3       0    ; to [50] if true
+1049  1A400280           [049] jmp        10           ; to [60]
+104D  92028003           [050] move       10  7      
+1051  D9C20200           [051] loadk      11  11       ; "<font color=\""
+1055  12038004           [052] move       12  9      
+1059  59030300           [053] loadk      13  12       ; "\"><br><b>"
+105D  A4434300           [054] self       14  0   269  ; 98241492
+1061  19840300           [055] loadk      16  14       ; "/Lotus/Language/OstronCrafting/Crafting_PartsHeader"
+1065  57040000           [056] loadbool   17  0   0    ; false
+1069  A2830002           [057] call       14  4   2  
+106D  D9C30300           [058] loadk      15  15       ; "<br></font>"
+1071  C2C10305           [059] concat     7   10  15 
+1075  99020400           [060] loadk      10  16       ; 0
+1079  CA028000           [061] len        11  1      
+107D  19030400           [062] loadk      12  16       ; 0
+1081  90420B80           [063] forprep    10  46       ; to [110]
+1085  8E438300           [064] gettable   14  1   13 
+1089  E4434401           [065] self       15  2   273  ; 1660666296
+108D  52040007           [066] move       17  14     
+1091  E2838001           [067] call       15  3   2  
+1095  1D040000           [068] getglobal  16  0        ; 1074689893
+1099  52048007           [069] move       17  15     
+109D  22840001           [070] call       16  2   2  
+10A1  18440000           [071] test       16      1    ; to [73] if false
+10A5  1A000980           [072] jmp        37           ; to [110]
+10A9  13040001           [073] getupval   16  2      
+10AD  52040000           [074] move       17  0      
+10B1  92040007           [075] move       18  14     
+10B5  22848001           [076] call       16  3   2  
+10B9  64444300           [077] self       17  0   269  ; 98241492
+10BD  E484C407           [078] self       19  15  274  ; 1634497718
+10C1  E2840001           [079] call       19  2   2  
+10C5  E4C4C409           [080] self       19  19  275  ; 1590141906
+10C9  E2840001           [081] call       19  2   2  
+10CD  17050000           [082] loadbool   20  0   0    ; false
+10D1  62840002           [083] call       17  4   2  
+10D5  9D040500           [084] getglobal  18  20       ; table
+10D9  8E444509           [085] gettable   18  18  277  ; -431682403
+10DD  D2040003           [086] move       19  6      
+10E1  12058008           [087] move       20  17     
+10E5  A2448001           [088] call       18  3   1  
+10E9  92048003           [089] move       18  7      
+10ED  D9C40200           [090] loadk      19  11       ; "<font color=\""
+10F1  12050004           [091] move       20  8      
+10F5  59850500           [092] loadk      21  22       ; "\"><b>"
+10F9  92050008           [093] move       22  16     
+10FD  D9C50500           [094] loadk      23  23       ; ": </b></font><font color=\""
+1101  12068004           [095] move       24  9      
+1105  59060600           [096] loadk      25  24       ; "\">"
+1109  92068008           [097] move       26  17     
+110D  C2810609           [098] concat     7   18  26 
+1111  18010000           [099] test       4       0    ; to [101] if true
+1115  1A800080           [100] jmp        3            ; to [104]
+1119  8A048000           [101] len        18  1      
+fail op	35
+111D  63808406           [102] close      1  
+1121  1A800080           [103] jmp        3            ; to [107]
+1125  92048003           [104] move       18  7      
+1129  D9440600           [105] loadk      19  25       ; "<br>"
+112D  C2C10409           [106] concat     7   18  19 
+1131  92048003           [107] move       18  7      
+1135  D9840600           [108] loadk      19  26       ; "</font>"
+1139  C2C10409           [109] concat     7   18  19 
+113D  9402F47F           [110] forloop    10  -47      ; to [64] if loop
+1141  58010000           [111] test       5       0    ; to [113] if true
+1145  1AC00080           [112] jmp        4            ; to [117]
+1149  92048003           [113] move       18  7      
+114D  D2040003           [114] move       19  6      
+1151  9E048001           [115] return     18  3      
+1155  1A000080           [116] jmp        1            ; to [118]
+1159  DE010001           [117] return     7   2      
+115D  1E008000           [118] return     0   1      
+                         * constants:
+1161  1B                 sizek (27)
+1162  01                 const type 3
+1163  65770E40           const [0]: (1074689893)
+1167  04                 const type 4
+1168  01                 string size (0)
+                         const [1]: ""
+116A  04                 const type 4
+116B  08                 string size (8)
+116C  2339393939393900   "#999999\0"
+                         const [2]: "#999999"
+1174  04                 const type 4
+1175  08                 string size (8)
+1176  2346464646464600   "#FFFFFF\0"
+                         const [3]: "#FFFFFF"
+117E  01                 const type 3
+117F  A9278F45           const [4]: (1167009705)
+1183  04                 const type 4
+1184  0F                 string size (15)
+1185  537570706F727473+  "Supports"
+118D  5468656D657300     "Themes\0"
+                         const [5]: "SupportsThemes"
+1194  01                 const type 3
+1195  E0883C09           const [6]: (154962144)
+1199  01                 const type 3
+119A  7C91A3DD           const [7]: (-576482948)
+119E  04                 const type 4
+119F  0B                 string size (11)
+11A0  4C6F7475735F4761+  "Lotus_Ga"
+11A8  6D6500             "me\0"
+                         const [8]: "Lotus_Game"
+11AB  04                 const type 4
+11AC  18                 string size (24)
+11AD  55495374796C655F+  "UIStyle_"
+11B5  466C6F6174696E67+  "Floating"
+11BD  436F6E74656E7400   "Content\0"
+                         const [9]: "UIStyle_FloatingContent"
+11C5  04                 const type 4
+11C6  10                 string size (16)
+11C7  55495374796C655F+  "UIStyle_"
+11CF  436F6E74656E7400   "Content\0"
+                         const [10]: "UIStyle_Content"
+11D7  04                 const type 4
+11D8  0E                 string size (14)
+11D9  3C666F6E7420636F+  "<font co"
+11E1  6C6F723D2200       "lor=\"\0"
+                         const [11]: "<font color=\""
+11E7  04                 const type 4
+11E8  0A                 string size (10)
+11E9  223E3C62723E3C62+  "\"><br><b"
+11F1  3E00               ">\0"
+                         const [12]: "\"><br><b>"
+11F3  01                 const type 3
+11F4  D40BDB05           const [13]: (98241492)
+11F8  04                 const type 4
+11F9  34                 string size (52)
+11FA  2F4C6F7475732F4C+  "/Lotus/L"
+1202  616E67756167652F+  "anguage/"
+120A  4F7374726F6E4372+  "OstronCr"
+1212  616674696E672F43+  "afting/C"
+121A  72616674696E675F+  "rafting_"
+1222  5061727473486561+  "PartsHea"
+122A  64657200           "der\0"
+                         const [14]: "/Lotus/Language/OstronCrafting/Crafting_PartsHeader"
+122E  04                 const type 4
+122F  0C                 string size (12)
+1230  3C62723E3C2F666F+  "<br></fo"
+1238  6E743E00           "nt>\0"
+                         const [15]: "<br></font>"
+123C  03                 const type 3
+123D  0000803F           const [16]: (0)
+1241  01                 const type 3
+1242  B8C1FB62           const [17]: (1660666296)
+1246  01                 const type 3
+1247  B6746C61           const [18]: (1634497718)
+124B  01                 const type 3
+124C  D2A3C75E           const [19]: (1590141906)
+1250  04                 const type 4
+1251  06                 string size (6)
+1252  7461626C6500       "table\0"
+                         const [20]: "table"
+1258  01                 const type 3
+1259  9D0C45E6           const [21]: (-431682403)
+125D  04                 const type 4
+125E  06                 string size (6)
+125F  223E3C623E00       "\"><b>\0"
+                         const [22]: "\"><b>"
+1265  04                 const type 4
+1266  1B                 string size (27)
+1267  3A203C2F623E3C2F+  ": </b></"
+126F  666F6E743E3C666F+  "font><fo"
+1277  6E7420636F6C6F72+  "nt color"
+127F  3D2200             "=\"\0"
+                         const [23]: ": </b></font><font color=\""
+1282  04                 const type 4
+1283  03                 string size (3)
+1284  223E00             "\">\0"
+                         const [24]: "\">"
+1287  04                 const type 4
+1288  05                 string size (5)
+1289  3C62723E00         "<br>\0"
+                         const [25]: "<br>"
+128E  04                 const type 4
+128F  08                 string size (8)
+1290  3C2F666F6E743E00   "</font>\0"
+                         const [26]: "</font>"
+                         * functions:
+1298  00                 sizep (0)
+                         * lines:
+1299  76                 sizelineinfo (118)
+                         [pc] (line)
+129A  3B                 [001] (59)
+129B  00                 [002] (59)
+129C  00                 [003] (59)
+129D  00                 [004] (59)
+129E  3B                 [005] (59)
+129F  00                 [006] (59)
+12A0  00                 [007] (59)
+12A1  00                 [008] (59)
+12A2  3B                 [009] (59)
+12A3  00                 [010] (59)
+12A4  00                 [011] (59)
+12A5  00                 [012] (59)
+12A6  3B                 [013] (59)
+12A7  00                 [014] (59)
+12A8  00                 [015] (59)
+12A9  00                 [016] (60)
+12AA  3B                 [017] (60)
+12AB  00                 [018] (63)
+12AC  00                 [019] (64)
+12AD  00                 [020] (65)
+12AE  3B                 [021] (66)
+12AF  00                 [022] (67)
+12B0  00                 [023] (67)
+12B1  00                 [024] (67)
+12B2  3B                 [025] (67)
+12B3  00                 [026] (67)
+12B4  00                 [027] (67)
+12B5  00                 [028] (68)
+12B6  3B                 [029] (68)
+12B7  00                 [030] (68)
+12B8  00                 [031] (68)
+12B9  00                 [032] (68)
+12BA  3B                 [033] (68)
+12BB  00                 [034] (68)
+12BC  00                 [035] (68)
+12BD  00                 [036] (68)
+12BE  3B                 [037] (68)
+12BF  00                 [038] (69)
+12C0  00                 [039] (69)
+12C1  00                 [040] (69)
+12C2  3B                 [041] (69)
+12C3  00                 [042] (69)
+12C4  00                 [043] (69)
+12C5  00                 [044] (69)
+12C6  3B                 [045] (69)
+12C7  00                 [046] (69)
+12C8  00                 [047] (69)
+12C9  00                 [048] (72)
+12CA  3B                 [049] (72)
+12CB  00                 [050] (73)
+12CC  00                 [051] (73)
+12CD  00                 [052] (73)
+12CE  3B                 [053] (73)
+12CF  00                 [054] (73)
+12D0  00                 [055] (73)
+12D1  00                 [056] (73)
+12D2  3B                 [057] (73)
+12D3  00                 [058] (73)
+12D4  00                 [059] (73)
+12D5  00                 [060] (76)
+12D6  3C                 [061] (76)
+12D7  00                 [062] (76)
+12D8  00                 [063] (76)
+12D9  00                 [064] (77)
+12DA  3C                 [065] (78)
+12DB  00                 [066] (78)
+12DC  00                 [067] (78)
+12DD  00                 [068] (79)
+12DE  3F                 [069] (79)
+12DF  00                 [070] (79)
+12E0  00                 [071] (79)
+12E1  00                 [072] (79)
+12E2  40                 [073] (80)
+12E3  00                 [074] (80)
+12E4  00                 [075] (80)
+12E5  00                 [076] (80)
+12E6  41                 [077] (81)
+12E7  00                 [078] (81)
+12E8  00                 [079] (81)
+12E9  00                 [080] (81)
+12EA  42                 [081] (81)
+12EB  00                 [082] (81)
+12EC  00                 [083] (81)
+12ED  00                 [084] (82)
+12EE  43                 [085] (82)
+12EF  00                 [086] (82)
+12F0  00                 [087] (82)
+12F1  00                 [088] (82)
+12F2  43                 [089] (83)
+12F3  00                 [090] (83)
+12F4  00                 [091] (83)
+12F5  00                 [092] (83)
+12F6  43                 [093] (83)
+12F7  00                 [094] (83)
+12F8  00                 [095] (83)
+12F9  00                 [096] (83)
+12FA  43                 [097] (83)
+12FB  00                 [098] (83)
+12FC  00                 [099] (85)
+12FD  00                 [100] (85)
+12FE  43                 [101] (85)
+12FF  00                 [102] (85)
+1300  00                 [103] (85)
+1301  00                 [104] (86)
+1302  43                 [105] (86)
+1303  00                 [106] (86)
+1304  00                 [107] (88)
+1305  00                 [108] (88)
+1306  44                 [109] (88)
+1307  00                 [110] (76)
+1308  00                 [111] (92)
+1309  00                 [112] (92)
+130A  44                 [113] (93)
+130B  00                 [114] (93)
+130C  00                 [115] (93)
+130D  00                 [116] (93)
+130E  44                 [117] (95)
+130F  00                 [118] (97)
+                         * locals:
+1472  00                 sizelocvars (0)
+                         * upvalues:
+1473  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+1474                     ** function [2] definition (level 2)
+                         ** start of function **
+1474  00                 string size (0)
+                         source name: (none)
+1475  64                 line defined (100)
+1476  6E                 last line defined (110)
+1477  01                 nups (1)
+1478  01                 numparams (1)
+1479  00                 is_vararg (0)
+147A  08                 maxstacksize (8)
+                         * code:
+147B  1C                 sizecode (28)
+147C  5D000000           [01] getglobal  1   0        ; 1074689893
+1480  92000000           [02] move       2   0      
+1484  62800001           [03] call       1   2   2  
+1488  58400000           [04] test       1       1    ; to [6] if false
+148C  1AC00480           [05] jmp        20           ; to [26]
+1490  59400000           [06] loadk      1   1        ; 0
+1494  93000000           [07] getupval   2   0      
+1498  8A000001           [08] len        2   2      
+149C  D9400000           [09] loadk      3   1        ; 0
+14A0  50400380           [10] forprep    1   14       ; to [25]
+14A4  64814000           [11] self       5   0   258  ; -1957065004
+14A8  D3010000           [12] getupval   7   0      
+14AC  CE018103           [13] gettable   7   7   4  
+14B0  CEC1C003           [14] gettable   7   7   259  ; "Type"
+14B4  62818001           [15] call       5   3   2  
+14B8  58010000           [16] test       5       0    ; to [18] if true
+14BC  1A800180           [17] jmp        7            ; to [25]
+14C0  53010000           [18] getupval   5   0      
+14C4  4E018102           [19] gettable   5   5   4  
+14C8  4EC1C002           [20] gettable   5   5   259  ; "Type"
+14CC  93010000           [21] getupval   6   0      
+14D0  8E010103           [22] gettable   6   6   4  
+14D4  8E014103           [23] gettable   6   6   260  ; "Parts"
+14D8  5E018001           [24] return     5   3      
+14DC  5400FC7F           [25] forloop    1   -15      ; to [11] if loop
+14E0  46010003           [26] loadnil    5   6      
+14E4  5E018001           [27] return     5   3      
+14E8  1E008000           [28] return     0   1      
+                         * constants:
+14EC  05                 sizek (5)
+14ED  01                 const type 3
+14EE  65770E40           const [0]: (1074689893)
+14F2  03                 const type 3
+14F3  0000803F           const [1]: (0)
+14F7  01                 const type 3
+14F8  D48E598B           const [2]: (-1957065004)
+14FC  04                 const type 4
+14FD  05                 string size (5)
+14FE  5479706500         "Type\0"
+                         const [3]: "Type"
+1503  04                 const type 4
+1504  06                 string size (6)
+1505  506172747300       "Parts\0"
+                         const [4]: "Parts"
+                         * functions:
+150B  00                 sizep (0)
+                         * lines:
+150C  1C                 sizelineinfo (28)
+                         [pc] (line)
+150D  65                 [01] (101)
+150E  00                 [02] (101)
+150F  00                 [03] (101)
+1510  00                 [04] (101)
+1511  65                 [05] (101)
+1512  00                 [06] (102)
+1513  00                 [07] (102)
+1514  00                 [08] (102)
+1515  65                 [09] (102)
+1516  00                 [10] (102)
+1517  00                 [11] (103)
+1518  00                 [12] (103)
+1519  65                 [13] (103)
+151A  00                 [14] (103)
+151B  00                 [15] (103)
+151C  00                 [16] (103)
+151D  65                 [17] (103)
+151E  00                 [18] (104)
+151F  00                 [19] (104)
+1520  00                 [20] (104)
+1521  66                 [21] (104)
+1522  00                 [22] (104)
+1523  00                 [23] (104)
+1524  00                 [24] (104)
+1525  66                 [25] (102)
+1526  00                 [26] (109)
+1527  00                 [27] (109)
+1528  00                 [28] (110)
+                         * locals:
+157D  00                 sizelocvars (0)
+                         * upvalues:
+157E  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+1580  01                 sizelineinfo (220)
+                         [pc] (line)
+1581  01                 [001] (1)
+1582  00                 [002] (1)
+1583  00                 [003] (1)
+1584  00                 [004] (1)
+1585  01                 [005] (1)
+1586  00                 [006] (3)
+1587  00                 [007] (3)
+1588  00                 [008] (3)
+1589  01                 [009] (4)
+158A  00                 [010] (4)
+158B  00                 [011] (4)
+158C  00                 [012] (6)
+158D  01                 [013] (6)
+158E  00                 [014] (7)
+158F  00                 [015] (7)
+1590  00                 [016] (7)
+1591  01                 [017] (7)
+1592  00                 [018] (7)
+1593  00                 [019] (7)
+1594  00                 [020] (8)
+1595  03                 [021] (8)
+1596  00                 [022] (8)
+1597  00                 [023] (8)
+1598  00                 [024] (8)
+1599  03                 [025] (8)
+159A  00                 [026] (9)
+159B  00                 [027] (9)
+159C  00                 [028] (9)
+159D  03                 [029] (9)
+159E  00                 [030] (9)
+159F  00                 [031] (9)
+15A0  00                 [032] (10)
+15A1  04                 [033] (10)
+15A2  00                 [034] (10)
+15A3  00                 [035] (10)
+15A4  00                 [036] (10)
+15A5  04                 [037] (10)
+15A6  00                 [038] (11)
+15A7  00                 [039] (11)
+15A8  00                 [040] (11)
+15A9  04                 [041] (11)
+15AA  00                 [042] (11)
+15AB  00                 [043] (11)
+15AC  00                 [044] (12)
+15AD  06                 [045] (12)
+15AE  00                 [046] (12)
+15AF  00                 [047] (12)
+15B0  00                 [048] (12)
+15B1  06                 [049] (12)
+15B2  00                 [050] (13)
+15B3  00                 [051] (13)
+15B4  00                 [052] (13)
+15B5  07                 [053] (13)
+15B6  00                 [054] (13)
+15B7  00                 [055] (13)
+15B8  00                 [056] (14)
+15B9  07                 [057] (14)
+15BA  00                 [058] (14)
+15BB  00                 [059] (14)
+15BC  00                 [060] (14)
+15BD  07                 [061] (14)
+15BE  00                 [062] (15)
+15BF  00                 [063] (15)
+15C0  00                 [064] (15)
+15C1  07                 [065] (15)
+15C2  00                 [066] (15)
+15C3  00                 [067] (15)
+15C4  00                 [068] (16)
+15C5  07                 [069] (16)
+15C6  00                 [070] (16)
+15C7  00                 [071] (16)
+15C8  00                 [072] (16)
+15C9  07                 [073] (16)
+15CA  00                 [074] (17)
+15CB  00                 [075] (17)
+15CC  00                 [076] (17)
+15CD  08                 [077] (17)
+15CE  00                 [078] (17)
+15CF  00                 [079] (17)
+15D0  00                 [080] (18)
+15D1  08                 [081] (18)
+15D2  00                 [082] (18)
+15D3  00                 [083] (18)
+15D4  00                 [084] (18)
+15D5  08                 [085] (18)
+15D6  00                 [086] (19)
+15D7  00                 [087] (19)
+15D8  00                 [088] (19)
+15D9  08                 [089] (19)
+15DA  00                 [090] (19)
+15DB  00                 [091] (19)
+15DC  00                 [092] (20)
+15DD  08                 [093] (20)
+15DE  00                 [094] (20)
+15DF  00                 [095] (20)
+15E0  00                 [096] (20)
+15E1  08                 [097] (20)
+15E2  00                 [098] (21)
+15E3  00                 [099] (21)
+15E4  00                 [100] (21)
+15E5  09                 [101] (21)
+15E6  00                 [102] (21)
+15E7  00                 [103] (21)
+15E8  00                 [104] (22)
+15E9  09                 [105] (22)
+15EA  00                 [106] (22)
+15EB  00                 [107] (22)
+15EC  00                 [108] (22)
+15ED  09                 [109] (22)
+15EE  00                 [110] (23)
+15EF  00                 [111] (23)
+15F0  00                 [112] (23)
+15F1  09                 [113] (23)
+15F2  00                 [114] (23)
+15F3  00                 [115] (23)
+15F4  00                 [116] (24)
+15F5  09                 [117] (24)
+15F6  00                 [118] (24)
+15F7  00                 [119] (24)
+15F8  00                 [120] (24)
+15F9  09                 [121] (24)
+15FA  00                 [122] (25)
+15FB  00                 [123] (25)
+15FC  00                 [124] (25)
+15FD  0A                 [125] (25)
+15FE  00                 [126] (25)
+15FF  00                 [127] (25)
+1600  00                 [128] (26)
+1601  0A                 [129] (26)
+1602  00                 [130] (26)
+1603  00                 [131] (26)
+1604  00                 [132] (26)
+1605  0A                 [133] (26)
+1606  00                 [134] (27)
+1607  00                 [135] (27)
+1608  00                 [136] (27)
+1609  0A                 [137] (27)
+160A  00                 [138] (27)
+160B  00                 [139] (28)
+160C  00                 [140] (30)
+160D  0A                 [141] (30)
+160E  00                 [142] (31)
+160F  00                 [143] (31)
+1610  00                 [144] (31)
+1611  0A                 [145] (31)
+1612  00                 [146] (31)
+1613  00                 [147] (31)
+1614  00                 [148] (32)
+1615  0B                 [149] (32)
+1616  00                 [150] (32)
+1617  00                 [151] (32)
+1618  00                 [152] (32)
+1619  0B                 [153] (32)
+161A  00                 [154] (33)
+161B  00                 [155] (33)
+161C  00                 [156] (33)
+161D  0B                 [157] (33)
+161E  00                 [158] (33)
+161F  00                 [159] (33)
+1620  00                 [160] (34)
+1621  0B                 [161] (34)
+1622  00                 [162] (34)
+1623  00                 [163] (34)
+1624  00                 [164] (34)
+1625  0B                 [165] (34)
+1626  00                 [166] (35)
+1627  00                 [167] (35)
+1628  00                 [168] (35)
+1629  0B                 [169] (35)
+162A  00                 [170] (35)
+162B  00                 [171] (35)
+162C  00                 [172] (36)
+162D  0C                 [173] (36)
+162E  00                 [174] (36)
+162F  00                 [175] (36)
+1630  00                 [176] (36)
+1631  0C                 [177] (36)
+1632  00                 [178] (37)
+1633  00                 [179] (37)
+1634  00                 [180] (37)
+1635  0C                 [181] (37)
+1636  00                 [182] (37)
+1637  00                 [183] (37)
+1638  00                 [184] (38)
+1639  0C                 [185] (38)
+163A  00                 [186] (38)
+163B  00                 [187] (38)
+163C  00                 [188] (38)
+163D  0C                 [189] (38)
+163E  00                 [190] (39)
+163F  00                 [191] (39)
+1640  00                 [192] (39)
+1641  0C                 [193] (39)
+1642  00                 [194] (39)
+1643  00                 [195] (39)
+1644  00                 [196] (40)
+1645  0D                 [197] (40)
+1646  00                 [198] (40)
+1647  00                 [199] (40)
+1648  00                 [200] (40)
+1649  0D                 [201] (40)
+164A  00                 [202] (41)
+164B  00                 [203] (41)
+164C  00                 [204] (41)
+164D  0D                 [205] (41)
+164E  00                 [206] (41)
+164F  00                 [207] (42)
+1650  00                 [208] (56)
+1651  0D                 [209] (56)
+1652  00                 [210] (97)
+1653  00                 [211] (97)
+1654  00                 [212] (97)
+1655  0D                 [213] (97)
+1656  00                 [214] (97)
+1657  00                 [215] (58)
+1658  00                 [216] (110)
+1659  0D                 [217] (110)
+165A  00                 [218] (110)
+165B  00                 [219] (100)
+165C  00                 [220] (110)
+                         * locals:
+18F1  00                 sizelocvars (0)
+                         * upvalues:
+18F2  00                 sizeupvalues (0)
+                         ** end of function **
+
+18F3                     ** end of chunk **

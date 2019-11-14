@@ -1,0 +1,321 @@
+1	C:\wlua_dump\path\Lotus\Types\Sentinels\SentinelAbilitiesSentinelOnSpawn.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Types\Sentinels\SentinelAbilitiesSentinelOnSpawn.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  02                 size of number (bytes)
+0008  05                 integral (1=integral)
+45
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+DroneHover
+gGameRules
+_T
+sentinelRegens
+hoverSound
+y
+math
+pitchMin
+pitchMax
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  02                 maxstacksize (2)
+                         * code:
+0008  05                 sizecode (5)
+0009  65000000           [1] closure    1   0      
+000D  12000000           [2] move       0   0      
+0011  60000000           [3] setglobal  1   0        ; DroneHover
+0015  60400000           [4] setglobal  1   1        ; 1686392859
+0019  1E008000           [5] return     0   1      
+                         * constants:
+001D  02                 sizek (2)
+001E  04                 const type 4
+001F  0B                 string size (11)
+0020  44726F6E65486F76+  "DroneHov"
+0028  657200             "er\0"
+                         const [0]: "DroneHover"
+002B  01                 const type 3
+002C  1B508464           const [1]: (1686392859)
+                         * functions:
+0030  01                 sizep (1)
+                         
+0031                     ** function [0] definition (level 2)
+                         ** start of function **
+0031  00                 string size (0)
+                         source name: (none)
+0032  07                 line defined (7)
+0033  27                 last line defined (39)
+0034  01                 nups (1)
+0035  01                 numparams (1)
+0036  00                 is_vararg (0)
+0037  0A                 maxstacksize (10)
+                         * code:
+0038  4D                 sizecode (77)
+0039  5D000000           [01] getglobal  1   0        ; 1074689893
+003D  9D400000           [02] getglobal  2   1        ; gGameRules
+0041  62800001           [03] call       1   2   2  
+0045  58400000           [04] test       1       1    ; to [6] if false
+0049  1A800180           [05] jmp        7            ; to [13]
+004D  5D400000           [06] getglobal  1   1        ; gGameRules
+0051  6480C000           [07] self       1   1   258  ; -569679
+0055  62800001           [08] call       1   2   2  
+0059  58000000           [09] test       1       0    ; to [11] if true
+005D  1A400080           [10] jmp        2            ; to [13]
+0061  5DC00000           [11] getglobal  1   3        ; _T
+0065  4C404182           [12] settable   1   260 261  ; "sentinelRegens" nil
+0069  64804100           [13] self       1   0   262  ; 630793108
+006D  DDC00100           [14] getglobal  3   7        ; hoverSound
+0071  17010000           [15] loadbool   4   0   0    ; false
+0075  62800002           [16] call       1   4   2  
+fail op	8
+0079  48000000           [17] setupval   1   0      
+007D  59000200           [18] loadk      1   8        ; 0
+0081  99000200           [19] loadk      2   8        ; 0
+0085  DD000000           [20] getglobal  3   0        ; 1074689893
+0089  13010000           [21] getupval   4   0      
+008D  E2800001           [22] call       3   2   2  
+0091  D8400000           [23] test       3       1    ; to [25] if false
+0095  1A800A80           [24] jmp        43           ; to [68]
+0099  DD000000           [25] getglobal  3   0        ; 1074689893
+009D  12010000           [26] move       4   0      
+00A1  E2800001           [27] call       3   2   2  
+00A5  D8400000           [28] test       3       1    ; to [30] if false
+00A9  1A400980           [29] jmp        38           ; to [68]
+00AD  E4404200           [30] self       3   0   265  ; -523646496
+00B1  E2800001           [31] call       3   2   2  
+00B5  1DC10200           [32] getglobal  4   11       ; math
+00B9  0E014302           [33] gettable   4   4   268  ; -1962864584
+00BD  4E81C201           [34] gettable   5   3   266  ; "y"
+00C1  99410300           [35] loadk      6   13       ; 0
+00C5  22818001           [36] call       4   3   2  
+00C9  CC000185           [37] settable   3   266 4    ; "y"
+00CD  1D810300           [38] getglobal  4   14       ; 562846818
+00D1  52018001           [39] move       5   3      
+00D5  22810001           [40] call       4   2   2  
+00D9  04C14302           [41] mul        4   4   271  ; 0
+00DD  5D010400           [42] getglobal  5   16       ; 1668611480
+00E1  92010002           [43] move       6   4      
+00E5  D9410300           [44] loadk      7   13       ; 0
+00E9  19020200           [45] loadk      8   8        ; 0
+00ED  62810002           [46] call       5   4   2  
+00F1  9D410400           [47] getglobal  6   17       ; -1828500651
+00F5  DD810400           [48] getglobal  7   18       ; pitchMin
+00F9  1DC20400           [49] getglobal  8   19       ; pitchMax
+00FD  52028002           [50] move       9   5      
+0101  A2810002           [51] call       6   4   2  
+0105  92000003           [52] move       2   6      
+0109  9D410400           [53] getglobal  6   17       ; -1828500651
+010D  D2018000           [54] move       7   1      
+0111  12020001           [55] move       8   2      
+0115  5D020500           [56] getglobal  9   20       ; 1289681407
+0119  62028000           [57] call       9   1   0  
+011D  A2810000           [58] call       6   0   2  
+0121  52000003           [59] move       1   6      
+0125  93010000           [60] getupval   6   0      
+0129  A4414503           [61] self       6   6   277  ; 1748762930
+012D  12020001           [62] move       8   2      
+0131  A2418001           [63] call       6   3   1  
+0135  9D810500           [64] getglobal  6   22       ; 538022378
+0139  D9410300           [65] loadk      7   13       ; 0
+013D  A2410001           [66] call       6   2   1  
+0141  1AC0F37F           [67] jmp        -48          ; to [20]
+0145  9D010000           [68] getglobal  6   0        ; 1074689893
+0149  D3010000           [69] getupval   7   0      
+014D  A2810001           [70] call       6   2   2  
+0151  98410000           [71] test       6       1    ; to [73] if false
+0155  1AC00080           [72] jmp        4            ; to [77]
+0159  93010000           [73] getupval   6   0      
+015D  A4C14503           [74] self       6   6   279  ; 675444810
+0161  17020000           [75] loadbool   8   0   0    ; false
+0165  A2418001           [76] call       6   3   1  
+0169  1E008000           [77] return     0   1      
+                         * constants:
+016D  18                 sizek (24)
+016E  01                 const type 3
+016F  65770E40           const [0]: (1074689893)
+0173  04                 const type 4
+0174  0B                 string size (11)
+0175  6747616D6552756C+  "gGameRul"
+017D  657300             "es\0"
+                         const [1]: "gGameRules"
+0180  01                 const type 3
+0181  B14EF7FF           const [2]: (-569679)
+0185  04                 const type 4
+0186  03                 string size (3)
+0187  5F5400             "_T\0"
+                         const [3]: "_T"
+018A  04                 const type 4
+018B  0F                 string size (15)
+018C  73656E74696E656C+  "sentinel"
+0194  526567656E7300     "Regens\0"
+                         const [4]: "sentinelRegens"
+019B  00                 const type 0
+                         const [5]: nil
+019C  01                 const type 3
+019D  94239925           const [6]: (630793108)
+01A1  04                 const type 4
+01A2  0B                 string size (11)
+01A3  686F766572536F75+  "hoverSou"
+01AB  6E6400             "nd\0"
+                         const [7]: "hoverSound"
+01AE  03                 const type 3
+01AF  0000803F           const [8]: (0)
+01B3  01                 const type 3
+01B4  E0C9C9E0           const [9]: (-523646496)
+01B8  04                 const type 4
+01B9  02                 string size (2)
+01BA  7900               "y\0"
+                         const [10]: "y"
+01BC  04                 const type 4
+01BD  05                 string size (5)
+01BE  6D61746800         "math\0"
+                         const [11]: "math"
+01C3  01                 const type 3
+01C4  3810018B           const [12]: (-1962864584)
+01C8  03                 const type 3
+01C9  00000000           const [13]: (0)
+01CD  01                 const type 3
+01CE  625C8C21           const [14]: (562846818)
+01D2  03                 const type 3
+01D3  00000040           const [15]: (0)
+01D7  01                 const type 3
+01D8  98FD7463           const [16]: (1668611480)
+01DC  01                 const type 3
+01DD  554B0393           const [17]: (-1828500651)
+01E1  04                 const type 4
+01E2  09                 string size (9)
+01E3  70697463684D696E+  "pitchMin"
+01EB  00                 "\0"
+                         const [18]: "pitchMin"
+01EC  04                 const type 4
+01ED  09                 string size (9)
+01EE  70697463684D6178+  "pitchMax"
+01F6  00                 "\0"
+                         const [19]: "pitchMax"
+01F7  01                 const type 3
+01F8  FFF9DE4C           const [20]: (1289681407)
+01FC  01                 const type 3
+01FD  32013C68           const [21]: (1748762930)
+0201  01                 const type 3
+0202  EA911120           const [22]: (538022378)
+0206  01                 const type 3
+0207  4A784228           const [23]: (675444810)
+                         * functions:
+020B  00                 sizep (0)
+                         * lines:
+020C  4D                 sizelineinfo (77)
+                         [pc] (line)
+020D  08                 [01] (8)
+020E  00                 [02] (8)
+020F  00                 [03] (8)
+0210  00                 [04] (8)
+0211  08                 [05] (8)
+0212  00                 [06] (8)
+0213  00                 [07] (8)
+0214  00                 [08] (8)
+0215  08                 [09] (8)
+0216  00                 [10] (8)
+0217  00                 [11] (9)
+0218  00                 [12] (9)
+0219  08                 [13] (12)
+021A  00                 [14] (12)
+021B  00                 [15] (12)
+021C  00                 [16] (12)
+021D  08                 [17] (12)
+021E  00                 [18] (13)
+021F  00                 [19] (14)
+0220  00                 [20] (16)
+0221  08                 [21] (16)
+0222  00                 [22] (16)
+0223  00                 [23] (16)
+0224  00                 [24] (16)
+0225  08                 [25] (16)
+0226  00                 [26] (16)
+0227  00                 [27] (16)
+0228  00                 [28] (16)
+0229  08                 [29] (16)
+022A  00                 [30] (18)
+022B  00                 [31] (18)
+022C  00                 [32] (19)
+022D  08                 [33] (19)
+022E  00                 [34] (19)
+022F  00                 [35] (19)
+0230  00                 [36] (19)
+0231  08                 [37] (19)
+0232  00                 [38] (20)
+0233  00                 [39] (20)
+0234  00                 [40] (20)
+0235  09                 [41] (21)
+0236  00                 [42] (23)
+0237  00                 [43] (23)
+0238  00                 [44] (23)
+0239  09                 [45] (23)
+023A  00                 [46] (23)
+023B  00                 [47] (25)
+023C  00                 [48] (25)
+023D  0C                 [49] (25)
+023E  00                 [50] (25)
+023F  00                 [51] (25)
+0240  00                 [52] (25)
+0241  0C                 [53] (27)
+0242  00                 [54] (27)
+0243  00                 [55] (27)
+0244  00                 [56] (27)
+0245  0C                 [57] (27)
+0246  00                 [58] (27)
+0247  00                 [59] (27)
+0248  00                 [60] (29)
+0249  0C                 [61] (29)
+024A  00                 [62] (29)
+024B  00                 [63] (29)
+024C  00                 [64] (31)
+024D  0C                 [65] (31)
+024E  00                 [66] (31)
+024F  00                 [67] (31)
+0250  00                 [68] (35)
+0251  0D                 [69] (35)
+0252  00                 [70] (35)
+0253  00                 [71] (35)
+0254  00                 [72] (35)
+0255  0E                 [73] (36)
+0256  00                 [74] (36)
+0257  00                 [75] (36)
+0258  00                 [76] (36)
+0259  10                 [77] (39)
+                         * locals:
+0341  00                 sizelocvars (0)
+                         * upvalues:
+0342  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+0343  05                 sizelineinfo (5)
+                         [pc] (line)
+0344  27                 [1] (39)
+0345  00                 [2] (39)
+0346  00                 [3] (39)
+0347  00                 [4] (7)
+0348  27                 [5] (39)
+                         * locals:
+0358  00                 sizelocvars (0)
+                         * upvalues:
+0359  00                 sizeupvalues (0)
+                         ** end of function **
+
+035A                     ** end of chunk **

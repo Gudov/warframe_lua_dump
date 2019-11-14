@@ -1,0 +1,1167 @@
+1	C:\wlua_dump\path\Lotus\Interface\ComponentsRotationControl.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Interface\ComponentsRotationControl.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  03                 size of number (bytes)
+0008  09                 integral (1=integral)
+49
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+package
+seeall
+Create
+mMovie
+mMouseDown
+mForceUseControllerDelta
+mUseControllerDeltaIfSet
+mRightStickTension
+x
+y
+mRightStickDeadZone
+mLastMousePos
+mMousePos
+Update
+SetMouseDown
+SetRightStickTensionX
+SetRightStickTensionY
+SetRightStickDeadZone
+GetMouseDelta
+GetControllerDelta
+IsStickTensionSet
+GetDelta
+GetMovieMousePos
+IsMouseDown
+mLastMousePos
+x
+y
+mMousePos
+mMouseDown
+mMovie
+_root
+suitRotationX
+mRightStickTension
+x
+mRightStickTension
+y
+mRightStickDeadZone
+mMousePos
+x
+mLastMousePos
+y
+mRightStickTension
+x
+y
+Engine
+mForceUseControllerDelta
+mUseControllerDeltaIfSet
+mMovie
+_root
+_xmouse
+_ymouse
+Engine
+mForceUseControllerDelta
+mUseControllerDeltaIfSet
+math
+mRightStickTension
+x
+mRightStickDeadZone
+y
+mMouseDown
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  03                 maxstacksize (3)
+                         * code:
+0008  09                 sizecode (9)
+0009  1D000000           [1] getglobal  0   0        ; 954442511
+000D  41000001           [2] vararg     1   2      
+0011  9D400000           [3] getglobal  2   1        ; package
+0015  8E804001           [4] gettable   2   2   258  ; "seeall"
+0019  22408001           [5] call       0   3   1  
+001D  25000000           [6] closure    0   0      
+0021  20C00000           [7] setglobal  0   3        ; Create
+0025  20000100           [8] setglobal  0   4        ; 1191123516
+0029  1E008000           [9] return     0   1      
+                         * constants:
+002D  05                 sizek (5)
+002E  01                 const type 3
+002F  0FA3E338           const [0]: (954442511)
+0033  04                 const type 4
+0034  08                 string size (8)
+0035  7061636B61676500   "package\0"
+                         const [1]: "package"
+003D  04                 const type 4
+003E  07                 string size (7)
+003F  736565616C6C00     "seeall\0"
+                         const [2]: "seeall"
+0046  04                 const type 4
+0047  07                 string size (7)
+0048  43726561746500     "Create\0"
+                         const [3]: "Create"
+004F  01                 const type 3
+0050  3C1AFF46           const [4]: (1191123516)
+                         * functions:
+0054  01                 sizep (1)
+                         
+0055                     ** function [0] definition (level 2)
+                         ** start of function **
+0055  00                 string size (0)
+                         source name: (none)
+0056  04                 line defined (4)
+0057  4E                 last line defined (78)
+0058  00                 nups (0)
+0059  01                 numparams (1)
+005A  00                 is_vararg (0)
+005B  03                 maxstacksize (3)
+                         * code:
+005C  2A                 sizecode (42)
+005D  4B800400           [01] newtable   1   0   18   ; array=0, hash=20
+0061  4C000080           [02] settable   1   256 0    ; "mMovie"
+0065  4C80C080           [03] settable   1   257 258  ; "mMouseDown" 0
+0069  4C80C081           [04] settable   1   259 258  ; "mForceUseControllerDelta" 0
+006D  4C804082           [05] settable   1   260 258  ; "mUseControllerDeltaIfSet" 0
+0071  8B800000           [06] newtable   2   0   2    ; array=0, hash=2
+0075  8CC04183           [07] settable   2   262 263  ; "x" 0
+0079  8CC04184           [08] settable   2   264 263  ; "y" 0
+007D  4C808082           [09] settable   1   261 2    ; "mRightStickTension"
+0081  4C80C284           [10] settable   1   265 266  ; "mRightStickDeadZone" -51
+0085  8B800000           [11] newtable   2   0   2    ; array=0, hash=2
+0089  8CC04183           [12] settable   2   262 263  ; "x" 0
+008D  8CC04184           [13] settable   2   264 263  ; "y" 0
+0091  4C808085           [14] settable   1   267 2    ; "mLastMousePos"
+0095  8B800000           [15] newtable   2   0   2    ; array=0, hash=2
+0099  8CC04183           [16] settable   2   262 263  ; "x" 0
+009D  8CC04184           [17] settable   2   264 263  ; "y" 0
+00A1  4C800086           [18] settable   1   268 2    ; "mMousePos"
+00A5  A5000000           [19] closure    2   0      
+00A9  4C808086           [20] settable   1   269 2    ; "Update"
+00AD  A5400000           [21] closure    2   1      
+00B1  4C800087           [22] settable   1   270 2    ; "SetMouseDown"
+00B5  A5800000           [23] closure    2   2      
+00B9  4C808087           [24] settable   1   271 2    ; "SetRightStickTensionX"
+00BD  A5C00000           [25] closure    2   3      
+00C1  4C800088           [26] settable   1   272 2    ; "SetRightStickTensionY"
+00C5  A5000100           [27] closure    2   4      
+00C9  4C808088           [28] settable   1   273 2    ; "SetRightStickDeadZone"
+00CD  A5400100           [29] closure    2   5      
+00D1  4C800089           [30] settable   1   274 2    ; "GetMouseDelta"
+00D5  A5800100           [31] closure    2   6      
+00D9  4C808089           [32] settable   1   275 2    ; "GetControllerDelta"
+00DD  A5C00100           [33] closure    2   7      
+00E1  4C80008A           [34] settable   1   276 2    ; "IsStickTensionSet"
+00E5  A5000200           [35] closure    2   8      
+00E9  4C80808A           [36] settable   1   277 2    ; "GetDelta"
+00ED  A5400200           [37] closure    2   9      
+00F1  4C80008B           [38] settable   1   278 2    ; "GetMovieMousePos"
+00F5  A5800200           [39] closure    2   10     
+00F9  4C80808B           [40] settable   1   279 2    ; "IsMouseDown"
+00FD  5E000001           [41] return     1   2      
+0101  1E008000           [42] return     0   1      
+                         * constants:
+0105  18                 sizek (24)
+0106  04                 const type 4
+0107  07                 string size (7)
+0108  6D4D6F76696500     "mMovie\0"
+                         const [0]: "mMovie"
+010F  04                 const type 4
+0110  0B                 string size (11)
+0111  6D4D6F757365446F+  "mMouseDo"
+0119  776E00             "wn\0"
+                         const [1]: "mMouseDown"
+011C  01                 const type 3
+011D  00000000           const [2]: (0)
+0121  04                 const type 4
+0122  19                 string size (25)
+0123  6D466F7263655573+  "mForceUs"
+012B  65436F6E74726F6C+  "eControl"
+0133  6C657244656C7461+  "lerDelta"
+013B  00                 "\0"
+                         const [3]: "mForceUseControllerDelta"
+013C  04                 const type 4
+013D  19                 string size (25)
+013E  6D557365436F6E74+  "mUseCont"
+0146  726F6C6C65724465+  "rollerDe"
+014E  6C74614966536574+  "ltaIfSet"
+0156  00                 "\0"
+                         const [4]: "mUseControllerDeltaIfSet"
+0157  04                 const type 4
+0158  13                 string size (19)
+0159  6D52696768745374+  "mRightSt"
+0161  69636B54656E7369+  "ickTensi"
+0169  6F6E00             "on\0"
+                         const [5]: "mRightStickTension"
+016C  04                 const type 4
+016D  02                 string size (2)
+016E  7800               "x\0"
+                         const [6]: "x"
+0170  03                 const type 3
+0171  00000000           const [7]: (0)
+0175  04                 const type 4
+0176  02                 string size (2)
+0177  7900               "y\0"
+                         const [8]: "y"
+0179  04                 const type 4
+017A  14                 string size (20)
+017B  6D52696768745374+  "mRightSt"
+0183  69636B446561645A+  "ickDeadZ"
+018B  6F6E6500           "one\0"
+                         const [9]: "mRightStickDeadZone"
+018F  03                 const type 3
+0190  CDCC4C3E           const [10]: (-51)
+0194  04                 const type 4
+0195  0E                 string size (14)
+0196  6D4C6173744D6F75+  "mLastMou"
+019E  7365506F7300       "sePos\0"
+                         const [11]: "mLastMousePos"
+01A4  04                 const type 4
+01A5  0A                 string size (10)
+01A6  6D4D6F757365506F+  "mMousePo"
+01AE  7300               "s\0"
+                         const [12]: "mMousePos"
+01B0  04                 const type 4
+01B1  07                 string size (7)
+01B2  55706461746500     "Update\0"
+                         const [13]: "Update"
+01B9  04                 const type 4
+01BA  0D                 string size (13)
+01BB  5365744D6F757365+  "SetMouse"
+01C3  446F776E00         "Down\0"
+                         const [14]: "SetMouseDown"
+01C8  04                 const type 4
+01C9  16                 string size (22)
+01CA  5365745269676874+  "SetRight"
+01D2  537469636B54656E+  "StickTen"
+01DA  73696F6E5800       "sionX\0"
+                         const [15]: "SetRightStickTensionX"
+01E0  04                 const type 4
+01E1  16                 string size (22)
+01E2  5365745269676874+  "SetRight"
+01EA  537469636B54656E+  "StickTen"
+01F2  73696F6E5900       "sionY\0"
+                         const [16]: "SetRightStickTensionY"
+01F8  04                 const type 4
+01F9  16                 string size (22)
+01FA  5365745269676874+  "SetRight"
+0202  537469636B446561+  "StickDea"
+020A  645A6F6E6500       "dZone\0"
+                         const [17]: "SetRightStickDeadZone"
+0210  04                 const type 4
+0211  0E                 string size (14)
+0212  4765744D6F757365+  "GetMouse"
+021A  44656C746100       "Delta\0"
+                         const [18]: "GetMouseDelta"
+0220  04                 const type 4
+0221  13                 string size (19)
+0222  476574436F6E7472+  "GetContr"
+022A  6F6C6C657244656C+  "ollerDel"
+0232  746100             "ta\0"
+                         const [19]: "GetControllerDelta"
+0235  04                 const type 4
+0236  12                 string size (18)
+0237  4973537469636B54+  "IsStickT"
+023F  656E73696F6E5365+  "ensionSe"
+0247  7400               "t\0"
+                         const [20]: "IsStickTensionSet"
+0249  04                 const type 4
+024A  09                 string size (9)
+024B  47657444656C7461+  "GetDelta"
+0253  00                 "\0"
+                         const [21]: "GetDelta"
+0254  04                 const type 4
+0255  11                 string size (17)
+0256  4765744D6F766965+  "GetMovie"
+025E  4D6F757365506F73+  "MousePos"
+0266  00                 "\0"
+                         const [22]: "GetMovieMousePos"
+0267  04                 const type 4
+0268  0C                 string size (12)
+0269  49734D6F75736544+  "IsMouseD"
+0271  6F776E00           "own\0"
+                         const [23]: "IsMouseDown"
+                         * functions:
+0275  0B                 sizep (11)
+                         
+0276                     ** function [0] definition (level 3)
+                         ** start of function **
+0276  00                 string size (0)
+                         source name: (none)
+0277  0F                 line defined (15)
+0278  12                 last line defined (18)
+0279  00                 nups (0)
+027A  01                 numparams (1)
+027B  00                 is_vararg (0)
+027C  05                 maxstacksize (5)
+                         * code:
+027D  0F                 sizecode (15)
+027E  4E004000           [01] gettable   1   0   256  ; "mLastMousePos"
+0282  8E004000           [02] gettable   2   0   256  ; "mLastMousePos"
+0286  CEC04000           [03] gettable   3   0   259  ; "mMousePos"
+028A  CE40C001           [04] gettable   3   3   257  ; "x"
+028E  0EC14000           [05] gettable   4   0   259  ; "mMousePos"
+0292  0E814002           [06] gettable   4   4   258  ; "y"
+0296  8C000181           [07] settable   2   258 4    ; "y"
+029A  4CC08080           [08] settable   1   257 3    ; "x"
+029E  4EC04000           [09] gettable   1   0   259  ; "mMousePos"
+02A2  8EC04000           [10] gettable   2   0   259  ; "mMousePos"
+02A6  E4004100           [11] self       3   0   260  ; -1636725470
+02AA  E2C00001           [12] call       3   2   3  
+02AE  8C000181           [13] settable   2   258 4    ; "y"
+02B2  4CC08080           [14] settable   1   257 3    ; "x"
+02B6  1E008000           [15] return     0   1      
+                         * constants:
+02BA  05                 sizek (5)
+02BB  04                 const type 4
+02BC  0E                 string size (14)
+02BD  6D4C6173744D6F75+  "mLastMou"
+02C5  7365506F7300       "sePos\0"
+                         const [0]: "mLastMousePos"
+02CB  04                 const type 4
+02CC  02                 string size (2)
+02CD  7800               "x\0"
+                         const [1]: "x"
+02CF  04                 const type 4
+02D0  02                 string size (2)
+02D1  7900               "y\0"
+                         const [2]: "y"
+02D3  04                 const type 4
+02D4  0A                 string size (10)
+02D5  6D4D6F757365506F+  "mMousePo"
+02DD  7300               "s\0"
+                         const [3]: "mMousePos"
+02DF  01                 const type 3
+02E0  228D719E           const [4]: (-1636725470)
+                         * functions:
+02E4  00                 sizep (0)
+                         * lines:
+02E5  0F                 sizelineinfo (15)
+                         [pc] (line)
+02E6  10                 [01] (16)
+02E7  00                 [02] (16)
+02E8  00                 [03] (16)
+02E9  00                 [04] (16)
+02EA  10                 [05] (16)
+02EB  00                 [06] (16)
+02EC  00                 [07] (16)
+02ED  00                 [08] (16)
+02EE  10                 [09] (17)
+02EF  00                 [10] (17)
+02F0  00                 [11] (17)
+02F1  00                 [12] (17)
+02F2  10                 [13] (17)
+02F3  00                 [14] (17)
+02F4  00                 [15] (18)
+                         * locals:
+0322  00                 sizelocvars (0)
+                         * upvalues:
+0323  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0324                     ** function [1] definition (level 3)
+                         ** start of function **
+0324  00                 string size (0)
+                         source name: (none)
+0325  14                 line defined (20)
+0326  16                 last line defined (22)
+0327  00                 nups (0)
+0328  02                 numparams (2)
+0329  00                 is_vararg (0)
+032A  02                 maxstacksize (2)
+                         * code:
+032B  02                 sizecode (2)
+032C  0C400080           [1] settable   0   256 1    ; "mMouseDown"
+0330  1E008000           [2] return     0   1      
+                         * constants:
+0334  01                 sizek (1)
+0335  04                 const type 4
+0336  0B                 string size (11)
+0337  6D4D6F757365446F+  "mMouseDo"
+033F  776E00             "wn\0"
+                         const [0]: "mMouseDown"
+                         * functions:
+0342  00                 sizep (0)
+                         * lines:
+0343  02                 sizelineinfo (2)
+                         [pc] (line)
+0344  15                 [1] (21)
+0345  00                 [2] (22)
+                         * locals:
+034C  00                 sizelocvars (0)
+                         * upvalues:
+034D  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+034E                     ** function [2] definition (level 3)
+                         ** start of function **
+034E  00                 string size (0)
+                         source name: (none)
+034F  18                 line defined (24)
+0350  1B                 last line defined (27)
+0351  00                 nups (0)
+0352  02                 numparams (2)
+0353  00                 is_vararg (0)
+0354  07                 maxstacksize (7)
+                         * code:
+0355  09                 sizecode (9)
+0356  8E004000           [1] gettable   2   0   256  ; "mMovie"
+035A  A4404001           [2] self       2   2   257  ; 471456102
+035E  19810000           [3] loadk      4   2        ; "_root"
+0362  59C10000           [4] loadk      5   3        ; "suitRotationX"
+0366  92018000           [5] move       6   1      
+036A  A2408002           [6] call       2   5   1  
+036E  8E004100           [7] gettable   2   0   260  ; "mRightStickTension"
+0372  8C408082           [8] settable   2   261 1    ; "x"
+0376  1E008000           [9] return     0   1      
+                         * constants:
+037A  06                 sizek (6)
+037B  04                 const type 4
+037C  07                 string size (7)
+037D  6D4D6F76696500     "mMovie\0"
+                         const [0]: "mMovie"
+0384  01                 const type 3
+0385  66D9191C           const [1]: (471456102)
+0389  04                 const type 4
+038A  06                 string size (6)
+038B  5F726F6F7400       "_root\0"
+                         const [2]: "_root"
+0391  04                 const type 4
+0392  0E                 string size (14)
+0393  73756974526F7461+  "suitRota"
+039B  74696F6E5800       "tionX\0"
+                         const [3]: "suitRotationX"
+03A1  04                 const type 4
+03A2  13                 string size (19)
+03A3  6D52696768745374+  "mRightSt"
+03AB  69636B54656E7369+  "ickTensi"
+03B3  6F6E00             "on\0"
+                         const [4]: "mRightStickTension"
+03B6  04                 const type 4
+03B7  02                 string size (2)
+03B8  7800               "x\0"
+                         const [5]: "x"
+                         * functions:
+03BA  00                 sizep (0)
+                         * lines:
+03BB  09                 sizelineinfo (9)
+                         [pc] (line)
+03BC  19                 [1] (25)
+03BD  00                 [2] (25)
+03BE  00                 [3] (25)
+03BF  00                 [4] (25)
+03C0  19                 [5] (25)
+03C1  00                 [6] (25)
+03C2  00                 [7] (26)
+03C3  00                 [8] (26)
+03C4  19                 [9] (27)
+                         * locals:
+03E0  00                 sizelocvars (0)
+                         * upvalues:
+03E1  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+03E2                     ** function [3] definition (level 3)
+                         ** start of function **
+03E2  00                 string size (0)
+                         source name: (none)
+03E3  1D                 line defined (29)
+03E4  1F                 last line defined (31)
+03E5  00                 nups (0)
+03E6  02                 numparams (2)
+03E7  00                 is_vararg (0)
+03E8  03                 maxstacksize (3)
+                         * code:
+03E9  03                 sizecode (3)
+03EA  8E004000           [1] gettable   2   0   256  ; "mRightStickTension"
+03EE  8C408080           [2] settable   2   257 1    ; "y"
+03F2  1E008000           [3] return     0   1      
+                         * constants:
+03F6  02                 sizek (2)
+03F7  04                 const type 4
+03F8  13                 string size (19)
+03F9  6D52696768745374+  "mRightSt"
+0401  69636B54656E7369+  "ickTensi"
+0409  6F6E00             "on\0"
+                         const [0]: "mRightStickTension"
+040C  04                 const type 4
+040D  02                 string size (2)
+040E  7900               "y\0"
+                         const [1]: "y"
+                         * functions:
+0410  00                 sizep (0)
+                         * lines:
+0411  03                 sizelineinfo (3)
+                         [pc] (line)
+0412  1E                 [1] (30)
+0413  00                 [2] (30)
+0414  00                 [3] (31)
+                         * locals:
+041E  00                 sizelocvars (0)
+                         * upvalues:
+041F  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0420                     ** function [4] definition (level 3)
+                         ** start of function **
+0420  00                 string size (0)
+                         source name: (none)
+0421  21                 line defined (33)
+0422  23                 last line defined (35)
+0423  00                 nups (0)
+0424  02                 numparams (2)
+0425  00                 is_vararg (0)
+0426  02                 maxstacksize (2)
+                         * code:
+0427  02                 sizecode (2)
+0428  0C400080           [1] settable   0   256 1    ; "mRightStickDeadZone"
+042C  1E008000           [2] return     0   1      
+                         * constants:
+0430  01                 sizek (1)
+0431  04                 const type 4
+0432  14                 string size (20)
+0433  6D52696768745374+  "mRightSt"
+043B  69636B446561645A+  "ickDeadZ"
+0443  6F6E6500           "one\0"
+                         const [0]: "mRightStickDeadZone"
+                         * functions:
+0447  00                 sizep (0)
+                         * lines:
+0448  02                 sizelineinfo (2)
+                         [pc] (line)
+0449  22                 [1] (34)
+044A  00                 [2] (35)
+                         * locals:
+0451  00                 sizelocvars (0)
+                         * upvalues:
+0452  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0453                     ** function [5] definition (level 3)
+                         ** start of function **
+0453  00                 string size (0)
+                         source name: (none)
+0454  25                 line defined (37)
+0455  2D                 last line defined (45)
+0456  00                 nups (0)
+0457  01                 numparams (1)
+0458  00                 is_vararg (0)
+0459  05                 maxstacksize (5)
+                         * code:
+045A  17                 sizecode (23)
+045B  59000000           [01] loadk      1   0        ; -102
+045F  A4404000           [02] self       2   0   257  ; -1491902652
+0463  A2800001           [03] call       2   2   2  
+0467  98000000           [04] test       2       0    ; to [6] if true
+046B  1A400380           [05] jmp        14           ; to [20]
+046F  8E804000           [06] gettable   2   0   258  ; "mMousePos"
+0473  8EC04001           [07] gettable   2   2   259  ; "x"
+0477  CE004100           [08] gettable   3   0   260  ; "mLastMousePos"
+047B  CEC0C001           [09] gettable   3   3   259  ; "x"
+047F  8DC00001           [10] sub        2   2   3  
+0483  84400001           [11] mul        2   2   1  
+0487  CE804000           [12] gettable   3   0   258  ; "mMousePos"
+048B  CE40C101           [13] gettable   3   3   261  ; "y"
+048F  0E014100           [14] gettable   4   0   260  ; "mLastMousePos"
+0493  0E414102           [15] gettable   4   4   261  ; "y"
+0497  CD008101           [16] sub        3   3   4  
+049B  C4408001           [17] mul        3   3   1  
+049F  9E008001           [18] return     2   3      
+04A3  1A800080           [19] jmp        3            ; to [23]
+04A7  99800100           [20] loadk      2   6        ; 0
+04AB  D9800100           [21] loadk      3   6        ; 0
+04AF  9E008001           [22] return     2   3      
+04B3  1E008000           [23] return     0   1      
+                         * constants:
+04B7  07                 sizek (7)
+04B8  03                 const type 3
+04B9  9A99993E           const [0]: (-102)
+04BD  01                 const type 3
+04BE  445F13A7           const [1]: (-1491902652)
+04C2  04                 const type 4
+04C3  0A                 string size (10)
+04C4  6D4D6F757365506F+  "mMousePo"
+04CC  7300               "s\0"
+                         const [2]: "mMousePos"
+04CE  04                 const type 4
+04CF  02                 string size (2)
+04D0  7800               "x\0"
+                         const [3]: "x"
+04D2  04                 const type 4
+04D3  0E                 string size (14)
+04D4  6D4C6173744D6F75+  "mLastMou"
+04DC  7365506F7300       "sePos\0"
+                         const [4]: "mLastMousePos"
+04E2  04                 const type 4
+04E3  02                 string size (2)
+04E4  7900               "y\0"
+                         const [5]: "y"
+04E6  03                 const type 3
+04E7  00000000           const [6]: (0)
+                         * functions:
+04EB  00                 sizep (0)
+                         * lines:
+04EC  17                 sizelineinfo (23)
+                         [pc] (line)
+04ED  26                 [01] (38)
+04EE  00                 [02] (39)
+04EF  00                 [03] (39)
+04F0  00                 [04] (39)
+04F1  27                 [05] (39)
+04F2  00                 [06] (40)
+04F3  00                 [07] (40)
+04F4  00                 [08] (40)
+04F5  27                 [09] (40)
+04F6  00                 [10] (40)
+04F7  00                 [11] (40)
+04F8  00                 [12] (41)
+04F9  27                 [13] (41)
+04FA  00                 [14] (41)
+04FB  00                 [15] (41)
+04FC  00                 [16] (41)
+04FD  27                 [17] (41)
+04FE  00                 [18] (41)
+04FF  00                 [19] (41)
+0500  00                 [20] (43)
+0501  28                 [21] (43)
+0502  00                 [22] (43)
+0503  00                 [23] (45)
+                         * locals:
+0549  00                 sizelocvars (0)
+                         * upvalues:
+054A  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+054B                     ** function [6] definition (level 3)
+                         ** start of function **
+054B  00                 string size (0)
+                         source name: (none)
+054C  2F                 line defined (47)
+054D  32                 last line defined (50)
+054E  00                 nups (0)
+054F  01                 numparams (1)
+0550  00                 is_vararg (0)
+0551  04                 maxstacksize (4)
+                         * code:
+0552  09                 sizecode (9)
+0553  59000000           [1] loadk      1   0        ; 0
+0557  8E404000           [2] gettable   2   0   257  ; "mRightStickTension"
+055B  8E804001           [3] gettable   2   2   258  ; "x"
+055F  84400001           [4] mul        2   2   1  
+0563  CE404000           [5] gettable   3   0   257  ; "mRightStickTension"
+0567  CEC0C001           [6] gettable   3   3   259  ; "y"
+056B  C4408001           [7] mul        3   3   1  
+056F  9E008001           [8] return     2   3      
+0573  1E008000           [9] return     0   1      
+                         * constants:
+0577  04                 sizek (4)
+0578  03                 const type 3
+0579  0000C040           const [0]: (0)
+057D  04                 const type 4
+057E  13                 string size (19)
+057F  6D52696768745374+  "mRightSt"
+0587  69636B54656E7369+  "ickTensi"
+058F  6F6E00             "on\0"
+                         const [1]: "mRightStickTension"
+0592  04                 const type 4
+0593  02                 string size (2)
+0594  7800               "x\0"
+                         const [2]: "x"
+0596  04                 const type 4
+0597  02                 string size (2)
+0598  7900               "y\0"
+                         const [3]: "y"
+                         * functions:
+059A  00                 sizep (0)
+                         * lines:
+059B  09                 sizelineinfo (9)
+                         [pc] (line)
+059C  30                 [1] (48)
+059D  00                 [2] (49)
+059E  00                 [3] (49)
+059F  00                 [4] (49)
+05A0  31                 [5] (49)
+05A1  00                 [6] (49)
+05A2  00                 [7] (49)
+05A3  00                 [8] (49)
+05A4  31                 [9] (50)
+                         * locals:
+05C0  00                 sizelocvars (0)
+                         * upvalues:
+05C1  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+05C2                     ** function [7] definition (level 3)
+                         ** start of function **
+05C2  00                 string size (0)
+                         source name: (none)
+05C3  34                 line defined (52)
+05C4  37                 last line defined (55)
+05C5  00                 nups (0)
+05C6  01                 numparams (1)
+05C7  00                 is_vararg (0)
+05C8  04                 maxstacksize (4)
+                         * code:
+05C9  0A                 sizecode (10)
+05CA  64004000           [01] self       1   0   256  ; 2085004798
+05CE  62C00001           [02] call       1   2   3  
+fail op	35
+05D2  2340C000           [03] close      0  
+05D6  1A800080           [04] jmp        3            ; to [8]
+fail op	35
+05DA  23404001           [05] close      0  
+05DE  1A000080           [06] jmp        1            ; to [8]
+05E2  D7400000           [07] loadbool   3   0   1    ; false, to [9]
+05E6  D7008000           [08] loadbool   3   1   0    ; true
+05EA  DE000001           [09] return     3   2      
+05EE  1E008000           [10] return     0   1      
+                         * constants:
+05F2  02                 sizek (2)
+05F3  01                 const type 3
+05F4  FEA5467C           const [0]: (2085004798)
+05F8  03                 const type 3
+05F9  00000000           const [1]: (0)
+                         * functions:
+05FD  00                 sizep (0)
+                         * lines:
+05FE  0A                 sizelineinfo (10)
+                         [pc] (line)
+05FF  35                 [01] (53)
+0600  00                 [02] (53)
+0601  00                 [03] (54)
+0602  00                 [04] (54)
+0603  35                 [05] (54)
+0604  00                 [06] (54)
+0605  00                 [07] (54)
+0606  00                 [08] (54)
+0607  36                 [09] (54)
+0608  00                 [10] (55)
+                         * locals:
+0627  00                 sizelocvars (0)
+                         * upvalues:
+0628  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0629                     ** function [8] definition (level 3)
+                         ** start of function **
+0629  00                 string size (0)
+                         source name: (none)
+062A  39                 line defined (57)
+062B  3F                 last line defined (63)
+062C  00                 nups (0)
+062D  01                 numparams (1)
+062E  00                 is_vararg (0)
+062F  03                 maxstacksize (3)
+                         * code:
+0630  17                 sizecode (23)
+0631  5D000000           [01] getglobal  1   0        ; Engine
+0635  4E40C000           [02] gettable   1   1   257  ; -1802437008
+0639  62808000           [03] call       1   1   2  
+063D  58400000           [04] test       1       1    ; to [6] if false
+0641  1A400280           [05] jmp        10           ; to [16]
+0645  4E804000           [06] gettable   1   0   258  ; "mForceUseControllerDelta"
+0649  58400000           [07] test       1       1    ; to [9] if false
+064D  1A800180           [08] jmp        7            ; to [16]
+0651  4EC04000           [09] gettable   1   0   259  ; "mUseControllerDeltaIfSet"
+0655  58000000           [10] test       1       0    ; to [12] if true
+0659  1AC00180           [11] jmp        8            ; to [20]
+065D  64004100           [12] self       1   0   260  ; 465604669
+0661  62800001           [13] call       1   2   2  
+0665  58000000           [14] test       1       0    ; to [16] if true
+0669  1AC00080           [15] jmp        4            ; to [20]
+066D  64404100           [16] self       1   0   261  ; 2085004798
+0671  47000001           [17] tailcall   1   2   0  
+0675  5E000000           [18] return     1   0      
+0679  1A800080           [19] jmp        3            ; to [23]
+067D  64804100           [20] self       1   0   262  ; -1665141545
+0681  47000001           [21] tailcall   1   2   0  
+0685  5E000000           [22] return     1   0      
+0689  1E008000           [23] return     0   1      
+                         * constants:
+068D  07                 sizek (7)
+068E  04                 const type 4
+068F  07                 string size (7)
+0690  456E67696E6500     "Engine\0"
+                         const [0]: "Engine"
+0697  01                 const type 3
+0698  70FE9094           const [1]: (-1802437008)
+069C  04                 const type 4
+069D  19                 string size (25)
+069E  6D466F7263655573+  "mForceUs"
+06A6  65436F6E74726F6C+  "eControl"
+06AE  6C657244656C7461+  "lerDelta"
+06B6  00                 "\0"
+                         const [2]: "mForceUseControllerDelta"
+06B7  04                 const type 4
+06B8  19                 string size (25)
+06B9  6D557365436F6E74+  "mUseCont"
+06C1  726F6C6C65724465+  "rollerDe"
+06C9  6C74614966536574+  "ltaIfSet"
+06D1  00                 "\0"
+                         const [3]: "mUseControllerDeltaIfSet"
+06D2  01                 const type 3
+06D3  3D90C01B           const [4]: (465604669)
+06D7  01                 const type 3
+06D8  FEA5467C           const [5]: (2085004798)
+06DC  01                 const type 3
+06DD  D7F4BF9C           const [6]: (-1665141545)
+                         * functions:
+06E1  00                 sizep (0)
+                         * lines:
+06E2  17                 sizelineinfo (23)
+                         [pc] (line)
+06E3  3A                 [01] (58)
+06E4  00                 [02] (58)
+06E5  00                 [03] (58)
+06E6  00                 [04] (58)
+06E7  3A                 [05] (58)
+06E8  00                 [06] (58)
+06E9  00                 [07] (58)
+06EA  00                 [08] (58)
+06EB  3A                 [09] (58)
+06EC  00                 [10] (58)
+06ED  00                 [11] (58)
+06EE  00                 [12] (58)
+06EF  3A                 [13] (58)
+06F0  00                 [14] (58)
+06F1  00                 [15] (58)
+06F2  00                 [16] (59)
+06F3  3A                 [17] (59)
+06F4  00                 [18] (59)
+06F5  00                 [19] (59)
+06F6  00                 [20] (61)
+06F7  3A                 [21] (61)
+06F8  00                 [22] (61)
+06F9  00                 [23] (63)
+                         * locals:
+073F  00                 sizelocvars (0)
+                         * upvalues:
+0740  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0741                     ** function [9] definition (level 3)
+                         ** start of function **
+0741  00                 string size (0)
+                         source name: (none)
+0742  41                 line defined (65)
+0743  44                 last line defined (68)
+0744  00                 nups (0)
+0745  01                 numparams (1)
+0746  00                 is_vararg (0)
+0747  07                 maxstacksize (7)
+                         * code:
+0748  10                 sizecode (16)
+0749  5D000000           [01] getglobal  1   0        ; -174740002
+074D  8E404000           [02] gettable   2   0   257  ; "mMovie"
+0751  A4804001           [03] self       2   2   258  ; 1803241227
+0755  19C10000           [04] loadk      4   3        ; "_root"
+0759  59010100           [05] loadk      5   4        ; "_xmouse"
+075D  A2000002           [06] call       2   4   0  
+0761  62800000           [07] call       1   0   2  
+0765  9D000000           [08] getglobal  2   0        ; -174740002
+0769  CE404000           [09] gettable   3   0   257  ; "mMovie"
+076D  E480C001           [10] self       3   3   258  ; 1803241227
+0771  59C10000           [11] loadk      5   3        ; "_root"
+0775  99410100           [12] loadk      6   5        ; "_ymouse"
+0779  E2000002           [13] call       3   4   0  
+077D  A2000000           [14] call       2   0   0  
+0781  5E000000           [15] return     1   0      
+0785  1E008000           [16] return     0   1      
+                         * constants:
+0789  06                 sizek (6)
+078A  01                 const type 3
+078B  DEAD95F5           const [0]: (-174740002)
+078F  04                 const type 4
+0790  07                 string size (7)
+0791  6D4D6F76696500     "mMovie\0"
+                         const [1]: "mMovie"
+0798  01                 const type 3
+0799  0B477B6B           const [2]: (1803241227)
+079D  04                 const type 4
+079E  06                 string size (6)
+079F  5F726F6F7400       "_root\0"
+                         const [3]: "_root"
+07A5  04                 const type 4
+07A6  08                 string size (8)
+07A7  5F786D6F75736500   "_xmouse\0"
+                         const [4]: "_xmouse"
+07AF  04                 const type 4
+07B0  08                 string size (8)
+07B1  5F796D6F75736500   "_ymouse\0"
+                         const [5]: "_ymouse"
+                         * functions:
+07B9  00                 sizep (0)
+                         * lines:
+07BA  10                 sizelineinfo (16)
+                         [pc] (line)
+07BB  42                 [01] (66)
+07BC  00                 [02] (66)
+07BD  00                 [03] (66)
+07BE  00                 [04] (66)
+07BF  42                 [05] (66)
+07C0  00                 [06] (66)
+07C1  00                 [07] (66)
+07C2  00                 [08] (67)
+07C3  42                 [09] (67)
+07C4  00                 [10] (67)
+07C5  00                 [11] (67)
+07C6  00                 [12] (67)
+07C7  42                 [13] (67)
+07C8  00                 [14] (67)
+07C9  00                 [15] (67)
+07CA  00                 [16] (68)
+                         * locals:
+07FB  00                 sizelocvars (0)
+                         * upvalues:
+07FC  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+07FD                     ** function [10] definition (level 3)
+                         ** start of function **
+07FD  00                 string size (0)
+                         source name: (none)
+07FE  46                 line defined (70)
+07FF  4C                 last line defined (76)
+0800  00                 nups (0)
+0801  01                 numparams (1)
+0802  00                 is_vararg (0)
+0803  03                 maxstacksize (3)
+                         * code:
+0804  26                 sizecode (38)
+0805  5D000000           [01] getglobal  1   0        ; Engine
+0809  4E40C000           [02] gettable   1   1   257  ; -1802437008
+080D  62808000           [03] call       1   1   2  
+0811  58400000           [04] test       1       1    ; to [6] if false
+0815  1A400280           [05] jmp        10           ; to [16]
+0819  4E804000           [06] gettable   1   0   258  ; "mForceUseControllerDelta"
+081D  58400000           [07] test       1       1    ; to [9] if false
+0821  1A800180           [08] jmp        7            ; to [16]
+0825  4EC04000           [09] gettable   1   0   259  ; "mUseControllerDeltaIfSet"
+0829  58000000           [10] test       1       0    ; to [12] if true
+082D  1AC00580           [11] jmp        24           ; to [36]
+0831  64004100           [12] self       1   0   260  ; 465604669
+0835  62800001           [13] call       1   2   2  
+0839  58000000           [14] test       1       0    ; to [16] if true
+083D  1AC00480           [15] jmp        20           ; to [36]
+0841  5D400100           [16] getglobal  1   5        ; math
+0845  4E80C100           [17] gettable   1   1   262  ; -113279800
+0849  8EC04100           [18] gettable   2   0   263  ; "mRightStickTension"
+084D  8E004201           [19] gettable   2   2   264  ; "x"
+0851  62800001           [20] call       1   2   2  
+0855  8E404200           [21] gettable   2   0   265  ; "mRightStickDeadZone"
+fail op	21
+0859  55400001           [22] concat     1   2   1  
+085D  1A000280           [23] jmp        9            ; to [33]
+0861  5D400100           [24] getglobal  1   5        ; math
+0865  4E80C100           [25] gettable   1   1   262  ; -113279800
+0869  8EC04100           [26] gettable   2   0   263  ; "mRightStickTension"
+086D  8E804201           [27] gettable   2   2   266  ; "y"
+0871  62800001           [28] call       1   2   2  
+0875  8E404200           [29] gettable   2   0   265  ; "mRightStickDeadZone"
+fail op	21
+0879  55400001           [30] concat     1   2   1  
+087D  1A000080           [31] jmp        1            ; to [33]
+0881  57400000           [32] loadbool   1   0   1    ; false, to [34]
+0885  57008000           [33] loadbool   1   1   0    ; true
+0889  5E000001           [34] return     1   2      
+088D  1A400080           [35] jmp        2            ; to [38]
+0891  4EC04200           [36] gettable   1   0   267  ; "mMouseDown"
+0895  5E000001           [37] return     1   2      
+0899  1E008000           [38] return     0   1      
+                         * constants:
+089D  0C                 sizek (12)
+089E  04                 const type 4
+089F  07                 string size (7)
+08A0  456E67696E6500     "Engine\0"
+                         const [0]: "Engine"
+08A7  01                 const type 3
+08A8  70FE9094           const [1]: (-1802437008)
+08AC  04                 const type 4
+08AD  19                 string size (25)
+08AE  6D466F7263655573+  "mForceUs"
+08B6  65436F6E74726F6C+  "eControl"
+08BE  6C657244656C7461+  "lerDelta"
+08C6  00                 "\0"
+                         const [2]: "mForceUseControllerDelta"
+08C7  04                 const type 4
+08C8  19                 string size (25)
+08C9  6D557365436F6E74+  "mUseCont"
+08D1  726F6C6C65724465+  "rollerDe"
+08D9  6C74614966536574+  "ltaIfSet"
+08E1  00                 "\0"
+                         const [3]: "mUseControllerDeltaIfSet"
+08E2  01                 const type 3
+08E3  3D90C01B           const [4]: (465604669)
+08E7  04                 const type 4
+08E8  05                 string size (5)
+08E9  6D61746800         "math\0"
+                         const [5]: "math"
+08EE  01                 const type 3
+08EF  C87C3FF9           const [6]: (-113279800)
+08F3  04                 const type 4
+08F4  13                 string size (19)
+08F5  6D52696768745374+  "mRightSt"
+08FD  69636B54656E7369+  "ickTensi"
+0905  6F6E00             "on\0"
+                         const [7]: "mRightStickTension"
+0908  04                 const type 4
+0909  02                 string size (2)
+090A  7800               "x\0"
+                         const [8]: "x"
+090C  04                 const type 4
+090D  14                 string size (20)
+090E  6D52696768745374+  "mRightSt"
+0916  69636B446561645A+  "ickDeadZ"
+091E  6F6E6500           "one\0"
+                         const [9]: "mRightStickDeadZone"
+0922  04                 const type 4
+0923  02                 string size (2)
+0924  7900               "y\0"
+                         const [10]: "y"
+0926  04                 const type 4
+0927  0B                 string size (11)
+0928  6D4D6F757365446F+  "mMouseDo"
+0930  776E00             "wn\0"
+                         const [11]: "mMouseDown"
+                         * functions:
+0933  00                 sizep (0)
+                         * lines:
+0934  26                 sizelineinfo (38)
+                         [pc] (line)
+0935  47                 [01] (71)
+0936  00                 [02] (71)
+0937  00                 [03] (71)
+0938  00                 [04] (71)
+0939  47                 [05] (71)
+093A  00                 [06] (71)
+093B  00                 [07] (71)
+093C  00                 [08] (71)
+093D  47                 [09] (71)
+093E  00                 [10] (71)
+093F  00                 [11] (71)
+0940  00                 [12] (71)
+0941  47                 [13] (71)
+0942  00                 [14] (71)
+0943  00                 [15] (71)
+0944  00                 [16] (72)
+0945  47                 [17] (72)
+0946  00                 [18] (72)
+0947  00                 [19] (72)
+0948  00                 [20] (72)
+0949  47                 [21] (72)
+094A  00                 [22] (72)
+094B  00                 [23] (72)
+094C  00                 [24] (72)
+094D  47                 [25] (72)
+094E  00                 [26] (72)
+094F  00                 [27] (72)
+0950  00                 [28] (72)
+0951  47                 [29] (72)
+0952  00                 [30] (72)
+0953  00                 [31] (72)
+0954  00                 [32] (72)
+0955  47                 [33] (72)
+0956  00                 [34] (72)
+0957  00                 [35] (72)
+0958  00                 [36] (74)
+0959  47                 [37] (74)
+095A  00                 [38] (76)
+                         * locals:
+09CD  00                 sizelocvars (0)
+                         * upvalues:
+09CE  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+09CF  2A                 sizelineinfo (42)
+                         [pc] (line)
+09D0  05                 [01] (5)
+09D1  00                 [02] (6)
+09D2  00                 [03] (7)
+09D3  00                 [04] (8)
+09D4  06                 [05] (9)
+09D5  00                 [06] (10)
+09D6  00                 [07] (10)
+09D7  00                 [08] (10)
+09D8  07                 [09] (10)
+09D9  00                 [10] (11)
+09DA  00                 [11] (12)
+09DB  00                 [12] (12)
+09DC  08                 [13] (12)
+09DD  00                 [14] (12)
+09DE  00                 [15] (13)
+09DF  00                 [16] (13)
+09E0  09                 [17] (13)
+09E1  00                 [18] (13)
+09E2  00                 [19] (18)
+09E3  00                 [20] (18)
+09E4  0A                 [21] (22)
+09E5  00                 [22] (22)
+09E6  00                 [23] (27)
+09E7  00                 [24] (27)
+09E8  0A                 [25] (31)
+09E9  00                 [26] (31)
+09EA  00                 [27] (35)
+09EB  00                 [28] (35)
+09EC  0A                 [29] (45)
+09ED  00                 [30] (45)
+09EE  00                 [31] (50)
+09EF  00                 [32] (50)
+09F0  0A                 [33] (55)
+09F1  00                 [34] (55)
+09F2  00                 [35] (63)
+09F3  00                 [36] (63)
+09F4  0B                 [37] (68)
+09F5  00                 [38] (68)
+09F6  00                 [39] (76)
+09F7  00                 [40] (76)
+09F8  0C                 [41] (77)
+09F9  00                 [42] (78)
+                         * locals:
+0A78  00                 sizelocvars (0)
+                         * upvalues:
+0A79  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+0A7A  09                 sizelineinfo (9)
+                         [pc] (line)
+0A7B  01                 [1] (1)
+0A7C  00                 [2] (1)
+0A7D  00                 [3] (1)
+0A7E  00                 [4] (1)
+0A7F  01                 [5] (1)
+0A80  00                 [6] (78)
+0A81  00                 [7] (78)
+0A82  00                 [8] (4)
+0A83  01                 [9] (78)
+                         * locals:
+0A9F  00                 sizelocvars (0)
+                         * upvalues:
+0AA0  00                 sizeupvalues (0)
+                         ** end of function **
+
+0AA1                     ** end of chunk **

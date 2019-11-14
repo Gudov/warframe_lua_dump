@@ -1,0 +1,2195 @@
+1	C:\wlua_dump\path\Lotus\Scripts\LibsChallengeLib.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Scripts\LibsChallengeLib.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  04                 size of number (bytes)
+0008  12                 integral (1=integral)
+418
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+package
+seeall
+OnChallengeStatsInit
+InitChallenges
+Progress
+Requirements
+Challenge
+gChallengeMgr
+gPlayerProfileMgr
+gRegion
+gChallengeMgr
+mItemCount
+Challenge
+Name
+Requirements
+Progress
+Completed
+GameTag
+INCOME
+mIncome
+CIPHER_SOLVED
+mCiphersSolved
+REVIVE_BUDDY
+mReviveCount
+RECEIVE_UPGRADE
+PLAY_TIME
+mTimePlayedSec
+EmptyCallback
+PLAYER_RANK
+mRank
+gPlayerProfileMgr
+gRegion
+Engine
+gChallengeMgr
+ChallengeMgrBase_ETS_RETROACTIVE
+POWERSUIT_COUNT
+gGameConfig
+mXP
+mItemType
+SENTINEL_COUNT
+mXPInfo
+ChallengeMgrBase_ETS_NORMAL
+mTitle
+SYNDICATE_LEVEL
+EGG_INCUBATED_XBONE
+MISSION_COMPLETE_KUBROW
+MISSION_COMPLETE_KUBROW_XBONE
+/Lotus/Upgrades/Focus/Tactic/TacticFocusAbility
+/Lotus/Upgrades/Focus/Power/PowerFocusAbility
+/Lotus/Upgrades/Focus/Defense/DefenseFocusAbility
+/Lotus/Upgrades/Focus/Ward/WardFocusAbility
+/Lotus/Upgrades/Focus/Attack/AttackFocusAbility
+UISys
+nodes
+nodeTypes
+gLotusArtifactUpgradeType
+FOCUS_TREE_UNLOCK_COUNT
+/Lotus/Types/Keys/WarWithinQuest/WarWithinQuestKeyChain
+mCompleted
+WARWITHINQUESTKEYCHAIN_COMPLETED
+OnInitChallenges
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  04                 maxstacksize (4)
+                         * code:
+0008  12                 sizecode (18)
+0009  1D000000           [01] getglobal  0   0        ; 954442511
+000D  41000001           [02] vararg     1   2      
+0011  9D400000           [03] getglobal  2   1        ; package
+0015  8E804001           [04] gettable   2   2   258  ; "seeall"
+0019  22408001           [05] call       0   3   1  
+001D  25000000           [06] closure    0   0      
+0021  65400000           [07] closure    1   1      
+0025  12000000           [08] move       0   0      
+0029  A5800000           [09] closure    2   2      
+002D  E5C00000           [10] closure    3   3      
+0031  12008000           [11] move       0   1      
+0035  E0C00000           [12] setglobal  3   3        ; OnChallengeStatsInit
+0039  E0000100           [13] setglobal  3   4        ; -302037557
+003D  E5000100           [14] closure    3   4      
+0041  12000001           [15] move       0   2      
+0045  E0400100           [16] setglobal  3   5        ; InitChallenges
+0049  E0800100           [17] setglobal  3   6        ; 1577353209
+004D  1E008000           [18] return     0   1      
+                         * constants:
+0051  07                 sizek (7)
+0052  01                 const type 3
+0053  0FA3E338           const [0]: (954442511)
+0057  04                 const type 4
+0058  08                 string size (8)
+0059  7061636B61676500   "package\0"
+                         const [1]: "package"
+0061  04                 const type 4
+0062  07                 string size (7)
+0063  736565616C6C00     "seeall\0"
+                         const [2]: "seeall"
+006A  04                 const type 4
+006B  15                 string size (21)
+006C  4F6E4368616C6C65+  "OnChalle"
+0074  6E67655374617473+  "ngeStats"
+007C  496E697400         "Init\0"
+                         const [3]: "OnChallengeStatsInit"
+0081  01                 const type 3
+0082  CB45FFED           const [4]: (-302037557)
+0086  04                 const type 4
+0087  0F                 string size (15)
+0088  496E69744368616C+  "InitChal"
+0090  6C656E67657300     "lenges\0"
+                         const [5]: "InitChallenges"
+0097  01                 const type 3
+0098  F97F045E           const [6]: (1577353209)
+                         * functions:
+009C  05                 sizep (5)
+                         
+009D                     ** function [0] definition (level 2)
+                         ** start of function **
+009D  00                 string size (0)
+                         source name: (none)
+009E  04                 line defined (4)
+009F  0E                 last line defined (14)
+00A0  00                 nups (0)
+00A1  05                 numparams (5)
+00A2  00                 is_vararg (0)
+00A3  0B                 maxstacksize (11)
+                         * code:
+00A4  25                 sizecode (37)
+00A5  4E014001           [01] gettable   5   2   256  ; "Progress"
+00A9  8E414001           [02] gettable   6   2   257  ; "Requirements"
+fail op	21
+00AD  15400103           [03] concat     0   6   5  
+00B1  1A000180           [04] jmp        5            ; to [10]
+00B5  6481C000           [05] self       5   1   258  ; 1904311148
+00B9  CEC14001           [06] gettable   7   2   259  ; "Challenge"
+00BD  0E424001           [07] gettable   8   2   257  ; "Requirements"
+00C1  62410002           [08] call       5   4   1  
+00C5  1A800680           [09] jmp        27           ; to [37]
+00C9  4E014001           [10] gettable   5   2   256  ; "Progress"
+fail op	21
+00CD  15400102           [11] concat     0   4   5  
+00D1  1A000180           [12] jmp        5            ; to [18]
+00D5  6481C000           [13] self       5   1   258  ; 1904311148
+00D9  CEC14001           [14] gettable   7   2   259  ; "Challenge"
+00DD  12020002           [15] move       8   4      
+00E1  62410002           [16] call       5   4   1  
+00E5  1A800480           [17] jmp        19           ; to [37]
+00E9  4E414001           [18] gettable   5   2   257  ; "Requirements"
+fail op	21
+00ED  15008102           [19] concat     0   5   4  
+00F1  1A000280           [20] jmp        9            ; to [30]
+00F5  5D010100           [21] getglobal  5   4        ; gChallengeMgr
+00F9  6441C102           [22] self       5   5   261  ; -629505211
+00FD  D2010000           [23] move       7   0      
+0101  0EC24001           [24] gettable   8   2   259  ; "Challenge"
+0105  4E424001           [25] gettable   9   2   257  ; "Requirements"
+0109  8E024001           [26] gettable   10  2   256  ; "Progress"
+010D  4D828204           [27] sub        9   9   10 
+0111  62418002           [28] call       5   5   1  
+0115  1A800180           [29] jmp        7            ; to [37]
+0119  4E014001           [30] gettable   5   2   256  ; "Progress"
+fail op	21
+011D  15008102           [31] concat     0   5   4  
+0121  1AC00080           [32] jmp        4            ; to [37]
+0125  6481C000           [33] self       5   1   258  ; 1904311148
+0129  CEC14001           [34] gettable   7   2   259  ; "Challenge"
+012D  12020002           [35] move       8   4      
+0131  62410002           [36] call       5   4   1  
+0135  1E008000           [37] return     0   1      
+                         * constants:
+0139  06                 sizek (6)
+013A  04                 const type 4
+013B  09                 string size (9)
+013C  50726F6772657373+  "Progress"
+0144  00                 "\0"
+                         const [0]: "Progress"
+0145  04                 const type 4
+0146  0D                 string size (13)
+0147  526571756972656D+  "Requirem"
+014F  656E747300         "ents\0"
+                         const [1]: "Requirements"
+0154  01                 const type 3
+0155  6C7B8171           const [2]: (1904311148)
+0159  04                 const type 4
+015A  0A                 string size (10)
+015B  4368616C6C656E67+  "Challeng"
+0163  6500               "e\0"
+                         const [3]: "Challenge"
+0165  04                 const type 4
+0166  0E                 string size (14)
+0167  674368616C6C656E+  "gChallen"
+016F  67654D677200       "geMgr\0"
+                         const [4]: "gChallengeMgr"
+0175  01                 const type 3
+0176  45837ADA           const [5]: (-629505211)
+                         * functions:
+017A  00                 sizep (0)
+                         * lines:
+017B  25                 sizelineinfo (37)
+                         [pc] (line)
+017C  05                 [01] (5)
+017D  00                 [02] (5)
+017E  00                 [03] (5)
+017F  00                 [04] (5)
+0180  05                 [05] (6)
+0181  00                 [06] (6)
+0182  00                 [07] (6)
+0183  00                 [08] (6)
+0184  05                 [09] (6)
+0185  00                 [10] (7)
+0186  00                 [11] (7)
+0187  00                 [12] (7)
+0188  05                 [13] (8)
+0189  00                 [14] (8)
+018A  00                 [15] (8)
+018B  00                 [16] (8)
+018C  06                 [17] (8)
+018D  00                 [18] (9)
+018E  00                 [19] (9)
+018F  00                 [20] (9)
+0190  06                 [21] (10)
+0191  00                 [22] (10)
+0192  00                 [23] (10)
+0193  00                 [24] (10)
+0194  06                 [25] (10)
+0195  00                 [26] (10)
+0196  00                 [27] (10)
+0197  00                 [28] (10)
+0198  06                 [29] (10)
+0199  00                 [30] (11)
+019A  00                 [31] (11)
+019B  00                 [32] (11)
+019C  06                 [33] (12)
+019D  00                 [34] (12)
+019E  00                 [35] (12)
+019F  00                 [36] (12)
+01A0  07                 [37] (14)
+                         * locals:
+0210  00                 sizelocvars (0)
+                         * upvalues:
+0211  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0212                     ** function [1] definition (level 2)
+                         ** start of function **
+0212  00                 string size (0)
+                         source name: (none)
+0213  10                 line defined (16)
+0214  58                 last line defined (88)
+0215  01                 nups (1)
+0216  01                 numparams (1)
+0217  00                 is_vararg (0)
+0218  1A                 maxstacksize (26)
+                         * code:
+021A  01                 sizecode (167)
+021B  5D000000           [001] getglobal  1   0        ; gPlayerProfileMgr
+021F  6440C000           [002] self       1   1   257  ; 569342746
+0223  D9800000           [003] loadk      3   2        ; 0
+0227  62808001           [004] call       1   3   2  
+022B  9DC00000           [005] getglobal  2   3        ; gRegion
+022F  A4004101           [006] self       2   2   260  ; 925677844
+0233  A2800001           [007] call       2   2   2  
+0237  DD400100           [008] getglobal  3   5        ; gChallengeMgr
+023B  E480C101           [009] self       3   3   262  ; 979811719
+023F  E2800001           [010] call       3   2   2  
+0243  06010002           [011] loadnil    4   4      
+0247  64C1C100           [012] self       5   1   263  ; 1699680402
+024B  62810001           [013] call       5   2   2  
+024F  A401C202           [014] self       6   5   264  ; 1865287165
+0253  A2810001           [015] call       6   2   2  
+0257  E4414203           [016] self       7   6   265  ; -2049652196
+025B  E2810001           [017] call       7   2   2  
+025F  24824203           [018] self       8   6   266  ; 104901246
+0263  22820001           [019] call       8   2   2  
+0267  64C2C202           [020] self       9   5   267  ; 150399919
+026B  62820001           [021] call       9   2   2  
+026F  CA018003           [022] len        7   7      
+0273  99020300           [023] loadk      10  12       ; 0
+0277  CA020004           [024] len        11  8      
+027B  19030300           [025] loadk      12  12       ; 0
+027F  90820080           [026] forprep    10  3        ; to [30]
+0283  8E430304           [027] gettable   14  8   13 
+0287  8E434307           [028] gettable   14  14  269  ; "mItemCount"
+028B  C3818303           [029] add        7   7   14 
+028F  94C2FE7F           [030] forloop    10  -4       ; to [27] if loop
+0293  99030300           [031] loadk      14  12       ; 0
+0297  D2038001           [032] move       15  3      
+029B  19040300           [033] loadk      16  12       ; 0
+029F  90831D80           [034] forprep    14  119      ; to [154]
+02A3  9D440100           [035] getglobal  18  5        ; gChallengeMgr
+02A7  A4844309           [036] self       18  18  270  ; -334485569
+02AB  0D05C308           [037] sub        20  17  268  ; 0
+02AF  A2848001           [038] call       18  3   2  
+02B3  12010009           [039] move       4   18     
+02B7  9DC40300           [040] getglobal  18  15       ; 1074689893
+02BB  D2040002           [041] move       19  4      
+02BF  A2840001           [042] call       18  2   2  
+02C3  98440000           [043] test       18      1    ; to [45] if false
+02C7  1A001B80           [044] jmp        109          ; to [154]
+02CB  A4044402           [045] self       18  4   272  ; 1568015133
+02CF  A2840001           [046] call       18  2   2  
+02D3  98040000           [047] test       18      0    ; to [49] if true
+02D7  1A001A80           [048] jmp        105          ; to [154]
+02DB  A4444402           [049] self       18  4   273  ; -1318948062
+02DF  A2840001           [050] call       18  2   2  
+02E3  98040000           [051] test       18      0    ; to [53] if true
+02E7  1A001980           [052] jmp        101          ; to [154]
+02EB  8B040000           [053] newtable   18  0   0    ; array=0, hash=0
+02EF  8C040189           [054] settable   18  274 4    ; "Challenge"
+02F3  E4044502           [055] self       19  4   276  ; 880936306
+02F7  E2840001           [056] call       19  2   2  
+02FB  8CC48489           [057] settable   18  275 19   ; "Name"
+02FF  E4844502           [058] self       19  4   278  ; 1127229066
+0303  E2840001           [059] call       19  2   2  
+0307  8CC4848A           [060] settable   18  277 19   ; "Requirements"
+030B  DD440100           [061] getglobal  19  5        ; gChallengeMgr
+030F  E404C609           [062] self       19  19  280  ; 2006013107
+0313  64054502           [063] self       21  4   276  ; 880936306
+0317  62050001           [064] call       21  2   0  
+031B  E2840000           [065] call       19  0   2  
+031F  8CC4848B           [066] settable   18  279 19   ; "Progress"
+0323  CEC44509           [067] gettable   19  18  279  ; "Progress"
+0327  0E454509           [068] gettable   20  18  277  ; "Requirements"
+fail op	35
+032B  63008509           [069] close      1  
+032F  1A000080           [070] jmp        1            ; to [72]
+0333  D7440000           [071] loadbool   19  0   1    ; false, to [73]
+0337  D7048000           [072] loadbool   19  1   0    ; true
+033B  8CC4848C           [073] settable   18  281 19   ; "Completed"
+033F  E4C44602           [074] self       19  4   283  ; 1312019728
+0343  E2840001           [075] call       19  2   2  
+0347  8CC4048D           [076] settable   18  282 19   ; "GameTag"
+034B  CE444609           [077] gettable   19  18  281  ; "Completed"
+034F  D8440000           [078] test       19      1    ; to [80] if false
+0353  1A401180           [079] jmp        70           ; to [150]
+fail op	21
+0357  1500C704           [080] concat     0   9   284
+035B  1AC01180           [081] jmp        72           ; to [154]
+035F  E4C44602           [082] self       19  4   283  ; 1312019728
+0363  E2840001           [083] call       19  2   2  
+0367  1D450700           [084] getglobal  20  29       ; -332969190
+036B  59850700           [085] loadk      21  30       ; "INCOME"
+036F  22850001           [086] call       20  2   2  
+fail op	35
+0373  23008509           [087] close      0  
+0377  1A800180           [088] jmp        7            ; to [96]
+037B  13050000           [089] getupval   20  0      
+037F  52050001           [090] move       21  2      
+0383  92058002           [091] move       22  5      
+0387  D2050009           [092] move       23  18     
+038B  12068009           [093] move       24  19     
+038F  4EC64700           [094] gettable   25  0   287  ; "mIncome"
+0393  22450003           [095] call       20  6   1  
+0397  1D450700           [096] getglobal  20  29       ; -332969190
+039B  59050800           [097] loadk      21  32       ; "CIPHER_SOLVED"
+039F  22850001           [098] call       20  2   2  
+fail op	35
+03A3  23008509           [099] close      0  
+03A7  1A800180           [100] jmp        7            ; to [108]
+03AB  13050000           [101] getupval   20  0      
+03AF  52050001           [102] move       21  2      
+03B3  92058002           [103] move       22  5      
+03B7  D2050009           [104] move       23  18     
+03BB  12068009           [105] move       24  19     
+03BF  4E464800           [106] gettable   25  0   289  ; "mCiphersSolved"
+03C3  22450003           [107] call       20  6   1  
+03C7  1D450700           [108] getglobal  20  29       ; -332969190
+03CB  59850800           [109] loadk      21  34       ; "REVIVE_BUDDY"
+03CF  22850001           [110] call       20  2   2  
+fail op	35
+03D3  23008509           [111] close      0  
+03D7  1A800180           [112] jmp        7            ; to [120]
+03DB  13050000           [113] getupval   20  0      
+03DF  52050001           [114] move       21  2      
+03E3  92058002           [115] move       22  5      
+03E7  D2050009           [116] move       23  18     
+03EB  12068009           [117] move       24  19     
+03EF  4EC64800           [118] gettable   25  0   291  ; "mReviveCount"
+03F3  22450003           [119] call       20  6   1  
+03F7  1D450700           [120] getglobal  20  29       ; -332969190
+03FB  59050900           [121] loadk      21  36       ; "RECEIVE_UPGRADE"
+03FF  22850001           [122] call       20  2   2  
+fail op	35
+0403  23008509           [123] close      0  
+0407  1AC00280           [124] jmp        12           ; to [137]
+040B  0EC54509           [125] gettable   20  18  279  ; "Progress"
+fail op	21
+040F  15C0010A           [126] concat     0   20  7  
+0413  1A000280           [127] jmp        9            ; to [137]
+0417  13050000           [128] getupval   20  0      
+041B  52050001           [129] move       21  2      
+041F  92058002           [130] move       22  5      
+0423  D2050009           [131] move       23  18     
+0427  1D460700           [132] getglobal  24  29       ; -332969190
+042B  59060900           [133] loadk      25  36       ; "RECEIVE_UPGRADE"
+042F  22860001           [134] call       24  2   2  
+0433  52068003           [135] move       25  7      
+0437  22450003           [136] call       20  6   1  
+043B  1D450700           [137] getglobal  20  29       ; -332969190
+043F  59450900           [138] loadk      21  37       ; "PLAY_TIME"
+0443  22850001           [139] call       20  2   2  
+fail op	35
+0447  23008509           [140] close      0  
+044B  1AC00280           [141] jmp        12           ; to [154]
+044F  13050000           [142] getupval   20  0      
+0453  52050001           [143] move       21  2      
+0457  92058002           [144] move       22  5      
+045B  D2050009           [145] move       23  18     
+045F  12068009           [146] move       24  19     
+0463  4E864900           [147] gettable   25  0   294  ; "mTimePlayedSec"
+0467  22450003           [148] call       20  6   1  
+046B  1AC00080           [149] jmp        4            ; to [154]
+046F  24C5C902           [150] self       20  5   295  ; -1882874426
+0473  92050002           [151] move       22  4      
+0477  D9050A00           [152] loadk      23  40       ; "EmptyCallback"
+047B  22450002           [153] call       20  4   1  
+047F  94C3E17F           [154] forloop    14  -120     ; to [35] if loop
+0483  1D450100           [155] getglobal  20  5        ; gChallengeMgr
+0487  24454A0A           [156] self       20  20  297  ; 697616939
+048B  92050001           [157] move       22  2      
+048F  DD450700           [158] getglobal  23  29       ; -332969190
+0493  19860A00           [159] loadk      24  42       ; "PLAYER_RANK"
+0497  E2850001           [160] call       23  2   2  
+049B  0EC64A00           [161] gettable   24  0   299  ; "mRank"
+049F  22458002           [162] call       20  5   1  
+04A3  2405CB02           [163] self       20  5   300  ; 1605836817
+04A7  22450001           [164] call       20  2   1  
+04AB  2445CB02           [165] self       20  5   301  ; 207568169
+04AF  22450001           [166] call       20  2   1  
+04B3  1E008000           [167] return     0   1      
+                         * constants:
+04B7  2E                 sizek (46)
+04B8  04                 const type 4
+04B9  12                 string size (18)
+04BA  67506C6179657250+  "gPlayerP"
+04C2  726F66696C654D67+  "rofileMg"
+04CA  7200               "r\0"
+                         const [0]: "gPlayerProfileMgr"
+04CC  01                 const type 3
+04CD  1A7BEF21           const [1]: (569342746)
+04D1  03                 const type 3
+04D2  00000000           const [2]: (0)
+04D6  04                 const type 4
+04D7  08                 string size (8)
+04D8  67526567696F6E00   "gRegion\0"
+                         const [3]: "gRegion"
+04E0  01                 const type 3
+04E1  14B92C37           const [4]: (925677844)
+04E5  04                 const type 4
+04E6  0E                 string size (14)
+04E7  674368616C6C656E+  "gChallen"
+04EF  67654D677200       "geMgr\0"
+                         const [5]: "gChallengeMgr"
+04F5  01                 const type 3
+04F6  87BD663A           const [6]: (979811719)
+04FA  01                 const type 3
+04FB  92104F65           const [7]: (1699680402)
+04FF  01                 const type 3
+0500  FD052E6F           const [8]: (1865287165)
+0504  01                 const type 3
+0505  1CCAD485           const [9]: (-2049652196)
+0509  01                 const type 3
+050A  7EAA4006           const [10]: (104901246)
+050E  01                 const type 3
+050F  AFEBF608           const [11]: (150399919)
+0513  03                 const type 3
+0514  0000803F           const [12]: (0)
+0518  04                 const type 4
+0519  0B                 string size (11)
+051A  6D4974656D436F75+  "mItemCou"
+0522  6E7400             "nt\0"
+                         const [13]: "mItemCount"
+0525  01                 const type 3
+0526  BF2710EC           const [14]: (-334485569)
+052A  01                 const type 3
+052B  65770E40           const [15]: (1074689893)
+052F  01                 const type 3
+0530  1D03765D           const [16]: (1568015133)
+0534  01                 const type 3
+0535  227362B1           const [17]: (-1318948062)
+0539  04                 const type 4
+053A  0A                 string size (10)
+053B  4368616C6C656E67+  "Challeng"
+0543  6500               "e\0"
+                         const [18]: "Challenge"
+0545  04                 const type 4
+0546  05                 string size (5)
+0547  4E616D6500         "Name\0"
+                         const [19]: "Name"
+054C  01                 const type 3
+054D  72058234           const [20]: (880936306)
+0551  04                 const type 4
+0552  0D                 string size (13)
+0553  526571756972656D+  "Requirem"
+055B  656E747300         "ents\0"
+                         const [21]: "Requirements"
+0560  01                 const type 3
+0561  8A263043           const [22]: (1127229066)
+0565  04                 const type 4
+0566  09                 string size (9)
+0567  50726F6772657373+  "Progress"
+056F  00                 "\0"
+                         const [23]: "Progress"
+0570  01                 const type 3
+0571  B3549177           const [24]: (2006013107)
+0575  04                 const type 4
+0576  0A                 string size (10)
+0577  436F6D706C657465+  "Complete"
+057F  6400               "d\0"
+                         const [25]: "Completed"
+0581  04                 const type 4
+0582  08                 string size (8)
+0583  47616D6554616700   "GameTag\0"
+                         const [26]: "GameTag"
+058B  01                 const type 3
+058C  10D5334E           const [27]: (1312019728)
+0590  03                 const type 3
+0591  0000A040           const [28]: (0)
+0595  01                 const type 3
+0596  1A4B27EC           const [29]: (-332969190)
+059A  04                 const type 4
+059B  07                 string size (7)
+059C  494E434F4D4500     "INCOME\0"
+                         const [30]: "INCOME"
+05A3  04                 const type 4
+05A4  08                 string size (8)
+05A5  6D496E636F6D6500   "mIncome\0"
+                         const [31]: "mIncome"
+05AD  04                 const type 4
+05AE  0E                 string size (14)
+05AF  4349504845525F53+  "CIPHER_S"
+05B7  4F4C56454400       "OLVED\0"
+                         const [32]: "CIPHER_SOLVED"
+05BD  04                 const type 4
+05BE  0F                 string size (15)
+05BF  6D43697068657273+  "mCiphers"
+05C7  536F6C76656400     "Solved\0"
+                         const [33]: "mCiphersSolved"
+05CE  04                 const type 4
+05CF  0D                 string size (13)
+05D0  5245564956455F42+  "REVIVE_B"
+05D8  5544445900         "UDDY\0"
+                         const [34]: "REVIVE_BUDDY"
+05DD  04                 const type 4
+05DE  0D                 string size (13)
+05DF  6D52657669766543+  "mReviveC"
+05E7  6F756E7400         "ount\0"
+                         const [35]: "mReviveCount"
+05EC  04                 const type 4
+05ED  10                 string size (16)
+05EE  524543454956455F+  "RECEIVE_"
+05F6  5550475241444500   "UPGRADE\0"
+                         const [36]: "RECEIVE_UPGRADE"
+05FE  04                 const type 4
+05FF  0A                 string size (10)
+0600  504C41595F54494D+  "PLAY_TIM"
+0608  4500               "E\0"
+                         const [37]: "PLAY_TIME"
+060A  04                 const type 4
+060B  0F                 string size (15)
+060C  6D54696D65506C61+  "mTimePla"
+0614  79656453656300     "yedSec\0"
+                         const [38]: "mTimePlayedSec"
+061B  01                 const type 3
+061C  C69DC58F           const [39]: (-1882874426)
+0620  04                 const type 4
+0621  0E                 string size (14)
+0622  456D70747943616C+  "EmptyCal"
+062A  6C6261636B00       "lback\0"
+                         const [40]: "EmptyCallback"
+0630  01                 const type 3
+0631  2BCA9429           const [41]: (697616939)
+0635  04                 const type 4
+0636  0C                 string size (12)
+0637  504C415945525F52+  "PLAYER_R"
+063F  414E4B00           "ANK\0"
+                         const [42]: "PLAYER_RANK"
+0643  04                 const type 4
+0644  06                 string size (6)
+0645  6D52616E6B00       "mRank\0"
+                         const [43]: "mRank"
+064B  01                 const type 3
+064C  1120B75F           const [44]: (1605836817)
+0650  01                 const type 3
+0651  293D5F0C           const [45]: (207568169)
+                         * functions:
+0655  00                 sizep (0)
+                         * lines:
+0657  01                 sizelineinfo (167)
+                         [pc] (line)
+0658  11                 [001] (17)
+0659  00                 [002] (17)
+065A  00                 [003] (17)
+065B  00                 [004] (17)
+065C  11                 [005] (18)
+065D  00                 [006] (18)
+065E  00                 [007] (18)
+065F  00                 [008] (20)
+0660  11                 [009] (20)
+0661  00                 [010] (20)
+0662  00                 [011] (21)
+0663  00                 [012] (23)
+0664  11                 [013] (23)
+0665  00                 [014] (24)
+0666  00                 [015] (24)
+0667  00                 [016] (25)
+0668  12                 [017] (25)
+0669  00                 [018] (26)
+066A  00                 [019] (26)
+066B  00                 [020] (27)
+066C  12                 [021] (27)
+066D  00                 [022] (29)
+066E  00                 [023] (31)
+066F  00                 [024] (31)
+0670  12                 [025] (31)
+0671  00                 [026] (31)
+0672  00                 [027] (32)
+0673  00                 [028] (32)
+0674  14                 [029] (32)
+0675  00                 [030] (31)
+0676  00                 [031] (35)
+0677  00                 [032] (35)
+0678  14                 [033] (35)
+0679  00                 [034] (35)
+067A  00                 [035] (36)
+067B  00                 [036] (36)
+067C  14                 [037] (36)
+067D  00                 [038] (36)
+067E  00                 [039] (36)
+067F  00                 [040] (37)
+0680  15                 [041] (37)
+0681  00                 [042] (37)
+0682  00                 [043] (37)
+0683  00                 [044] (37)
+0684  17                 [045] (37)
+0685  00                 [046] (37)
+0686  00                 [047] (37)
+0687  00                 [048] (37)
+0688  17                 [049] (37)
+0689  00                 [050] (37)
+068A  00                 [051] (37)
+068B  00                 [052] (37)
+068C  18                 [053] (38)
+068D  00                 [054] (39)
+068E  00                 [055] (40)
+068F  00                 [056] (40)
+0690  18                 [057] (40)
+0691  00                 [058] (41)
+0692  00                 [059] (41)
+0693  00                 [060] (41)
+0694  19                 [061] (42)
+0695  00                 [062] (42)
+0696  00                 [063] (42)
+0697  00                 [064] (42)
+0698  19                 [065] (42)
+0699  00                 [066] (42)
+069A  00                 [067] (43)
+069B  00                 [068] (43)
+069C  1A                 [069] (43)
+069D  00                 [070] (43)
+069E  00                 [071] (43)
+069F  00                 [072] (43)
+06A0  1A                 [073] (43)
+06A1  00                 [074] (44)
+06A2  00                 [075] (44)
+06A3  00                 [076] (44)
+06A4  1B                 [077] (46)
+06A5  00                 [078] (46)
+06A6  00                 [079] (46)
+06A7  00                 [080] (48)
+06A8  1B                 [081] (48)
+06A9  00                 [082] (49)
+06AA  00                 [083] (49)
+06AB  00                 [084] (51)
+06AC  1D                 [085] (51)
+06AD  00                 [086] (51)
+06AE  00                 [087] (51)
+06AF  00                 [088] (51)
+06B0  1F                 [089] (52)
+06B1  00                 [090] (52)
+06B2  00                 [091] (52)
+06B3  00                 [092] (52)
+06B4  1F                 [093] (52)
+06B5  00                 [094] (52)
+06B6  00                 [095] (52)
+06B7  00                 [096] (56)
+06B8  1F                 [097] (56)
+06B9  00                 [098] (56)
+06BA  00                 [099] (56)
+06BB  00                 [100] (56)
+06BC  1F                 [101] (57)
+06BD  00                 [102] (57)
+06BE  00                 [103] (57)
+06BF  00                 [104] (57)
+06C0  20                 [105] (57)
+06C1  00                 [106] (57)
+06C2  00                 [107] (57)
+06C3  00                 [108] (61)
+06C4  20                 [109] (61)
+06C5  00                 [110] (61)
+06C6  00                 [111] (61)
+06C7  00                 [112] (61)
+06C8  20                 [113] (62)
+06C9  00                 [114] (62)
+06CA  00                 [115] (62)
+06CB  00                 [116] (62)
+06CC  1F                 [117] (62)
+06CD  00                 [118] (62)
+06CE  00                 [119] (62)
+06CF  00                 [120] (66)
+06D0  23                 [121] (66)
+06D1  00                 [122] (66)
+06D2  00                 [123] (66)
+06D3  00                 [124] (66)
+06D4  23                 [125] (67)
+06D5  00                 [126] (67)
+06D6  00                 [127] (67)
+06D7  00                 [128] (68)
+06D8  23                 [129] (68)
+06D9  00                 [130] (68)
+06DA  00                 [131] (68)
+06DB  00                 [132] (68)
+06DC  23                 [133] (68)
+06DD  00                 [134] (68)
+06DE  00                 [135] (68)
+06DF  00                 [136] (68)
+06E0  24                 [137] (73)
+06E1  00                 [138] (73)
+06E2  00                 [139] (73)
+06E3  00                 [140] (73)
+06E4  24                 [141] (73)
+06E5  00                 [142] (74)
+06E6  00                 [143] (74)
+06E7  00                 [144] (74)
+06E8  24                 [145] (74)
+06E9  00                 [146] (74)
+06EA  00                 [147] (74)
+06EB  00                 [148] (74)
+06EC  24                 [149] (76)
+06ED  00                 [150] (78)
+06EE  00                 [151] (78)
+06EF  00                 [152] (78)
+06F0  24                 [153] (78)
+06F1  00                 [154] (35)
+06F2  00                 [155] (83)
+06F3  00                 [156] (83)
+06F4  25                 [157] (83)
+06F5  00                 [158] (83)
+06F6  00                 [159] (83)
+06F7  00                 [160] (83)
+06F8  25                 [161] (83)
+06F9  00                 [162] (83)
+06FA  00                 [163] (86)
+06FB  00                 [164] (86)
+06FC  25                 [165] (87)
+06FD  00                 [166] (87)
+06FE  00                 [167] (88)
+                         * locals:
+08F4  00                 sizelocvars (0)
+                         * upvalues:
+08F5  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+08F6                     ** function [2] definition (level 2)
+                         ** start of function **
+08F6  00                 string size (0)
+                         source name: (none)
+08F7  5A                 line defined (90)
+08F8  99                 last line defined (281)
+08F9  02                 nups (0)
+08FA  00                 numparams (0)
+08FB  00                 is_vararg (0)
+08FC  00                 maxstacksize (89)
+                         * code:
+08FF  03                 sizecode (490)
+0900  1D000000           [001] getglobal  0   0        ; gPlayerProfileMgr
+0904  24404000           [002] self       0   0   257  ; 569342746
+0908  99800000           [003] loadk      2   2        ; 0
+090C  22808001           [004] call       0   3   2  
+0910  64C04000           [005] self       1   0   259  ; -1910325930
+0914  62800001           [006] call       1   2   2  
+0918  9D000100           [007] getglobal  2   4        ; gRegion
+091C  A4404101           [008] self       2   2   261  ; -1280573509
+0920  A2800001           [009] call       2   2   2  
+0924  DD800100           [010] getglobal  3   6        ; 1074689893
+0928  12010001           [011] move       4   2      
+092C  E2800001           [012] call       3   2   2  
+0930  D8400000           [013] test       3       1    ; to [15] if false
+0934  1A800080           [014] jmp        3            ; to [18]
+0938  CA000001           [015] len        3   2      
+fail op	35
+093C  2380C001           [016] close      0  
+0940  1A000080           [017] jmp        1            ; to [19]
+0944  1E008000           [018] return     0   1      
+0948  CEC04101           [019] gettable   3   2   263  ; 0
+094C  24014200           [020] self       4   0   264  ; 1699680402
+0950  22810001           [021] call       4   2   2  
+0954  64414202           [022] self       5   4   265  ; 1865287165
+0958  62810001           [023] call       5   2   2  
+095C  99810000           [024] loadk      6   2        ; 0
+0960  E4814202           [025] self       7   4   266  ; 150399919
+0964  E2810001           [026] call       7   2   2  
+0968  1DC20200           [027] getglobal  8   11       ; Engine
+096C  0E024304           [028] gettable   8   8   268  ; 1767719465
+0970  22828000           [029] call       8   1   2  
+0974  18020000           [030] test       8       0    ; to [32] if true
+0978  1A800080           [031] jmp        3            ; to [35]
+fail op	35
+097C  2340C303           [032] close      0  
+0980  1A000080           [033] jmp        1            ; to [35]
+0984  D9810000           [034] loadk      7   2        ; 0
+fail op	21
+0988  5540C303           [035] concat     1   7   269
+098C  1A000080           [036] jmp        1            ; to [38]
+0990  17420000           [037] loadbool   8   0   1    ; false, to [39]
+0994  17028000           [038] loadbool   8   1   0    ; true
+0998  5DC20200           [039] getglobal  9   11       ; Engine
+099C  4E02C304           [040] gettable   9   9   268  ; 1767719465
+09A0  62828000           [041] call       9   1   2  
+09A4  58020000           [042] test       9       0    ; to [44] if true
+09A8  1A800080           [043] jmp        3            ; to [47]
+fail op	21
+09AC  15C00181           [044] concat     0   258 7  
+09B0  1A000080           [045] jmp        1            ; to [47]
+09B4  17020000           [046] loadbool   8   0   0    ; false
+09B8  18020000           [047] test       8       0    ; to [49] if true
+09BC  1A403580           [048] jmp        214          ; to [263]
+09C0  5D820300           [049] getglobal  9   14       ; gChallengeMgr
+09C4  64C2C304           [050] self       9   9   271  ; 710389190
+09C8  DDC20200           [051] getglobal  11  11       ; Engine
+09CC  CE02C405           [052] gettable   11  11  272  ; "ChallengeMgrBase_ETS_RETROACTIVE"
+09D0  62428001           [053] call       9   3   1  
+09D4  6442C402           [054] self       9   5   273  ; -744042907
+09D8  62820001           [055] call       9   2   2  
+09DC  9D820100           [056] getglobal  10  6        ; 1074689893
+09E0  D2028004           [057] move       11  9      
+09E4  A2820001           [058] call       10  2   2  
+09E8  98420000           [059] test       10      1    ; to [61] if false
+09EC  1AC00680           [060] jmp        28           ; to [89]
+09F0  9D820300           [061] getglobal  10  14       ; gChallengeMgr
+09F4  A4824405           [062] self       10  10  274  ; 697616939
+09F8  12038001           [063] move       12  3      
+09FC  5DC30400           [064] getglobal  13  19       ; -332969190
+0A00  99030500           [065] loadk      14  20       ; "POWERSUIT_COUNT"
+0A04  62830001           [066] call       13  2   2  
+0A08  8A038004           [067] len        14  9      
+0A0C  A2428002           [068] call       10  5   1  
+0A10  99C20100           [069] loadk      10  7        ; 0
+0A14  CA028004           [070] len        11  9      
+0A18  19C30100           [071] loadk      12  7        ; 0
+0A1C  90820380           [072] forprep    10  15       ; to [88]
+0A20  9D430500           [073] getglobal  14  21       ; gGameConfig
+0A24  A4834507           [074] self       14  14  278  ; -1634834758
+0A28  0E448304           [075] gettable   16  9   13 
+0A2C  0EC44508           [076] gettable   16  16  279  ; "mXP"
+0A30  4E448304           [077] gettable   17  9   13 
+0A34  4E04C608           [078] gettable   17  17  280  ; "mItemType"
+0A38  A2830002           [079] call       14  4   2  
+0A3C  92010007           [080] move       6   14     
+0A40  9D830300           [081] getglobal  14  14       ; gChallengeMgr
+0A44  A4434607           [082] self       14  14  281  ; -531930633
+0A48  12048001           [083] move       16  3      
+0A4C  4E448304           [084] gettable   17  9   13 
+0A50  4E04C608           [085] gettable   17  17  280  ; "mItemType"
+0A54  92040003           [086] move       18  6      
+0A58  A2438002           [087] call       14  5   1  
+0A5C  94C2FB7F           [088] forloop    10  -16      ; to [73] if loop
+0A60  A483C602           [089] self       14  5   282  ; -1055282309
+0A64  A2830001           [090] call       14  2   2  
+0A68  DD830100           [091] getglobal  15  6        ; 1074689893
+0A6C  12040007           [092] move       16  14     
+0A70  E2830001           [093] call       15  2   2  
+0A74  D8430000           [094] test       15      1    ; to [96] if false
+0A78  1AC00680           [095] jmp        28           ; to [124]
+0A7C  DD830300           [096] getglobal  15  14       ; gChallengeMgr
+0A80  E483C407           [097] self       15  15  274  ; 697616939
+0A84  52048001           [098] move       17  3      
+0A88  9DC40400           [099] getglobal  18  19       ; -332969190
+0A8C  D9C40600           [100] loadk      19  27       ; "SENTINEL_COUNT"
+0A90  A2840001           [101] call       18  2   2  
+0A94  CA040007           [102] len        19  14     
+0A98  E2438002           [103] call       15  5   1  
+0A9C  D9C30100           [104] loadk      15  7        ; 0
+0AA0  0A040007           [105] len        16  14     
+0AA4  59C40100           [106] loadk      17  7        ; 0
+0AA8  D0830380           [107] forprep    15  15       ; to [123]
+0AAC  DD440500           [108] getglobal  19  21       ; gGameConfig
+0AB0  E484C509           [109] self       19  19  278  ; -1634834758
+0AB4  4E850407           [110] gettable   21  14  18 
+0AB8  4EC5C50A           [111] gettable   21  21  279  ; "mXP"
+0ABC  8E850407           [112] gettable   22  14  18 
+0AC0  8E05460B           [113] gettable   22  22  280  ; "mItemType"
+0AC4  E2840002           [114] call       19  4   2  
+0AC8  92018009           [115] move       6   19     
+0ACC  DD840300           [116] getglobal  19  14       ; gChallengeMgr
+0AD0  E444C609           [117] self       19  19  281  ; -531930633
+0AD4  52058001           [118] move       21  3      
+0AD8  8E850407           [119] gettable   22  14  18 
+0ADC  8E05460B           [120] gettable   22  22  280  ; "mItemType"
+0AE0  D2050003           [121] move       23  6      
+0AE4  E2448002           [122] call       19  5   1  
+0AE8  D4C3FB7F           [123] forloop    15  -16      ; to [108] if loop
+0AEC  E404C702           [124] self       19  5   284  ; 612749046
+0AF0  E2840001           [125] call       19  2   2  
+0AF4  1D850100           [126] getglobal  20  6        ; 1074689893
+0AF8  52058009           [127] move       21  19     
+0AFC  22850001           [128] call       20  2   2  
+0B00  18450000           [129] test       20      1    ; to [131] if false
+0B04  1AC00480           [130] jmp        20           ; to [151]
+0B08  19C50100           [131] loadk      20  7        ; 0
+0B0C  4A058009           [132] len        21  19     
+0B10  99C50100           [133] loadk      22  7        ; 0
+0B14  10850380           [134] forprep    20  15       ; to [150]
+0B18  1D460500           [135] getglobal  24  21       ; gGameConfig
+0B1C  2486450C           [136] self       24  24  278  ; -1634834758
+0B20  8EC68509           [137] gettable   26  19  23 
+0B24  8EC6450D           [138] gettable   26  26  279  ; "mXP"
+0B28  CEC68509           [139] gettable   27  19  23 
+0B2C  CE06C60D           [140] gettable   27  27  280  ; "mItemType"
+0B30  22860002           [141] call       24  4   2  
+0B34  9201000C           [142] move       6   24     
+0B38  1D860300           [143] getglobal  24  14       ; gChallengeMgr
+0B3C  2446460C           [144] self       24  24  281  ; -531930633
+0B40  92068001           [145] move       26  3      
+0B44  CEC68509           [146] gettable   27  19  23 
+0B48  CE06C60D           [147] gettable   27  27  280  ; "mItemType"
+0B4C  12070003           [148] move       28  6      
+0B50  22468002           [149] call       24  5   1  
+0B54  14C5FB7F           [150] forloop    20  -16      ; to [135] if loop
+0B58  2446C702           [151] self       24  5   285  ; 488728432
+0B5C  22860001           [152] call       24  2   2  
+0B60  5D860100           [153] getglobal  25  6        ; 1074689893
+0B64  9206000C           [154] move       26  24     
+0B68  62860001           [155] call       25  2   2  
+0B6C  58460000           [156] test       25      1    ; to [158] if false
+0B70  1AC00480           [157] jmp        20           ; to [178]
+0B74  59C60100           [158] loadk      25  7        ; 0
+0B78  8A06000C           [159] len        26  24     
+0B7C  D9C60100           [160] loadk      27  7        ; 0
+0B80  50860380           [161] forprep    25  15       ; to [177]
+0B84  5D470500           [162] getglobal  29  21       ; gGameConfig
+0B88  6487C50E           [163] self       29  29  278  ; -1634834758
+0B8C  CE07070C           [164] gettable   31  24  28 
+0B90  CEC7C50F           [165] gettable   31  31  279  ; "mXP"
+0B94  0E08070C           [166] gettable   32  24  28 
+0B98  0E084610           [167] gettable   32  32  280  ; "mItemType"
+0B9C  62870002           [168] call       29  4   2  
+0BA0  9201800E           [169] move       6   29     
+0BA4  5D870300           [170] getglobal  29  14       ; gChallengeMgr
+0BA8  6447C60E           [171] self       29  29  281  ; -531930633
+0BAC  D2078001           [172] move       31  3      
+0BB0  0E08070C           [173] gettable   32  24  28 
+0BB4  0E084610           [174] gettable   32  32  280  ; "mItemType"
+0BB8  52080003           [175] move       33  6      
+0BBC  62478002           [176] call       29  5   1  
+0BC0  54C6FB7F           [177] forloop    25  -16      ; to [162] if loop
+0BC4  6487C702           [178] self       29  5   286  ; 190670510
+0BC8  62870001           [179] call       29  2   2  
+0BCC  9D870100           [180] getglobal  30  6        ; 1074689893
+0BD0  D207800E           [181] move       31  29     
+0BD4  A2870001           [182] call       30  2   2  
+0BD8  98470000           [183] test       30      1    ; to [185] if false
+0BDC  1AC00480           [184] jmp        20           ; to [205]
+0BE0  99C70100           [185] loadk      30  7        ; 0
+0BE4  CA07800E           [186] len        31  29     
+0BE8  19C80100           [187] loadk      32  7        ; 0
+0BEC  90870380           [188] forprep    30  15       ; to [204]
+0BF0  9D480500           [189] getglobal  34  21       ; gGameConfig
+0BF4  A4884511           [190] self       34  34  278  ; -1634834758
+0BF8  0E49880E           [191] gettable   36  29  33 
+0BFC  0EC94512           [192] gettable   36  36  279  ; "mXP"
+0C00  4E49880E           [193] gettable   37  29  33 
+0C04  4E09C612           [194] gettable   37  37  280  ; "mItemType"
+0C08  A2880002           [195] call       34  4   2  
+0C0C  92010011           [196] move       6   34     
+0C10  9D880300           [197] getglobal  34  14       ; gChallengeMgr
+0C14  A4484611           [198] self       34  34  281  ; -531930633
+0C18  12098001           [199] move       36  3      
+0C1C  4E49880E           [200] gettable   37  29  33 
+0C20  4E09C612           [201] gettable   37  37  280  ; "mItemType"
+0C24  92090003           [202] move       38  6      
+0C28  A2488002           [203] call       34  5   1  
+0C2C  94C7FB7F           [204] forloop    30  -16      ; to [189] if loop
+0C30  A4C8C702           [205] self       34  5   287  ; -1473626832
+0C34  A2880001           [206] call       34  2   2  
+0C38  DD880100           [207] getglobal  35  6        ; 1074689893
+0C3C  12090011           [208] move       36  34     
+0C40  E2880001           [209] call       35  2   2  
+0C44  D8480000           [210] test       35      1    ; to [212] if false
+0C48  1AC00480           [211] jmp        20           ; to [232]
+0C4C  D9C80100           [212] loadk      35  7        ; 0
+0C50  0A090011           [213] len        36  34     
+0C54  59C90100           [214] loadk      37  7        ; 0
+0C58  D0880380           [215] forprep    35  15       ; to [231]
+0C5C  DD490500           [216] getglobal  39  21       ; gGameConfig
+0C60  E489C513           [217] self       39  39  278  ; -1634834758
+0C64  4E8A0911           [218] gettable   41  34  38 
+0C68  4ECAC514           [219] gettable   41  41  279  ; "mXP"
+0C6C  8E8A0911           [220] gettable   42  34  38 
+0C70  8E0A4615           [221] gettable   42  42  280  ; "mItemType"
+0C74  E2890002           [222] call       39  4   2  
+0C78  92018013           [223] move       6   39     
+0C7C  DD890300           [224] getglobal  39  14       ; gChallengeMgr
+0C80  E449C613           [225] self       39  39  281  ; -531930633
+0C84  520A8001           [226] move       41  3      
+0C88  8E8A0911           [227] gettable   42  34  38 
+0C8C  8E0A4615           [228] gettable   42  42  280  ; "mItemType"
+0C90  D20A0003           [229] move       43  6      
+0C94  E2498002           [230] call       39  5   1  
+0C98  D4C8FB7F           [231] forloop    35  -16      ; to [216] if loop
+0C9C  CE09C802           [232] gettable   39  5   288  ; "mXPInfo"
+0CA0  1D8A0100           [233] getglobal  40  6        ; 1074689893
+0CA4  520A8013           [234] move       41  39     
+0CA8  228A0001           [235] call       40  2   2  
+0CAC  184A0000           [236] test       40      1    ; to [238] if false
+0CB0  1AC00480           [237] jmp        20           ; to [258]
+0CB4  19CA0100           [238] loadk      40  7        ; 0
+0CB8  4A0A8013           [239] len        41  39     
+0CBC  99CA0100           [240] loadk      42  7        ; 0
+0CC0  108A0380           [241] forprep    40  15       ; to [257]
+0CC4  1D4B0500           [242] getglobal  44  21       ; gGameConfig
+0CC8  248B4516           [243] self       44  44  278  ; -1634834758
+0CCC  8ECB8A13           [244] gettable   46  39  43 
+0CD0  8ECB4517           [245] gettable   46  46  279  ; "mXP"
+0CD4  CECB8A13           [246] gettable   47  39  43 
+0CD8  CE0BC617           [247] gettable   47  47  280  ; "mItemType"
+0CDC  228B0002           [248] call       44  4   2  
+0CE0  92010016           [249] move       6   44     
+0CE4  1D8B0300           [250] getglobal  44  14       ; gChallengeMgr
+0CE8  244B4616           [251] self       44  44  281  ; -531930633
+0CEC  920B8001           [252] move       46  3      
+0CF0  CECB8A13           [253] gettable   47  39  43 
+0CF4  CE0BC617           [254] gettable   47  47  280  ; "mItemType"
+0CF8  120C0003           [255] move       48  6      
+0CFC  224B8002           [256] call       44  5   1  
+0D00  14CAFB7F           [257] forloop    40  -16      ; to [242] if loop
+0D04  1D8B0300           [258] getglobal  44  14       ; gChallengeMgr
+0D08  24CB4316           [259] self       44  44  271  ; 710389190
+0D0C  9DCB0200           [260] getglobal  46  11       ; Engine
+0D10  8E4B4817           [261] gettable   46  46  289  ; "ChallengeMgrBase_ETS_NORMAL"
+0D14  224B8001           [262] call       44  3   1  
+0D18  1DCB0200           [263] getglobal  44  11       ; Engine
+0D1C  0E0B4316           [264] gettable   44  44  268  ; 1767719465
+0D20  228B8000           [265] call       44  1   2  
+0D24  180B0000           [266] test       44      0    ; to [268] if true
+0D28  1A001780           [267] jmp        93           ; to [361]
+fail op	21
+0D2C  15C0C103           [268] concat     0   7   263
+0D30  1A801680           [269] jmp        91           ; to [361]
+0D34  248B4802           [270] self       44  4   290  ; 1214140738
+0D38  228B0001           [271] call       44  2   2  
+0D3C  5D8B0100           [272] getglobal  45  6        ; 1074689893
+0D40  920B0016           [273] move       46  44     
+0D44  628B0001           [274] call       45  2   2  
+0D48  584B0000           [275] test       45      1    ; to [277] if false
+0D4C  1A000480           [276] jmp        17           ; to [294]
+0D50  59CB0100           [277] loadk      45  7        ; 0
+0D54  8A0B0016           [278] len        46  44     
+0D58  D9CB0100           [279] loadk      47  7        ; 0
+0D5C  50CB0280           [280] forprep    45  12       ; to [293]
+0D60  4E0C0C16           [281] gettable   49  44  48 
+0D64  8EC1C818           [282] gettable   6   49  291  ; "mTitle"
+fail op	21
+0D68  15800181           [283] concat     0   258 6  
+0D6C  1AC00180           [284] jmp        8            ; to [293]
+0D70  5D8C0300           [285] getglobal  49  14       ; gChallengeMgr
+0D74  648CC418           [286] self       49  49  274  ; 697616939
+0D78  D20C8001           [287] move       51  3      
+0D7C  1DCD0400           [288] getglobal  52  19       ; -332969190
+0D80  590D0900           [289] loadk      53  36       ; "SYNDICATE_LEVEL"
+0D84  228D0001           [290] call       52  2   2  
+0D88  520D0003           [291] move       53  6      
+0D8C  624C8002           [292] call       49  5   1  
+0D90  548BFC7F           [293] forloop    45  -13      ; to [281] if loop
+0D94  644CC902           [294] self       49  5   293  ; 892650483
+0D98  628C0001           [295] call       49  2   2  
+0D9C  9D8C0100           [296] getglobal  50  6        ; 1074689893
+0DA0  D20C8018           [297] move       51  49     
+0DA4  A28C0001           [298] call       50  2   2  
+0DA8  984C0000           [299] test       50      1    ; to [301] if false
+0DAC  1A400280           [300] jmp        10           ; to [311]
+0DB0  8A0C8018           [301] len        50  49     
+fail op	21
+0DB4  15800C81           [302] concat     0   258 50 
+0DB8  1A800180           [303] jmp        7            ; to [311]
+0DBC  9D8C0300           [304] getglobal  50  14       ; gChallengeMgr
+0DC0  A48C4919           [305] self       50  50  294  ; 137898418
+0DC4  120D8001           [306] move       52  3      
+0DC8  5DCD0400           [307] getglobal  53  19       ; -332969190
+0DCC  99CD0900           [308] loadk      54  39       ; "EGG_INCUBATED_XBONE"
+0DD0  620D0001           [309] call       53  2   0  
+0DD4  A24C0000           [310] call       50  0   1  
+0DD8  9D8C0300           [311] getglobal  50  14       ; gChallengeMgr
+0DDC  A40C4A19           [312] self       50  50  296  ; 979811719
+0DE0  A28C0001           [313] call       50  2   2  
+0DE4  C60C8019           [314] loadnil    51  51     
+0DE8  19CD0100           [315] loadk      52  7        ; 0
+0DEC  520D0019           [316] move       53  50     
+0DF0  99CD0100           [317] loadk      54  7        ; 0
+0DF4  100D0A80           [318] forprep    52  41       ; to [360]
+0DF8  1D8E0300           [319] getglobal  56  14       ; gChallengeMgr
+0DFC  244E4A1C           [320] self       56  56  297  ; -334485569
+0E00  8DCEC11B           [321] sub        58  55  263  ; 0
+0E04  228E8001           [322] call       56  3   2  
+0E08  D20C001C           [323] move       51  56     
+0E0C  1D8E0100           [324] getglobal  56  6        ; 1074689893
+0E10  520E8019           [325] move       57  51     
+0E14  228E0001           [326] call       56  2   2  
+0E18  184E0000           [327] test       56      1    ; to [329] if false
+0E1C  1A800780           [328] jmp        31           ; to [360]
+0E20  248ECA19           [329] self       56  51  298  ; 1568015133
+0E24  228E0001           [330] call       56  2   2  
+0E28  180E0000           [331] test       56      0    ; to [333] if true
+0E2C  1A800680           [332] jmp        27           ; to [360]
+0E30  24CECA19           [333] self       56  51  299  ; -1318948062
+0E34  228E0001           [334] call       56  2   2  
+0E38  180E0000           [335] test       56      0    ; to [337] if true
+0E3C  1A800580           [336] jmp        23           ; to [360]
+0E40  240ECB19           [337] self       56  51  300  ; 1312019728
+0E44  228E0001           [338] call       56  2   2  
+0E48  5DCE0400           [339] getglobal  57  19       ; -332969190
+0E4C  994E0B00           [340] loadk      58  45       ; "MISSION_COMPLETE_KUBROW"
+0E50  628E0001           [341] call       57  2   2  
+fail op	35
+0E54  23400E1C           [342] close      0  
+0E58  1AC00380           [343] jmp        16           ; to [360]
+0E5C  19CE0100           [344] loadk      56  7        ; 0
+0E60  5D8E0300           [345] getglobal  57  14       ; gChallengeMgr
+0E64  648ECB1C           [346] self       57  57  302  ; 2006013107
+0E68  E4CECB19           [347] self       59  51  303  ; 880936306
+0E6C  E20E0001           [348] call       59  2   0  
+0E70  628E0000           [349] call       57  0   2  
+0E74  99CE0100           [350] loadk      58  7        ; 0
+0E78  108E0180           [351] forprep    56  7        ; to [359]
+0E7C  1D8F0300           [352] getglobal  60  14       ; gChallengeMgr
+0E80  248F491E           [353] self       60  60  294  ; 137898418
+0E84  920F8001           [354] move       62  3      
+0E88  DDCF0400           [355] getglobal  63  19       ; -332969190
+0E8C  19100C00           [356] loadk      64  48       ; "MISSION_COMPLETE_KUBROW_XBONE"
+0E90  E20F0001           [357] call       63  2   0  
+0E94  224F0000           [358] call       60  0   1  
+0E98  14CEFD7F           [359] forloop    56  -8       ; to [352] if loop
+0E9C  144DF57F           [360] forloop    52  -42      ; to [319] if loop
+0EA0  1DCF0200           [361] getglobal  60  11       ; Engine
+0EA4  0E0F431E           [362] gettable   60  60  268  ; 1767719465
+0EA8  228F8000           [363] call       60  1   2  
+0EAC  180F0000           [364] test       60      0    ; to [366] if true
+0EB0  1A400080           [365] jmp        2            ; to [368]
+fail op	21
+0EB4  5540CC03           [366] concat     1   7   305
+0EB8  1A800180           [367] jmp        7            ; to [375]
+0EBC  1DCF0200           [368] getglobal  60  11       ; Engine
+0EC0  0E8F4C1E           [369] gettable   60  60  306  ; 328784635
+0EC4  228F8000           [370] call       60  1   2  
+0EC8  184F0000           [371] test       60      1    ; to [373] if false
+0ECC  1A001180           [372] jmp        69           ; to [442]
+fail op	21
+0ED0  15C0CC03           [373] concat     0   7   307
+0ED4  1A801080           [374] jmp        67           ; to [442]
+0ED8  0B0F8002           [375] newtable   60  5   0    ; array=5, hash=0
+0EDC  590F0D00           [376] loadk      61  52       ; "/Lotus/Upgrades/Focus/Tactic/TacticFocusAbility"
+0EE0  994F0D00           [377] loadk      62  53       ; "/Lotus/Upgrades/Focus/Power/PowerFocusAbility"
+0EE4  D98F0D00           [378] loadk      63  54       ; "/Lotus/Upgrades/Focus/Defense/DefenseFocusAbility"
+0EE8  19D00D00           [379] loadk      64  55       ; "/Lotus/Upgrades/Focus/Ward/WardFocusAbility"
+0EEC  59100E00           [380] loadk      65  56       ; "/Lotus/Upgrades/Focus/Attack/AttackFocusAbility"
+0EF0  1B4F8002           [381] setlist    60  5   1    ; index 1 to 5
+0EF4  5D4F0E00           [382] getglobal  61  57       ; UISys
+0EF8  4E8FCE1E           [383] gettable   61  61  314  ; 1151030240
+0EFC  920F001E           [384] move       62  60     
+0F00  628F0001           [385] call       61  2   2  
+0F04  A4CFCE1E           [386] self       62  61  315  ; 1712703828
+0F08  A24F0001           [387] call       62  2   1  
+0F0C  998F0000           [388] loadk      62  2        ; 0
+0F10  D9CF0100           [389] loadk      63  7        ; 0
+0F14  0A10001E           [390] len        64  60     
+0F18  59D00100           [391] loadk      65  7        ; 0
+0F1C  D00F0980           [392] forprep    63  37       ; to [430]
+0F20  D9900000           [393] loadk      67  2        ; 0
+0F24  1D110F00           [394] getglobal  68  60       ; 2083004503
+0F28  4E91101E           [395] gettable   69  60  66 
+0F2C  22910001           [396] call       68  2   2  
+0F30  64514F22           [397] self       69  68  317  ; 1600812546
+0F34  E4914F02           [398] self       71  4   318  ; 51109503
+0F38  E2110001           [399] call       71  2   0  
+0F3C  62510000           [400] call       69  0   1  
+0F40  64D14F22           [401] self       69  68  319  ; 1258270838
+0F44  62910001           [402] call       69  2   2  
+0F48  A411D022           [403] self       70  69  320  ; 16191848
+0F4C  A2910001           [404] call       70  2   2  
+0F50  DD511000           [405] getglobal  71  65       ; 1672515847
+0F54  0E925023           [406] gettable   72  70  322  ; "nodes"
+0F58  E2110101           [407] call       71  2   4  
+0F5C  1AC00380           [408] jmp        16           ; to [425]
+0F60  0ED35023           [409] gettable   76  70  323  ; "nodeTypes"
+0F64  0E931226           [410] gettable   76  76  74 
+0F68  64135126           [411] self       77  76  324  ; -1957065004
+0F6C  DD531100           [412] getglobal  79  69       ; gLotusArtifactUpgradeType
+0F70  62938001           [413] call       77  3   2  
+0F74  58130000           [414] test       77      0    ; to [416] if true
+0F78  1A000280           [415] jmp        9            ; to [425]
+0F7C  64935102           [416] self       77  4   326  ; -589760911
+0F80  D2130026           [417] move       79  76     
+0F84  62938001           [418] call       77  3   2  
+0F88  9D930100           [419] getglobal  78  6        ; 1074689893
+0F8C  CE13C626           [420] gettable   79  77  280  ; "mItemType"
+0F90  A2930001           [421] call       78  2   2  
+0F94  98530000           [422] test       78      1    ; to [424] if false
+0F98  1A000080           [423] jmp        1            ; to [425]
+0F9C  C3D0C121           [424] add        67  67  263  ; 0
+0FA0  D6910000           [425] tforloop   71      2    ; to [427] if exit
+0FA4  1A40FB7F           [426] jmp        -18          ; to [409]
+fail op	21
+0FA8  15C0101F           [427] concat     0   62  67 
+0FAC  1A000080           [428] jmp        1            ; to [430]
+0FB0  920F8021           [429] move       62  67     
+0FB4  D44FF67F           [430] forloop    63  -38      ; to [393] if loop
+fail op	35
+0FB8  23C0511F           [431] close      0  
+0FBC  1A000080           [432] jmp        1            ; to [434]
+0FC0  83CF411F           [433] add        62  62  263  ; 0
+0FC4  9D930300           [434] getglobal  78  14       ; gChallengeMgr
+0FC8  A4934427           [435] self       78  78  274  ; 697616939
+0FCC  12148001           [436] move       80  3      
+0FD0  5DD40400           [437] getglobal  81  19       ; -332969190
+0FD4  99141200           [438] loadk      82  72       ; "FOCUS_TREE_UNLOCK_COUNT"
+0FD8  62940001           [439] call       81  2   2  
+0FDC  9214001F           [440] move       82  62     
+0FE0  A2538002           [441] call       78  5   1  
+0FE4  9DD30200           [442] getglobal  78  11       ; Engine
+0FE8  8E934C27           [443] gettable   78  78  306  ; 328784635
+0FEC  A2938000           [444] call       78  1   2  
+0FF0  98530000           [445] test       78      1    ; to [447] if false
+0FF4  1AC00680           [446] jmp        28           ; to [475]
+fail op	21
+0FF8  15C0CC03           [447] concat     0   7   307
+0FFC  1A400680           [448] jmp        26           ; to [475]
+1000  9D531200           [449] getglobal  78  73       ; 738251817
+1004  D9931200           [450] loadk      79  74       ; "/Lotus/Types/Keys/WarWithinQuest/WarWithinQuestKeyChain"
+1008  A2930001           [451] call       78  2   2  
+100C  E4D3D202           [452] self       79  5   331  ; 1885757497
+1010  E2930001           [453] call       79  2   2  
+1014  19D40100           [454] loadk      80  7        ; 0
+1018  4A148027           [455] len        81  79     
+101C  99D40100           [456] loadk      82  7        ; 0
+1020  10D40380           [457] forprep    80  16       ; to [474]
+1024  0ED59427           [458] gettable   84  79  83 
+1028  0E15462A           [459] gettable   84  84  280  ; "mItemType"
+fail op	35
+102C  2380132A           [460] close      0  
+1030  1AC00280           [461] jmp        12           ; to [474]
+1034  0ED59427           [462] gettable   84  79  83 
+1038  0E15532A           [463] gettable   84  84  332  ; "mCompleted"
+103C  18150000           [464] test       84      0    ; to [466] if true
+1040  1AC00180           [465] jmp        8            ; to [474]
+1044  1D950300           [466] getglobal  84  14       ; gChallengeMgr
+1048  2495492A           [467] self       84  84  294  ; 137898418
+104C  92158001           [468] move       86  3      
+1050  DDD50400           [469] getglobal  87  19       ; -332969190
+1054  19561300           [470] loadk      88  77       ; "WARWITHINQUESTKEYCHAIN_COMPLETED"
+1058  E2150001           [471] call       87  2   0  
+105C  22550000           [472] call       84  0   1  
+1060  1A000080           [473] jmp        1            ; to [475]
+1064  1494FB7F           [474] forloop    80  -17      ; to [458] if loop
+1068  1DD50200           [475] getglobal  84  11       ; Engine
+106C  0E15432A           [476] gettable   84  84  268  ; 1767719465
+1070  22958000           [477] call       84  1   2  
+1074  18150000           [478] test       84      0    ; to [480] if true
+1078  1A000180           [479] jmp        5            ; to [485]
+107C  24955302           [480] self       84  4   334  ; 1605836817
+1080  22550001           [481] call       84  2   1  
+1084  24D55302           [482] self       84  4   335  ; 207568169
+1088  22550001           [483] call       84  2   1  
+108C  1A000180           [484] jmp        5            ; to [490]
+1090  24155400           [485] self       84  0   336  ; 1467158696
+1094  92158000           [486] move       86  1      
+1098  D7150000           [487] loadbool   87  0   0    ; false
+109C  19561400           [488] loadk      88  81       ; "OnInitChallenges"
+10A0  22558002           [489] call       84  5   1  
+10A4  1E008000           [490] return     0   1      
+                         * constants:
+10A8  52                 sizek (82)
+10A9  04                 const type 4
+10AA  12                 string size (18)
+10AB  67506C6179657250+  "gPlayerP"
+10B3  726F66696C654D67+  "rofileMg"
+10BB  7200               "r\0"
+                         const [0]: "gPlayerProfileMgr"
+10BD  01                 const type 3
+10BE  1A7BEF21           const [1]: (569342746)
+10C2  03                 const type 3
+10C3  00000000           const [2]: (0)
+10C7  01                 const type 3
+10C8  56BD228E           const [3]: (-1910325930)
+10CC  04                 const type 4
+10CD  08                 string size (8)
+10CE  67526567696F6E00   "gRegion\0"
+                         const [4]: "gRegion"
+10D6  01                 const type 3
+10D7  BBFFABB3           const [5]: (-1280573509)
+10DB  01                 const type 3
+10DC  65770E40           const [6]: (1074689893)
+10E0  03                 const type 3
+10E1  0000803F           const [7]: (0)
+10E5  01                 const type 3
+10E6  92104F65           const [8]: (1699680402)
+10EA  01                 const type 3
+10EB  FD052E6F           const [9]: (1865287165)
+10EF  01                 const type 3
+10F0  AFEBF608           const [10]: (150399919)
+10F4  04                 const type 4
+10F5  07                 string size (7)
+10F6  456E67696E6500     "Engine\0"
+                         const [11]: "Engine"
+10FD  01                 const type 3
+10FE  29425D69           const [12]: (1767719465)
+1102  03                 const type 3
+1103  0000A040           const [13]: (0)
+1107  04                 const type 4
+1108  0E                 string size (14)
+1109  674368616C6C656E+  "gChallen"
+1111  67654D677200       "geMgr\0"
+                         const [14]: "gChallengeMgr"
+1117  01                 const type 3
+1118  C6AD572A           const [15]: (710389190)
+111C  04                 const type 4
+111D  21                 string size (33)
+111E  4368616C6C656E67+  "Challeng"
+1126  654D677242617365+  "eMgrBase"
+112E  5F4554535F524554+  "_ETS_RET"
+1136  524F414354495645+  "ROACTIVE"
+113E  00                 "\0"
+                         const [16]: "ChallengeMgrBase_ETS_RETROACTIVE"
+113F  01                 const type 3
+1140  65CEA6D3           const [17]: (-744042907)
+1144  01                 const type 3
+1145  2BCA9429           const [18]: (697616939)
+1149  01                 const type 3
+114A  1A4B27EC           const [19]: (-332969190)
+114E  04                 const type 4
+114F  10                 string size (16)
+1150  504F574552535549+  "POWERSUI"
+1158  545F434F554E5400   "T_COUNT\0"
+                         const [20]: "POWERSUIT_COUNT"
+1160  04                 const type 4
+1161  0C                 string size (12)
+1162  6747616D65436F6E+  "gGameCon"
+116A  66696700           "fig\0"
+                         const [21]: "gGameConfig"
+116E  01                 const type 3
+116F  BA668E9E           const [22]: (-1634834758)
+1173  04                 const type 4
+1174  04                 string size (4)
+1175  6D585000           "mXP\0"
+                         const [23]: "mXP"
+1179  04                 const type 4
+117A  0A                 string size (10)
+117B  6D4974656D547970+  "mItemTyp"
+1183  6500               "e\0"
+                         const [24]: "mItemType"
+1185  01                 const type 3
+1186  F7614BE0           const [25]: (-531930633)
+118A  01                 const type 3
+118B  7BAB19C1           const [26]: (-1055282309)
+118F  04                 const type 4
+1190  0F                 string size (15)
+1191  53454E54494E454C+  "SENTINEL"
+1199  5F434F554E5400     "_COUNT\0"
+                         const [27]: "SENTINEL_COUNT"
+11A0  01                 const type 3
+11A1  F6CE8524           const [28]: (612749046)
+11A5  01                 const type 3
+11A6  7067211D           const [29]: (488728432)
+11AA  01                 const type 3
+11AB  AE665D0B           const [30]: (190670510)
+11AF  01                 const type 3
+11B0  303D2AA8           const [31]: (-1473626832)
+11B4  04                 const type 4
+11B5  08                 string size (8)
+11B6  6D5850496E666F00   "mXPInfo\0"
+                         const [32]: "mXPInfo"
+11BE  04                 const type 4
+11BF  1C                 string size (28)
+11C0  4368616C6C656E67+  "Challeng"
+11C8  654D677242617365+  "eMgrBase"
+11D0  5F4554535F4E4F52+  "_ETS_NOR"
+11D8  4D414C00           "MAL\0"
+                         const [33]: "ChallengeMgrBase_ETS_NORMAL"
+11DC  01                 const type 3
+11DD  42515E48           const [34]: (1214140738)
+11E1  04                 const type 4
+11E2  07                 string size (7)
+11E3  6D5469746C6500     "mTitle\0"
+                         const [35]: "mTitle"
+11EA  04                 const type 4
+11EB  10                 string size (16)
+11EC  53594E4449434154+  "SYNDICAT"
+11F4  455F4C4556454C00   "E_LEVEL\0"
+                         const [36]: "SYNDICATE_LEVEL"
+11FC  01                 const type 3
+11FD  F3C33435           const [37]: (892650483)
+1201  01                 const type 3
+1202  B2293808           const [38]: (137898418)
+1206  04                 const type 4
+1207  14                 string size (20)
+1208  4547475F494E4355+  "EGG_INCU"
+1210  42415445445F5842+  "BATED_XB"
+1218  4F4E4500           "ONE\0"
+                         const [39]: "EGG_INCUBATED_XBONE"
+121C  01                 const type 3
+121D  87BD663A           const [40]: (979811719)
+1221  01                 const type 3
+1222  BF2710EC           const [41]: (-334485569)
+1226  01                 const type 3
+1227  1D03765D           const [42]: (1568015133)
+122B  01                 const type 3
+122C  227362B1           const [43]: (-1318948062)
+1230  01                 const type 3
+1231  10D5334E           const [44]: (1312019728)
+1235  04                 const type 4
+1236  18                 string size (24)
+1237  4D495353494F4E5F+  "MISSION_"
+123F  434F4D504C455445+  "COMPLETE"
+1247  5F4B5542524F5700   "_KUBROW\0"
+                         const [45]: "MISSION_COMPLETE_KUBROW"
+124F  01                 const type 3
+1250  B3549177           const [46]: (2006013107)
+1254  01                 const type 3
+1255  72058234           const [47]: (880936306)
+1259  04                 const type 4
+125A  1E                 string size (30)
+125B  4D495353494F4E5F+  "MISSION_"
+1263  434F4D504C455445+  "COMPLETE"
+126B  5F4B5542524F575F+  "_KUBROW_"
+1273  58424F4E4500       "XBONE\0"
+                         const [48]: "MISSION_COMPLETE_KUBROW_XBONE"
+1279  03                 const type 3
+127A  00000040           const [49]: (0)
+127E  01                 const type 3
+127F  FBDA9813           const [50]: (328784635)
+1283  03                 const type 3
+1284  0000C040           const [51]: (0)
+1288  04                 const type 4
+1289  30                 string size (48)
+128A  2F4C6F7475732F55+  "/Lotus/U"
+1292  706772616465732F+  "pgrades/"
+129A  466F6375732F5461+  "Focus/Ta"
+12A2  637469632F546163+  "ctic/Tac"
+12AA  746963466F637573+  "ticFocus"
+12B2  4162696C69747900   "Ability\0"
+                         const [52]: "/Lotus/Upgrades/Focus/Tactic/TacticFocusAbility"
+12BA  04                 const type 4
+12BB  2E                 string size (46)
+12BC  2F4C6F7475732F55+  "/Lotus/U"
+12C4  706772616465732F+  "pgrades/"
+12CC  466F6375732F506F+  "Focus/Po"
+12D4  7765722F506F7765+  "wer/Powe"
+12DC  72466F6375734162+  "rFocusAb"
+12E4  696C69747900       "ility\0"
+                         const [53]: "/Lotus/Upgrades/Focus/Power/PowerFocusAbility"
+12EA  04                 const type 4
+12EB  32                 string size (50)
+12EC  2F4C6F7475732F55+  "/Lotus/U"
+12F4  706772616465732F+  "pgrades/"
+12FC  466F6375732F4465+  "Focus/De"
+1304  66656E73652F4465+  "fense/De"
+130C  66656E7365466F63+  "fenseFoc"
+1314  75734162696C6974+  "usAbilit"
+131C  7900               "y\0"
+                         const [54]: "/Lotus/Upgrades/Focus/Defense/DefenseFocusAbility"
+131E  04                 const type 4
+131F  2C                 string size (44)
+1320  2F4C6F7475732F55+  "/Lotus/U"
+1328  706772616465732F+  "pgrades/"
+1330  466F6375732F5761+  "Focus/Wa"
+1338  72642F5761726446+  "rd/WardF"
+1340  6F6375734162696C+  "ocusAbil"
+1348  69747900           "ity\0"
+                         const [55]: "/Lotus/Upgrades/Focus/Ward/WardFocusAbility"
+134C  04                 const type 4
+134D  30                 string size (48)
+134E  2F4C6F7475732F55+  "/Lotus/U"
+1356  706772616465732F+  "pgrades/"
+135E  466F6375732F4174+  "Focus/At"
+1366  7461636B2F417474+  "tack/Att"
+136E  61636B466F637573+  "ackFocus"
+1376  4162696C69747900   "Ability\0"
+                         const [56]: "/Lotus/Upgrades/Focus/Attack/AttackFocusAbility"
+137E  04                 const type 4
+137F  06                 string size (6)
+1380  554953797300       "UISys\0"
+                         const [57]: "UISys"
+1386  01                 const type 3
+1387  E0539B44           const [58]: (1151030240)
+138B  01                 const type 3
+138C  54C91566           const [59]: (1712703828)
+1390  01                 const type 3
+1391  5720287C           const [60]: (2083004503)
+1395  01                 const type 3
+1396  02766A5F           const [61]: (1600812546)
+139A  01                 const type 3
+139B  7FDE0B03           const [62]: (51109503)
+139F  01                 const type 3
+13A0  76B0FF4A           const [63]: (1258270838)
+13A4  01                 const type 3
+13A5  6811F700           const [64]: (16191848)
+13A9  01                 const type 3
+13AA  0791B063           const [65]: (1672515847)
+13AE  04                 const type 4
+13AF  06                 string size (6)
+13B0  6E6F64657300       "nodes\0"
+                         const [66]: "nodes"
+13B6  04                 const type 4
+13B7  0A                 string size (10)
+13B8  6E6F646554797065+  "nodeType"
+13C0  7300               "s\0"
+                         const [67]: "nodeTypes"
+13C2  01                 const type 3
+13C3  D48E598B           const [68]: (-1957065004)
+13C7  04                 const type 4
+13C8  1A                 string size (26)
+13C9  674C6F7475734172+  "gLotusAr"
+13D1  7469666163745570+  "tifactUp"
+13D9  6772616465547970+  "gradeTyp"
+13E1  6500               "e\0"
+                         const [69]: "gLotusArtifactUpgradeType"
+13E3  01                 const type 3
+13E4  71F6D8DC           const [70]: (-589760911)
+13E8  03                 const type 3
+13E9  00002041           const [71]: (0)
+13ED  04                 const type 4
+13EE  18                 string size (24)
+13EF  464F4355535F5452+  "FOCUS_TR"
+13F7  45455F554E4C4F43+  "EE_UNLOC"
+13FF  4B5F434F554E5400   "K_COUNT\0"
+                         const [72]: "FOCUS_TREE_UNLOCK_COUNT"
+1407  01                 const type 3
+1408  29D4002C           const [73]: (738251817)
+140C  04                 const type 4
+140D  38                 string size (56)
+140E  2F4C6F7475732F54+  "/Lotus/T"
+1416  797065732F4B6579+  "ypes/Key"
+141E  732F576172576974+  "s/WarWit"
+1426  68696E5175657374+  "hinQuest"
+142E  2F57617257697468+  "/WarWith"
+1436  696E51756573744B+  "inQuestK"
+143E  6579436861696E00   "eyChain\0"
+                         const [74]: "/Lotus/Types/Keys/WarWithinQuest/WarWithinQuestKeyChain"
+1446  01                 const type 3
+1447  39606670           const [75]: (1885757497)
+144B  04                 const type 4
+144C  0B                 string size (11)
+144D  6D436F6D706C6574+  "mComplet"
+1455  656400             "ed\0"
+                         const [76]: "mCompleted"
+1458  04                 const type 4
+1459  21                 string size (33)
+145A  5741525749544849+  "WARWITHI"
+1462  4E51554553544B45+  "NQUESTKE"
+146A  59434841494E5F43+  "YCHAIN_C"
+1472  4F4D504C45544544+  "OMPLETED"
+147A  00                 "\0"
+                         const [77]: "WARWITHINQUESTKEYCHAIN_COMPLETED"
+147B  01                 const type 3
+147C  1120B75F           const [78]: (1605836817)
+1480  01                 const type 3
+1481  293D5F0C           const [79]: (207568169)
+1485  01                 const type 3
+1486  A8107357           const [80]: (1467158696)
+148A  04                 const type 4
+148B  11                 string size (17)
+148C  4F6E496E69744368+  "OnInitCh"
+1494  616C6C656E676573+  "allenges"
+149C  00                 "\0"
+                         const [81]: "OnInitChallenges"
+                         * functions:
+149D  00                 sizep (0)
+                         * lines:
+149F  03                 sizelineinfo (490)
+                         [pc] (line)
+14A0  5E                 [001] (94)
+14A1  00                 [002] (94)
+14A2  00                 [003] (94)
+14A3  00                 [004] (94)
+14A4  5E                 [005] (96)
+14A5  00                 [006] (96)
+14A6  00                 [007] (98)
+14A7  00                 [008] (98)
+14A8  5E                 [009] (98)
+14A9  00                 [010] (99)
+14AA  00                 [011] (99)
+14AB  00                 [012] (99)
+14AC  5E                 [013] (99)
+14AD  00                 [014] (99)
+14AE  00                 [015] (99)
+14AF  00                 [016] (99)
+14B0  60                 [017] (99)
+14B1  00                 [018] (100)
+14B2  00                 [019] (102)
+14B3  00                 [020] (104)
+14B4  60                 [021] (104)
+14B5  00                 [022] (105)
+14B6  00                 [023] (105)
+14B7  00                 [024] (107)
+14B8  62                 [025] (109)
+14B9  00                 [026] (109)
+14BA  00                 [027] (112)
+14BB  00                 [028] (112)
+14BC  62                 [029] (112)
+14BD  00                 [030] (112)
+14BE  00                 [031] (112)
+14BF  00                 [032] (112)
+14C0  62                 [033] (112)
+14C1  00                 [034] (113)
+14C2  00                 [035] (116)
+14C3  00                 [036] (116)
+14C4  63                 [037] (116)
+14C5  00                 [038] (116)
+14C6  00                 [039] (118)
+14C7  00                 [040] (118)
+14C8  63                 [041] (118)
+14C9  00                 [042] (118)
+14CA  00                 [043] (118)
+14CB  00                 [044] (118)
+14CC  63                 [045] (118)
+14CD  00                 [046] (119)
+14CE  00                 [047] (122)
+14CF  00                 [048] (122)
+14D0  63                 [049] (123)
+14D1  00                 [050] (123)
+14D2  00                 [051] (123)
+14D3  00                 [052] (123)
+14D4  63                 [053] (123)
+14D5  00                 [054] (125)
+14D6  00                 [055] (125)
+14D7  00                 [056] (126)
+14D8  63                 [057] (126)
+14D9  00                 [058] (126)
+14DA  00                 [059] (126)
+14DB  00                 [060] (126)
+14DC  63                 [061] (127)
+14DD  00                 [062] (127)
+14DE  00                 [063] (127)
+14DF  00                 [064] (127)
+14E0  63                 [065] (127)
+14E1  00                 [066] (127)
+14E2  00                 [067] (127)
+14E3  00                 [068] (127)
+14E4  64                 [069] (-128)
+14E5  00                 [070] (-128)
+14E6  00                 [071] (-128)
+14E7  00                 [072] (-128)
+14E8  66                 [073] (-127)
+14E9  00                 [074] (-127)
+14EA  00                 [075] (-127)
+14EB  00                 [076] (-127)
+14EC  68                 [077] (-127)
+14ED  00                 [078] (-127)
+14EE  00                 [079] (-127)
+14EF  00                 [080] (-127)
+14F0  68                 [081] (-126)
+14F1  00                 [082] (-126)
+14F2  00                 [083] (-126)
+14F3  00                 [084] (-126)
+14F4  69                 [085] (-126)
+14F5  00                 [086] (-126)
+14F6  00                 [087] (-126)
+14F7  00                 [088] (-128)
+14F8  69                 [089] (-122)
+14F9  00                 [090] (-122)
+14FA  00                 [091] (-121)
+14FB  00                 [092] (-121)
+14FC  6B                 [093] (-121)
+14FD  00                 [094] (-121)
+14FE  00                 [095] (-121)
+14FF  00                 [096] (-120)
+1500  6D                 [097] (-120)
+1501  00                 [098] (-120)
+1502  00                 [099] (-120)
+1503  00                 [100] (-120)
+1504  6D                 [101] (-120)
+1505  00                 [102] (-120)
+1506  00                 [103] (-120)
+1507  00                 [104] (-119)
+1508  70                 [105] (-119)
+1509  00                 [106] (-119)
+150A  00                 [107] (-119)
+150B  00                 [108] (-118)
+150C  70                 [109] (-118)
+150D  00                 [110] (-118)
+150E  00                 [111] (-118)
+150F  00                 [112] (-118)
+1510  70                 [113] (-118)
+1511  00                 [114] (-118)
+1512  00                 [115] (-118)
+1513  00                 [116] (-117)
+1514  70                 [117] (-117)
+1515  00                 [118] (-117)
+1516  00                 [119] (-117)
+1517  00                 [120] (-117)
+1518  70                 [121] (-117)
+1519  00                 [122] (-117)
+151A  00                 [123] (-119)
+151B  00                 [124] (-113)
+151C  70                 [125] (-113)
+151D  00                 [126] (-112)
+151E  00                 [127] (-112)
+151F  00                 [128] (-112)
+1520  70                 [129] (-112)
+1521  00                 [130] (-112)
+1522  00                 [131] (-111)
+1523  00                 [132] (-111)
+1524  71                 [133] (-111)
+1525  00                 [134] (-111)
+1526  00                 [135] (-110)
+1527  00                 [136] (-110)
+1528  74                 [137] (-110)
+1529  00                 [138] (-110)
+152A  00                 [139] (-110)
+152B  00                 [140] (-110)
+152C  74                 [141] (-110)
+152D  00                 [142] (-110)
+152E  00                 [143] (-109)
+152F  00                 [144] (-109)
+1530  74                 [145] (-109)
+1531  00                 [146] (-109)
+1532  00                 [147] (-109)
+1533  00                 [148] (-109)
+1534  74                 [149] (-109)
+1535  00                 [150] (-111)
+1536  00                 [151] (-105)
+1537  00                 [152] (-105)
+1538  76                 [153] (-104)
+1539  00                 [154] (-104)
+153A  00                 [155] (-104)
+153B  00                 [156] (-104)
+153C  76                 [157] (-104)
+153D  00                 [158] (-103)
+153E  00                 [159] (-103)
+153F  00                 [160] (-103)
+1540  76                 [161] (-103)
+1541  00                 [162] (-102)
+1542  00                 [163] (-102)
+1543  00                 [164] (-102)
+1544  76                 [165] (-102)
+1545  00                 [166] (-102)
+1546  00                 [167] (-102)
+1547  00                 [168] (-102)
+1548  76                 [169] (-102)
+1549  00                 [170] (-101)
+154A  00                 [171] (-101)
+154B  00                 [172] (-101)
+154C  76                 [173] (-101)
+154D  00                 [174] (-101)
+154E  00                 [175] (-101)
+154F  00                 [176] (-101)
+1550  76                 [177] (-103)
+1551  00                 [178] (-97)
+1552  00                 [179] (-97)
+1553  00                 [180] (-96)
+1554  77                 [181] (-96)
+1555  00                 [182] (-96)
+1556  00                 [183] (-96)
+1557  00                 [184] (-96)
+1558  7A                 [185] (-95)
+1559  00                 [186] (-95)
+155A  00                 [187] (-95)
+155B  00                 [188] (-95)
+155C  7A                 [189] (-94)
+155D  00                 [190] (-94)
+155E  00                 [191] (-94)
+155F  00                 [192] (-94)
+1560  7B                 [193] (-94)
+1561  00                 [194] (-94)
+1562  00                 [195] (-94)
+1563  00                 [196] (-94)
+1564  7B                 [197] (-93)
+1565  00                 [198] (-93)
+1566  00                 [199] (-93)
+1567  00                 [200] (-93)
+1568  7B                 [201] (-93)
+1569  00                 [202] (-93)
+156A  00                 [203] (-93)
+156B  00                 [204] (-95)
+156C  7B                 [205] (-89)
+156D  00                 [206] (-89)
+156E  00                 [207] (-88)
+156F  00                 [208] (-88)
+1570  7B                 [209] (-88)
+1571  00                 [210] (-88)
+1572  00                 [211] (-88)
+1573  00                 [212] (-87)
+1574  7D                 [213] (-87)
+1575  00                 [214] (-87)
+1576  00                 [215] (-87)
+1577  00                 [216] (-86)
+1578  7D                 [217] (-86)
+1579  00                 [218] (-86)
+157A  00                 [219] (-86)
+157B  00                 [220] (-86)
+157C  7E                 [221] (-86)
+157D  00                 [222] (-86)
+157E  00                 [223] (-86)
+157F  00                 [224] (-85)
+1580  7E                 [225] (-85)
+1581  00                 [226] (-85)
+1582  00                 [227] (-85)
+1583  00                 [228] (-85)
+1584  7E                 [229] (-85)
+1585  00                 [230] (-85)
+1586  00                 [231] (-87)
+1587  00                 [232] (-81)
+1588  7E                 [233] (-80)
+1589  00                 [234] (-80)
+158A  00                 [235] (-80)
+158B  00                 [236] (-80)
+158C  7E                 [237] (-80)
+158D  00                 [238] (-79)
+158E  00                 [239] (-79)
+158F  00                 [240] (-79)
+1590  7F                 [241] (-79)
+1591  00                 [242] (-78)
+1592  00                 [243] (-78)
+1593  00                 [244] (-78)
+1594  7F                 [245] (-78)
+1595  00                 [246] (-78)
+1596  00                 [247] (-78)
+1597  00                 [248] (-78)
+1598  7F                 [249] (-78)
+1599  00                 [250] (-77)
+159A  00                 [251] (-77)
+159B  00                 [252] (-77)
+159C  7F                 [253] (-77)
+159D  00                 [254] (-77)
+159E  00                 [255] (-77)
+159F  00                 [256] (-77)
+15A0  7F                 [257] (-79)
+15A1  00                 [258] (-73)
+15A2  00                 [259] (-73)
+15A3  00                 [260] (-73)
+15A4  7F                 [261] (-73)
+15A5  00                 [262] (-73)
+15A6  00                 [263] (-70)
+15A7  00                 [264] (-70)
+15A8  7F                 [265] (-70)
+15A9  00                 [266] (-70)
+15AA  00                 [267] (-70)
+15AB  00                 [268] (-70)
+15AC  7F                 [269] (-70)
+15AD  00                 [270] (-69)
+15AE  00                 [271] (-69)
+15AF  00                 [272] (-68)
+15B0  80                 [273] (-68)
+15B1  00                 [274] (-68)
+15B2  00                 [275] (-68)
+15B3  00                 [276] (-68)
+15B4  80                 [277] (-67)
+15B5  00                 [278] (-67)
+15B6  00                 [279] (-67)
+15B7  00                 [280] (-67)
+15B8  80                 [281] (-66)
+15B9  00                 [282] (-66)
+15BA  00                 [283] (-65)
+15BB  00                 [284] (-65)
+15BC  80                 [285] (-64)
+15BD  00                 [286] (-64)
+15BE  00                 [287] (-64)
+15BF  00                 [288] (-64)
+15C0  81                 [289] (-64)
+15C1  00                 [290] (-64)
+15C2  00                 [291] (-64)
+15C3  00                 [292] (-64)
+15C4  81                 [293] (-67)
+15C5  00                 [294] (-59)
+15C6  00                 [295] (-59)
+15C7  00                 [296] (-58)
+15C8  81                 [297] (-58)
+15C9  00                 [298] (-58)
+15CA  00                 [299] (-58)
+15CB  00                 [300] (-58)
+15CC  81                 [301] (-58)
+15CD  00                 [302] (-58)
+15CE  00                 [303] (-58)
+15CF  00                 [304] (-57)
+15D0  81                 [305] (-57)
+15D1  00                 [306] (-57)
+15D2  00                 [307] (-57)
+15D3  00                 [308] (-57)
+15D4  81                 [309] (-57)
+15D5  00                 [310] (-57)
+15D6  00                 [311] (-54)
+15D7  00                 [312] (-54)
+15D8  81                 [313] (-54)
+15D9  00                 [314] (-53)
+15DA  00                 [315] (-52)
+15DB  00                 [316] (-52)
+15DC  81                 [317] (-52)
+15DD  00                 [318] (-52)
+15DE  00                 [319] (-51)
+15DF  00                 [320] (-51)
+15E0  82                 [321] (-51)
+15E1  00                 [322] (-51)
+15E2  00                 [323] (-51)
+15E3  00                 [324] (-50)
+15E4  82                 [325] (-50)
+15E5  00                 [326] (-50)
+15E6  00                 [327] (-50)
+15E7  00                 [328] (-50)
+15E8  82                 [329] (-50)
+15E9  00                 [330] (-50)
+15EA  00                 [331] (-50)
+15EB  00                 [332] (-50)
+15EC  82                 [333] (-50)
+15ED  00                 [334] (-50)
+15EE  00                 [335] (-50)
+15EF  00                 [336] (-50)
+15F0  82                 [337] (-49)
+15F1  00                 [338] (-49)
+15F2  00                 [339] (-49)
+15F3  00                 [340] (-49)
+15F4  82                 [341] (-49)
+15F5  00                 [342] (-49)
+15F6  00                 [343] (-49)
+15F7  00                 [344] (-48)
+15F8  82                 [345] (-48)
+15F9  00                 [346] (-48)
+15FA  00                 [347] (-48)
+15FB  00                 [348] (-48)
+15FC  80                 [349] (-48)
+15FD  00                 [350] (-48)
+15FE  00                 [351] (-48)
+15FF  00                 [352] (-47)
+1600  86                 [353] (-47)
+1601  00                 [354] (-47)
+1602  00                 [355] (-47)
+1603  00                 [356] (-47)
+1604  86                 [357] (-47)
+1605  00                 [358] (-47)
+1606  00                 [359] (-48)
+1607  00                 [360] (-52)
+1608  87                 [361] (-40)
+1609  00                 [362] (-40)
+160A  00                 [363] (-40)
+160B  00                 [364] (-40)
+160C  87                 [365] (-40)
+160D  00                 [366] (-40)
+160E  00                 [367] (-40)
+160F  00                 [368] (-40)
+1610  87                 [369] (-40)
+1611  00                 [370] (-40)
+1612  00                 [371] (-40)
+1613  00                 [372] (-40)
+1614  87                 [373] (-40)
+1615  00                 [374] (-40)
+1616  00                 [375] (-38)
+1617  00                 [376] (-36)
+1618  87                 [377] (-35)
+1619  00                 [378] (-34)
+161A  00                 [379] (-33)
+161B  00                 [380] (-31)
+161C  88                 [381] (-31)
+161D  00                 [382] (-29)
+161E  00                 [383] (-29)
+161F  00                 [384] (-29)
+1620  88                 [385] (-29)
+1621  00                 [386] (-28)
+1622  00                 [387] (-28)
+1623  00                 [388] (-26)
+1624  88                 [389] (-24)
+1625  00                 [390] (-24)
+1626  00                 [391] (-24)
+1627  00                 [392] (-24)
+1628  88                 [393] (-23)
+1629  00                 [394] (-22)
+162A  00                 [395] (-22)
+162B  00                 [396] (-22)
+162C  88                 [397] (-21)
+162D  00                 [398] (-21)
+162E  00                 [399] (-21)
+162F  00                 [400] (-21)
+1630  88                 [401] (-20)
+1631  00                 [402] (-20)
+1632  00                 [403] (-19)
+1633  00                 [404] (-19)
+1634  88                 [405] (-17)
+1635  00                 [406] (-17)
+1636  00                 [407] (-17)
+1637  00                 [408] (-17)
+1638  88                 [409] (-16)
+1639  00                 [410] (-16)
+163A  00                 [411] (-15)
+163B  00                 [412] (-15)
+163C  89                 [413] (-15)
+163D  00                 [414] (-15)
+163E  00                 [415] (-15)
+163F  00                 [416] (-14)
+1640  89                 [417] (-14)
+1641  00                 [418] (-14)
+1642  00                 [419] (-13)
+1643  00                 [420] (-13)
+1644  89                 [421] (-13)
+1645  00                 [422] (-13)
+1646  00                 [423] (-13)
+1647  00                 [424] (-12)
+1648  89                 [425] (-17)
+1649  00                 [426] (-10)
+164A  00                 [427] (-7)
+164B  00                 [428] (-7)
+164C  8A                 [429] (-6)
+164D  00                 [430] (-24)
+164E  00                 [431] (-2)
+164F  00                 [432] (-2)
+1650  8A                 [433] (0)
+1651  00                 [434] (3)
+1652  00                 [435] (3)
+1653  00                 [436] (3)
+1654  8A                 [437] (3)
+1655  00                 [438] (3)
+1656  00                 [439] (3)
+1657  00                 [440] (3)
+1658  8A                 [441] (3)
+1659  00                 [442] (6)
+165A  00                 [443] (6)
+165B  00                 [444] (6)
+165C  8A                 [445] (6)
+165D  00                 [446] (6)
+165E  00                 [447] (6)
+165F  00                 [448] (6)
+1660  8A                 [449] (8)
+1661  00                 [450] (8)
+1662  00                 [451] (8)
+1663  00                 [452] (9)
+1664  8A                 [453] (9)
+1665  00                 [454] (10)
+1666  00                 [455] (10)
+1667  00                 [456] (10)
+1668  8A                 [457] (10)
+1669  00                 [458] (11)
+166A  00                 [459] (11)
+166B  00                 [460] (11)
+166C  8B                 [461] (11)
+166D  00                 [462] (11)
+166E  00                 [463] (11)
+166F  00                 [464] (11)
+1670  8B                 [465] (11)
+1671  00                 [466] (12)
+1672  00                 [467] (12)
+1673  00                 [468] (12)
+1674  8B                 [469] (12)
+1675  00                 [470] (12)
+1676  00                 [471] (12)
+1677  00                 [472] (12)
+1678  8B                 [473] (13)
+1679  00                 [474] (10)
+167A  00                 [475] (18)
+167B  00                 [476] (18)
+167C  8B                 [477] (18)
+167D  00                 [478] (18)
+167E  00                 [479] (18)
+167F  00                 [480] (19)
+1680  8B                 [481] (19)
+1681  00                 [482] (20)
+1682  00                 [483] (20)
+1683  00                 [484] (20)
+1684  8B                 [485] (22)
+1685  00                 [486] (22)
+1686  00                 [487] (22)
+1687  00                 [488] (22)
+1688  89                 [489] (22)
+1689  00                 [490] (25)
+                         * locals:
+1C48  00                 sizelocvars (0)
+                         * upvalues:
+1C49  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+1C4A                     ** function [3] definition (level 2)
+                         ** start of function **
+1C4A  00                 string size (0)
+                         source name: (none)
+1C4C  02                 line defined (283)
+1C4D  9D                 last line defined (285)
+1C4E  02                 nups (1)
+1C4F  01                 numparams (1)
+1C50  01                 is_vararg (0)
+1C51  00                 maxstacksize (3)
+                         * code:
+1C53  04                 sizecode (4)
+1C54  53000000           [1] getupval   1   0      
+1C58  92000000           [2] move       2   0      
+1C5C  62400001           [3] call       1   2   1  
+1C60  1E008000           [4] return     0   1      
+                         * constants:
+1C64  00                 sizek (0)
+                         * functions:
+1C65  00                 sizep (0)
+                         * lines:
+1C66  04                 sizelineinfo (4)
+                         [pc] (line)
+1C67  1C                 [1] (28)
+1C68  01                 [2] (28)
+1C69  00                 [3] (28)
+1C6A  00                 [4] (29)
+                         * locals:
+1C77  00                 sizelocvars (0)
+                         * upvalues:
+1C78  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+1C79                     ** function [4] definition (level 2)
+                         ** start of function **
+1C79  00                 string size (0)
+                         source name: (none)
+1C7B  02                 line defined (287)
+1C7C  A1                 last line defined (289)
+1C7D  02                 nups (1)
+1C7E  01                 numparams (0)
+1C7F  00                 is_vararg (0)
+1C80  00                 maxstacksize (2)
+                         * code:
+1C82  03                 sizecode (3)
+1C83  13000000           [1] getupval   0   0      
+1C87  22408000           [2] call       0   1   1  
+1C8B  1E008000           [3] return     0   1      
+                         * constants:
+1C8F  00                 sizek (0)
+                         * functions:
+1C90  00                 sizep (0)
+                         * lines:
+1C91  03                 sizelineinfo (3)
+                         [pc] (line)
+1C92  20                 [1] (32)
+1C93  01                 [2] (32)
+1C94  00                 [3] (33)
+                         * locals:
+1C9E  00                 sizelocvars (0)
+                         * upvalues:
+1C9F  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+1CA0  12                 sizelineinfo (18)
+                         [pc] (line)
+1CA1  01                 [01] (1)
+1CA2  00                 [02] (1)
+1CA3  00                 [03] (1)
+1CA4  00                 [04] (1)
+1CA5  01                 [05] (1)
+1CA6  00                 [06] (14)
+1CA7  00                 [07] (88)
+1CA8  00                 [08] (88)
+1CA9  01                 [09] (25)
+1CAA  00                 [10] (29)
+1CAB  00                 [11] (29)
+1CAC  00                 [12] (29)
+1CAD  01                 [13] (27)
+1CAE  00                 [14] (33)
+1CAF  00                 [15] (33)
+1CB0  00                 [16] (33)
+1CB1  01                 [17] (31)
+1CB2  00                 [18] (33)
+                         * locals:
+1CE9  00                 sizelocvars (0)
+                         * upvalues:
+1CEA  00                 sizeupvalues (0)
+                         ** end of function **
+
+1CEB                     ** end of chunk **

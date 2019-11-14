@@ -1,0 +1,1037 @@
+1	C:\wlua_dump\path\Lotus\ScriptsApplyOperatorCustomization.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\ScriptsApplyOperatorCustomization.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  07                 size of number (bytes)
+0008  25                 integral (1=integral)
+437
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+BattleBegins
+BattleConcluded
+Lotus.Interface.LotusUtilities
+Lotus.Interface.TransmissionUtilities
+Lotus.Powersuits.Operator.OperatorLib
+DynMusicStateChanged
+ApplyOperatorCustomization
+ApplyOperatorCustomizationAndRemoveHood
+ApplyCustomizationAndUpdate
+gRegion
+gPlayerProfileMgr
+string
+Combat
+Fallback
+Combat -> idle
+Idle -> combat
+gRegion
+setInvisibleOnSpawn
+operatorTransferenceInFx
+EMPTY_SYMBOL
+warframeToOperatorFx
+_T
+spawningOperator
+UI_MODE_IN_GAME
+MusicStateChangeRegistered
+gGameRules
+DynMusicStateChanged
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  07                 maxstacksize (7)
+                         * code:
+0008  25                 sizecode (37)
+0009  1D000000           [01] getglobal  0   0        ; -332969190
+000D  59400000           [02] loadk      1   1        ; "BattleBegins"
+0011  22800001           [03] call       0   2   2  
+0015  5D000000           [04] getglobal  1   0        ; -332969190
+0019  99800000           [05] loadk      2   2        ; "BattleConcluded"
+001D  62800001           [06] call       1   2   2  
+0021  9DC00000           [07] getglobal  2   3        ; 849075268
+0025  D9000100           [08] loadk      3   4        ; "Lotus.Interface.LotusUtilities"
+0029  A2800001           [09] call       2   2   2  
+002D  DDC00000           [10] getglobal  3   3        ; 849075268
+0031  19410100           [11] loadk      4   5        ; "Lotus.Interface.TransmissionUtilities"
+0035  E2800001           [12] call       3   2   2  
+0039  1DC10000           [13] getglobal  4   3        ; 849075268
+003D  59810100           [14] loadk      5   6        ; "Lotus.Powersuits.Operator.OperatorLib"
+0041  22810001           [15] call       4   2   2  
+0045  65010000           [16] closure    5   0      
+0049  12008001           [17] move       0   3      
+004D  12008000           [18] move       0   1      
+0051  12000000           [19] move       0   0      
+0055  60C10100           [20] setglobal  5   7        ; DynMusicStateChanged
+0059  60010200           [21] setglobal  5   8        ; 1928266334
+005D  65410000           [22] closure    5   1      
+0061  12000002           [23] move       0   4      
+0065  A5810000           [24] closure    6   2      
+0069  12000002           [25] move       0   4      
+006D  A0410200           [26] setglobal  6   9        ; ApplyOperatorCustomization
+0071  A0810200           [27] setglobal  6   10       ; 2065819395
+0075  A5C10000           [28] closure    6   3      
+0079  12000002           [29] move       0   4      
+007D  A0C10200           [30] setglobal  6   11       ; ApplyOperatorCustomizationAndRemoveHood
+0081  A0010300           [31] setglobal  6   12       ; 1207598343
+0085  A5010100           [32] closure    6   4      
+0089  12008002           [33] move       0   5      
+008D  12000001           [34] move       0   2      
+0091  A0410300           [35] setglobal  6   13       ; ApplyCustomizationAndUpdate
+0095  A0810300           [36] setglobal  6   14       ; 1891008739
+0099  1E008000           [37] return     0   1      
+                         * constants:
+009D  0F                 sizek (15)
+009E  01                 const type 3
+009F  1A4B27EC           const [0]: (-332969190)
+00A3  04                 const type 4
+00A4  0D                 string size (13)
+00A5  426174746C654265+  "BattleBe"
+00AD  67696E7300         "gins\0"
+                         const [1]: "BattleBegins"
+00B2  04                 const type 4
+00B3  10                 string size (16)
+00B4  426174746C65436F+  "BattleCo"
+00BC  6E636C7564656400   "ncluded\0"
+                         const [2]: "BattleConcluded"
+00C4  01                 const type 3
+00C5  44DC9B32           const [3]: (849075268)
+00C9  04                 const type 4
+00CA  1F                 string size (31)
+00CB  4C6F7475732E496E+  "Lotus.In"
+00D3  746572666163652E+  "terface."
+00DB  4C6F747573557469+  "LotusUti"
+00E3  6C697469657300     "lities\0"
+                         const [4]: "Lotus.Interface.LotusUtilities"
+00EA  04                 const type 4
+00EB  26                 string size (38)
+00EC  4C6F7475732E496E+  "Lotus.In"
+00F4  746572666163652E+  "terface."
+00FC  5472616E736D6973+  "Transmis"
+0104  73696F6E5574696C+  "sionUtil"
+010C  697469657300       "ities\0"
+                         const [5]: "Lotus.Interface.TransmissionUtilities"
+0112  04                 const type 4
+0113  26                 string size (38)
+0114  4C6F7475732E506F+  "Lotus.Po"
+011C  7765727375697473+  "wersuits"
+0124  2E4F70657261746F+  ".Operato"
+012C  722E4F7065726174+  "r.Operat"
+0134  6F724C696200       "orLib\0"
+                         const [6]: "Lotus.Powersuits.Operator.OperatorLib"
+013A  04                 const type 4
+013B  15                 string size (21)
+013C  44796E4D75736963+  "DynMusic"
+0144  5374617465436861+  "StateCha"
+014C  6E67656400         "nged\0"
+                         const [7]: "DynMusicStateChanged"
+0151  01                 const type 3
+0152  5E02EF72           const [8]: (1928266334)
+0156  04                 const type 4
+0157  1B                 string size (27)
+0158  4170706C794F7065+  "ApplyOpe"
+0160  7261746F72437573+  "ratorCus"
+0168  746F6D697A617469+  "tomizati"
+0170  6F6E00             "on\0"
+                         const [9]: "ApplyOperatorCustomization"
+0173  01                 const type 3
+0174  03E7217B           const [10]: (2065819395)
+0178  04                 const type 4
+0179  28                 string size (40)
+017A  4170706C794F7065+  "ApplyOpe"
+0182  7261746F72437573+  "ratorCus"
+018A  746F6D697A617469+  "tomizati"
+0192  6F6E416E6452656D+  "onAndRem"
+019A  6F7665486F6F6400   "oveHood\0"
+                         const [11]: "ApplyOperatorCustomizationAndRemoveHood"
+01A2  01                 const type 3
+01A3  077DFA47           const [12]: (1207598343)
+01A7  04                 const type 4
+01A8  1C                 string size (28)
+01A9  4170706C79437573+  "ApplyCus"
+01B1  746F6D697A617469+  "tomizati"
+01B9  6F6E416E64557064+  "onAndUpd"
+01C1  61746500           "ate\0"
+                         const [13]: "ApplyCustomizationAndUpdate"
+01C5  01                 const type 3
+01C6  E380B670           const [14]: (1891008739)
+                         * functions:
+01CA  05                 sizep (5)
+                         
+01CB                     ** function [0] definition (level 2)
+                         ** start of function **
+01CB  00                 string size (0)
+                         source name: (none)
+01CC  0C                 line defined (12)
+01CD  2D                 last line defined (45)
+01CE  03                 nups (3)
+01CF  02                 numparams (2)
+01D0  00                 is_vararg (0)
+01D1  0E                 maxstacksize (14)
+                         * code:
+01D2  64                 sizecode (100)
+01D3  9D000000           [001] getglobal  2   0        ; gRegion
+01D7  A4404001           [002] self       2   2   257  ; 65205951
+01DB  A2800001           [003] call       2   2   2  
+01DF  DD800000           [004] getglobal  3   2        ; 1074689893
+01E3  12010001           [005] move       4   2      
+01E7  E2800001           [006] call       3   2   2  
+01EB  D8000000           [007] test       3       0    ; to [9] if true
+01EF  1A000080           [008] jmp        1            ; to [10]
+01F3  1E008000           [009] return     0   1      
+01F7  C6008001           [010] loadnil    3   3      
+01FB  1D810000           [011] getglobal  4   2        ; 1074689893
+01FF  5DC10000           [012] getglobal  5   3        ; gPlayerProfileMgr
+0203  6401C102           [013] self       5   5   260  ; 569342746
+0207  D9410100           [014] loadk      7   5        ; 0
+020B  62018001           [015] call       5   3   0  
+020F  22810000           [016] call       4   0   2  
+0213  18410000           [017] test       4       1    ; to [19] if false
+0217  1AC00180           [018] jmp        8            ; to [27]
+021B  1DC10000           [019] getglobal  4   3        ; gPlayerProfileMgr
+021F  24014102           [020] self       4   4   260  ; 569342746
+0223  99410100           [021] loadk      6   5        ; 0
+0227  22818001           [022] call       4   3   2  
+022B  24814102           [023] self       4   4   262  ; 1699680402
+022F  22810001           [024] call       4   2   2  
+0233  D2000002           [025] move       3   4      
+0237  1A000080           [026] jmp        1            ; to [28]
+023B  1E008000           [027] return     0   1      
+023F  1DC10100           [028] getglobal  4   7        ; string
+0243  0E014202           [029] gettable   4   4   264  ; -565905820
+0247  52010000           [030] move       5   0      
+024B  99410200           [031] loadk      6   9        ; "Combat"
+024F  22818001           [032] call       4   3   2  
+fail op	35
+0253  63804202           [033] close      1  
+0257  1A800180           [034] jmp        7            ; to [42]
+025B  1DC10100           [035] getglobal  4   7        ; string
+025F  0E014202           [036] gettable   4   4   264  ; -565905820
+0263  52018000           [037] move       5   1      
+0267  99C10200           [038] loadk      6   11       ; "Fallback"
+026B  22818001           [039] call       4   3   2  
+fail op	35
+026F  63804202           [040] close      1  
+0273  1A000080           [041] jmp        1            ; to [43]
+0277  17410000           [042] loadbool   4   0   1    ; false, to [44]
+027B  17018000           [043] loadbool   4   1   0    ; true
+027F  5DC10100           [044] getglobal  5   7        ; string
+0283  4E01C202           [045] gettable   5   5   264  ; -565905820
+0287  92018000           [046] move       6   1      
+028B  D9410200           [047] loadk      7   9        ; "Combat"
+028F  62818001           [048] call       5   3   2  
+fail op	35
+0293  6380C202           [049] close      1  
+0297  1A800180           [050] jmp        7            ; to [58]
+029B  5DC10100           [051] getglobal  5   7        ; string
+029F  4E01C202           [052] gettable   5   5   264  ; -565905820
+02A3  92018000           [053] move       6   1      
+02A7  D9C10200           [054] loadk      7   11       ; "Fallback"
+02AB  62818001           [055] call       5   3   2  
+fail op	35
+02AF  6380C202           [056] close      1  
+02B3  1A000080           [057] jmp        1            ; to [59]
+02B7  57410000           [058] loadbool   5   0   1    ; false, to [60]
+02BB  57018000           [059] loadbool   5   1   0    ; true
+fail op	9
+02BF  89010002           [060] settable   6   4   0  
+fail op	9
+02C3  C9018002           [061] settable   7   5   0  
+02C7  06020004           [062] loadnil    8   8      
+02CB  18010000           [063] test       4       0    ; to [65] if true
+02CF  1A000380           [064] jmp        13           ; to [78]
+02D3  D8010000           [065] test       7       0    ; to [67] if true
+02D7  1A800280           [066] jmp        11           ; to [78]
+02DB  5D020300           [067] getglobal  9   12       ; -1817107093
+02DF  99420300           [068] loadk      10  13       ; "Combat -> idle"
+02E3  62420001           [069] call       9   2   1  
+02E7  53020000           [070] getupval   9   0      
+02EB  6482C304           [071] self       9   9   270  ; 795876651
+02EF  D3028000           [072] getupval   11  1      
+02F3  12038001           [073] move       12  3      
+02F7  52030001           [074] move       13  2      
+02FB  62828002           [075] call       9   5   2  
+02FF  12028004           [076] move       8   9      
+0303  1A400380           [077] jmp        14           ; to [92]
+0307  58010000           [078] test       5       0    ; to [80] if true
+030B  1AC00280           [079] jmp        12           ; to [92]
+030F  98010000           [080] test       6       0    ; to [82] if true
+0313  1A400280           [081] jmp        10           ; to [92]
+0317  5D020300           [082] getglobal  9   12       ; -1817107093
+031B  99C20300           [083] loadk      10  15       ; "Idle -> combat"
+031F  62420001           [084] call       9   2   1  
+0323  53020000           [085] getupval   9   0      
+0327  6482C304           [086] self       9   9   270  ; 795876651
+032B  D3020001           [087] getupval   11  2      
+032F  12038001           [088] move       12  3      
+0333  52030001           [089] move       13  2      
+0337  62828002           [090] call       9   5   2  
+033B  12028004           [091] move       8   9      
+033F  5D820000           [092] getglobal  9   2        ; 1074689893
+0343  92020004           [093] move       10  8      
+0347  62820001           [094] call       9   2   2  
+034B  58420000           [095] test       9       1    ; to [97] if false
+034F  1A800080           [096] jmp        3            ; to [100]
+0353  64024401           [097] self       9   2   272  ; 145557915
+0357  D2020004           [098] move       11  8      
+035B  62428001           [099] call       9   3   1  
+035F  1E008000           [100] return     0   1      
+                         * constants:
+0363  11                 sizek (17)
+0364  04                 const type 4
+0365  08                 string size (8)
+0366  67526567696F6E00   "gRegion\0"
+                         const [0]: "gRegion"
+036E  01                 const type 3
+036F  BFF6E203           const [1]: (65205951)
+0373  01                 const type 3
+0374  65770E40           const [2]: (1074689893)
+0378  04                 const type 4
+0379  12                 string size (18)
+037A  67506C6179657250+  "gPlayerP"
+0382  726F66696C654D67+  "rofileMg"
+038A  7200               "r\0"
+                         const [3]: "gPlayerProfileMgr"
+038C  01                 const type 3
+038D  1A7BEF21           const [4]: (569342746)
+0391  03                 const type 3
+0392  00000000           const [5]: (0)
+0396  01                 const type 3
+0397  92104F65           const [6]: (1699680402)
+039B  04                 const type 4
+039C  07                 string size (7)
+039D  737472696E6700     "string\0"
+                         const [7]: "string"
+03A4  01                 const type 3
+03A5  64F644DE           const [8]: (-565905820)
+03A9  04                 const type 4
+03AA  07                 string size (7)
+03AB  436F6D62617400     "Combat\0"
+                         const [9]: "Combat"
+03B2  00                 const type 0
+                         const [10]: nil
+03B3  04                 const type 4
+03B4  09                 string size (9)
+03B5  46616C6C6261636B+  "Fallback"
+03BD  00                 "\0"
+                         const [11]: "Fallback"
+03BE  01                 const type 3
+03BF  6B25B193           const [12]: (-1817107093)
+03C3  04                 const type 4
+03C4  0F                 string size (15)
+03C5  436F6D626174202D+  "Combat -"
+03CD  3E2069646C6500     "> idle\0"
+                         const [13]: "Combat -> idle"
+03D4  01                 const type 3
+03D5  2B1D702F           const [14]: (795876651)
+03D9  04                 const type 4
+03DA  0F                 string size (15)
+03DB  49646C65202D3E20+  "Idle -> "
+03E3  636F6D62617400     "combat\0"
+                         const [15]: "Idle -> combat"
+03EA  01                 const type 3
+03EB  9B09AD08           const [16]: (145557915)
+                         * functions:
+03EF  00                 sizep (0)
+                         * lines:
+03F0  64                 sizelineinfo (100)
+                         [pc] (line)
+03F1  0F                 [001] (15)
+03F2  00                 [002] (15)
+03F3  00                 [003] (15)
+03F4  00                 [004] (16)
+03F5  0F                 [005] (16)
+03F6  00                 [006] (16)
+03F7  00                 [007] (16)
+03F8  00                 [008] (16)
+03F9  0F                 [009] (17)
+03FA  00                 [010] (20)
+03FB  00                 [011] (21)
+03FC  00                 [012] (21)
+03FD  10                 [013] (21)
+03FE  00                 [014] (21)
+03FF  00                 [015] (21)
+0400  00                 [016] (21)
+0401  10                 [017] (21)
+0402  00                 [018] (21)
+0403  00                 [019] (22)
+0404  00                 [020] (22)
+0405  10                 [021] (22)
+0406  00                 [022] (22)
+0407  00                 [023] (22)
+0408  00                 [024] (22)
+0409  10                 [025] (22)
+040A  00                 [026] (22)
+040B  00                 [027] (24)
+040C  00                 [028] (27)
+040D  10                 [029] (27)
+040E  00                 [030] (27)
+040F  00                 [031] (27)
+0410  00                 [032] (27)
+0411  11                 [033] (27)
+0412  00                 [034] (27)
+0413  00                 [035] (27)
+0414  00                 [036] (27)
+0415  14                 [037] (27)
+0416  00                 [038] (27)
+0417  00                 [039] (27)
+0418  00                 [040] (27)
+0419  15                 [041] (27)
+041A  00                 [042] (27)
+041B  00                 [043] (27)
+041C  00                 [044] (28)
+041D  15                 [045] (28)
+041E  00                 [046] (28)
+041F  00                 [047] (28)
+0420  00                 [048] (28)
+0421  15                 [049] (28)
+0422  00                 [050] (28)
+0423  00                 [051] (28)
+0424  00                 [052] (28)
+0425  15                 [053] (28)
+0426  00                 [054] (28)
+0427  00                 [055] (28)
+0428  00                 [056] (28)
+0429  15                 [057] (28)
+042A  00                 [058] (28)
+042B  00                 [059] (28)
+042C  00                 [060] (29)
+042D  15                 [061] (30)
+042E  00                 [062] (32)
+042F  00                 [063] (34)
+0430  00                 [064] (34)
+0431  15                 [065] (34)
+0432  00                 [066] (34)
+0433  00                 [067] (35)
+0434  00                 [068] (35)
+0435  15                 [069] (35)
+0436  00                 [070] (36)
+0437  00                 [071] (36)
+0438  00                 [072] (36)
+0439  16                 [073] (36)
+043A  00                 [074] (36)
+043B  00                 [075] (36)
+043C  00                 [076] (36)
+043D  16                 [077] (36)
+043E  00                 [078] (37)
+043F  00                 [079] (37)
+0440  00                 [080] (37)
+0441  16                 [081] (37)
+0442  00                 [082] (38)
+0443  00                 [083] (38)
+0444  00                 [084] (38)
+0445  16                 [085] (39)
+0446  00                 [086] (39)
+0447  00                 [087] (39)
+0448  00                 [088] (39)
+0449  16                 [089] (39)
+044A  00                 [090] (39)
+044B  00                 [091] (39)
+044C  00                 [092] (42)
+044D  16                 [093] (42)
+044E  00                 [094] (42)
+044F  00                 [095] (42)
+0450  00                 [096] (42)
+0451  16                 [097] (43)
+0452  00                 [098] (43)
+0453  00                 [099] (43)
+0454  00                 [100] (45)
+                         * locals:
+0581  00                 sizelocvars (0)
+                         * upvalues:
+0582  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0583                     ** function [1] definition (level 2)
+                         ** start of function **
+0583  00                 string size (0)
+                         source name: (none)
+0584  2F                 line defined (47)
+0585  31                 last line defined (49)
+0586  01                 nups (1)
+0587  01                 numparams (1)
+0588  00                 is_vararg (0)
+0589  03                 maxstacksize (3)
+                         * code:
+058A  05                 sizecode (5)
+058B  53000000           [1] getupval   1   0      
+058F  4E00C000           [2] gettable   1   1   256  ; 2065819395
+0593  92000000           [3] move       2   0      
+0597  62400001           [4] call       1   2   1  
+059B  1E008000           [5] return     0   1      
+                         * constants:
+059F  01                 sizek (1)
+05A0  01                 const type 3
+05A1  03E7217B           const [0]: (2065819395)
+                         * functions:
+05A5  00                 sizep (0)
+                         * lines:
+05A6  05                 sizelineinfo (5)
+                         [pc] (line)
+05A7  30                 [1] (48)
+05A8  00                 [2] (48)
+05A9  00                 [3] (48)
+05AA  00                 [4] (48)
+05AB  30                 [5] (49)
+                         * locals:
+05BB  00                 sizelocvars (0)
+                         * upvalues:
+05BC  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+05BD                     ** function [2] definition (level 2)
+                         ** start of function **
+05BD  00                 string size (0)
+                         source name: (none)
+05BE  33                 line defined (51)
+05BF  35                 last line defined (53)
+05C0  01                 nups (1)
+05C1  00                 numparams (0)
+05C2  00                 is_vararg (0)
+05C3  02                 maxstacksize (2)
+                         * code:
+05C4  05                 sizecode (5)
+05C5  13000000           [1] getupval   0   0      
+05C9  0E004000           [2] gettable   0   0   256  ; 2065819395
+05CD  46008000           [3] loadnil    1   1      
+05D1  22400001           [4] call       0   2   1  
+05D5  1E008000           [5] return     0   1      
+                         * constants:
+05D9  01                 sizek (1)
+05DA  01                 const type 3
+05DB  03E7217B           const [0]: (2065819395)
+                         * functions:
+05DF  00                 sizep (0)
+                         * lines:
+05E0  05                 sizelineinfo (5)
+                         [pc] (line)
+05E1  34                 [1] (52)
+05E2  00                 [2] (52)
+05E3  00                 [3] (52)
+05E4  00                 [4] (52)
+05E5  34                 [5] (53)
+                         * locals:
+05F5  00                 sizelocvars (0)
+                         * upvalues:
+05F6  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+05F7                     ** function [3] definition (level 2)
+                         ** start of function **
+05F7  00                 string size (0)
+                         source name: (none)
+05F8  37                 line defined (55)
+05F9  3A                 last line defined (58)
+05FA  01                 nups (1)
+05FB  00                 numparams (0)
+05FC  00                 is_vararg (0)
+05FD  02                 maxstacksize (2)
+                         * code:
+05FE  08                 sizecode (8)
+05FF  13000000           [1] getupval   0   0      
+0603  0E004000           [2] gettable   0   0   256  ; 2065819395
+0607  46008000           [3] loadnil    1   1      
+060B  22400001           [4] call       0   2   1  
+060F  13000000           [5] getupval   0   0      
+0613  0E404000           [6] gettable   0   0   257  ; -623804443
+0617  22408000           [7] call       0   1   1  
+061B  1E008000           [8] return     0   1      
+                         * constants:
+061F  02                 sizek (2)
+0620  01                 const type 3
+0621  03E7217B           const [0]: (2065819395)
+0625  01                 const type 3
+0626  E57FD1DA           const [1]: (-623804443)
+                         * functions:
+062A  00                 sizep (0)
+                         * lines:
+062B  08                 sizelineinfo (8)
+                         [pc] (line)
+062C  38                 [1] (56)
+062D  00                 [2] (56)
+062E  00                 [3] (56)
+062F  00                 [4] (56)
+0630  38                 [5] (57)
+0631  00                 [6] (57)
+0632  00                 [7] (57)
+0633  00                 [8] (58)
+                         * locals:
+064C  00                 sizelocvars (0)
+                         * upvalues:
+064D  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+064E                     ** function [4] definition (level 2)
+                         ** start of function **
+064E  00                 string size (0)
+                         source name: (none)
+064F  3C                 line defined (60)
+0650  75                 last line defined (117)
+0651  02                 nups (2)
+0652  01                 numparams (1)
+0653  00                 is_vararg (0)
+0654  0A                 maxstacksize (10)
+                         * code:
+0656  01                 sizecode (142)
+0657  5D000000           [001] getglobal  1   0        ; gRegion
+065B  6440C000           [002] self       1   1   257  ; -1520831144
+065F  62800001           [003] call       1   2   2  
+0663  58400000           [004] test       1       1    ; to [6] if false
+0667  1A000E80           [005] jmp        57           ; to [63]
+066B  5D800000           [006] getglobal  1   2        ; setInvisibleOnSpawn
+066F  58000000           [007] test       1       0    ; to [9] if true
+0673  1A800080           [008] jmp        3            ; to [12]
+0677  64C04000           [009] self       1   0   259  ; -458552994
+067B  D7000000           [010] loadbool   3   0   0    ; false
+067F  62408001           [011] call       1   3   1  
+0683  53000000           [012] getupval   1   0      
+0687  92000000           [013] move       2   0      
+068B  62400001           [014] call       1   2   1  
+068F  64004100           [015] self       1   0   260  ; -564624675
+0693  62800001           [016] call       1   2   2  
+0697  9D400100           [017] getglobal  2   5        ; 1074689893
+069B  D2008000           [018] move       3   1      
+069F  A2800001           [019] call       2   2   2  
+06A3  98000000           [020] test       2       0    ; to [22] if true
+06A7  1A800180           [021] jmp        7            ; to [29]
+06AB  A4004100           [022] self       2   0   260  ; -564624675
+06AF  A2800001           [023] call       2   2   2  
+06B3  52000001           [024] move       1   2      
+06B7  9D800100           [025] getglobal  2   6        ; 538022378
+06BB  D9C00100           [026] loadk      3   7        ; 0
+06BF  A2400001           [027] call       2   2   1  
+06C3  1AC0FC7F           [028] jmp        -12          ; to [17]
+06C7  A4C04000           [029] self       2   0   259  ; -458552994
+06CB  17018000           [030] loadbool   4   1   0    ; true
+06CF  A2408001           [031] call       2   3   1  
+06D3  9D000000           [032] getglobal  2   0        ; gRegion
+06D7  A4004201           [033] self       2   2   264  ; -1110225722
+06DB  1D410200           [034] getglobal  4   9        ; operatorTransferenceInFx
+06DF  64814200           [035] self       5   0   266  ; 196800914
+06E3  62810001           [036] call       5   2   2  
+06E7  A4C14200           [037] self       6   0   267  ; -231049143
+06EB  A2010001           [038] call       6   2   0  
+06EF  A2800000           [039] call       2   0   2  
+06F3  E4004300           [040] self       3   0   268  ; -1421644046
+06F7  52010001           [041] move       5   2      
+06FB  9D410300           [042] getglobal  6   13       ; EMPTY_SYMBOL
+06FF  E2400002           [043] call       3   4   1  
+0703  E480C300           [044] self       3   1   270  ; -1813551355
+0707  E2800001           [045] call       3   2   2  
+070B  1D410100           [046] getglobal  4   5        ; 1074689893
+070F  52018001           [047] move       5   3      
+0713  22810001           [048] call       4   2   2  
+0717  18410000           [049] test       4       1    ; to [51] if false
+071B  1AC00280           [050] jmp        12           ; to [63]
+071F  1D010000           [051] getglobal  4   0        ; gRegion
+0723  24014202           [052] self       4   4   264  ; -1110225722
+0727  9DC10300           [053] getglobal  6   15       ; warframeToOperatorFx
+072B  E481C201           [054] self       7   3   266  ; 196800914
+072F  E2810001           [055] call       7   2   2  
+0733  24C2C201           [056] self       8   3   267  ; -231049143
+0737  22020001           [057] call       8   2   0  
+073B  22810000           [058] call       4   0   2  
+073F  6401C301           [059] self       5   3   268  ; -1421644046
+0743  D2010002           [060] move       7   4      
+0747  1D420300           [061] getglobal  8   13       ; EMPTY_SYMBOL
+074B  62410002           [062] call       5   4   1  
+074F  5D410100           [063] getglobal  5   5        ; 1074689893
+0753  9D010400           [064] getglobal  6   16       ; _T
+0757  8E414403           [065] gettable   6   6   273  ; "spawningOperator"
+075B  62810001           [066] call       5   2   2  
+075F  58410000           [067] test       5       1    ; to [69] if false
+0763  1A400280           [068] jmp        10           ; to [79]
+0767  64814400           [069] self       5   0   274  ; -1201586349
+076B  62810001           [070] call       5   2   2  
+076F  58010000           [071] test       5       0    ; to [73] if true
+0773  1A400080           [072] jmp        2            ; to [75]
+0777  5D010400           [073] getglobal  5   16       ; _T
+077B  4CC1C488           [074] settable   5   273 275  ; "spawningOperator" nil
+077F  5D810100           [075] getglobal  5   6        ; 538022378
+0783  99C10100           [076] loadk      6   7        ; 0
+0787  62410001           [077] call       5   2   1  
+078B  1AC0FB7F           [078] jmp        -16          ; to [63]
+078F  5D010000           [079] getglobal  5   0        ; gRegion
+0793  6441C002           [080] self       5   5   257  ; -1520831144
+0797  62810001           [081] call       5   2   2  
+079B  58010000           [082] test       5       0    ; to [84] if true
+079F  1A400E80           [083] jmp        58           ; to [142]
+07A3  5D810100           [084] getglobal  5   6        ; 538022378
+07A7  99010500           [085] loadk      6   20       ; 0
+07AB  62410001           [086] call       5   2   1  
+07AF  53018000           [087] getupval   5   1      
+07B3  4E41C502           [088] gettable   5   5   277  ; -2065906648
+07B7  62818000           [089] call       5   1   2  
+07BB  93018000           [090] getupval   6   1      
+07BF  8E814503           [091] gettable   6   6   278  ; "UI_MODE_IN_GAME"
+fail op	35
+07C3  23808102           [092] close      0  
+07C7  1A000280           [093] jmp        9            ; to [103]
+07CB  5D410100           [094] getglobal  5   5        ; 1074689893
+07CF  92010000           [095] move       6   0      
+07D3  62810001           [096] call       5   2   2  
+07D7  58410000           [097] test       5       1    ; to [99] if false
+07DB  1AC00080           [098] jmp        4            ; to [103]
+07DF  64814400           [099] self       5   0   274  ; -1201586349
+07E3  62810001           [100] call       5   2   2  
+07E7  58410000           [101] test       5       1    ; to [103] if false
+07EB  1A000080           [102] jmp        1            ; to [104]
+07EF  1E008000           [103] return     0   1      
+07F3  5D010400           [104] getglobal  5   16       ; _T
+07F7  4EC1C502           [105] gettable   5   5   279  ; "MusicStateChangeRegistered"
+07FB  58410000           [106] test       5       1    ; to [108] if false
+07FF  1A000380           [107] jmp        13           ; to [121]
+0803  5D010600           [108] getglobal  5   24       ; gGameRules
+0807  A441C602           [109] self       6   5   281  ; 516385015
+080B  A2810001           [110] call       6   2   2  
+080F  DD410100           [111] getglobal  7   5        ; 1074689893
+0813  12020003           [112] move       8   6      
+0817  E2810001           [113] call       7   2   2  
+081B  D8410000           [114] test       7       1    ; to [116] if false
+081F  1A000180           [115] jmp        5            ; to [121]
+0823  E4814603           [116] self       7   6   282  ; -9369333
+0827  59C20600           [117] loadk      9   27       ; "DynMusicStateChanged"
+082B  E2418001           [118] call       7   3   1  
+082F  DD010400           [119] getglobal  7   16       ; _T
+0833  CC01C78B           [120] settable   7   279 284  ; "MusicStateChangeRegistered" 1
+0837  DD410100           [121] getglobal  7   5        ; 1074689893
+083B  12020000           [122] move       8   0      
+083F  E2810001           [123] call       7   2   2  
+0843  D8410000           [124] test       7       1    ; to [126] if false
+0847  1AC00380           [125] jmp        16           ; to [142]
+084B  D3018000           [126] getupval   7   1      
+084F  CE41C503           [127] gettable   7   7   277  ; -2065906648
+0853  E2818000           [128] call       7   1   2  
+0857  13028000           [129] getupval   8   1      
+085B  0E824504           [130] gettable   8   8   278  ; "UI_MODE_IN_GAME"
+fail op	35
+085F  23008203           [131] close      0  
+0863  1A000180           [132] jmp        5            ; to [138]
+0867  D3018000           [133] getupval   7   1      
+086B  CE41C703           [134] gettable   7   7   285  ; 2106947547
+086F  12020000           [135] move       8   0      
+0873  57028000           [136] loadbool   9   1   0    ; true
+0877  E2418001           [137] call       7   3   1  
+087B  DD810100           [138] getglobal  7   6        ; 538022378
+087F  19C20100           [139] loadk      8   7        ; 0
+0883  E2410001           [140] call       7   2   1  
+0887  1A80FA7F           [141] jmp        -21          ; to [121]
+088B  1E008000           [142] return     0   1      
+                         * constants:
+088F  1E                 sizek (30)
+0890  04                 const type 4
+0891  08                 string size (8)
+0892  67526567696F6E00   "gRegion\0"
+                         const [0]: "gRegion"
+089A  01                 const type 3
+089B  58F559A5           const [1]: (-1520831144)
+089F  04                 const type 4
+08A0  14                 string size (20)
+08A1  736574496E766973+  "setInvis"
+08A9  69626C654F6E5370+  "ibleOnSp"
+08B1  61776E00           "awn\0"
+                         const [2]: "setInvisibleOnSpawn"
+08B5  01                 const type 3
+08B6  5E09ABE4           const [3]: (-458552994)
+08BA  01                 const type 3
+08BB  DD8258DE           const [4]: (-564624675)
+08BF  01                 const type 3
+08C0  65770E40           const [5]: (1074689893)
+08C4  01                 const type 3
+08C5  EA911120           const [6]: (538022378)
+08C9  03                 const type 3
+08CA  00000000           const [7]: (0)
+08CE  01                 const type 3
+08CF  C64CD3BD           const [8]: (-1110225722)
+08D3  04                 const type 4
+08D4  19                 string size (25)
+08D5  6F70657261746F72+  "operator"
+08DD  5472616E73666572+  "Transfer"
+08E5  656E6365496E4678+  "enceInFx"
+08ED  00                 "\0"
+                         const [9]: "operatorTransferenceInFx"
+08EE  01                 const type 3
+08EF  92F1BA0B           const [10]: (196800914)
+08F3  01                 const type 3
+08F4  49783AF2           const [11]: (-231049143)
+08F8  01                 const type 3
+08F9  F26E43AB           const [12]: (-1421644046)
+08FD  04                 const type 4
+08FE  0D                 string size (13)
+08FF  454D5054595F5359+  "EMPTY_SY"
+0907  4D424F4C00         "MBOL\0"
+                         const [13]: "EMPTY_SYMBOL"
+090C  01                 const type 3
+090D  0567E793           const [14]: (-1813551355)
+0911  04                 const type 4
+0912  15                 string size (21)
+0913  7761726672616D65+  "warframe"
+091B  546F4F7065726174+  "ToOperat"
+0923  6F72467800         "orFx\0"
+                         const [15]: "warframeToOperatorFx"
+0928  04                 const type 4
+0929  03                 string size (3)
+092A  5F5400             "_T\0"
+                         const [16]: "_T"
+092D  04                 const type 4
+092E  11                 string size (17)
+092F  737061776E696E67+  "spawning"
+0937  4F70657261746F72+  "Operator"
+093F  00                 "\0"
+                         const [17]: "spawningOperator"
+0940  01                 const type 3
+0941  533F61B8           const [18]: (-1201586349)
+0945  00                 const type 0
+                         const [19]: nil
+0946  03                 const type 3
+0947  0000803F           const [20]: (0)
+094B  01                 const type 3
+094C  28C4DC84           const [21]: (-2065906648)
+0950  04                 const type 4
+0951  10                 string size (16)
+0952  55495F4D4F44455F+  "UI_MODE_"
+095A  494E5F47414D4500   "IN_GAME\0"
+                         const [22]: "UI_MODE_IN_GAME"
+0962  04                 const type 4
+0963  1B                 string size (27)
+0964  4D75736963537461+  "MusicSta"
+096C  74654368616E6765+  "teChange"
+0974  5265676973746572+  "Register"
+097C  656400             "ed\0"
+                         const [23]: "MusicStateChangeRegistered"
+097F  04                 const type 4
+0980  0B                 string size (11)
+0981  6747616D6552756C+  "gGameRul"
+0989  657300             "es\0"
+                         const [24]: "gGameRules"
+098C  01                 const type 3
+098D  F768C71E           const [25]: (516385015)
+0991  01                 const type 3
+0992  0B0971FF           const [26]: (-9369333)
+0996  04                 const type 4
+0997  15                 string size (21)
+0998  44796E4D75736963+  "DynMusic"
+09A0  5374617465436861+  "StateCha"
+09A8  6E67656400         "nged\0"
+                         const [27]: "DynMusicStateChanged"
+09AD  01                 const type 3
+09AE  01000000           const [28]: (1)
+09B2  01                 const type 3
+09B3  DB77957D           const [29]: (2106947547)
+                         * functions:
+09B7  00                 sizep (0)
+                         * lines:
+09B9  01                 sizelineinfo (142)
+                         [pc] (line)
+09BA  3D                 [001] (61)
+09BB  00                 [002] (61)
+09BC  00                 [003] (61)
+09BD  00                 [004] (61)
+09BE  3D                 [005] (61)
+09BF  00                 [006] (62)
+09C0  00                 [007] (62)
+09C1  00                 [008] (62)
+09C2  3D                 [009] (63)
+09C3  00                 [010] (63)
+09C4  00                 [011] (63)
+09C5  00                 [012] (65)
+09C6  3D                 [013] (65)
+09C7  00                 [014] (65)
+09C8  00                 [015] (66)
+09C9  00                 [016] (66)
+09CA  3D                 [017] (67)
+09CB  00                 [018] (67)
+09CC  00                 [019] (67)
+09CD  00                 [020] (67)
+09CE  3E                 [021] (67)
+09CF  00                 [022] (68)
+09D0  00                 [023] (68)
+09D1  00                 [024] (68)
+09D2  3E                 [025] (69)
+09D3  00                 [026] (69)
+09D4  00                 [027] (69)
+09D5  00                 [028] (69)
+09D6  3E                 [029] (71)
+09D7  00                 [030] (71)
+09D8  00                 [031] (71)
+09D9  00                 [032] (72)
+09DA  3F                 [033] (72)
+09DB  00                 [034] (72)
+09DC  00                 [035] (72)
+09DD  00                 [036] (72)
+09DE  3F                 [037] (72)
+09DF  00                 [038] (72)
+09E0  00                 [039] (72)
+09E1  00                 [040] (73)
+09E2  3F                 [041] (73)
+09E3  00                 [042] (73)
+09E4  00                 [043] (73)
+09E5  00                 [044] (74)
+09E6  41                 [045] (74)
+09E7  00                 [046] (75)
+09E8  00                 [047] (75)
+09E9  00                 [048] (75)
+09EA  41                 [049] (75)
+09EB  00                 [050] (75)
+09EC  00                 [051] (76)
+09ED  00                 [052] (76)
+09EE  41                 [053] (76)
+09EF  00                 [054] (76)
+09F0  00                 [055] (76)
+09F1  00                 [056] (76)
+09F2  42                 [057] (76)
+09F3  00                 [058] (76)
+09F4  00                 [059] (77)
+09F5  00                 [060] (77)
+09F6  42                 [061] (77)
+09F7  00                 [062] (77)
+09F8  00                 [063] (81)
+09F9  00                 [064] (81)
+09FA  43                 [065] (81)
+09FB  00                 [066] (81)
+09FC  00                 [067] (81)
+09FD  00                 [068] (81)
+09FE  43                 [069] (82)
+09FF  00                 [070] (82)
+0A00  00                 [071] (82)
+0A01  00                 [072] (82)
+0A02  43                 [073] (83)
+0A03  00                 [074] (83)
+0A04  00                 [075] (85)
+0A05  00                 [076] (85)
+0A06  43                 [077] (85)
+0A07  00                 [078] (85)
+0A08  00                 [079] (88)
+0A09  00                 [080] (88)
+0A0A  43                 [081] (88)
+0A0B  00                 [082] (88)
+0A0C  00                 [083] (88)
+0A0D  00                 [084] (89)
+0A0E  44                 [085] (89)
+0A0F  00                 [086] (89)
+0A10  00                 [087] (90)
+0A11  00                 [088] (90)
+0A12  44                 [089] (90)
+0A13  00                 [090] (90)
+0A14  00                 [091] (90)
+0A15  00                 [092] (90)
+0A16  44                 [093] (90)
+0A17  00                 [094] (90)
+0A18  00                 [095] (90)
+0A19  00                 [096] (90)
+0A1A  45                 [097] (90)
+0A1B  00                 [098] (90)
+0A1C  00                 [099] (90)
+0A1D  00                 [100] (90)
+0A1E  45                 [101] (90)
+0A1F  00                 [102] (90)
+0A20  00                 [103] (91)
+0A21  00                 [104] (94)
+0A22  45                 [105] (94)
+0A23  00                 [106] (94)
+0A24  00                 [107] (94)
+0A25  00                 [108] (96)
+0A26  45                 [109] (97)
+0A27  00                 [110] (97)
+0A28  00                 [111] (99)
+0A29  00                 [112] (99)
+0A2A  47                 [113] (99)
+0A2B  00                 [114] (99)
+0A2C  00                 [115] (99)
+0A2D  00                 [116] (100)
+0A2E  47                 [117] (100)
+0A2F  00                 [118] (100)
+0A30  00                 [119] (102)
+0A31  00                 [120] (102)
+0A32  47                 [121] (107)
+0A33  00                 [122] (107)
+0A34  00                 [123] (107)
+0A35  00                 [124] (107)
+0A36  48                 [125] (107)
+0A37  00                 [126] (108)
+0A38  00                 [127] (108)
+0A39  00                 [128] (108)
+0A3A  48                 [129] (108)
+0A3B  00                 [130] (108)
+0A3C  00                 [131] (108)
+0A3D  00                 [132] (108)
+0A3E  48                 [133] (109)
+0A3F  00                 [134] (109)
+0A40  00                 [135] (109)
+0A41  00                 [136] (109)
+0A42  48                 [137] (109)
+0A43  00                 [138] (114)
+0A44  00                 [139] (114)
+0A45  00                 [140] (114)
+0A46  48                 [141] (114)
+0A47  00                 [142] (117)
+                         * locals:
+0BF2  00                 sizelocvars (0)
+                         * upvalues:
+0BF3  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+0BF4  25                 sizelineinfo (37)
+                         [pc] (line)
+0BF5  01                 [01] (1)
+0BF6  00                 [02] (1)
+0BF7  00                 [03] (1)
+0BF8  00                 [04] (2)
+0BF9  01                 [05] (2)
+0BFA  00                 [06] (2)
+0BFB  00                 [07] (4)
+0BFC  00                 [08] (4)
+0BFD  01                 [09] (4)
+0BFE  00                 [10] (5)
+0BFF  00                 [11] (5)
+0C00  00                 [12] (5)
+0C01  02                 [13] (6)
+0C02  00                 [14] (6)
+0C03  00                 [15] (6)
+0C04  00                 [16] (45)
+0C05  02                 [17] (45)
+0C06  00                 [18] (45)
+0C07  00                 [19] (45)
+0C08  00                 [20] (45)
+0C09  02                 [21] (12)
+0C0A  00                 [22] (49)
+0C0B  00                 [23] (49)
+0C0C  00                 [24] (53)
+0C0D  04                 [25] (53)
+0C0E  00                 [26] (53)
+0C0F  00                 [27] (51)
+0C10  00                 [28] (58)
+0C11  04                 [29] (58)
+0C12  00                 [30] (58)
+0C13  00                 [31] (55)
+0C14  00                 [32] (117)
+0C15  04                 [33] (117)
+0C16  00                 [34] (117)
+0C17  00                 [35] (117)
+0C18  00                 [36] (60)
+0C19  05                 [37] (117)
+                         * locals:
+0C89  00                 sizelocvars (0)
+                         * upvalues:
+0C8A  00                 sizeupvalues (0)
+                         ** end of function **
+
+0C8B                     ** end of chunk **

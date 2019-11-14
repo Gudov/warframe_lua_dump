@@ -1,0 +1,215 @@
+1	C:\wlua_dump\path\Lotus\ScriptsTimedSelfDestruction.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\ScriptsTimedSelfDestruction.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  02                 size of number (bytes)
+0008  06                 integral (1=integral)
+46
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+TimedSelfDestruction
+gRegion
+hostOnly
+timeToSelfDestruct
+destructionFx
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  02                 maxstacksize (2)
+                         * code:
+0008  06                 sizecode (6)
+0009  19000000           [1] loadk      0   0        ; 0
+000D  65000000           [2] closure    1   0      
+0011  12000000           [3] move       0   0      
+0015  60400000           [4] setglobal  1   1        ; TimedSelfDestruction
+0019  60800000           [5] setglobal  1   2        ; -1674655731
+001D  1E008000           [6] return     0   1      
+                         * constants:
+0021  03                 sizek (3)
+0022  03                 const type 3
+0023  00007042           const [0]: (0)
+0027  04                 const type 4
+0028  15                 string size (21)
+0029  54696D656453656C+  "TimedSel"
+0031  6644657374727563+  "fDestruc"
+0039  74696F6E00         "tion\0"
+                         const [1]: "TimedSelfDestruction"
+003E  01                 const type 3
+003F  0DC82E9C           const [2]: (-1674655731)
+                         * functions:
+0043  01                 sizep (1)
+                         
+0044                     ** function [0] definition (level 2)
+                         ** start of function **
+0044  00                 string size (0)
+                         source name: (none)
+0045  07                 line defined (7)
+0046  16                 last line defined (22)
+0047  01                 nups (1)
+0048  01                 numparams (1)
+0049  00                 is_vararg (0)
+004A  09                 maxstacksize (9)
+                         * code:
+004B  27                 sizecode (39)
+004C  5D000000           [01] getglobal  1   0        ; gRegion
+0050  6440C000           [02] self       1   1   257  ; -1520831144
+0054  62800001           [03] call       1   2   2  
+0058  58400000           [04] test       1       1    ; to [6] if false
+005C  1A800080           [05] jmp        3            ; to [9]
+0060  5D800000           [06] getglobal  1   2        ; hostOnly
+0064  58400000           [07] test       1       1    ; to [9] if false
+0068  1A400780           [08] jmp        30           ; to [39]
+006C  5DC00000           [09] getglobal  1   3        ; timeToSelfDestruct
+0070  93000000           [10] getupval   2   0      
+0074  44808000           [11] mul        1   1   2  
+0078  99000100           [12] loadk      2   4        ; 0
+fail op	21
+007C  15400001           [13] concat     0   2   1  
+0080  1A800180           [14] jmp        7            ; to [22]
+0084  DD400100           [15] getglobal  3   5        ; 1289681407
+0088  E2808000           [16] call       3   1   2  
+008C  83C00001           [17] add        2   2   3  
+0090  DD800100           [18] getglobal  3   6        ; 538022378
+0094  19010100           [19] loadk      4   4        ; 0
+0098  E2400001           [20] call       3   2   1  
+009C  1A80FD7F           [21] jmp        -9           ; to [13]
+00A0  DDC00100           [22] getglobal  3   7        ; 1074689893
+00A4  1D010200           [23] getglobal  4   8        ; destructionFx
+00A8  E2800001           [24] call       3   2   2  
+00AC  D8400000           [25] test       3       1    ; to [27] if false
+00B0  1AC00180           [26] jmp        8            ; to [35]
+00B4  DD000000           [27] getglobal  3   0        ; gRegion
+00B8  E440C201           [28] self       3   3   265  ; -1110225722
+00BC  5D010200           [29] getglobal  5   8        ; destructionFx
+00C0  A4814200           [30] self       6   0   266  ; 1839670529
+00C4  A2810001           [31] call       6   2   2  
+00C8  E4C14200           [32] self       7   0   267  ; -231049143
+00CC  E2010001           [33] call       7   2   0  
+00D0  E2400000           [34] call       3   0   1  
+00D4  DD000000           [35] getglobal  3   0        ; gRegion
+00D8  E400C301           [36] self       3   3   268  ; -1693828985
+00DC  52010000           [37] move       5   0      
+00E0  E2408001           [38] call       3   3   1  
+00E4  1E008000           [39] return     0   1      
+                         * constants:
+00E8  0D                 sizek (13)
+00E9  04                 const type 4
+00EA  08                 string size (8)
+00EB  67526567696F6E00   "gRegion\0"
+                         const [0]: "gRegion"
+00F3  01                 const type 3
+00F4  58F559A5           const [1]: (-1520831144)
+00F8  04                 const type 4
+00F9  09                 string size (9)
+00FA  686F73744F6E6C79+  "hostOnly"
+0102  00                 "\0"
+                         const [2]: "hostOnly"
+0103  04                 const type 4
+0104  13                 string size (19)
+0105  74696D65546F5365+  "timeToSe"
+010D  6C66446573747275+  "lfDestru"
+0115  637400             "ct\0"
+                         const [3]: "timeToSelfDestruct"
+0118  03                 const type 3
+0119  00000000           const [4]: (0)
+011D  01                 const type 3
+011E  FFF9DE4C           const [5]: (1289681407)
+0122  01                 const type 3
+0123  EA911120           const [6]: (538022378)
+0127  01                 const type 3
+0128  65770E40           const [7]: (1074689893)
+012C  04                 const type 4
+012D  0E                 string size (14)
+012E  6465737472756374+  "destruct"
+0136  696F6E467800       "ionFx\0"
+                         const [8]: "destructionFx"
+013C  01                 const type 3
+013D  C64CD3BD           const [9]: (-1110225722)
+0141  01                 const type 3
+0142  0125A76D           const [10]: (1839670529)
+0146  01                 const type 3
+0147  49783AF2           const [11]: (-231049143)
+014B  01                 const type 3
+014C  87380A9B           const [12]: (-1693828985)
+                         * functions:
+0150  00                 sizep (0)
+                         * lines:
+0151  27                 sizelineinfo (39)
+                         [pc] (line)
+0152  08                 [01] (8)
+0153  00                 [02] (8)
+0154  00                 [03] (8)
+0155  00                 [04] (8)
+0156  08                 [05] (8)
+0157  00                 [06] (8)
+0158  00                 [07] (8)
+0159  00                 [08] (8)
+015A  08                 [09] (9)
+015B  00                 [10] (9)
+015C  00                 [11] (9)
+015D  00                 [12] (11)
+015E  08                 [13] (12)
+015F  00                 [14] (12)
+0160  00                 [15] (13)
+0161  00                 [16] (13)
+0162  08                 [17] (13)
+0163  00                 [18] (14)
+0164  00                 [19] (14)
+0165  00                 [20] (14)
+0166  08                 [21] (14)
+0167  00                 [22] (17)
+0168  00                 [23] (17)
+0169  00                 [24] (17)
+016A  08                 [25] (17)
+016B  00                 [26] (17)
+016C  00                 [27] (18)
+016D  00                 [28] (18)
+016E  08                 [29] (18)
+016F  00                 [30] (18)
+0170  00                 [31] (18)
+0171  00                 [32] (18)
+0172  09                 [33] (18)
+0173  00                 [34] (18)
+0174  00                 [35] (20)
+0175  00                 [36] (20)
+0176  09                 [37] (20)
+0177  00                 [38] (20)
+0178  00                 [39] (22)
+                         * locals:
+01EE  00                 sizelocvars (0)
+                         * upvalues:
+01EF  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+01F0  06                 sizelineinfo (6)
+                         [pc] (line)
+01F1  05                 [1] (5)
+01F2  00                 [2] (22)
+01F3  00                 [3] (22)
+01F4  00                 [4] (22)
+01F5  16                 [5] (7)
+01F6  00                 [6] (22)
+                         * locals:
+0209  00                 sizelocvars (0)
+                         * upvalues:
+020A  00                 sizeupvalues (0)
+                         ** end of function **
+
+020B                     ** end of chunk **

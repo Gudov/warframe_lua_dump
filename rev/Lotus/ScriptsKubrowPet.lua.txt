@@ -1,0 +1,195 @@
+1	C:\wlua_dump\path\Lotus\ScriptsKubrowPet.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\ScriptsKubrowPet.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  02                 size of number (bytes)
+0008  04                 integral (1=integral)
+44
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+OnSpawnPetKubrow
+chargerPetSuitType
+chargerVoiceBox
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  02                 maxstacksize (2)
+                         * code:
+0008  04                 sizecode (4)
+0009  25000000           [1] closure    0   0      
+000D  20000000           [2] setglobal  0   0        ; OnSpawnPetKubrow
+0011  20400000           [3] setglobal  0   1        ; 377570166
+0015  1E008000           [4] return     0   1      
+                         * constants:
+0019  02                 sizek (2)
+001A  04                 const type 4
+001B  11                 string size (17)
+001C  4F6E537061776E50+  "OnSpawnP"
+0024  65744B7562726F77+  "etKubrow"
+002C  00                 "\0"
+                         const [0]: "OnSpawnPetKubrow"
+002D  01                 const type 3
+002E  76438116           const [1]: (377570166)
+                         * functions:
+0032  01                 sizep (1)
+                         
+0033                     ** function [0] definition (level 2)
+                         ** start of function **
+0033  00                 string size (0)
+                         source name: (none)
+0034  04                 line defined (4)
+0035  12                 last line defined (18)
+0036  00                 nups (0)
+0037  01                 numparams (1)
+0038  00                 is_vararg (0)
+0039  06                 maxstacksize (6)
+                         * code:
+003A  28                 sizecode (40)
+003B  5D000000           [01] getglobal  1   0        ; 1074689893
+003F  92000000           [02] move       2   0      
+0043  62800001           [03] call       1   2   2  
+0047  58400000           [04] test       1       1    ; to [6] if false
+004B  1A400880           [05] jmp        34           ; to [40]
+004F  64404000           [06] self       1   0   257  ; -1917464545
+0053  62800001           [07] call       1   2   2  
+0057  9D000000           [08] getglobal  2   0        ; 1074689893
+005B  D2008000           [09] move       3   1      
+005F  A2800001           [10] call       2   2   2  
+0063  98400000           [11] test       2       1    ; to [13] if false
+0067  1A800680           [12] jmp        27           ; to [40]
+006B  A480C000           [13] self       2   1   258  ; 1769516121
+006F  A2800001           [14] call       2   2   2  
+0073  DD000000           [15] getglobal  3   0        ; 1074689893
+0077  12010001           [16] move       4   2      
+007B  E2800001           [17] call       3   2   2  
+007F  D8000000           [18] test       3       0    ; to [20] if true
+0083  1A800180           [19] jmp        7            ; to [27]
+0087  E480C000           [20] self       3   1   258  ; 1769516121
+008B  E2800001           [21] call       3   2   2  
+008F  92008001           [22] move       2   3      
+0093  DDC00000           [23] getglobal  3   3        ; 538022378
+0097  19010100           [24] loadk      4   4        ; 0
+009B  E2400001           [25] call       3   2   1  
+009F  1AC0FC7F           [26] jmp        -12          ; to [15]
+00A3  DD000000           [27] getglobal  3   0        ; 1074689893
+00A7  12010001           [28] move       4   2      
+00AB  E2800001           [29] call       3   2   2  
+00AF  D8400000           [30] test       3       1    ; to [32] if false
+00B3  1AC00180           [31] jmp        8            ; to [40]
+00B7  E4404101           [32] self       3   2   261  ; -1957065004
+00BB  5D810100           [33] getglobal  5   6        ; chargerPetSuitType
+00BF  E2808001           [34] call       3   3   2  
+00C3  D8000000           [35] test       3       0    ; to [37] if true
+00C7  1A800080           [36] jmp        3            ; to [40]
+00CB  E4C04100           [37] self       3   0   263  ; -1526590235
+00CF  5D010200           [38] getglobal  5   8        ; chargerVoiceBox
+00D3  E2408001           [39] call       3   3   1  
+00D7  1E008000           [40] return     0   1      
+                         * constants:
+00DB  09                 sizek (9)
+00DC  01                 const type 3
+00DD  65770E40           const [0]: (1074689893)
+00E1  01                 const type 3
+00E2  1FD0B58D           const [1]: (-1917464545)
+00E6  01                 const type 3
+00E7  59AC7869           const [2]: (1769516121)
+00EB  01                 const type 3
+00EC  EA911120           const [3]: (538022378)
+00F0  03                 const type 3
+00F1  00000000           const [4]: (0)
+00F5  01                 const type 3
+00F6  D48E598B           const [5]: (-1957065004)
+00FA  04                 const type 4
+00FB  13                 string size (19)
+00FC  6368617267657250+  "chargerP"
+0104  6574537569745479+  "etSuitTy"
+010C  706500             "pe\0"
+                         const [6]: "chargerPetSuitType"
+010F  01                 const type 3
+0110  E51402A5           const [7]: (-1526590235)
+0114  04                 const type 4
+0115  10                 string size (16)
+0116  6368617267657256+  "chargerV"
+011E  6F696365426F7800   "oiceBox\0"
+                         const [8]: "chargerVoiceBox"
+                         * functions:
+0126  00                 sizep (0)
+                         * lines:
+0127  28                 sizelineinfo (40)
+                         [pc] (line)
+0128  05                 [01] (5)
+0129  00                 [02] (5)
+012A  00                 [03] (5)
+012B  00                 [04] (5)
+012C  05                 [05] (5)
+012D  00                 [06] (6)
+012E  00                 [07] (6)
+012F  00                 [08] (7)
+0130  05                 [09] (7)
+0131  00                 [10] (7)
+0132  00                 [11] (7)
+0133  00                 [12] (7)
+0134  05                 [13] (8)
+0135  00                 [14] (8)
+0136  00                 [15] (9)
+0137  00                 [16] (9)
+0138  05                 [17] (9)
+0139  00                 [18] (9)
+013A  00                 [19] (9)
+013B  00                 [20] (10)
+013C  06                 [21] (10)
+013D  00                 [22] (10)
+013E  00                 [23] (11)
+013F  00                 [24] (11)
+0140  06                 [25] (11)
+0141  00                 [26] (11)
+0142  00                 [27] (13)
+0143  00                 [28] (13)
+0144  07                 [29] (13)
+0145  00                 [30] (13)
+0146  00                 [31] (13)
+0147  00                 [32] (13)
+0148  07                 [33] (13)
+0149  00                 [34] (13)
+014A  00                 [35] (13)
+014B  00                 [36] (13)
+014C  07                 [37] (14)
+014D  00                 [38] (14)
+014E  00                 [39] (14)
+014F  00                 [40] (18)
+                         * locals:
+01C8  00                 sizelocvars (0)
+                         * upvalues:
+01C9  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+01CA  04                 sizelineinfo (4)
+                         [pc] (line)
+01CB  12                 [1] (18)
+01CC  00                 [2] (18)
+01CD  00                 [3] (4)
+01CE  00                 [4] (18)
+                         * locals:
+01DB  00                 sizelocvars (0)
+                         * upvalues:
+01DC  00                 sizeupvalues (0)
+                         ** end of function **
+
+01DD                     ** end of chunk **

@@ -1,0 +1,1133 @@
+1	C:\wlua_dump\path\Lotus\Interface\LibsMissionGeneratorUtil.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Interface\LibsMissionGeneratorUtil.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  05                 size of number (bytes)
+0008  17                 integral (1=integral)
+423
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+package
+seeall
+Lotus.Interface.LotusUtilities
+/Lotus/Types/GameRules/LotusPveDMGameRules
+/Lotus/Types/GameRules/LotusPveGreedGameRules
+GenerateRandomMissionForLocation
+procLevel
+table
+Lotus_Game
+MT_EXTERMINATION
+MT_SURVIVAL
+MT_RESCUE
+MT_SABOTAGE
+MT_CAPTURE
+MT_INTEL
+MT_DEFENSE
+MT_MOBILE_DEFENSE
+MT_TERRITORY
+MT_RETRIEVAL
+MT_HIVE
+MT_EXCAVATE
+MT_ARTIFACT
+tileset
+Failed to generate random mission at 
+ (missing tileset)!
+_T
+StarChartTilesets
+, tileset=
+ (NULL tileset)!
+desired mission types not supported by tileset 
+ at 
+; retrying with default mission types
+Failed to generate random mission (desired mission type not supported)!
+missionType
+faction
+location
+name
+levelOverride
+procLevel
+enemySpec
+extraEnemySpec
+vipAgent
+advancedSpawners
+customAdvancedSpawners
+minEnemyLevel
+mission
+maxEnemyLevel
+difficulty
+seed
+string
+Archwing
+archwingRequired
+Ocean
+isSharkwingMission
+Fortress
+MT_ARENA
+FC_CORPUS
+gameRules
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  05                 maxstacksize (5)
+                         * code:
+0008  17                 sizecode (23)
+0009  1D000000           [01] getglobal  0   0        ; 954442511
+000D  41000001           [02] vararg     1   2      
+0011  9D400000           [03] getglobal  2   1        ; package
+0015  8E804001           [04] gettable   2   2   258  ; "seeall"
+0019  22408001           [05] call       0   3   1  
+001D  1DC00000           [06] getglobal  0   3        ; 849075268
+0021  59000100           [07] loadk      1   4        ; "Lotus.Interface.LotusUtilities"
+0025  22800001           [08] call       0   2   2  
+0029  5D400100           [09] getglobal  1   5        ; 738251817
+002D  99800100           [10] loadk      2   6        ; "/Lotus/Types/GameRules/LotusPveDMGameRules"
+0031  62800001           [11] call       1   2   2  
+0035  9D400100           [12] getglobal  2   5        ; 738251817
+0039  D9C00100           [13] loadk      3   7        ; "/Lotus/Types/GameRules/LotusPveGreedGameRules"
+003D  A2800001           [14] call       2   2   2  
+0041  E5000000           [15] closure    3   0      
+0045  25410000           [16] closure    4   1      
+0049  12000000           [17] move       0   0      
+004D  12008001           [18] move       0   3      
+0051  12000001           [19] move       0   2      
+0055  12008000           [20] move       0   1      
+0059  20010200           [21] setglobal  4   8        ; GenerateRandomMissionForLocation
+005D  20410200           [22] setglobal  4   9        ; 1973660869
+0061  1E008000           [23] return     0   1      
+                         * constants:
+0065  0A                 sizek (10)
+0066  01                 const type 3
+0067  0FA3E338           const [0]: (954442511)
+006B  04                 const type 4
+006C  08                 string size (8)
+006D  7061636B61676500   "package\0"
+                         const [1]: "package"
+0075  04                 const type 4
+0076  07                 string size (7)
+0077  736565616C6C00     "seeall\0"
+                         const [2]: "seeall"
+007E  01                 const type 3
+007F  44DC9B32           const [3]: (849075268)
+0083  04                 const type 4
+0084  1F                 string size (31)
+0085  4C6F7475732E496E+  "Lotus.In"
+008D  746572666163652E+  "terface."
+0095  4C6F747573557469+  "LotusUti"
+009D  6C697469657300     "lities\0"
+                         const [4]: "Lotus.Interface.LotusUtilities"
+00A4  01                 const type 3
+00A5  29D4002C           const [5]: (738251817)
+00A9  04                 const type 4
+00AA  2B                 string size (43)
+00AB  2F4C6F7475732F54+  "/Lotus/T"
+00B3  797065732F47616D+  "ypes/Gam"
+00BB  6552756C65732F4C+  "eRules/L"
+00C3  6F74757350766544+  "otusPveD"
+00CB  4D47616D6552756C+  "MGameRul"
+00D3  657300             "es\0"
+                         const [6]: "/Lotus/Types/GameRules/LotusPveDMGameRules"
+00D6  04                 const type 4
+00D7  2E                 string size (46)
+00D8  2F4C6F7475732F54+  "/Lotus/T"
+00E0  797065732F47616D+  "ypes/Gam"
+00E8  6552756C65732F4C+  "eRules/L"
+00F0  6F74757350766547+  "otusPveG"
+00F8  7265656447616D65+  "reedGame"
+0100  52756C657300       "Rules\0"
+                         const [7]: "/Lotus/Types/GameRules/LotusPveGreedGameRules"
+0106  04                 const type 4
+0107  21                 string size (33)
+0108  47656E6572617465+  "Generate"
+0110  52616E646F6D4D69+  "RandomMi"
+0118  7373696F6E466F72+  "ssionFor"
+0120  4C6F636174696F6E+  "Location"
+0128  00                 "\0"
+                         const [8]: "GenerateRandomMissionForLocation"
+0129  01                 const type 3
+012A  C5ACA375           const [9]: (1973660869)
+                         * functions:
+012E  02                 sizep (2)
+                         
+012F                     ** function [0] definition (level 2)
+                         ** start of function **
+012F  00                 string size (0)
+                         source name: (none)
+0130  08                 line defined (8)
+0131  11                 last line defined (17)
+0132  00                 nups (0)
+0133  02                 numparams (2)
+0134  00                 is_vararg (0)
+0135  0B                 maxstacksize (11)
+                         * code:
+0136  15                 sizecode (21)
+0137  8B000000           [01] newtable   2   0   0    ; array=0, hash=0
+013B  D9000000           [02] loadk      3   0        ; 0
+013F  0A018000           [03] len        4   1      
+0143  59010000           [04] loadk      5   0        ; 0
+0147  D0000380           [05] forprep    3   13       ; to [19]
+014B  E4414000           [06] self       7   0   257  ; -682427769
+014F  4E828100           [07] gettable   9   1   6  
+0153  E2818001           [08] call       7   3   2  
+0157  1D820000           [09] getglobal  8   2        ; 1074689893
+015B  4EC2C003           [10] gettable   9   7   259  ; "procLevel"
+015F  22820001           [11] call       8   2   2  
+0163  18420000           [12] test       8       1    ; to [14] if false
+0167  1A000180           [13] jmp        5            ; to [19]
+016B  1D020100           [14] getglobal  8   4        ; table
+016F  0E424104           [15] gettable   8   8   261  ; -431682403
+0173  52020001           [16] move       9   2      
+0177  8E828100           [17] gettable   10  1   6  
+017B  22428001           [18] call       8   3   1  
+017F  D440FC7F           [19] forloop    3   -14      ; to [6] if loop
+0183  9E000001           [20] return     2   2      
+0187  1E008000           [21] return     0   1      
+                         * constants:
+018B  06                 sizek (6)
+018C  03                 const type 3
+018D  0000803F           const [0]: (0)
+0191  01                 const type 3
+0192  87FA52D7           const [1]: (-682427769)
+0196  01                 const type 3
+0197  65770E40           const [2]: (1074689893)
+019B  04                 const type 4
+019C  0A                 string size (10)
+019D  70726F634C657665+  "procLeve"
+01A5  6C00               "l\0"
+                         const [3]: "procLevel"
+01A7  04                 const type 4
+01A8  06                 string size (6)
+01A9  7461626C6500       "table\0"
+                         const [4]: "table"
+01AF  01                 const type 3
+01B0  9D0C45E6           const [5]: (-431682403)
+                         * functions:
+01B4  00                 sizep (0)
+                         * lines:
+01B5  15                 sizelineinfo (21)
+                         [pc] (line)
+01B6  09                 [01] (9)
+01B7  00                 [02] (10)
+01B8  00                 [03] (10)
+01B9  00                 [04] (10)
+01BA  0A                 [05] (10)
+01BB  00                 [06] (11)
+01BC  00                 [07] (11)
+01BD  00                 [08] (11)
+01BE  0A                 [09] (12)
+01BF  00                 [10] (12)
+01C0  00                 [11] (12)
+01C1  00                 [12] (12)
+01C2  0A                 [13] (12)
+01C3  00                 [14] (13)
+01C4  00                 [15] (13)
+01C5  00                 [16] (13)
+01C6  0A                 [17] (13)
+01C7  00                 [18] (13)
+01C8  00                 [19] (10)
+01C9  00                 [20] (16)
+01CA  0B                 [21] (17)
+                         * locals:
+020A  00                 sizelocvars (0)
+                         * upvalues:
+020B  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+020C                     ** function [1] definition (level 2)
+                         ** start of function **
+020C  00                 string size (0)
+                         source name: (none)
+020D  13                 line defined (19)
+020E  73                 last line defined (115)
+020F  04                 nups (4)
+0210  03                 numparams (3)
+0211  00                 is_vararg (0)
+0212  13                 maxstacksize (19)
+                         * code:
+0214  01                 sizecode (253)
+0215  98400000           [001] test       2       1    ; to [3] if false
+0219  1A000780           [002] jmp        29           ; to [32]
+021D  CB008006           [003] newtable   3   13  0    ; array=13, hash=0
+0221  1D010000           [004] getglobal  4   0        ; Lotus_Game
+0225  0E414002           [005] gettable   4   4   257  ; "MT_EXTERMINATION"
+0229  5D010000           [006] getglobal  5   0        ; Lotus_Game
+022D  4E81C002           [007] gettable   5   5   258  ; "MT_SURVIVAL"
+0231  9D010000           [008] getglobal  6   0        ; Lotus_Game
+0235  8EC14003           [009] gettable   6   6   259  ; "MT_RESCUE"
+0239  DD010000           [010] getglobal  7   0        ; Lotus_Game
+023D  CE01C103           [011] gettable   7   7   260  ; "MT_SABOTAGE"
+0241  1D020000           [012] getglobal  8   0        ; Lotus_Game
+0245  0E424104           [013] gettable   8   8   261  ; "MT_CAPTURE"
+0249  5D020000           [014] getglobal  9   0        ; Lotus_Game
+024D  4E82C104           [015] gettable   9   9   262  ; "MT_INTEL"
+0251  9D020000           [016] getglobal  10  0        ; Lotus_Game
+0255  8EC24105           [017] gettable   10  10  263  ; "MT_DEFENSE"
+0259  DD020000           [018] getglobal  11  0        ; Lotus_Game
+025D  CE02C205           [019] gettable   11  11  264  ; "MT_MOBILE_DEFENSE"
+0261  1D030000           [020] getglobal  12  0        ; Lotus_Game
+0265  0E434206           [021] gettable   12  12  265  ; "MT_TERRITORY"
+0269  5D030000           [022] getglobal  13  0        ; Lotus_Game
+026D  4E83C206           [023] gettable   13  13  266  ; "MT_RETRIEVAL"
+0271  9D030000           [024] getglobal  14  0        ; Lotus_Game
+0275  8EC34207           [025] gettable   14  14  267  ; "MT_HIVE"
+0279  DD030000           [026] getglobal  15  0        ; Lotus_Game
+027D  CE03C307           [027] gettable   15  15  268  ; "MT_EXCAVATE"
+0281  1D040000           [028] getglobal  16  0        ; Lotus_Game
+0285  0E444308           [029] gettable   16  16  269  ; "MT_ARTIFACT"
+0289  DB408006           [030] setlist    3   13  1    ; index 1 to 13
+028D  92008001           [031] move       2   3      
+0291  58000000           [032] test       1       0    ; to [34] if true
+0295  1A800080           [033] jmp        3            ; to [37]
+0299  CA008000           [034] len        3   1      
+fail op	35
+029D  2380C301           [035] close      0  
+02A1  1A000080           [036] jmp        1            ; to [38]
+02A5  52000001           [037] move       1   2      
+02A9  D3000000           [038] getupval   3   0      
+02AD  CEC0C301           [039] gettable   3   3   271  ; -1153782542
+02B1  E2808000           [040] call       3   1   2  
+02B5  2401C401           [041] self       4   3   272  ; -551469855
+02B9  92010000           [042] move       6   0      
+02BD  22818001           [043] call       4   3   2  
+02C1  5D410400           [044] getglobal  5   17       ; 1074689893
+02C5  8E814402           [045] gettable   6   4   274  ; "tileset"
+02C9  62810001           [046] call       5   2   2  
+02CD  58010000           [047] test       5       0    ; to [49] if true
+02D1  1A400280           [048] jmp        10           ; to [59]
+02D5  5DC10400           [049] getglobal  5   19       ; -1817107093
+02D9  99010500           [050] loadk      6   20       ; "Failed to generate random mission at "
+02DD  DD410500           [051] getglobal  7   21       ; -1615931716
+02E1  12020000           [052] move       8   0      
+02E5  E2810001           [053] call       7   2   2  
+02E9  19820500           [054] loadk      8   22       ; " (missing tileset)!"
+02ED  82010203           [055] concat     6   6   8  
+02F1  62410001           [056] call       5   2   1  
+02F5  46018002           [057] loadnil    5   5      
+02F9  5E010001           [058] return     5   2      
+02FD  5D410500           [059] getglobal  5   21       ; -1615931716
+0301  8E814402           [060] gettable   6   4   274  ; "tileset"
+0305  A4C14503           [061] self       6   6   279  ; 455421500
+0309  A2010001           [062] call       6   2   0  
+030D  62810000           [063] call       5   0   2  
+0311  9D010600           [064] getglobal  6   24       ; _T
+0315  8E414603           [065] gettable   6   6   281  ; "StarChartTilesets"
+0319  98410000           [066] test       6       1    ; to [68] if false
+031D  1A800080           [067] jmp        3            ; to [71]
+0321  9D010600           [068] getglobal  6   24       ; _T
+0325  CB010000           [069] newtable   7   0   0    ; array=0, hash=0
+0329  8CC1818C           [070] settable   6   281 7    ; "StarChartTilesets"
+032D  9D410400           [071] getglobal  6   17       ; 1074689893
+0331  DD010600           [072] getglobal  7   24       ; _T
+0335  CE41C603           [073] gettable   7   7   281  ; "StarChartTilesets"
+0339  CE418103           [074] gettable   7   7   5  
+033D  A2810001           [075] call       6   2   2  
+0341  98010000           [076] test       6       0    ; to [78] if true
+0345  1A000680           [077] jmp        25           ; to [103]
+0349  9D010600           [078] getglobal  6   24       ; _T
+034D  8E414603           [079] gettable   6   6   281  ; "StarChartTilesets"
+0351  DD810600           [080] getglobal  7   26       ; 2083004503
+0355  0E824402           [081] gettable   8   4   274  ; "tileset"
+0359  E2810001           [082] call       7   2   2  
+035D  8CC18102           [083] settable   6   5   7  
+0361  9D410400           [084] getglobal  6   17       ; 1074689893
+0365  DD010600           [085] getglobal  7   24       ; _T
+0369  CE41C603           [086] gettable   7   7   281  ; "StarChartTilesets"
+036D  CE418103           [087] gettable   7   7   5  
+0371  A2810001           [088] call       6   2   2  
+0375  98010000           [089] test       6       0    ; to [91] if true
+0379  1AC00280           [090] jmp        12           ; to [103]
+037D  9DC10400           [091] getglobal  6   19       ; -1817107093
+0381  D9010500           [092] loadk      7   20       ; "Failed to generate random mission at "
+0385  1D420500           [093] getglobal  8   21       ; -1615931716
+0389  52020000           [094] move       9   0      
+038D  22820001           [095] call       8   2   2  
+0391  59C20600           [096] loadk      9   27       ; ", tileset="
+0395  92028002           [097] move       10  5      
+0399  D9020700           [098] loadk      11  28       ; " (NULL tileset)!"
+039D  C2C18203           [099] concat     7   7   11 
+03A1  A2410001           [100] call       6   2   1  
+03A5  86010003           [101] loadnil    6   6      
+03A9  9E010001           [102] return     6   2      
+03AD  9D010600           [103] getglobal  6   24       ; _T
+03B1  8E414603           [104] gettable   6   6   281  ; "StarChartTilesets"
+03B5  8E410103           [105] gettable   6   6   5  
+03B9  D3018000           [106] getupval   7   1      
+03BD  12020003           [107] move       8   6      
+03C1  52028000           [108] move       9   1      
+03C5  E2818001           [109] call       7   3   2  
+03C9  0A028003           [110] len        8   7      
+fail op	35
+03CD  23804304           [111] close      0  
+03D1  1A800580           [112] jmp        23           ; to [136]
+03D5  1DC20400           [113] getglobal  8   19       ; -1817107093
+03D9  59420700           [114] loadk      9   29       ; "desired mission types not supported by tileset "
+03DD  92028002           [115] move       10  5      
+03E1  D9820700           [116] loadk      11  30       ; " at "
+03E5  1D430500           [117] getglobal  12  21       ; -1615931716
+03E9  52030000           [118] move       13  0      
+03ED  22830001           [119] call       12  2   2  
+03F1  59C30700           [120] loadk      13  31       ; "; retrying with default mission types"
+03F5  42428304           [121] concat     9   9   13 
+03F9  22420001           [122] call       8   2   1  
+03FD  13028000           [123] getupval   8   1      
+0401  52020003           [124] move       9   6      
+0405  92020001           [125] move       10  2      
+0409  22828001           [126] call       8   3   2  
+040D  D2010004           [127] move       7   8      
+0411  0A028003           [128] len        8   7      
+fail op	35
+0415  23804304           [129] close      0  
+0419  1A000180           [130] jmp        5            ; to [136]
+041D  1DC20400           [131] getglobal  8   19       ; -1817107093
+0421  59020800           [132] loadk      9   32       ; "Failed to generate random mission (desired mission type not supported)!"
+0425  22420001           [133] call       8   2   1  
+0429  06020004           [134] loadnil    8   8      
+042D  1E020001           [135] return     8   2      
+0431  1D420800           [136] getglobal  8   33       ; 687937235
+0435  59820800           [137] loadk      9   34       ; 0
+0439  8A028003           [138] len        10  7      
+043D  22828001           [139] call       8   3   2  
+0441  0E028203           [140] gettable   8   7   8  
+0445  64C24803           [141] self       9   6   291  ; -682427769
+0449  D2020004           [142] move       11  8      
+044D  62828001           [143] call       9   3   2  
+0451  A402C904           [144] self       10  9   292  ; 539427057
+0455  A2820001           [145] call       10  2   2  
+0459  E442C904           [146] self       11  9   293  ; -347570550
+045D  E2820001           [147] call       11  2   2  
+0461  1D030000           [148] getglobal  12  0        ; Lotus_Game
+0465  0E834906           [149] gettable   12  12  294  ; -1469652536
+0469  22838000           [150] call       12  1   2  
+046D  0C038293           [151] settable   12  295 8    ; "missionType"
+0471  64434A03           [152] self       13  6   297  ; -2031737093
+0475  62830001           [153] call       13  2   2  
+0479  0C430394           [154] settable   12  296 13   ; "faction"
+047D  4EC34A02           [155] gettable   13  4   299  ; "name"
+0481  0C430395           [156] settable   12  298 13   ; "location"
+0485  4E43CB04           [157] gettable   13  9   301  ; "procLevel"
+0489  0C430396           [158] settable   12  300 13   ; "levelOverride"
+fail op	21
+048D  15800287           [159] concat     0   270 10 
+0491  1A400280           [160] jmp        10           ; to [171]
+0495  5D830600           [161] getglobal  13  26       ; 2083004503
+0499  A4C3CB04           [162] self       14  9   303  ; 860934838
+049D  1D440800           [163] getglobal  16  33       ; 687937235
+04A1  59840800           [164] loadk      17  34       ; 0
+04A5  92040005           [165] move       18  10     
+04A9  22848001           [166] call       16  3   2  
+04AD  0D844808           [167] sub        16  16  290  ; 0
+04B1  A2038001           [168] call       14  3   0  
+04B5  62830000           [169] call       13  0   2  
+04B9  0C430397           [170] settable   12  302 13   ; "enemySpec"
+fail op	21
+04BD  15C00287           [171] concat     0   270 11 
+04C1  1A400280           [172] jmp        10           ; to [183]
+04C5  5D830600           [173] getglobal  13  26       ; 2083004503
+04C9  A443CC04           [174] self       14  9   305  ; 792381261
+04CD  1D440800           [175] getglobal  16  33       ; 687937235
+04D1  59840800           [176] loadk      17  34       ; 0
+04D5  92048005           [177] move       18  11     
+04D9  22848001           [178] call       16  3   2  
+04DD  0D844808           [179] sub        16  16  290  ; 0
+04E1  A2038001           [180] call       14  3   0  
+04E5  62830000           [181] call       13  0   2  
+04E9  0C430398           [182] settable   12  304 13   ; "extraEnemySpec"
+04ED  64C3CC04           [183] self       13  9   307  ; -321305935
+04F1  62830001           [184] call       13  2   2  
+04F5  0C430399           [185] settable   12  306 13   ; "vipAgent"
+04F9  4E03CD04           [186] gettable   13  9   308  ; "advancedSpawners"
+04FD  58030000           [187] test       13      0    ; to [189] if true
+0501  1A400080           [188] jmp        2            ; to [191]
+0505  4E03CD04           [189] gettable   13  9   308  ; "advancedSpawners"
+0509  0C43839A           [190] settable   12  309 13   ; "customAdvancedSpawners"
+050D  4EC34D02           [191] gettable   13  4   311  ; "mission"
+0511  4E83CD06           [192] gettable   13  13  310  ; "minEnemyLevel"
+0515  0C43039B           [193] settable   12  310 13   ; "minEnemyLevel"
+0519  4EC34D02           [194] gettable   13  4   311  ; "mission"
+051D  4E03CE06           [195] gettable   13  13  312  ; "maxEnemyLevel"
+0521  0C43039C           [196] settable   12  312 13   ; "maxEnemyLevel"
+0525  5D830E00           [197] getglobal  13  58       ; 968599890
+0529  99C30E00           [198] loadk      14  59       ; 0
+052D  D9830800           [199] loadk      15  34       ; 0
+0531  62838001           [200] call       13  3   2  
+0535  0C43839C           [201] settable   12  313 13   ; "difficulty"
+0539  4EC34D02           [202] gettable   13  4   311  ; "mission"
+053D  4E03CF06           [203] gettable   13  13  316  ; "seed"
+0541  0C43039E           [204] settable   12  316 13   ; "seed"
+0545  5D430F00           [205] getglobal  13  61       ; string
+0549  4E83CF06           [206] gettable   13  13  318  ; -565905820
+054D  92038002           [207] move       14  5      
+0551  D9C30F00           [208] loadk      15  63       ; "Archwing"
+0555  62838001           [209] call       13  3   2  
+0559  58030000           [210] test       13      0    ; to [212] if true
+055D  1A400080           [211] jmp        2            ; to [214]
+0561  0C4350A0           [212] settable   12  320 321  ; "archwingRequired" 1
+0565  1A800580           [213] jmp        23           ; to [237]
+0569  5D430F00           [214] getglobal  13  61       ; string
+056D  4E83CF06           [215] gettable   13  13  318  ; -565905820
+0571  92038002           [216] move       14  5      
+0575  D9831000           [217] loadk      15  66       ; "Ocean"
+0579  62838001           [218] call       13  3   2  
+057D  58030000           [219] test       13      0    ; to [221] if true
+0581  1AC00180           [220] jmp        8            ; to [229]
+0585  4EC34906           [221] gettable   13  12  295  ; "missionType"
+0589  9D030000           [222] getglobal  14  0        ; Lotus_Game
+058D  8EC34107           [223] gettable   14  14  263  ; "MT_DEFENSE"
+fail op	35
+0591  63808306           [224] close      1  
+0595  1A800080           [225] jmp        3            ; to [229]
+0599  0C4350A0           [226] settable   12  320 321  ; "archwingRequired" 1
+059D  0C43D0A1           [227] settable   12  323 321  ; "isSharkwingMission" 1
+05A1  1AC00180           [228] jmp        8            ; to [237]
+05A5  5D430F00           [229] getglobal  13  61       ; string
+05A9  4E83CF06           [230] gettable   13  13  318  ; -565905820
+05AD  92038002           [231] move       14  5      
+05B1  D9031100           [232] loadk      15  68       ; "Fortress"
+05B5  62838001           [233] call       13  3   2  
+05B9  58030000           [234] test       13      0    ; to [236] if true
+05BD  1A000080           [235] jmp        1            ; to [237]
+05C1  0C4350A0           [236] settable   12  320 321  ; "archwingRequired" 1
+05C5  4EC34906           [237] gettable   13  12  295  ; "missionType"
+05C9  9D030000           [238] getglobal  14  0        ; Lotus_Game
+05CD  8E435107           [239] gettable   14  14  325  ; "MT_ARENA"
+fail op	35
+05D1  23808306           [240] close      0  
+05D5  1A400280           [241] jmp        10           ; to [252]
+05D9  4E034A06           [242] gettable   13  12  296  ; "faction"
+05DD  9D030000           [243] getglobal  14  0        ; Lotus_Game
+05E1  8E835107           [244] gettable   14  14  326  ; "FC_CORPUS"
+fail op	35
+05E5  23808306           [245] close      0  
+05E9  1A800080           [246] jmp        3            ; to [250]
+05ED  53030001           [247] getupval   13  2      
+05F1  0C4383A3           [248] settable   12  327 13   ; "gameRules"
+05F5  1A400080           [249] jmp        2            ; to [252]
+05F9  53038001           [250] getupval   13  3      
+05FD  0C4383A3           [251] settable   12  327 13   ; "gameRules"
+0601  1E030001           [252] return     12  2      
+0605  1E008000           [253] return     0   1      
+                         * constants:
+0609  48                 sizek (72)
+060A  04                 const type 4
+060B  0B                 string size (11)
+060C  4C6F7475735F4761+  "Lotus_Ga"
+0614  6D6500             "me\0"
+                         const [0]: "Lotus_Game"
+0617  04                 const type 4
+0618  11                 string size (17)
+0619  4D545F4558544552+  "MT_EXTER"
+0621  4D494E4154494F4E+  "MINATION"
+0629  00                 "\0"
+                         const [1]: "MT_EXTERMINATION"
+062A  04                 const type 4
+062B  0C                 string size (12)
+062C  4D545F5355525649+  "MT_SURVI"
+0634  56414C00           "VAL\0"
+                         const [2]: "MT_SURVIVAL"
+0638  04                 const type 4
+0639  0A                 string size (10)
+063A  4D545F5245534355+  "MT_RESCU"
+0642  4500               "E\0"
+                         const [3]: "MT_RESCUE"
+0644  04                 const type 4
+0645  0C                 string size (12)
+0646  4D545F5341424F54+  "MT_SABOT"
+064E  41474500           "AGE\0"
+                         const [4]: "MT_SABOTAGE"
+0652  04                 const type 4
+0653  0B                 string size (11)
+0654  4D545F4341505455+  "MT_CAPTU"
+065C  524500             "RE\0"
+                         const [5]: "MT_CAPTURE"
+065F  04                 const type 4
+0660  09                 string size (9)
+0661  4D545F494E54454C+  "MT_INTEL"
+0669  00                 "\0"
+                         const [6]: "MT_INTEL"
+066A  04                 const type 4
+066B  0B                 string size (11)
+066C  4D545F444546454E+  "MT_DEFEN"
+0674  534500             "SE\0"
+                         const [7]: "MT_DEFENSE"
+0677  04                 const type 4
+0678  12                 string size (18)
+0679  4D545F4D4F42494C+  "MT_MOBIL"
+0681  455F444546454E53+  "E_DEFENS"
+0689  4500               "E\0"
+                         const [8]: "MT_MOBILE_DEFENSE"
+068B  04                 const type 4
+068C  0D                 string size (13)
+068D  4D545F5445525249+  "MT_TERRI"
+0695  544F525900         "TORY\0"
+                         const [9]: "MT_TERRITORY"
+069A  04                 const type 4
+069B  0D                 string size (13)
+069C  4D545F5245545249+  "MT_RETRI"
+06A4  4556414C00         "EVAL\0"
+                         const [10]: "MT_RETRIEVAL"
+06A9  04                 const type 4
+06AA  08                 string size (8)
+06AB  4D545F4849564500   "MT_HIVE\0"
+                         const [11]: "MT_HIVE"
+06B3  04                 const type 4
+06B4  0C                 string size (12)
+06B5  4D545F4558434156+  "MT_EXCAV"
+06BD  41544500           "ATE\0"
+                         const [12]: "MT_EXCAVATE"
+06C1  04                 const type 4
+06C2  0C                 string size (12)
+06C3  4D545F4152544946+  "MT_ARTIF"
+06CB  41435400           "ACT\0"
+                         const [13]: "MT_ARTIFACT"
+06CF  03                 const type 3
+06D0  00000000           const [14]: (0)
+06D4  01                 const type 3
+06D5  F2AC3ABB           const [15]: (-1153782542)
+06D9  01                 const type 3
+06DA  E13C21DF           const [16]: (-551469855)
+06DE  01                 const type 3
+06DF  65770E40           const [17]: (1074689893)
+06E3  04                 const type 4
+06E4  08                 string size (8)
+06E5  74696C6573657400   "tileset\0"
+                         const [18]: "tileset"
+06ED  01                 const type 3
+06EE  6B25B193           const [19]: (-1817107093)
+06F2  04                 const type 4
+06F3  26                 string size (38)
+06F4  4661696C65642074+  "Failed t"
+06FC  6F2067656E657261+  "o genera"
+0704  74652072616E646F+  "te rando"
+070C  6D206D697373696F+  "m missio"
+0714  6E2061742000       "n at \0"
+                         const [20]: "Failed to generate random mission at "
+071A  01                 const type 3
+071B  BCD6AE9F           const [21]: (-1615931716)
+071F  04                 const type 4
+0720  14                 string size (20)
+0721  20286D697373696E+  " (missin"
+0729  672074696C657365+  "g tilese"
+0731  74292100           "t)!\0"
+                         const [22]: " (missing tileset)!"
+0735  01                 const type 3
+0736  3C2E251B           const [23]: (455421500)
+073A  04                 const type 4
+073B  03                 string size (3)
+073C  5F5400             "_T\0"
+                         const [24]: "_T"
+073F  04                 const type 4
+0740  12                 string size (18)
+0741  5374617243686172+  "StarChar"
+0749  7454696C65736574+  "tTileset"
+0751  7300               "s\0"
+                         const [25]: "StarChartTilesets"
+0753  01                 const type 3
+0754  5720287C           const [26]: (2083004503)
+0758  04                 const type 4
+0759  0B                 string size (11)
+075A  2C2074696C657365+  ", tilese"
+0762  743D00             "t=\0"
+                         const [27]: ", tileset="
+0765  04                 const type 4
+0766  11                 string size (17)
+0767  20284E554C4C2074+  " (NULL t"
+076F  696C657365742921+  "ileset)!"
+0777  00                 "\0"
+                         const [28]: " (NULL tileset)!"
+0778  04                 const type 4
+0779  30                 string size (48)
+077A  6465736972656420+  "desired "
+0782  6D697373696F6E20+  "mission "
+078A  7479706573206E6F+  "types no"
+0792  7420737570706F72+  "t suppor"
+079A  7465642062792074+  "ted by t"
+07A2  696C657365742000   "ileset \0"
+                         const [29]: "desired mission types not supported by tileset "
+07AA  04                 const type 4
+07AB  05                 string size (5)
+07AC  2061742000         " at \0"
+                         const [30]: " at "
+07B1  04                 const type 4
+07B2  26                 string size (38)
+07B3  3B20726574727969+  "; retryi"
+07BB  6E67207769746820+  "ng with "
+07C3  64656661756C7420+  "default "
+07CB  6D697373696F6E20+  "mission "
+07D3  747970657300       "types\0"
+                         const [31]: "; retrying with default mission types"
+07D9  04                 const type 4
+07DA  48                 string size (72)
+07DB  4661696C65642074+  "Failed t"
+07E3  6F2067656E657261+  "o genera"
+07EB  74652072616E646F+  "te rando"
+07F3  6D206D697373696F+  "m missio"
+07FB  6E20286465736972+  "n (desir"
+0803  6564206D69737369+  "ed missi"
+080B  6F6E207479706520+  "on type "
+0813  6E6F742073757070+  "not supp"
+081B  6F72746564292100   "orted)!\0"
+                         const [32]: "Failed to generate random mission (desired mission type not supported)!"
+0823  01                 const type 3
+0824  D3160129           const [33]: (687937235)
+0828  03                 const type 3
+0829  0000803F           const [34]: (0)
+082D  01                 const type 3
+082E  87FA52D7           const [35]: (-682427769)
+0832  01                 const type 3
+0833  F1002720           const [36]: (539427057)
+0837  01                 const type 3
+0838  8A7E48EB           const [37]: (-347570550)
+083C  01                 const type 3
+083D  C8E166A8           const [38]: (-1469652536)
+0841  04                 const type 4
+0842  0C                 string size (12)
+0843  6D697373696F6E54+  "missionT"
+084B  79706500           "ype\0"
+                         const [39]: "missionType"
+084F  04                 const type 4
+0850  08                 string size (8)
+0851  66616374696F6E00   "faction\0"
+                         const [40]: "faction"
+0859  01                 const type 3
+085A  FB26E686           const [41]: (-2031737093)
+085E  04                 const type 4
+085F  09                 string size (9)
+0860  6C6F636174696F6E+  "location"
+0868  00                 "\0"
+                         const [42]: "location"
+0869  04                 const type 4
+086A  05                 string size (5)
+086B  6E616D6500         "name\0"
+                         const [43]: "name"
+0870  04                 const type 4
+0871  0E                 string size (14)
+0872  6C6576656C4F7665+  "levelOve"
+087A  727269646500       "rride\0"
+                         const [44]: "levelOverride"
+0880  04                 const type 4
+0881  0A                 string size (10)
+0882  70726F634C657665+  "procLeve"
+088A  6C00               "l\0"
+                         const [45]: "procLevel"
+088C  04                 const type 4
+088D  0A                 string size (10)
+088E  656E656D79537065+  "enemySpe"
+0896  6300               "c\0"
+                         const [46]: "enemySpec"
+0898  01                 const type 3
+0899  B6D25033           const [47]: (860934838)
+089D  04                 const type 4
+089E  0F                 string size (15)
+089F  6578747261456E65+  "extraEne"
+08A7  6D795370656300     "mySpec\0"
+                         const [48]: "extraEnemySpec"
+08AE  01                 const type 3
+08AF  4DC73A2F           const [49]: (792381261)
+08B3  04                 const type 4
+08B4  09                 string size (9)
+08B5  7669704167656E74+  "vipAgent"
+08BD  00                 "\0"
+                         const [50]: "vipAgent"
+08BE  01                 const type 3
+08BF  B142D9EC           const [51]: (-321305935)
+08C3  04                 const type 4
+08C4  11                 string size (17)
+08C5  616476616E636564+  "advanced"
+08CD  537061776E657273+  "Spawners"
+08D5  00                 "\0"
+                         const [52]: "advancedSpawners"
+08D6  04                 const type 4
+08D7  17                 string size (23)
+08D8  637573746F6D4164+  "customAd"
+08E0  76616E6365645370+  "vancedSp"
+08E8  61776E65727300     "awners\0"
+                         const [53]: "customAdvancedSpawners"
+08EF  04                 const type 4
+08F0  0E                 string size (14)
+08F1  6D696E456E656D79+  "minEnemy"
+08F9  4C6576656C00       "Level\0"
+                         const [54]: "minEnemyLevel"
+08FF  04                 const type 4
+0900  08                 string size (8)
+0901  6D697373696F6E00   "mission\0"
+                         const [55]: "mission"
+0909  04                 const type 4
+090A  0E                 string size (14)
+090B  6D6178456E656D79+  "maxEnemy"
+0913  4C6576656C00       "Level\0"
+                         const [56]: "maxEnemyLevel"
+0919  04                 const type 4
+091A  0B                 string size (11)
+091B  646966666963756C+  "difficul"
+0923  747900             "ty\0"
+                         const [57]: "difficulty"
+0926  01                 const type 3
+0927  52A9BB39           const [58]: (968599890)
+092B  03                 const type 3
+092C  0000403F           const [59]: (0)
+0930  04                 const type 4
+0931  05                 string size (5)
+0932  7365656400         "seed\0"
+                         const [60]: "seed"
+0937  04                 const type 4
+0938  07                 string size (7)
+0939  737472696E6700     "string\0"
+                         const [61]: "string"
+0940  01                 const type 3
+0941  64F644DE           const [62]: (-565905820)
+0945  04                 const type 4
+0946  09                 string size (9)
+0947  4172636877696E67+  "Archwing"
+094F  00                 "\0"
+                         const [63]: "Archwing"
+0950  04                 const type 4
+0951  11                 string size (17)
+0952  6172636877696E67+  "archwing"
+095A  5265717569726564+  "Required"
+0962  00                 "\0"
+                         const [64]: "archwingRequired"
+0963  01                 const type 3
+0964  01000000           const [65]: (1)
+0968  04                 const type 4
+0969  06                 string size (6)
+096A  4F6365616E00       "Ocean\0"
+                         const [66]: "Ocean"
+0970  04                 const type 4
+0971  13                 string size (19)
+0972  6973536861726B77+  "isSharkw"
+097A  696E674D69737369+  "ingMissi"
+0982  6F6E00             "on\0"
+                         const [67]: "isSharkwingMission"
+0985  04                 const type 4
+0986  09                 string size (9)
+0987  466F727472657373+  "Fortress"
+098F  00                 "\0"
+                         const [68]: "Fortress"
+0990  04                 const type 4
+0991  09                 string size (9)
+0992  4D545F4152454E41+  "MT_ARENA"
+099A  00                 "\0"
+                         const [69]: "MT_ARENA"
+099B  04                 const type 4
+099C  0A                 string size (10)
+099D  46435F434F525055+  "FC_CORPU"
+09A5  5300               "S\0"
+                         const [70]: "FC_CORPUS"
+09A7  04                 const type 4
+09A8  0A                 string size (10)
+09A9  67616D6552756C65+  "gameRule"
+09B1  7300               "s\0"
+                         const [71]: "gameRules"
+                         * functions:
+09B3  00                 sizep (0)
+                         * lines:
+09B5  01                 sizelineinfo (253)
+                         [pc] (line)
+09B6  14                 [001] (20)
+09B7  00                 [002] (20)
+09B8  00                 [003] (21)
+09B9  00                 [004] (21)
+09BA  14                 [005] (21)
+09BB  00                 [006] (21)
+09BC  00                 [007] (21)
+09BD  00                 [008] (21)
+09BE  15                 [009] (21)
+09BF  00                 [010] (21)
+09C0  00                 [011] (21)
+09C1  00                 [012] (21)
+09C2  15                 [013] (21)
+09C3  00                 [014] (21)
+09C4  00                 [015] (21)
+09C5  00                 [016] (21)
+09C6  15                 [017] (21)
+09C7  00                 [018] (21)
+09C8  00                 [019] (21)
+09C9  00                 [020] (21)
+09CA  15                 [021] (21)
+09CB  00                 [022] (21)
+09CC  00                 [023] (21)
+09CD  00                 [024] (21)
+09CE  15                 [025] (21)
+09CF  00                 [026] (21)
+09D0  00                 [027] (21)
+09D1  00                 [028] (21)
+09D2  15                 [029] (21)
+09D3  00                 [030] (21)
+09D4  00                 [031] (21)
+09D5  00                 [032] (24)
+09D6  15                 [033] (24)
+09D7  00                 [034] (24)
+09D8  00                 [035] (24)
+09D9  00                 [036] (24)
+09DA  15                 [037] (25)
+09DB  00                 [038] (28)
+09DC  00                 [039] (28)
+09DD  00                 [040] (28)
+09DE  15                 [041] (29)
+09DF  00                 [042] (29)
+09E0  00                 [043] (29)
+09E1  00                 [044] (30)
+09E2  15                 [045] (30)
+09E3  00                 [046] (30)
+09E4  00                 [047] (30)
+09E5  00                 [048] (30)
+09E6  15                 [049] (31)
+09E7  00                 [050] (31)
+09E8  00                 [051] (31)
+09E9  00                 [052] (31)
+09EA  15                 [053] (31)
+09EB  00                 [054] (31)
+09EC  00                 [055] (31)
+09ED  00                 [056] (31)
+09EE  15                 [057] (32)
+09EF  00                 [058] (32)
+09F0  00                 [059] (35)
+09F1  00                 [060] (35)
+09F2  15                 [061] (35)
+09F3  00                 [062] (35)
+09F4  00                 [063] (35)
+09F5  00                 [064] (36)
+09F6  15                 [065] (36)
+09F7  00                 [066] (36)
+09F8  00                 [067] (36)
+09F9  00                 [068] (37)
+09FA  15                 [069] (37)
+09FB  00                 [070] (37)
+09FC  00                 [071] (39)
+09FD  00                 [072] (39)
+09FE  15                 [073] (39)
+09FF  00                 [074] (39)
+0A00  00                 [075] (39)
+0A01  00                 [076] (39)
+0A02  15                 [077] (39)
+0A03  00                 [078] (40)
+0A04  00                 [079] (40)
+0A05  00                 [080] (40)
+0A06  15                 [081] (40)
+0A07  00                 [082] (40)
+0A08  00                 [083] (40)
+0A09  00                 [084] (41)
+0A0A  15                 [085] (41)
+0A0B  00                 [086] (41)
+0A0C  00                 [087] (41)
+0A0D  00                 [088] (41)
+0A0E  15                 [089] (41)
+0A0F  00                 [090] (41)
+0A10  00                 [091] (42)
+0A11  00                 [092] (42)
+0A12  15                 [093] (42)
+0A13  00                 [094] (42)
+0A14  00                 [095] (42)
+0A15  00                 [096] (42)
+0A16  15                 [097] (42)
+0A17  00                 [098] (42)
+0A18  00                 [099] (42)
+0A19  00                 [100] (42)
+0A1A  15                 [101] (43)
+0A1B  00                 [102] (43)
+0A1C  00                 [103] (47)
+0A1D  00                 [104] (47)
+0A1E  15                 [105] (47)
+0A1F  00                 [106] (49)
+0A20  00                 [107] (49)
+0A21  00                 [108] (49)
+0A22  15                 [109] (49)
+0A23  00                 [110] (51)
+0A24  00                 [111] (51)
+0A25  00                 [112] (51)
+0A26  15                 [113] (52)
+0A27  00                 [114] (52)
+0A28  00                 [115] (52)
+0A29  00                 [116] (52)
+0A2A  15                 [117] (52)
+0A2B  00                 [118] (52)
+0A2C  00                 [119] (52)
+0A2D  00                 [120] (52)
+0A2E  15                 [121] (52)
+0A2F  00                 [122] (52)
+0A30  00                 [123] (53)
+0A31  00                 [124] (53)
+0A32  18                 [125] (53)
+0A33  00                 [126] (53)
+0A34  00                 [127] (53)
+0A35  00                 [128] (54)
+0A36  18                 [129] (54)
+0A37  00                 [130] (54)
+0A38  00                 [131] (55)
+0A39  00                 [132] (55)
+0A3A  18                 [133] (55)
+0A3B  00                 [134] (56)
+0A3C  00                 [135] (56)
+0A3D  00                 [136] (60)
+0A3E  18                 [137] (60)
+0A3F  00                 [138] (60)
+0A40  00                 [139] (60)
+0A41  00                 [140] (60)
+0A42  18                 [141] (61)
+0A43  00                 [142] (61)
+0A44  00                 [143] (61)
+0A45  00                 [144] (62)
+0A46  19                 [145] (62)
+0A47  00                 [146] (63)
+0A48  00                 [147] (63)
+0A49  00                 [148] (65)
+0A4A  1C                 [149] (65)
+0A4B  00                 [150] (65)
+0A4C  00                 [151] (67)
+0A4D  00                 [152] (68)
+0A4E  1C                 [153] (68)
+0A4F  00                 [154] (68)
+0A50  00                 [155] (69)
+0A51  00                 [156] (69)
+0A52  1C                 [157] (70)
+0A53  00                 [158] (70)
+0A54  00                 [159] (71)
+0A55  00                 [160] (71)
+0A56  1D                 [161] (72)
+0A57  00                 [162] (72)
+0A58  00                 [163] (72)
+0A59  00                 [164] (72)
+0A5A  1D                 [165] (72)
+0A5B  00                 [166] (72)
+0A5C  00                 [167] (72)
+0A5D  00                 [168] (72)
+0A5E  1D                 [169] (72)
+0A5F  00                 [170] (72)
+0A60  00                 [171] (74)
+0A61  00                 [172] (74)
+0A62  1E                 [173] (75)
+0A63  00                 [174] (75)
+0A64  00                 [175] (75)
+0A65  00                 [176] (75)
+0A66  1E                 [177] (75)
+0A67  00                 [178] (75)
+0A68  00                 [179] (75)
+0A69  00                 [180] (75)
+0A6A  1E                 [181] (75)
+0A6B  00                 [182] (75)
+0A6C  00                 [183] (78)
+0A6D  00                 [184] (78)
+0A6E  1E                 [185] (78)
+0A6F  00                 [186] (80)
+0A70  00                 [187] (80)
+0A71  00                 [188] (80)
+0A72  1E                 [189] (81)
+0A73  00                 [190] (81)
+0A74  00                 [191] (92)
+0A75  00                 [192] (92)
+0A76  1F                 [193] (92)
+0A77  00                 [194] (93)
+0A78  00                 [195] (93)
+0A79  00                 [196] (93)
+0A7A  1F                 [197] (94)
+0A7B  00                 [198] (94)
+0A7C  00                 [199] (94)
+0A7D  00                 [200] (94)
+0A7E  1F                 [201] (94)
+0A7F  00                 [202] (95)
+0A80  00                 [203] (95)
+0A81  00                 [204] (95)
+0A82  1F                 [205] (97)
+0A83  00                 [206] (97)
+0A84  00                 [207] (97)
+0A85  00                 [208] (97)
+0A86  1F                 [209] (97)
+0A87  00                 [210] (97)
+0A88  00                 [211] (97)
+0A89  00                 [212] (98)
+0A8A  1F                 [213] (98)
+0A8B  00                 [214] (99)
+0A8C  00                 [215] (99)
+0A8D  00                 [216] (99)
+0A8E  1F                 [217] (99)
+0A8F  00                 [218] (99)
+0A90  00                 [219] (99)
+0A91  00                 [220] (99)
+0A92  1F                 [221] (99)
+0A93  00                 [222] (99)
+0A94  00                 [223] (99)
+0A95  00                 [224] (99)
+0A96  20                 [225] (99)
+0A97  00                 [226] (100)
+0A98  00                 [227] (101)
+0A99  00                 [228] (101)
+0A9A  20                 [229] (102)
+0A9B  00                 [230] (102)
+0A9C  00                 [231] (102)
+0A9D  00                 [232] (102)
+0A9E  23                 [233] (102)
+0A9F  00                 [234] (102)
+0AA0  00                 [235] (102)
+0AA1  00                 [236] (103)
+0AA2  23                 [237] (106)
+0AA3  00                 [238] (106)
+0AA4  00                 [239] (106)
+0AA5  00                 [240] (106)
+0AA6  23                 [241] (106)
+0AA7  00                 [242] (107)
+0AA8  00                 [243] (107)
+0AA9  00                 [244] (107)
+0AAA  23                 [245] (107)
+0AAB  00                 [246] (107)
+0AAC  00                 [247] (108)
+0AAD  00                 [248] (108)
+0AAE  23                 [249] (108)
+0AAF  00                 [250] (110)
+0AB0  00                 [251] (110)
+0AB1  00                 [252] (114)
+0AB2  24                 [253] (115)
+                         * locals:
+0DAA  00                 sizelocvars (0)
+                         * upvalues:
+0DAB  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+0DAC  17                 sizelineinfo (23)
+                         [pc] (line)
+0DAD  01                 [01] (1)
+0DAE  00                 [02] (1)
+0DAF  00                 [03] (1)
+0DB0  00                 [04] (1)
+0DB1  01                 [05] (1)
+0DB2  00                 [06] (3)
+0DB3  00                 [07] (3)
+0DB4  00                 [08] (3)
+0DB5  01                 [09] (5)
+0DB6  00                 [10] (5)
+0DB7  00                 [11] (5)
+0DB8  00                 [12] (6)
+0DB9  01                 [13] (6)
+0DBA  00                 [14] (6)
+0DBB  00                 [15] (17)
+0DBC  00                 [16] (115)
+0DBD  01                 [17] (115)
+0DBE  00                 [18] (115)
+0DBF  00                 [19] (115)
+0DC0  00                 [20] (115)
+0DC1  03                 [21] (115)
+0DC2  00                 [22] (19)
+0DC3  00                 [23] (115)
+                         * locals:
+0E09  00                 sizelocvars (0)
+                         * upvalues:
+0E0A  00                 sizeupvalues (0)
+                         ** end of function **
+
+0E0B                     ** end of chunk **

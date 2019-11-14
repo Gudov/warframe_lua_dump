@@ -1,0 +1,476 @@
+1	C:\wlua_dump\path\Lotus\InterfaceSentimentUtility.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\InterfaceSentimentUtility.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  0B                 size of number (bytes)
+0008  2C                 integral (1=integral)
+444
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+package
+seeall
+/Lotus/Language/Sentiment/Neutrall
+/Lotus/Language/Sentiment/Happy
+/Lotus/Language/Sentiment/Angry
+/Lotus/Language/Sentiment/Sad
+/Lotus/Language/Sentiment/Contempt
+/Lotus/Language/Sentiment/Disgust
+/Lotus/Language/Sentiment/Afraid
+/Lotus/Language/Sentiment/Surprise
+CalcMood
+_T
+TransmissionMoodOverride
+string
+[^.:;!?"()[%]%s]+
+;
+math
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  0B                 maxstacksize (11)
+                         * code:
+0008  2C                 sizecode (44)
+0009  1D000000           [01] getglobal  0   0        ; 954442511
+000D  41000001           [02] vararg     1   2      
+0011  9D400000           [03] getglobal  2   1        ; package
+0015  8E804001           [04] gettable   2   2   258  ; "seeall"
+0019  22408001           [05] call       0   3   1  
+001D  0B008003           [06] newtable   0   7   0    ; array=7, hash=0
+0021  5DC00000           [07] getglobal  1   3        ; -421772368
+0025  99000100           [08] loadk      2   4        ; "/Lotus/Language/Sentiment/Neutrall"
+0029  CB000000           [09] newtable   3   0   0    ; array=0, hash=0
+002D  62808001           [10] call       1   3   2  
+0031  9DC00000           [11] getglobal  2   3        ; -421772368
+0035  D9400100           [12] loadk      3   5        ; "/Lotus/Language/Sentiment/Happy"
+0039  0B010000           [13] newtable   4   0   0    ; array=0, hash=0
+003D  A2808001           [14] call       2   3   2  
+0041  DDC00000           [15] getglobal  3   3        ; -421772368
+0045  19810100           [16] loadk      4   6        ; "/Lotus/Language/Sentiment/Angry"
+0049  4B010000           [17] newtable   5   0   0    ; array=0, hash=0
+004D  E2808001           [18] call       3   3   2  
+0051  1DC10000           [19] getglobal  4   3        ; -421772368
+0055  59C10100           [20] loadk      5   7        ; "/Lotus/Language/Sentiment/Sad"
+0059  8B010000           [21] newtable   6   0   0    ; array=0, hash=0
+005D  22818001           [22] call       4   3   2  
+0061  5DC10000           [23] getglobal  5   3        ; -421772368
+0065  99010200           [24] loadk      6   8        ; "/Lotus/Language/Sentiment/Contempt"
+0069  CB010000           [25] newtable   7   0   0    ; array=0, hash=0
+006D  62818001           [26] call       5   3   2  
+0071  9DC10000           [27] getglobal  6   3        ; -421772368
+0075  D9410200           [28] loadk      7   9        ; "/Lotus/Language/Sentiment/Disgust"
+0079  0B020000           [29] newtable   8   0   0    ; array=0, hash=0
+007D  A2818001           [30] call       6   3   2  
+0081  DDC10000           [31] getglobal  7   3        ; -421772368
+0085  19820200           [32] loadk      8   10       ; "/Lotus/Language/Sentiment/Afraid"
+0089  4B020000           [33] newtable   9   0   0    ; array=0, hash=0
+008D  E2818001           [34] call       7   3   2  
+0091  1DC20000           [35] getglobal  8   3        ; -421772368
+0095  59C20200           [36] loadk      9   11       ; "/Lotus/Language/Sentiment/Surprise"
+0099  8B020000           [37] newtable   10  0   0    ; array=0, hash=0
+009D  22028001           [38] call       8   3   0  
+00A1  1B400000           [39] setlist    0   0   1    ; index 1 to top
+00A5  65000000           [40] closure    1   0      
+00A9  12000000           [41] move       0   0      
+00AD  60000300           [42] setglobal  1   12       ; CalcMood
+00B1  60400300           [43] setglobal  1   13       ; -1978681042
+00B5  1E008000           [44] return     0   1      
+                         * constants:
+00B9  0E                 sizek (14)
+00BA  01                 const type 3
+00BB  0FA3E338           const [0]: (954442511)
+00BF  04                 const type 4
+00C0  08                 string size (8)
+00C1  7061636B61676500   "package\0"
+                         const [1]: "package"
+00C9  04                 const type 4
+00CA  07                 string size (7)
+00CB  736565616C6C00     "seeall\0"
+                         const [2]: "seeall"
+00D2  01                 const type 3
+00D3  B043DCE6           const [3]: (-421772368)
+00D7  04                 const type 4
+00D8  23                 string size (35)
+00D9  2F4C6F7475732F4C+  "/Lotus/L"
+00E1  616E67756167652F+  "anguage/"
+00E9  53656E74696D656E+  "Sentimen"
+00F1  742F4E6575747261+  "t/Neutra"
+00F9  6C6C00             "ll\0"
+                         const [4]: "/Lotus/Language/Sentiment/Neutrall"
+00FC  04                 const type 4
+00FD  20                 string size (32)
+00FE  2F4C6F7475732F4C+  "/Lotus/L"
+0106  616E67756167652F+  "anguage/"
+010E  53656E74696D656E+  "Sentimen"
+0116  742F486170707900   "t/Happy\0"
+                         const [5]: "/Lotus/Language/Sentiment/Happy"
+011E  04                 const type 4
+011F  20                 string size (32)
+0120  2F4C6F7475732F4C+  "/Lotus/L"
+0128  616E67756167652F+  "anguage/"
+0130  53656E74696D656E+  "Sentimen"
+0138  742F416E67727900   "t/Angry\0"
+                         const [6]: "/Lotus/Language/Sentiment/Angry"
+0140  04                 const type 4
+0141  1E                 string size (30)
+0142  2F4C6F7475732F4C+  "/Lotus/L"
+014A  616E67756167652F+  "anguage/"
+0152  53656E74696D656E+  "Sentimen"
+015A  742F53616400       "t/Sad\0"
+                         const [7]: "/Lotus/Language/Sentiment/Sad"
+0160  04                 const type 4
+0161  23                 string size (35)
+0162  2F4C6F7475732F4C+  "/Lotus/L"
+016A  616E67756167652F+  "anguage/"
+0172  53656E74696D656E+  "Sentimen"
+017A  742F436F6E74656D+  "t/Contem"
+0182  707400             "pt\0"
+                         const [8]: "/Lotus/Language/Sentiment/Contempt"
+0185  04                 const type 4
+0186  22                 string size (34)
+0187  2F4C6F7475732F4C+  "/Lotus/L"
+018F  616E67756167652F+  "anguage/"
+0197  53656E74696D656E+  "Sentimen"
+019F  742F446973677573+  "t/Disgus"
+01A7  7400               "t\0"
+                         const [9]: "/Lotus/Language/Sentiment/Disgust"
+01A9  04                 const type 4
+01AA  21                 string size (33)
+01AB  2F4C6F7475732F4C+  "/Lotus/L"
+01B3  616E67756167652F+  "anguage/"
+01BB  53656E74696D656E+  "Sentimen"
+01C3  742F416672616964+  "t/Afraid"
+01CB  00                 "\0"
+                         const [10]: "/Lotus/Language/Sentiment/Afraid"
+01CC  04                 const type 4
+01CD  23                 string size (35)
+01CE  2F4C6F7475732F4C+  "/Lotus/L"
+01D6  616E67756167652F+  "anguage/"
+01DE  53656E74696D656E+  "Sentimen"
+01E6  742F537572707269+  "t/Surpri"
+01EE  736500             "se\0"
+                         const [11]: "/Lotus/Language/Sentiment/Surprise"
+01F1  04                 const type 4
+01F2  09                 string size (9)
+01F3  43616C634D6F6F64+  "CalcMood"
+01FB  00                 "\0"
+                         const [12]: "CalcMood"
+01FC  01                 const type 3
+01FD  2EB90F8A           const [13]: (-1978681042)
+                         * functions:
+0201  01                 sizep (1)
+                         
+0202                     ** function [0] definition (level 2)
+                         ** start of function **
+0202  00                 string size (0)
+                         source name: (none)
+0203  0F                 line defined (15)
+0204  34                 last line defined (52)
+0205  01                 nups (1)
+0206  01                 numparams (1)
+0207  00                 is_vararg (0)
+0208  13                 maxstacksize (19)
+                         * code:
+0209  54                 sizecode (84)
+020A  5D000000           [01] getglobal  1   0        ; _T
+020E  4E40C000           [02] gettable   1   1   257  ; "TransmissionMoodOverride"
+fail op	35
+0212  2380C000           [03] close      0  
+0216  1A800080           [04] jmp        3            ; to [8]
+021A  5D000000           [05] getglobal  1   0        ; _T
+021E  8B000000           [06] newtable   2   0   0    ; array=0, hash=0
+0222  4C808080           [07] settable   1   257 2    ; "TransmissionMoodOverride"
+0226  5D000000           [08] getglobal  1   0        ; _T
+022A  4E40C000           [09] gettable   1   1   257  ; "TransmissionMoodOverride"
+022E  4E008000           [10] gettable   1   1   0  
+fail op	35
+0232  6380C000           [11] close      1  
+0236  1AC00080           [12] jmp        4            ; to [17]
+023A  5D000000           [13] getglobal  1   0        ; _T
+023E  4E40C000           [14] gettable   1   1   257  ; "TransmissionMoodOverride"
+0242  4E008000           [15] gettable   1   1   0  
+0246  5E000001           [16] return     1   2      
+024A  4B000004           [17] newtable   1   8   0    ; array=8, hash=0
+024E  99C00000           [18] loadk      2   3        ; 0
+0252  D9000100           [19] loadk      3   4        ; 0
+0256  19010100           [20] loadk      4   4        ; 0
+025A  59010100           [21] loadk      5   4        ; 0
+025E  99010100           [22] loadk      6   4        ; 0
+0262  D9010100           [23] loadk      7   4        ; 0
+0266  19020100           [24] loadk      8   4        ; 0
+026A  59020100           [25] loadk      9   4        ; 0
+026E  5B400004           [26] setlist    1   8   1    ; index 1 to 8
+0272  9D400100           [27] getglobal  2   5        ; string
+0276  8E804101           [28] gettable   2   2   262  ; -1110387163
+027A  DDC00100           [29] getglobal  3   7        ; -421772368
+027E  12010000           [30] move       4   0      
+0282  4B010000           [31] newtable   5   0   0    ; array=0, hash=0
+0286  E2008001           [32] call       3   3   0  
+028A  A2800000           [33] call       2   0   2  
+028E  DD400100           [34] getglobal  3   5        ; string
+0292  CE00C201           [35] gettable   3   3   264  ; 558155467
+0296  12010001           [36] move       4   2      
+029A  59410200           [37] loadk      5   9        ; "[^.:;!?\"()[%]%s]+"
+029E  E2008101           [38] call       3   3   4  
+02A2  1A000680           [39] jmp        25           ; to [65]
+02A6  D9810200           [40] loadk      7   10       ; ";"
+02AA  12020003           [41] move       8   6      
+02AE  59820200           [42] loadk      9   10       ; ";"
+02B2  82418203           [43] concat     6   7   9  
+02B6  D9C10200           [44] loadk      7   11       ; 0
+02BA  13020000           [45] getupval   8   0      
+02BE  0A020004           [46] len        8   8      
+02C2  59C20200           [47] loadk      9   11       ; 0
+02C6  D0810380           [48] forprep    7   15       ; to [64]
+02CA  DD420100           [49] getglobal  11  5        ; string
+02CE  CE02C305           [50] gettable   11  11  268  ; -565905820
+02D2  13030000           [51] getupval   12  0      
+02D6  0E830206           [52] gettable   12  12  10 
+02DA  52030003           [53] move       13  6      
+02DE  E2828001           [54] call       11  3   2  
+02E2  D8020000           [55] test       11      0    ; to [57] if true
+02E6  1A800180           [56] jmp        7            ; to [64]
+02EA  CE828200           [57] gettable   11  1   10 
+02EE  C342C305           [58] add        11  11  269  ; 0
+02F2  1D830300           [59] getglobal  12  14       ; math
+02F6  0EC34306           [60] gettable   12  12  271  ; -2040962569
+02FA  22838000           [61] call       12  1   2  
+02FE  C3028305           [62] add        11  11  12 
+0302  4CC00205           [63] settable   1   10  11 
+0306  D4C1FB7F           [64] forloop    7   -16      ; to [49] if loop
+030A  D6400000           [65] tforloop   3       1    ; to [67] if exit
+030E  1A00F97F           [66] jmp        -27          ; to [40]
+0312  D9C20200           [67] loadk      11  11       ; 0
+0316  0EC38200           [68] gettable   12  1   11 
+031A  59C30200           [69] loadk      13  11       ; 0
+031E  8A038000           [70] len        14  1      
+0322  D9C30200           [71] loadk      15  11       ; 0
+0326  50030180           [72] forprep    13  5        ; to [78]
+032A  4E048400           [73] gettable   17  1   16 
+fail op	21
+032E  15400406           [74] concat     0   12  17 
+0332  1A400080           [75] jmp        2            ; to [78]
+0336  0E038400           [76] gettable   12  1   16 
+033A  D2020008           [77] move       11  16     
+033E  5443FE7F           [78] forloop    13  -6       ; to [73] if loop
+0342  4DC4C205           [79] sub        17  11  267  ; 0
+0346  9D040000           [80] getglobal  18  0        ; _T
+034A  8E444009           [81] gettable   18  18  257  ; "TransmissionMoodOverride"
+034E  8C440400           [82] settable   18  0   17 
+0352  5E040001           [83] return     17  2      
+0356  1E008000           [84] return     0   1      
+                         * constants:
+035A  10                 sizek (16)
+035B  04                 const type 4
+035C  03                 string size (3)
+035D  5F5400             "_T\0"
+                         const [0]: "_T"
+0360  04                 const type 4
+0361  19                 string size (25)
+0362  5472616E736D6973+  "Transmis"
+036A  73696F6E4D6F6F64+  "sionMood"
+0372  4F76657272696465+  "Override"
+037A  00                 "\0"
+                         const [1]: "TransmissionMoodOverride"
+037B  00                 const type 0
+                         const [2]: nil
+037C  03                 const type 3
+037D  0000403F           const [3]: (0)
+0381  03                 const type 3
+0382  00000000           const [4]: (0)
+0386  04                 const type 4
+0387  07                 string size (7)
+0388  737472696E6700     "string\0"
+                         const [5]: "string"
+038F  01                 const type 3
+0390  25D6D0BD           const [6]: (-1110387163)
+0394  01                 const type 3
+0395  B043DCE6           const [7]: (-421772368)
+0399  01                 const type 3
+039A  CBC64421           const [8]: (558155467)
+039E  04                 const type 4
+039F  12                 string size (18)
+03A0  5B5E2E3A3B213F22+  "[^.:;!?\""
+03A8  28295B255D25735D+  "()[%]%s]"
+03B0  2B00               "+\0"
+                         const [9]: "[^.:;!?\"()[%]%s]+"
+03B2  04                 const type 4
+03B3  02                 string size (2)
+03B4  3B00               ";\0"
+                         const [10]: ";"
+03B6  03                 const type 3
+03B7  0000803F           const [11]: (0)
+03BB  01                 const type 3
+03BC  64F644DE           const [12]: (-565905820)
+03C0  03                 const type 3
+03C1  0000003F           const [13]: (0)
+03C5  04                 const type 4
+03C6  05                 string size (5)
+03C7  6D61746800         "math\0"
+                         const [14]: "math"
+03CC  01                 const type 3
+03CD  F7615986           const [15]: (-2040962569)
+                         * functions:
+03D1  00                 sizep (0)
+                         * lines:
+03D2  54                 sizelineinfo (84)
+                         [pc] (line)
+03D3  10                 [01] (16)
+03D4  00                 [02] (16)
+03D5  00                 [03] (16)
+03D6  00                 [04] (16)
+03D7  10                 [05] (17)
+03D8  00                 [06] (17)
+03D9  00                 [07] (17)
+03DA  00                 [08] (19)
+03DB  10                 [09] (19)
+03DC  00                 [10] (19)
+03DD  00                 [11] (19)
+03DE  00                 [12] (19)
+03DF  10                 [13] (20)
+03E0  00                 [14] (20)
+03E1  00                 [15] (20)
+03E2  00                 [16] (20)
+03E3  11                 [17] (23)
+03E4  00                 [18] (23)
+03E5  00                 [19] (23)
+03E6  00                 [20] (23)
+03E7  11                 [21] (23)
+03E8  00                 [22] (23)
+03E9  00                 [23] (23)
+03EA  00                 [24] (23)
+03EB  11                 [25] (23)
+03EC  00                 [26] (23)
+03ED  00                 [27] (24)
+03EE  00                 [28] (24)
+03EF  13                 [29] (24)
+03F0  00                 [30] (24)
+03F1  00                 [31] (24)
+03F2  00                 [32] (24)
+03F3  13                 [33] (24)
+03F4  00                 [34] (28)
+03F5  00                 [35] (28)
+03F6  00                 [36] (28)
+03F7  13                 [37] (28)
+03F8  00                 [38] (28)
+03F9  00                 [39] (28)
+03FA  00                 [40] (30)
+03FB  13                 [41] (30)
+03FC  00                 [42] (30)
+03FD  00                 [43] (30)
+03FE  00                 [44] (31)
+03FF  13                 [45] (31)
+0400  00                 [46] (31)
+0401  00                 [47] (31)
+0402  00                 [48] (31)
+0403  14                 [49] (32)
+0404  00                 [50] (32)
+0405  00                 [51] (32)
+0406  00                 [52] (32)
+0407  14                 [53] (32)
+0408  00                 [54] (32)
+0409  00                 [55] (32)
+040A  00                 [56] (32)
+040B  14                 [57] (34)
+040C  00                 [58] (34)
+040D  00                 [59] (34)
+040E  00                 [60] (34)
+040F  14                 [61] (34)
+0410  00                 [62] (34)
+0411  00                 [63] (34)
+0412  00                 [64] (31)
+0413  17                 [65] (28)
+0414  00                 [66] (36)
+0415  00                 [67] (39)
+0416  00                 [68] (40)
+0417  17                 [69] (41)
+0418  00                 [70] (41)
+0419  00                 [71] (41)
+041A  00                 [72] (41)
+041B  17                 [73] (42)
+041C  00                 [74] (42)
+041D  00                 [75] (42)
+041E  00                 [76] (43)
+041F  17                 [77] (44)
+0420  00                 [78] (41)
+0421  00                 [79] (49)
+0422  00                 [80] (50)
+0423  17                 [81] (50)
+0424  00                 [82] (50)
+0425  00                 [83] (51)
+0426  00                 [84] (52)
+                         * locals:
+0523  00                 sizelocvars (0)
+                         * upvalues:
+0524  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+0525  2C                 sizelineinfo (44)
+                         [pc] (line)
+0526  01                 [01] (1)
+0527  00                 [02] (1)
+0528  00                 [03] (1)
+0529  00                 [04] (1)
+052A  01                 [05] (1)
+052B  00                 [06] (3)
+052C  00                 [07] (5)
+052D  00                 [08] (5)
+052E  01                 [09] (5)
+052F  00                 [10] (5)
+0530  00                 [11] (6)
+0531  00                 [12] (6)
+0532  01                 [13] (6)
+0533  00                 [14] (6)
+0534  00                 [15] (7)
+0535  00                 [16] (7)
+0536  01                 [17] (7)
+0537  00                 [18] (7)
+0538  00                 [19] (8)
+0539  00                 [20] (8)
+053A  03                 [21] (8)
+053B  00                 [22] (8)
+053C  00                 [23] (9)
+053D  00                 [24] (9)
+053E  05                 [25] (9)
+053F  00                 [26] (9)
+0540  00                 [27] (10)
+0541  00                 [28] (10)
+0542  05                 [29] (10)
+0543  00                 [30] (10)
+0544  00                 [31] (11)
+0545  00                 [32] (11)
+0546  05                 [33] (11)
+0547  00                 [34] (11)
+0548  00                 [35] (12)
+0549  00                 [36] (12)
+054A  05                 [37] (12)
+054B  00                 [38] (12)
+054C  00                 [39] (13)
+054D  00                 [40] (52)
+054E  06                 [41] (52)
+054F  00                 [42] (52)
+0550  00                 [43] (15)
+0551  00                 [44] (52)
+                         * locals:
+05D6  00                 sizelocvars (0)
+                         * upvalues:
+05D7  00                 sizeupvalues (0)
+                         ** end of function **
+
+05D8                     ** end of chunk **

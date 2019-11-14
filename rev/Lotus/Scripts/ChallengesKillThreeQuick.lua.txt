@@ -1,0 +1,313 @@
+1	C:\wlua_dump\path\Lotus\Scripts\ChallengesKillThreeQuick.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Scripts\ChallengesKillThreeQuick.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  04                 size of number (bytes)
+0008  0A                 integral (1=integral)
+410
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+MatchAttackEvent
+gProjectileType
+gLotusWeaponType
+Engine
+SLOT_1
+SLOT_2
+SLOT_6
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  04                 maxstacksize (4)
+                         * code:
+0008  0A                 sizecode (10)
+0009  19000000           [01] loadk      0   0        ; 0
+000D  59000000           [02] loadk      1   0        ; 0
+0011  99000000           [03] loadk      2   0        ; 0
+0015  E5000000           [04] closure    3   0      
+0019  12000000           [05] move       0   0      
+001D  12008000           [06] move       0   1      
+0021  12000001           [07] move       0   2      
+0025  E0400000           [08] setglobal  3   1        ; MatchAttackEvent
+0029  E0800000           [09] setglobal  3   2        ; -1021051096
+002D  1E008000           [10] return     0   1      
+                         * constants:
+0031  03                 sizek (3)
+0032  03                 const type 3
+0033  00000000           const [0]: (0)
+0037  04                 const type 4
+0038  11                 string size (17)
+0039  4D61746368417474+  "MatchAtt"
+0041  61636B4576656E74+  "ackEvent"
+0049  00                 "\0"
+                         const [1]: "MatchAttackEvent"
+004A  01                 const type 3
+004B  28FF23C3           const [2]: (-1021051096)
+                         * functions:
+004F  01                 sizep (1)
+                         
+0050                     ** function [0] definition (level 2)
+                         ** start of function **
+0050  00                 string size (0)
+                         source name: (none)
+0051  07                 line defined (7)
+0052  24                 last line defined (36)
+0053  03                 nups (3)
+0054  02                 numparams (2)
+0055  00                 is_vararg (0)
+0056  07                 maxstacksize (7)
+                         * code:
+0057  4B                 sizecode (75)
+0058  9D000000           [01] getglobal  2   0        ; 1074689893
+005C  E440C000           [02] self       3   1   257  ; -2135866365
+0060  E2000001           [03] call       3   2   0  
+0064  A2800000           [04] call       2   0   2  
+0068  98400000           [05] test       2       1    ; to [7] if false
+006C  1A400180           [06] jmp        6            ; to [13]
+0070  A4804000           [07] self       2   0   258  ; 72954849
+0074  A2800001           [08] call       2   2   2  
+0078  E440C000           [09] self       3   1   257  ; -2135866365
+007C  E2800001           [10] call       3   2   2  
+fail op	35
+0080  63C00001           [11] close      1  
+0084  1A400080           [12] jmp        2            ; to [15]
+0088  97000000           [13] loadbool   2   0   0    ; false
+008C  9E000001           [14] return     2   2      
+0090  A4C04000           [15] self       2   0   259  ; 154574904
+0094  A2800001           [16] call       2   2   2  
+0098  DD000100           [17] getglobal  3   4        ; 1491452635
+009C  E2808000           [18] call       3   1   2  
+00A0  1D010000           [19] getglobal  4   0        ; 1074689893
+00A4  52010001           [20] move       5   2      
+00A8  22810001           [21] call       4   2   2  
+00AC  18410000           [22] test       4       1    ; to [24] if false
+00B0  1A800880           [23] jmp        35           ; to [59]
+00B4  24414101           [24] self       4   2   261  ; -1957065004
+00B8  9D810100           [25] getglobal  6   6        ; gProjectileType
+00BC  22818001           [26] call       4   3   2  
+00C0  18010000           [27] test       4       0    ; to [29] if true
+00C4  1A800080           [28] jmp        3            ; to [32]
+00C8  24C14101           [29] self       4   2   263  ; 1242528274
+00CC  22810001           [30] call       4   2   2  
+00D0  92000002           [31] move       2   4      
+00D4  1D010000           [32] getglobal  4   0        ; 1074689893
+00D8  52010001           [33] move       5   2      
+00DC  22810001           [34] call       4   2   2  
+00E0  18410000           [35] test       4       1    ; to [37] if false
+00E4  1A400580           [36] jmp        22           ; to [59]
+00E8  24414101           [37] self       4   2   261  ; -1957065004
+00EC  9D010200           [38] getglobal  6   8        ; gLotusWeaponType
+00F0  22818001           [39] call       4   3   2  
+00F4  18010000           [40] test       4       0    ; to [42] if true
+00F8  1A000480           [41] jmp        17           ; to [59]
+00FC  24414201           [42] self       4   2   265  ; -1057537912
+0100  22810001           [43] call       4   2   2  
+0104  5D810200           [44] getglobal  5   10       ; Engine
+0108  4EC1C202           [45] gettable   5   5   267  ; "SLOT_1"
+fail op	35
+010C  23400102           [46] close      0  
+0110  1A000080           [47] jmp        1            ; to [49]
+fail op	8
+0114  C8000000           [48] setupval   3   0      
+0118  5D810200           [49] getglobal  5   10       ; Engine
+011C  4E01C302           [50] gettable   5   5   268  ; "SLOT_2"
+fail op	35
+0120  23400102           [51] close      0  
+0124  1A000080           [52] jmp        1            ; to [54]
+fail op	8
+0128  C8008000           [53] setupval   3   1      
+012C  5D810200           [54] getglobal  5   10       ; Engine
+0130  4E41C302           [55] gettable   5   5   269  ; "SLOT_6"
+fail op	35
+0134  23400102           [56] close      0  
+0138  1A000080           [57] jmp        1            ; to [59]
+fail op	8
+013C  C8000001           [58] setupval   3   2      
+0140  53010000           [59] getupval   5   0      
+0144  4D418101           [60] sub        5   3   5  
+fail op	21
+0148  1580C302           [61] concat     0   5   270
+014C  1A400280           [62] jmp        10           ; to [73]
+0150  53018000           [63] getupval   5   1      
+0154  4D418101           [64] sub        5   3   5  
+fail op	21
+0158  1580C302           [65] concat     0   5   270
+015C  1A400180           [66] jmp        6            ; to [73]
+0160  53010001           [67] getupval   5   2      
+0164  4D418101           [68] sub        5   3   5  
+fail op	21
+0168  1580C302           [69] concat     0   5   270
+016C  1A400080           [70] jmp        2            ; to [73]
+0170  57018000           [71] loadbool   5   1   0    ; true
+0174  5E010001           [72] return     5   2      
+0178  57010000           [73] loadbool   5   0   0    ; false
+017C  5E010001           [74] return     5   2      
+0180  1E008000           [75] return     0   1      
+                         * constants:
+0184  0F                 sizek (15)
+0185  01                 const type 3
+0186  65770E40           const [0]: (1074689893)
+018A  01                 const type 3
+018B  0344B180           const [1]: (-2135866365)
+018F  01                 const type 3
+0190  E1335904           const [2]: (72954849)
+0194  01                 const type 3
+0195  38A03609           const [3]: (154574904)
+0199  01                 const type 3
+019A  DBC2E558           const [4]: (1491452635)
+019E  01                 const type 3
+019F  D48E598B           const [5]: (-1957065004)
+01A3  04                 const type 4
+01A4  10                 string size (16)
+01A5  6750726F6A656374+  "gProject"
+01AD  696C655479706500   "ileType\0"
+                         const [6]: "gProjectileType"
+01B5  01                 const type 3
+01B6  127A0F4A           const [7]: (1242528274)
+01BA  04                 const type 4
+01BB  11                 string size (17)
+01BC  674C6F7475735765+  "gLotusWe"
+01C4  61706F6E54797065+  "aponType"
+01CC  00                 "\0"
+                         const [8]: "gLotusWeaponType"
+01CD  01                 const type 3
+01CE  8840F7C0           const [9]: (-1057537912)
+01D2  04                 const type 4
+01D3  07                 string size (7)
+01D4  456E67696E6500     "Engine\0"
+                         const [10]: "Engine"
+01DB  04                 const type 4
+01DC  07                 string size (7)
+01DD  534C4F545F3100     "SLOT_1\0"
+                         const [11]: "SLOT_1"
+01E4  04                 const type 4
+01E5  07                 string size (7)
+01E6  534C4F545F3200     "SLOT_2\0"
+                         const [12]: "SLOT_2"
+01ED  04                 const type 4
+01EE  07                 string size (7)
+01EF  534C4F545F3600     "SLOT_6\0"
+                         const [13]: "SLOT_6"
+01F6  03                 const type 3
+01F7  0000A040           const [14]: (0)
+                         * functions:
+01FB  00                 sizep (0)
+                         * lines:
+01FC  4B                 sizelineinfo (75)
+                         [pc] (line)
+01FD  08                 [01] (8)
+01FE  00                 [02] (8)
+01FF  00                 [03] (8)
+0200  00                 [04] (8)
+0201  08                 [05] (8)
+0202  00                 [06] (8)
+0203  00                 [07] (8)
+0204  00                 [08] (8)
+0205  08                 [09] (8)
+0206  00                 [10] (8)
+0207  00                 [11] (8)
+0208  00                 [12] (8)
+0209  08                 [13] (9)
+020A  00                 [14] (9)
+020B  00                 [15] (11)
+020C  00                 [16] (11)
+020D  08                 [17] (12)
+020E  00                 [18] (12)
+020F  00                 [19] (13)
+0210  00                 [20] (13)
+0211  08                 [21] (13)
+0212  00                 [22] (13)
+0213  00                 [23] (13)
+0214  00                 [24] (14)
+0215  08                 [25] (14)
+0216  00                 [26] (14)
+0217  00                 [27] (14)
+0218  00                 [28] (14)
+0219  08                 [29] (15)
+021A  00                 [30] (15)
+021B  00                 [31] (15)
+021C  00                 [32] (17)
+021D  08                 [33] (17)
+021E  00                 [34] (17)
+021F  00                 [35] (17)
+0220  00                 [36] (17)
+0221  08                 [37] (18)
+0222  00                 [38] (18)
+0223  00                 [39] (18)
+0224  00                 [40] (18)
+0225  08                 [41] (18)
+0226  00                 [42] (19)
+0227  00                 [43] (19)
+0228  00                 [44] (20)
+0229  08                 [45] (20)
+022A  00                 [46] (20)
+022B  00                 [47] (20)
+022C  00                 [48] (21)
+022D  09                 [49] (23)
+022E  00                 [50] (23)
+022F  00                 [51] (23)
+0230  00                 [52] (23)
+0231  09                 [53] (24)
+0232  00                 [54] (26)
+0233  00                 [55] (26)
+0234  00                 [56] (26)
+0235  0B                 [57] (26)
+0236  00                 [58] (27)
+0237  00                 [59] (32)
+0238  00                 [60] (32)
+0239  0B                 [61] (32)
+023A  00                 [62] (32)
+023B  00                 [63] (32)
+023C  00                 [64] (32)
+023D  0C                 [65] (32)
+023E  00                 [66] (32)
+023F  00                 [67] (32)
+0240  00                 [68] (32)
+0241  0C                 [69] (32)
+0242  00                 [70] (32)
+0243  00                 [71] (33)
+0244  00                 [72] (33)
+0245  0D                 [73] (35)
+0246  00                 [74] (35)
+0247  00                 [75] (36)
+                         * locals:
+0329  00                 sizelocvars (0)
+                         * upvalues:
+032A  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+032B  0A                 sizelineinfo (10)
+                         [pc] (line)
+032C  03                 [01] (3)
+032D  00                 [02] (4)
+032E  00                 [03] (5)
+032F  00                 [04] (36)
+0330  04                 [05] (36)
+0331  00                 [06] (36)
+0332  00                 [07] (36)
+0333  00                 [08] (36)
+0334  05                 [09] (7)
+0335  00                 [10] (36)
+                         * locals:
+0354  00                 sizelocvars (0)
+                         * upvalues:
+0355  00                 sizeupvalues (0)
+                         ** end of function **
+
+0356                     ** end of chunk **

@@ -1,0 +1,375 @@
+1	C:\wlua_dump\path\Lotus\Scripts\CmdsCmdShowAimInfo.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Scripts\CmdsCmdShowAimInfo.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  02                 size of number (bytes)
+0008  04                 integral (1=integral)
+44
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+CmdShowAimInfo
+_T
+CmdShowAimInfo
+gRegion
+nil
+
+
+, 
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  02                 maxstacksize (2)
+                         * code:
+0008  04                 sizecode (4)
+0009  25000000           [1] closure    0   0      
+000D  20000000           [2] setglobal  0   0        ; CmdShowAimInfo
+0011  20400000           [3] setglobal  0   1        ; -2106388900
+0015  1E008000           [4] return     0   1      
+                         * constants:
+0019  02                 sizek (2)
+001A  04                 const type 4
+001B  0F                 string size (15)
+001C  436D6453686F7741+  "CmdShowA"
+0024  696D496E666F00     "imInfo\0"
+                         const [0]: "CmdShowAimInfo"
+002B  01                 const type 3
+002C  5C0E7382           const [1]: (-2106388900)
+                         * functions:
+0030  01                 sizep (1)
+                         
+0031                     ** function [0] definition (level 2)
+                         ** start of function **
+0031  00                 string size (0)
+                         source name: (none)
+0032  01                 line defined (1)
+0033  22                 last line defined (34)
+0034  00                 nups (0)
+0035  00                 numparams (0)
+0036  00                 is_vararg (0)
+0037  11                 maxstacksize (17)
+                         * code:
+0038  6A                 sizecode (106)
+0039  1D000000           [001] getglobal  0   0        ; _T
+003D  0E404000           [002] gettable   0   0   257  ; "CmdShowAimInfo"
+0041  18000000           [003] test       0       0    ; to [5] if true
+0045  1A800080           [004] jmp        3            ; to [8]
+0049  1D000000           [005] getglobal  0   0        ; _T
+004D  0C80C080           [006] settable   0   257 258  ; "CmdShowAimInfo" nil
+0051  1E008000           [007] return     0   1      
+0055  1DC00000           [008] getglobal  0   3        ; -1247440829
+0059  59000100           [009] loadk      1   4        ; 0
+005D  99400100           [010] loadk      2   5        ; 0
+0061  D9400100           [011] loadk      3   5        ; 0
+0065  19010100           [012] loadk      4   4        ; 0
+0069  22808002           [013] call       0   5   2  
+006D  5DC00000           [014] getglobal  1   3        ; -1247440829
+0071  99000100           [015] loadk      2   4        ; 0
+0075  D9000100           [016] loadk      3   4        ; 0
+0079  19010100           [017] loadk      4   4        ; 0
+007D  59010100           [018] loadk      5   4        ; 0
+0081  62808002           [019] call       1   5   2  
+0085  92008000           [020] move       2   1      
+0089  DD000000           [021] getglobal  3   0        ; _T
+008D  CC80C180           [022] settable   3   257 262  ; "CmdShowAimInfo" 1
+0091  DD000000           [023] getglobal  3   0        ; _T
+0095  CE40C001           [024] gettable   3   3   257  ; "CmdShowAimInfo"
+0099  D8000000           [025] test       3       0    ; to [27] if true
+009D  1A801380           [026] jmp        79           ; to [106]
+00A1  DDC00100           [027] getglobal  3   7        ; gRegion
+00A5  E400C201           [028] self       3   3   264  ; 65205951
+00A9  E2800001           [029] call       3   2   2  
+00AD  1D410200           [030] getglobal  4   9        ; 1074689893
+00B1  52018001           [031] move       5   3      
+00B5  22810001           [032] call       4   2   2  
+00B9  18410000           [033] test       4       1    ; to [35] if false
+00BD  1A801080           [034] jmp        67           ; to [102]
+00C1  2481C201           [035] self       4   3   266  ; -1917464545
+00C5  22810001           [036] call       4   2   2  
+00C9  5D410200           [037] getglobal  5   9        ; 1074689893
+00CD  92010002           [038] move       6   4      
+00D1  62810001           [039] call       5   2   2  
+00D5  58410000           [040] test       5       1    ; to [42] if false
+00D9  1AC00E80           [041] jmp        60           ; to [102]
+00DD  64C14202           [042] self       5   4   267  ; -2079759465
+00E1  62810001           [043] call       5   2   2  
+00E5  A4014302           [044] self       6   4   268  ; -767978347
+00E9  A2810001           [045] call       6   2   2  
+00ED  D2018002           [046] move       7   5      
+00F1  19420300           [047] loadk      8   13       ; "nil"
+00F5  5D420200           [048] getglobal  9   9        ; 1074689893
+00F9  92020003           [049] move       10  6      
+00FD  62820001           [050] call       9   2   2  
+0101  58420000           [051] test       9       1    ; to [53] if false
+0105  1AC00480           [052] jmp        20           ; to [73]
+0109  64824303           [053] self       9   6   270  ; 196800914
+010D  62820001           [054] call       9   2   2  
+0111  D2018004           [055] move       7   9      
+0115  64C24303           [056] self       9   6   271  ; 455421500
+0119  62820001           [057] call       9   2   2  
+011D  99020400           [058] loadk      10  16       ; "\n"
+0121  DD420400           [059] getglobal  11  17       ; -1615931716
+0125  12038003           [060] move       12  7      
+0129  E2820001           [061] call       11  2   2  
+012D  19830400           [062] loadk      12  18       ; ", "
+0131  5D430400           [063] getglobal  13  17       ; -1615931716
+0135  A4C34403           [064] self       14  6   275  ; 54877834
+0139  A2030001           [065] call       14  2   0  
+013D  62830000           [066] call       13  0   2  
+0141  99030400           [067] loadk      14  16       ; "\n"
+0145  E4034503           [068] self       15  6   276  ; -830264577
+0149  E2830001           [069] call       15  2   2  
+014D  E443C507           [070] self       15  15  277  ; 1590141906
+0151  E2830001           [071] call       15  2   2  
+0155  02C28304           [072] concat     8   9   15 
+0159  5DC20100           [073] getglobal  9   7        ; gRegion
+015D  6482C504           [074] self       9   9   278  ; 1765409480
+0161  D2028002           [075] move       11  5      
+0165  19C30500           [076] loadk      12  23       ; -51
+0169  52038000           [077] move       13  1      
+016D  99430100           [078] loadk      14  5        ; 0
+0171  62420003           [079] call       9   6   1  
+0175  5DC20100           [080] getglobal  9   7        ; gRegion
+0179  6482C504           [081] self       9   9   278  ; 1765409480
+017D  D2028003           [082] move       11  7      
+0181  19C30500           [083] loadk      12  23       ; -51
+0185  52030000           [084] move       13  0      
+0189  99430100           [085] loadk      14  5        ; 0
+018D  62420003           [086] call       9   6   1  
+0191  5DC20100           [087] getglobal  9   7        ; gRegion
+0195  6402C604           [088] self       9   9   280  ; -1820544339
+0199  D2028002           [089] move       11  5      
+019D  12038003           [090] move       12  7      
+01A1  52038000           [091] move       13  1      
+01A5  99430100           [092] loadk      14  5        ; 0
+01A9  62420003           [093] call       9   6   1  
+01AD  5DC20100           [094] getglobal  9   7        ; gRegion
+01B1  6442C604           [095] self       9   9   281  ; 1116344408
+01B5  D2028002           [096] move       11  5      
+01B9  12030001           [097] move       12  2      
+01BD  52030004           [098] move       13  8      
+01C1  99830600           [099] loadk      14  26       ; 0
+01C5  D9430100           [100] loadk      15  5        ; 0
+01C9  62428003           [101] call       9   7   1  
+01CD  5DC20600           [102] getglobal  9   27       ; 538022378
+01D1  99420100           [103] loadk      10  5        ; 0
+01D5  62420001           [104] call       9   2   1  
+01D9  1A00EB7F           [105] jmp        -83          ; to [23]
+01DD  1E008000           [106] return     0   1      
+                         * constants:
+01E1  1C                 sizek (28)
+01E2  04                 const type 4
+01E3  03                 string size (3)
+01E4  5F5400             "_T\0"
+                         const [0]: "_T"
+01E7  04                 const type 4
+01E8  0F                 string size (15)
+01E9  436D6453686F7741+  "CmdShowA"
+01F1  696D496E666F00     "imInfo\0"
+                         const [1]: "CmdShowAimInfo"
+01F8  00                 const type 0
+                         const [2]: nil
+01F9  01                 const type 3
+01FA  4390A5B5           const [3]: (-1247440829)
+01FE  03                 const type 3
+01FF  00007F43           const [4]: (0)
+0203  03                 const type 3
+0204  00000000           const [5]: (0)
+0208  01                 const type 3
+0209  01000000           const [6]: (1)
+020D  04                 const type 4
+020E  08                 string size (8)
+020F  67526567696F6E00   "gRegion\0"
+                         const [7]: "gRegion"
+0217  01                 const type 3
+0218  BFF6E203           const [8]: (65205951)
+021C  01                 const type 3
+021D  65770E40           const [9]: (1074689893)
+0221  01                 const type 3
+0222  1FD0B58D           const [10]: (-1917464545)
+0226  01                 const type 3
+0227  97630984           const [11]: (-2079759465)
+022B  01                 const type 3
+022C  959439D2           const [12]: (-767978347)
+0230  04                 const type 4
+0231  04                 string size (4)
+0232  6E696C00           "nil\0"
+                         const [13]: "nil"
+0236  01                 const type 3
+0237  92F1BA0B           const [14]: (196800914)
+023B  01                 const type 3
+023C  3C2E251B           const [15]: (455421500)
+0240  04                 const type 4
+0241  02                 string size (2)
+0242  0A00               "\n\0"
+                         const [16]: "\n"
+0244  01                 const type 3
+0245  BCD6AE9F           const [17]: (-1615931716)
+0249  04                 const type 4
+024A  03                 string size (3)
+024B  2C2000             ", \0"
+                         const [18]: ", "
+024E  01                 const type 3
+024F  8A5E4503           const [19]: (54877834)
+0253  01                 const type 3
+0254  FF2A83CE           const [20]: (-830264577)
+0258  01                 const type 3
+0259  D2A3C75E           const [21]: (1590141906)
+025D  01                 const type 3
+025E  C8023A69           const [22]: (1765409480)
+0262  03                 const type 3
+0263  CDCCCC3C           const [23]: (-51)
+0267  01                 const type 3
+0268  ADB27C93           const [24]: (-1820544339)
+026C  01                 const type 3
+026D  58108A42           const [25]: (1116344408)
+0271  03                 const type 3
+0272  0000803F           const [26]: (0)
+0276  01                 const type 3
+0277  EA911120           const [27]: (538022378)
+                         * functions:
+027B  00                 sizep (0)
+                         * lines:
+027C  6A                 sizelineinfo (106)
+                         [pc] (line)
+027D  02                 [001] (2)
+027E  00                 [002] (2)
+027F  00                 [003] (2)
+0280  00                 [004] (2)
+0281  02                 [005] (3)
+0282  00                 [006] (3)
+0283  00                 [007] (4)
+0284  00                 [008] (7)
+0285  02                 [009] (7)
+0286  00                 [010] (7)
+0287  00                 [011] (7)
+0288  00                 [012] (7)
+0289  02                 [013] (7)
+028A  00                 [014] (8)
+028B  00                 [015] (8)
+028C  00                 [016] (8)
+028D  03                 [017] (8)
+028E  00                 [018] (8)
+028F  00                 [019] (8)
+0290  00                 [020] (9)
+0291  03                 [021] (11)
+0292  00                 [022] (11)
+0293  00                 [023] (12)
+0294  00                 [024] (12)
+0295  04                 [025] (12)
+0296  00                 [026] (12)
+0297  00                 [027] (13)
+0298  00                 [028] (13)
+0299  07                 [029] (13)
+029A  00                 [030] (14)
+029B  00                 [031] (14)
+029C  00                 [032] (14)
+029D  07                 [033] (14)
+029E  00                 [034] (14)
+029F  00                 [035] (15)
+02A0  00                 [036] (15)
+02A1  07                 [037] (16)
+02A2  00                 [038] (16)
+02A3  00                 [039] (16)
+02A4  00                 [040] (16)
+02A5  07                 [041] (16)
+02A6  00                 [042] (17)
+02A7  00                 [043] (17)
+02A8  00                 [044] (18)
+02A9  07                 [045] (18)
+02AA  00                 [046] (19)
+02AB  00                 [047] (20)
+02AC  00                 [048] (21)
+02AD  07                 [049] (21)
+02AE  00                 [050] (21)
+02AF  00                 [051] (21)
+02B0  00                 [052] (21)
+02B1  08                 [053] (22)
+02B2  00                 [054] (22)
+02B3  00                 [055] (22)
+02B4  00                 [056] (23)
+02B5  08                 [057] (23)
+02B6  00                 [058] (23)
+02B7  00                 [059] (23)
+02B8  00                 [060] (23)
+02B9  08                 [061] (23)
+02BA  00                 [062] (23)
+02BB  00                 [063] (23)
+02BC  00                 [064] (23)
+02BD  08                 [065] (23)
+02BE  00                 [066] (23)
+02BF  00                 [067] (23)
+02C0  00                 [068] (23)
+02C1  08                 [069] (23)
+02C2  00                 [070] (23)
+02C3  00                 [071] (23)
+02C4  00                 [072] (23)
+02C5  08                 [073] (25)
+02C6  00                 [074] (25)
+02C7  00                 [075] (25)
+02C8  00                 [076] (25)
+02C9  09                 [077] (25)
+02CA  00                 [078] (25)
+02CB  00                 [079] (25)
+02CC  00                 [080] (26)
+02CD  0B                 [081] (26)
+02CE  00                 [082] (26)
+02CF  00                 [083] (26)
+02D0  00                 [084] (26)
+02D1  0B                 [085] (26)
+02D2  00                 [086] (26)
+02D3  00                 [087] (27)
+02D4  00                 [088] (27)
+02D5  0C                 [089] (27)
+02D6  00                 [090] (27)
+02D7  00                 [091] (27)
+02D8  00                 [092] (27)
+02D9  0C                 [093] (27)
+02DA  00                 [094] (28)
+02DB  00                 [095] (28)
+02DC  00                 [096] (28)
+02DD  0C                 [097] (28)
+02DE  00                 [098] (28)
+02DF  00                 [099] (28)
+02E0  00                 [100] (28)
+02E1  0C                 [101] (28)
+02E2  00                 [102] (32)
+02E3  00                 [103] (32)
+02E4  00                 [104] (32)
+02E5  0D                 [105] (32)
+02E6  00                 [106] (34)
+                         * locals:
+0425  00                 sizelocvars (0)
+                         * upvalues:
+0426  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+0427  04                 sizelineinfo (4)
+                         [pc] (line)
+0428  22                 [1] (34)
+0429  00                 [2] (34)
+042A  00                 [3] (1)
+042B  00                 [4] (34)
+                         * locals:
+0438  00                 sizelocvars (0)
+                         * upvalues:
+0439  00                 sizeupvalues (0)
+                         ** end of function **
+
+043A                     ** end of chunk **

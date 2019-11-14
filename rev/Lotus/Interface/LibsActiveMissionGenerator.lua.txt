@@ -1,0 +1,2655 @@
+1	C:\wlua_dump\path\Lotus\Interface\LibsActiveMissionGenerator.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Interface\LibsActiveMissionGenerator.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  12                 size of number (bytes)
+0008  A9                 integral (1=integral)
+4169
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+package
+seeall
+Lotus.Interface.LotusUtilities
+TENNO
+LightsOut
+VoidT1
+locTag
+/Lotus/Language/Menu/VoidTearMissionName
+locParams
+TIER
+T1
+minEnemyLevel
+maxEnemyLevel
+levelObjects
+customEnemies
+/Lotus/Types/Game/EnemySpecs/VoidTearT1EnemySpec
+VoidT2
+T2
+VoidT3
+T3
+VoidT4
+T4
+VoidT5
+/Lotus/Language/Menu/KuvaTearMissionName
+T5
+questReq
+/Lotus/Types/Keys/WarWithinQuest/WarWithinQuestKeyChain
+Lotus_Game
+MT_EXTERMINATION
+MT_SABOTAGE
+MT_CAPTURE
+MT_COUNTER_INTEL
+MT_RESCUE
+MT_INTEL
+MT_MOBILE_DEFENSE
+MT_HIVE
+MT_DEFENSE
+MT_SURVIVAL
+MT_EXCAVATE
+MT_TERRITORY
+UpdateActiveMissions
+mRegion
+_T
+CachedRegionStatus
+activeMissionIcons
+mIcon
+table
+
+Game
+GAMEPLAY_PICKUP_AMOUNT
+STACKING_MULTIPLY
+gLotusNpcAvatarType
+Engine
+DT_ANY
++25% Resources
+Increased amount of resources
+GAMEPLAY_MONEY_PICKUP_AMOUNT
+gTennoAvatarType
+EMPTY_SYMBOL
++25% Credits
+Increased credit drops
+GAMEPLAY_KILL_XP_AMOUNT
++25% XP
+Increased XP earned
+faction
+Lotus_Game
+FC_INFESTATION
+fxLayer
+levelOverride
+string
+Galleon
+CorpusShip
+/Lotus/Language/Sorties/ModifierCaption
+MODIFIER_DESC
+_T
+VoidTearDefaultEnemySpec
+VoidT1
+customEnemies
+gFlashMgr
+LotusGameRules.DebugActiveMissions
+mActiveMissions
+mSeed
+CachedActiveMissions
+math
+gGameRules
+SHOW_LOCKED_ALERTS
+gPlayerProfileMgr
+mItemType
+gVoidProjectionItemType
+mId
+mExpiry
+sec
+Engine
+mActivation
+mRegion
+mNode
+name
+_G
+UITexture_VoidTear
+mission
+missionType
+Lotus_Game
+MT_RETRIEVAL
+location
+activeMissionId
+_
+activeMissionTag
+mModifier
+
+EMPTY_SYMBOL
+REGION_ID_FORTRESS
+minEnemyLevel
+maxEnemyLevel
+REGION_ID_VOID
+questReq
+locTag
+locParams
+levelObjects
+descText
+table
+RadialRegion_RCS_LOCKED
+region
+unlocked
+mMissionInfo
+mVisible
+mUnlocked
+mRegionUnlocked
+mCompleted
+mIcon
+mModifierAuraDesc
+mMissionDesc
+mLevelObjects
+mCustomEnemies
+ActiveMission[
+] for Region=
+ Node=
+ (
+: 
+) Id=
+ Tag=
+
+
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  12                 maxstacksize (18)
+                         * code:
+0009  01                 sizecode (169)
+000A  1D000000           [001] getglobal  0   0        ; 954442511
+000E  41000001           [002] vararg     1   2      
+0012  9D400000           [003] getglobal  2   1        ; package
+0016  8E804001           [004] gettable   2   2   258  ; "seeall"
+001A  22408001           [005] call       0   3   1  
+001E  1DC00000           [006] getglobal  0   3        ; 849075268
+0022  59000100           [007] loadk      1   4        ; "Lotus.Interface.LotusUtilities"
+0026  22800001           [008] call       0   2   2  
+002A  5D400100           [009] getglobal  1   5        ; -332969190
+002E  99800100           [010] loadk      2   6        ; "TENNO"
+0032  62800001           [011] call       1   2   2  
+0036  9D400100           [012] getglobal  2   5        ; -332969190
+003A  D9C00100           [013] loadk      3   7        ; "LightsOut"
+003E  A2800001           [014] call       2   2   2  
+0042  CB000000           [015] newtable   3   0   0    ; array=0, hash=0
+0046  0B810100           [016] newtable   4   0   6    ; array=0, hash=6
+004A  0C81C284           [017] settable   4   265 266  ; "locTag" "/Lotus/Language/Menu/VoidTearMissionName"
+004E  4B410000           [018] newtable   5   0   1    ; array=0, hash=1
+0052  4C414386           [019] settable   5   268 269  ; "TIER" "T1"
+0056  0C418185           [020] settable   4   267 5    ; "locParams"
+005A  0CC14387           [021] settable   4   270 271  ; "minEnemyLevel" 0
+005E  0C414488           [022] settable   4   272 273  ; "maxEnemyLevel" 0
+0062  4B010000           [023] newtable   5   0   0    ; array=0, hash=0
+0066  0C410189           [024] settable   4   274 5    ; "levelObjects"
+006A  5D010500           [025] getglobal  5   20       ; 2083004503
+006E  99410500           [026] loadk      6   21       ; "/Lotus/Types/Game/EnemySpecs/VoidTearT1EnemySpec"
+0072  62810001           [027] call       5   2   2  
+0076  0C418189           [028] settable   4   275 5    ; "customEnemies"
+007A  CC000184           [029] settable   3   264 4    ; "VoidT1"
+007E  0B810100           [030] newtable   4   0   6    ; array=0, hash=6
+0082  0C81C284           [031] settable   4   265 266  ; "locTag" "/Lotus/Language/Menu/VoidTearMissionName"
+0086  4B410000           [032] newtable   5   0   1    ; array=0, hash=1
+008A  4CC14586           [033] settable   5   268 279  ; "TIER" "T2"
+008E  0C418185           [034] settable   4   267 5    ; "locParams"
+0092  0C414487           [035] settable   4   270 273  ; "minEnemyLevel" 0
+0096  0C014688           [036] settable   4   272 280  ; "maxEnemyLevel" 0
+009A  4B010000           [037] newtable   5   0   0    ; array=0, hash=0
+009E  0C410189           [038] settable   4   274 5    ; "levelObjects"
+00A2  5D010500           [039] getglobal  5   20       ; 2083004503
+00A6  99410500           [040] loadk      6   21       ; "/Lotus/Types/Game/EnemySpecs/VoidTearT1EnemySpec"
+00AA  62810001           [041] call       5   2   2  
+00AE  0C418189           [042] settable   4   275 5    ; "customEnemies"
+00B2  CC00018B           [043] settable   3   278 4    ; "VoidT2"
+00B6  0B810100           [044] newtable   4   0   6    ; array=0, hash=6
+00BA  0C81C284           [045] settable   4   265 266  ; "locTag" "/Lotus/Language/Menu/VoidTearMissionName"
+00BE  4B410000           [046] newtable   5   0   1    ; array=0, hash=1
+00C2  4C814686           [047] settable   5   268 282  ; "TIER" "T3"
+00C6  0C418185           [048] settable   4   267 5    ; "locParams"
+00CA  0C014687           [049] settable   4   270 280  ; "minEnemyLevel" 0
+00CE  0CC14688           [050] settable   4   272 283  ; "maxEnemyLevel" 0
+00D2  4B010000           [051] newtable   5   0   0    ; array=0, hash=0
+00D6  0C410189           [052] settable   4   274 5    ; "levelObjects"
+00DA  5D010500           [053] getglobal  5   20       ; 2083004503
+00DE  99410500           [054] loadk      6   21       ; "/Lotus/Types/Game/EnemySpecs/VoidTearT1EnemySpec"
+00E2  62810001           [055] call       5   2   2  
+00E6  0C418189           [056] settable   4   275 5    ; "customEnemies"
+00EA  CC00818C           [057] settable   3   281 4    ; "VoidT3"
+00EE  0B810100           [058] newtable   4   0   6    ; array=0, hash=6
+00F2  0C81C284           [059] settable   4   265 266  ; "locTag" "/Lotus/Language/Menu/VoidTearMissionName"
+00F6  4B410000           [060] newtable   5   0   1    ; array=0, hash=1
+00FA  4C414786           [061] settable   5   268 285  ; "TIER" "T4"
+00FE  0C418185           [062] settable   4   267 5    ; "locParams"
+0102  0CC14687           [063] settable   4   270 283  ; "minEnemyLevel" 0
+0106  0C814788           [064] settable   4   272 286  ; "maxEnemyLevel" 0
+010A  4B010000           [065] newtable   5   0   0    ; array=0, hash=0
+010E  0C410189           [066] settable   4   274 5    ; "levelObjects"
+0112  5D010500           [067] getglobal  5   20       ; 2083004503
+0116  99410500           [068] loadk      6   21       ; "/Lotus/Types/Game/EnemySpecs/VoidTearT1EnemySpec"
+011A  62810001           [069] call       5   2   2  
+011E  0C418189           [070] settable   4   275 5    ; "customEnemies"
+0122  CC00018E           [071] settable   3   284 4    ; "VoidT4"
+0126  0BC10100           [072] newtable   4   0   7    ; array=0, hash=7
+012A  0C01C884           [073] settable   4   265 288  ; "locTag" "/Lotus/Language/Menu/KuvaTearMissionName"
+012E  4B410000           [074] newtable   5   0   1    ; array=0, hash=1
+0132  4C414886           [075] settable   5   268 289  ; "TIER" "T5"
+0136  0C418185           [076] settable   4   267 5    ; "locParams"
+013A  0CC14687           [077] settable   4   270 283  ; "minEnemyLevel" 0
+013E  0C814788           [078] settable   4   272 286  ; "maxEnemyLevel" 0
+0142  4B010000           [079] newtable   5   0   0    ; array=0, hash=0
+0146  0C410189           [080] settable   4   274 5    ; "levelObjects"
+014A  5D010500           [081] getglobal  5   20       ; 2083004503
+014E  99410500           [082] loadk      6   21       ; "/Lotus/Types/Game/EnemySpecs/VoidTearT1EnemySpec"
+0152  62810001           [083] call       5   2   2  
+0156  0C418189           [084] settable   4   275 5    ; "customEnemies"
+015A  5DC10800           [085] getglobal  5   35       ; 738251817
+015E  99010900           [086] loadk      6   36       ; "/Lotus/Types/Keys/WarWithinQuest/WarWithinQuestKeyChain"
+0162  62810001           [087] call       5   2   2  
+0166  0C410191           [088] settable   4   290 5    ; "questReq"
+016A  CC00818F           [089] settable   3   287 4    ; "VoidT5"
+016E  0B010002           [090] newtable   4   4   0    ; array=4, hash=0
+0172  5D410900           [091] getglobal  5   37       ; Lotus_Game
+0176  4E81C902           [092] gettable   5   5   294  ; "MT_EXTERMINATION"
+017A  9D410900           [093] getglobal  6   37       ; Lotus_Game
+017E  8EC14903           [094] gettable   6   6   295  ; "MT_SABOTAGE"
+0182  DD410900           [095] getglobal  7   37       ; Lotus_Game
+0186  CE01CA03           [096] gettable   7   7   296  ; "MT_CAPTURE"
+018A  1D420900           [097] getglobal  8   37       ; Lotus_Game
+018E  0E424A04           [098] gettable   8   8   297  ; "MT_COUNTER_INTEL"
+0192  1B410002           [099] setlist    4   4   1    ; index 1 to 4
+0196  4B010002           [100] newtable   5   4   0    ; array=4, hash=0
+019A  9D410900           [101] getglobal  6   37       ; Lotus_Game
+019E  8E814A03           [102] gettable   6   6   298  ; "MT_RESCUE"
+01A2  DD410900           [103] getglobal  7   37       ; Lotus_Game
+01A6  CEC1CA03           [104] gettable   7   7   299  ; "MT_INTEL"
+01AA  1D420900           [105] getglobal  8   37       ; Lotus_Game
+01AE  0E024B04           [106] gettable   8   8   300  ; "MT_MOBILE_DEFENSE"
+01B2  5D420900           [107] getglobal  9   37       ; Lotus_Game
+01B6  4E42CB04           [108] gettable   9   9   301  ; "MT_HIVE"
+01BA  5B410002           [109] setlist    5   4   1    ; index 1 to 4
+01BE  8B010002           [110] newtable   6   4   0    ; array=4, hash=0
+01C2  DD410900           [111] getglobal  7   37       ; Lotus_Game
+01C6  CE81CB03           [112] gettable   7   7   302  ; "MT_DEFENSE"
+01CA  1D420900           [113] getglobal  8   37       ; Lotus_Game
+01CE  0EC24B04           [114] gettable   8   8   303  ; "MT_SURVIVAL"
+01D2  5D420900           [115] getglobal  9   37       ; Lotus_Game
+01D6  4E02CC04           [116] gettable   9   9   304  ; "MT_EXCAVATE"
+01DA  9D420900           [117] getglobal  10  37       ; Lotus_Game
+01DE  8E424C05           [118] gettable   10  10  305  ; "MT_TERRITORY"
+01E2  9B410002           [119] setlist    6   4   1    ; index 1 to 4
+01E6  CB018003           [120] newtable   7   7   0    ; array=7, hash=0
+01EA  1D420900           [121] getglobal  8   37       ; Lotus_Game
+01EE  0E824904           [122] gettable   8   8   294  ; "MT_EXTERMINATION"
+01F2  5D420900           [123] getglobal  9   37       ; Lotus_Game
+01F6  4E02CB04           [124] gettable   9   9   300  ; "MT_MOBILE_DEFENSE"
+01FA  9D420900           [125] getglobal  10  37       ; Lotus_Game
+01FE  8E824A05           [126] gettable   10  10  298  ; "MT_RESCUE"
+0202  DD420900           [127] getglobal  11  37       ; Lotus_Game
+0206  CEC2CA05           [128] gettable   11  11  299  ; "MT_INTEL"
+020A  1D430900           [129] getglobal  12  37       ; Lotus_Game
+020E  0E434B06           [130] gettable   12  12  301  ; "MT_HIVE"
+0212  5D430900           [131] getglobal  13  37       ; Lotus_Game
+0216  4EC3CB06           [132] gettable   13  13  303  ; "MT_SURVIVAL"
+021A  9D430900           [133] getglobal  14  37       ; Lotus_Game
+021E  8E034C07           [134] gettable   14  14  304  ; "MT_EXCAVATE"
+0222  DB418003           [135] setlist    7   7   1    ; index 1 to 7
+0226  0B028001           [136] newtable   8   3   0    ; array=3, hash=0
+022A  52020002           [137] move       9   4      
+022E  92028002           [138] move       10  5      
+0232  D2020003           [139] move       11  6      
+0236  1B428001           [140] setlist    8   3   1    ; index 1 to 3
+023A  4B028000           [141] newtable   9   1   0    ; array=1, hash=0
+023E  92028003           [142] move       10  7      
+0242  5B428000           [143] setlist    9   1   1    ; index 1 to 1
+0246  8B028001           [144] newtable   10  3   0    ; array=3, hash=0
+024A  D9820C00           [145] loadk      11  50       ; 0
+024E  19C30C00           [146] loadk      12  51       ; 0
+0252  59030D00           [147] loadk      13  52       ; 0
+0256  9B428001           [148] setlist    10  3   1    ; index 1 to 3
+025A  D9420D00           [149] loadk      11  53       ; 51
+025E  0B030000           [150] newtable   12  0   0    ; array=0, hash=0
+0262  46038006           [151] loadnil    13  13     
+0266  A5030000           [152] closure    14  0      
+026A  E5430000           [153] closure    15  1      
+026E  25840000           [154] closure    16  2      
+0272  12008005           [155] move       0   11     
+0276  12008000           [156] move       0   1      
+027A  12000001           [157] move       0   2      
+027E  65C40000           [158] closure    17  3      
+0282  12008001           [159] move       0   3      
+0286  12000006           [160] move       0   12     
+028A  12000007           [161] move       0   14     
+028E  12008006           [162] move       0   13     
+0292  12000000           [163] move       0   0      
+0296  12000005           [164] move       0   10     
+029A  12008003           [165] move       0   7      
+029E  12000008           [166] move       0   16     
+02A2  60840D00           [167] setglobal  17  54       ; UpdateActiveMissions
+02A6  60C40D00           [168] setglobal  17  55       ; -2102062359
+02AA  1E008000           [169] return     0   1      
+                         * constants:
+02AE  38                 sizek (56)
+02AF  01                 const type 3
+02B0  0FA3E338           const [0]: (954442511)
+02B4  04                 const type 4
+02B5  08                 string size (8)
+02B6  7061636B61676500   "package\0"
+                         const [1]: "package"
+02BE  04                 const type 4
+02BF  07                 string size (7)
+02C0  736565616C6C00     "seeall\0"
+                         const [2]: "seeall"
+02C7  01                 const type 3
+02C8  44DC9B32           const [3]: (849075268)
+02CC  04                 const type 4
+02CD  1F                 string size (31)
+02CE  4C6F7475732E496E+  "Lotus.In"
+02D6  746572666163652E+  "terface."
+02DE  4C6F747573557469+  "LotusUti"
+02E6  6C697469657300     "lities\0"
+                         const [4]: "Lotus.Interface.LotusUtilities"
+02ED  01                 const type 3
+02EE  1A4B27EC           const [5]: (-332969190)
+02F2  04                 const type 4
+02F3  06                 string size (6)
+02F4  54454E4E4F00       "TENNO\0"
+                         const [6]: "TENNO"
+02FA  04                 const type 4
+02FB  0A                 string size (10)
+02FC  4C69676874734F75+  "LightsOu"
+0304  7400               "t\0"
+                         const [7]: "LightsOut"
+0306  04                 const type 4
+0307  07                 string size (7)
+0308  566F6964543100     "VoidT1\0"
+                         const [8]: "VoidT1"
+030F  04                 const type 4
+0310  07                 string size (7)
+0311  6C6F6354616700     "locTag\0"
+                         const [9]: "locTag"
+0318  04                 const type 4
+0319  29                 string size (41)
+031A  2F4C6F7475732F4C+  "/Lotus/L"
+0322  616E67756167652F+  "anguage/"
+032A  4D656E752F566F69+  "Menu/Voi"
+0332  64546561724D6973+  "dTearMis"
+033A  73696F6E4E616D65+  "sionName"
+0342  00                 "\0"
+                         const [10]: "/Lotus/Language/Menu/VoidTearMissionName"
+0343  04                 const type 4
+0344  0A                 string size (10)
+0345  6C6F63506172616D+  "locParam"
+034D  7300               "s\0"
+                         const [11]: "locParams"
+034F  04                 const type 4
+0350  05                 string size (5)
+0351  5449455200         "TIER\0"
+                         const [12]: "TIER"
+0356  04                 const type 4
+0357  03                 string size (3)
+0358  543100             "T1\0"
+                         const [13]: "T1"
+035B  04                 const type 4
+035C  0E                 string size (14)
+035D  6D696E456E656D79+  "minEnemy"
+0365  4C6576656C00       "Level\0"
+                         const [14]: "minEnemyLevel"
+036B  03                 const type 3
+036C  00002041           const [15]: (0)
+0370  04                 const type 4
+0371  0E                 string size (14)
+0372  6D6178456E656D79+  "maxEnemy"
+037A  4C6576656C00       "Level\0"
+                         const [16]: "maxEnemyLevel"
+0380  03                 const type 3
+0381  0000A041           const [17]: (0)
+0385  04                 const type 4
+0386  0D                 string size (13)
+0387  6C6576656C4F626A+  "levelObj"
+038F  6563747300         "ects\0"
+                         const [18]: "levelObjects"
+0394  04                 const type 4
+0395  0E                 string size (14)
+0396  637573746F6D456E+  "customEn"
+039E  656D69657300       "emies\0"
+                         const [19]: "customEnemies"
+03A4  01                 const type 3
+03A5  5720287C           const [20]: (2083004503)
+03A9  04                 const type 4
+03AA  31                 string size (49)
+03AB  2F4C6F7475732F54+  "/Lotus/T"
+03B3  797065732F47616D+  "ypes/Gam"
+03BB  652F456E656D7953+  "e/EnemyS"
+03C3  706563732F566F69+  "pecs/Voi"
+03CB  6454656172543145+  "dTearT1E"
+03D3  6E656D7953706563+  "nemySpec"
+03DB  00                 "\0"
+                         const [21]: "/Lotus/Types/Game/EnemySpecs/VoidTearT1EnemySpec"
+03DC  04                 const type 4
+03DD  07                 string size (7)
+03DE  566F6964543200     "VoidT2\0"
+                         const [22]: "VoidT2"
+03E5  04                 const type 4
+03E6  03                 string size (3)
+03E7  543200             "T2\0"
+                         const [23]: "T2"
+03EA  03                 const type 3
+03EB  0000F041           const [24]: (0)
+03EF  04                 const type 4
+03F0  07                 string size (7)
+03F1  566F6964543300     "VoidT3\0"
+                         const [25]: "VoidT3"
+03F8  04                 const type 4
+03F9  03                 string size (3)
+03FA  543300             "T3\0"
+                         const [26]: "T3"
+03FD  03                 const type 3
+03FE  00002042           const [27]: (0)
+0402  04                 const type 4
+0403  07                 string size (7)
+0404  566F6964543400     "VoidT4\0"
+                         const [28]: "VoidT4"
+040B  04                 const type 4
+040C  03                 string size (3)
+040D  543400             "T4\0"
+                         const [29]: "T4"
+0410  03                 const type 3
+0411  00004842           const [30]: (0)
+0415  04                 const type 4
+0416  07                 string size (7)
+0417  566F6964543500     "VoidT5\0"
+                         const [31]: "VoidT5"
+041E  04                 const type 4
+041F  29                 string size (41)
+0420  2F4C6F7475732F4C+  "/Lotus/L"
+0428  616E67756167652F+  "anguage/"
+0430  4D656E752F4B7576+  "Menu/Kuv"
+0438  61546561724D6973+  "aTearMis"
+0440  73696F6E4E616D65+  "sionName"
+0448  00                 "\0"
+                         const [32]: "/Lotus/Language/Menu/KuvaTearMissionName"
+0449  04                 const type 4
+044A  03                 string size (3)
+044B  543500             "T5\0"
+                         const [33]: "T5"
+044E  04                 const type 4
+044F  09                 string size (9)
+0450  7175657374526571+  "questReq"
+0458  00                 "\0"
+                         const [34]: "questReq"
+0459  01                 const type 3
+045A  29D4002C           const [35]: (738251817)
+045E  04                 const type 4
+045F  38                 string size (56)
+0460  2F4C6F7475732F54+  "/Lotus/T"
+0468  797065732F4B6579+  "ypes/Key"
+0470  732F576172576974+  "s/WarWit"
+0478  68696E5175657374+  "hinQuest"
+0480  2F57617257697468+  "/WarWith"
+0488  696E51756573744B+  "inQuestK"
+0490  6579436861696E00   "eyChain\0"
+                         const [36]: "/Lotus/Types/Keys/WarWithinQuest/WarWithinQuestKeyChain"
+0498  04                 const type 4
+0499  0B                 string size (11)
+049A  4C6F7475735F4761+  "Lotus_Ga"
+04A2  6D6500             "me\0"
+                         const [37]: "Lotus_Game"
+04A5  04                 const type 4
+04A6  11                 string size (17)
+04A7  4D545F4558544552+  "MT_EXTER"
+04AF  4D494E4154494F4E+  "MINATION"
+04B7  00                 "\0"
+                         const [38]: "MT_EXTERMINATION"
+04B8  04                 const type 4
+04B9  0C                 string size (12)
+04BA  4D545F5341424F54+  "MT_SABOT"
+04C2  41474500           "AGE\0"
+                         const [39]: "MT_SABOTAGE"
+04C6  04                 const type 4
+04C7  0B                 string size (11)
+04C8  4D545F4341505455+  "MT_CAPTU"
+04D0  524500             "RE\0"
+                         const [40]: "MT_CAPTURE"
+04D3  04                 const type 4
+04D4  11                 string size (17)
+04D5  4D545F434F554E54+  "MT_COUNT"
+04DD  45525F494E54454C+  "ER_INTEL"
+04E5  00                 "\0"
+                         const [41]: "MT_COUNTER_INTEL"
+04E6  04                 const type 4
+04E7  0A                 string size (10)
+04E8  4D545F5245534355+  "MT_RESCU"
+04F0  4500               "E\0"
+                         const [42]: "MT_RESCUE"
+04F2  04                 const type 4
+04F3  09                 string size (9)
+04F4  4D545F494E54454C+  "MT_INTEL"
+04FC  00                 "\0"
+                         const [43]: "MT_INTEL"
+04FD  04                 const type 4
+04FE  12                 string size (18)
+04FF  4D545F4D4F42494C+  "MT_MOBIL"
+0507  455F444546454E53+  "E_DEFENS"
+050F  4500               "E\0"
+                         const [44]: "MT_MOBILE_DEFENSE"
+0511  04                 const type 4
+0512  08                 string size (8)
+0513  4D545F4849564500   "MT_HIVE\0"
+                         const [45]: "MT_HIVE"
+051B  04                 const type 4
+051C  0B                 string size (11)
+051D  4D545F444546454E+  "MT_DEFEN"
+0525  534500             "SE\0"
+                         const [46]: "MT_DEFENSE"
+0528  04                 const type 4
+0529  0C                 string size (12)
+052A  4D545F5355525649+  "MT_SURVI"
+0532  56414C00           "VAL\0"
+                         const [47]: "MT_SURVIVAL"
+0536  04                 const type 4
+0537  0C                 string size (12)
+0538  4D545F4558434156+  "MT_EXCAV"
+0540  41544500           "ATE\0"
+                         const [48]: "MT_EXCAVATE"
+0544  04                 const type 4
+0545  0D                 string size (13)
+0546  4D545F5445525249+  "MT_TERRI"
+054E  544F525900         "TORY\0"
+                         const [49]: "MT_TERRITORY"
+0553  03                 const type 3
+0554  0000803F           const [50]: (0)
+0558  03                 const type 3
+0559  00000040           const [51]: (0)
+055D  03                 const type 3
+055E  00004040           const [52]: (0)
+0562  03                 const type 3
+0563  3333933F           const [53]: (51)
+0567  04                 const type 4
+0568  15                 string size (21)
+0569  5570646174654163+  "UpdateAc"
+0571  746976654D697373+  "tiveMiss"
+0579  696F6E7300         "ions\0"
+                         const [54]: "UpdateActiveMissions"
+057E  01                 const type 3
+057F  E912B582           const [55]: (-2102062359)
+                         * functions:
+0583  04                 sizep (4)
+                         
+0584                     ** function [0] definition (level 2)
+                         ** start of function **
+0584  00                 string size (0)
+                         source name: (none)
+0585  20                 line defined (32)
+0586  36                 last line defined (54)
+0587  00                 nups (0)
+0588  01                 numparams (1)
+0589  00                 is_vararg (0)
+058A  0B                 maxstacksize (11)
+                         * code:
+058B  33                 sizecode (51)
+058C  4E004000           [01] gettable   1   0   256  ; "mRegion"
+0590  58400000           [02] test       1       1    ; to [4] if false
+0594  1A000080           [03] jmp        1            ; to [5]
+0598  59400000           [04] loadk      1   1        ; 0
+059C  4380C000           [05] add        1   1   258  ; 0
+05A0  9DC00000           [06] getglobal  2   3        ; _T
+05A4  8E004101           [07] gettable   2   2   260  ; "CachedRegionStatus"
+05A8  8E400001           [08] gettable   2   2   1  
+05AC  98400000           [09] test       2       1    ; to [11] if false
+05B0  1AC00080           [10] jmp        4            ; to [15]
+05B4  9DC00000           [11] getglobal  2   3        ; _T
+05B8  8E004101           [12] gettable   2   2   260  ; "CachedRegionStatus"
+05BC  CB000000           [13] newtable   3   0   0    ; array=0, hash=0
+05C0  8CC08000           [14] settable   2   1   3  
+05C4  9DC00000           [15] getglobal  2   3        ; _T
+05C8  8E004101           [16] gettable   2   2   260  ; "CachedRegionStatus"
+05CC  8E400001           [17] gettable   2   2   1  
+05D0  8E404101           [18] gettable   2   2   261  ; "activeMissionIcons"
+05D4  98400000           [19] test       2       1    ; to [21] if false
+05D8  1A000180           [20] jmp        5            ; to [26]
+05DC  9DC00000           [21] getglobal  2   3        ; _T
+05E0  8E004101           [22] gettable   2   2   260  ; "CachedRegionStatus"
+05E4  8E400001           [23] gettable   2   2   1  
+05E8  CB000000           [24] newtable   3   0   0    ; array=0, hash=0
+05EC  8CC08082           [25] settable   2   261 3    ; "activeMissionIcons"
+05F0  97000000           [26] loadbool   2   0   0    ; false
+05F4  DD800100           [27] getglobal  3   6        ; 248503575
+05F8  1DC10000           [28] getglobal  4   3        ; _T
+05FC  0E014102           [29] gettable   4   4   260  ; "CachedRegionStatus"
+0600  0E410002           [30] gettable   4   4   1  
+0604  0E414102           [31] gettable   4   4   261  ; "activeMissionIcons"
+0608  E2000101           [32] call       3   2   4  
+060C  1A000180           [33] jmp        5            ; to [39]
+0610  0EC24100           [34] gettable   8   0   263  ; "mIcon"
+fail op	35
+0614  23008203           [35] close      0  
+0618  1A400080           [36] jmp        2            ; to [39]
+061C  97008000           [37] loadbool   2   1   0    ; true
+0620  1A400080           [38] jmp        2            ; to [41]
+0624  D6800000           [39] tforloop   3       2    ; to [41] if exit
+0628  1A00FE7F           [40] jmp        -7           ; to [34]
+062C  98400000           [41] test       2       1    ; to [43] if false
+0630  1AC00180           [42] jmp        8            ; to [51]
+0634  1D020200           [43] getglobal  8   8        ; table
+0638  0E424204           [44] gettable   8   8   265  ; -431682403
+063C  5DC20000           [45] getglobal  9   3        ; _T
+0640  4E02C104           [46] gettable   9   9   260  ; "CachedRegionStatus"
+0644  4E428004           [47] gettable   9   9   1  
+0648  4E42C104           [48] gettable   9   9   261  ; "activeMissionIcons"
+064C  8EC24100           [49] gettable   10  0   263  ; "mIcon"
+0650  22428001           [50] call       8   3   1  
+0654  1E008000           [51] return     0   1      
+                         * constants:
+0658  0A                 sizek (10)
+0659  04                 const type 4
+065A  08                 string size (8)
+065B  6D526567696F6E00   "mRegion\0"
+                         const [0]: "mRegion"
+0663  03                 const type 3
+0664  00000000           const [1]: (0)
+0668  03                 const type 3
+0669  0000803F           const [2]: (0)
+066D  04                 const type 4
+066E  03                 string size (3)
+066F  5F5400             "_T\0"
+                         const [3]: "_T"
+0672  04                 const type 4
+0673  13                 string size (19)
+0674  4361636865645265+  "CachedRe"
+067C  67696F6E53746174+  "gionStat"
+0684  757300             "us\0"
+                         const [4]: "CachedRegionStatus"
+0687  04                 const type 4
+0688  13                 string size (19)
+0689  6163746976654D69+  "activeMi"
+0691  7373696F6E49636F+  "ssionIco"
+0699  6E7300             "ns\0"
+                         const [5]: "activeMissionIcons"
+069C  01                 const type 3
+069D  17DDCF0E           const [6]: (248503575)
+06A1  04                 const type 4
+06A2  06                 string size (6)
+06A3  6D49636F6E00       "mIcon\0"
+                         const [7]: "mIcon"
+06A9  04                 const type 4
+06AA  06                 string size (6)
+06AB  7461626C6500       "table\0"
+                         const [8]: "table"
+06B1  01                 const type 3
+06B2  9D0C45E6           const [9]: (-431682403)
+                         * functions:
+06B6  00                 sizep (0)
+                         * lines:
+06B7  33                 sizelineinfo (51)
+                         [pc] (line)
+06B8  21                 [01] (33)
+06B9  00                 [02] (33)
+06BA  00                 [03] (33)
+06BB  00                 [04] (33)
+06BC  21                 [05] (34)
+06BD  00                 [06] (36)
+06BE  00                 [07] (36)
+06BF  00                 [08] (36)
+06C0  21                 [09] (36)
+06C1  00                 [10] (36)
+06C2  00                 [11] (37)
+06C3  00                 [12] (37)
+06C4  21                 [13] (37)
+06C5  00                 [14] (37)
+06C6  00                 [15] (39)
+06C7  00                 [16] (39)
+06C8  22                 [17] (39)
+06C9  00                 [18] (39)
+06CA  00                 [19] (39)
+06CB  00                 [20] (39)
+06CC  24                 [21] (40)
+06CD  00                 [22] (40)
+06CE  00                 [23] (40)
+06CF  00                 [24] (40)
+06D0  24                 [25] (40)
+06D1  00                 [26] (43)
+06D2  00                 [27] (44)
+06D3  00                 [28] (44)
+06D4  24                 [29] (44)
+06D5  00                 [30] (44)
+06D6  00                 [31] (44)
+06D7  00                 [32] (44)
+06D8  24                 [33] (44)
+06D9  00                 [34] (45)
+06DA  00                 [35] (45)
+06DB  00                 [36] (45)
+06DC  24                 [37] (46)
+06DD  00                 [38] (47)
+06DE  00                 [39] (44)
+06DF  00                 [40] (48)
+06E0  25                 [41] (51)
+06E1  00                 [42] (51)
+06E2  00                 [43] (52)
+06E3  00                 [44] (52)
+06E4  25                 [45] (52)
+06E5  00                 [46] (52)
+06E6  00                 [47] (52)
+06E7  00                 [48] (52)
+06E8  25                 [49] (52)
+06E9  00                 [50] (52)
+06EA  00                 [51] (54)
+                         * locals:
+0784  00                 sizelocvars (0)
+                         * upvalues:
+0785  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0786                     ** function [1] definition (level 2)
+                         ** start of function **
+0786  00                 string size (0)
+                         source name: (none)
+0787  38                 line defined (56)
+0788  3A                 last line defined (58)
+0789  00                 nups (0)
+078A  01                 numparams (1)
+078B  00                 is_vararg (0)
+078C  04                 maxstacksize (4)
+                         * code:
+078D  07                 sizecode (7)
+078E  5D000000           [1] getglobal  1   0        ; 687937235
+0792  99400000           [2] loadk      2   1        ; 0
+0796  CA000000           [3] len        3   0      
+079A  62808001           [4] call       1   3   2  
+079E  4E400000           [5] gettable   1   0   1  
+07A2  5E000001           [6] return     1   2      
+07A6  1E008000           [7] return     0   1      
+                         * constants:
+07AA  02                 sizek (2)
+07AB  01                 const type 3
+07AC  D3160129           const [0]: (687937235)
+07B0  03                 const type 3
+07B1  0000803F           const [1]: (0)
+                         * functions:
+07B5  00                 sizep (0)
+                         * lines:
+07B6  07                 sizelineinfo (7)
+                         [pc] (line)
+07B7  39                 [1] (57)
+07B8  00                 [2] (57)
+07B9  00                 [3] (57)
+07BA  00                 [4] (57)
+07BB  39                 [5] (57)
+07BC  00                 [6] (57)
+07BD  00                 [7] (58)
+                         * locals:
+07D3  00                 sizelocvars (0)
+                         * upvalues:
+07D4  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+07D5                     ** function [2] definition (level 2)
+                         ** start of function **
+07D5  00                 string size (0)
+                         source name: (none)
+07D6  3C                 line defined (60)
+07D7  63                 last line defined (99)
+07D8  03                 nups (3)
+07D9  02                 numparams (2)
+07DA  00                 is_vararg (0)
+07DB  0D                 maxstacksize (13)
+                         * code:
+07DC  7D                 sizecode (125)
+07DD  99000000           [001] loadk      2   0        ; ""
+07E1  D9000000           [002] loadk      3   0        ; ""
+fail op	35
+07E5  6340C000           [003] close      1  
+07E9  1A400080           [004] jmp        2            ; to [7]
+fail op	21
+07ED  15400081           [005] concat     0   258 1  
+07F1  1A000180           [006] jmp        5            ; to [12]
+07F5  1DC10000           [007] getglobal  4   3        ; 687937235
+07F9  59010100           [008] loadk      5   4        ; 0
+07FD  99810000           [009] loadk      6   2        ; 0
+0801  22818001           [010] call       4   3   2  
+0805  52000002           [011] move       1   4      
+fail op	35
+0809  2300C100           [012] close      0  
+080D  1A800580           [013] jmp        23           ; to [37]
+0811  24414100           [014] self       4   0   261  ; -1536118109
+0815  9D810100           [015] getglobal  6   6        ; Game
+0819  8EC14103           [016] gettable   6   6   263  ; "GAMEPLAY_PICKUP_AMOUNT"
+081D  DD810100           [017] getglobal  7   6        ; Game
+0821  CE01C203           [018] gettable   7   7   264  ; "STACKING_MULTIPLY"
+0825  13020000           [019] getupval   8   0      
+0829  5D420200           [020] getglobal  9   9        ; gLotusNpcAvatarType
+082D  86020005           [021] loadnil    10  10     
+0831  DD820200           [022] getglobal  11  10       ; Engine
+0835  CEC2C205           [023] gettable   11  11  267  ; "DT_ANY"
+0839  13038000           [024] getupval   12  1      
+083D  22418004           [025] call       4   9   1  
+0841  1D010300           [026] getglobal  4   12       ; -421772368
+0845  59410300           [027] loadk      5   13       ; "+25% Resources"
+0849  86010003           [028] loadnil    6   6      
+084D  22818001           [029] call       4   3   2  
+0851  92000002           [030] move       2   4      
+0855  1D010300           [031] getglobal  4   12       ; -421772368
+0859  59810300           [032] loadk      5   14       ; "Increased amount of resources"
+085D  86010003           [033] loadnil    6   6      
+0861  22818001           [034] call       4   3   2  
+0865  D2000002           [035] move       3   4      
+0869  1A000C80           [036] jmp        49           ; to [86]
+fail op	35
+086D  23C0C300           [037] close      0  
+0871  1A800580           [038] jmp        23           ; to [62]
+0875  24414100           [039] self       4   0   261  ; -1536118109
+0879  9D810100           [040] getglobal  6   6        ; Game
+087D  8E014403           [041] gettable   6   6   272  ; "GAMEPLAY_MONEY_PICKUP_AMOUNT"
+0881  DD810100           [042] getglobal  7   6        ; Game
+0885  CE01C203           [043] gettable   7   7   264  ; "STACKING_MULTIPLY"
+0889  13020000           [044] getupval   8   0      
+088D  5D420400           [045] getglobal  9   17       ; gTennoAvatarType
+0891  86020005           [046] loadnil    10  10     
+0895  DD820200           [047] getglobal  11  10       ; Engine
+0899  CEC2C205           [048] gettable   11  11  267  ; "DT_ANY"
+089D  1D830400           [049] getglobal  12  18       ; EMPTY_SYMBOL
+08A1  22418004           [050] call       4   9   1  
+08A5  1D010300           [051] getglobal  4   12       ; -421772368
+08A9  59C10400           [052] loadk      5   19       ; "+25% Credits"
+08AD  86010003           [053] loadnil    6   6      
+08B1  22818001           [054] call       4   3   2  
+08B5  92000002           [055] move       2   4      
+08B9  1D010300           [056] getglobal  4   12       ; -421772368
+08BD  59010500           [057] loadk      5   20       ; "Increased credit drops"
+08C1  86010003           [058] loadnil    6   6      
+08C5  22818001           [059] call       4   3   2  
+08C9  D2000002           [060] move       3   4      
+08CD  1AC00580           [061] jmp        24           ; to [86]
+fail op	35
+08D1  2380C000           [062] close      0  
+08D5  1A400580           [063] jmp        22           ; to [86]
+08D9  24414100           [064] self       4   0   261  ; -1536118109
+08DD  9D810100           [065] getglobal  6   6        ; Game
+08E1  8E414503           [066] gettable   6   6   277  ; "GAMEPLAY_KILL_XP_AMOUNT"
+08E5  DD810100           [067] getglobal  7   6        ; Game
+08E9  CE01C203           [068] gettable   7   7   264  ; "STACKING_MULTIPLY"
+08ED  13020000           [069] getupval   8   0      
+08F1  5D420400           [070] getglobal  9   17       ; gTennoAvatarType
+08F5  86020005           [071] loadnil    10  10     
+08F9  DD820200           [072] getglobal  11  10       ; Engine
+08FD  CEC2C205           [073] gettable   11  11  267  ; "DT_ANY"
+0901  1D830400           [074] getglobal  12  18       ; EMPTY_SYMBOL
+0905  22418004           [075] call       4   9   1  
+0909  1D010300           [076] getglobal  4   12       ; -421772368
+090D  59810500           [077] loadk      5   22       ; "+25% XP"
+0911  86010003           [078] loadnil    6   6      
+0915  22818001           [079] call       4   3   2  
+0919  92000002           [080] move       2   4      
+091D  1D010300           [081] getglobal  4   12       ; -421772368
+0921  59C10500           [082] loadk      5   23       ; "Increased XP earned"
+0925  86010003           [083] loadnil    6   6      
+0929  22818001           [084] call       4   3   2  
+092D  D2000002           [085] move       3   4      
+0931  0E014600           [086] gettable   4   0   280  ; "faction"
+0935  5D410600           [087] getglobal  5   25       ; Lotus_Game
+0939  4E81C602           [088] gettable   5   5   282  ; "FC_INFESTATION"
+fail op	35
+093D  23400102           [089] close      0  
+0941  1A800580           [090] jmp        23           ; to [114]
+0945  0EC14600           [091] gettable   4   0   283  ; "fxLayer"
+0949  5D810400           [092] getglobal  5   18       ; EMPTY_SYMBOL
+fail op	35
+094D  23400102           [093] close      0  
+0951  1A800480           [094] jmp        19           ; to [114]
+0955  0E014700           [095] gettable   4   0   284  ; "levelOverride"
+0959  24414702           [096] self       4   4   285  ; 455421500
+095D  22810001           [097] call       4   2   2  
+0961  5D810700           [098] getglobal  5   30       ; string
+0965  4EC1C702           [099] gettable   5   5   287  ; -565905820
+0969  92010002           [100] move       6   4      
+096D  D9010800           [101] loadk      7   32       ; "Galleon"
+0971  62818001           [102] call       5   3   2  
+0975  58410000           [103] test       5       1    ; to [105] if false
+0979  1A800180           [104] jmp        7            ; to [112]
+097D  5D810700           [105] getglobal  5   30       ; string
+0981  4EC1C702           [106] gettable   5   5   287  ; -565905820
+0985  92010002           [107] move       6   4      
+0989  D9410800           [108] loadk      7   33       ; "CorpusShip"
+098D  62818001           [109] call       5   3   2  
+0991  58010000           [110] test       5       0    ; to [112] if true
+0995  1A400080           [111] jmp        2            ; to [114]
+0999  53010001           [112] getupval   5   2      
+099D  0C40818D           [113] settable   0   283 5    ; "fxLayer"
+fail op	35
+09A1  63004001           [114] close      1  
+09A5  1A400180           [115] jmp        6            ; to [122]
+09A9  5D010300           [116] getglobal  5   12       ; -421772368
+09AD  99810800           [117] loadk      6   34       ; "/Lotus/Language/Sorties/ModifierCaption"
+09B1  CB410000           [118] newtable   7   0   1    ; array=0, hash=1
+09B5  CC818091           [119] settable   7   291 2    ; "MODIFIER_DESC"
+09B9  62818001           [120] call       5   3   2  
+09BD  92008002           [121] move       2   5      
+09C1  52010001           [122] move       5   2      
+09C5  92018001           [123] move       6   3      
+09C9  5E018001           [124] return     5   3      
+09CD  1E008000           [125] return     0   1      
+                         * constants:
+09D1  24                 sizek (36)
+09D2  04                 const type 4
+09D3  01                 string size (0)
+                         const [0]: ""
+09D5  00                 const type 0
+                         const [1]: nil
+09D6  03                 const type 3
+09D7  00004040           const [2]: (0)
+09DB  01                 const type 3
+09DC  D3160129           const [3]: (687937235)
+09E0  03                 const type 3
+09E1  0000803F           const [4]: (0)
+09E5  01                 const type 3
+09E6  A3B270A4           const [5]: (-1536118109)
+09EA  04                 const type 4
+09EB  05                 string size (5)
+09EC  47616D6500         "Game\0"
+                         const [6]: "Game"
+09F1  04                 const type 4
+09F2  17                 string size (23)
+09F3  47414D45504C4159+  "GAMEPLAY"
+09FB  5F5049434B55505F+  "_PICKUP_"
+0A03  414D4F554E5400     "AMOUNT\0"
+                         const [7]: "GAMEPLAY_PICKUP_AMOUNT"
+0A0A  04                 const type 4
+0A0B  12                 string size (18)
+0A0C  535441434B494E47+  "STACKING"
+0A14  5F4D554C5449504C+  "_MULTIPL"
+0A1C  5900               "Y\0"
+                         const [8]: "STACKING_MULTIPLY"
+0A1E  04                 const type 4
+0A1F  14                 string size (20)
+0A20  674C6F7475734E70+  "gLotusNp"
+0A28  6341766174617254+  "cAvatarT"
+0A30  79706500           "ype\0"
+                         const [9]: "gLotusNpcAvatarType"
+0A34  04                 const type 4
+0A35  07                 string size (7)
+0A36  456E67696E6500     "Engine\0"
+                         const [10]: "Engine"
+0A3D  04                 const type 4
+0A3E  07                 string size (7)
+0A3F  44545F414E5900     "DT_ANY\0"
+                         const [11]: "DT_ANY"
+0A46  01                 const type 3
+0A47  B043DCE6           const [12]: (-421772368)
+0A4B  04                 const type 4
+0A4C  0F                 string size (15)
+0A4D  2B32352520526573+  "+25% Res"
+0A55  6F757263657300     "ources\0"
+                         const [13]: "+25% Resources"
+0A5C  04                 const type 4
+0A5D  1E                 string size (30)
+0A5E  496E637265617365+  "Increase"
+0A66  6420616D6F756E74+  "d amount"
+0A6E  206F66207265736F+  " of reso"
+0A76  757263657300       "urces\0"
+                         const [14]: "Increased amount of resources"
+0A7C  03                 const type 3
+0A7D  00000040           const [15]: (0)
+0A81  04                 const type 4
+0A82  1D                 string size (29)
+0A83  47414D45504C4159+  "GAMEPLAY"
+0A8B  5F4D4F4E45595F50+  "_MONEY_P"
+0A93  49434B55505F414D+  "ICKUP_AM"
+0A9B  4F554E5400         "OUNT\0"
+                         const [16]: "GAMEPLAY_MONEY_PICKUP_AMOUNT"
+0AA0  04                 const type 4
+0AA1  11                 string size (17)
+0AA2  6754656E6E6F4176+  "gTennoAv"
+0AAA  6174617254797065+  "atarType"
+0AB2  00                 "\0"
+                         const [17]: "gTennoAvatarType"
+0AB3  04                 const type 4
+0AB4  0D                 string size (13)
+0AB5  454D5054595F5359+  "EMPTY_SY"
+0ABD  4D424F4C00         "MBOL\0"
+                         const [18]: "EMPTY_SYMBOL"
+0AC2  04                 const type 4
+0AC3  0D                 string size (13)
+0AC4  2B32352520437265+  "+25% Cre"
+0ACC  6469747300         "dits\0"
+                         const [19]: "+25% Credits"
+0AD1  04                 const type 4
+0AD2  17                 string size (23)
+0AD3  496E637265617365+  "Increase"
+0ADB  6420637265646974+  "d credit"
+0AE3  2064726F707300     " drops\0"
+                         const [20]: "Increased credit drops"
+0AEA  04                 const type 4
+0AEB  18                 string size (24)
+0AEC  47414D45504C4159+  "GAMEPLAY"
+0AF4  5F4B494C4C5F5850+  "_KILL_XP"
+0AFC  5F414D4F554E5400   "_AMOUNT\0"
+                         const [21]: "GAMEPLAY_KILL_XP_AMOUNT"
+0B04  04                 const type 4
+0B05  08                 string size (8)
+0B06  2B32352520585000   "+25% XP\0"
+                         const [22]: "+25% XP"
+0B0E  04                 const type 4
+0B0F  14                 string size (20)
+0B10  496E637265617365+  "Increase"
+0B18  6420585020656172+  "d XP ear"
+0B20  6E656400           "ned\0"
+                         const [23]: "Increased XP earned"
+0B24  04                 const type 4
+0B25  08                 string size (8)
+0B26  66616374696F6E00   "faction\0"
+                         const [24]: "faction"
+0B2E  04                 const type 4
+0B2F  0B                 string size (11)
+0B30  4C6F7475735F4761+  "Lotus_Ga"
+0B38  6D6500             "me\0"
+                         const [25]: "Lotus_Game"
+0B3B  04                 const type 4
+0B3C  0F                 string size (15)
+0B3D  46435F494E464553+  "FC_INFES"
+0B45  544154494F4E00     "TATION\0"
+                         const [26]: "FC_INFESTATION"
+0B4C  04                 const type 4
+0B4D  08                 string size (8)
+0B4E  66784C6179657200   "fxLayer\0"
+                         const [27]: "fxLayer"
+0B56  04                 const type 4
+0B57  0E                 string size (14)
+0B58  6C6576656C4F7665+  "levelOve"
+0B60  727269646500       "rride\0"
+                         const [28]: "levelOverride"
+0B66  01                 const type 3
+0B67  3C2E251B           const [29]: (455421500)
+0B6B  04                 const type 4
+0B6C  07                 string size (7)
+0B6D  737472696E6700     "string\0"
+                         const [30]: "string"
+0B74  01                 const type 3
+0B75  64F644DE           const [31]: (-565905820)
+0B79  04                 const type 4
+0B7A  08                 string size (8)
+0B7B  47616C6C656F6E00   "Galleon\0"
+                         const [32]: "Galleon"
+0B83  04                 const type 4
+0B84  0B                 string size (11)
+0B85  436F727075735368+  "CorpusSh"
+0B8D  697000             "ip\0"
+                         const [33]: "CorpusShip"
+0B90  04                 const type 4
+0B91  28                 string size (40)
+0B92  2F4C6F7475732F4C+  "/Lotus/L"
+0B9A  616E67756167652F+  "anguage/"
+0BA2  536F72746965732F+  "Sorties/"
+0BAA  4D6F646966696572+  "Modifier"
+0BB2  43617074696F6E00   "Caption\0"
+                         const [34]: "/Lotus/Language/Sorties/ModifierCaption"
+0BBA  04                 const type 4
+0BBB  0E                 string size (14)
+0BBC  4D4F444946494552+  "MODIFIER"
+0BC4  5F4445534300       "_DESC\0"
+                         const [35]: "MODIFIER_DESC"
+                         * functions:
+0BCA  00                 sizep (0)
+                         * lines:
+0BCB  7D                 sizelineinfo (125)
+                         [pc] (line)
+0BCC  3D                 [001] (61)
+0BCD  00                 [002] (62)
+0BCE  00                 [003] (63)
+0BCF  00                 [004] (63)
+0BD0  3E                 [005] (63)
+0BD1  00                 [006] (63)
+0BD2  00                 [007] (64)
+0BD3  00                 [008] (64)
+0BD4  3F                 [009] (64)
+0BD5  00                 [010] (64)
+0BD6  00                 [011] (64)
+0BD7  00                 [012] (67)
+0BD8  3F                 [013] (67)
+0BD9  00                 [014] (69)
+0BDA  00                 [015] (69)
+0BDB  00                 [016] (69)
+0BDC  3F                 [017] (69)
+0BDD  00                 [018] (69)
+0BDE  00                 [019] (69)
+0BDF  00                 [020] (69)
+0BE0  3F                 [021] (69)
+0BE1  00                 [022] (69)
+0BE2  00                 [023] (69)
+0BE3  00                 [024] (69)
+0BE4  40                 [025] (69)
+0BE5  00                 [026] (70)
+0BE6  00                 [027] (70)
+0BE7  00                 [028] (70)
+0BE8  40                 [029] (70)
+0BE9  00                 [030] (70)
+0BEA  00                 [031] (71)
+0BEB  00                 [032] (71)
+0BEC  40                 [033] (71)
+0BED  00                 [034] (71)
+0BEE  00                 [035] (71)
+0BEF  00                 [036] (71)
+0BF0  40                 [037] (73)
+0BF1  00                 [038] (73)
+0BF2  00                 [039] (75)
+0BF3  00                 [040] (75)
+0BF4  40                 [041] (75)
+0BF5  00                 [042] (75)
+0BF6  00                 [043] (75)
+0BF7  00                 [044] (75)
+0BF8  43                 [045] (75)
+0BF9  00                 [046] (75)
+0BFA  00                 [047] (75)
+0BFB  00                 [048] (75)
+0BFC  43                 [049] (75)
+0BFD  00                 [050] (75)
+0BFE  00                 [051] (76)
+0BFF  00                 [052] (76)
+0C00  45                 [053] (76)
+0C01  00                 [054] (76)
+0C02  00                 [055] (76)
+0C03  00                 [056] (77)
+0C04  45                 [057] (77)
+0C05  00                 [058] (77)
+0C06  00                 [059] (77)
+0C07  00                 [060] (77)
+0C08  45                 [061] (77)
+0C09  00                 [062] (79)
+0C0A  00                 [063] (79)
+0C0B  00                 [064] (81)
+0C0C  45                 [065] (81)
+0C0D  00                 [066] (81)
+0C0E  00                 [067] (81)
+0C0F  00                 [068] (81)
+0C10  45                 [069] (81)
+0C11  00                 [070] (81)
+0C12  00                 [071] (81)
+0C13  00                 [072] (81)
+0C14  45                 [073] (81)
+0C15  00                 [074] (81)
+0C16  00                 [075] (81)
+0C17  00                 [076] (82)
+0C18  45                 [077] (82)
+0C19  00                 [078] (82)
+0C1A  00                 [079] (82)
+0C1B  00                 [080] (82)
+0C1C  45                 [081] (83)
+0C1D  00                 [082] (83)
+0C1E  00                 [083] (83)
+0C1F  00                 [084] (83)
+0C20  45                 [085] (83)
+0C21  00                 [086] (87)
+0C22  00                 [087] (87)
+0C23  00                 [088] (87)
+0C24  45                 [089] (87)
+0C25  00                 [090] (87)
+0C26  00                 [091] (87)
+0C27  00                 [092] (87)
+0C28  45                 [093] (87)
+0C29  00                 [094] (87)
+0C2A  00                 [095] (88)
+0C2B  00                 [096] (88)
+0C2C  45                 [097] (88)
+0C2D  00                 [098] (89)
+0C2E  00                 [099] (89)
+0C2F  00                 [100] (89)
+0C30  46                 [101] (89)
+0C31  00                 [102] (89)
+0C32  00                 [103] (89)
+0C33  00                 [104] (89)
+0C34  46                 [105] (89)
+0C35  00                 [106] (89)
+0C36  00                 [107] (89)
+0C37  00                 [108] (89)
+0C38  46                 [109] (89)
+0C39  00                 [110] (89)
+0C3A  00                 [111] (89)
+0C3B  00                 [112] (90)
+0C3C  46                 [113] (90)
+0C3D  00                 [114] (94)
+0C3E  00                 [115] (94)
+0C3F  00                 [116] (95)
+0C40  46                 [117] (95)
+0C41  00                 [118] (95)
+0C42  00                 [119] (95)
+0C43  00                 [120] (95)
+0C44  47                 [121] (95)
+0C45  00                 [122] (98)
+0C46  00                 [123] (98)
+0C47  00                 [124] (98)
+0C48  47                 [125] (99)
+                         * locals:
+0DC0  00                 sizelocvars (0)
+                         * upvalues:
+0DC1  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0DC2                     ** function [3] definition (level 2)
+                         ** start of function **
+0DC2  00                 string size (0)
+                         source name: (none)
+0DC3  65                 line defined (101)
+0DC4  91                 last line defined (273)
+0DC5  02                 nups (8)
+0DC6  08                 numparams (1)
+0DC7  01                 is_vararg (0)
+0DC8  00                 maxstacksize (77)
+                         * code:
+0DCB  03                 sizecode (403)
+0DCC  5D000000           [001] getglobal  1   0        ; _T
+0DD0  4E40C000           [002] gettable   1   1   257  ; "VoidTearDefaultEnemySpec"
+0DD4  58400000           [003] test       1       1    ; to [5] if false
+0DD8  1A000180           [004] jmp        5            ; to [10]
+0DDC  5D000000           [005] getglobal  1   0        ; _T
+0DE0  93000000           [006] getupval   2   0      
+0DE4  8E804001           [007] gettable   2   2   258  ; "VoidT1"
+0DE8  8EC04001           [008] gettable   2   2   259  ; "customEnemies"
+0DEC  4C808080           [009] settable   1   257 2    ; "VoidTearDefaultEnemySpec"
+0DF0  5D000100           [010] getglobal  1   4        ; gFlashMgr
+0DF4  6440C100           [011] self       1   1   261  ; 277467219
+0DF8  D9800100           [012] loadk      3   6        ; "LotusGameRules.DebugActiveMissions"
+0DFC  62808001           [013] call       1   3   2  
+0E00  97000000           [014] loadbool   2   0   0    ; false
+0E04  D7000000           [015] loadbool   3   0   0    ; false
+0E08  24C14100           [016] self       4   0   263  ; 755731078
+0E0C  22810001           [017] call       4   2   2  
+0E10  0E014202           [018] gettable   4   4   264  ; "mActiveMissions"
+0E14  59410200           [019] loadk      5   9        ; 0
+0E18  8A010002           [020] len        6   4      
+0E1C  D9410200           [021] loadk      7   9        ; 0
+0E20  50810380           [022] forprep    5   15       ; to [38]
+0E24  5D820200           [023] getglobal  9   10       ; -1299495716
+0E28  8E020202           [024] gettable   10  4   8  
+0E2C  8EC24205           [025] gettable   10  10  267  ; "mSeed"
+0E30  62820001           [026] call       9   2   2  
+0E34  93028000           [027] getupval   10  1      
+0E38  8E020205           [028] gettable   10  10  8  
+0E3C  98020000           [029] test       10      0    ; to [31] if true
+0E40  1AC00080           [030] jmp        4            ; to [35]
+0E44  93028000           [031] getupval   10  1      
+0E48  8E020205           [032] gettable   10  10  8  
+fail op	35
+0E4C  63400205           [033] close      1  
+0E50  1A800080           [034] jmp        3            ; to [38]
+0E54  93028000           [035] getupval   10  1      
+0E58  8C420204           [036] settable   10  8   9  
+0E5C  D7008000           [037] loadbool   3   1   0    ; true
+0E60  54C1FB7F           [038] forloop    5   -16      ; to [23] if loop
+0E64  D8400000           [039] test       3       1    ; to [41] if false
+0E68  1A000580           [040] jmp        21           ; to [62]
+0E6C  9D020000           [041] getglobal  10  0        ; _T
+0E70  8E024305           [042] gettable   10  10  268  ; "CachedActiveMissions"
+0E74  98020000           [043] test       10      0    ; to [45] if true
+0E78  1A000480           [044] jmp        17           ; to [62]
+0E7C  9D020000           [045] getglobal  10  0        ; _T
+0E80  8E024305           [046] gettable   10  10  268  ; "CachedActiveMissions"
+0E84  8A020005           [047] len        10  10     
+fail op	21
+0E88  15808286           [048] concat     0   269 10 
+0E8C  1AC00280           [049] jmp        12           ; to [62]
+0E90  9D820300           [050] getglobal  10  14       ; 248503575
+0E94  DD020000           [051] getglobal  11  0        ; _T
+0E98  CE02C305           [052] gettable   11  11  268  ; "CachedActiveMissions"
+0E9C  A2020101           [053] call       10  2   4  
+0EA0  1A800080           [054] jmp        3            ; to [58]
+0EA4  D3030001           [055] getupval   15  2      
+0EA8  12040007           [056] move       16  14     
+0EAC  E2430001           [057] call       15  2   1  
+0EB0  96820000           [058] tforloop   10      2    ; to [60] if exit
+0EB4  1A80FE7F           [059] jmp        -5           ; to [55]
+0EB8  D3038001           [060] getupval   15  3      
+0EBC  DE030001           [061] return     15  2      
+0EC0  DD030000           [062] getglobal  15  0        ; _T
+0EC4  0B040000           [063] newtable   16  0   0    ; array=0, hash=0
+0EC8  CC030486           [064] settable   15  268 16   ; "CachedActiveMissions"
+0ECC  D3030002           [065] getupval   15  4      
+0ED0  CEC3C307           [066] gettable   15  15  271  ; -1153782542
+0ED4  E2838000           [067] call       15  1   2  
+0ED8  1D040400           [068] getglobal  16  16       ; math
+0EDC  0E444408           [069] gettable   16  16  273  ; -150971781
+0EE0  5D840400           [070] getglobal  17  18       ; gGameRules
+0EE4  64C4C408           [071] self       17  17  275  ; 52111380
+0EE8  62040001           [072] call       17  2   0  
+0EEC  22840000           [073] call       16  0   2  
+0EF0  59440300           [074] loadk      17  13       ; 0
+0EF4  99040500           [075] loadk      18  20       ; 0
+0EF8  DD040000           [076] getglobal  19  0        ; _T
+0EFC  CE44C509           [077] gettable   19  19  277  ; "SHOW_LOCKED_ALERTS"
+0F00  1D850500           [078] getglobal  20  22       ; gPlayerProfileMgr
+0F04  24C5450A           [079] self       20  20  279  ; 569342746
+0F08  99450300           [080] loadk      22  13       ; 0
+0F0C  22858001           [081] call       20  3   2  
+0F10  2405460A           [082] self       20  20  280  ; 1699680402
+0F14  22850001           [083] call       20  2   2  
+0F18  2445460A           [084] self       20  20  281  ; 1865287165
+0F1C  22850001           [085] call       20  2   2  
+0F20  5D850600           [086] getglobal  21  26       ; 1074689893
+0F24  9205000A           [087] move       22  20     
+0F28  62850001           [088] call       21  2   2  
+0F2C  58450000           [089] test       21      1    ; to [91] if false
+0F30  1A000580           [090] jmp        21           ; to [112]
+0F34  64C5460A           [091] self       21  20  283  ; 858389503
+0F38  62850001           [092] call       21  2   2  
+0F3C  9D850300           [093] getglobal  22  14       ; 248503575
+0F40  D205800A           [094] move       23  21     
+0F44  A2050101           [095] call       22  2   4  
+0F48  1A000380           [096] jmp        13           ; to [110]
+0F4C  DD860600           [097] getglobal  27  26       ; 1074689893
+0F50  0E07470D           [098] gettable   28  26  284  ; "mItemType"
+0F54  E2860001           [099] call       27  2   2  
+0F58  D8460000           [100] test       27      1    ; to [102] if false
+0F5C  1AC00180           [101] jmp        8            ; to [110]
+0F60  CE06470D           [102] gettable   27  26  284  ; "mItemType"
+0F64  E446C70D           [103] self       27  27  285  ; -1957065004
+0F68  5D870700           [104] getglobal  29  30       ; gVoidProjectionItemType
+0F6C  E2868001           [105] call       27  3   2  
+0F70  D8060000           [106] test       27      0    ; to [108] if true
+0F74  1A400080           [107] jmp        2            ; to [110]
+0F78  D7048000           [108] loadbool   19  1   0    ; true
+0F7C  1A400080           [109] jmp        2            ; to [112]
+0F80  96850000           [110] tforloop   22      2    ; to [112] if exit
+0F84  1A00FC7F           [111] jmp        -15          ; to [97]
+0F88  D9460200           [112] loadk      27  9        ; 0
+0F8C  0A070002           [113] len        28  4      
+0F90  59470200           [114] loadk      29  9        ; 0
+0F94  D0C64680           [115] forprep    27  284      ; to [400]
+0F98  CE870702           [116] gettable   31  4   30 
+0F9C  0EC8C70F           [117] gettable   32  31  287  ; "mId"
+0FA0  0EC84710           [118] gettable   32  32  287  ; "mId"
+0FA4  4E08C80F           [119] gettable   33  31  288  ; "mExpiry"
+0FA8  4E48C810           [120] gettable   33  33  289  ; "sec"
+0FAC  9D880800           [121] getglobal  34  34       ; Engine
+0FB0  8EC84811           [122] gettable   34  34  291  ; -804367239
+0FB4  CE08C90F           [123] gettable   35  31  292  ; "mActivation"
+0FB8  CE48C811           [124] gettable   35  35  289  ; "sec"
+0FBC  A2880001           [125] call       34  2   2  
+0FC0  DD880800           [126] getglobal  35  34       ; Engine
+0FC4  CEC8C811           [127] gettable   35  35  291  ; -804367239
+0FC8  12098010           [128] move       36  33     
+0FCC  E2880001           [129] call       35  2   2  
+0FD0  13098002           [130] getupval   36  5      
+fail op	21
+0FD4  15808886           [131] concat     0   269 34 
+0FD8  1A800280           [132] jmp        11           ; to [144]
+0FDC  53098001           [133] getupval   37  3      
+0FE0  58090000           [134] test       37      0    ; to [136] if true
+0FE4  1A400080           [135] jmp        2            ; to [138]
+fail op	21
+0FE8  15800411           [136] concat     0   34  18 
+0FEC  1A404180           [137] jmp        262          ; to [400]
+0FF0  92040011           [138] move       18  34     
+0FF4  4E09C90F           [139] gettable   37  31  292  ; "mActivation"
+0FF8  6449C912           [140] self       37  37  293  ; -1540973124
+0FFC  62890001           [141] call       37  2   2  
+fail op	8
+1000  48098001           [142] setupval   37  3      
+1004  1AC03F80           [143] jmp        256          ; to [400]
+fail op	21
+1008  15C08886           [144] concat     0   269 35 
+100C  1A403F80           [145] jmp        254          ; to [400]
+1010  53098001           [146] getupval   37  3      
+1014  58090000           [147] test       37      0    ; to [149] if true
+1018  1A400080           [148] jmp        2            ; to [151]
+fail op	21
+101C  15808411           [149] concat     0   35  18 
+1020  1A000180           [150] jmp        5            ; to [156]
+1024  92048011           [151] move       18  35     
+1028  4E09C80F           [152] gettable   37  31  288  ; "mExpiry"
+102C  6449C912           [153] self       37  37  293  ; -1540973124
+1030  62890001           [154] call       37  2   2  
+fail op	8
+1034  48098001           [155] setupval   37  3      
+1038  4344C208           [156] add        17  17  265  ; 0
+103C  5D890900           [157] getglobal  37  38       ; -1692306532
+1040  8EC9C20F           [158] gettable   38  31  267  ; "mSeed"
+1044  62490001           [159] call       37  2   1  
+1048  4EC9C90F           [160] gettable   37  31  295  ; "mRegion"
+104C  A409CA07           [161] self       38  15  296  ; -551469855
+1050  0E4ACA0F           [162] gettable   40  31  297  ; "mNode"
+1054  A2898001           [163] call       38  3   2  
+1058  DD890A00           [164] getglobal  39  42       ; -1615931716
+105C  0ECA4A13           [165] gettable   40  38  299  ; "name"
+1060  E2890001           [166] call       39  2   2  
+1064  1D0A0B00           [167] getglobal  40  44       ; _G
+1068  0E4A4B14           [168] gettable   40  40  301  ; "UITexture_VoidTear"
+106C  460A8014           [169] loadnil    41  41     
+1070  8E8A4B13           [170] gettable   42  38  302  ; "mission"
+1074  CECA4B15           [171] gettable   43  42  303  ; "missionType"
+1078  1D0B0C00           [172] getglobal  44  48       ; Lotus_Game
+107C  0E4B4C16           [173] gettable   44  44  305  ; "MT_RETRIEVAL"
+fail op	35
+1080  23008B15           [174] close      0  
+1084  1A400080           [175] jmp        2            ; to [178]
+1088  530A0003           [176] getupval   41  6      
+108C  1AC00080           [177] jmp        4            ; to [182]
+1090  0B0B8000           [178] newtable   44  1   0    ; array=1, hash=0
+1094  520B8015           [179] move       45  43     
+1098  1B4B8000           [180] setlist    44  1   1    ; index 1 to 1
+109C  520A0016           [181] move       41  44     
+10A0  240BCA07           [182] self       44  15  296  ; -551469855
+10A4  8E8B4C15           [183] gettable   46  42  306  ; "location"
+10A8  228B8001           [184] call       44  3   2  
+10AC  0E8B4B16           [185] gettable   44  44  302  ; "mission"
+10B0  244B4916           [186] self       44  44  293  ; -1540973124
+10B4  228B0001           [187] call       44  2   2  
+10B8  180B0000           [188] test       44      0    ; to [190] if true
+10BC  1A403480           [189] jmp        210          ; to [400]
+10C0  520B8013           [190] move       45  39     
+10C4  990B0D00           [191] loadk      46  52       ; "_"
+10C8  D20B0010           [192] move       47  32     
+10CC  42CB8B16           [193] concat     45  45  47 
+10D0  0C4B8B99           [194] settable   44  307 45   ; "activeMissionId"
+10D4  4E8BCD0F           [195] gettable   45  31  310  ; "mModifier"
+10D8  0C4B8B9A           [196] settable   44  309 45   ; "activeMissionTag"
+10DC  59CB0D00           [197] loadk      45  55       ; ""
+10E0  99CB0D00           [198] loadk      46  55       ; ""
+10E4  D9CB0D00           [199] loadk      47  55       ; ""
+10E8  060C8018           [200] loadnil    48  49     
+10EC  8E4C4D16           [201] gettable   50  44  309  ; "activeMissionTag"
+10F0  DD0C0E00           [202] getglobal  51  56       ; EMPTY_SYMBOL
+fail op	35
+10F4  63C00C19           [203] close      1  
+10F8  1A800B80           [204] jmp        47           ; to [252]
+10FC  930C0000           [205] getupval   50  0      
+1100  DD8C0A00           [206] getglobal  51  42       ; -1615931716
+1104  0E4D4D16           [207] gettable   52  44  309  ; "activeMissionTag"
+1108  E28C0001           [208] call       51  2   2  
+110C  8ECC0C19           [209] gettable   50  50  51 
+1110  DD0C0000           [210] getglobal  51  0        ; _T
+1114  CE4CCE19           [211] gettable   51  51  313  ; "REGION_ID_FORTRESS"
+fail op	35
+1118  23C08C12           [212] close      0  
+111C  1A800080           [213] jmp        3            ; to [217]
+1120  0CCB4E9D           [214] settable   44  314 315  ; "minEnemyLevel" 0
+1124  0C4B4F9E           [215] settable   44  316 317  ; "maxEnemyLevel" 0
+1128  1A800380           [216] jmp        15           ; to [232]
+112C  DD0C0000           [217] getglobal  51  0        ; _T
+1130  CE8CCF19           [218] gettable   51  51  318  ; "REGION_ID_VOID"
+fail op	35
+1134  23C08C12           [219] close      0  
+1138  1A000180           [220] jmp        5            ; to [226]
+113C  CE8C4E19           [221] gettable   51  50  314  ; "minEnemyLevel"
+1140  0CCB0C9D           [222] settable   44  314 51   ; "minEnemyLevel"
+1144  CE0C4F19           [223] gettable   51  50  316  ; "maxEnemyLevel"
+1148  0CCB0C9E           [224] settable   44  316 51   ; "maxEnemyLevel"
+114C  1A400180           [225] jmp        6            ; to [232]
+1150  CE0C4F16           [226] gettable   51  44  316  ; "maxEnemyLevel"
+1154  C3CCCF19           [227] add        51  51  319  ; 0
+1158  0CCB0C9D           [228] settable   44  314 51   ; "minEnemyLevel"
+115C  CE0C4F16           [229] gettable   51  44  316  ; "maxEnemyLevel"
+1160  C30CD019           [230] add        51  51  320  ; 0
+1164  0CCB0C9E           [231] settable   44  316 51   ; "maxEnemyLevel"
+1168  DD8C0600           [232] getglobal  51  26       ; 1074689893
+116C  0E4D5019           [233] gettable   52  50  321  ; "questReq"
+1170  E28C0001           [234] call       51  2   2  
+1174  D84C0000           [235] test       51      1    ; to [237] if false
+1178  1A400080           [236] jmp        2            ; to [239]
+117C  CE4C5019           [237] gettable   51  50  321  ; "questReq"
+1180  0CCB8CA0           [238] settable   44  321 51   ; "questReq"
+1184  DD8C1000           [239] getglobal  51  66       ; -421772368
+1188  0ECD5019           [240] gettable   52  50  323  ; "locTag"
+118C  4E0D5119           [241] gettable   53  50  324  ; "locParams"
+1190  E28C8001           [242] call       51  3   2  
+1194  520B8019           [243] move       45  51     
+1198  920B8019           [244] move       46  51     
+119C  0E4C5119           [245] gettable   48  50  325  ; "levelObjects"
+11A0  4ECC4019           [246] gettable   49  50  259  ; "customEnemies"
+11A4  1DCD1100           [247] getglobal  52  71       ; -332969190
+11A8  520D8019           [248] move       53  51     
+11AC  228D0001           [249] call       52  2   2  
+11B0  0C0B0DA3           [250] settable   44  326 52   ; "descText"
+11B4  1AC00480           [251] jmp        20           ; to [272]
+11B8  060D001A           [252] loadnil    52  52     
+11BC  4A0D0012           [253] len        53  36     
+fail op	21
+11C0  15408D86           [254] concat     0   269 53 
+11C4  1A400280           [255] jmp        10           ; to [266]
+11C8  5D0D1200           [256] getglobal  53  72       ; 687937235
+11CC  994D0200           [257] loadk      54  9        ; 0
+11D0  CA0D0012           [258] len        55  36     
+11D4  628D8001           [259] call       53  3   2  
+11D8  0E4D0D12           [260] gettable   52  36  53 
+11DC  9D4D1200           [261] getglobal  54  73       ; table
+11E0  8E8D521B           [262] gettable   54  54  330  ; -843973282
+11E4  D20D0012           [263] move       55  36     
+11E8  120E801A           [264] move       56  53     
+11EC  A24D8001           [265] call       54  3   1  
+11F0  930D8003           [266] getupval   54  7      
+11F4  D20D0016           [267] move       55  44     
+11F8  120E001A           [268] move       56  52     
+11FC  A2CD8001           [269] call       54  3   3  
+1200  D20B801B           [270] move       47  55     
+1204  520B001B           [271] move       45  54     
+1208  A4CDD207           [272] self       54  15  331  ; -163473155
+120C  0ECE4A13           [273] gettable   56  38  299  ; "name"
+1210  A28D8001           [274] call       54  3   2  
+1214  E40D531B           [275] self       55  54  332  ; -2136469781
+1218  E28D0001           [276] call       55  2   2  
+121C  1D0E0C00           [277] getglobal  56  48       ; Lotus_Game
+1220  0E4E531C           [278] gettable   56  56  333  ; "RadialRegion_RCS_LOCKED"
+fail op	35
+1224  23008E1B           [279] close      0  
+1228  1AC00180           [280] jmp        8            ; to [289]
+122C  E48D5300           [281] self       55  0   334  ; 127920909
+1230  4ECE5313           [282] gettable   57  38  335  ; "region"
+1234  E28D8001           [283] call       55  3   2  
+1238  D84D0000           [284] test       55      1    ; to [286] if false
+123C  1AC00080           [285] jmp        4            ; to [290]
+1240  D70D0000           [286] loadbool   55  0   0    ; false
+1244  1A400080           [287] jmp        2            ; to [290]
+1248  D74D0000           [288] loadbool   55  0   1    ; false, to [290]
+124C  D70D8000           [289] loadbool   55  1   0    ; true
+1250  170E0000           [290] loadbool   56  0   0    ; false
+1254  520E8009           [291] move       57  19     
+1258  D80D0000           [292] test       55      0    ; to [294] if true
+125C  1A800080           [293] jmp        3            ; to [297]
+1260  8E0E5413           [294] gettable   58  38  336  ; "unlocked"
+1264  984E0000           [295] test       58      1    ; to [297] if false
+1268  1A000080           [296] jmp        1            ; to [298]
+126C  970E0000           [297] loadbool   58  0   0    ; false
+1270  DD0E0000           [298] getglobal  59  0        ; _T
+1274  CE0EC31D           [299] gettable   59  59  268  ; "CachedActiveMissions"
+1278  0B0F0300           [300] newtable   60  0   12   ; array=0, hash=12
+127C  4ECF5313           [301] gettable   61  38  335  ; "region"
+1280  0C4F8F93           [302] settable   60  295 61   ; "mRegion"
+1284  0C0F8BA8           [303] settable   60  337 44   ; "mMissionInfo"
+1288  0C4F0EA9           [304] settable   60  338 57   ; "mVisible"
+128C  0C4F0890           [305] settable   60  288 33   ; "mExpiry"
+1290  0C8F8EA9           [306] settable   60  339 58   ; "mUnlocked"
+1294  0CCF0DAA           [307] settable   60  340 55   ; "mRegionUnlocked"
+1298  0C0F8EAA           [308] settable   60  341 56   ; "mCompleted"
+129C  0C0F0AAB           [309] settable   60  342 40   ; "mIcon"
+12A0  0C4F8BAB           [310] settable   60  343 45   ; "mModifierAuraDesc"
+12A4  0C8F0BAC           [311] settable   60  344 46   ; "mMissionDesc"
+12A8  0C0F8CAC           [312] settable   60  345 48   ; "mLevelObjects"
+12AC  0C4F0CAD           [313] settable   60  346 49   ; "mCustomEnemies"
+12B0  CC0E8F13           [314] settable   59  39  60 
+12B4  D30E0001           [315] getupval   59  2      
+12B8  1D0F0000           [316] getglobal  60  0        ; _T
+12BC  0E0F431E           [317] gettable   60  60  268  ; "CachedActiveMissions"
+12C0  0ECF091E           [318] gettable   60  60  39 
+12C4  E24E0001           [319] call       59  2   1  
+12C8  D70E0000           [320] loadbool   59  0   0    ; false
+12CC  D80E0000           [321] test       59      0    ; to [323] if true
+12D0  1A001380           [322] jmp        77           ; to [400]
+12D4  58000000           [323] test       1       0    ; to [325] if true
+12D8  1A800980           [324] jmp        39           ; to [364]
+12DC  E4CE5616           [325] self       59  44  347  ; 582088778
+12E0  E28E0001           [326] call       59  2   2  
+12E4  1D0F1700           [327] getglobal  60  92       ; -1817107093
+12E8  594F1700           [328] loadk      61  93       ; "ActiveMission["
+12EC  920F8008           [329] move       62  17     
+12F0  D98F1700           [330] loadk      63  94       ; "] for Region="
+12F4  1D901000           [331] getglobal  64  66       ; -421772368
+12F8  5D900A00           [332] getglobal  65  42       ; -1615931716
+12FC  8ED05313           [333] gettable   66  38  335  ; "region"
+1300  62900001           [334] call       65  2   2  
+1304  97100000           [335] loadbool   66  0   0    ; false
+1308  22908001           [336] call       64  3   2  
+130C  59D01700           [337] loadk      65  95       ; " Node="
+1310  92108013           [338] move       66  39     
+1314  D9101800           [339] loadk      67  96       ; " ("
+1318  1D911000           [340] getglobal  68  66       ; -421772368
+131C  5D910A00           [341] getglobal  69  42       ; -1615931716
+1320  8ED14A1B           [342] gettable   70  54  299  ; "name"
+1324  62910001           [343] call       69  2   2  
+1328  86110023           [344] loadnil    70  70     
+132C  22918001           [345] call       68  3   2  
+1330  59511800           [346] loadk      69  97       ; ": "
+1334  9D911000           [347] getglobal  70  66       ; -421772368
+1338  DD910A00           [348] getglobal  71  42       ; -1615931716
+133C  0ED25013           [349] gettable   72  38  323  ; "locTag"
+1340  E2910001           [350] call       71  2   2  
+1344  06120024           [351] loadnil    72  72     
+1348  A2918001           [352] call       70  3   2  
+134C  D9911800           [353] loadk      71  98       ; ") Id="
+1350  0ED24C16           [354] gettable   72  44  307  ; "activeMissionId"
+1354  59D21800           [355] loadk      73  99       ; " Tag="
+1358  9D920A00           [356] getglobal  74  42       ; -1615931716
+135C  CE524D16           [357] gettable   75  44  309  ; "activeMissionTag"
+1360  A2920001           [358] call       74  2   2  
+1364  D9121900           [359] loadk      75  100      ; "\n"
+1368  1213801D           [360] move       76  59     
+136C  420F931E           [361] concat     61  61  76 
+1370  224F0001           [362] call       60  2   1  
+1374  1AC00880           [363] jmp        36           ; to [400]
+1378  98000000           [364] test       2       0    ; to [366] if true
+137C  1A400880           [365] jmp        34           ; to [400]
+1380  1D0F1700           [366] getglobal  60  92       ; -1817107093
+1384  594F1700           [367] loadk      61  93       ; "ActiveMission["
+1388  920F8008           [368] move       62  17     
+138C  D98F1700           [369] loadk      63  94       ; "] for Region="
+1390  1D901000           [370] getglobal  64  66       ; -421772368
+1394  5D900A00           [371] getglobal  65  42       ; -1615931716
+1398  8ED05313           [372] gettable   66  38  335  ; "region"
+139C  62900001           [373] call       65  2   2  
+13A0  97100000           [374] loadbool   66  0   0    ; false
+13A4  22908001           [375] call       64  3   2  
+13A8  59D01700           [376] loadk      65  95       ; " Node="
+13AC  92108013           [377] move       66  39     
+13B0  D9101800           [378] loadk      67  96       ; " ("
+13B4  1D911000           [379] getglobal  68  66       ; -421772368
+13B8  5D910A00           [380] getglobal  69  42       ; -1615931716
+13BC  8ED14A1B           [381] gettable   70  54  299  ; "name"
+13C0  62910001           [382] call       69  2   2  
+13C4  86110023           [383] loadnil    70  70     
+13C8  22918001           [384] call       68  3   2  
+13CC  59511800           [385] loadk      69  97       ; ": "
+13D0  9D911000           [386] getglobal  70  66       ; -421772368
+13D4  DD910A00           [387] getglobal  71  42       ; -1615931716
+13D8  0ED25013           [388] gettable   72  38  323  ; "locTag"
+13DC  E2910001           [389] call       71  2   2  
+13E0  06120024           [390] loadnil    72  72     
+13E4  A2918001           [391] call       70  3   2  
+13E8  D9911800           [392] loadk      71  98       ; ") Id="
+13EC  0ED24C16           [393] gettable   72  44  307  ; "activeMissionId"
+13F0  59D21800           [394] loadk      73  99       ; " Tag="
+13F4  9D920A00           [395] getglobal  74  42       ; -1615931716
+13F8  CE524D16           [396] gettable   75  44  309  ; "activeMissionTag"
+13FC  A2920001           [397] call       74  2   2  
+1400  428F921E           [398] concat     61  61  74 
+1404  224F0001           [399] call       60  2   1  
+1408  D486B87F           [400] forloop    27  -285     ; to [116] if loop
+140C  130F8001           [401] getupval   60  3      
+1410  1E0F0001           [402] return     60  2      
+1414  1E008000           [403] return     0   1      
+                         * constants:
+1418  65                 sizek (101)
+1419  04                 const type 4
+141A  03                 string size (3)
+141B  5F5400             "_T\0"
+                         const [0]: "_T"
+141E  04                 const type 4
+141F  19                 string size (25)
+1420  566F696454656172+  "VoidTear"
+1428  44656661756C7445+  "DefaultE"
+1430  6E656D7953706563+  "nemySpec"
+1438  00                 "\0"
+                         const [1]: "VoidTearDefaultEnemySpec"
+1439  04                 const type 4
+143A  07                 string size (7)
+143B  566F6964543100     "VoidT1\0"
+                         const [2]: "VoidT1"
+1442  04                 const type 4
+1443  0E                 string size (14)
+1444  637573746F6D456E+  "customEn"
+144C  656D69657300       "emies\0"
+                         const [3]: "customEnemies"
+1452  04                 const type 4
+1453  0A                 string size (10)
+1454  67466C6173684D67+  "gFlashMg"
+145C  7200               "r\0"
+                         const [4]: "gFlashMgr"
+145E  01                 const type 3
+145F  53D08910           const [5]: (277467219)
+1463  04                 const type 4
+1464  23                 string size (35)
+1465  4C6F74757347616D+  "LotusGam"
+146D  6552756C65732E44+  "eRules.D"
+1475  6562756741637469+  "ebugActi"
+147D  76654D697373696F+  "veMissio"
+1485  6E7300             "ns\0"
+                         const [6]: "LotusGameRules.DebugActiveMissions"
+1488  01                 const type 3
+1489  868A0B2D           const [7]: (755731078)
+148D  04                 const type 4
+148E  10                 string size (16)
+148F  6D4163746976654D+  "mActiveM"
+1497  697373696F6E7300   "issions\0"
+                         const [8]: "mActiveMissions"
+149F  03                 const type 3
+14A0  0000803F           const [9]: (0)
+14A4  01                 const type 3
+14A5  DC448BB2           const [10]: (-1299495716)
+14A9  04                 const type 4
+14AA  06                 string size (6)
+14AB  6D5365656400       "mSeed\0"
+                         const [11]: "mSeed"
+14B1  04                 const type 4
+14B2  15                 string size (21)
+14B3  4361636865644163+  "CachedAc"
+14BB  746976654D697373+  "tiveMiss"
+14C3  696F6E7300         "ions\0"
+                         const [12]: "CachedActiveMissions"
+14C8  03                 const type 3
+14C9  00000000           const [13]: (0)
+14CD  01                 const type 3
+14CE  17DDCF0E           const [14]: (248503575)
+14D2  01                 const type 3
+14D3  F2AC3ABB           const [15]: (-1153782542)
+14D7  04                 const type 4
+14D8  05                 string size (5)
+14D9  6D61746800         "math\0"
+                         const [16]: "math"
+14DE  01                 const type 3
+14DF  7B5A00F7           const [17]: (-150971781)
+14E3  04                 const type 4
+14E4  0B                 string size (11)
+14E5  6747616D6552756C+  "gGameRul"
+14ED  657300             "es\0"
+                         const [18]: "gGameRules"
+14F0  01                 const type 3
+14F1  14281B03           const [19]: (52111380)
+14F5  03                 const type 3
+14F6  00C0A847           const [20]: (0)
+14FA  04                 const type 4
+14FB  13                 string size (19)
+14FC  53484F575F4C4F43+  "SHOW_LOC"
+1504  4B45445F414C4552+  "KED_ALER"
+150C  545300             "TS\0"
+                         const [21]: "SHOW_LOCKED_ALERTS"
+150F  04                 const type 4
+1510  12                 string size (18)
+1511  67506C6179657250+  "gPlayerP"
+1519  726F66696C654D67+  "rofileMg"
+1521  7200               "r\0"
+                         const [22]: "gPlayerProfileMgr"
+1523  01                 const type 3
+1524  1A7BEF21           const [23]: (569342746)
+1528  01                 const type 3
+1529  92104F65           const [24]: (1699680402)
+152D  01                 const type 3
+152E  FD052E6F           const [25]: (1865287165)
+1532  01                 const type 3
+1533  65770E40           const [26]: (1074689893)
+1537  01                 const type 3
+1538  FFFB2933           const [27]: (858389503)
+153C  04                 const type 4
+153D  0A                 string size (10)
+153E  6D4974656D547970+  "mItemTyp"
+1546  6500               "e\0"
+                         const [28]: "mItemType"
+1548  01                 const type 3
+1549  D48E598B           const [29]: (-1957065004)
+154D  04                 const type 4
+154E  18                 string size (24)
+154F  67566F696450726F+  "gVoidPro"
+1557  6A656374696F6E49+  "jectionI"
+155F  74656D5479706500   "temType\0"
+                         const [30]: "gVoidProjectionItemType"
+1567  04                 const type 4
+1568  04                 string size (4)
+1569  6D496400           "mId\0"
+                         const [31]: "mId"
+156D  04                 const type 4
+156E  08                 string size (8)
+156F  6D45787069727900   "mExpiry\0"
+                         const [32]: "mExpiry"
+1577  04                 const type 4
+1578  04                 string size (4)
+1579  73656300           "sec\0"
+                         const [33]: "sec"
+157D  04                 const type 4
+157E  07                 string size (7)
+157F  456E67696E6500     "Engine\0"
+                         const [34]: "Engine"
+1586  01                 const type 3
+1587  79540ED0           const [35]: (-804367239)
+158B  04                 const type 4
+158C  0C                 string size (12)
+158D  6D41637469766174+  "mActivat"
+1595  696F6E00           "ion\0"
+                         const [36]: "mActivation"
+1599  01                 const type 3
+159A  BC9D26A4           const [37]: (-1540973124)
+159E  01                 const type 3
+159F  9C73219B           const [38]: (-1692306532)
+15A3  04                 const type 4
+15A4  08                 string size (8)
+15A5  6D526567696F6E00   "mRegion\0"
+                         const [39]: "mRegion"
+15AD  01                 const type 3
+15AE  E13C21DF           const [40]: (-551469855)
+15B2  04                 const type 4
+15B3  06                 string size (6)
+15B4  6D4E6F646500       "mNode\0"
+                         const [41]: "mNode"
+15BA  01                 const type 3
+15BB  BCD6AE9F           const [42]: (-1615931716)
+15BF  04                 const type 4
+15C0  05                 string size (5)
+15C1  6E616D6500         "name\0"
+                         const [43]: "name"
+15C6  04                 const type 4
+15C7  03                 string size (3)
+15C8  5F4700             "_G\0"
+                         const [44]: "_G"
+15CB  04                 const type 4
+15CC  13                 string size (19)
+15CD  5549546578747572+  "UITextur"
+15D5  655F566F69645465+  "e_VoidTe"
+15DD  617200             "ar\0"
+                         const [45]: "UITexture_VoidTear"
+15E0  04                 const type 4
+15E1  08                 string size (8)
+15E2  6D697373696F6E00   "mission\0"
+                         const [46]: "mission"
+15EA  04                 const type 4
+15EB  0C                 string size (12)
+15EC  6D697373696F6E54+  "missionT"
+15F4  79706500           "ype\0"
+                         const [47]: "missionType"
+15F8  04                 const type 4
+15F9  0B                 string size (11)
+15FA  4C6F7475735F4761+  "Lotus_Ga"
+1602  6D6500             "me\0"
+                         const [48]: "Lotus_Game"
+1605  04                 const type 4
+1606  0D                 string size (13)
+1607  4D545F5245545249+  "MT_RETRI"
+160F  4556414C00         "EVAL\0"
+                         const [49]: "MT_RETRIEVAL"
+1614  04                 const type 4
+1615  09                 string size (9)
+1616  6C6F636174696F6E+  "location"
+161E  00                 "\0"
+                         const [50]: "location"
+161F  04                 const type 4
+1620  10                 string size (16)
+1621  6163746976654D69+  "activeMi"
+1629  7373696F6E496400   "ssionId\0"
+                         const [51]: "activeMissionId"
+1631  04                 const type 4
+1632  02                 string size (2)
+1633  5F00               "_\0"
+                         const [52]: "_"
+1635  04                 const type 4
+1636  11                 string size (17)
+1637  6163746976654D69+  "activeMi"
+163F  7373696F6E546167+  "ssionTag"
+1647  00                 "\0"
+                         const [53]: "activeMissionTag"
+1648  04                 const type 4
+1649  0A                 string size (10)
+164A  6D4D6F6469666965+  "mModifie"
+1652  7200               "r\0"
+                         const [54]: "mModifier"
+1654  04                 const type 4
+1655  01                 string size (0)
+                         const [55]: ""
+1657  04                 const type 4
+1658  0D                 string size (13)
+1659  454D5054595F5359+  "EMPTY_SY"
+1661  4D424F4C00         "MBOL\0"
+                         const [56]: "EMPTY_SYMBOL"
+1666  04                 const type 4
+1667  13                 string size (19)
+1668  524547494F4E5F49+  "REGION_I"
+1670  445F464F52545245+  "D_FORTRE"
+1678  535300             "SS\0"
+                         const [57]: "REGION_ID_FORTRESS"
+167B  04                 const type 4
+167C  0E                 string size (14)
+167D  6D696E456E656D79+  "minEnemy"
+1685  4C6576656C00       "Level\0"
+                         const [58]: "minEnemyLevel"
+168B  03                 const type 3
+168C  00007042           const [59]: (0)
+1690  04                 const type 4
+1691  0E                 string size (14)
+1692  6D6178456E656D79+  "maxEnemy"
+169A  4C6576656C00       "Level\0"
+                         const [60]: "maxEnemyLevel"
+16A0  03                 const type 3
+16A1  00008C42           const [61]: (0)
+16A5  04                 const type 4
+16A6  0F                 string size (15)
+16A7  524547494F4E5F49+  "REGION_I"
+16AF  445F564F494400     "D_VOID\0"
+                         const [62]: "REGION_ID_VOID"
+16B6  03                 const type 3
+16B7  00004040           const [63]: (0)
+16BB  03                 const type 3
+16BC  0000A040           const [64]: (0)
+16C0  04                 const type 4
+16C1  09                 string size (9)
+16C2  7175657374526571+  "questReq"
+16CA  00                 "\0"
+                         const [65]: "questReq"
+16CB  01                 const type 3
+16CC  B043DCE6           const [66]: (-421772368)
+16D0  04                 const type 4
+16D1  07                 string size (7)
+16D2  6C6F6354616700     "locTag\0"
+                         const [67]: "locTag"
+16D9  04                 const type 4
+16DA  0A                 string size (10)
+16DB  6C6F63506172616D+  "locParam"
+16E3  7300               "s\0"
+                         const [68]: "locParams"
+16E5  04                 const type 4
+16E6  0D                 string size (13)
+16E7  6C6576656C4F626A+  "levelObj"
+16EF  6563747300         "ects\0"
+                         const [69]: "levelObjects"
+16F4  04                 const type 4
+16F5  09                 string size (9)
+16F6  6465736354657874+  "descText"
+16FE  00                 "\0"
+                         const [70]: "descText"
+16FF  01                 const type 3
+1700  1A4B27EC           const [71]: (-332969190)
+1704  01                 const type 3
+1705  D3160129           const [72]: (687937235)
+1709  04                 const type 4
+170A  06                 string size (6)
+170B  7461626C6500       "table\0"
+                         const [73]: "table"
+1711  01                 const type 3
+1712  5EFDB1CD           const [74]: (-843973282)
+1716  01                 const type 3
+1717  FD9841F6           const [75]: (-163473155)
+171B  01                 const type 3
+171C  EB0EA880           const [76]: (-2136469781)
+1720  04                 const type 4
+1721  18                 string size (24)
+1722  52616469616C5265+  "RadialRe"
+172A  67696F6E5F524353+  "gion_RCS"
+1732  5F4C4F434B454400   "_LOCKED\0"
+                         const [77]: "RadialRegion_RCS_LOCKED"
+173A  01                 const type 3
+173B  0DEB9F07           const [78]: (127920909)
+173F  04                 const type 4
+1740  07                 string size (7)
+1741  726567696F6E00     "region\0"
+                         const [79]: "region"
+1748  04                 const type 4
+1749  09                 string size (9)
+174A  756E6C6F636B6564+  "unlocked"
+1752  00                 "\0"
+                         const [80]: "unlocked"
+1753  04                 const type 4
+1754  0D                 string size (13)
+1755  6D4D697373696F6E+  "mMission"
+175D  496E666F00         "Info\0"
+                         const [81]: "mMissionInfo"
+1762  04                 const type 4
+1763  09                 string size (9)
+1764  6D56697369626C65+  "mVisible"
+176C  00                 "\0"
+                         const [82]: "mVisible"
+176D  04                 const type 4
+176E  0A                 string size (10)
+176F  6D556E6C6F636B65+  "mUnlocke"
+1777  6400               "d\0"
+                         const [83]: "mUnlocked"
+1779  04                 const type 4
+177A  10                 string size (16)
+177B  6D526567696F6E55+  "mRegionU"
+1783  6E6C6F636B656400   "nlocked\0"
+                         const [84]: "mRegionUnlocked"
+178B  04                 const type 4
+178C  0B                 string size (11)
+178D  6D436F6D706C6574+  "mComplet"
+1795  656400             "ed\0"
+                         const [85]: "mCompleted"
+1798  04                 const type 4
+1799  06                 string size (6)
+179A  6D49636F6E00       "mIcon\0"
+                         const [86]: "mIcon"
+17A0  04                 const type 4
+17A1  12                 string size (18)
+17A2  6D4D6F6469666965+  "mModifie"
+17AA  7241757261446573+  "rAuraDes"
+17B2  6300               "c\0"
+                         const [87]: "mModifierAuraDesc"
+17B4  04                 const type 4
+17B5  0D                 string size (13)
+17B6  6D4D697373696F6E+  "mMission"
+17BE  4465736300         "Desc\0"
+                         const [88]: "mMissionDesc"
+17C3  04                 const type 4
+17C4  0E                 string size (14)
+17C5  6D4C6576656C4F62+  "mLevelOb"
+17CD  6A6563747300       "jects\0"
+                         const [89]: "mLevelObjects"
+17D3  04                 const type 4
+17D4  0F                 string size (15)
+17D5  6D437573746F6D45+  "mCustomE"
+17DD  6E656D69657300     "nemies\0"
+                         const [90]: "mCustomEnemies"
+17E4  01                 const type 3
+17E5  4AF8B122           const [91]: (582088778)
+17E9  01                 const type 3
+17EA  6B25B193           const [92]: (-1817107093)
+17EE  04                 const type 4
+17EF  0F                 string size (15)
+17F0  4163746976654D69+  "ActiveMi"
+17F8  7373696F6E5B00     "ssion[\0"
+                         const [93]: "ActiveMission["
+17FF  04                 const type 4
+1800  0E                 string size (14)
+1801  5D20666F72205265+  "] for Re"
+1809  67696F6E3D00       "gion=\0"
+                         const [94]: "] for Region="
+180F  04                 const type 4
+1810  07                 string size (7)
+1811  204E6F64653D00     " Node=\0"
+                         const [95]: " Node="
+1818  04                 const type 4
+1819  03                 string size (3)
+181A  202800             " (\0"
+                         const [96]: " ("
+181D  04                 const type 4
+181E  03                 string size (3)
+181F  3A2000             ": \0"
+                         const [97]: ": "
+1822  04                 const type 4
+1823  06                 string size (6)
+1824  292049643D00       ") Id=\0"
+                         const [98]: ") Id="
+182A  04                 const type 4
+182B  06                 string size (6)
+182C  205461673D00       " Tag=\0"
+                         const [99]: " Tag="
+1832  04                 const type 4
+1833  02                 string size (2)
+1834  0A00               "\n\0"
+                         const [100]: "\n"
+                         * functions:
+1836  00                 sizep (0)
+                         * lines:
+1838  03                 sizelineinfo (403)
+                         [pc] (line)
+1839  67                 [001] (103)
+183A  00                 [002] (103)
+183B  00                 [003] (103)
+183C  00                 [004] (103)
+183D  67                 [005] (104)
+183E  00                 [006] (104)
+183F  00                 [007] (104)
+1840  00                 [008] (104)
+1841  67                 [009] (104)
+1842  00                 [010] (107)
+1843  00                 [011] (107)
+1844  00                 [012] (107)
+1845  67                 [013] (107)
+1846  00                 [014] (108)
+1847  00                 [015] (110)
+1848  00                 [016] (112)
+1849  68                 [017] (112)
+184A  00                 [018] (112)
+184B  00                 [019] (113)
+184C  00                 [020] (113)
+184D  68                 [021] (113)
+184E  00                 [022] (113)
+184F  00                 [023] (114)
+1850  00                 [024] (114)
+1851  68                 [025] (114)
+1852  00                 [026] (114)
+1853  00                 [027] (115)
+1854  00                 [028] (115)
+1855  68                 [029] (115)
+1856  00                 [030] (115)
+1857  00                 [031] (115)
+1858  00                 [032] (115)
+1859  68                 [033] (115)
+185A  00                 [034] (115)
+185B  00                 [035] (116)
+185C  00                 [036] (116)
+185D  6B                 [037] (117)
+185E  00                 [038] (113)
+185F  00                 [039] (121)
+1860  00                 [040] (121)
+1861  6B                 [041] (121)
+1862  00                 [042] (121)
+1863  00                 [043] (121)
+1864  00                 [044] (121)
+1865  6B                 [045] (121)
+1866  00                 [046] (121)
+1867  00                 [047] (121)
+1868  00                 [048] (121)
+1869  6B                 [049] (121)
+186A  00                 [050] (123)
+186B  00                 [051] (123)
+186C  00                 [052] (123)
+186D  6C                 [053] (123)
+186E  00                 [054] (123)
+186F  00                 [055] (124)
+1870  00                 [056] (124)
+1871  6E                 [057] (124)
+1872  00                 [058] (123)
+1873  00                 [059] (124)
+1874  00                 [060] (126)
+1875  70                 [061] (126)
+1876  00                 [062] (-127)
+1877  00                 [063] (-127)
+1878  00                 [064] (-127)
+1879  70                 [065] (-125)
+187A  00                 [066] (-125)
+187B  00                 [067] (-125)
+187C  00                 [068] (-124)
+187D  70                 [069] (-124)
+187E  00                 [070] (-124)
+187F  00                 [071] (-124)
+1880  00                 [072] (-124)
+1881  71                 [073] (-124)
+1882  00                 [074] (-123)
+1883  00                 [075] (-122)
+1884  00                 [076] (-119)
+1885  71                 [077] (-119)
+1886  00                 [078] (-118)
+1887  00                 [079] (-118)
+1888  00                 [080] (-118)
+1889  71                 [081] (-118)
+188A  00                 [082] (-118)
+188B  00                 [083] (-118)
+188C  00                 [084] (-118)
+188D  71                 [085] (-118)
+188E  00                 [086] (-117)
+188F  00                 [087] (-117)
+1890  00                 [088] (-117)
+1891  72                 [089] (-117)
+1892  00                 [090] (-117)
+1893  00                 [091] (-116)
+1894  00                 [092] (-116)
+1895  72                 [093] (-115)
+1896  00                 [094] (-115)
+1897  00                 [095] (-115)
+1898  00                 [096] (-115)
+1899  72                 [097] (-114)
+189A  00                 [098] (-114)
+189B  00                 [099] (-114)
+189C  00                 [100] (-114)
+189D  72                 [101] (-114)
+189E  00                 [102] (-114)
+189F  00                 [103] (-114)
+18A0  00                 [104] (-114)
+18A1  73                 [105] (-114)
+18A2  00                 [106] (-114)
+18A3  00                 [107] (-114)
+18A4  00                 [108] (-113)
+18A5  73                 [109] (-112)
+18A6  00                 [110] (-115)
+18A7  00                 [111] (-111)
+18A8  00                 [112] (-107)
+18A9  73                 [113] (-107)
+18AA  00                 [114] (-107)
+18AB  00                 [115] (-107)
+18AC  00                 [116] (-106)
+18AD  73                 [117] (-105)
+18AE  00                 [118] (-105)
+18AF  00                 [119] (-104)
+18B0  00                 [120] (-104)
+18B1  73                 [121] (-103)
+18B2  00                 [122] (-103)
+18B3  00                 [123] (-103)
+18B4  00                 [124] (-103)
+18B5  73                 [125] (-103)
+18B6  00                 [126] (-102)
+18B7  00                 [127] (-102)
+18B8  00                 [128] (-102)
+18B9  73                 [129] (-102)
+18BA  00                 [130] (-101)
+18BB  00                 [131] (-99)
+18BC  00                 [132] (-99)
+18BD  73                 [133] (-98)
+18BE  00                 [134] (-98)
+18BF  00                 [135] (-98)
+18C0  00                 [136] (-98)
+18C1  74                 [137] (-98)
+18C2  00                 [138] (-97)
+18C3  00                 [139] (-96)
+18C4  00                 [140] (-96)
+18C5  74                 [141] (-96)
+18C6  00                 [142] (-96)
+18C7  00                 [143] (-95)
+18C8  00                 [144] (-93)
+18C9  75                 [145] (-93)
+18CA  00                 [146] (-91)
+18CB  00                 [147] (-91)
+18CC  00                 [148] (-91)
+18CD  71                 [149] (-91)
+18CE  00                 [150] (-91)
+18CF  00                 [151] (-90)
+18D0  00                 [152] (-89)
+18D1  79                 [153] (-89)
+18D2  00                 [154] (-89)
+18D3  00                 [155] (-89)
+18D4  00                 [156] (-86)
+18D5  79                 [157] (-85)
+18D6  00                 [158] (-85)
+18D7  00                 [159] (-85)
+18D8  00                 [160] (-83)
+18D9  79                 [161] (-81)
+18DA  00                 [162] (-81)
+18DB  00                 [163] (-81)
+18DC  00                 [164] (-80)
+18DD  79                 [165] (-80)
+18DE  00                 [166] (-80)
+18DF  00                 [167] (-79)
+18E0  00                 [168] (-79)
+18E1  79                 [169] (-78)
+18E2  00                 [170] (-75)
+18E3  00                 [171] (-74)
+18E4  00                 [172] (-73)
+18E5  79                 [173] (-73)
+18E6  00                 [174] (-73)
+18E7  00                 [175] (-73)
+18E8  00                 [176] (-72)
+18E9  79                 [177] (-72)
+18EA  00                 [178] (-70)
+18EB  00                 [179] (-70)
+18EC  00                 [180] (-70)
+18ED  79                 [181] (-70)
+18EE  00                 [182] (-67)
+18EF  00                 [183] (-67)
+18F0  00                 [184] (-67)
+18F1  79                 [185] (-67)
+18F2  00                 [186] (-67)
+18F3  00                 [187] (-67)
+18F4  00                 [188] (-66)
+18F5  79                 [189] (-66)
+18F6  00                 [190] (-65)
+18F7  00                 [191] (-65)
+18F8  00                 [192] (-65)
+18F9  79                 [193] (-65)
+18FA  00                 [194] (-65)
+18FB  00                 [195] (-64)
+18FC  00                 [196] (-64)
+18FD  7B                 [197] (-62)
+18FE  00                 [198] (-61)
+18FF  00                 [199] (-60)
+1900  00                 [200] (-59)
+1901  7B                 [201] (-56)
+1902  00                 [202] (-56)
+1903  00                 [203] (-56)
+1904  00                 [204] (-56)
+1905  7B                 [205] (-55)
+1906  00                 [206] (-55)
+1907  00                 [207] (-55)
+1908  00                 [208] (-55)
+1909  7B                 [209] (-55)
+190A  00                 [210] (-53)
+190B  00                 [211] (-53)
+190C  00                 [212] (-53)
+190D  7B                 [213] (-53)
+190E  00                 [214] (-52)
+190F  00                 [215] (-51)
+1910  00                 [216] (-51)
+1911  7C                 [217] (-50)
+1912  00                 [218] (-50)
+1913  00                 [219] (-50)
+1914  00                 [220] (-50)
+1915  7C                 [221] (-49)
+1916  00                 [222] (-49)
+1917  00                 [223] (-48)
+1918  00                 [224] (-48)
+1919  7C                 [225] (-48)
+191A  00                 [226] (-46)
+191B  00                 [227] (-46)
+191C  00                 [228] (-46)
+191D  7B                 [229] (-45)
+191E  00                 [230] (-45)
+191F  00                 [231] (-45)
+1920  00                 [232] (-42)
+1921  7C                 [233] (-42)
+1922  00                 [234] (-42)
+1923  00                 [235] (-42)
+1924  00                 [236] (-42)
+1925  7E                 [237] (-41)
+1926  00                 [238] (-41)
+1927  00                 [239] (-38)
+1928  00                 [240] (-38)
+1929  7E                 [241] (-38)
+192A  00                 [242] (-38)
+192B  00                 [243] (-37)
+192C  00                 [244] (-36)
+192D  81                 [245] (-35)
+192E  00                 [246] (-34)
+192F  00                 [247] (-32)
+1930  00                 [248] (-32)
+1931  81                 [249] (-32)
+1932  00                 [250] (-32)
+1933  00                 [251] (-32)
+1934  00                 [252] (-30)
+1935  81                 [253] (-29)
+1936  00                 [254] (-29)
+1937  00                 [255] (-29)
+1938  00                 [256] (-28)
+1939  83                 [257] (-28)
+193A  00                 [258] (-28)
+193B  00                 [259] (-28)
+193C  00                 [260] (-27)
+193D  83                 [261] (-26)
+193E  00                 [262] (-26)
+193F  00                 [263] (-26)
+1940  00                 [264] (-26)
+1941  83                 [265] (-26)
+1942  00                 [266] (-24)
+1943  00                 [267] (-24)
+1944  00                 [268] (-24)
+1945  84                 [269] (-24)
+1946  00                 [270] (-24)
+1947  00                 [271] (-24)
+1948  00                 [272] (-21)
+1949  84                 [273] (-21)
+194A  00                 [274] (-21)
+194B  00                 [275] (-20)
+194C  00                 [276] (-20)
+194D  84                 [277] (-20)
+194E  00                 [278] (-20)
+194F  00                 [279] (-20)
+1950  00                 [280] (-20)
+1951  84                 [281] (-20)
+1952  00                 [282] (-20)
+1953  00                 [283] (-20)
+1954  00                 [284] (-20)
+1955  84                 [285] (-20)
+1956  00                 [286] (-20)
+1957  00                 [287] (-20)
+1958  00                 [288] (-20)
+1959  84                 [289] (-20)
+195A  00                 [290] (-19)
+195B  00                 [291] (-18)
+195C  00                 [292] (-17)
+195D  85                 [293] (-17)
+195E  00                 [294] (-17)
+195F  00                 [295] (-17)
+1960  00                 [296] (-17)
+1961  86                 [297] (-17)
+1962  00                 [298] (-14)
+1963  00                 [299] (-14)
+1964  00                 [300] (-14)
+1965  89                 [301] (-12)
+1966  00                 [302] (-12)
+1967  00                 [303] (-11)
+1968  00                 [304] (-10)
+1969  89                 [305] (-9)
+196A  00                 [306] (-8)
+196B  00                 [307] (-7)
+196C  00                 [308] (-6)
+196D  8A                 [309] (-5)
+196E  00                 [310] (-4)
+196F  00                 [311] (-3)
+1970  00                 [312] (-2)
+1971  8A                 [313] (-1)
+1972  00                 [314] (0)
+1973  00                 [315] (2)
+1974  00                 [316] (2)
+1975  8A                 [317] (2)
+1976  00                 [318] (2)
+1977  00                 [319] (2)
+1978  00                 [320] (4)
+1979  8A                 [321] (4)
+197A  00                 [322] (4)
+197B  00                 [323] (5)
+197C  00                 [324] (5)
+197D  8A                 [325] (6)
+197E  00                 [326] (6)
+197F  00                 [327] (7)
+1980  00                 [328] (7)
+1981  8A                 [329] (7)
+1982  00                 [330] (7)
+1983  00                 [331] (7)
+1984  00                 [332] (7)
+1985  8A                 [333] (7)
+1986  00                 [334] (7)
+1987  00                 [335] (7)
+1988  00                 [336] (7)
+1989  8A                 [337] (7)
+198A  00                 [338] (7)
+198B  00                 [339] (7)
+198C  00                 [340] (7)
+198D  8B                 [341] (7)
+198E  00                 [342] (7)
+198F  00                 [343] (7)
+1990  00                 [344] (7)
+1991  8B                 [345] (7)
+1992  00                 [346] (7)
+1993  00                 [347] (7)
+1994  00                 [348] (7)
+1995  8B                 [349] (7)
+1996  00                 [350] (7)
+1997  00                 [351] (7)
+1998  00                 [352] (7)
+1999  8B                 [353] (7)
+199A  00                 [354] (7)
+199B  00                 [355] (7)
+199C  00                 [356] (7)
+199D  8B                 [357] (7)
+199E  00                 [358] (7)
+199F  00                 [359] (7)
+19A0  00                 [360] (7)
+19A1  8C                 [361] (7)
+19A2  00                 [362] (7)
+19A3  00                 [363] (7)
+19A4  00                 [364] (8)
+19A5  8C                 [365] (8)
+19A6  00                 [366] (9)
+19A7  00                 [367] (9)
+19A8  00                 [368] (9)
+19A9  8D                 [369] (9)
+19AA  00                 [370] (9)
+19AB  00                 [371] (9)
+19AC  00                 [372] (9)
+19AD  8D                 [373] (9)
+19AE  00                 [374] (9)
+19AF  00                 [375] (9)
+19B0  00                 [376] (9)
+19B1  8D                 [377] (9)
+19B2  00                 [378] (9)
+19B3  00                 [379] (9)
+19B4  00                 [380] (9)
+19B5  8D                 [381] (9)
+19B6  00                 [382] (9)
+19B7  00                 [383] (9)
+19B8  00                 [384] (9)
+19B9  8E                 [385] (9)
+19BA  00                 [386] (9)
+19BB  00                 [387] (9)
+19BC  00                 [388] (9)
+19BD  8E                 [389] (9)
+19BE  00                 [390] (9)
+19BF  00                 [391] (9)
+19C0  00                 [392] (9)
+19C1  8E                 [393] (9)
+19C2  00                 [394] (9)
+19C3  00                 [395] (9)
+19C4  00                 [396] (9)
+19C5  8E                 [397] (9)
+19C6  00                 [398] (9)
+19C7  00                 [399] (9)
+19C8  00                 [400] (-107)
+19C9  8E                 [401] (16)
+19CA  00                 [402] (16)
+19CB  00                 [403] (17)
+                         * locals:
+1E85  00                 sizelocvars (0)
+                         * upvalues:
+1E86  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+1E88  01                 sizelineinfo (169)
+                         [pc] (line)
+1E89  01                 [001] (1)
+1E8A  00                 [002] (1)
+1E8B  00                 [003] (1)
+1E8C  00                 [004] (1)
+1E8D  01                 [005] (1)
+1E8E  00                 [006] (3)
+1E8F  00                 [007] (3)
+1E90  00                 [008] (3)
+1E91  01                 [009] (5)
+1E92  00                 [010] (5)
+1E93  00                 [011] (5)
+1E94  00                 [012] (7)
+1E95  01                 [013] (7)
+1E96  00                 [014] (7)
+1E97  00                 [015] (9)
+1E98  00                 [016] (10)
+1E99  01                 [017] (10)
+1E9A  00                 [018] (10)
+1E9B  00                 [019] (10)
+1E9C  00                 [020] (10)
+1E9D  03                 [021] (10)
+1E9E  00                 [022] (10)
+1E9F  00                 [023] (10)
+1EA0  00                 [024] (10)
+1EA1  03                 [025] (10)
+1EA2  00                 [026] (10)
+1EA3  00                 [027] (10)
+1EA4  00                 [028] (10)
+1EA5  03                 [029] (10)
+1EA6  00                 [030] (11)
+1EA7  00                 [031] (11)
+1EA8  00                 [032] (11)
+1EA9  05                 [033] (11)
+1EAA  00                 [034] (11)
+1EAB  00                 [035] (11)
+1EAC  00                 [036] (11)
+1EAD  05                 [037] (11)
+1EAE  00                 [038] (11)
+1EAF  00                 [039] (11)
+1EB0  00                 [040] (11)
+1EB1  05                 [041] (11)
+1EB2  00                 [042] (11)
+1EB3  00                 [043] (11)
+1EB4  00                 [044] (12)
+1EB5  07                 [045] (12)
+1EB6  00                 [046] (12)
+1EB7  00                 [047] (12)
+1EB8  00                 [048] (12)
+1EB9  07                 [049] (12)
+1EBA  00                 [050] (12)
+1EBB  00                 [051] (12)
+1EBC  00                 [052] (12)
+1EBD  07                 [053] (12)
+1EBE  00                 [054] (12)
+1EBF  00                 [055] (12)
+1EC0  00                 [056] (12)
+1EC1  09                 [057] (12)
+1EC2  00                 [058] (13)
+1EC3  00                 [059] (13)
+1EC4  00                 [060] (13)
+1EC5  0A                 [061] (13)
+1EC6  00                 [062] (13)
+1EC7  00                 [063] (13)
+1EC8  00                 [064] (13)
+1EC9  0A                 [065] (13)
+1ECA  00                 [066] (13)
+1ECB  00                 [067] (13)
+1ECC  00                 [068] (13)
+1ECD  0A                 [069] (13)
+1ECE  00                 [070] (13)
+1ECF  00                 [071] (13)
+1ED0  00                 [072] (14)
+1ED1  0A                 [073] (14)
+1ED2  00                 [074] (14)
+1ED3  00                 [075] (14)
+1ED4  00                 [076] (14)
+1ED5  0A                 [077] (14)
+1ED6  00                 [078] (14)
+1ED7  00                 [079] (14)
+1ED8  00                 [080] (14)
+1ED9  0A                 [081] (14)
+1EDA  00                 [082] (14)
+1EDB  00                 [083] (14)
+1EDC  00                 [084] (14)
+1EDD  0A                 [085] (14)
+1EDE  00                 [086] (14)
+1EDF  00                 [087] (14)
+1EE0  00                 [088] (14)
+1EE1  0A                 [089] (14)
+1EE2  00                 [090] (16)
+1EE3  00                 [091] (16)
+1EE4  00                 [092] (16)
+1EE5  0A                 [093] (16)
+1EE6  00                 [094] (16)
+1EE7  00                 [095] (16)
+1EE8  00                 [096] (16)
+1EE9  0A                 [097] (16)
+1EEA  00                 [098] (16)
+1EEB  00                 [099] (16)
+1EEC  00                 [100] (17)
+1EED  0A                 [101] (17)
+1EEE  00                 [102] (17)
+1EEF  00                 [103] (17)
+1EF0  00                 [104] (17)
+1EF1  0A                 [105] (17)
+1EF2  00                 [106] (17)
+1EF3  00                 [107] (17)
+1EF4  00                 [108] (17)
+1EF5  0A                 [109] (17)
+1EF6  00                 [110] (18)
+1EF7  00                 [111] (18)
+1EF8  00                 [112] (18)
+1EF9  0A                 [113] (18)
+1EFA  00                 [114] (18)
+1EFB  00                 [115] (18)
+1EFC  00                 [116] (18)
+1EFD  0B                 [117] (18)
+1EFE  00                 [118] (18)
+1EFF  00                 [119] (18)
+1F00  00                 [120] (19)
+1F01  0B                 [121] (19)
+1F02  00                 [122] (19)
+1F03  00                 [123] (19)
+1F04  00                 [124] (19)
+1F05  0B                 [125] (19)
+1F06  00                 [126] (19)
+1F07  00                 [127] (19)
+1F08  00                 [128] (19)
+1F09  0B                 [129] (19)
+1F0A  00                 [130] (19)
+1F0B  00                 [131] (19)
+1F0C  00                 [132] (19)
+1F0D  0B                 [133] (19)
+1F0E  00                 [134] (19)
+1F0F  00                 [135] (19)
+1F10  00                 [136] (21)
+1F11  0B                 [137] (21)
+1F12  00                 [138] (21)
+1F13  00                 [139] (21)
+1F14  00                 [140] (21)
+1F15  0B                 [141] (22)
+1F16  00                 [142] (22)
+1F17  00                 [143] (22)
+1F18  00                 [144] (24)
+1F19  0B                 [145] (24)
+1F1A  00                 [146] (24)
+1F1B  00                 [147] (24)
+1F1C  00                 [148] (24)
+1F1D  0B                 [149] (26)
+1F1E  00                 [150] (28)
+1F1F  00                 [151] (29)
+1F20  00                 [152] (54)
+1F21  0B                 [153] (58)
+1F22  00                 [154] (99)
+1F23  00                 [155] (99)
+1F24  00                 [156] (99)
+1F25  0B                 [157] (99)
+1F26  00                 [158] (17)
+1F27  00                 [159] (17)
+1F28  00                 [160] (17)
+1F29  0B                 [161] (17)
+1F2A  00                 [162] (17)
+1F2B  00                 [163] (17)
+1F2C  00                 [164] (17)
+1F2D  0B                 [165] (17)
+1F2E  00                 [166] (17)
+1F2F  00                 [167] (17)
+1F30  00                 [168] (101)
+1F31  0B                 [169] (17)
+                         * locals:
+212D  00                 sizelocvars (0)
+                         * upvalues:
+212E  00                 sizeupvalues (0)
+                         ** end of function **
+
+212F                     ** end of chunk **

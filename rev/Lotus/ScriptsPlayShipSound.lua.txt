@@ -1,0 +1,420 @@
+1	C:\wlua_dump\path\Lotus\ScriptsPlayShipSound.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\ScriptsPlayShipSound.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  02                 size of number (bytes)
+0008  14                 integral (1=integral)
+420
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+/Lotus/Types/Game/LandingCraftDeco
+PlayShipSound
+StopAllShipSounds
+CreateShipAttachments
+RemoveShipAttachments
+soundName
+attachmentsName
+keepCurrentAttachments
+attachmentsName
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  02                 maxstacksize (2)
+                         * code:
+0008  14                 sizecode (20)
+0009  1D000000           [01] getglobal  0   0        ; 738251817
+000D  59400000           [02] loadk      1   1        ; "/Lotus/Types/Game/LandingCraftDeco"
+0011  22800001           [03] call       0   2   2  
+0015  65000000           [04] closure    1   0      
+0019  12000000           [05] move       0   0      
+001D  60800000           [06] setglobal  1   2        ; PlayShipSound
+0021  60C00000           [07] setglobal  1   3        ; 856864570
+0025  65400000           [08] closure    1   1      
+0029  12000000           [09] move       0   0      
+002D  60000100           [10] setglobal  1   4        ; StopAllShipSounds
+0031  60400100           [11] setglobal  1   5        ; 1464086443
+0035  65800000           [12] closure    1   2      
+0039  12000000           [13] move       0   0      
+003D  60800100           [14] setglobal  1   6        ; CreateShipAttachments
+0041  60C00100           [15] setglobal  1   7        ; 514128073
+0045  65C00000           [16] closure    1   3      
+0049  12000000           [17] move       0   0      
+004D  60000200           [18] setglobal  1   8        ; RemoveShipAttachments
+0051  60400200           [19] setglobal  1   9        ; 1848429149
+0055  1E008000           [20] return     0   1      
+                         * constants:
+0059  0A                 sizek (10)
+005A  01                 const type 3
+005B  29D4002C           const [0]: (738251817)
+005F  04                 const type 4
+0060  23                 string size (35)
+0061  2F4C6F7475732F54+  "/Lotus/T"
+0069  797065732F47616D+  "ypes/Gam"
+0071  652F4C616E64696E+  "e/Landin"
+0079  6743726166744465+  "gCraftDe"
+0081  636F00             "co\0"
+                         const [1]: "/Lotus/Types/Game/LandingCraftDeco"
+0084  04                 const type 4
+0085  0E                 string size (14)
+0086  506C617953686970+  "PlayShip"
+008E  536F756E6400       "Sound\0"
+                         const [2]: "PlayShipSound"
+0094  01                 const type 3
+0095  3AB71233           const [3]: (856864570)
+0099  04                 const type 4
+009A  12                 string size (18)
+009B  53746F70416C6C53+  "StopAllS"
+00A3  686970536F756E64+  "hipSound"
+00AB  7300               "s\0"
+                         const [4]: "StopAllShipSounds"
+00AD  01                 const type 3
+00AE  AB2F4457           const [5]: (1464086443)
+00B2  04                 const type 4
+00B3  16                 string size (22)
+00B4  4372656174655368+  "CreateSh"
+00BC  6970417474616368+  "ipAttach"
+00C4  6D656E747300       "ments\0"
+                         const [6]: "CreateShipAttachments"
+00CA  01                 const type 3
+00CB  C9F8A41E           const [7]: (514128073)
+00CF  04                 const type 4
+00D0  16                 string size (22)
+00D1  52656D6F76655368+  "RemoveSh"
+00D9  6970417474616368+  "ipAttach"
+00E1  6D656E747300       "ments\0"
+                         const [8]: "RemoveShipAttachments"
+00E7  01                 const type 3
+00E8  5DCA2C6E           const [9]: (1848429149)
+                         * functions:
+00EC  04                 sizep (4)
+                         
+00ED                     ** function [0] definition (level 2)
+                         ** start of function **
+00ED  00                 string size (0)
+                         source name: (none)
+00EE  07                 line defined (7)
+00EF  0C                 last line defined (12)
+00F0  01                 nups (1)
+00F1  02                 numparams (2)
+00F2  00                 is_vararg (0)
+00F3  05                 maxstacksize (5)
+                         * code:
+00F4  0E                 sizecode (14)
+00F5  9D000000           [01] getglobal  2   0        ; 1074689893
+00F9  D2008000           [02] move       3   1      
+00FD  A2800001           [03] call       2   2   2  
+0101  98400000           [04] test       2       1    ; to [6] if false
+0105  1AC00180           [05] jmp        8            ; to [14]
+0109  A440C000           [06] self       2   1   257  ; -1957065004
+010D  13010000           [07] getupval   4   0      
+0111  A2808001           [08] call       2   3   2  
+0115  98000000           [09] test       2       0    ; to [11] if true
+0119  1A800080           [10] jmp        3            ; to [14]
+011D  A480C000           [11] self       2   1   258  ; 1633895795
+0121  1DC10000           [12] getglobal  4   3        ; soundName
+0125  A2408001           [13] call       2   3   1  
+0129  1E008000           [14] return     0   1      
+                         * constants:
+012D  04                 sizek (4)
+012E  01                 const type 3
+012F  65770E40           const [0]: (1074689893)
+0133  01                 const type 3
+0134  D48E598B           const [1]: (-1957065004)
+0138  01                 const type 3
+0139  73456361           const [2]: (1633895795)
+013D  04                 const type 4
+013E  0A                 string size (10)
+013F  736F756E644E616D+  "soundNam"
+0147  6500               "e\0"
+                         const [3]: "soundName"
+                         * functions:
+0149  00                 sizep (0)
+                         * lines:
+014A  0E                 sizelineinfo (14)
+                         [pc] (line)
+014B  09                 [01] (9)
+014C  00                 [02] (9)
+014D  00                 [03] (9)
+014E  00                 [04] (9)
+014F  09                 [05] (9)
+0150  00                 [06] (9)
+0151  00                 [07] (9)
+0152  00                 [08] (9)
+0153  09                 [09] (9)
+0154  00                 [10] (9)
+0155  00                 [11] (10)
+0156  00                 [12] (10)
+0157  09                 [13] (10)
+0158  00                 [14] (12)
+                         * locals:
+0183  00                 sizelocvars (0)
+                         * upvalues:
+0184  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0185                     ** function [1] definition (level 2)
+                         ** start of function **
+0185  00                 string size (0)
+                         source name: (none)
+0186  0E                 line defined (14)
+0187  12                 last line defined (18)
+0188  01                 nups (1)
+0189  02                 numparams (2)
+018A  00                 is_vararg (0)
+018B  05                 maxstacksize (5)
+                         * code:
+018C  0D                 sizecode (13)
+018D  9D000000           [01] getglobal  2   0        ; 1074689893
+0191  D2008000           [02] move       3   1      
+0195  A2800001           [03] call       2   2   2  
+0199  98400000           [04] test       2       1    ; to [6] if false
+019D  1A800180           [05] jmp        7            ; to [13]
+01A1  A440C000           [06] self       2   1   257  ; -1957065004
+01A5  13010000           [07] getupval   4   0      
+01A9  A2808001           [08] call       2   3   2  
+01AD  98000000           [09] test       2       0    ; to [11] if true
+01B1  1A400080           [10] jmp        2            ; to [13]
+01B5  A480C000           [11] self       2   1   258  ; -1691371893
+01B9  A2400001           [12] call       2   2   1  
+01BD  1E008000           [13] return     0   1      
+                         * constants:
+01C1  03                 sizek (3)
+01C2  01                 const type 3
+01C3  65770E40           const [0]: (1074689893)
+01C7  01                 const type 3
+01C8  D48E598B           const [1]: (-1957065004)
+01CC  01                 const type 3
+01CD  8BB62F9B           const [2]: (-1691371893)
+                         * functions:
+01D1  00                 sizep (0)
+                         * lines:
+01D2  0D                 sizelineinfo (13)
+                         [pc] (line)
+01D3  0F                 [01] (15)
+01D4  00                 [02] (15)
+01D5  00                 [03] (15)
+01D6  00                 [04] (15)
+01D7  0F                 [05] (15)
+01D8  00                 [06] (15)
+01D9  00                 [07] (15)
+01DA  00                 [08] (15)
+01DB  0F                 [09] (15)
+01DC  00                 [10] (15)
+01DD  00                 [11] (16)
+01DE  00                 [12] (16)
+01DF  0F                 [13] (18)
+                         * locals:
+0207  00                 sizelocvars (0)
+                         * upvalues:
+0208  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0209                     ** function [2] definition (level 2)
+                         ** start of function **
+0209  00                 string size (0)
+                         source name: (none)
+020A  14                 line defined (20)
+020B  18                 last line defined (24)
+020C  01                 nups (1)
+020D  02                 numparams (2)
+020E  00                 is_vararg (0)
+020F  06                 maxstacksize (6)
+                         * code:
+0210  14                 sizecode (20)
+0211  9D000000           [01] getglobal  2   0        ; 1074689893
+0215  D2008000           [02] move       3   1      
+0219  A2800001           [03] call       2   2   2  
+021D  98400000           [04] test       2       1    ; to [6] if false
+0221  1A400380           [05] jmp        14           ; to [20]
+0225  A440C000           [06] self       2   1   257  ; -1957065004
+0229  13010000           [07] getupval   4   0      
+022D  A2808001           [08] call       2   3   2  
+0231  98000000           [09] test       2       0    ; to [11] if true
+0235  1A000280           [10] jmp        9            ; to [20]
+0239  9D800000           [11] getglobal  2   2        ; attachmentsName
+023D  A4C04001           [12] self       2   2   259  ; 828278287
+0241  A2800001           [13] call       2   2   2  
+0245  98000000           [14] test       2       0    ; to [16] if true
+0249  1AC00080           [15] jmp        4            ; to [20]
+024D  A400C100           [16] self       2   1   260  ; 1287959894
+0251  1D810000           [17] getglobal  4   2        ; attachmentsName
+0255  5D410100           [18] getglobal  5   5        ; keepCurrentAttachments
+0259  A2400002           [19] call       2   4   1  
+025D  1E008000           [20] return     0   1      
+                         * constants:
+0261  06                 sizek (6)
+0262  01                 const type 3
+0263  65770E40           const [0]: (1074689893)
+0267  01                 const type 3
+0268  D48E598B           const [1]: (-1957065004)
+026C  04                 const type 4
+026D  10                 string size (16)
+026E  6174746163686D65+  "attachme"
+0276  6E74734E616D6500   "ntsName\0"
+                         const [2]: "attachmentsName"
+027E  01                 const type 3
+027F  0F865E31           const [3]: (828278287)
+0283  01                 const type 3
+0284  56B5C44C           const [4]: (1287959894)
+0288  04                 const type 4
+0289  17                 string size (23)
+028A  6B65657043757272+  "keepCurr"
+0292  656E744174746163+  "entAttac"
+029A  686D656E747300     "hments\0"
+                         const [5]: "keepCurrentAttachments"
+                         * functions:
+02A1  00                 sizep (0)
+                         * lines:
+02A2  14                 sizelineinfo (20)
+                         [pc] (line)
+02A3  15                 [01] (21)
+02A4  00                 [02] (21)
+02A5  00                 [03] (21)
+02A6  00                 [04] (21)
+02A7  15                 [05] (21)
+02A8  00                 [06] (21)
+02A9  00                 [07] (21)
+02AA  00                 [08] (21)
+02AB  15                 [09] (21)
+02AC  00                 [10] (21)
+02AD  00                 [11] (21)
+02AE  00                 [12] (21)
+02AF  15                 [13] (21)
+02B0  00                 [14] (21)
+02B1  00                 [15] (21)
+02B2  00                 [16] (22)
+02B3  15                 [17] (22)
+02B4  00                 [18] (22)
+02B5  00                 [19] (22)
+02B6  00                 [20] (24)
+                         * locals:
+02F3  00                 sizelocvars (0)
+                         * upvalues:
+02F4  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+02F5                     ** function [3] definition (level 2)
+                         ** start of function **
+02F5  00                 string size (0)
+                         source name: (none)
+02F6  1A                 line defined (26)
+02F7  1E                 last line defined (30)
+02F8  01                 nups (1)
+02F9  02                 numparams (2)
+02FA  00                 is_vararg (0)
+02FB  05                 maxstacksize (5)
+                         * code:
+02FC  13                 sizecode (19)
+02FD  9D000000           [01] getglobal  2   0        ; 1074689893
+0301  D2008000           [02] move       3   1      
+0305  A2800001           [03] call       2   2   2  
+0309  98400000           [04] test       2       1    ; to [6] if false
+030D  1A000380           [05] jmp        13           ; to [19]
+0311  A440C000           [06] self       2   1   257  ; -1957065004
+0315  13010000           [07] getupval   4   0      
+0319  A2808001           [08] call       2   3   2  
+031D  98000000           [09] test       2       0    ; to [11] if true
+0321  1AC00180           [10] jmp        8            ; to [19]
+0325  9D800000           [11] getglobal  2   2        ; attachmentsName
+0329  A4C04001           [12] self       2   2   259  ; 828278287
+032D  A2800001           [13] call       2   2   2  
+0331  98000000           [14] test       2       0    ; to [16] if true
+0335  1A800080           [15] jmp        3            ; to [19]
+0339  A400C100           [16] self       2   1   260  ; -1022378484
+033D  1D810000           [17] getglobal  4   2        ; attachmentsName
+0341  A2408001           [18] call       2   3   1  
+0345  1E008000           [19] return     0   1      
+                         * constants:
+0349  05                 sizek (5)
+034A  01                 const type 3
+034B  65770E40           const [0]: (1074689893)
+034F  01                 const type 3
+0350  D48E598B           const [1]: (-1957065004)
+0354  04                 const type 4
+0355  10                 string size (16)
+0356  6174746163686D65+  "attachme"
+035E  6E74734E616D6500   "ntsName\0"
+                         const [2]: "attachmentsName"
+0366  01                 const type 3
+0367  0F865E31           const [3]: (828278287)
+036B  01                 const type 3
+036C  0CBE0FC3           const [4]: (-1022378484)
+                         * functions:
+0370  00                 sizep (0)
+                         * lines:
+0371  13                 sizelineinfo (19)
+                         [pc] (line)
+0372  1B                 [01] (27)
+0373  00                 [02] (27)
+0374  00                 [03] (27)
+0375  00                 [04] (27)
+0376  1B                 [05] (27)
+0377  00                 [06] (27)
+0378  00                 [07] (27)
+0379  00                 [08] (27)
+037A  1B                 [09] (27)
+037B  00                 [10] (27)
+037C  00                 [11] (27)
+037D  00                 [12] (27)
+037E  1B                 [13] (27)
+037F  00                 [14] (27)
+0380  00                 [15] (27)
+0381  00                 [16] (28)
+0382  1B                 [17] (28)
+0383  00                 [18] (28)
+0384  00                 [19] (30)
+                         * locals:
+03BE  00                 sizelocvars (0)
+                         * upvalues:
+03BF  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+03C0  14                 sizelineinfo (20)
+                         [pc] (line)
+03C1  05                 [01] (5)
+03C2  00                 [02] (5)
+03C3  00                 [03] (5)
+03C4  00                 [04] (12)
+03C5  05                 [05] (12)
+03C6  00                 [06] (12)
+03C7  00                 [07] (7)
+03C8  00                 [08] (18)
+03C9  05                 [09] (18)
+03CA  00                 [10] (18)
+03CB  00                 [11] (14)
+03CC  00                 [12] (24)
+03CD  0C                 [13] (24)
+03CE  00                 [14] (24)
+03CF  00                 [15] (20)
+03D0  00                 [16] (30)
+03D1  0C                 [17] (30)
+03D2  00                 [18] (30)
+03D3  00                 [19] (26)
+03D4  00                 [20] (30)
+                         * locals:
+0411  00                 sizelocvars (0)
+                         * upvalues:
+0412  00                 sizeupvalues (0)
+                         ** end of function **
+
+0413                     ** end of chunk **

@@ -1,0 +1,582 @@
+1	C:\wlua_dump\path\Lotus\Powersuits\VoltVoltPassive.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Powersuits\VoltVoltPassive.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  04                 size of number (bytes)
+0008  16                 integral (1=integral)
+422
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+Lotus.Scripts.Libs.AbilitiesLib
+Lotus.Powersuits.PowersuitAbilities.PVPLib
+GetPassiveInfo
+AddUpgrades
+RemoveUpgrades
+_T
+PassiveInfo
+DAMAGE
+Engine
+PM_IN_AIR
+math
+DT_ELECTRICITY
+Engine
+DT_ELECTRICITY
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  04                 maxstacksize (4)
+                         * code:
+0008  16                 sizecode (22)
+0009  1D000000           [01] getglobal  0   0        ; 849075268
+000D  59400000           [02] loadk      1   1        ; "Lotus.Scripts.Libs.AbilitiesLib"
+0011  22800001           [03] call       0   2   2  
+0015  5D000000           [04] getglobal  1   0        ; 849075268
+0019  99800000           [05] loadk      2   2        ; "Lotus.Powersuits.PowersuitAbilities.PVPLib"
+001D  62800001           [06] call       1   2   2  
+0021  A5000000           [07] closure    2   0      
+0025  12008000           [08] move       0   1      
+0029  E5400000           [09] closure    3   1      
+002D  12000001           [10] move       0   2      
+0031  E0C00000           [11] setglobal  3   3        ; GetPassiveInfo
+0035  E0000100           [12] setglobal  3   4        ; -1082535662
+0039  E5800000           [13] closure    3   2      
+003D  12000000           [14] move       0   0      
+0041  12000001           [15] move       0   2      
+0045  E0400100           [16] setglobal  3   5        ; AddUpgrades
+0049  E0800100           [17] setglobal  3   6        ; -108915644
+004D  E5C00000           [18] closure    3   3      
+0051  12000000           [19] move       0   0      
+0055  E0C00100           [20] setglobal  3   7        ; RemoveUpgrades
+0059  E0000200           [21] setglobal  3   8        ; 1771004931
+005D  1E008000           [22] return     0   1      
+                         * constants:
+0061  09                 sizek (9)
+0062  01                 const type 3
+0063  44DC9B32           const [0]: (849075268)
+0067  04                 const type 4
+0068  20                 string size (32)
+0069  4C6F7475732E5363+  "Lotus.Sc"
+0071  72697074732E4C69+  "ripts.Li"
+0079  62732E4162696C69+  "bs.Abili"
+0081  746965734C696200   "tiesLib\0"
+                         const [1]: "Lotus.Scripts.Libs.AbilitiesLib"
+0089  04                 const type 4
+008A  2B                 string size (43)
+008B  4C6F7475732E506F+  "Lotus.Po"
+0093  7765727375697473+  "wersuits"
+009B  2E506F7765727375+  ".Powersu"
+00A3  69744162696C6974+  "itAbilit"
+00AB  6965732E5056504C+  "ies.PVPL"
+00B3  696200             "ib\0"
+                         const [2]: "Lotus.Powersuits.PowersuitAbilities.PVPLib"
+00B6  04                 const type 4
+00B7  0F                 string size (15)
+00B8  4765745061737369+  "GetPassi"
+00C0  7665496E666F00     "veInfo\0"
+                         const [3]: "GetPassiveInfo"
+00C7  01                 const type 3
+00C8  12D179BF           const [4]: (-1082535662)
+00CC  04                 const type 4
+00CD  0C                 string size (12)
+00CE  4164645570677261+  "AddUpgra"
+00D6  64657300           "des\0"
+                         const [5]: "AddUpgrades"
+00DA  01                 const type 3
+00DB  441482F9           const [6]: (-108915644)
+00DF  04                 const type 4
+00E0  0F                 string size (15)
+00E1  52656D6F76655570+  "RemoveUp"
+00E9  67726164657300     "grades\0"
+                         const [7]: "RemoveUpgrades"
+00F0  01                 const type 3
+00F1  03648F69           const [8]: (1771004931)
+                         * functions:
+00F5  04                 sizep (4)
+                         
+00F6                     ** function [0] definition (level 2)
+                         ** start of function **
+00F6  00                 string size (0)
+                         source name: (none)
+00F7  04                 line defined (4)
+00F8  0F                 last line defined (15)
+00F9  01                 nups (1)
+00FA  00                 numparams (0)
+00FB  00                 is_vararg (0)
+00FC  06                 maxstacksize (6)
+                         * code:
+00FD  0F                 sizecode (15)
+00FE  19000000           [01] loadk      0   0        ; 0
+0102  59400000           [02] loadk      1   1        ; 0
+0106  99000000           [03] loadk      2   0        ; 0
+010A  D3000000           [04] getupval   3   0      
+010E  CE80C001           [05] gettable   3   3   258  ; 590154099
+0112  E2808000           [06] call       3   1   2  
+0116  D8000000           [07] test       3       0    ; to [9] if true
+011A  1A400080           [08] jmp        2            ; to [11]
+011E  19C00000           [09] loadk      0   3        ; -51
+0122  59000100           [10] loadk      1   4        ; 0
+0126  D2000000           [11] move       3   0      
+012A  12018000           [12] move       4   1      
+012E  52010001           [13] move       5   2      
+0132  DE000002           [14] return     3   4      
+0136  1E008000           [15] return     0   1      
+                         * constants:
+013A  05                 sizek (5)
+013B  03                 const type 3
+013C  0000A040           const [0]: (0)
+0140  03                 const type 3
+0141  00007A44           const [1]: (0)
+0145  01                 const type 3
+0146  73092D23           const [2]: (590154099)
+014A  03                 const type 3
+014B  CDCCCC3D           const [3]: (-51)
+014F  03                 const type 3
+0150  00002041           const [4]: (0)
+                         * functions:
+0154  00                 sizep (0)
+                         * lines:
+0155  0F                 sizelineinfo (15)
+                         [pc] (line)
+0156  05                 [01] (5)
+0157  00                 [02] (6)
+0158  00                 [03] (7)
+0159  00                 [04] (9)
+015A  06                 [05] (9)
+015B  00                 [06] (9)
+015C  00                 [07] (9)
+015D  00                 [08] (9)
+015E  07                 [09] (10)
+015F  00                 [10] (11)
+0160  00                 [11] (14)
+0161  00                 [12] (14)
+0162  09                 [13] (14)
+0163  00                 [14] (14)
+0164  00                 [15] (15)
+                         * locals:
+0192  00                 sizelocvars (0)
+                         * upvalues:
+0193  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0194                     ** function [1] definition (level 2)
+                         ** start of function **
+0194  00                 string size (0)
+                         source name: (none)
+0195  11                 line defined (17)
+0196  14                 last line defined (20)
+0197  01                 nups (1)
+0198  00                 numparams (0)
+0199  00                 is_vararg (0)
+019A  05                 maxstacksize (5)
+                         * code:
+019B  07                 sizecode (7)
+019C  13000000           [1] getupval   0   0      
+01A0  22008100           [2] call       0   1   4  
+01A4  DD000000           [3] getglobal  3   0        ; _T
+01A8  0B410000           [4] newtable   4   0   1    ; array=0, hash=1
+01AC  0C010081           [5] settable   4   258 0    ; "DAMAGE"
+01B0  CC008180           [6] settable   3   257 4    ; "PassiveInfo"
+01B4  1E008000           [7] return     0   1      
+                         * constants:
+01B8  03                 sizek (3)
+01B9  04                 const type 4
+01BA  03                 string size (3)
+01BB  5F5400             "_T\0"
+                         const [0]: "_T"
+01BE  04                 const type 4
+01BF  0C                 string size (12)
+01C0  5061737369766549+  "PassiveI"
+01C8  6E666F00           "nfo\0"
+                         const [1]: "PassiveInfo"
+01CC  04                 const type 4
+01CD  07                 string size (7)
+01CE  44414D41474500     "DAMAGE\0"
+                         const [2]: "DAMAGE"
+                         * functions:
+01D5  00                 sizep (0)
+                         * lines:
+01D6  07                 sizelineinfo (7)
+                         [pc] (line)
+01D7  12                 [1] (18)
+01D8  00                 [2] (18)
+01D9  00                 [3] (19)
+01DA  00                 [4] (19)
+01DB  12                 [5] (19)
+01DC  00                 [6] (19)
+01DD  00                 [7] (20)
+                         * locals:
+01F3  00                 sizelocvars (0)
+                         * upvalues:
+01F4  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+01F5                     ** function [2] definition (level 2)
+                         ** start of function **
+01F5  00                 string size (0)
+                         source name: (none)
+01F6  16                 line defined (22)
+01F7  3B                 last line defined (59)
+01F8  02                 nups (2)
+01F9  01                 numparams (1)
+01FA  00                 is_vararg (0)
+01FB  11                 maxstacksize (17)
+                         * code:
+01FC  4E                 sizecode (78)
+01FD  53000000           [01] getupval   1   0      
+0201  4E00C000           [02] gettable   1   1   256  ; 998307158
+0205  62808000           [03] call       1   1   2  
+0209  58000000           [04] test       1       0    ; to [6] if true
+020D  1A000080           [05] jmp        1            ; to [7]
+0211  1E008000           [06] return     0   1      
+0215  5D400000           [07] getglobal  1   1        ; 538022378
+0219  99800000           [08] loadk      2   2        ; 0
+021D  62400001           [09] call       1   2   1  
+0221  64C04000           [10] self       1   0   259  ; -1538682285
+0225  62800001           [11] call       1   2   2  
+0229  9D000100           [12] getglobal  2   4        ; 1074689893
+022D  D2008000           [13] move       3   1      
+0231  A2800001           [14] call       2   2   2  
+0235  98000000           [15] test       2       0    ; to [17] if true
+0239  1A000080           [16] jmp        1            ; to [18]
+023D  1E008000           [17] return     0   1      
+0241  93008000           [18] getupval   2   1      
+0245  A2008100           [19] call       2   1   4  
+0249  59410100           [20] loadk      5   5        ; 0
+024D  A481C100           [21] self       6   1   262  ; 1839670529
+0251  A2810001           [22] call       6   2   2  
+0255  E4C1C100           [23] self       7   1   263  ; -1917464545
+0259  E2810001           [24] call       7   2   2  
+025D  1D020100           [25] getglobal  8   4        ; 1074689893
+0261  52028000           [26] move       9   1      
+0265  22820001           [27] call       8   2   2  
+0269  18420000           [28] test       8       1    ; to [30] if false
+026D  1AC00B80           [29] jmp        48           ; to [78]
+0271  2402C200           [30] self       8   1   264  ; 1511086594
+0275  22820001           [31] call       8   2   2  
+0279  18420000           [32] test       8       1    ; to [34] if false
+027D  1AC00A80           [33] jmp        44           ; to [78]
+0281  2482C100           [34] self       8   1   262  ; 1839670529
+0285  22820001           [35] call       8   2   2  
+0289  6442C200           [36] self       9   1   265  ; -214694299
+028D  DD820200           [37] getglobal  11  10       ; Engine
+0291  CEC2C205           [38] gettable   11  11  267  ; "PM_IN_AIR"
+0295  62828001           [39] call       9   3   2  
+0299  58420000           [40] test       9       1    ; to [42] if false
+029D  1A800780           [41] jmp        31           ; to [73]
+02A1  6402C303           [42] self       9   7   268  ; -1046454183
+02A5  62820001           [43] call       9   2   2  
+02A9  58420000           [44] test       9       1    ; to [46] if false
+02AD  1A800680           [45] jmp        27           ; to [73]
+02B1  5D420300           [46] getglobal  9   13       ; -1331746705
+02B5  92020003           [47] move       10  6      
+02B9  D2020004           [48] move       11  8      
+02BD  62828001           [49] call       9   3   2  
+fail op	21
+02C1  15008104           [50] concat     0   9   4  
+02C5  1A400080           [51] jmp        2            ; to [54]
+02C9  84828004           [52] mul        10  9   2  
+02CD  43818202           [53] add        5   5   10 
+fail op	33
+02D1  21400181           [54] tforloop   0       5    ; to [56] if exit
+02D5  1A000480           [55] jmp        17           ; to [73]
+02D9  9D820300           [56] getglobal  10  14       ; math
+02DD  8EC24305           [57] gettable   10  10  271  ; -150971781
+02E1  D2028002           [58] move       11  5      
+02E5  A2820001           [59] call       10  2   2  
+02E9  4D818202           [60] sub        5   5   10 
+02ED  E402C400           [61] self       11  1   272  ; -64490911
+02F1  5D830200           [62] getglobal  13  10       ; Engine
+02F5  4E43C406           [63] gettable   13  13  273  ; "DT_ELECTRICITY"
+02F9  9D830300           [64] getglobal  14  14       ; math
+02FD  8E834407           [65] gettable   14  14  274  ; 1710846250
+0301  E4C3C400           [66] self       15  1   275  ; 838340081
+0305  E2830001           [67] call       15  2   2  
+0309  C3838207           [68] add        15  15  10 
+030D  12048001           [69] move       16  3      
+0311  A2838001           [70] call       14  3   2  
+0315  D7038000           [71] loadbool   15  1   0    ; true
+0319  E2428002           [72] call       11  5   1  
+031D  92010004           [73] move       6   8      
+0321  DD420000           [74] getglobal  11  1        ; 538022378
+0325  19030500           [75] loadk      12  20       ; -51
+0329  E2420001           [76] call       11  2   1  
+032D  1A80F27F           [77] jmp        -53          ; to [25]
+0331  1E008000           [78] return     0   1      
+                         * constants:
+0335  15                 sizek (21)
+0336  01                 const type 3
+0337  56F5803B           const [0]: (998307158)
+033B  01                 const type 3
+033C  EA911120           const [1]: (538022378)
+0340  03                 const type 3
+0341  0000803F           const [2]: (0)
+0345  01                 const type 3
+0346  539249A4           const [3]: (-1538682285)
+034A  01                 const type 3
+034B  65770E40           const [4]: (1074689893)
+034F  03                 const type 3
+0350  00000000           const [5]: (0)
+0354  01                 const type 3
+0355  0125A76D           const [6]: (1839670529)
+0359  01                 const type 3
+035A  1FD0B58D           const [7]: (-1917464545)
+035E  01                 const type 3
+035F  025A115A           const [8]: (1511086594)
+0363  01                 const type 3
+0364  650634F3           const [9]: (-214694299)
+0368  04                 const type 4
+0369  07                 string size (7)
+036A  456E67696E6500     "Engine\0"
+                         const [10]: "Engine"
+0371  04                 const type 4
+0372  0A                 string size (10)
+0373  504D5F494E5F4149+  "PM_IN_AI"
+037B  5200               "R\0"
+                         const [11]: "PM_IN_AIR"
+037D  01                 const type 3
+037E  5960A0C1           const [12]: (-1046454183)
+0382  01                 const type 3
+0383  6F289FB0           const [13]: (-1331746705)
+0387  04                 const type 4
+0388  05                 string size (5)
+0389  6D61746800         "math\0"
+                         const [14]: "math"
+038E  01                 const type 3
+038F  7B5A00F7           const [15]: (-150971781)
+0393  01                 const type 3
+0394  61F227FC           const [16]: (-64490911)
+0398  04                 const type 4
+0399  0F                 string size (15)
+039A  44545F454C454354+  "DT_ELECT"
+03A2  52494349545900     "RICITY\0"
+                         const [17]: "DT_ELECTRICITY"
+03A9  01                 const type 3
+03AA  2A71F965           const [18]: (1710846250)
+03AE  01                 const type 3
+03AF  F10DF831           const [19]: (838340081)
+03B3  03                 const type 3
+03B4  CDCCCC3D           const [20]: (-51)
+                         * functions:
+03B8  00                 sizep (0)
+                         * lines:
+03B9  4E                 sizelineinfo (78)
+                         [pc] (line)
+03BA  17                 [01] (23)
+03BB  00                 [02] (23)
+03BC  00                 [03] (23)
+03BD  00                 [04] (23)
+03BE  17                 [05] (23)
+03BF  00                 [06] (24)
+03C0  00                 [07] (27)
+03C1  00                 [08] (27)
+03C2  17                 [09] (27)
+03C3  00                 [10] (29)
+03C4  00                 [11] (29)
+03C5  00                 [12] (30)
+03C6  17                 [13] (30)
+03C7  00                 [14] (30)
+03C8  00                 [15] (30)
+03C9  00                 [16] (30)
+03CA  17                 [17] (31)
+03CB  00                 [18] (34)
+03CC  00                 [19] (34)
+03CD  00                 [20] (36)
+03CE  18                 [21] (37)
+03CF  00                 [22] (37)
+03D0  00                 [23] (38)
+03D1  00                 [24] (38)
+03D2  1B                 [25] (39)
+03D3  00                 [26] (39)
+03D4  00                 [27] (39)
+03D5  00                 [28] (39)
+03D6  1B                 [29] (39)
+03D7  00                 [30] (39)
+03D8  00                 [31] (39)
+03D9  00                 [32] (39)
+03DA  1B                 [33] (39)
+03DB  00                 [34] (40)
+03DC  00                 [35] (40)
+03DD  00                 [36] (41)
+03DE  1D                 [37] (41)
+03DF  00                 [38] (41)
+03E0  00                 [39] (41)
+03E1  00                 [40] (41)
+03E2  1D                 [41] (41)
+03E3  00                 [42] (41)
+03E4  00                 [43] (41)
+03E5  00                 [44] (41)
+03E6  1E                 [45] (41)
+03E7  00                 [46] (42)
+03E8  00                 [47] (42)
+03E9  00                 [48] (42)
+03EA  1E                 [49] (42)
+03EB  00                 [50] (43)
+03EC  00                 [51] (43)
+03ED  00                 [52] (44)
+03EE  1E                 [53] (44)
+03EF  00                 [54] (47)
+03F0  00                 [55] (47)
+03F1  00                 [56] (48)
+03F2  1E                 [57] (48)
+03F3  00                 [58] (48)
+03F4  00                 [59] (48)
+03F5  00                 [60] (49)
+03F6  1E                 [61] (51)
+03F7  00                 [62] (51)
+03F8  00                 [63] (51)
+03F9  00                 [64] (51)
+03FA  1F                 [65] (51)
+03FB  00                 [66] (51)
+03FC  00                 [67] (51)
+03FD  00                 [68] (51)
+03FE  22                 [69] (51)
+03FF  00                 [70] (51)
+0400  00                 [71] (51)
+0401  00                 [72] (51)
+0402  22                 [73] (55)
+0403  00                 [74] (57)
+0404  00                 [75] (57)
+0405  00                 [76] (57)
+0406  24                 [77] (57)
+0407  00                 [78] (59)
+                         * locals:
+04F2  00                 sizelocvars (0)
+                         * upvalues:
+04F3  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+04F4                     ** function [3] definition (level 2)
+                         ** start of function **
+04F4  00                 string size (0)
+                         source name: (none)
+04F5  3D                 line defined (61)
+04F6  48                 last line defined (72)
+04F7  01                 nups (1)
+04F8  01                 numparams (1)
+04F9  00                 is_vararg (0)
+04FA  06                 maxstacksize (6)
+                         * code:
+04FB  14                 sizecode (20)
+04FC  53000000           [01] getupval   1   0      
+0500  4E00C000           [02] gettable   1   1   256  ; 998307158
+0504  62808000           [03] call       1   1   2  
+0508  58000000           [04] test       1       0    ; to [6] if true
+050C  1A000080           [05] jmp        1            ; to [7]
+0510  1E008000           [06] return     0   1      
+0514  64404000           [07] self       1   0   257  ; -1538682285
+0518  62800001           [08] call       1   2   2  
+051C  9D800000           [09] getglobal  2   2        ; 1074689893
+0520  D2008000           [10] move       3   1      
+0524  A2800001           [11] call       2   2   2  
+0528  98000000           [12] test       2       0    ; to [14] if true
+052C  1A000080           [13] jmp        1            ; to [15]
+0530  1E008000           [14] return     0   1      
+0534  A4C0C000           [15] self       2   1   259  ; -64490911
+0538  1D010100           [16] getglobal  4   4        ; Engine
+053C  0E414102           [17] gettable   4   4   261  ; "DT_ELECTRICITY"
+0540  59810100           [18] loadk      5   6        ; 0
+0544  A2400002           [19] call       2   4   1  
+0548  1E008000           [20] return     0   1      
+                         * constants:
+054C  07                 sizek (7)
+054D  01                 const type 3
+054E  56F5803B           const [0]: (998307158)
+0552  01                 const type 3
+0553  539249A4           const [1]: (-1538682285)
+0557  01                 const type 3
+0558  65770E40           const [2]: (1074689893)
+055C  01                 const type 3
+055D  61F227FC           const [3]: (-64490911)
+0561  04                 const type 4
+0562  07                 string size (7)
+0563  456E67696E6500     "Engine\0"
+                         const [4]: "Engine"
+056A  04                 const type 4
+056B  0F                 string size (15)
+056C  44545F454C454354+  "DT_ELECT"
+0574  52494349545900     "RICITY\0"
+                         const [5]: "DT_ELECTRICITY"
+057B  03                 const type 3
+057C  00000000           const [6]: (0)
+                         * functions:
+0580  00                 sizep (0)
+                         * lines:
+0581  14                 sizelineinfo (20)
+                         [pc] (line)
+0582  3E                 [01] (62)
+0583  00                 [02] (62)
+0584  00                 [03] (62)
+0585  00                 [04] (62)
+0586  3E                 [05] (62)
+0587  00                 [06] (63)
+0588  00                 [07] (66)
+0589  00                 [08] (66)
+058A  3E                 [09] (67)
+058B  00                 [10] (67)
+058C  00                 [11] (67)
+058D  00                 [12] (67)
+058E  3E                 [13] (67)
+058F  00                 [14] (68)
+0590  00                 [15] (71)
+0591  00                 [16] (71)
+0592  3E                 [17] (71)
+0593  00                 [18] (71)
+0594  00                 [19] (71)
+0595  00                 [20] (72)
+                         * locals:
+05D2  00                 sizelocvars (0)
+                         * upvalues:
+05D3  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+05D4  16                 sizelineinfo (22)
+                         [pc] (line)
+05D5  01                 [01] (1)
+05D6  00                 [02] (1)
+05D7  00                 [03] (1)
+05D8  00                 [04] (2)
+05D9  01                 [05] (2)
+05DA  00                 [06] (2)
+05DB  00                 [07] (15)
+05DC  00                 [08] (15)
+05DD  01                 [09] (20)
+05DE  00                 [10] (20)
+05DF  00                 [11] (20)
+05E0  00                 [12] (17)
+05E1  02                 [13] (59)
+05E2  00                 [14] (59)
+05E3  00                 [15] (59)
+05E4  00                 [16] (59)
+05E5  02                 [17] (22)
+05E6  00                 [18] (72)
+05E7  00                 [19] (72)
+05E8  00                 [20] (72)
+05E9  02                 [21] (61)
+05EA  00                 [22] (72)
+                         * locals:
+062D  00                 sizelocvars (0)
+                         * upvalues:
+062E  00                 sizeupvalues (0)
+                         ** end of function **
+
+062F                     ** end of chunk **

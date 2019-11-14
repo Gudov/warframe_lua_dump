@@ -1,0 +1,1165 @@
+1	C:\wlua_dump\path\Lotus\Interface\LibsTimerMgr.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Interface\LibsTimerMgr.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  03                 size of number (bytes)
+0008  09                 integral (1=integral)
+49
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+package
+seeall
+CreateTimerMgr
+mTimers
+mRecycled
+mMaxIndex
+Print
+Update
+RemoveTimer
+ClearTimers
+AddTimer
+HasTimer
+HasTimerWithArg
+GetTimerWithArg
+GetTimeLeft
+TimerMgr -> 
+mTimers
+mMaxIndex
+Delta
+Duration
+Callback
+table
+callback
+arg
+Arg
+Loop
+mRecycled
+mMaxIndex
+mTimers
+table
+mRecycled
+mRecycled
+mTimers
+table
+mRecycled
+mTimers
+table
+Id
+Delta
+Duration
+Callback
+Arg
+Loop
+mMaxIndex
+mTimers
+mTimers
+Arg
+mTimers
+Arg
+mMaxIndex
+mTimers
+Duration
+Delta
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  03                 maxstacksize (3)
+                         * code:
+0008  09                 sizecode (9)
+0009  1D000000           [1] getglobal  0   0        ; 954442511
+000D  41000001           [2] vararg     1   2      
+0011  9D400000           [3] getglobal  2   1        ; package
+0015  8E804001           [4] gettable   2   2   258  ; "seeall"
+0019  22408001           [5] call       0   3   1  
+001D  25000000           [6] closure    0   0      
+0021  20C00000           [7] setglobal  0   3        ; CreateTimerMgr
+0025  20000100           [8] setglobal  0   4        ; -1029178688
+0029  1E008000           [9] return     0   1      
+                         * constants:
+002D  05                 sizek (5)
+002E  01                 const type 3
+002F  0FA3E338           const [0]: (954442511)
+0033  04                 const type 4
+0034  08                 string size (8)
+0035  7061636B61676500   "package\0"
+                         const [1]: "package"
+003D  04                 const type 4
+003E  07                 string size (7)
+003F  736565616C6C00     "seeall\0"
+                         const [2]: "seeall"
+0046  04                 const type 4
+0047  0F                 string size (15)
+0048  4372656174655469+  "CreateTi"
+0050  6D65724D677200     "merMgr\0"
+                         const [3]: "CreateTimerMgr"
+0057  01                 const type 3
+0058  C0FAA7C2           const [4]: (-1029178688)
+                         * functions:
+005C  01                 sizep (1)
+                         
+005D                     ** function [0] definition (level 2)
+                         ** start of function **
+005D  00                 string size (0)
+                         source name: (none)
+005E  03                 line defined (3)
+005F  96                 last line defined (150)
+0060  01                 nups (0)
+0061  00                 numparams (0)
+0062  00                 is_vararg (0)
+0063  00                 maxstacksize (2)
+                         * code:
+0065  1A                 sizecode (26)
+0066  0B000300           [01] newtable   0   0   12   ; array=0, hash=12
+006A  4B000000           [02] newtable   1   0   0    ; array=0, hash=0
+006E  0C400080           [03] settable   0   256 1    ; "mTimers"
+0072  4B000000           [04] newtable   1   0   0    ; array=0, hash=0
+0076  0C408080           [05] settable   0   257 1    ; "mRecycled"
+007A  0CC04081           [06] settable   0   258 259  ; "mMaxIndex" 0
+007E  65000000           [07] closure    1   0      
+0082  0C400082           [08] settable   0   260 1    ; "Print"
+0086  65400000           [09] closure    1   1      
+008A  0C408082           [10] settable   0   261 1    ; "Update"
+008E  65800000           [11] closure    1   2      
+0092  0C400083           [12] settable   0   262 1    ; "RemoveTimer"
+0096  65C00000           [13] closure    1   3      
+009A  0C408083           [14] settable   0   263 1    ; "ClearTimers"
+009E  65000100           [15] closure    1   4      
+00A2  0C400084           [16] settable   0   264 1    ; "AddTimer"
+00A6  65400100           [17] closure    1   5      
+00AA  0C408084           [18] settable   0   265 1    ; "HasTimer"
+00AE  65800100           [19] closure    1   6      
+00B2  0C400085           [20] settable   0   266 1    ; "HasTimerWithArg"
+00B6  65C00100           [21] closure    1   7      
+00BA  0C408085           [22] settable   0   267 1    ; "GetTimerWithArg"
+00BE  65000200           [23] closure    1   8      
+00C2  0C400086           [24] settable   0   268 1    ; "GetTimeLeft"
+00C6  1E000001           [25] return     0   2      
+00CA  1E008000           [26] return     0   1      
+                         * constants:
+00CE  0D                 sizek (13)
+00CF  04                 const type 4
+00D0  08                 string size (8)
+00D1  6D54696D65727300   "mTimers\0"
+                         const [0]: "mTimers"
+00D9  04                 const type 4
+00DA  0A                 string size (10)
+00DB  6D52656379636C65+  "mRecycle"
+00E3  6400               "d\0"
+                         const [1]: "mRecycled"
+00E5  04                 const type 4
+00E6  0A                 string size (10)
+00E7  6D4D6178496E6465+  "mMaxInde"
+00EF  7800               "x\0"
+                         const [2]: "mMaxIndex"
+00F1  03                 const type 3
+00F2  00000000           const [3]: (0)
+00F6  04                 const type 4
+00F7  06                 string size (6)
+00F8  5072696E7400       "Print\0"
+                         const [4]: "Print"
+00FE  04                 const type 4
+00FF  07                 string size (7)
+0100  55706461746500     "Update\0"
+                         const [5]: "Update"
+0107  04                 const type 4
+0108  0C                 string size (12)
+0109  52656D6F76655469+  "RemoveTi"
+0111  6D657200           "mer\0"
+                         const [6]: "RemoveTimer"
+0115  04                 const type 4
+0116  0C                 string size (12)
+0117  436C65617254696D+  "ClearTim"
+011F  65727300           "ers\0"
+                         const [7]: "ClearTimers"
+0123  04                 const type 4
+0124  09                 string size (9)
+0125  41646454696D6572+  "AddTimer"
+012D  00                 "\0"
+                         const [8]: "AddTimer"
+012E  04                 const type 4
+012F  09                 string size (9)
+0130  48617354696D6572+  "HasTimer"
+0138  00                 "\0"
+                         const [9]: "HasTimer"
+0139  04                 const type 4
+013A  10                 string size (16)
+013B  48617354696D6572+  "HasTimer"
+0143  5769746841726700   "WithArg\0"
+                         const [10]: "HasTimerWithArg"
+014B  04                 const type 4
+014C  10                 string size (16)
+014D  47657454696D6572+  "GetTimer"
+0155  5769746841726700   "WithArg\0"
+                         const [11]: "GetTimerWithArg"
+015D  04                 const type 4
+015E  0C                 string size (12)
+015F  47657454696D654C+  "GetTimeL"
+0167  65667400           "eft\0"
+                         const [12]: "GetTimeLeft"
+                         * functions:
+016B  09                 sizep (9)
+                         
+016C                     ** function [0] definition (level 3)
+                         ** start of function **
+016C  00                 string size (0)
+                         source name: (none)
+016D  0B                 line defined (11)
+016E  0D                 last line defined (13)
+016F  00                 nups (0)
+0170  02                 numparams (2)
+0171  00                 is_vararg (0)
+0172  06                 maxstacksize (6)
+                         * code:
+0173  08                 sizecode (8)
+0174  9D000000           [1] getglobal  2   0        ; -1817107093
+0178  D9400000           [2] loadk      3   1        ; "TimerMgr -> "
+017C  1D810000           [3] getglobal  4   2        ; -1615931716
+0180  52018000           [4] move       5   1      
+0184  22810001           [5] call       4   2   2  
+0188  C2008101           [6] concat     3   3   4  
+018C  A2400001           [7] call       2   2   1  
+0190  1E008000           [8] return     0   1      
+                         * constants:
+0194  03                 sizek (3)
+0195  01                 const type 3
+0196  6B25B193           const [0]: (-1817107093)
+019A  04                 const type 4
+019B  0D                 string size (13)
+019C  54696D65724D6772+  "TimerMgr"
+01A4  202D3E2000         " -> \0"
+                         const [1]: "TimerMgr -> "
+01A9  01                 const type 3
+01AA  BCD6AE9F           const [2]: (-1615931716)
+                         * functions:
+01AE  00                 sizep (0)
+                         * lines:
+01AF  08                 sizelineinfo (8)
+                         [pc] (line)
+01B0  0C                 [1] (12)
+01B1  00                 [2] (12)
+01B2  00                 [3] (12)
+01B3  00                 [4] (12)
+01B4  0C                 [5] (12)
+01B5  00                 [6] (12)
+01B6  00                 [7] (12)
+01B7  00                 [8] (13)
+                         * locals:
+01D0  00                 sizelocvars (0)
+                         * upvalues:
+01D1  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+01D2                     ** function [1] definition (level 3)
+                         ** start of function **
+01D2  00                 string size (0)
+                         source name: (none)
+01D3  0F                 line defined (15)
+01D4  30                 last line defined (48)
+01D5  00                 nups (0)
+01D6  02                 numparams (2)
+01D7  00                 is_vararg (0)
+01D8  10                 maxstacksize (16)
+                         * code:
+01D9  3C                 sizecode (60)
+01DA  CE004000           [01] gettable   3   0   256  ; "mTimers"
+01DE  19410000           [02] loadk      4   1        ; 0
+01E2  4E814000           [03] gettable   5   0   258  ; "mMaxIndex"
+01E6  99410000           [04] loadk      6   1        ; 0
+01EA  10410A80           [05] forprep    4   42       ; to [48]
+01EE  0EC28101           [06] gettable   8   3   7  
+fail op	35
+01F2  63C04004           [07] close      1  
+01F6  1A800980           [08] jmp        39           ; to [48]
+01FA  4E024104           [09] gettable   9   8   260  ; "Delta"
+01FE  43428004           [10] add        9   9   1  
+0202  0C420282           [11] settable   8   260 9    ; "Delta"
+0206  4E024104           [12] gettable   9   8   260  ; "Delta"
+020A  8E424104           [13] gettable   10  8   261  ; "Duration"
+fail op	33
+020E  21400205           [14] tforloop   0       9    ; to [16] if exit
+0212  1AC00780           [15] jmp        32           ; to [48]
+0216  5D820100           [16] getglobal  9   6        ; 1074689893
+021A  8EC24104           [17] gettable   10  8   263  ; "Callback"
+021E  62820001           [18] call       9   2   2  
+0222  58420000           [19] test       9       1    ; to [21] if false
+0226  1A000380           [20] jmp        13           ; to [34]
+fail op	35
+022A  23C04001           [21] close      0  
+022E  1A400080           [22] jmp        2            ; to [25]
+0232  4B020000           [23] newtable   9   0   0    ; array=0, hash=0
+0236  92008004           [24] move       2   9      
+023A  5D020200           [25] getglobal  9   8        ; table
+023E  4E42C204           [26] gettable   9   9   265  ; -431682403
+0242  92020001           [27] move       10  2      
+0246  CB820000           [28] newtable   11  0   2    ; array=0, hash=2
+024A  0EC34104           [29] gettable   12  8   263  ; "Callback"
+024E  CC020385           [30] settable   11  266 12   ; "callback"
+0252  0E034304           [31] gettable   12  8   268  ; "Arg"
+0256  CC028385           [32] settable   11  267 12   ; "arg"
+025A  62428001           [33] call       9   3   1  
+025E  4E424304           [34] gettable   9   8   269  ; "Loop"
+0262  58020000           [35] test       9       0    ; to [37] if true
+0266  1A000180           [36] jmp        5            ; to [42]
+026A  4E024104           [37] gettable   9   8   260  ; "Delta"
+026E  8E424104           [38] gettable   10  8   261  ; "Duration"
+0272  4D828204           [39] sub        9   9   10 
+0276  0C420282           [40] settable   8   260 9    ; "Delta"
+027A  1A400180           [41] jmp        6            ; to [48]
+027E  5D020200           [42] getglobal  9   8        ; table
+0282  4E42C204           [43] gettable   9   9   265  ; -431682403
+0286  8E824300           [44] gettable   10  0   270  ; "mRecycled"
+028A  D2020004           [45] move       11  8      
+028E  62428001           [46] call       9   3   1  
+0292  CCC0C003           [47] settable   3   7   259  ; nil
+0296  1401F57F           [48] forloop    4   -43      ; to [6] if loop
+fail op	35
+029A  63C04001           [49] close      1  
+029E  1A000280           [50] jmp        9            ; to [60]
+02A2  59420000           [51] loadk      9   1        ; 0
+02A6  8A020001           [52] len        10  2      
+02AA  D9420000           [53] loadk      11  1        ; 0
+02AE  50C20080           [54] forprep    9   4        ; to [59]
+02B2  4E030301           [55] gettable   13  2   12 
+02B6  8EC3C306           [56] gettable   14  13  271  ; -1217007161
+02BA  CEC3C206           [57] gettable   15  13  267  ; "arg"
+02BE  A2430001           [58] call       14  2   1  
+02C2  5482FE7F           [59] forloop    9   -5       ; to [55] if loop
+02C6  1E008000           [60] return     0   1      
+                         * constants:
+02CA  10                 sizek (16)
+02CB  04                 const type 4
+02CC  08                 string size (8)
+02CD  6D54696D65727300   "mTimers\0"
+                         const [0]: "mTimers"
+02D5  03                 const type 3
+02D6  0000803F           const [1]: (0)
+02DA  04                 const type 4
+02DB  0A                 string size (10)
+02DC  6D4D6178496E6465+  "mMaxInde"
+02E4  7800               "x\0"
+                         const [2]: "mMaxIndex"
+02E6  00                 const type 0
+                         const [3]: nil
+02E7  04                 const type 4
+02E8  06                 string size (6)
+02E9  44656C746100       "Delta\0"
+                         const [4]: "Delta"
+02EF  04                 const type 4
+02F0  09                 string size (9)
+02F1  4475726174696F6E+  "Duration"
+02F9  00                 "\0"
+                         const [5]: "Duration"
+02FA  01                 const type 3
+02FB  65770E40           const [6]: (1074689893)
+02FF  04                 const type 4
+0300  09                 string size (9)
+0301  43616C6C6261636B+  "Callback"
+0309  00                 "\0"
+                         const [7]: "Callback"
+030A  04                 const type 4
+030B  06                 string size (6)
+030C  7461626C6500       "table\0"
+                         const [8]: "table"
+0312  01                 const type 3
+0313  9D0C45E6           const [9]: (-431682403)
+0317  04                 const type 4
+0318  09                 string size (9)
+0319  63616C6C6261636B+  "callback"
+0321  00                 "\0"
+                         const [10]: "callback"
+0322  04                 const type 4
+0323  04                 string size (4)
+0324  61726700           "arg\0"
+                         const [11]: "arg"
+0328  04                 const type 4
+0329  04                 string size (4)
+032A  41726700           "Arg\0"
+                         const [12]: "Arg"
+032E  04                 const type 4
+032F  05                 string size (5)
+0330  4C6F6F7000         "Loop\0"
+                         const [13]: "Loop"
+0335  04                 const type 4
+0336  0A                 string size (10)
+0337  6D52656379636C65+  "mRecycle"
+033F  6400               "d\0"
+                         const [14]: "mRecycled"
+0341  01                 const type 3
+0342  C7F175B7           const [15]: (-1217007161)
+                         * functions:
+0346  00                 sizep (0)
+                         * lines:
+0347  3C                 sizelineinfo (60)
+                         [pc] (line)
+0348  11                 [01] (17)
+0349  00                 [02] (18)
+034A  00                 [03] (18)
+034B  00                 [04] (18)
+034C  12                 [05] (18)
+034D  00                 [06] (19)
+034E  00                 [07] (20)
+034F  00                 [08] (20)
+0350  12                 [09] (21)
+0351  00                 [10] (21)
+0352  00                 [11] (21)
+0353  00                 [12] (22)
+0354  12                 [13] (22)
+0355  00                 [14] (22)
+0356  00                 [15] (22)
+0357  00                 [16] (24)
+0358  12                 [17] (24)
+0359  00                 [18] (24)
+035A  00                 [19] (24)
+035B  00                 [20] (24)
+035C  13                 [21] (25)
+035D  00                 [22] (25)
+035E  00                 [23] (26)
+035F  00                 [24] (26)
+0360  14                 [25] (28)
+0361  00                 [26] (28)
+0362  00                 [27] (28)
+0363  00                 [28] (28)
+0364  14                 [29] (28)
+0365  00                 [30] (28)
+0366  00                 [31] (28)
+0367  00                 [32] (28)
+0368  15                 [33] (28)
+0369  00                 [34] (30)
+036A  00                 [35] (30)
+036B  00                 [36] (30)
+036C  15                 [37] (32)
+036D  00                 [38] (32)
+036E  00                 [39] (32)
+036F  00                 [40] (32)
+0370  15                 [41] (32)
+0371  00                 [42] (35)
+0372  00                 [43] (35)
+0373  00                 [44] (35)
+0374  16                 [45] (35)
+0375  00                 [46] (35)
+0376  00                 [47] (36)
+0377  00                 [48] (18)
+0378  16                 [49] (42)
+0379  00                 [50] (42)
+037A  00                 [51] (43)
+037B  00                 [52] (43)
+037C  16                 [53] (43)
+037D  00                 [54] (43)
+037E  00                 [55] (44)
+037F  00                 [56] (45)
+0380  16                 [57] (45)
+0381  00                 [58] (45)
+0382  00                 [59] (43)
+0383  00                 [60] (48)
+                         * locals:
+0438  00                 sizelocvars (0)
+                         * upvalues:
+0439  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+043A                     ** function [2] definition (level 3)
+                         ** start of function **
+043A  00                 string size (0)
+                         source name: (none)
+043B  32                 line defined (50)
+043C  3E                 last line defined (62)
+043D  00                 nups (0)
+043E  02                 numparams (2)
+043F  00                 is_vararg (0)
+0440  07                 maxstacksize (7)
+                         * code:
+0441  13                 sizecode (19)
+fail op	35
+0442  6300C000           [01] close      1  
+0446  1A000180           [02] jmp        5            ; to [8]
+fail op	21
+044A  5540C000           [03] concat     1   1   257
+044E  1A800080           [04] jmp        3            ; to [8]
+0452  8E804000           [05] gettable   2   0   258  ; "mMaxIndex"
+fail op	21
+0456  15400001           [06] concat     0   2   1  
+045A  1A000080           [07] jmp        1            ; to [9]
+045E  1E008000           [08] return     0   1      
+0462  8EC04000           [09] gettable   2   0   259  ; "mTimers"
+0466  CE400001           [10] gettable   3   2   1  
+fail op	35
+046A  6300C001           [11] close      1  
+046E  1A400180           [12] jmp        6            ; to [19]
+0472  1D010100           [13] getglobal  4   4        ; table
+0476  0E414102           [14] gettable   4   4   261  ; -431682403
+047A  4E814100           [15] gettable   5   0   262  ; "mRecycled"
+047E  92018001           [16] move       6   3      
+0482  22418001           [17] call       4   3   1  
+0486  8C00C000           [18] settable   2   1   256  ; nil
+048A  1E008000           [19] return     0   1      
+                         * constants:
+048E  07                 sizek (7)
+048F  00                 const type 0
+                         const [0]: nil
+0490  03                 const type 3
+0491  0000803F           const [1]: (0)
+0495  04                 const type 4
+0496  0A                 string size (10)
+0497  6D4D6178496E6465+  "mMaxInde"
+049F  7800               "x\0"
+                         const [2]: "mMaxIndex"
+04A1  04                 const type 4
+04A2  08                 string size (8)
+04A3  6D54696D65727300   "mTimers\0"
+                         const [3]: "mTimers"
+04AB  04                 const type 4
+04AC  06                 string size (6)
+04AD  7461626C6500       "table\0"
+                         const [4]: "table"
+04B3  01                 const type 3
+04B4  9D0C45E6           const [5]: (-431682403)
+04B8  04                 const type 4
+04B9  0A                 string size (10)
+04BA  6D52656379636C65+  "mRecycle"
+04C2  6400               "d\0"
+                         const [6]: "mRecycled"
+                         * functions:
+04C4  00                 sizep (0)
+                         * lines:
+04C5  13                 sizelineinfo (19)
+                         [pc] (line)
+04C6  33                 [01] (51)
+04C7  00                 [02] (51)
+04C8  00                 [03] (51)
+04C9  00                 [04] (51)
+04CA  33                 [05] (51)
+04CB  00                 [06] (51)
+04CC  00                 [07] (51)
+04CD  00                 [08] (52)
+04CE  33                 [09] (56)
+04CF  00                 [10] (57)
+04D0  00                 [11] (58)
+04D1  00                 [12] (58)
+04D2  33                 [13] (59)
+04D3  00                 [14] (59)
+04D4  00                 [15] (59)
+04D5  00                 [16] (59)
+04D6  33                 [17] (59)
+04D7  00                 [18] (60)
+04D8  00                 [19] (62)
+                         * locals:
+0512  00                 sizelocvars (0)
+                         * upvalues:
+0513  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0514                     ** function [3] definition (level 3)
+                         ** start of function **
+0514  00                 string size (0)
+                         source name: (none)
+0515  40                 line defined (64)
+0516  49                 last line defined (73)
+0517  00                 nups (0)
+0518  01                 numparams (1)
+0519  00                 is_vararg (0)
+051A  0B                 maxstacksize (11)
+                         * code:
+051B  11                 sizecode (17)
+051C  4E004000           [01] gettable   1   0   256  ; "mRecycled"
+0520  8E404000           [02] gettable   2   0   257  ; "mTimers"
+0524  DD800000           [03] getglobal  3   2        ; 248503575
+0528  12010001           [04] move       4   2      
+052C  E2000101           [05] call       3   2   4  
+0530  1AC00180           [06] jmp        8            ; to [15]
+fail op	35
+0534  63C0C003           [07] close      1  
+0538  1A400180           [08] jmp        6            ; to [15]
+053C  1D020100           [09] getglobal  8   4        ; table
+0540  0E424104           [10] gettable   8   8   261  ; -431682403
+0544  52028000           [11] move       9   1      
+0548  92028003           [12] move       10  7      
+054C  22428001           [13] call       8   3   1  
+0550  8CC04003           [14] settable   2   6   259  ; nil
+0554  D6800000           [15] tforloop   3       2    ; to [17] if exit
+0558  1A40FD7F           [16] jmp        -10          ; to [7]
+055C  1E008000           [17] return     0   1      
+                         * constants:
+0560  06                 sizek (6)
+0561  04                 const type 4
+0562  0A                 string size (10)
+0563  6D52656379636C65+  "mRecycle"
+056B  6400               "d\0"
+                         const [0]: "mRecycled"
+056D  04                 const type 4
+056E  08                 string size (8)
+056F  6D54696D65727300   "mTimers\0"
+                         const [1]: "mTimers"
+0577  01                 const type 3
+0578  17DDCF0E           const [2]: (248503575)
+057C  00                 const type 0
+                         const [3]: nil
+057D  04                 const type 4
+057E  06                 string size (6)
+057F  7461626C6500       "table\0"
+                         const [4]: "table"
+0585  01                 const type 3
+0586  9D0C45E6           const [5]: (-431682403)
+                         * functions:
+058A  00                 sizep (0)
+                         * lines:
+058B  11                 sizelineinfo (17)
+                         [pc] (line)
+058C  41                 [01] (65)
+058D  00                 [02] (66)
+058E  00                 [03] (67)
+058F  00                 [04] (67)
+0590  42                 [05] (67)
+0591  00                 [06] (67)
+0592  00                 [07] (68)
+0593  00                 [08] (68)
+0594  43                 [09] (69)
+0595  00                 [10] (69)
+0596  00                 [11] (69)
+0597  00                 [12] (69)
+0598  43                 [13] (69)
+0599  00                 [14] (70)
+059A  00                 [15] (67)
+059B  00                 [16] (71)
+059C  43                 [17] (73)
+                         * locals:
+05D0  00                 sizelocvars (0)
+                         * upvalues:
+05D1  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+05D2                     ** function [4] definition (level 3)
+                         ** start of function **
+05D2  00                 string size (0)
+                         source name: (none)
+05D3  4B                 line defined (75)
+05D4  6B                 last line defined (107)
+05D5  00                 nups (0)
+05D6  05                 numparams (5)
+05D7  00                 is_vararg (0)
+05D8  0D                 maxstacksize (13)
+                         * code:
+05D9  32                 sizecode (50)
+05DA  8E014000           [01] gettable   6   0   256  ; "mRecycled"
+05DE  CE414000           [02] gettable   7   0   257  ; "mTimers"
+05E2  0A020003           [03] len        8   6      
+fail op	21
+05E6  15000281           [04] concat     0   258 8  
+05EA  1A000580           [05] jmp        21           ; to [27]
+05EE  0A020003           [06] len        8   6      
+05F2  0E020203           [07] gettable   8   6   8  
+05F6  5DC20000           [08] getglobal  9   3        ; table
+05FA  4E02C104           [09] gettable   9   9   260  ; -843973282
+05FE  92020003           [10] move       10  6      
+0602  CA020003           [11] len        11  6      
+0606  62428001           [12] call       9   3   1  
+060A  4E414104           [13] gettable   5   8   261  ; "Id"
+060E  0C824083           [14] settable   8   262 258  ; "Delta" 0
+0612  0C428083           [15] settable   8   263 1    ; "Duration"
+0616  0C820084           [16] settable   8   264 2    ; "Callback"
+061A  0C028184           [17] settable   8   265 4    ; "Arg"
+fail op	35
+061E  63C0C201           [18] close      1  
+0622  1A400080           [19] jmp        2            ; to [22]
+fail op	35
+0626  6300C301           [20] close      1  
+062A  1A000080           [21] jmp        1            ; to [23]
+062E  57420000           [22] loadbool   9   0   1    ; false, to [24]
+0632  57028000           [23] loadbool   9   1   0    ; true
+0636  0C420285           [24] settable   8   266 9    ; "Loop"
+063A  CC018202           [25] settable   7   5   8  
+063E  1A400580           [26] jmp        22           ; to [49]
+0642  4E424300           [27] gettable   9   0   269  ; "mMaxIndex"
+0646  4382C304           [28] add        9   9   270  ; 0
+064A  0C408286           [29] settable   0   269 9    ; "mMaxIndex"
+064E  4E414300           [30] gettable   5   0   269  ; "mMaxIndex"
+0652  4B820100           [31] newtable   9   0   6    ; array=0, hash=6
+0656  4C824083           [32] settable   9   262 258  ; "Delta" 0
+065A  4C428083           [33] settable   9   263 1    ; "Duration"
+065E  4C820084           [34] settable   9   264 2    ; "Callback"
+0662  4C028184           [35] settable   9   265 4    ; "Arg"
+fail op	35
+0666  63C0C201           [36] close      1  
+066A  1A400080           [37] jmp        2            ; to [40]
+fail op	35
+066E  6300C301           [38] close      1  
+0672  1A000080           [39] jmp        1            ; to [41]
+0676  97420000           [40] loadbool   10  0   1    ; false, to [42]
+067A  97028000           [41] loadbool   10  1   0    ; true
+067E  4C820285           [42] settable   9   266 10   ; "Loop"
+0682  4C428182           [43] settable   9   261 5    ; "Id"
+0686  9DC20000           [44] getglobal  10  3        ; table
+068A  8EC24305           [45] gettable   10  10  271  ; -431682403
+068E  D2028003           [46] move       11  7      
+0692  12038004           [47] move       12  9      
+0696  A2428001           [48] call       10  3   1  
+069A  5E010001           [49] return     5   2      
+069E  1E008000           [50] return     0   1      
+                         * constants:
+06A2  10                 sizek (16)
+06A3  04                 const type 4
+06A4  0A                 string size (10)
+06A5  6D52656379636C65+  "mRecycle"
+06AD  6400               "d\0"
+                         const [0]: "mRecycled"
+06AF  04                 const type 4
+06B0  08                 string size (8)
+06B1  6D54696D65727300   "mTimers\0"
+                         const [1]: "mTimers"
+06B9  03                 const type 3
+06BA  00000000           const [2]: (0)
+06BE  04                 const type 4
+06BF  06                 string size (6)
+06C0  7461626C6500       "table\0"
+                         const [3]: "table"
+06C6  01                 const type 3
+06C7  5EFDB1CD           const [4]: (-843973282)
+06CB  04                 const type 4
+06CC  03                 string size (3)
+06CD  496400             "Id\0"
+                         const [5]: "Id"
+06D0  04                 const type 4
+06D1  06                 string size (6)
+06D2  44656C746100       "Delta\0"
+                         const [6]: "Delta"
+06D8  04                 const type 4
+06D9  09                 string size (9)
+06DA  4475726174696F6E+  "Duration"
+06E2  00                 "\0"
+                         const [7]: "Duration"
+06E3  04                 const type 4
+06E4  09                 string size (9)
+06E5  43616C6C6261636B+  "Callback"
+06ED  00                 "\0"
+                         const [8]: "Callback"
+06EE  04                 const type 4
+06EF  04                 string size (4)
+06F0  41726700           "Arg\0"
+                         const [9]: "Arg"
+06F4  04                 const type 4
+06F5  05                 string size (5)
+06F6  4C6F6F7000         "Loop\0"
+                         const [10]: "Loop"
+06FB  00                 const type 0
+                         const [11]: nil
+06FC  01                 const type 3
+06FD  01000000           const [12]: (1)
+0701  04                 const type 4
+0702  0A                 string size (10)
+0703  6D4D6178496E6465+  "mMaxInde"
+070B  7800               "x\0"
+                         const [13]: "mMaxIndex"
+070D  03                 const type 3
+070E  0000803F           const [14]: (0)
+0712  01                 const type 3
+0713  9D0C45E6           const [15]: (-431682403)
+                         * functions:
+0717  00                 sizep (0)
+                         * lines:
+0718  32                 sizelineinfo (50)
+                         [pc] (line)
+0719  4D                 [01] (77)
+071A  00                 [02] (78)
+071B  00                 [03] (80)
+071C  00                 [04] (80)
+071D  4E                 [05] (80)
+071E  00                 [06] (81)
+071F  00                 [07] (81)
+0720  00                 [08] (82)
+0721  50                 [09] (82)
+0722  00                 [10] (82)
+0723  00                 [11] (82)
+0724  00                 [12] (82)
+0725  50                 [13] (83)
+0726  00                 [14] (84)
+0727  00                 [15] (85)
+0728  00                 [16] (86)
+0729  50                 [17] (87)
+072A  00                 [18] (88)
+072B  00                 [19] (88)
+072C  00                 [20] (88)
+072D  51                 [21] (88)
+072E  00                 [22] (88)
+072F  00                 [23] (88)
+0730  00                 [24] (88)
+0731  51                 [25] (89)
+0732  00                 [26] (89)
+0733  00                 [27] (91)
+0734  00                 [28] (91)
+0735  52                 [29] (91)
+0736  00                 [30] (92)
+0737  00                 [31] (93)
+0738  00                 [32] (95)
+0739  52                 [33] (96)
+073A  00                 [34] (97)
+073B  00                 [35] (98)
+073C  00                 [36] (99)
+073D  52                 [37] (99)
+073E  00                 [38] (99)
+073F  00                 [39] (99)
+0740  00                 [40] (99)
+0741  52                 [41] (99)
+0742  00                 [42] (99)
+0743  00                 [43] (100)
+0744  00                 [44] (102)
+0745  52                 [45] (102)
+0746  00                 [46] (102)
+0747  00                 [47] (102)
+0748  00                 [48] (102)
+0749  53                 [49] (106)
+074A  00                 [50] (107)
+                         * locals:
+07E1  00                 sizelocvars (0)
+                         * upvalues:
+07E2  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+07E3                     ** function [5] definition (level 3)
+                         ** start of function **
+07E3  00                 string size (0)
+                         source name: (none)
+07E4  6D                 line defined (109)
+07E5  73                 last line defined (115)
+07E6  00                 nups (0)
+07E7  02                 numparams (2)
+07E8  00                 is_vararg (0)
+07E9  03                 maxstacksize (3)
+                         * code:
+07EA  0C                 sizecode (12)
+fail op	35
+07EB  2300C000           [01] close      0  
+07EF  1A400080           [02] jmp        2            ; to [5]
+07F3  97000000           [03] loadbool   2   0   0    ; false
+07F7  9E000001           [04] return     2   2      
+07FB  8E404000           [05] gettable   2   0   257  ; "mTimers"
+07FF  8E400001           [06] gettable   2   2   1  
+fail op	35
+0803  23004001           [07] close      0  
+0807  1A000080           [08] jmp        1            ; to [10]
+080B  97400000           [09] loadbool   2   0   1    ; false, to [11]
+080F  97008000           [10] loadbool   2   1   0    ; true
+0813  9E000001           [11] return     2   2      
+0817  1E008000           [12] return     0   1      
+                         * constants:
+081B  02                 sizek (2)
+081C  00                 const type 0
+                         const [0]: nil
+081D  04                 const type 4
+081E  08                 string size (8)
+081F  6D54696D65727300   "mTimers\0"
+                         const [1]: "mTimers"
+                         * functions:
+0827  00                 sizep (0)
+                         * lines:
+0828  0C                 sizelineinfo (12)
+                         [pc] (line)
+0829  6E                 [01] (110)
+082A  00                 [02] (110)
+082B  00                 [03] (111)
+082C  00                 [04] (111)
+082D  6E                 [05] (114)
+082E  00                 [06] (114)
+082F  00                 [07] (114)
+0830  00                 [08] (114)
+0831  6F                 [09] (114)
+0832  00                 [10] (114)
+0833  00                 [11] (114)
+0834  00                 [12] (115)
+                         * locals:
+0859  00                 sizelocvars (0)
+                         * upvalues:
+085A  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+085B                     ** function [6] definition (level 3)
+                         ** start of function **
+085B  00                 string size (0)
+                         source name: (none)
+085C  75                 line defined (117)
+085D  7E                 last line defined (126)
+085E  00                 nups (0)
+085F  02                 numparams (2)
+0860  00                 is_vararg (0)
+0861  09                 maxstacksize (9)
+                         * code:
+0862  0F                 sizecode (15)
+0863  8E004000           [01] gettable   2   0   256  ; "mTimers"
+0867  DD400000           [02] getglobal  3   1        ; 248503575
+086B  12010001           [03] move       4   2      
+086F  E2000101           [04] call       3   2   4  
+0873  1A000180           [05] jmp        5            ; to [11]
+0877  0E82C003           [06] gettable   8   7   258  ; "Arg"
+fail op	35
+087B  23400004           [07] close      0  
+087F  1A400080           [08] jmp        2            ; to [11]
+0883  17028000           [09] loadbool   8   1   0    ; true
+0887  1E020001           [10] return     8   2      
+088B  D6800000           [11] tforloop   3       2    ; to [13] if exit
+088F  1A00FE7F           [12] jmp        -7           ; to [6]
+0893  17020000           [13] loadbool   8   0   0    ; false
+0897  1E020001           [14] return     8   2      
+089B  1E008000           [15] return     0   1      
+                         * constants:
+089F  03                 sizek (3)
+08A0  04                 const type 4
+08A1  08                 string size (8)
+08A2  6D54696D65727300   "mTimers\0"
+                         const [0]: "mTimers"
+08AA  01                 const type 3
+08AB  17DDCF0E           const [1]: (248503575)
+08AF  04                 const type 4
+08B0  04                 string size (4)
+08B1  41726700           "Arg\0"
+                         const [2]: "Arg"
+                         * functions:
+08B5  00                 sizep (0)
+                         * lines:
+08B6  0F                 sizelineinfo (15)
+                         [pc] (line)
+08B7  76                 [01] (118)
+08B8  00                 [02] (119)
+08B9  00                 [03] (119)
+08BA  00                 [04] (119)
+08BB  77                 [05] (119)
+08BC  00                 [06] (120)
+08BD  00                 [07] (120)
+08BE  00                 [08] (120)
+08BF  77                 [09] (121)
+08C0  00                 [10] (121)
+08C1  00                 [11] (119)
+08C2  00                 [12] (122)
+08C3  77                 [13] (125)
+08C4  00                 [14] (125)
+08C5  00                 [15] (126)
+                         * locals:
+08F3  00                 sizelocvars (0)
+                         * upvalues:
+08F4  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+08F5                     ** function [7] definition (level 3)
+                         ** start of function **
+08F5  00                 string size (0)
+                         source name: (none)
+08F7  01                 line defined (128)
+08F8  89                 last line defined (137)
+08F9  01                 nups (0)
+08FA  00                 numparams (2)
+08FB  02                 is_vararg (0)
+08FC  00                 maxstacksize (9)
+                         * code:
+08FE  0E                 sizecode (14)
+08FF  8E004000           [01] gettable   2   0   256  ; "mTimers"
+0903  DD400000           [02] getglobal  3   1        ; 248503575
+0907  12010001           [03] move       4   2      
+090B  E2000101           [04] call       3   2   4  
+090F  1AC00080           [05] jmp        4            ; to [10]
+0913  0E82C003           [06] gettable   8   7   258  ; "Arg"
+fail op	35
+0917  23400004           [07] close      0  
+091B  1A000080           [08] jmp        1            ; to [10]
+091F  DE010001           [09] return     7   2      
+0923  D6800000           [10] tforloop   3       2    ; to [12] if exit
+0927  1A40FE7F           [11] jmp        -6           ; to [6]
+092B  06020004           [12] loadnil    8   8      
+092F  1E020001           [13] return     8   2      
+0933  1E008000           [14] return     0   1      
+                         * constants:
+0937  03                 sizek (3)
+0938  04                 const type 4
+0939  08                 string size (8)
+093A  6D54696D65727300   "mTimers\0"
+                         const [0]: "mTimers"
+0942  01                 const type 3
+0943  17DDCF0E           const [1]: (248503575)
+0947  04                 const type 4
+0948  04                 string size (4)
+0949  41726700           "Arg\0"
+                         const [2]: "Arg"
+                         * functions:
+094D  00                 sizep (0)
+                         * lines:
+094E  0E                 sizelineinfo (14)
+                         [pc] (line)
+094F  81                 [01] (-127)
+0950  00                 [02] (-126)
+0951  00                 [03] (-126)
+0952  00                 [04] (-126)
+0953  82                 [05] (-126)
+0954  00                 [06] (-125)
+0955  00                 [07] (-125)
+0956  00                 [08] (-125)
+0957  82                 [09] (-124)
+0958  00                 [10] (-126)
+0959  00                 [11] (-123)
+095A  00                 [12] (-120)
+095B  82                 [13] (-120)
+095C  00                 [14] (-119)
+                         * locals:
+0987  00                 sizelocvars (0)
+                         * upvalues:
+0988  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0989                     ** function [8] definition (level 3)
+                         ** start of function **
+0989  00                 string size (0)
+                         source name: (none)
+098B  01                 line defined (139)
+098C  94                 last line defined (148)
+098D  01                 nups (0)
+098E  00                 numparams (2)
+098F  02                 is_vararg (0)
+0990  00                 maxstacksize (5)
+                         * code:
+0992  11                 sizecode (17)
+fail op	35
+0993  6300C000           [01] close      1  
+0997  1A000180           [02] jmp        5            ; to [8]
+fail op	21
+099B  5540C000           [03] concat     1   1   257
+099F  1A800080           [04] jmp        3            ; to [8]
+09A3  8E804000           [05] gettable   2   0   258  ; "mMaxIndex"
+fail op	21
+09A7  15400001           [06] concat     0   2   1  
+09AB  1A000080           [07] jmp        1            ; to [9]
+09AF  1E008000           [08] return     0   1      
+09B3  8EC04000           [09] gettable   2   0   259  ; "mTimers"
+09B7  8E400001           [10] gettable   2   2   1  
+fail op	35
+09BB  63004001           [11] close      1  
+09BF  1AC00080           [12] jmp        4            ; to [17]
+09C3  CE004101           [13] gettable   3   2   260  ; "Duration"
+09C7  0E414101           [14] gettable   4   2   261  ; "Delta"
+09CB  CD008101           [15] sub        3   3   4  
+09CF  DE000001           [16] return     3   2      
+09D3  1E008000           [17] return     0   1      
+                         * constants:
+09D7  06                 sizek (6)
+09D8  00                 const type 0
+                         const [0]: nil
+09D9  03                 const type 3
+09DA  0000803F           const [1]: (0)
+09DE  04                 const type 4
+09DF  0A                 string size (10)
+09E0  6D4D6178496E6465+  "mMaxInde"
+09E8  7800               "x\0"
+                         const [2]: "mMaxIndex"
+09EA  04                 const type 4
+09EB  08                 string size (8)
+09EC  6D54696D65727300   "mTimers\0"
+                         const [3]: "mTimers"
+09F4  04                 const type 4
+09F5  09                 string size (9)
+09F6  4475726174696F6E+  "Duration"
+09FE  00                 "\0"
+                         const [4]: "Duration"
+09FF  04                 const type 4
+0A00  06                 string size (6)
+0A01  44656C746100       "Delta\0"
+                         const [5]: "Delta"
+                         * functions:
+0A07  00                 sizep (0)
+                         * lines:
+0A08  11                 sizelineinfo (17)
+                         [pc] (line)
+0A09  8C                 [01] (-116)
+0A0A  00                 [02] (-116)
+0A0B  00                 [03] (-116)
+0A0C  00                 [04] (-116)
+0A0D  8C                 [05] (-116)
+0A0E  00                 [06] (-116)
+0A0F  00                 [07] (-116)
+0A10  00                 [08] (-115)
+0A11  8C                 [09] (-112)
+0A12  00                 [10] (-112)
+0A13  00                 [11] (-111)
+0A14  00                 [12] (-111)
+0A15  8C                 [13] (-110)
+0A16  00                 [14] (-110)
+0A17  00                 [15] (-110)
+0A18  00                 [16] (-110)
+0A19  8C                 [17] (-108)
+                         * locals:
+0A4D  00                 sizelocvars (0)
+                         * upvalues:
+0A4E  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+0A4F  1A                 sizelineinfo (26)
+                         [pc] (line)
+0A50  04                 [01] (4)
+0A51  00                 [02] (6)
+0A52  00                 [03] (6)
+0A53  00                 [04] (7)
+0A54  06                 [05] (7)
+0A55  00                 [06] (8)
+0A56  00                 [07] (13)
+0A57  00                 [08] (13)
+0A58  06                 [09] (48)
+0A59  00                 [10] (48)
+0A5A  00                 [11] (62)
+0A5B  00                 [12] (62)
+0A5C  07                 [13] (73)
+0A5D  00                 [14] (73)
+0A5E  00                 [15] (107)
+0A5F  00                 [16] (107)
+0A60  07                 [17] (115)
+0A61  00                 [18] (115)
+0A62  00                 [19] (126)
+0A63  00                 [20] (126)
+0A64  08                 [21] (-119)
+0A65  00                 [22] (-119)
+0A66  00                 [23] (-108)
+0A67  00                 [24] (-108)
+0A68  0D                 [25] (-107)
+0A69  00                 [26] (-106)
+                         * locals:
+0AB8  00                 sizelocvars (0)
+                         * upvalues:
+0AB9  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+0ABA  09                 sizelineinfo (9)
+                         [pc] (line)
+0ABB  01                 [1] (1)
+0ABC  00                 [2] (1)
+0ABD  00                 [3] (1)
+0ABE  00                 [4] (1)
+0ABF  01                 [5] (1)
+0AC0  00                 [6] (-106)
+0AC1  00                 [7] (-106)
+0AC2  00                 [8] (3)
+0AC3  01                 [9] (-106)
+                         * locals:
+0ADF  00                 sizelocvars (0)
+                         * upvalues:
+0AE0  00                 sizeupvalues (0)
+                         ** end of function **
+
+0AE1                     ** end of chunk **

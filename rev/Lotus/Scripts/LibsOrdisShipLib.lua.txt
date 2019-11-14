@@ -1,0 +1,670 @@
+1	C:\wlua_dump\path\Lotus\Scripts\LibsOrdisShipLib.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Scripts\LibsOrdisShipLib.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  05                 size of number (bytes)
+0008  17                 integral (1=integral)
+423
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+package
+seeall
+/Lotus/Types/Ship/AdvancedOrdisDeco
+Dematerialize
+MaterializeToWaypoint
+gRegion
+gWaypointType
+string
+OrdisWaypoint
+table
+gRegion
+Could not find advanced ordis!
+Failed to find closest Ordis point!
+Could not find ordis waypoints!
+math
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  05                 maxstacksize (5)
+                         * code:
+0008  17                 sizecode (23)
+0009  1D000000           [01] getglobal  0   0        ; 954442511
+000D  41000001           [02] vararg     1   2      
+0011  9D400000           [03] getglobal  2   1        ; package
+0015  8E804001           [04] gettable   2   2   258  ; "seeall"
+0019  22408001           [05] call       0   3   1  
+001D  1DC00000           [06] getglobal  0   3        ; 738251817
+0021  59000100           [07] loadk      1   4        ; "/Lotus/Types/Ship/AdvancedOrdisDeco"
+0025  22800001           [08] call       0   2   2  
+0029  65000000           [09] closure    1   0      
+002D  A5400000           [10] closure    2   1      
+0031  E5800000           [11] closure    3   2      
+0035  25C10000           [12] closure    4   3      
+0039  12008001           [13] move       0   3      
+003D  20410100           [14] setglobal  4   5        ; Dematerialize
+0041  20810100           [15] setglobal  4   6        ; -864002458
+0045  25010100           [16] closure    4   4      
+0049  12000000           [17] move       0   0      
+004D  12008000           [18] move       0   1      
+0051  12008001           [19] move       0   3      
+0055  12000001           [20] move       0   2      
+0059  20C10100           [21] setglobal  4   7        ; MaterializeToWaypoint
+005D  20010200           [22] setglobal  4   8        ; -614825950
+0061  1E008000           [23] return     0   1      
+                         * constants:
+0065  09                 sizek (9)
+0066  01                 const type 3
+0067  0FA3E338           const [0]: (954442511)
+006B  04                 const type 4
+006C  08                 string size (8)
+006D  7061636B61676500   "package\0"
+                         const [1]: "package"
+0075  04                 const type 4
+0076  07                 string size (7)
+0077  736565616C6C00     "seeall\0"
+                         const [2]: "seeall"
+007E  01                 const type 3
+007F  29D4002C           const [3]: (738251817)
+0083  04                 const type 4
+0084  24                 string size (36)
+0085  2F4C6F7475732F54+  "/Lotus/T"
+008D  797065732F536869+  "ypes/Shi"
+0095  702F416476616E63+  "p/Advanc"
+009D  65644F7264697344+  "edOrdisD"
+00A5  65636F00           "eco\0"
+                         const [4]: "/Lotus/Types/Ship/AdvancedOrdisDeco"
+00A9  04                 const type 4
+00AA  0E                 string size (14)
+00AB  44656D6174657269+  "Demateri"
+00B3  616C697A6500       "alize\0"
+                         const [5]: "Dematerialize"
+00B9  01                 const type 3
+00BA  665E80CC           const [6]: (-864002458)
+00BE  04                 const type 4
+00BF  16                 string size (22)
+00C0  4D6174657269616C+  "Material"
+00C8  697A65546F576179+  "izeToWay"
+00D0  706F696E7400       "point\0"
+                         const [7]: "MaterializeToWaypoint"
+00D6  01                 const type 3
+00D7  22805ADB           const [8]: (-614825950)
+                         * functions:
+00DB  05                 sizep (5)
+                         
+00DC                     ** function [0] definition (level 2)
+                         ** start of function **
+00DC  00                 string size (0)
+                         source name: (none)
+00DD  05                 line defined (5)
+00DE  14                 last line defined (20)
+00DF  00                 nups (0)
+00E0  00                 numparams (0)
+00E1  00                 is_vararg (0)
+00E2  0A                 maxstacksize (10)
+                         * code:
+00E3  24                 sizecode (36)
+00E4  1D000000           [01] getglobal  0   0        ; gRegion
+00E8  24404000           [02] self       0   0   257  ; 152279552
+00EC  9D800000           [03] getglobal  2   2        ; gWaypointType
+00F0  22808001           [04] call       0   3   2  
+00F4  4B000000           [05] newtable   1   0   0    ; array=0, hash=0
+00F8  86000001           [06] loadnil    2   2      
+00FC  DDC00000           [07] getglobal  3   3        ; 1074689893
+0100  12010000           [08] move       4   0      
+0104  E2800001           [09] call       3   2   2  
+0108  D8400000           [10] test       3       1    ; to [12] if false
+010C  1A800580           [11] jmp        23           ; to [35]
+0110  D9000100           [12] loadk      3   4        ; 0
+0114  0A010000           [13] len        4   0      
+0118  59010100           [14] loadk      5   4        ; 0
+011C  D0400480           [15] forprep    3   18       ; to [34]
+0120  DD410100           [16] getglobal  7   5        ; -1615931716
+0124  0E820100           [17] gettable   8   0   6  
+0128  24824104           [18] self       8   8   262  ; -830264577
+012C  22020001           [19] call       8   2   0  
+0130  E2810000           [20] call       7   0   2  
+0134  92008003           [21] move       2   7      
+0138  DDC10100           [22] getglobal  7   7        ; string
+013C  CE01C203           [23] gettable   7   7   264  ; -565905820
+0140  12020001           [24] move       8   2      
+0144  59420200           [25] loadk      9   9        ; "OrdisWaypoint"
+0148  E2818001           [26] call       7   3   2  
+fail op	35
+014C  6380C203           [27] close      1  
+0150  1A000180           [28] jmp        5            ; to [34]
+0154  DDC10200           [29] getglobal  7   11       ; table
+0158  CE01C303           [30] gettable   7   7   268  ; -431682403
+015C  12028000           [31] move       8   1      
+0160  4E820100           [32] gettable   9   0   6  
+0164  E2418001           [33] call       7   3   1  
+0168  D400FB7F           [34] forloop    3   -19      ; to [16] if loop
+016C  5E000001           [35] return     1   2      
+0170  1E008000           [36] return     0   1      
+                         * constants:
+0174  0D                 sizek (13)
+0175  04                 const type 4
+0176  08                 string size (8)
+0177  67526567696F6E00   "gRegion\0"
+                         const [0]: "gRegion"
+017F  01                 const type 3
+0180  009A1309           const [1]: (152279552)
+0184  04                 const type 4
+0185  0E                 string size (14)
+0186  67576179706F696E+  "gWaypoin"
+018E  745479706500       "tType\0"
+                         const [2]: "gWaypointType"
+0194  01                 const type 3
+0195  65770E40           const [3]: (1074689893)
+0199  03                 const type 3
+019A  0000803F           const [4]: (0)
+019E  01                 const type 3
+019F  BCD6AE9F           const [5]: (-1615931716)
+01A3  01                 const type 3
+01A4  FF2A83CE           const [6]: (-830264577)
+01A8  04                 const type 4
+01A9  07                 string size (7)
+01AA  737472696E6700     "string\0"
+                         const [7]: "string"
+01B1  01                 const type 3
+01B2  64F644DE           const [8]: (-565905820)
+01B6  04                 const type 4
+01B7  0E                 string size (14)
+01B8  4F72646973576179+  "OrdisWay"
+01C0  706F696E7400       "point\0"
+                         const [9]: "OrdisWaypoint"
+01C6  00                 const type 0
+                         const [10]: nil
+01C7  04                 const type 4
+01C8  06                 string size (6)
+01C9  7461626C6500       "table\0"
+                         const [11]: "table"
+01CF  01                 const type 3
+01D0  9D0C45E6           const [12]: (-431682403)
+                         * functions:
+01D4  00                 sizep (0)
+                         * lines:
+01D5  24                 sizelineinfo (36)
+                         [pc] (line)
+01D6  06                 [01] (6)
+01D7  00                 [02] (6)
+01D8  00                 [03] (6)
+01D9  00                 [04] (6)
+01DA  06                 [05] (7)
+01DB  00                 [06] (9)
+01DC  00                 [07] (10)
+01DD  00                 [08] (10)
+01DE  06                 [09] (10)
+01DF  00                 [10] (10)
+01E0  00                 [11] (10)
+01E1  00                 [12] (11)
+01E2  06                 [13] (11)
+01E3  00                 [14] (11)
+01E4  00                 [15] (11)
+01E5  00                 [16] (12)
+01E6  07                 [17] (12)
+01E7  00                 [18] (12)
+01E8  00                 [19] (12)
+01E9  00                 [20] (12)
+01EA  09                 [21] (12)
+01EB  00                 [22] (13)
+01EC  00                 [23] (13)
+01ED  00                 [24] (13)
+01EE  0A                 [25] (13)
+01EF  00                 [26] (13)
+01F0  00                 [27] (13)
+01F1  00                 [28] (13)
+01F2  0A                 [29] (14)
+01F3  00                 [30] (14)
+01F4  00                 [31] (14)
+01F5  00                 [32] (14)
+01F6  0A                 [33] (14)
+01F7  00                 [34] (11)
+01F8  00                 [35] (19)
+01F9  00                 [36] (20)
+                         * locals:
+0266  00                 sizelocvars (0)
+                         * upvalues:
+0267  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0268                     ** function [1] definition (level 2)
+                         ** start of function **
+0268  00                 string size (0)
+                         source name: (none)
+0269  16                 line defined (22)
+026A  18                 last line defined (24)
+026B  00                 nups (0)
+026C  01                 numparams (1)
+026D  00                 is_vararg (0)
+026E  05                 maxstacksize (5)
+                         * code:
+026F  05                 sizecode (5)
+0270  64004000           [1] self       1   0   256  ; 2109594123
+0274  D7008000           [2] loadbool   3   1   0    ; true
+0278  17018000           [3] loadbool   4   1   0    ; true
+027C  62400002           [4] call       1   4   1  
+0280  1E008000           [5] return     0   1      
+                         * constants:
+0284  01                 sizek (1)
+0285  01                 const type 3
+0286  0BDABD7D           const [0]: (2109594123)
+                         * functions:
+028A  00                 sizep (0)
+                         * lines:
+028B  05                 sizelineinfo (5)
+                         [pc] (line)
+028C  17                 [1] (23)
+028D  00                 [2] (23)
+028E  00                 [3] (23)
+028F  00                 [4] (23)
+0290  17                 [5] (24)
+                         * locals:
+02A0  00                 sizelocvars (0)
+                         * upvalues:
+02A1  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+02A2                     ** function [2] definition (level 2)
+                         ** start of function **
+02A2  00                 string size (0)
+                         source name: (none)
+02A3  1A                 line defined (26)
+02A4  1C                 last line defined (28)
+02A5  00                 nups (0)
+02A6  01                 numparams (1)
+02A7  00                 is_vararg (0)
+02A8  05                 maxstacksize (5)
+                         * code:
+02A9  05                 sizecode (5)
+02AA  64004000           [1] self       1   0   256  ; 2109594123
+02AE  D7000000           [2] loadbool   3   0   0    ; false
+02B2  17018000           [3] loadbool   4   1   0    ; true
+02B6  62400002           [4] call       1   4   1  
+02BA  1E008000           [5] return     0   1      
+                         * constants:
+02BE  01                 sizek (1)
+02BF  01                 const type 3
+02C0  0BDABD7D           const [0]: (2109594123)
+                         * functions:
+02C4  00                 sizep (0)
+                         * lines:
+02C5  05                 sizelineinfo (5)
+                         [pc] (line)
+02C6  1B                 [1] (27)
+02C7  00                 [2] (27)
+02C8  00                 [3] (27)
+02C9  00                 [4] (27)
+02CA  1B                 [5] (28)
+                         * locals:
+02DA  00                 sizelocvars (0)
+                         * upvalues:
+02DB  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+02DC                     ** function [3] definition (level 2)
+                         ** start of function **
+02DC  00                 string size (0)
+                         source name: (none)
+02DD  1E                 line defined (30)
+02DE  20                 last line defined (32)
+02DF  01                 nups (1)
+02E0  01                 numparams (1)
+02E1  00                 is_vararg (0)
+02E2  03                 maxstacksize (3)
+                         * code:
+02E3  04                 sizecode (4)
+02E4  53000000           [1] getupval   1   0      
+02E8  92000000           [2] move       2   0      
+02EC  62400001           [3] call       1   2   1  
+02F0  1E008000           [4] return     0   1      
+                         * constants:
+02F4  00                 sizek (0)
+                         * functions:
+02F5  00                 sizep (0)
+                         * lines:
+02F6  04                 sizelineinfo (4)
+                         [pc] (line)
+02F7  1F                 [1] (31)
+02F8  00                 [2] (31)
+02F9  00                 [3] (31)
+02FA  00                 [4] (32)
+                         * locals:
+0307  00                 sizelocvars (0)
+                         * upvalues:
+0308  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0309                     ** function [4] definition (level 2)
+                         ** start of function **
+0309  00                 string size (0)
+                         source name: (none)
+030A  22                 line defined (34)
+030B  4C                 last line defined (76)
+030C  04                 nups (4)
+030D  02                 numparams (2)
+030E  00                 is_vararg (0)
+030F  13                 maxstacksize (19)
+                         * code:
+0310  63                 sizecode (99)
+0311  9D000000           [01] getglobal  2   0        ; gRegion
+0315  A4404001           [02] self       2   2   257  ; 152279552
+0319  13010000           [03] getupval   4   0      
+031D  A2808001           [04] call       2   3   2  
+0321  DD800000           [05] getglobal  3   2        ; 1074689893
+0325  12010001           [06] move       4   2      
+0329  E2800001           [07] call       3   2   2  
+032D  D8000000           [08] test       3       0    ; to [10] if true
+0331  1AC00080           [09] jmp        4            ; to [14]
+0335  DDC00000           [10] getglobal  3   3        ; -1817107093
+0339  19010100           [11] loadk      4   4        ; "Could not find advanced ordis!"
+033D  E2400001           [12] call       3   2   1  
+0341  1E008000           [13] return     0   1      
+0345  18000000           [14] test       0       0    ; to [16] if true
+0349  1A800C80           [15] jmp        51           ; to [67]
+034D  C6008001           [16] loadnil    3   3      
+0351  13018000           [17] getupval   4   1      
+0355  22818000           [18] call       4   1   2  
+0359  5D810000           [19] getglobal  5   2        ; 1074689893
+035D  92010002           [20] move       6   4      
+0361  62810001           [21] call       5   2   2  
+0365  58410000           [22] test       5       1    ; to [24] if false
+0369  1A800580           [23] jmp        23           ; to [47]
+036D  5D010000           [24] getglobal  5   0        ; gRegion
+0371  6441C102           [25] self       5   5   261  ; 65205951
+0375  62810001           [26] call       5   2   2  
+0379  6481C102           [27] self       5   5   262  ; 1839670529
+037D  62810001           [28] call       5   2   2  
+0381  99C10100           [29] loadk      6   7        ; 0
+0385  C6018003           [30] loadnil    7   7      
+0389  19020200           [31] loadk      8   8        ; 0
+038D  4A020002           [32] len        9   4      
+0391  99020200           [33] loadk      10  8        ; 0
+0395  10820280           [34] forprep    8   11       ; to [46]
+0399  1D430200           [35] getglobal  12  9        ; 562846818
+039D  4EC30202           [36] gettable   13  4   11 
+03A1  6483C106           [37] self       13  13  262  ; 1839670529
+03A5  62830001           [38] call       13  2   2  
+03A9  4D438302           [39] sub        13  5   13 
+03AD  22830001           [40] call       12  2   2  
+03B1  D2010006           [41] move       7   12     
+fail op	21
+03B5  15808103           [42] concat     0   7   6  
+03B9  1A400080           [43] jmp        2            ; to [46]
+03BD  92018003           [44] move       6   7      
+03C1  CEC00202           [45] gettable   3   4   11 
+03C5  14C2FC7F           [46] forloop    8   -12      ; to [35] if loop
+fail op	35
+03C9  2380C201           [47] close      0  
+03CD  1AC00080           [48] jmp        4            ; to [53]
+03D1  1DC30000           [49] getglobal  12  3        ; -1817107093
+03D5  59C30200           [50] loadk      13  11       ; "Failed to find closest Ordis point!"
+03D9  22430001           [51] call       12  2   1  
+03DD  1A400B80           [52] jmp        46           ; to [99]
+03E1  13030001           [53] getupval   12  2      
+03E5  4E034201           [54] gettable   13  2   264  ; 0
+03E9  22430001           [55] call       12  2   1  
+03ED  0E034201           [56] gettable   12  2   264  ; 0
+03F1  24034306           [57] self       12  12  268  ; 970454089
+03F5  A483C101           [58] self       14  3   262  ; 1839670529
+03F9  A2830001           [59] call       14  2   2  
+03FD  E443C301           [60] self       15  3   269  ; -231049143
+0401  E2030001           [61] call       15  2   0  
+0405  22430000           [62] call       12  0   1  
+0409  13038001           [63] getupval   12  3      
+040D  4E034201           [64] gettable   13  2   264  ; 0
+0411  22430001           [65] call       12  2   1  
+0415  1AC00780           [66] jmp        32           ; to [99]
+0419  1D030000           [67] getglobal  12  0        ; gRegion
+041D  24834306           [68] self       12  12  270  ; -1485896174
+0421  92038000           [69] move       14  1      
+0425  22838001           [70] call       12  3   2  
+0429  5D830000           [71] getglobal  13  2        ; 1074689893
+042D  92030006           [72] move       14  12     
+0431  62830001           [73] call       13  2   2  
+0435  58030000           [74] test       13      0    ; to [76] if true
+0439  1AC00080           [75] jmp        4            ; to [80]
+043D  5DC30000           [76] getglobal  13  3        ; -1817107093
+0441  99C30300           [77] loadk      14  15       ; "Could not find ordis waypoints!"
+0445  62430001           [78] call       13  2   1  
+0449  1E008000           [79] return     0   1      
+044D  53030001           [80] getupval   13  2      
+0451  8E034201           [81] gettable   14  2   264  ; 0
+0455  62430001           [82] call       13  2   1  
+0459  5D030400           [83] getglobal  13  16       ; math
+045D  4E43C406           [84] gettable   13  13  273  ; -2040962569
+0461  99030200           [85] loadk      14  8        ; 0
+0465  CA030006           [86] len        15  12     
+0469  62838001           [87] call       13  3   2  
+046D  4E430306           [88] gettable   13  12  13 
+0471  8E034201           [89] gettable   14  2   264  ; 0
+0475  A4034307           [90] self       14  14  268  ; 970454089
+0479  2484C106           [91] self       16  13  262  ; 1839670529
+047D  22840001           [92] call       16  2   2  
+0481  6444C306           [93] self       17  13  269  ; -231049143
+0485  62040001           [94] call       17  2   0  
+0489  A2430000           [95] call       14  0   1  
+048D  93038001           [96] getupval   14  3      
+0491  CE034201           [97] gettable   15  2   264  ; 0
+0495  A2430001           [98] call       14  2   1  
+0499  1E008000           [99] return     0   1      
+                         * constants:
+049D  12                 sizek (18)
+049E  04                 const type 4
+049F  08                 string size (8)
+04A0  67526567696F6E00   "gRegion\0"
+                         const [0]: "gRegion"
+04A8  01                 const type 3
+04A9  009A1309           const [1]: (152279552)
+04AD  01                 const type 3
+04AE  65770E40           const [2]: (1074689893)
+04B2  01                 const type 3
+04B3  6B25B193           const [3]: (-1817107093)
+04B7  04                 const type 4
+04B8  1F                 string size (31)
+04B9  436F756C64206E6F+  "Could no"
+04C1  742066696E642061+  "t find a"
+04C9  6476616E63656420+  "dvanced "
+04D1  6F726469732100     "ordis!\0"
+                         const [4]: "Could not find advanced ordis!"
+04D8  01                 const type 3
+04D9  BFF6E203           const [5]: (65205951)
+04DD  01                 const type 3
+04DE  0125A76D           const [6]: (1839670529)
+04E2  03                 const type 3
+04E3  0050C347           const [7]: (0)
+04E7  03                 const type 3
+04E8  0000803F           const [8]: (0)
+04EC  01                 const type 3
+04ED  625C8C21           const [9]: (562846818)
+04F1  00                 const type 0
+                         const [10]: nil
+04F2  04                 const type 4
+04F3  24                 string size (36)
+04F4  4661696C65642074+  "Failed t"
+04FC  6F2066696E642063+  "o find c"
+0504  6C6F73657374204F+  "losest O"
+050C  7264697320706F69+  "rdis poi"
+0514  6E742100           "nt!\0"
+                         const [11]: "Failed to find closest Ordis point!"
+0518  01                 const type 3
+0519  49F4D739           const [12]: (970454089)
+051D  01                 const type 3
+051E  49783AF2           const [13]: (-231049143)
+0522  01                 const type 3
+0523  12066FA7           const [14]: (-1485896174)
+0527  04                 const type 4
+0528  20                 string size (32)
+0529  436F756C64206E6F+  "Could no"
+0531  742066696E64206F+  "t find o"
+0539  7264697320776179+  "rdis way"
+0541  706F696E74732100   "points!\0"
+                         const [15]: "Could not find ordis waypoints!"
+0549  04                 const type 4
+054A  05                 string size (5)
+054B  6D61746800         "math\0"
+                         const [16]: "math"
+0550  01                 const type 3
+0551  F7615986           const [17]: (-2040962569)
+                         * functions:
+0555  00                 sizep (0)
+                         * lines:
+0556  63                 sizelineinfo (99)
+                         [pc] (line)
+0557  23                 [01] (35)
+0558  00                 [02] (35)
+0559  00                 [03] (35)
+055A  00                 [04] (35)
+055B  23                 [05] (36)
+055C  00                 [06] (36)
+055D  00                 [07] (36)
+055E  00                 [08] (36)
+055F  23                 [09] (36)
+0560  00                 [10] (37)
+0561  00                 [11] (37)
+0562  00                 [12] (37)
+0563  23                 [13] (38)
+0564  00                 [14] (41)
+0565  00                 [15] (41)
+0566  00                 [16] (42)
+0567  24                 [17] (43)
+0568  00                 [18] (43)
+0569  00                 [19] (44)
+056A  00                 [20] (44)
+056B  24                 [21] (44)
+056C  00                 [22] (44)
+056D  00                 [23] (44)
+056E  00                 [24] (45)
+056F  24                 [25] (45)
+0570  00                 [26] (45)
+0571  00                 [27] (45)
+0572  00                 [28] (45)
+0573  24                 [29] (46)
+0574  00                 [30] (47)
+0575  00                 [31] (48)
+0576  00                 [32] (48)
+0577  24                 [33] (48)
+0578  00                 [34] (48)
+0579  00                 [35] (49)
+057A  00                 [36] (49)
+057B  25                 [37] (49)
+057C  00                 [38] (49)
+057D  00                 [39] (49)
+057E  00                 [40] (49)
+057F  25                 [41] (49)
+0580  00                 [42] (50)
+0581  00                 [43] (50)
+0582  00                 [44] (51)
+0583  25                 [45] (52)
+0584  00                 [46] (48)
+0585  00                 [47] (57)
+0586  00                 [48] (57)
+0587  26                 [49] (58)
+0588  00                 [50] (58)
+0589  00                 [51] (58)
+058A  00                 [52] (58)
+058B  29                 [53] (60)
+058C  00                 [54] (60)
+058D  00                 [55] (60)
+058E  00                 [56] (61)
+058F  29                 [57] (61)
+0590  00                 [58] (61)
+0591  00                 [59] (61)
+0592  00                 [60] (61)
+0593  2A                 [61] (61)
+0594  00                 [62] (61)
+0595  00                 [63] (62)
+0596  00                 [64] (62)
+0597  2B                 [65] (62)
+0598  00                 [66] (63)
+0599  00                 [67] (65)
+059A  00                 [68] (65)
+059B  2B                 [69] (65)
+059C  00                 [70] (65)
+059D  00                 [71] (66)
+059E  00                 [72] (66)
+059F  2C                 [73] (66)
+05A0  00                 [74] (66)
+05A1  00                 [75] (66)
+05A2  00                 [76] (67)
+05A3  2C                 [77] (67)
+05A4  00                 [78] (67)
+05A5  00                 [79] (68)
+05A6  00                 [80] (71)
+05A7  2C                 [81] (71)
+05A8  00                 [82] (71)
+05A9  00                 [83] (72)
+05AA  00                 [84] (72)
+05AB  2C                 [85] (72)
+05AC  00                 [86] (72)
+05AD  00                 [87] (72)
+05AE  00                 [88] (72)
+05AF  2C                 [89] (73)
+05B0  00                 [90] (73)
+05B1  00                 [91] (73)
+05B2  00                 [92] (73)
+05B3  2D                 [93] (73)
+05B4  00                 [94] (73)
+05B5  00                 [95] (73)
+05B6  00                 [96] (74)
+05B7  2D                 [97] (74)
+05B8  00                 [98] (74)
+05B9  00                 [99] (76)
+                         * locals:
+06E3  00                 sizelocvars (0)
+                         * upvalues:
+06E4  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+06E5  17                 sizelineinfo (23)
+                         [pc] (line)
+06E6  01                 [01] (1)
+06E7  00                 [02] (1)
+06E8  00                 [03] (1)
+06E9  00                 [04] (1)
+06EA  01                 [05] (1)
+06EB  00                 [06] (3)
+06EC  00                 [07] (3)
+06ED  00                 [08] (3)
+06EE  01                 [09] (20)
+06EF  00                 [10] (24)
+06F0  00                 [11] (28)
+06F1  00                 [12] (32)
+06F2  01                 [13] (32)
+06F3  00                 [14] (32)
+06F4  00                 [15] (30)
+06F5  00                 [16] (76)
+06F6  01                 [17] (76)
+06F7  00                 [18] (76)
+06F8  00                 [19] (76)
+06F9  00                 [20] (76)
+06FA  03                 [21] (76)
+06FB  00                 [22] (34)
+06FC  00                 [23] (76)
+                         * locals:
+0742  00                 sizelocvars (0)
+                         * upvalues:
+0743  00                 sizeupvalues (0)
+                         ** end of function **
+
+0744                     ** end of chunk **

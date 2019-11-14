@@ -1,0 +1,209 @@
+1	C:\wlua_dump\path\Lotus\Scripts\EffectsKubrowEffects.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Scripts\EffectsKubrowEffects.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  02                 size of number (bytes)
+0008  04                 integral (1=integral)
+44
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+OnDeath
+deathEffectA
+EMPTY_SYMBOL
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  02                 maxstacksize (2)
+                         * code:
+0008  04                 sizecode (4)
+0009  25000000           [1] closure    0   0      
+000D  20000000           [2] setglobal  0   0        ; OnDeath
+0011  20400000           [3] setglobal  0   1        ; -988143666
+0015  1E008000           [4] return     0   1      
+                         * constants:
+0019  02                 sizek (2)
+001A  04                 const type 4
+001B  08                 string size (8)
+001C  4F6E446561746800   "OnDeath\0"
+                         const [0]: "OnDeath"
+0024  01                 const type 3
+0025  CE1F1AC5           const [1]: (-988143666)
+                         * functions:
+0029  01                 sizep (1)
+                         
+002A                     ** function [0] definition (level 2)
+                         ** start of function **
+002A  00                 string size (0)
+                         source name: (none)
+002B  03                 line defined (3)
+002C  18                 last line defined (24)
+002D  00                 nups (0)
+002E  01                 numparams (1)
+002F  00                 is_vararg (0)
+0030  0A                 maxstacksize (10)
+                         * code:
+0031  2E                 sizecode (46)
+0032  5D000000           [01] getglobal  1   0        ; 1074689893
+0036  92000000           [02] move       2   0      
+003A  62800001           [03] call       1   2   2  
+003E  58400000           [04] test       1       1    ; to [6] if false
+0042  1AC00980           [05] jmp        40           ; to [46]
+0046  64404000           [06] self       1   0   257  ; -1284295806
+004A  62800001           [07] call       1   2   2  
+004E  A4804000           [08] self       2   0   258  ; -1421644046
+0052  1DC10000           [09] getglobal  4   3        ; deathEffectA
+0056  5D010100           [10] getglobal  5   4        ; EMPTY_SYMBOL
+005A  A2400002           [11] call       2   4   1  
+005E  99400100           [12] loadk      2   5        ; 0
+fail op	21
+0062  15804101           [13] concat     0   2   262
+0066  1A800780           [14] jmp        31           ; to [46]
+006A  DD000000           [15] getglobal  3   0        ; 1074689893
+006E  12010000           [16] move       4   0      
+0072  E2800001           [17] call       3   2   2  
+0076  D8000000           [18] test       3       0    ; to [20] if true
+007A  1A000080           [19] jmp        1            ; to [21]
+007E  1A000680           [20] jmp        25           ; to [46]
+0082  D9800100           [21] loadk      3   6        ; 0
+0086  0A018000           [22] len        4   1      
+008A  59810100           [23] loadk      5   6        ; 0
+008E  D0000280           [24] forprep    3   9        ; to [34]
+0092  DD010000           [25] getglobal  7   0        ; 1074689893
+0096  0E828100           [26] gettable   8   1   6  
+009A  E2810001           [27] call       7   2   2  
+009E  D8410000           [28] test       7       1    ; to [30] if false
+00A2  1AC00080           [29] jmp        4            ; to [34]
+00A6  CE818100           [30] gettable   7   1   6  
+00AA  E4C1C103           [31] self       7   7   263  ; -703571861
+00AE  52020001           [32] move       9   2      
+00B2  E2418001           [33] call       7   3   1  
+00B6  D440FD7F           [34] forloop    3   -10      ; to [25] if loop
+00BA  E4C14100           [35] self       7   0   263  ; -703571861
+00BE  52020001           [36] move       9   2      
+00C2  E2418001           [37] call       7   3   1  
+00C6  DD010200           [38] getglobal  7   8        ; 1289681407
+00CA  E2818000           [39] call       7   1   2  
+00CE  C441C203           [40] mul        7   7   265  ; 0
+00D2  83C00101           [41] add        2   2   7  
+00D6  DD810200           [42] getglobal  7   10       ; 538022378
+00DA  19420100           [43] loadk      8   5        ; 0
+00DE  E2410001           [44] call       7   2   1  
+00E2  1A80F77F           [45] jmp        -33          ; to [13]
+00E6  1E008000           [46] return     0   1      
+                         * constants:
+00EA  0B                 sizek (11)
+00EB  01                 const type 3
+00EC  65770E40           const [0]: (1074689893)
+00F0  01                 const type 3
+00F1  823373B3           const [1]: (-1284295806)
+00F5  01                 const type 3
+00F6  F26E43AB           const [2]: (-1421644046)
+00FA  04                 const type 4
+00FB  0D                 string size (13)
+00FC  6465617468456666+  "deathEff"
+0104  6563744100         "ectA\0"
+                         const [3]: "deathEffectA"
+0109  04                 const type 4
+010A  0D                 string size (13)
+010B  454D5054595F5359+  "EMPTY_SY"
+0113  4D424F4C00         "MBOL\0"
+                         const [4]: "EMPTY_SYMBOL"
+0118  03                 const type 3
+0119  00000000           const [5]: (0)
+011D  03                 const type 3
+011E  0000803F           const [6]: (0)
+0122  01                 const type 3
+0123  6B5810D6           const [7]: (-703571861)
+0127  01                 const type 3
+0128  FFF9DE4C           const [8]: (1289681407)
+012C  03                 const type 3
+012D  0000803E           const [9]: (0)
+0131  01                 const type 3
+0132  EA911120           const [10]: (538022378)
+                         * functions:
+0136  00                 sizep (0)
+                         * lines:
+0137  2E                 sizelineinfo (46)
+                         [pc] (line)
+0138  04                 [01] (4)
+0139  00                 [02] (4)
+013A  00                 [03] (4)
+013B  00                 [04] (4)
+013C  04                 [05] (4)
+013D  00                 [06] (7)
+013E  00                 [07] (7)
+013F  00                 [08] (8)
+0140  04                 [09] (8)
+0141  00                 [10] (8)
+0142  00                 [11] (8)
+0143  00                 [12] (9)
+0144  04                 [13] (10)
+0145  00                 [14] (10)
+0146  00                 [15] (11)
+0147  00                 [16] (11)
+0148  04                 [17] (11)
+0149  00                 [18] (11)
+014A  00                 [19] (11)
+014B  00                 [20] (12)
+014C  07                 [21] (14)
+014D  00                 [22] (14)
+014E  00                 [23] (14)
+014F  00                 [24] (14)
+0150  07                 [25] (15)
+0151  00                 [26] (15)
+0152  00                 [27] (15)
+0153  00                 [28] (15)
+0154  08                 [29] (15)
+0155  00                 [30] (16)
+0156  00                 [31] (16)
+0157  00                 [32] (16)
+0158  08                 [33] (16)
+0159  00                 [34] (14)
+015A  00                 [35] (19)
+015B  00                 [36] (19)
+015C  08                 [37] (19)
+015D  00                 [38] (20)
+015E  00                 [39] (20)
+015F  00                 [40] (20)
+0160  08                 [41] (20)
+0161  00                 [42] (21)
+0162  00                 [43] (21)
+0163  00                 [44] (21)
+0164  09                 [45] (21)
+0165  00                 [46] (24)
+                         * locals:
+01F0  00                 sizelocvars (0)
+                         * upvalues:
+01F1  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+01F2  04                 sizelineinfo (4)
+                         [pc] (line)
+01F3  18                 [1] (24)
+01F4  00                 [2] (24)
+01F5  00                 [3] (3)
+01F6  00                 [4] (24)
+                         * locals:
+0203  00                 sizelocvars (0)
+                         * upvalues:
+0204  00                 sizeupvalues (0)
+                         ** end of function **
+
+0205                     ** end of chunk **

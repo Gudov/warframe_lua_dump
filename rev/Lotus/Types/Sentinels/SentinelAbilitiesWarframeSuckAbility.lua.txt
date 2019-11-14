@@ -1,0 +1,883 @@
+1	C:\wlua_dump\path\Lotus\Types\Sentinels\SentinelAbilitiesWarframeSuckAbility.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Types\Sentinels\SentinelAbilitiesWarframeSuckAbility.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  03                 size of number (bytes)
+0008  13                 integral (1=integral)
+419
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+GetDescriptionInfo
+NpcEvaluateAbility
+ActivateAbility
+DeactivateAbility
+triggerRadii
+RADIUS
+cjson
+_T
+gSuckTriggers
+No trigger types, can't run SuckAbility for 
+!
+triggerType
+EMPTY_SYMBOL
+ZERO_VECTOR
+ZERO_ROTATION
+gRegion
+_T
+gSuckTriggers
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  03                 maxstacksize (3)
+                         * code:
+0008  13                 sizecode (19)
+0009  25000000           [01] closure    0   0      
+000D  65400000           [02] closure    1   1      
+0011  12000000           [03] move       0   0      
+0015  60000000           [04] setglobal  1   0        ; GetDescriptionInfo
+0019  60400000           [05] setglobal  1   1        ; 504423499
+001D  65800000           [06] closure    1   2      
+0021  A5C00000           [07] closure    2   3      
+0025  12008000           [08] move       0   1      
+0029  A0800000           [09] setglobal  2   2        ; NpcEvaluateAbility
+002D  A0C00000           [10] setglobal  2   3        ; -319690153
+0031  A5000100           [11] closure    2   4      
+0035  12008000           [12] move       0   1      
+0039  12000000           [13] move       0   0      
+003D  A0000100           [14] setglobal  2   4        ; ActivateAbility
+0041  A0400100           [15] setglobal  2   5        ; -871687712
+0045  A5400100           [16] closure    2   5      
+0049  A0800100           [17] setglobal  2   6        ; DeactivateAbility
+004D  A0C00100           [18] setglobal  2   7        ; 33405088
+0051  1E008000           [19] return     0   1      
+                         * constants:
+0055  08                 sizek (8)
+0056  04                 const type 4
+0057  13                 string size (19)
+0058  4765744465736372+  "GetDescr"
+0060  697074696F6E496E+  "iptionIn"
+0068  666F00             "fo\0"
+                         const [0]: "GetDescriptionInfo"
+006B  01                 const type 3
+006C  4BE4101E           const [1]: (504423499)
+0070  04                 const type 4
+0071  13                 string size (19)
+0072  4E70634576616C75+  "NpcEvalu"
+007A  6174654162696C69+  "ateAbili"
+0082  747900             "ty\0"
+                         const [2]: "NpcEvaluateAbility"
+0085  01                 const type 3
+0086  57EAF1EC           const [3]: (-319690153)
+008A  04                 const type 4
+008B  10                 string size (16)
+008C  4163746976617465+  "Activate"
+0094  4162696C69747900   "Ability\0"
+                         const [4]: "ActivateAbility"
+009C  01                 const type 3
+009D  E0190BCC           const [5]: (-871687712)
+00A1  04                 const type 4
+00A2  12                 string size (18)
+00A3  4465616374697661+  "Deactiva"
+00AB  74654162696C6974+  "teAbilit"
+00B3  7900               "y\0"
+                         const [6]: "DeactivateAbility"
+00B5  01                 const type 3
+00B6  A0B8FD01           const [7]: (33405088)
+                         * functions:
+00BA  06                 sizep (6)
+                         
+00BB                     ** function [0] definition (level 2)
+                         ** start of function **
+00BB  00                 string size (0)
+                         source name: (none)
+00BC  04                 line defined (4)
+00BD  0D                 last line defined (13)
+00BE  00                 nups (0)
+00BF  01                 numparams (1)
+00C0  00                 is_vararg (0)
+00C1  03                 maxstacksize (3)
+                         * code:
+00C2  0E                 sizecode (14)
+00C3  9D000000           [01] getglobal  2   0        ; triggerRadii
+00C7  8A000001           [02] len        2   2      
+fail op	33
+00CB  21800000           [03] tforloop   0       2    ; to [5] if exit
+00CF  1A800080           [04] jmp        3            ; to [8]
+00D3  9D000000           [05] getglobal  2   0        ; triggerRadii
+00D7  4E000001           [06] gettable   1   2   0  
+00DB  1A000180           [07] jmp        5            ; to [13]
+00DF  8A008000           [08] len        2   1      
+fail op	21
+00E3  15808080           [09] concat     0   257 2  
+00E7  1A400080           [10] jmp        2            ; to [13]
+00EB  9D000000           [11] getglobal  2   0        ; triggerRadii
+00EF  4E804001           [12] gettable   1   2   258  ; 0
+00F3  5E000001           [13] return     1   2      
+00F7  1E008000           [14] return     0   1      
+                         * constants:
+00FB  03                 sizek (3)
+00FC  04                 const type 4
+00FD  0D                 string size (13)
+00FE  7472696767657252+  "triggerR"
+0106  6164696900         "adii\0"
+                         const [0]: "triggerRadii"
+010B  03                 const type 3
+010C  00000000           const [1]: (0)
+0110  03                 const type 3
+0111  0000803F           const [2]: (0)
+                         * functions:
+0115  00                 sizep (0)
+                         * lines:
+0116  0E                 sizelineinfo (14)
+                         [pc] (line)
+0117  06                 [01] (6)
+0118  00                 [02] (6)
+0119  00                 [03] (6)
+011A  00                 [04] (6)
+011B  06                 [05] (7)
+011C  00                 [06] (7)
+011D  00                 [07] (7)
+011E  00                 [08] (8)
+011F  06                 [09] (8)
+0120  00                 [10] (8)
+0121  00                 [11] (9)
+0122  00                 [12] (9)
+0123  06                 [13] (12)
+0124  00                 [14] (13)
+                         * locals:
+014F  00                 sizelocvars (0)
+                         * upvalues:
+0150  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0151                     ** function [1] definition (level 2)
+                         ** start of function **
+0151  00                 string size (0)
+                         source name: (none)
+0152  0F                 line defined (15)
+0153  12                 last line defined (18)
+0154  01                 nups (1)
+0155  01                 numparams (1)
+0156  00                 is_vararg (0)
+0157  04                 maxstacksize (4)
+                         * code:
+0158  0B                 sizecode (11)
+0159  4B400000           [01] newtable   1   0   1    ; array=0, hash=1
+015D  93000000           [02] getupval   2   0      
+0161  D2000000           [03] move       3   0      
+0165  A2800001           [04] call       2   2   2  
+0169  4C800080           [05] settable   1   256 2    ; "RADIUS"
+016D  9D400000           [06] getglobal  2   1        ; cjson
+0171  8E804001           [07] gettable   2   2   258  ; -1916729509
+0175  D2008000           [08] move       3   1      
+0179  87000001           [09] tailcall   2   2   0  
+017D  9E000000           [10] return     2   0      
+0181  1E008000           [11] return     0   1      
+                         * constants:
+0185  03                 sizek (3)
+0186  04                 const type 4
+0187  07                 string size (7)
+0188  52414449555300     "RADIUS\0"
+                         const [0]: "RADIUS"
+018F  04                 const type 4
+0190  06                 string size (6)
+0191  636A736F6E00       "cjson\0"
+                         const [1]: "cjson"
+0197  01                 const type 3
+0198  5B07C18D           const [2]: (-1916729509)
+                         * functions:
+019C  00                 sizep (0)
+                         * lines:
+019D  0B                 sizelineinfo (11)
+                         [pc] (line)
+019E  10                 [01] (16)
+019F  00                 [02] (16)
+01A0  00                 [03] (16)
+01A1  00                 [04] (16)
+01A2  10                 [05] (16)
+01A3  00                 [06] (17)
+01A4  00                 [07] (17)
+01A5  00                 [08] (17)
+01A6  10                 [09] (17)
+01A7  00                 [10] (17)
+01A8  00                 [11] (18)
+                         * locals:
+01CA  00                 sizelocvars (0)
+                         * upvalues:
+01CB  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+01CC                     ** function [2] definition (level 2)
+                         ** start of function **
+01CC  00                 string size (0)
+                         source name: (none)
+01CD  14                 line defined (20)
+01CE  23                 last line defined (35)
+01CF  00                 nups (0)
+01D0  04                 numparams (4)
+01D1  00                 is_vararg (0)
+01D2  08                 maxstacksize (8)
+                         * code:
+01D3  1D                 sizecode (29)
+01D4  2401C000           [01] self       4   1   256  ; 31469944
+01D8  22810001           [02] call       4   2   2  
+01DC  5D410000           [03] getglobal  5   1        ; 1074689893
+01E0  92010002           [04] move       6   4      
+01E4  62810001           [05] call       5   2   2  
+01E8  58410000           [06] test       5       1    ; to [8] if false
+01EC  1AC00080           [07] jmp        4            ; to [12]
+01F0  64814002           [08] self       5   4   258  ; 1511086594
+01F4  62810001           [09] call       5   2   2  
+01F8  58010000           [10] test       5       0    ; to [12] if true
+01FC  1A400080           [11] jmp        2            ; to [14]
+0200  59C10000           [12] loadk      5   3        ; 0
+0204  5E010001           [13] return     5   2      
+0208  64014102           [14] self       5   4   260  ; -564624675
+020C  62810001           [15] call       5   2   2  
+0210  9D410000           [16] getglobal  6   1        ; 1074689893
+0214  D2018002           [17] move       7   5      
+0218  A2810001           [18] call       6   2   2  
+021C  98410000           [19] test       6       1    ; to [21] if false
+0220  1AC00080           [20] jmp        4            ; to [25]
+0224  A441C102           [21] self       6   5   261  ; 242150742
+0228  A2810001           [22] call       6   2   2  
+022C  98410000           [23] test       6       1    ; to [25] if false
+0230  1A400080           [24] jmp        2            ; to [27]
+0234  99C10000           [25] loadk      6   3        ; 0
+0238  9E010001           [26] return     6   2      
+023C  99810100           [27] loadk      6   6        ; 0
+0240  9E010001           [28] return     6   2      
+0244  1E008000           [29] return     0   1      
+                         * constants:
+0248  07                 sizek (7)
+0249  01                 const type 3
+024A  7831E001           const [0]: (31469944)
+024E  01                 const type 3
+024F  65770E40           const [1]: (1074689893)
+0253  01                 const type 3
+0254  025A115A           const [2]: (1511086594)
+0258  03                 const type 3
+0259  00000000           const [3]: (0)
+025D  01                 const type 3
+025E  DD8258DE           const [4]: (-564624675)
+0262  01                 const type 3
+0263  56ED6E0E           const [5]: (242150742)
+0267  03                 const type 3
+0268  0000803F           const [6]: (0)
+                         * functions:
+026C  00                 sizep (0)
+                         * lines:
+026D  1D                 sizelineinfo (29)
+                         [pc] (line)
+026E  16                 [01] (22)
+026F  00                 [02] (22)
+0270  00                 [03] (24)
+0271  00                 [04] (24)
+0272  16                 [05] (24)
+0273  00                 [06] (24)
+0274  00                 [07] (24)
+0275  00                 [08] (24)
+0276  18                 [09] (24)
+0277  00                 [10] (24)
+0278  00                 [11] (24)
+0279  00                 [12] (25)
+027A  18                 [13] (25)
+027B  00                 [14] (28)
+027C  00                 [15] (28)
+027D  00                 [16] (30)
+027E  18                 [17] (30)
+027F  00                 [18] (30)
+0280  00                 [19] (30)
+0281  00                 [20] (30)
+0282  18                 [21] (30)
+0283  00                 [22] (30)
+0284  00                 [23] (30)
+0285  00                 [24] (30)
+0286  18                 [25] (31)
+0287  00                 [26] (31)
+0288  00                 [27] (34)
+0289  00                 [28] (34)
+028A  18                 [29] (35)
+                         * locals:
+02E2  00                 sizelocvars (0)
+                         * upvalues:
+02E3  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+02E4                     ** function [3] definition (level 2)
+                         ** start of function **
+02E4  00                 string size (0)
+                         source name: (none)
+02E5  25                 line defined (37)
+02E6  27                 last line defined (39)
+02E7  01                 nups (1)
+02E8  04                 numparams (4)
+02E9  00                 is_vararg (0)
+02EA  09                 maxstacksize (9)
+                         * code:
+02EB  08                 sizecode (8)
+02EC  13010000           [1] getupval   4   0      
+02F0  52010000           [2] move       5   0      
+02F4  92018000           [3] move       6   1      
+02F8  D2010001           [4] move       7   2      
+02FC  12028001           [5] move       8   3      
+0300  07018002           [6] tailcall   4   5   0  
+0304  1E010000           [7] return     4   0      
+0308  1E008000           [8] return     0   1      
+                         * constants:
+030C  00                 sizek (0)
+                         * functions:
+030D  00                 sizep (0)
+                         * lines:
+030E  08                 sizelineinfo (8)
+                         [pc] (line)
+030F  26                 [1] (38)
+0310  00                 [2] (38)
+0311  00                 [3] (38)
+0312  00                 [4] (38)
+0313  26                 [5] (38)
+0314  00                 [6] (38)
+0315  00                 [7] (38)
+0316  00                 [8] (39)
+                         * locals:
+032F  00                 sizelocvars (0)
+                         * upvalues:
+0330  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0331                     ** function [4] definition (level 2)
+                         ** start of function **
+0331  00                 string size (0)
+                         source name: (none)
+0332  29                 line defined (41)
+0333  64                 last line defined (100)
+0334  02                 nups (2)
+0335  05                 numparams (5)
+0336  00                 is_vararg (0)
+0337  10                 maxstacksize (16)
+                         * code:
+0339  01                 sizecode (144)
+033A  6401C000           [001] self       5   1   256  ; 31469944
+033E  62810001           [002] call       5   2   2  
+0342  9D410000           [003] getglobal  6   1        ; 1074689893
+0346  D2018002           [004] move       7   5      
+034A  A2810001           [005] call       6   2   2  
+034E  98010000           [006] test       6       0    ; to [8] if true
+0352  1A000080           [007] jmp        1            ; to [9]
+0356  1E008000           [008] return     0   1      
+035A  A481C002           [009] self       6   5   258  ; -1201586349
+035E  A2810001           [010] call       6   2   2  
+0362  98010000           [011] test       6       0    ; to [13] if true
+0366  1A401A80           [012] jmp        106          ; to [119]
+036A  93010000           [013] getupval   6   0      
+036E  D2010000           [014] move       7   0      
+0372  12028000           [015] move       8   1      
+0376  52028001           [016] move       9   3      
+037A  92020002           [017] move       10  4      
+037E  A2818002           [018] call       6   5   2  
+fail op	33
+0382  21C04003           [019] tforloop   0       259  ; to [21] if exit
+0386  1A000080           [020] jmp        1            ; to [22]
+038A  1E008000           [021] return     0   1      
+038E  A401C100           [022] self       6   1   260  ; 455421500
+0392  A2810001           [023] call       6   2   2  
+0396  DD410000           [024] getglobal  7   1        ; 1074689893
+039A  1D420100           [025] getglobal  8   5        ; _T
+039E  0E824104           [026] gettable   8   8   262  ; "gSuckTriggers"
+03A2  E2810001           [027] call       7   2   2  
+03A6  D8010000           [028] test       7       0    ; to [30] if true
+03AA  1A800080           [029] jmp        3            ; to [33]
+03AE  DD410100           [030] getglobal  7   5        ; _T
+03B2  0B020000           [031] newtable   8   0   0    ; array=0, hash=0
+03B6  CC010283           [032] settable   7   262 8    ; "gSuckTriggers"
+03BA  DD410000           [033] getglobal  7   1        ; 1074689893
+03BE  1D420100           [034] getglobal  8   5        ; _T
+03C2  0E824104           [035] gettable   8   8   262  ; "gSuckTriggers"
+03C6  0E820104           [036] gettable   8   8   6  
+03CA  E2810001           [037] call       7   2   2  
+03CE  D8010000           [038] test       7       0    ; to [40] if true
+03D2  1A800780           [039] jmp        31           ; to [71]
+03D6  D3018000           [040] getupval   7   1      
+03DA  12028001           [041] move       8   3      
+03DE  E2810001           [042] call       7   2   2  
+03E2  1D420000           [043] getglobal  8   1        ; 1074689893
+03E6  52028003           [044] move       9   7      
+03EA  22820001           [045] call       8   2   2  
+03EE  18020000           [046] test       8       0    ; to [48] if true
+03F2  1A800180           [047] jmp        7            ; to [55]
+03F6  1DC20100           [048] getglobal  8   7        ; -1817107093
+03FA  59020200           [049] loadk      9   8        ; "No trigger types, can't run SuckAbility for "
+03FE  92020003           [050] move       10  6      
+0402  D9420200           [051] loadk      11  9        ; "!"
+0406  42C28204           [052] concat     9   9   11 
+040A  22420001           [053] call       8   2   1  
+040E  1E008000           [054] return     0   1      
+0412  1D420100           [055] getglobal  8   5        ; _T
+0416  0E824104           [056] gettable   8   8   262  ; "gSuckTriggers"
+041A  6482C202           [057] self       9   5   266  ; -1421644046
+041E  DDC20200           [058] getglobal  11  11       ; triggerType
+0422  1D030300           [059] getglobal  12  12       ; EMPTY_SYMBOL
+0426  5D430300           [060] getglobal  13  13       ; ZERO_VECTOR
+042A  9D830300           [061] getglobal  14  14       ; ZERO_ROTATION
+042E  D2038000           [062] move       15  1      
+0432  62828003           [063] call       9   7   2  
+0436  0C420203           [064] settable   8   6   9  
+043A  1D420100           [065] getglobal  8   5        ; _T
+043E  0E824104           [066] gettable   8   8   262  ; "gSuckTriggers"
+0442  0E820104           [067] gettable   8   8   6  
+0446  24C24304           [068] self       8   8   271  ; -412619612
+044A  92028003           [069] move       10  7      
+044E  22428001           [070] call       8   3   1  
+0452  1D420100           [071] getglobal  8   5        ; _T
+0456  0E824104           [072] gettable   8   8   262  ; "gSuckTriggers"
+045A  0E820104           [073] gettable   8   8   6  
+045E  24024404           [074] self       8   8   272  ; -974578778
+0462  22420001           [075] call       8   2   1  
+0466  1D420000           [076] getglobal  8   1        ; 1074689893
+046A  5D420100           [077] getglobal  9   5        ; _T
+046E  4E82C104           [078] gettable   9   9   262  ; "gSuckTriggers"
+0472  4E828104           [079] gettable   9   9   6  
+0476  22820001           [080] call       8   2   2  
+047A  18420000           [081] test       8       1    ; to [83] if false
+047E  1A000F80           [082] jmp        61           ; to [144]
+0482  2402C000           [083] self       8   1   256  ; 31469944
+0486  22820001           [084] call       8   2   2  
+048A  52010004           [085] move       5   8      
+048E  1D420000           [086] getglobal  8   1        ; 1074689893
+0492  52028002           [087] move       9   5      
+0496  22820001           [088] call       8   2   2  
+049A  18420000           [089] test       8       1    ; to [91] if false
+049E  1A000D80           [090] jmp        53           ; to [144]
+04A2  1D420000           [091] getglobal  8   1        ; 1074689893
+04A6  6442C402           [092] self       9   5   273  ; -564624675
+04AA  62020001           [093] call       9   2   0  
+04AE  22820000           [094] call       8   0   2  
+04B2  18020000           [095] test       8       0    ; to [97] if true
+04B6  1A000080           [096] jmp        1            ; to [98]
+04BA  1A400B80           [097] jmp        46           ; to [144]
+04BE  1D820400           [098] getglobal  8   18       ; gRegion
+04C2  24C24404           [099] self       8   8   275  ; -1520831144
+04C6  22820001           [100] call       8   2   2  
+04CA  18020000           [101] test       8       0    ; to [103] if true
+04CE  1A800280           [102] jmp        11           ; to [114]
+04D2  13020000           [103] getupval   8   0      
+04D6  52020000           [104] move       9   0      
+04DA  92028000           [105] move       10  1      
+04DE  D2028001           [106] move       11  3      
+04E2  12030002           [107] move       12  4      
+04E6  22828002           [108] call       8   5   2  
+fail op	33
+04EA  21C04004           [109] tforloop   0       259  ; to [111] if exit
+04EE  1A800080           [110] jmp        3            ; to [114]
+04F2  24024500           [111] self       8   0   276  ; -1969966559
+04F6  22420001           [112] call       8   2   1  
+04FA  1E008000           [113] return     0   1      
+04FE  1D420500           [114] getglobal  8   21       ; 538022378
+0502  59C20000           [115] loadk      9   3        ; 0
+0506  22420001           [116] call       8   2   1  
+050A  1A40F57F           [117] jmp        -42          ; to [76]
+050E  1A000680           [118] jmp        25           ; to [144]
+0512  1D820400           [119] getglobal  8   18       ; gRegion
+0516  24C24404           [120] self       8   8   275  ; -1520831144
+051A  22820001           [121] call       8   2   2  
+051E  18020000           [122] test       8       0    ; to [124] if true
+0522  1A800380           [123] jmp        15           ; to [139]
+0526  13020000           [124] getupval   8   0      
+052A  52020000           [125] move       9   0      
+052E  92028000           [126] move       10  1      
+0532  D2028001           [127] move       11  3      
+0536  12030002           [128] move       12  4      
+053A  22828002           [129] call       8   5   2  
+fail op	21
+053E  15008281           [130] concat     0   259 8  
+0542  1AC00080           [131] jmp        4            ; to [136]
+0546  1D420500           [132] getglobal  8   21       ; 538022378
+054A  59820500           [133] loadk      9   22       ; 0
+054E  22420001           [134] call       8   2   1  
+0552  1AC0FC7F           [135] jmp        -12          ; to [124]
+0556  24024500           [136] self       8   0   276  ; -1969966559
+055A  22420001           [137] call       8   2   1  
+055E  1A000180           [138] jmp        5            ; to [144]
+0562  1D420500           [139] getglobal  8   21       ; 538022378
+0566  59C20500           [140] loadk      9   23       ; 0
+056A  22420001           [141] call       8   2   1  
+056E  1AC0FE7F           [142] jmp        -4           ; to [139]
+0572  1E008000           [143] return     0   1      
+0576  1E008000           [144] return     0   1      
+                         * constants:
+057A  18                 sizek (24)
+057B  01                 const type 3
+057C  7831E001           const [0]: (31469944)
+0580  01                 const type 3
+0581  65770E40           const [1]: (1074689893)
+0585  01                 const type 3
+0586  533F61B8           const [2]: (-1201586349)
+058A  03                 const type 3
+058B  00000000           const [3]: (0)
+058F  01                 const type 3
+0590  3C2E251B           const [4]: (455421500)
+0594  04                 const type 4
+0595  03                 string size (3)
+0596  5F5400             "_T\0"
+                         const [5]: "_T"
+0599  04                 const type 4
+059A  0E                 string size (14)
+059B  675375636B547269+  "gSuckTri"
+05A3  676765727300       "ggers\0"
+                         const [6]: "gSuckTriggers"
+05A9  01                 const type 3
+05AA  6B25B193           const [7]: (-1817107093)
+05AE  04                 const type 4
+05AF  2D                 string size (45)
+05B0  4E6F207472696767+  "No trigg"
+05B8  6572207479706573+  "er types"
+05C0  2C2063616E277420+  ", can't "
+05C8  72756E205375636B+  "run Suck"
+05D0  4162696C69747920+  "Ability "
+05D8  666F722000         "for \0"
+                         const [8]: "No trigger types, can't run SuckAbility for "
+05DD  04                 const type 4
+05DE  02                 string size (2)
+05DF  2100               "!\0"
+                         const [9]: "!"
+05E1  01                 const type 3
+05E2  F26E43AB           const [10]: (-1421644046)
+05E6  04                 const type 4
+05E7  0C                 string size (12)
+05E8  7472696767657254+  "triggerT"
+05F0  79706500           "ype\0"
+                         const [11]: "triggerType"
+05F4  04                 const type 4
+05F5  0D                 string size (13)
+05F6  454D5054595F5359+  "EMPTY_SY"
+05FE  4D424F4C00         "MBOL\0"
+                         const [12]: "EMPTY_SYMBOL"
+0603  04                 const type 4
+0604  0C                 string size (12)
+0605  5A45524F5F564543+  "ZERO_VEC"
+060D  544F5200           "TOR\0"
+                         const [13]: "ZERO_VECTOR"
+0611  04                 const type 4
+0612  0E                 string size (14)
+0613  5A45524F5F524F54+  "ZERO_ROT"
+061B  4154494F4E00       "ATION\0"
+                         const [14]: "ZERO_ROTATION"
+0621  01                 const type 3
+0622  A4EC67E7           const [15]: (-412619612)
+0626  01                 const type 3
+0627  A61BE9C5           const [16]: (-974578778)
+062B  01                 const type 3
+062C  DD8258DE           const [17]: (-564624675)
+0630  04                 const type 4
+0631  08                 string size (8)
+0632  67526567696F6E00   "gRegion\0"
+                         const [18]: "gRegion"
+063A  01                 const type 3
+063B  58F559A5           const [19]: (-1520831144)
+063F  01                 const type 3
+0640  21B2948A           const [20]: (-1969966559)
+0644  01                 const type 3
+0645  EA911120           const [21]: (538022378)
+0649  03                 const type 3
+064A  0000803F           const [22]: (0)
+064E  03                 const type 3
+064F  00002041           const [23]: (0)
+                         * functions:
+0653  00                 sizep (0)
+                         * lines:
+0655  01                 sizelineinfo (144)
+                         [pc] (line)
+0656  2A                 [001] (42)
+0657  00                 [002] (42)
+0658  00                 [003] (44)
+0659  00                 [004] (44)
+065A  2A                 [005] (44)
+065B  00                 [006] (44)
+065C  00                 [007] (44)
+065D  00                 [008] (45)
+065E  2C                 [009] (48)
+065F  00                 [010] (48)
+0660  00                 [011] (48)
+0661  00                 [012] (48)
+0662  2C                 [013] (51)
+0663  00                 [014] (51)
+0664  00                 [015] (51)
+0665  00                 [016] (51)
+0666  2C                 [017] (51)
+0667  00                 [018] (51)
+0668  00                 [019] (51)
+0669  00                 [020] (51)
+066A  2C                 [021] (52)
+066B  00                 [022] (55)
+066C  00                 [023] (55)
+066D  00                 [024] (56)
+066E  2C                 [025] (56)
+066F  00                 [026] (56)
+0670  00                 [027] (56)
+0671  00                 [028] (56)
+0672  2D                 [029] (56)
+0673  00                 [030] (57)
+0674  00                 [031] (57)
+0675  00                 [032] (57)
+0676  30                 [033] (60)
+0677  00                 [034] (60)
+0678  00                 [035] (60)
+0679  00                 [036] (60)
+067A  30                 [037] (60)
+067B  00                 [038] (60)
+067C  00                 [039] (60)
+067D  00                 [040] (61)
+067E  30                 [041] (61)
+067F  00                 [042] (61)
+0680  00                 [043] (63)
+0681  00                 [044] (63)
+0682  30                 [045] (63)
+0683  00                 [046] (63)
+0684  00                 [047] (63)
+0685  00                 [048] (64)
+0686  33                 [049] (64)
+0687  00                 [050] (64)
+0688  00                 [051] (64)
+0689  00                 [052] (64)
+068A  33                 [053] (64)
+068B  00                 [054] (65)
+068C  00                 [055] (68)
+068D  00                 [056] (68)
+068E  33                 [057] (68)
+068F  00                 [058] (68)
+0690  00                 [059] (68)
+0691  00                 [060] (68)
+0692  33                 [061] (68)
+0693  00                 [062] (68)
+0694  00                 [063] (68)
+0695  00                 [064] (68)
+0696  33                 [065] (69)
+0697  00                 [066] (69)
+0698  00                 [067] (69)
+0699  00                 [068] (69)
+069A  33                 [069] (69)
+069B  00                 [070] (69)
+069C  00                 [071] (72)
+069D  00                 [072] (72)
+069E  33                 [073] (72)
+069F  00                 [074] (72)
+06A0  00                 [075] (72)
+06A1  00                 [076] (74)
+06A2  33                 [077] (74)
+06A3  00                 [078] (74)
+06A4  00                 [079] (74)
+06A5  00                 [080] (74)
+06A6  34                 [081] (74)
+06A7  00                 [082] (74)
+06A8  00                 [083] (75)
+06A9  00                 [084] (75)
+06AA  37                 [085] (75)
+06AB  00                 [086] (76)
+06AC  00                 [087] (76)
+06AD  00                 [088] (76)
+06AE  37                 [089] (76)
+06AF  00                 [090] (76)
+06B0  00                 [091] (76)
+06B1  00                 [092] (76)
+06B2  38                 [093] (76)
+06B3  00                 [094] (76)
+06B4  00                 [095] (76)
+06B5  00                 [096] (76)
+06B6  38                 [097] (77)
+06B7  00                 [098] (80)
+06B8  00                 [099] (80)
+06B9  00                 [100] (80)
+06BA  38                 [101] (80)
+06BB  00                 [102] (80)
+06BC  00                 [103] (80)
+06BD  00                 [104] (80)
+06BE  38                 [105] (80)
+06BF  00                 [106] (80)
+06C0  00                 [107] (80)
+06C1  00                 [108] (80)
+06C2  38                 [109] (80)
+06C3  00                 [110] (80)
+06C4  00                 [111] (81)
+06C5  00                 [112] (81)
+06C6  38                 [113] (82)
+06C7  00                 [114] (84)
+06C8  00                 [115] (84)
+06C9  00                 [116] (84)
+06CA  39                 [117] (84)
+06CB  00                 [118] (85)
+06CC  00                 [119] (86)
+06CD  00                 [120] (86)
+06CE  39                 [121] (86)
+06CF  00                 [122] (86)
+06D0  00                 [123] (86)
+06D1  00                 [124] (87)
+06D2  39                 [125] (87)
+06D3  00                 [126] (87)
+06D4  00                 [127] (87)
+06D5  00                 [128] (87)
+06D6  3C                 [129] (87)
+06D7  00                 [130] (87)
+06D8  00                 [131] (87)
+06D9  00                 [132] (89)
+06DA  3C                 [133] (89)
+06DB  00                 [134] (89)
+06DC  00                 [135] (89)
+06DD  00                 [136] (92)
+06DE  3C                 [137] (92)
+06DF  00                 [138] (92)
+06E0  00                 [139] (96)
+06E1  00                 [140] (96)
+06E2  3C                 [141] (96)
+06E3  00                 [142] (96)
+06E4  00                 [143] (98)
+06E5  00                 [144] (100)
+                         * locals:
+0896  00                 sizelocvars (0)
+                         * upvalues:
+0897  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0898                     ** function [5] definition (level 2)
+                         ** start of function **
+0898  00                 string size (0)
+                         source name: (none)
+0899  66                 line defined (102)
+089A  70                 last line defined (112)
+089B  00                 nups (0)
+089C  04                 numparams (4)
+089D  00                 is_vararg (0)
+089E  07                 maxstacksize (7)
+                         * code:
+089F  1B                 sizecode (27)
+08A0  1D010000           [01] getglobal  4   0        ; 1074689893
+08A4  52018000           [02] move       5   1      
+08A8  22810001           [03] call       4   2   2  
+08AC  18010000           [04] test       4       0    ; to [6] if true
+08B0  1A000080           [05] jmp        1            ; to [7]
+08B4  1E008000           [06] return     0   1      
+08B8  2441C000           [07] self       4   1   257  ; 455421500
+08BC  22810001           [08] call       4   2   2  
+08C0  5D010000           [09] getglobal  5   0        ; 1074689893
+08C4  9D810000           [10] getglobal  6   2        ; _T
+08C8  8EC14003           [11] gettable   6   6   259  ; "gSuckTriggers"
+08CC  62810001           [12] call       5   2   2  
+08D0  58410000           [13] test       5       1    ; to [15] if false
+08D4  1AC00280           [14] jmp        12           ; to [27]
+08D8  5D010000           [15] getglobal  5   0        ; 1074689893
+08DC  9D810000           [16] getglobal  6   2        ; _T
+08E0  8EC14003           [17] gettable   6   6   259  ; "gSuckTriggers"
+08E4  8E010103           [18] gettable   6   6   4  
+08E8  62810001           [19] call       5   2   2  
+08EC  58410000           [20] test       5       1    ; to [22] if false
+08F0  1A000180           [21] jmp        5            ; to [27]
+08F4  5D810000           [22] getglobal  5   2        ; _T
+08F8  4EC1C002           [23] gettable   5   5   259  ; "gSuckTriggers"
+08FC  4E018102           [24] gettable   5   5   4  
+0900  6401C102           [25] self       5   5   260  ; 766584623
+0904  62410001           [26] call       5   2   1  
+0908  1E008000           [27] return     0   1      
+                         * constants:
+090C  05                 sizek (5)
+090D  01                 const type 3
+090E  65770E40           const [0]: (1074689893)
+0912  01                 const type 3
+0913  3C2E251B           const [1]: (455421500)
+0917  04                 const type 4
+0918  03                 string size (3)
+0919  5F5400             "_T\0"
+                         const [2]: "_T"
+091C  04                 const type 4
+091D  0E                 string size (14)
+091E  675375636B547269+  "gSuckTri"
+0926  676765727300       "ggers\0"
+                         const [3]: "gSuckTriggers"
+092C  01                 const type 3
+092D  2F27B12D           const [4]: (766584623)
+                         * functions:
+0931  00                 sizep (0)
+                         * lines:
+0932  1B                 sizelineinfo (27)
+                         [pc] (line)
+0933  67                 [01] (103)
+0934  00                 [02] (103)
+0935  00                 [03] (103)
+0936  00                 [04] (103)
+0937  67                 [05] (103)
+0938  00                 [06] (104)
+0939  00                 [07] (107)
+093A  00                 [08] (107)
+093B  67                 [09] (109)
+093C  00                 [10] (109)
+093D  00                 [11] (109)
+093E  00                 [12] (109)
+093F  67                 [13] (109)
+0940  00                 [14] (109)
+0941  00                 [15] (109)
+0942  00                 [16] (109)
+0943  67                 [17] (109)
+0944  00                 [18] (109)
+0945  00                 [19] (109)
+0946  00                 [20] (109)
+0947  68                 [21] (109)
+0948  00                 [22] (110)
+0949  00                 [23] (110)
+094A  00                 [24] (110)
+094B  6B                 [25] (110)
+094C  00                 [26] (110)
+094D  00                 [27] (112)
+                         * locals:
+099F  00                 sizelocvars (0)
+                         * upvalues:
+09A0  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+09A1  13                 sizelineinfo (19)
+                         [pc] (line)
+09A2  0D                 [01] (13)
+09A3  00                 [02] (18)
+09A4  00                 [03] (18)
+09A5  00                 [04] (18)
+09A6  12                 [05] (15)
+09A7  00                 [06] (35)
+09A8  00                 [07] (39)
+09A9  00                 [08] (39)
+09AA  12                 [09] (39)
+09AB  00                 [10] (37)
+09AC  00                 [11] (100)
+09AD  00                 [12] (100)
+09AE  12                 [13] (100)
+09AF  00                 [14] (100)
+09B0  00                 [15] (41)
+09B1  00                 [16] (112)
+09B2  0F                 [17] (112)
+09B3  00                 [18] (102)
+09B4  00                 [19] (112)
+                         * locals:
+09EE  00                 sizelocvars (0)
+                         * upvalues:
+09EF  00                 sizeupvalues (0)
+                         ** end of function **
+
+09F0                     ** end of chunk **

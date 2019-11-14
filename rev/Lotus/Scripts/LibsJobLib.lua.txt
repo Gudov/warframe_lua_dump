@@ -1,0 +1,1079 @@
+1	C:\wlua_dump\path\Lotus\Scripts\LibsJobLib.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Scripts\LibsJobLib.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  03                 size of number (bytes)
+0008  15                 integral (1=integral)
+421
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+package
+seeall
+GetJobFromMission
+UpdateActiveJobFromMission
+GetJobChainNumCompletedJobs
+GetNextJobChainMission
+job
+string
+jobId
+.*_(.*)
+EMPTY_SYMBOL
+jobType
+jobTypeAnchor
+stages
+reward
+jobReward
+skipInventoryUpdate
+jobSkipInv
+minEnemyLevel
+jobMinEnemyLevel
+maxEnemyLevel
+jobMaxEnemyLevel
+isQuest
+tier
+jobTier
+requiredItems
+location
+jobStages
+table
+job
+_T
+ActiveJob
+gGameConfig
+gGameData
+mLocationTag
+mJobs
+mJobInfo
+jobType
+jobId
+syndicateTag
+gGameConfig
+gGameData
+string
+.*_(.*)
+mLocationTag
+mJobs
+mJobInfo
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  03                 maxstacksize (3)
+                         * code:
+0008  15                 sizecode (21)
+0009  1D000000           [01] getglobal  0   0        ; 954442511
+000D  41000001           [02] vararg     1   2      
+0011  9D400000           [03] getglobal  2   1        ; package
+0015  8E804001           [04] gettable   2   2   258  ; "seeall"
+0019  22408001           [05] call       0   3   1  
+001D  25000000           [06] closure    0   0      
+0021  65400000           [07] closure    1   1      
+0025  12000000           [08] move       0   0      
+0029  60C00000           [09] setglobal  1   3        ; GetJobFromMission
+002D  60000100           [10] setglobal  1   4        ; -693562820
+0031  65800000           [11] closure    1   2      
+0035  12000000           [12] move       0   0      
+0039  60400100           [13] setglobal  1   5        ; UpdateActiveJobFromMission
+003D  60800100           [14] setglobal  1   6        ; -239677482
+0041  65C00000           [15] closure    1   3      
+0045  60C00100           [16] setglobal  1   7        ; GetJobChainNumCompletedJobs
+0049  60000200           [17] setglobal  1   8        ; 247570742
+004D  65000100           [18] closure    1   4      
+0051  60400200           [19] setglobal  1   9        ; GetNextJobChainMission
+0055  60800200           [20] setglobal  1   10       ; -1335427126
+0059  1E008000           [21] return     0   1      
+                         * constants:
+005D  0B                 sizek (11)
+005E  01                 const type 3
+005F  0FA3E338           const [0]: (954442511)
+0063  04                 const type 4
+0064  08                 string size (8)
+0065  7061636B61676500   "package\0"
+                         const [1]: "package"
+006D  04                 const type 4
+006E  07                 string size (7)
+006F  736565616C6C00     "seeall\0"
+                         const [2]: "seeall"
+0076  04                 const type 4
+0077  12                 string size (18)
+0078  4765744A6F624672+  "GetJobFr"
+0080  6F6D4D697373696F+  "omMissio"
+0088  6E00               "n\0"
+                         const [3]: "GetJobFromMission"
+008A  01                 const type 3
+008B  3C12A9D6           const [4]: (-693562820)
+008F  04                 const type 4
+0090  1B                 string size (27)
+0091  5570646174654163+  "UpdateAc"
+0099  746976654A6F6246+  "tiveJobF"
+00A1  726F6D4D69737369+  "romMissi"
+00A9  6F6E00             "on\0"
+                         const [5]: "UpdateActiveJobFromMission"
+00AC  01                 const type 3
+00AD  D6CFB6F1           const [6]: (-239677482)
+00B1  04                 const type 4
+00B2  1C                 string size (28)
+00B3  4765744A6F624368+  "GetJobCh"
+00BB  61696E4E756D436F+  "ainNumCo"
+00C3  6D706C657465644A+  "mpletedJ"
+00CB  6F627300           "obs\0"
+                         const [7]: "GetJobChainNumCompletedJobs"
+00CF  01                 const type 3
+00D0  36A1C10E           const [8]: (247570742)
+00D4  04                 const type 4
+00D5  17                 string size (23)
+00D6  4765744E6578744A+  "GetNextJ"
+00DE  6F62436861696E4D+  "obChainM"
+00E6  697373696F6E00     "ission\0"
+                         const [9]: "GetNextJobChainMission"
+00ED  01                 const type 3
+00EE  CAFF66B0           const [10]: (-1335427126)
+                         * functions:
+00F2  05                 sizep (5)
+                         
+00F3                     ** function [0] definition (level 2)
+                         ** start of function **
+00F3  00                 string size (0)
+                         source name: (none)
+00F4  05                 line defined (5)
+00F5  2B                 last line defined (43)
+00F6  00                 nups (0)
+00F7  01                 numparams (1)
+00F8  00                 is_vararg (0)
+00F9  15                 maxstacksize (21)
+                         * code:
+00FA  59                 sizecode (89)
+00FB  5D000000           [01] getglobal  1   0        ; 2083004503
+00FF  8E404000           [02] gettable   2   0   257  ; "job"
+0103  62800001           [03] call       1   2   2  
+0107  9D800000           [04] getglobal  2   2        ; 1074689893
+010B  D2008000           [05] move       3   1      
+010F  A2800001           [06] call       2   2   2  
+0113  98400000           [07] test       2       1    ; to [9] if false
+0117  1A401380           [08] jmp        78           ; to [87]
+011B  9DC00000           [09] getglobal  2   3        ; string
+011F  8E004101           [10] gettable   2   2   260  ; -565905820
+0123  CE404100           [11] gettable   3   0   261  ; "jobId"
+0127  19810100           [12] loadk      4   6        ; ".*_(.*)"
+012B  A2008101           [13] call       2   3   4  
+012F  5DC10100           [14] getglobal  5   7        ; 869891283
+0133  62818000           [15] call       5   1   2  
+0137  9D810000           [16] getglobal  6   2        ; 1074689893
+013B  D2010002           [17] move       7   4      
+013F  A2810001           [18] call       6   2   2  
+0143  98410000           [19] test       6       1    ; to [21] if false
+0147  1A000180           [20] jmp        5            ; to [26]
+014B  A401C202           [21] self       6   5   264  ; -1582414606
+014F  12020002           [22] move       8   4      
+0153  A2818001           [23] call       6   3   2  
+0157  98010000           [24] test       6       0    ; to [26] if true
+015B  1A400080           [25] jmp        2            ; to [28]
+015F  1D410200           [26] getglobal  4   9        ; EMPTY_SYMBOL
+0163  1AC00080           [27] jmp        4            ; to [32]
+0167  9D810200           [28] getglobal  6   10       ; -332969190
+016B  D2010002           [29] move       7   4      
+016F  A2810001           [30] call       6   2   2  
+0173  12010003           [31] move       4   6      
+0177  8B010300           [32] newtable   6   0   12   ; array=0, hash=12
+017B  CE414100           [33] gettable   7   0   261  ; "jobId"
+017F  8CC18182           [34] settable   6   261 7    ; "jobId"
+0183  8C418085           [35] settable   6   267 1    ; "jobType"
+0187  DD410300           [36] getglobal  7   13       ; -895206725
+018B  0E424000           [37] gettable   8   0   257  ; "job"
+018F  E2810001           [38] call       7   2   2  
+0193  8CC10186           [39] settable   6   268 7    ; "jobTypeAnchor"
+0197  CB010000           [40] newtable   7   0   0    ; array=0, hash=0
+019B  8CC10187           [41] settable   6   270 7    ; "stages"
+019F  DD010000           [42] getglobal  7   0        ; 2083004503
+01A3  0E024400           [43] gettable   8   0   272  ; "jobReward"
+01A7  E2810001           [44] call       7   2   2  
+01AB  8CC18187           [45] settable   6   271 7    ; "reward"
+01AF  CE814400           [46] gettable   7   0   274  ; "jobSkipInv"
+01B3  8CC18188           [47] settable   6   273 7    ; "skipInventoryUpdate"
+01B7  CE014500           [48] gettable   7   0   276  ; "jobMinEnemyLevel"
+01BB  8CC18189           [49] settable   6   275 7    ; "minEnemyLevel"
+01BF  CE814500           [50] gettable   7   0   278  ; "jobMaxEnemyLevel"
+01C3  8CC1818A           [51] settable   6   277 7    ; "maxEnemyLevel"
+01C7  CEC14500           [52] gettable   7   0   279  ; "isQuest"
+01CB  8CC1818B           [53] settable   6   279 7    ; "isQuest"
+01CF  CE414600           [54] gettable   7   0   281  ; "jobTier"
+01D3  8CC1018C           [55] settable   6   280 7    ; "tier"
+01D7  CB010000           [56] newtable   7   0   0    ; array=0, hash=0
+01DB  8CC1018D           [57] settable   6   282 7    ; "requiredItems"
+01DF  8C01818D           [58] settable   6   283 4    ; "location"
+01E3  DD010700           [59] getglobal  7   28       ; 248503575
+01E7  0E424700           [60] gettable   8   0   285  ; "jobStages"
+01EB  E2010101           [61] call       7   2   4  
+01EF  1A800180           [62] jmp        7            ; to [70]
+01F3  1D830700           [63] getglobal  12  30       ; table
+01F7  0EC34706           [64] gettable   12  12  287  ; -431682403
+01FB  4E834303           [65] gettable   13  6   270  ; "stages"
+01FF  9D030800           [66] getglobal  14  32       ; 738251817
+0203  D2038005           [67] move       15  11     
+0207  A2030001           [68] call       14  2   0  
+020B  22430000           [69] call       12  0   1  
+020F  D6810000           [70] tforloop   7       2    ; to [72] if exit
+0213  1A80FD7F           [71] jmp        -9           ; to [63]
+0217  1D030700           [72] getglobal  12  28       ; 248503575
+021B  4E834600           [73] gettable   13  0   282  ; "requiredItems"
+021F  22030101           [74] call       12  2   4  
+0223  1A800180           [75] jmp        7            ; to [83]
+0227  5D840700           [76] getglobal  17  30       ; table
+022B  4EC4C708           [77] gettable   17  17  287  ; -431682403
+022F  8E844603           [78] gettable   18  6   282  ; "requiredItems"
+0233  DD040000           [79] getglobal  19  0        ; 2083004503
+0237  12050008           [80] move       20  16     
+023B  E2040001           [81] call       19  2   0  
+023F  62440000           [82] call       17  0   1  
+0243  16830000           [83] tforloop   12      2    ; to [85] if exit
+0247  1A80FD7F           [84] jmp        -9           ; to [76]
+024B  9E010001           [85] return     6   2      
+024F  1A400080           [86] jmp        2            ; to [89]
+0253  46048008           [87] loadnil    17  17     
+0257  5E040001           [88] return     17  2      
+025B  1E008000           [89] return     0   1      
+                         * constants:
+025F  21                 sizek (33)
+0260  01                 const type 3
+0261  5720287C           const [0]: (2083004503)
+0265  04                 const type 4
+0266  04                 string size (4)
+0267  6A6F6200           "job\0"
+                         const [1]: "job"
+026B  01                 const type 3
+026C  65770E40           const [2]: (1074689893)
+0270  04                 const type 4
+0271  07                 string size (7)
+0272  737472696E6700     "string\0"
+                         const [3]: "string"
+0279  01                 const type 3
+027A  64F644DE           const [4]: (-565905820)
+027E  04                 const type 4
+027F  06                 string size (6)
+0280  6A6F62496400       "jobId\0"
+                         const [5]: "jobId"
+0286  04                 const type 4
+0287  08                 string size (8)
+0288  2E2A5F282E2A2900   ".*_(.*)\0"
+                         const [6]: ".*_(.*)"
+0290  01                 const type 3
+0291  D37CD933           const [7]: (869891283)
+0295  01                 const type 3
+0296  F244AEA1           const [8]: (-1582414606)
+029A  04                 const type 4
+029B  0D                 string size (13)
+029C  454D5054595F5359+  "EMPTY_SY"
+02A4  4D424F4C00         "MBOL\0"
+                         const [9]: "EMPTY_SYMBOL"
+02A9  01                 const type 3
+02AA  1A4B27EC           const [10]: (-332969190)
+02AE  04                 const type 4
+02AF  08                 string size (8)
+02B0  6A6F625479706500   "jobType\0"
+                         const [11]: "jobType"
+02B8  04                 const type 4
+02B9  0E                 string size (14)
+02BA  6A6F625479706541+  "jobTypeA"
+02C2  6E63686F7200       "nchor\0"
+                         const [12]: "jobTypeAnchor"
+02C8  01                 const type 3
+02C9  BB3AA4CA           const [13]: (-895206725)
+02CD  04                 const type 4
+02CE  07                 string size (7)
+02CF  73746167657300     "stages\0"
+                         const [14]: "stages"
+02D6  04                 const type 4
+02D7  07                 string size (7)
+02D8  72657761726400     "reward\0"
+                         const [15]: "reward"
+02DF  04                 const type 4
+02E0  0A                 string size (10)
+02E1  6A6F625265776172+  "jobRewar"
+02E9  6400               "d\0"
+                         const [16]: "jobReward"
+02EB  04                 const type 4
+02EC  14                 string size (20)
+02ED  736B6970496E7665+  "skipInve"
+02F5  6E746F7279557064+  "ntoryUpd"
+02FD  61746500           "ate\0"
+                         const [17]: "skipInventoryUpdate"
+0301  04                 const type 4
+0302  0B                 string size (11)
+0303  6A6F62536B697049+  "jobSkipI"
+030B  6E7600             "nv\0"
+                         const [18]: "jobSkipInv"
+030E  04                 const type 4
+030F  0E                 string size (14)
+0310  6D696E456E656D79+  "minEnemy"
+0318  4C6576656C00       "Level\0"
+                         const [19]: "minEnemyLevel"
+031E  04                 const type 4
+031F  11                 string size (17)
+0320  6A6F624D696E456E+  "jobMinEn"
+0328  656D794C6576656C+  "emyLevel"
+0330  00                 "\0"
+                         const [20]: "jobMinEnemyLevel"
+0331  04                 const type 4
+0332  0E                 string size (14)
+0333  6D6178456E656D79+  "maxEnemy"
+033B  4C6576656C00       "Level\0"
+                         const [21]: "maxEnemyLevel"
+0341  04                 const type 4
+0342  11                 string size (17)
+0343  6A6F624D6178456E+  "jobMaxEn"
+034B  656D794C6576656C+  "emyLevel"
+0353  00                 "\0"
+                         const [22]: "jobMaxEnemyLevel"
+0354  04                 const type 4
+0355  08                 string size (8)
+0356  6973517565737400   "isQuest\0"
+                         const [23]: "isQuest"
+035E  04                 const type 4
+035F  05                 string size (5)
+0360  7469657200         "tier\0"
+                         const [24]: "tier"
+0365  04                 const type 4
+0366  08                 string size (8)
+0367  6A6F625469657200   "jobTier\0"
+                         const [25]: "jobTier"
+036F  04                 const type 4
+0370  0E                 string size (14)
+0371  7265717569726564+  "required"
+0379  4974656D7300       "Items\0"
+                         const [26]: "requiredItems"
+037F  04                 const type 4
+0380  09                 string size (9)
+0381  6C6F636174696F6E+  "location"
+0389  00                 "\0"
+                         const [27]: "location"
+038A  01                 const type 3
+038B  17DDCF0E           const [28]: (248503575)
+038F  04                 const type 4
+0390  0A                 string size (10)
+0391  6A6F625374616765+  "jobStage"
+0399  7300               "s\0"
+                         const [29]: "jobStages"
+039B  04                 const type 4
+039C  06                 string size (6)
+039D  7461626C6500       "table\0"
+                         const [30]: "table"
+03A3  01                 const type 3
+03A4  9D0C45E6           const [31]: (-431682403)
+03A8  01                 const type 3
+03A9  29D4002C           const [32]: (738251817)
+                         * functions:
+03AD  00                 sizep (0)
+                         * lines:
+03AE  59                 sizelineinfo (89)
+                         [pc] (line)
+03AF  06                 [01] (6)
+03B0  00                 [02] (6)
+03B1  00                 [03] (6)
+03B2  00                 [04] (7)
+03B3  06                 [05] (7)
+03B4  00                 [06] (7)
+03B5  00                 [07] (7)
+03B6  00                 [08] (7)
+03B7  06                 [09] (8)
+03B8  00                 [10] (8)
+03B9  00                 [11] (8)
+03BA  00                 [12] (8)
+03BB  07                 [13] (8)
+03BC  00                 [14] (9)
+03BD  00                 [15] (9)
+03BE  00                 [16] (10)
+03BF  07                 [17] (10)
+03C0  00                 [18] (10)
+03C1  00                 [19] (10)
+03C2  00                 [20] (10)
+03C3  07                 [21] (10)
+03C4  00                 [22] (10)
+03C5  00                 [23] (10)
+03C6  00                 [24] (10)
+03C7  07                 [25] (10)
+03C8  00                 [26] (11)
+03C9  00                 [27] (11)
+03CA  00                 [28] (13)
+03CB  07                 [29] (13)
+03CC  00                 [30] (13)
+03CD  00                 [31] (13)
+03CE  00                 [32] (15)
+03CF  08                 [33] (17)
+03D0  00                 [34] (17)
+03D1  00                 [35] (18)
+03D2  00                 [36] (19)
+03D3  08                 [37] (19)
+03D4  00                 [38] (19)
+03D5  00                 [39] (19)
+03D6  00                 [40] (20)
+03D7  08                 [41] (20)
+03D8  00                 [42] (21)
+03D9  00                 [43] (21)
+03DA  00                 [44] (21)
+03DB  08                 [45] (21)
+03DC  00                 [46] (22)
+03DD  00                 [47] (22)
+03DE  00                 [48] (23)
+03DF  08                 [49] (23)
+03E0  00                 [50] (24)
+03E1  00                 [51] (24)
+03E2  00                 [52] (25)
+03E3  09                 [53] (25)
+03E4  00                 [54] (26)
+03E5  00                 [55] (26)
+03E6  00                 [56] (27)
+03E7  09                 [57] (27)
+03E8  00                 [58] (28)
+03E9  00                 [59] (31)
+03EA  00                 [60] (31)
+03EB  0A                 [61] (31)
+03EC  00                 [62] (31)
+03ED  00                 [63] (32)
+03EE  00                 [64] (32)
+03EF  0A                 [65] (32)
+03F0  00                 [66] (32)
+03F1  00                 [67] (32)
+03F2  00                 [68] (32)
+03F3  0A                 [69] (32)
+03F4  00                 [70] (31)
+03F5  00                 [71] (32)
+03F6  00                 [72] (35)
+03F7  0A                 [73] (35)
+03F8  00                 [74] (35)
+03F9  00                 [75] (35)
+03FA  00                 [76] (36)
+03FB  0A                 [77] (36)
+03FC  00                 [78] (36)
+03FD  00                 [79] (36)
+03FE  00                 [80] (36)
+03FF  0A                 [81] (36)
+0400  00                 [82] (36)
+0401  00                 [83] (35)
+0402  00                 [84] (36)
+0403  0A                 [85] (39)
+0404  00                 [86] (39)
+0405  00                 [87] (41)
+0406  00                 [88] (41)
+0407  0A                 [89] (43)
+                         * locals:
+0513  00                 sizelocvars (0)
+                         * upvalues:
+0514  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0515                     ** function [1] definition (level 2)
+                         ** start of function **
+0515  00                 string size (0)
+                         source name: (none)
+0516  2D                 line defined (45)
+0517  2F                 last line defined (47)
+0518  01                 nups (1)
+0519  01                 numparams (1)
+051A  00                 is_vararg (0)
+051B  03                 maxstacksize (3)
+                         * code:
+051C  05                 sizecode (5)
+051D  53000000           [1] getupval   1   0      
+0521  92000000           [2] move       2   0      
+0525  62800001           [3] call       1   2   2  
+0529  5E000001           [4] return     1   2      
+052D  1E008000           [5] return     0   1      
+                         * constants:
+0531  00                 sizek (0)
+                         * functions:
+0532  00                 sizep (0)
+                         * lines:
+0533  05                 sizelineinfo (5)
+                         [pc] (line)
+0534  2E                 [1] (46)
+0535  00                 [2] (46)
+0536  00                 [3] (46)
+0537  00                 [4] (46)
+0538  2E                 [5] (47)
+                         * locals:
+0548  00                 sizelocvars (0)
+                         * upvalues:
+0549  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+054A                     ** function [2] definition (level 2)
+                         ** start of function **
+054A  00                 string size (0)
+                         source name: (none)
+054B  31                 line defined (49)
+054C  37                 last line defined (55)
+054D  01                 nups (1)
+054E  01                 numparams (1)
+054F  00                 is_vararg (0)
+0550  05                 maxstacksize (5)
+                         * code:
+0551  0E                 sizecode (14)
+0552  5D000000           [01] getglobal  1   0        ; 2083004503
+0556  8E404000           [02] gettable   2   0   257  ; "job"
+055A  62800001           [03] call       1   2   2  
+055E  9D800000           [04] getglobal  2   2        ; 1074689893
+0562  D2008000           [05] move       3   1      
+0566  A2800001           [06] call       2   2   2  
+056A  98400000           [07] test       2       1    ; to [9] if false
+056E  1A000180           [08] jmp        5            ; to [14]
+0572  9DC00000           [09] getglobal  2   3        ; _T
+0576  D3000000           [10] getupval   3   0      
+057A  12010000           [11] move       4   0      
+057E  E2800001           [12] call       3   2   2  
+0582  8CC00082           [13] settable   2   260 3    ; "ActiveJob"
+0586  1E008000           [14] return     0   1      
+                         * constants:
+058A  05                 sizek (5)
+058B  01                 const type 3
+058C  5720287C           const [0]: (2083004503)
+0590  04                 const type 4
+0591  04                 string size (4)
+0592  6A6F6200           "job\0"
+                         const [1]: "job"
+0596  01                 const type 3
+0597  65770E40           const [2]: (1074689893)
+059B  04                 const type 4
+059C  03                 string size (3)
+059D  5F5400             "_T\0"
+                         const [3]: "_T"
+05A0  04                 const type 4
+05A1  0A                 string size (10)
+05A2  4163746976654A6F+  "ActiveJo"
+05AA  6200               "b\0"
+                         const [4]: "ActiveJob"
+                         * functions:
+05AC  00                 sizep (0)
+                         * lines:
+05AD  0E                 sizelineinfo (14)
+                         [pc] (line)
+05AE  33                 [01] (51)
+05AF  00                 [02] (51)
+05B0  00                 [03] (51)
+05B1  00                 [04] (52)
+05B2  33                 [05] (52)
+05B3  00                 [06] (52)
+05B4  00                 [07] (52)
+05B5  00                 [08] (52)
+05B6  33                 [09] (53)
+05B7  00                 [10] (53)
+05B8  00                 [11] (53)
+05B9  00                 [12] (53)
+05BA  34                 [13] (53)
+05BB  00                 [14] (55)
+                         * locals:
+05E6  00                 sizelocvars (0)
+                         * upvalues:
+05E7  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+05E8                     ** function [3] definition (level 2)
+                         ** start of function **
+05E8  00                 string size (0)
+                         source name: (none)
+05E9  3A                 line defined (58)
+05EA  57                 last line defined (87)
+05EB  00                 nups (0)
+05EC  02                 numparams (2)
+05ED  00                 is_vararg (0)
+05EE  15                 maxstacksize (21)
+                         * code:
+05EF  3D                 sizecode (61)
+05F0  9D000000           [01] getglobal  2   0        ; gGameConfig
+05F4  A4404001           [02] self       2   2   257  ; -1430927072
+05F8  12010000           [03] move       4   0      
+05FC  A2808001           [04] call       2   3   2  
+0600  DD800000           [05] getglobal  3   2        ; 1074689893
+0604  12010001           [06] move       4   2      
+0608  E2800001           [07] call       3   2   2  
+060C  D8400000           [08] test       3       1    ; to [10] if false
+0610  1A000180           [09] jmp        5            ; to [15]
+0614  DD800000           [10] getglobal  3   2        ; 1074689893
+0618  1DC10000           [11] getglobal  4   3        ; gGameData
+061C  E2800001           [12] call       3   2   2  
+0620  D8000000           [13] test       3       0    ; to [15] if true
+0624  1A400080           [14] jmp        2            ; to [17]
+0628  D9000100           [15] loadk      3   4        ; 0
+062C  DE000001           [16] return     3   2      
+0630  DD400100           [17] getglobal  3   5        ; 2083004503
+0634  24814101           [18] self       4   2   262  ; -170068659
+0638  22010001           [19] call       4   2   0  
+063C  E2800000           [20] call       3   0   2  
+0640  1D810000           [21] getglobal  4   2        ; 1074689893
+0644  52018001           [22] move       5   3      
+0648  22810001           [23] call       4   2   2  
+064C  18010000           [24] test       4       0    ; to [26] if true
+0650  1A400080           [25] jmp        2            ; to [28]
+0654  19010100           [26] loadk      4   4        ; 0
+0658  1E010001           [27] return     4   2      
+065C  24C1C101           [28] self       4   3   263  ; 2113734225
+0660  22810001           [29] call       4   2   2  
+0664  59010200           [30] loadk      5   8        ; 0
+0668  8A010002           [31] len        6   4      
+066C  D9010200           [32] loadk      7   8        ; 0
+0670  50C10580           [33] forprep    5   24       ; to [58]
+0674  4E020202           [34] gettable   9   4   8  
+0678  8E42C204           [35] gettable   10  9   265  ; "mLocationTag"
+fail op	35
+067C  23400005           [36] close      0  
+0680  1AC00480           [37] jmp        20           ; to [58]
+0684  99820200           [38] loadk      10  10       ; 0
+0688  D9020200           [39] loadk      11  8        ; 0
+068C  0EC3C204           [40] gettable   12  9   267  ; "mJobs"
+0690  0A030006           [41] len        12  12     
+0694  59030200           [42] loadk      13  8        ; 0
+0698  D0C20280           [43] forprep    11  12       ; to [56]
+069C  CEC3C204           [44] gettable   15  9   267  ; "mJobs"
+06A0  CE838307           [45] gettable   15  15  14 
+06A4  1DC40000           [46] getglobal  16  3        ; gGameData
+06A8  24044308           [47] self       16  16  268  ; 478599573
+06AC  8E44C204           [48] gettable   18  9   265  ; "mLocationTag"
+06B0  DD440300           [49] getglobal  19  13       ; 738251817
+06B4  0E85C307           [50] gettable   20  15  270  ; "mJobInfo"
+06B8  E2040001           [51] call       19  2   0  
+06BC  22840000           [52] call       16  0   2  
+06C0  18040000           [53] test       16      0    ; to [55] if true
+06C4  1A000080           [54] jmp        1            ; to [56]
+06C8  83024205           [55] add        10  10  264  ; 0
+06CC  D482FC7F           [56] forloop    11  -13      ; to [44] if loop
+06D0  9E020001           [57] return     10  2      
+06D4  5481F97F           [58] forloop    5   -25      ; to [34] if loop
+06D8  19040100           [59] loadk      16  4        ; 0
+06DC  1E040001           [60] return     16  2      
+06E0  1E008000           [61] return     0   1      
+                         * constants:
+06E4  0F                 sizek (15)
+06E5  04                 const type 4
+06E6  0C                 string size (12)
+06E7  6747616D65436F6E+  "gGameCon"
+06EF  66696700           "fig\0"
+                         const [0]: "gGameConfig"
+06F3  01                 const type 3
+06F4  20C9B5AA           const [1]: (-1430927072)
+06F8  01                 const type 3
+06F9  65770E40           const [2]: (1074689893)
+06FD  04                 const type 4
+06FE  0A                 string size (10)
+06FF  6747616D65446174+  "gGameDat"
+0707  6100               "a\0"
+                         const [3]: "gGameData"
+0709  03                 const type 3
+070A  000080BF           const [4]: (0)
+070E  01                 const type 3
+070F  5720287C           const [5]: (2083004503)
+0713  01                 const type 3
+0714  4DF5DCF5           const [6]: (-170068659)
+0718  01                 const type 3
+0719  5106FD7D           const [7]: (2113734225)
+071D  03                 const type 3
+071E  0000803F           const [8]: (0)
+0722  04                 const type 4
+0723  0D                 string size (13)
+0724  6D4C6F636174696F+  "mLocatio"
+072C  6E54616700         "nTag\0"
+                         const [9]: "mLocationTag"
+0731  03                 const type 3
+0732  00000000           const [10]: (0)
+0736  04                 const type 4
+0737  06                 string size (6)
+0738  6D4A6F627300       "mJobs\0"
+                         const [11]: "mJobs"
+073E  01                 const type 3
+073F  95D9861C           const [12]: (478599573)
+0743  01                 const type 3
+0744  29D4002C           const [13]: (738251817)
+0748  04                 const type 4
+0749  09                 string size (9)
+074A  6D4A6F62496E666F+  "mJobInfo"
+0752  00                 "\0"
+                         const [14]: "mJobInfo"
+                         * functions:
+0753  00                 sizep (0)
+                         * lines:
+0754  3D                 sizelineinfo (61)
+                         [pc] (line)
+0755  3B                 [01] (59)
+0756  00                 [02] (59)
+0757  00                 [03] (59)
+0758  00                 [04] (59)
+0759  3B                 [05] (60)
+075A  00                 [06] (60)
+075B  00                 [07] (60)
+075C  00                 [08] (60)
+075D  3B                 [09] (60)
+075E  00                 [10] (60)
+075F  00                 [11] (60)
+0760  00                 [12] (60)
+0761  3B                 [13] (60)
+0762  00                 [14] (60)
+0763  00                 [15] (61)
+0764  00                 [16] (61)
+0765  3C                 [17] (64)
+0766  00                 [18] (64)
+0767  00                 [19] (64)
+0768  00                 [20] (64)
+0769  3C                 [21] (65)
+076A  00                 [22] (65)
+076B  00                 [23] (65)
+076C  00                 [24] (65)
+076D  3C                 [25] (65)
+076E  00                 [26] (66)
+076F  00                 [27] (66)
+0770  00                 [28] (69)
+0771  3C                 [29] (69)
+0772  00                 [30] (70)
+0773  00                 [31] (70)
+0774  00                 [32] (70)
+0775  3C                 [33] (70)
+0776  00                 [34] (71)
+0777  00                 [35] (72)
+0778  00                 [36] (72)
+0779  3C                 [37] (72)
+077A  00                 [38] (73)
+077B  00                 [39] (74)
+077C  00                 [40] (74)
+077D  3C                 [41] (74)
+077E  00                 [42] (74)
+077F  00                 [43] (74)
+0780  00                 [44] (75)
+0781  3C                 [45] (75)
+0782  00                 [46] (77)
+0783  00                 [47] (77)
+0784  00                 [48] (77)
+0785  3C                 [49] (77)
+0786  00                 [50] (77)
+0787  00                 [51] (77)
+0788  00                 [52] (77)
+0789  3C                 [53] (77)
+078A  00                 [54] (77)
+078B  00                 [55] (78)
+078C  00                 [56] (74)
+078D  3D                 [57] (82)
+078E  00                 [58] (70)
+078F  00                 [59] (86)
+0790  00                 [60] (86)
+0791  3D                 [61] (87)
+                         * locals:
+0849  00                 sizelocvars (0)
+                         * upvalues:
+084A  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+084B                     ** function [4] definition (level 2)
+                         ** start of function **
+084B  00                 string size (0)
+                         source name: (none)
+084C  59                 line defined (89)
+084D  80                 last line defined (128)
+084E  01                 nups (0)
+084F  00                 numparams (1)
+0850  01                 is_vararg (0)
+0851  00                 maxstacksize (19)
+                         * code:
+0853  58                 sizecode (88)
+0854  5D000000           [01] getglobal  1   0        ; 1074689893
+0858  8E404000           [02] gettable   2   0   257  ; "jobType"
+085C  62800001           [03] call       1   2   2  
+0860  58400000           [04] test       1       1    ; to [6] if false
+0864  1A400180           [05] jmp        6            ; to [12]
+0868  4E804000           [06] gettable   1   0   258  ; "jobId"
+fail op	35
+086C  63C0C000           [07] close      1  
+0870  1A800080           [08] jmp        3            ; to [12]
+0874  4E004100           [09] gettable   1   0   260  ; "syndicateTag"
+fail op	35
+0878  23C0C000           [10] close      0  
+087C  1A400080           [11] jmp        2            ; to [14]
+0880  46008000           [12] loadnil    1   1      
+0884  5E000001           [13] return     1   2      
+0888  5D400100           [14] getglobal  1   5        ; gGameConfig
+088C  6480C100           [15] self       1   1   262  ; -1430927072
+0890  CE004100           [16] gettable   3   0   260  ; "syndicateTag"
+0894  62808001           [17] call       1   3   2  
+0898  9D000000           [18] getglobal  2   0        ; 1074689893
+089C  D2008000           [19] move       3   1      
+08A0  A2800001           [20] call       2   2   2  
+08A4  98400000           [21] test       2       1    ; to [23] if false
+08A8  1A000180           [22] jmp        5            ; to [28]
+08AC  9D000000           [23] getglobal  2   0        ; 1074689893
+08B0  DDC00100           [24] getglobal  3   7        ; gGameData
+08B4  A2800001           [25] call       2   2   2  
+08B8  98000000           [26] test       2       0    ; to [28] if true
+08BC  1A400080           [27] jmp        2            ; to [30]
+08C0  86000001           [28] loadnil    2   2      
+08C4  9E000001           [29] return     2   2      
+08C8  9D000200           [30] getglobal  2   8        ; 2083004503
+08CC  E440C200           [31] self       3   1   265  ; -170068659
+08D0  E2000001           [32] call       3   2   0  
+08D4  A2800000           [33] call       2   0   2  
+08D8  DD000000           [34] getglobal  3   0        ; 1074689893
+08DC  12010001           [35] move       4   2      
+08E0  E2800001           [36] call       3   2   2  
+08E4  D8000000           [37] test       3       0    ; to [39] if true
+08E8  1A400080           [38] jmp        2            ; to [41]
+08EC  C6008001           [39] loadnil    3   3      
+08F0  DE000001           [40] return     3   2      
+08F4  DD800200           [41] getglobal  3   10       ; string
+08F8  CEC0C201           [42] gettable   3   3   267  ; -565905820
+08FC  0E814000           [43] gettable   4   0   258  ; "jobId"
+0900  59010300           [44] loadk      5   12       ; ".*_(.*)"
+0904  E2008101           [45] call       3   3   4  
+0908  9D410300           [46] getglobal  6   13       ; -332969190
+090C  D2018002           [47] move       7   5      
+0910  A2810001           [48] call       6   2   2  
+0914  52010003           [49] move       5   6      
+0918  A4814301           [50] self       6   2   270  ; 2113734225
+091C  A2810001           [51] call       6   2   2  
+0920  D9C10300           [52] loadk      7   15       ; 0
+0924  0A020003           [53] len        8   6      
+0928  59C20300           [54] loadk      9   15       ; 0
+092C  D0010780           [55] forprep    7   29       ; to [85]
+0930  CE820203           [56] gettable   11  6   10 
+0934  0E03C405           [57] gettable   12  11  272  ; "mLocationTag"
+fail op	35
+0938  23400106           [58] close      0  
+093C  1A000680           [59] jmp        25           ; to [85]
+0940  19C30300           [60] loadk      12  15       ; 0
+0944  4E43C405           [61] gettable   13  11  273  ; "mJobs"
+0948  4A038006           [62] len        13  13     
+094C  99C30300           [63] loadk      14  15       ; 0
+0950  10430480           [64] forprep    12  18       ; to [83]
+0954  0E44C405           [65] gettable   16  11  273  ; "mJobs"
+0958  0EC40308           [66] gettable   16  16  15 
+095C  4E844408           [67] gettable   17  16  274  ; "mJobInfo"
+0960  8E444000           [68] gettable   18  0   257  ; "jobType"
+fail op	35
+0964  23808408           [69] close      0  
+0968  1AC00280           [70] jmp        12           ; to [83]
+096C  4E44C405           [71] gettable   17  11  273  ; "mJobs"
+0970  4A048008           [72] len        17  17     
+fail op	21
+0974  15408407           [73] concat     0   15  17 
+0978  1A400180           [74] jmp        6            ; to [81]
+097C  4E44C405           [75] gettable   17  11  273  ; "mJobs"
+0980  83C4C307           [76] add        18  15  271  ; 0
+0984  4E848408           [77] gettable   17  17  18 
+0988  4E84C408           [78] gettable   17  17  274  ; "mJobInfo"
+098C  5E040001           [79] return     17  2      
+0990  1A400080           [80] jmp        2            ; to [83]
+0994  46048008           [81] loadnil    17  17     
+0998  5E040001           [82] return     17  2      
+099C  1403FB7F           [83] forloop    12  -19      ; to [65] if loop
+09A0  1A000080           [84] jmp        1            ; to [86]
+09A4  D441F87F           [85] forloop    7   -30      ; to [56] if loop
+09A8  46048008           [86] loadnil    17  17     
+09AC  5E040001           [87] return     17  2      
+09B0  1E008000           [88] return     0   1      
+                         * constants:
+09B4  13                 sizek (19)
+09B5  01                 const type 3
+09B6  65770E40           const [0]: (1074689893)
+09BA  04                 const type 4
+09BB  08                 string size (8)
+09BC  6A6F625479706500   "jobType\0"
+                         const [1]: "jobType"
+09C4  04                 const type 4
+09C5  06                 string size (6)
+09C6  6A6F62496400       "jobId\0"
+                         const [2]: "jobId"
+09CC  00                 const type 0
+                         const [3]: nil
+09CD  04                 const type 4
+09CE  0D                 string size (13)
+09CF  73796E6469636174+  "syndicat"
+09D7  6554616700         "eTag\0"
+                         const [4]: "syndicateTag"
+09DC  04                 const type 4
+09DD  0C                 string size (12)
+09DE  6747616D65436F6E+  "gGameCon"
+09E6  66696700           "fig\0"
+                         const [5]: "gGameConfig"
+09EA  01                 const type 3
+09EB  20C9B5AA           const [6]: (-1430927072)
+09EF  04                 const type 4
+09F0  0A                 string size (10)
+09F1  6747616D65446174+  "gGameDat"
+09F9  6100               "a\0"
+                         const [7]: "gGameData"
+09FB  01                 const type 3
+09FC  5720287C           const [8]: (2083004503)
+0A00  01                 const type 3
+0A01  4DF5DCF5           const [9]: (-170068659)
+0A05  04                 const type 4
+0A06  07                 string size (7)
+0A07  737472696E6700     "string\0"
+                         const [10]: "string"
+0A0E  01                 const type 3
+0A0F  64F644DE           const [11]: (-565905820)
+0A13  04                 const type 4
+0A14  08                 string size (8)
+0A15  2E2A5F282E2A2900   ".*_(.*)\0"
+                         const [12]: ".*_(.*)"
+0A1D  01                 const type 3
+0A1E  1A4B27EC           const [13]: (-332969190)
+0A22  01                 const type 3
+0A23  5106FD7D           const [14]: (2113734225)
+0A27  03                 const type 3
+0A28  0000803F           const [15]: (0)
+0A2C  04                 const type 4
+0A2D  0D                 string size (13)
+0A2E  6D4C6F636174696F+  "mLocatio"
+0A36  6E54616700         "nTag\0"
+                         const [16]: "mLocationTag"
+0A3B  04                 const type 4
+0A3C  06                 string size (6)
+0A3D  6D4A6F627300       "mJobs\0"
+                         const [17]: "mJobs"
+0A43  04                 const type 4
+0A44  09                 string size (9)
+0A45  6D4A6F62496E666F+  "mJobInfo"
+0A4D  00                 "\0"
+                         const [18]: "mJobInfo"
+                         * functions:
+0A4E  00                 sizep (0)
+                         * lines:
+0A4F  58                 sizelineinfo (88)
+                         [pc] (line)
+0A50  5A                 [01] (90)
+0A51  00                 [02] (90)
+0A52  00                 [03] (90)
+0A53  00                 [04] (90)
+0A54  5A                 [05] (90)
+0A55  00                 [06] (90)
+0A56  00                 [07] (90)
+0A57  00                 [08] (90)
+0A58  5A                 [09] (90)
+0A59  00                 [10] (90)
+0A5A  00                 [11] (90)
+0A5B  00                 [12] (91)
+0A5C  5A                 [13] (91)
+0A5D  00                 [14] (94)
+0A5E  00                 [15] (94)
+0A5F  00                 [16] (94)
+0A60  5A                 [17] (94)
+0A61  00                 [18] (95)
+0A62  00                 [19] (95)
+0A63  00                 [20] (95)
+0A64  5A                 [21] (95)
+0A65  00                 [22] (95)
+0A66  00                 [23] (95)
+0A67  00                 [24] (95)
+0A68  5A                 [25] (95)
+0A69  00                 [26] (95)
+0A6A  00                 [27] (95)
+0A6B  00                 [28] (96)
+0A6C  5A                 [29] (96)
+0A6D  00                 [30] (99)
+0A6E  00                 [31] (99)
+0A6F  00                 [32] (99)
+0A70  5A                 [33] (99)
+0A71  00                 [34] (100)
+0A72  00                 [35] (100)
+0A73  00                 [36] (100)
+0A74  5A                 [37] (100)
+0A75  00                 [38] (100)
+0A76  00                 [39] (101)
+0A77  00                 [40] (101)
+0A78  5A                 [41] (104)
+0A79  00                 [42] (104)
+0A7A  00                 [43] (104)
+0A7B  00                 [44] (104)
+0A7C  5B                 [45] (104)
+0A7D  00                 [46] (105)
+0A7E  00                 [47] (105)
+0A7F  00                 [48] (105)
+0A80  5B                 [49] (105)
+0A81  00                 [50] (107)
+0A82  00                 [51] (107)
+0A83  00                 [52] (108)
+0A84  5E                 [53] (108)
+0A85  00                 [54] (108)
+0A86  00                 [55] (108)
+0A87  00                 [56] (109)
+0A88  5E                 [57] (110)
+0A89  00                 [58] (110)
+0A8A  00                 [59] (110)
+0A8B  00                 [60] (111)
+0A8C  5E                 [61] (111)
+0A8D  00                 [62] (111)
+0A8E  00                 [63] (111)
+0A8F  00                 [64] (111)
+0A90  5E                 [65] (112)
+0A91  00                 [66] (112)
+0A92  00                 [67] (114)
+0A93  00                 [68] (114)
+0A94  5F                 [69] (114)
+0A95  00                 [70] (114)
+0A96  00                 [71] (115)
+0A97  00                 [72] (115)
+0A98  5F                 [73] (115)
+0A99  00                 [74] (115)
+0A9A  00                 [75] (116)
+0A9B  00                 [76] (116)
+0A9C  5F                 [77] (116)
+0A9D  00                 [78] (116)
+0A9E  00                 [79] (116)
+0A9F  00                 [80] (116)
+0AA0  5F                 [81] (118)
+0AA1  00                 [82] (118)
+0AA2  00                 [83] (111)
+0AA3  00                 [84] (123)
+0AA4  5F                 [85] (108)
+0AA5  00                 [86] (127)
+0AA6  00                 [87] (127)
+0AA7  00                 [88] (-128)
+                         * locals:
+0BB0  00                 sizelocvars (0)
+                         * upvalues:
+0BB1  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+0BB2  15                 sizelineinfo (21)
+                         [pc] (line)
+0BB3  01                 [01] (1)
+0BB4  00                 [02] (1)
+0BB5  00                 [03] (1)
+0BB6  00                 [04] (1)
+0BB7  01                 [05] (1)
+0BB8  00                 [06] (43)
+0BB9  00                 [07] (47)
+0BBA  00                 [08] (47)
+0BBB  01                 [09] (47)
+0BBC  00                 [10] (45)
+0BBD  00                 [11] (55)
+0BBE  00                 [12] (55)
+0BBF  01                 [13] (55)
+0BC0  00                 [14] (49)
+0BC1  00                 [15] (87)
+0BC2  00                 [16] (87)
+0BC3  01                 [17] (58)
+0BC4  00                 [18] (-128)
+0BC5  00                 [19] (-128)
+0BC6  00                 [20] (89)
+0BC7  2B                 [21] (-128)
+                         * locals:
+0C07  00                 sizelocvars (0)
+                         * upvalues:
+0C08  00                 sizeupvalues (0)
+                         ** end of function **
+
+0C09                     ** end of chunk **
