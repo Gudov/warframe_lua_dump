@@ -1,0 +1,465 @@
+1	C:\wlua_dump\path\Lotus\Scripts\ModsUpgradeHighlight.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Scripts\ModsUpgradeHighlight.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  02                 size of number (bytes)
+0008  04                 integral (1=integral)
+44
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+UpgradeHighlightUpdate
+gFusionBundleType
+modMarkerInfoType
+fusionBundleMarkerInfoType
+EMPTY_SYMBOL
+minValue
+gRegion
+gLotusAvatarType
+maxValue
+Game
+AVATAR_LOOT_RADAR
+modTrackFx
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  02                 maxstacksize (2)
+                         * code:
+0008  04                 sizecode (4)
+0009  25000000           [1] closure    0   0      
+000D  20000000           [2] setglobal  0   0        ; UpgradeHighlightUpdate
+0011  20400000           [3] setglobal  0   1        ; -1932582857
+0015  1E008000           [4] return     0   1      
+                         * constants:
+0019  02                 sizek (2)
+001A  04                 const type 4
+001B  17                 string size (23)
+001C  5570677261646548+  "UpgradeH"
+0024  6967686C69676874+  "ighlight"
+002C  55706461746500     "Update\0"
+                         const [0]: "UpgradeHighlightUpdate"
+0033  01                 const type 3
+0034  3720CF8C           const [1]: (-1932582857)
+                         * functions:
+0038  01                 sizep (1)
+                         
+0039                     ** function [0] definition (level 2)
+                         ** start of function **
+0039  00                 string size (0)
+                         source name: (none)
+003A  05                 line defined (5)
+003B  44                 last line defined (68)
+003C  00                 nups (0)
+003D  01                 numparams (1)
+003E  00                 is_vararg (0)
+003F  11                 maxstacksize (17)
+                         * code:
+0041  01                 sizecode (135)
+0042  5D010000           [001] getglobal  5   0        ; 1074689893
+0046  92010002           [002] move       6   4      
+004A  62810001           [003] call       5   2   2  
+004E  58010000           [004] test       5       0    ; to [6] if true
+0052  1A800180           [005] jmp        7            ; to [13]
+0056  64414000           [006] self       5   0   257  ; 930762077
+005A  62810001           [007] call       5   2   2  
+005E  12018002           [008] move       4   5      
+0062  5D810000           [009] getglobal  5   2        ; 538022378
+0066  99C10000           [010] loadk      6   3        ; 0
+006A  62410001           [011] call       5   2   1  
+006E  1AC0FC7F           [012] jmp        -12          ; to [1]
+0072  64014102           [013] self       5   4   260  ; 1313672219
+0076  62810001           [014] call       5   2   2  
+007A  9D010000           [015] getglobal  6   0        ; 1074689893
+007E  D2018002           [016] move       7   5      
+0082  A2810001           [017] call       6   2   2  
+0086  98410000           [018] test       6       1    ; to [20] if false
+008A  1A800480           [019] jmp        19           ; to [39]
+008E  A441C102           [020] self       6   5   261  ; -1957065004
+0092  1D820100           [021] getglobal  8   6        ; gFusionBundleType
+0096  A2818001           [022] call       6   3   2  
+009A  98010000           [023] test       6       0    ; to [25] if true
+009E  1A400380           [024] jmp        14           ; to [39]
+00A2  A4C14100           [025] self       6   0   263  ; -1625438872
+00A6  1D020200           [026] getglobal  8   8        ; modMarkerInfoType
+00AA  A2818001           [027] call       6   3   2  
+00AE  DD010000           [028] getglobal  7   0        ; 1074689893
+00B2  12020003           [029] move       8   6      
+00B6  E2810001           [030] call       7   2   2  
+00BA  D8410000           [031] test       7       1    ; to [33] if false
+00BE  1A400080           [032] jmp        2            ; to [35]
+00C2  E4414203           [033] self       7   6   265  ; -725453761
+00C6  E2410001           [034] call       7   2   1  
+00CA  E4814202           [035] self       7   4   266  ; -1421644046
+00CE  5DC20200           [036] getglobal  9   11       ; fusionBundleMarkerInfoType
+00D2  9D020300           [037] getglobal  10  12       ; EMPTY_SYMBOL
+00D6  E2410002           [038] call       7   4   1  
+00DA  DD410300           [039] getglobal  7   13       ; 160735655
+00DE  E2818000           [040] call       7   1   2  
+00E2  CCC14087           [041] settable   7   270 259  ; "minValue" 0
+00E6  1D020000           [042] getglobal  8   0        ; 1074689893
+00EA  52028000           [043] move       9   1      
+00EE  22820001           [044] call       8   2   2  
+00F2  18020000           [045] test       8       0    ; to [47] if true
+00F6  1AC00180           [046] jmp        8            ; to [55]
+00FA  1DC20300           [047] getglobal  8   15       ; gRegion
+00FE  24024404           [048] self       8   8   272  ; 65205951
+0102  22820001           [049] call       8   2   2  
+0106  52000004           [050] move       1   8      
+010A  1D820000           [051] getglobal  8   2        ; 538022378
+010E  59C20000           [052] loadk      9   3        ; 0
+0112  22420001           [053] call       8   2   1  
+0116  1A80FC7F           [054] jmp        -13          ; to [42]
+011A  2442C100           [055] self       8   1   261  ; -1957065004
+011E  9D420400           [056] getglobal  10  17       ; gLotusAvatarType
+0122  22828001           [057] call       8   3   2  
+0126  18420000           [058] test       8       1    ; to [60] if false
+012A  1A000080           [059] jmp        1            ; to [61]
+012E  1A401280           [060] jmp        74           ; to [135]
+0132  2482C400           [061] self       8   1   274  ; -1917464545
+0136  22820001           [062] call       8   2   2  
+013A  92000004           [063] move       2   8      
+013E  24C24401           [064] self       8   2   275  ; 1769516121
+0142  22820001           [065] call       8   2   2  
+0146  D2000004           [066] move       3   8      
+014A  1D020000           [067] getglobal  8   0        ; 1074689893
+014E  52028001           [068] move       9   3      
+0152  22820001           [069] call       8   2   2  
+0156  18420000           [070] test       8       1    ; to [72] if false
+015A  1A800E80           [071] jmp        59           ; to [131]
+015E  24424501           [072] self       8   2   277  ; -940929887
+0162  99C20000           [073] loadk      10  3        ; 0
+0166  DD820500           [074] getglobal  11  22       ; Game
+016A  CEC2C505           [075] gettable   11  11  279  ; "AVATAR_LOOT_RADAR"
+016E  2403C601           [076] self       12  3   280  ; -491574171
+0172  22830001           [077] call       12  2   2  
+0176  52038001           [078] move       13  3      
+017A  22820003           [079] call       8   6   2  
+017E  CC01028A           [080] settable   7   276 8    ; "maxValue"
+0182  24424601           [081] self       8   2   281  ; 819640984
+0186  22820001           [082] call       8   2   2  
+018A  5D020000           [083] getglobal  9   0        ; 1074689893
+018E  92020004           [084] move       10  8      
+0192  62820001           [085] call       9   2   2  
+0196  58420000           [086] test       9       1    ; to [88] if false
+019A  1A400680           [087] jmp        26           ; to [114]
+019E  64824604           [088] self       9   8   282  ; 1511086594
+01A2  62820001           [089] call       9   2   2  
+01A6  58420000           [090] test       9       1    ; to [92] if false
+01AA  1A400580           [091] jmp        22           ; to [114]
+01AE  64824404           [092] self       9   8   274  ; -1917464545
+01B2  62820001           [093] call       9   2   2  
+01B6  64C2C404           [094] self       9   9   275  ; 1769516121
+01BA  62820001           [095] call       9   2   2  
+01BE  9D020000           [096] getglobal  10  0        ; 1074689893
+01C2  D2028004           [097] move       11  9      
+01C6  A2820001           [098] call       10  2   2  
+01CA  98420000           [099] test       10      1    ; to [101] if false
+01CE  1A000380           [100] jmp        13           ; to [114]
+01D2  8E02C503           [101] gettable   10  7   276  ; "maxValue"
+01D6  E4824404           [102] self       11  8   274  ; -1917464545
+01DA  E2820001           [103] call       11  2   2  
+01DE  E442C505           [104] self       11  11  277  ; -940929887
+01E2  59C30000           [105] loadk      13  3        ; 0
+01E6  9D830500           [106] getglobal  14  22       ; Game
+01EA  8EC34507           [107] gettable   14  14  279  ; "AVATAR_LOOT_RADAR"
+01EE  E403C604           [108] self       15  9   280  ; -491574171
+01F2  E2830001           [109] call       15  2   2  
+01F6  12048004           [110] move       16  9      
+01FA  E2820003           [111] call       11  6   2  
+01FE  83C20205           [112] add        10  10  11 
+0202  CC81028A           [113] settable   7   276 10   ; "maxValue"
+0206  8E02C503           [114] gettable   10  7   276  ; "maxValue"
+fail op	21
+020A  15808281           [115] concat     0   259 10 
+020E  1A400480           [116] jmp        18           ; to [135]
+0212  A4824202           [117] self       10  4   266  ; -1421644046
+0216  1DC30600           [118] getglobal  12  27       ; modTrackFx
+021A  5D030300           [119] getglobal  13  12       ; EMPTY_SYMBOL
+021E  A2820002           [120] call       10  4   2  
+0222  DD020000           [121] getglobal  11  0        ; 1074689893
+0226  12030005           [122] move       12  10     
+022A  E2820001           [123] call       11  2   2  
+022E  D8420000           [124] test       11      1    ; to [126] if false
+0232  1A000280           [125] jmp        9            ; to [135]
+0236  E4024705           [126] self       11  10  284  ; -700452158
+023A  52038003           [127] move       13  7      
+023E  E2428001           [128] call       11  3   1  
+0242  1A000180           [129] jmp        5            ; to [135]
+0246  1A80E97F           [130] jmp        -89          ; to [42]
+024A  DD820000           [131] getglobal  11  2        ; 538022378
+024E  19C30000           [132] loadk      12  3        ; 0
+0252  E2420001           [133] call       11  2   1  
+0256  1A80E87F           [134] jmp        -93          ; to [42]
+025A  1E008000           [135] return     0   1      
+                         * constants:
+025E  1D                 sizek (29)
+025F  01                 const type 3
+0260  65770E40           const [0]: (1074689893)
+0264  01                 const type 3
+0265  5D4D7A37           const [1]: (930762077)
+0269  01                 const type 3
+026A  EA911120           const [2]: (538022378)
+026E  03                 const type 3
+026F  00000000           const [3]: (0)
+0273  01                 const type 3
+0274  1B0C4D4E           const [4]: (1313672219)
+0278  01                 const type 3
+0279  D48E598B           const [5]: (-1957065004)
+027D  04                 const type 4
+027E  12                 string size (18)
+027F  67467573696F6E42+  "gFusionB"
+0287  756E646C65547970+  "undleTyp"
+028F  6500               "e\0"
+                         const [6]: "gFusionBundleType"
+0291  01                 const type 3
+0292  68C51D9F           const [7]: (-1625438872)
+0296  04                 const type 4
+0297  12                 string size (18)
+0298  6D6F644D61726B65+  "modMarke"
+02A0  72496E666F547970+  "rInfoTyp"
+02A8  6500               "e\0"
+                         const [8]: "modMarkerInfoType"
+02AA  01                 const type 3
+02AB  3F74C2D4           const [9]: (-725453761)
+02AF  01                 const type 3
+02B0  F26E43AB           const [10]: (-1421644046)
+02B4  04                 const type 4
+02B5  1B                 string size (27)
+02B6  667573696F6E4275+  "fusionBu"
+02BE  6E646C654D61726B+  "ndleMark"
+02C6  6572496E666F5479+  "erInfoTy"
+02CE  706500             "pe\0"
+                         const [11]: "fusionBundleMarkerInfoType"
+02D1  04                 const type 4
+02D2  0D                 string size (13)
+02D3  454D5054595F5359+  "EMPTY_SY"
+02DB  4D424F4C00         "MBOL\0"
+                         const [12]: "EMPTY_SYMBOL"
+02E0  01                 const type 3
+02E1  A7A19409           const [13]: (160735655)
+02E5  04                 const type 4
+02E6  09                 string size (9)
+02E7  6D696E56616C7565+  "minValue"
+02EF  00                 "\0"
+                         const [14]: "minValue"
+02F0  04                 const type 4
+02F1  08                 string size (8)
+02F2  67526567696F6E00   "gRegion\0"
+                         const [15]: "gRegion"
+02FA  01                 const type 3
+02FB  BFF6E203           const [16]: (65205951)
+02FF  04                 const type 4
+0300  11                 string size (17)
+0301  674C6F7475734176+  "gLotusAv"
+0309  6174617254797065+  "atarType"
+0311  00                 "\0"
+                         const [17]: "gLotusAvatarType"
+0312  01                 const type 3
+0313  1FD0B58D           const [18]: (-1917464545)
+0317  01                 const type 3
+0318  59AC7869           const [19]: (1769516121)
+031C  04                 const type 4
+031D  09                 string size (9)
+031E  6D617856616C7565+  "maxValue"
+0326  00                 "\0"
+                         const [20]: "maxValue"
+0327  01                 const type 3
+0328  A18CEAC7           const [21]: (-940929887)
+032C  04                 const type 4
+032D  05                 string size (5)
+032E  47616D6500         "Game\0"
+                         const [22]: "Game"
+0333  04                 const type 4
+0334  12                 string size (18)
+0335  4156415441525F4C+  "AVATAR_L"
+033D  4F4F545F52414441+  "OOT_RADA"
+0345  5200               "R\0"
+                         const [23]: "AVATAR_LOOT_RADAR"
+0347  01                 const type 3
+0348  652CB3E2           const [24]: (-491574171)
+034C  01                 const type 3
+034D  98BADA30           const [25]: (819640984)
+0351  01                 const type 3
+0352  025A115A           const [26]: (1511086594)
+0356  04                 const type 4
+0357  0B                 string size (11)
+0358  6D6F64547261636B+  "modTrack"
+0360  467800             "Fx\0"
+                         const [27]: "modTrackFx"
+0363  01                 const type 3
+0364  C2F23FD6           const [28]: (-700452158)
+                         * functions:
+0368  00                 sizep (0)
+                         * lines:
+036A  01                 sizelineinfo (135)
+                         [pc] (line)
+036B  0B                 [001] (11)
+036C  00                 [002] (11)
+036D  00                 [003] (11)
+036E  00                 [004] (11)
+036F  0B                 [005] (11)
+0370  00                 [006] (12)
+0371  00                 [007] (12)
+0372  00                 [008] (12)
+0373  0B                 [009] (13)
+0374  00                 [010] (13)
+0375  00                 [011] (13)
+0376  00                 [012] (13)
+0377  0B                 [013] (16)
+0378  00                 [014] (16)
+0379  00                 [015] (17)
+037A  00                 [016] (17)
+037B  0B                 [017] (17)
+037C  00                 [018] (17)
+037D  00                 [019] (17)
+037E  00                 [020] (17)
+037F  0C                 [021] (17)
+0380  00                 [022] (17)
+0381  00                 [023] (17)
+0382  00                 [024] (17)
+0383  0C                 [025] (18)
+0384  00                 [026] (18)
+0385  00                 [027] (18)
+0386  00                 [028] (19)
+0387  0C                 [029] (19)
+0388  00                 [030] (19)
+0389  00                 [031] (19)
+038A  00                 [032] (19)
+038B  0D                 [033] (20)
+038C  00                 [034] (20)
+038D  00                 [035] (23)
+038E  00                 [036] (23)
+038F  0D                 [037] (23)
+0390  00                 [038] (23)
+0391  00                 [039] (26)
+0392  00                 [040] (26)
+0393  0D                 [041] (27)
+0394  00                 [042] (30)
+0395  00                 [043] (30)
+0396  00                 [044] (30)
+0397  0D                 [045] (30)
+0398  00                 [046] (30)
+0399  00                 [047] (31)
+039A  00                 [048] (31)
+039B  10                 [049] (31)
+039C  00                 [050] (31)
+039D  00                 [051] (32)
+039E  00                 [052] (32)
+039F  10                 [053] (32)
+03A0  00                 [054] (32)
+03A1  00                 [055] (35)
+03A2  00                 [056] (35)
+03A3  11                 [057] (35)
+03A4  00                 [058] (35)
+03A5  00                 [059] (35)
+03A6  00                 [060] (36)
+03A7  11                 [061] (39)
+03A8  00                 [062] (39)
+03A9  00                 [063] (39)
+03AA  00                 [064] (40)
+03AB  11                 [065] (40)
+03AC  00                 [066] (40)
+03AD  00                 [067] (42)
+03AE  00                 [068] (42)
+03AF  11                 [069] (42)
+03B0  00                 [070] (42)
+03B1  00                 [071] (42)
+03B2  00                 [072] (43)
+03B3  11                 [073] (43)
+03B4  00                 [074] (43)
+03B5  00                 [075] (43)
+03B6  00                 [076] (43)
+03B7  11                 [077] (43)
+03B8  00                 [078] (43)
+03B9  00                 [079] (43)
+03BA  00                 [080] (43)
+03BB  11                 [081] (45)
+03BC  00                 [082] (45)
+03BD  00                 [083] (46)
+03BE  00                 [084] (46)
+03BF  11                 [085] (46)
+03C0  00                 [086] (46)
+03C1  00                 [087] (46)
+03C2  00                 [088] (46)
+03C3  11                 [089] (46)
+03C4  00                 [090] (46)
+03C5  00                 [091] (46)
+03C6  00                 [092] (47)
+03C7  11                 [093] (47)
+03C8  00                 [094] (47)
+03C9  00                 [095] (47)
+03CA  00                 [096] (48)
+03CB  12                 [097] (48)
+03CC  00                 [098] (48)
+03CD  00                 [099] (48)
+03CE  00                 [100] (48)
+03CF  12                 [101] (49)
+03D0  00                 [102] (49)
+03D1  00                 [103] (49)
+03D2  00                 [104] (49)
+03D3  12                 [105] (49)
+03D4  00                 [106] (49)
+03D5  00                 [107] (49)
+03D6  00                 [108] (49)
+03D7  13                 [109] (49)
+03D8  00                 [110] (49)
+03D9  00                 [111] (49)
+03DA  00                 [112] (49)
+03DB  13                 [113] (49)
+03DC  00                 [114] (53)
+03DD  00                 [115] (53)
+03DE  00                 [116] (53)
+03DF  13                 [117] (54)
+03E0  00                 [118] (54)
+03E1  00                 [119] (54)
+03E2  00                 [120] (54)
+03E3  13                 [121] (56)
+03E4  00                 [122] (56)
+03E5  00                 [123] (56)
+03E6  00                 [124] (56)
+03E7  13                 [125] (56)
+03E8  00                 [126] (57)
+03E9  00                 [127] (57)
+03EA  00                 [128] (57)
+03EB  14                 [129] (62)
+03EC  00                 [130] (62)
+03ED  00                 [131] (65)
+03EE  00                 [132] (65)
+03EF  14                 [133] (65)
+03F0  00                 [134] (66)
+03F1  00                 [135] (68)
+                         * locals:
+0587  00                 sizelocvars (0)
+                         * upvalues:
+0588  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+0589  04                 sizelineinfo (4)
+                         [pc] (line)
+058A  44                 [1] (68)
+058B  00                 [2] (68)
+058C  00                 [3] (5)
+058D  00                 [4] (68)
+                         * locals:
+059A  00                 sizelocvars (0)
+                         * upvalues:
+059B  00                 sizeupvalues (0)
+                         ** end of function **
+
+059C                     ** end of chunk **

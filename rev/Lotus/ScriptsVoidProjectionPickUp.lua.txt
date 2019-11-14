@@ -1,0 +1,242 @@
+1	C:\wlua_dump\path\Lotus\ScriptsVoidProjectionPickUp.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\ScriptsVoidProjectionPickUp.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  02                 size of number (bytes)
+0008  04                 integral (1=integral)
+44
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+SetOverrides
+tier1VoidProjection
+tier1MatOverride
+tier2VoidProjection
+tier2MatOverride
+tier3VoidProjection
+tier3MatOverride
+commonMatOverride
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  02                 maxstacksize (2)
+                         * code:
+0008  04                 sizecode (4)
+0009  25000000           [1] closure    0   0      
+000D  20000000           [2] setglobal  0   0        ; SetOverrides
+0011  20400000           [3] setglobal  0   1        ; -1184469462
+0015  1E008000           [4] return     0   1      
+                         * constants:
+0019  02                 sizek (2)
+001A  04                 const type 4
+001B  0D                 string size (13)
+001C  5365744F76657272+  "SetOverr"
+0024  6964657300         "ides\0"
+                         const [0]: "SetOverrides"
+0029  01                 const type 3
+002A  2A6E66B9           const [1]: (-1184469462)
+                         * functions:
+002E  01                 sizep (1)
+                         
+002F                     ** function [0] definition (level 2)
+                         ** start of function **
+002F  00                 string size (0)
+                         source name: (none)
+0030  0A                 line defined (10)
+0031  20                 last line defined (32)
+0032  00                 nups (0)
+0033  01                 numparams (1)
+0034  00                 is_vararg (0)
+0035  08                 maxstacksize (8)
+                         * code:
+0036  2E                 sizecode (46)
+0037  9D000000           [01] getglobal  2   0        ; 1074689893
+003B  D2008000           [02] move       3   1      
+003F  A2800001           [03] call       2   2   2  
+0043  98000000           [04] test       2       0    ; to [6] if true
+0047  1A800180           [05] jmp        7            ; to [13]
+004B  9D400000           [06] getglobal  2   1        ; 538022378
+004F  D9800000           [07] loadk      3   2        ; 0
+0053  A2400001           [08] call       2   2   1  
+0057  A4C04000           [09] self       2   0   259  ; 1313672219
+005B  A2800001           [10] call       2   2   2  
+005F  52000001           [11] move       1   2      
+0063  1AC0FC7F           [12] jmp        -12          ; to [1]
+0067  86000001           [13] loadnil    2   2      
+006B  E400C100           [14] self       3   1   260  ; -1957065004
+006F  5D410100           [15] getglobal  5   5        ; tier1VoidProjection
+0073  E2808001           [16] call       3   3   2  
+0077  D8000000           [17] test       3       0    ; to [19] if true
+007B  1A400080           [18] jmp        2            ; to [21]
+007F  9D800100           [19] getglobal  2   6        ; tier1MatOverride
+0083  1A800380           [20] jmp        15           ; to [36]
+0087  E400C100           [21] self       3   1   260  ; -1957065004
+008B  5DC10100           [22] getglobal  5   7        ; tier2VoidProjection
+008F  E2808001           [23] call       3   3   2  
+0093  D8000000           [24] test       3       0    ; to [26] if true
+0097  1A400080           [25] jmp        2            ; to [28]
+009B  9D000200           [26] getglobal  2   8        ; tier2MatOverride
+009F  1AC00180           [27] jmp        8            ; to [36]
+00A3  E400C100           [28] self       3   1   260  ; -1957065004
+00A7  5D410200           [29] getglobal  5   9        ; tier3VoidProjection
+00AB  E2808001           [30] call       3   3   2  
+00AF  D8000000           [31] test       3       0    ; to [33] if true
+00B3  1A400080           [32] jmp        2            ; to [35]
+00B7  9D800200           [33] getglobal  2   10       ; tier3MatOverride
+00BB  1A000080           [34] jmp        1            ; to [36]
+00BF  1E008000           [35] return     0   1      
+00C3  E4C04200           [36] self       3   0   267  ; 1728877662
+00C7  59810000           [37] loadk      5   2        ; 0
+00CB  9D010300           [38] getglobal  6   12       ; commonMatOverride
+00CF  D7010000           [39] loadbool   7   0   0    ; false
+00D3  E2408002           [40] call       3   5   1  
+00D7  E4C04200           [41] self       3   0   267  ; 1728877662
+00DB  59410300           [42] loadk      5   13       ; 0
+00DF  92010001           [43] move       6   2      
+00E3  D7010000           [44] loadbool   7   0   0    ; false
+00E7  E2408002           [45] call       3   5   1  
+00EB  1E008000           [46] return     0   1      
+                         * constants:
+00EF  0E                 sizek (14)
+00F0  01                 const type 3
+00F1  65770E40           const [0]: (1074689893)
+00F5  01                 const type 3
+00F6  EA911120           const [1]: (538022378)
+00FA  03                 const type 3
+00FB  00000000           const [2]: (0)
+00FF  01                 const type 3
+0100  1B0C4D4E           const [3]: (1313672219)
+0104  01                 const type 3
+0105  D48E598B           const [4]: (-1957065004)
+0109  04                 const type 4
+010A  14                 string size (20)
+010B  7469657231566F69+  "tier1Voi"
+0113  6450726F6A656374+  "dProject"
+011B  696F6E00           "ion\0"
+                         const [5]: "tier1VoidProjection"
+011F  04                 const type 4
+0120  11                 string size (17)
+0121  74696572314D6174+  "tier1Mat"
+0129  4F76657272696465+  "Override"
+0131  00                 "\0"
+                         const [6]: "tier1MatOverride"
+0132  04                 const type 4
+0133  14                 string size (20)
+0134  7469657232566F69+  "tier2Voi"
+013C  6450726F6A656374+  "dProject"
+0144  696F6E00           "ion\0"
+                         const [7]: "tier2VoidProjection"
+0148  04                 const type 4
+0149  11                 string size (17)
+014A  74696572324D6174+  "tier2Mat"
+0152  4F76657272696465+  "Override"
+015A  00                 "\0"
+                         const [8]: "tier2MatOverride"
+015B  04                 const type 4
+015C  14                 string size (20)
+015D  7469657233566F69+  "tier3Voi"
+0165  6450726F6A656374+  "dProject"
+016D  696F6E00           "ion\0"
+                         const [9]: "tier3VoidProjection"
+0171  04                 const type 4
+0172  11                 string size (17)
+0173  74696572334D6174+  "tier3Mat"
+017B  4F76657272696465+  "Override"
+0183  00                 "\0"
+                         const [10]: "tier3MatOverride"
+0184  01                 const type 3
+0185  5E940C67           const [11]: (1728877662)
+0189  04                 const type 4
+018A  12                 string size (18)
+018B  636F6D6D6F6E4D61+  "commonMa"
+0193  744F766572726964+  "tOverrid"
+019B  6500               "e\0"
+                         const [12]: "commonMatOverride"
+019D  03                 const type 3
+019E  0000803F           const [13]: (0)
+                         * functions:
+01A2  00                 sizep (0)
+                         * lines:
+01A3  2E                 sizelineinfo (46)
+                         [pc] (line)
+01A4  0E                 [01] (14)
+01A5  00                 [02] (14)
+01A6  00                 [03] (14)
+01A7  00                 [04] (14)
+01A8  0E                 [05] (14)
+01A9  00                 [06] (15)
+01AA  00                 [07] (15)
+01AB  00                 [08] (15)
+01AC  0E                 [09] (16)
+01AD  00                 [10] (16)
+01AE  00                 [11] (16)
+01AF  00                 [12] (16)
+01B0  0E                 [13] (19)
+01B1  00                 [14] (20)
+01B2  00                 [15] (20)
+01B3  00                 [16] (20)
+01B4  0E                 [17] (20)
+01B5  00                 [18] (20)
+01B6  00                 [19] (21)
+01B7  00                 [20] (21)
+01B8  0F                 [21] (22)
+01B9  00                 [22] (22)
+01BA  00                 [23] (22)
+01BB  00                 [24] (22)
+01BC  0F                 [25] (22)
+01BD  00                 [26] (23)
+01BE  00                 [27] (23)
+01BF  00                 [28] (24)
+01C0  0F                 [29] (24)
+01C1  00                 [30] (24)
+01C2  00                 [31] (24)
+01C3  00                 [32] (24)
+01C4  10                 [33] (25)
+01C5  00                 [34] (25)
+01C6  00                 [35] (27)
+01C7  00                 [36] (30)
+01C8  10                 [37] (30)
+01C9  00                 [38] (30)
+01CA  00                 [39] (30)
+01CB  00                 [40] (30)
+01CC  10                 [41] (31)
+01CD  00                 [42] (31)
+01CE  00                 [43] (31)
+01CF  00                 [44] (31)
+01D0  10                 [45] (31)
+01D1  00                 [46] (32)
+                         * locals:
+025C  00                 sizelocvars (0)
+                         * upvalues:
+025D  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+025E  04                 sizelineinfo (4)
+                         [pc] (line)
+025F  20                 [1] (32)
+0260  00                 [2] (32)
+0261  00                 [3] (10)
+0262  00                 [4] (32)
+                         * locals:
+026F  00                 sizelocvars (0)
+                         * upvalues:
+0270  00                 sizeupvalues (0)
+                         ** end of function **
+
+0271                     ** end of chunk **

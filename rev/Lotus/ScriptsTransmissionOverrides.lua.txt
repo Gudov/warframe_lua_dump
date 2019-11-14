@@ -1,0 +1,530 @@
+1	C:\wlua_dump\path\Lotus\ScriptsTransmissionOverrides.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\ScriptsTransmissionOverrides.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  02                 size of number (bytes)
+0008  07                 integral (1=integral)
+47
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+OnPlayerSpawned
+TransmissionOverrides
+_T
+EndOfMissionVoiceOverride
+endOfMissionOverride
+originalTransmissions
+maxCount
+replacementTransmissions
+overRideEndVo
+newEndVo
+transmissionSetOverride
+MissionTransmissionSet
+ambientTransmissionSetOverride
+AmbientMissionTransmissionSet
+gGameRules
+endOfMissionOverride
+_T
+EndOfMissionVoiceOverride
+
+originalTransmissions
+maxCount
+replacementTransmissions
+overRideEndVo
+newEndVo
+transmissionSetOverride
+MissionTransmissionSet
+ambientTransmissionSetOverride
+AmbientMissionTransmissionSet
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  02                 maxstacksize (2)
+                         * code:
+0008  07                 sizecode (7)
+0009  25000000           [1] closure    0   0      
+000D  20000000           [2] setglobal  0   0        ; OnPlayerSpawned
+0011  20400000           [3] setglobal  0   1        ; -2127358586
+0015  25400000           [4] closure    0   1      
+0019  20800000           [5] setglobal  0   2        ; TransmissionOverrides
+001D  20C00000           [6] setglobal  0   3        ; 1428527865
+0021  1E008000           [7] return     0   1      
+                         * constants:
+0025  04                 sizek (4)
+0026  04                 const type 4
+0027  10                 string size (16)
+0028  4F6E506C61796572+  "OnPlayer"
+0030  537061776E656400   "Spawned\0"
+                         const [0]: "OnPlayerSpawned"
+0038  01                 const type 3
+0039  86153381           const [1]: (-2127358586)
+003D  04                 const type 4
+003E  16                 string size (22)
+003F  5472616E736D6973+  "Transmis"
+0047  73696F6E4F766572+  "sionOver"
+004F  726964657300       "rides\0"
+                         const [2]: "TransmissionOverrides"
+0055  01                 const type 3
+0056  F99A2555           const [3]: (1428527865)
+                         * functions:
+005A  02                 sizep (2)
+                         
+005B                     ** function [0] definition (level 2)
+                         ** start of function **
+005B  00                 string size (0)
+                         source name: (none)
+005C  0E                 line defined (14)
+005D  23                 last line defined (35)
+005E  00                 nups (0)
+005F  02                 numparams (2)
+0060  00                 is_vararg (0)
+0061  0C                 maxstacksize (12)
+                         * code:
+0062  30                 sizecode (48)
+0063  9D000000           [01] getglobal  2   0        ; _T
+0067  DD800000           [02] getglobal  3   2        ; endOfMissionOverride
+006B  8CC08080           [03] settable   2   257 3    ; "EndOfMissionVoiceOverride"
+006F  99C00000           [04] loadk      2   3        ; 0
+0073  DD000100           [05] getglobal  3   4        ; originalTransmissions
+0077  CA008001           [06] len        3   3      
+007B  19C10000           [07] loadk      4   3        ; 0
+007F  90C00380           [08] forprep    2   16       ; to [25]
+0083  99410100           [09] loadk      6   5        ; 0
+0087  DD810100           [10] getglobal  7   6        ; 1074689893
+008B  1DC20100           [11] getglobal  8   7        ; maxCount
+008F  0E420104           [12] gettable   8   8   5  
+0093  E2810001           [13] call       7   2   2  
+0097  D8410000           [14] test       7       1    ; to [16] if false
+009B  1A400080           [15] jmp        2            ; to [18]
+009F  DDC10100           [16] getglobal  7   7        ; maxCount
+00A3  8E418103           [17] gettable   6   7   5  
+00A7  E4014200           [18] self       7   0   264  ; -1383132709
+00AB  5D020100           [19] getglobal  9   4        ; originalTransmissions
+00AF  4E428104           [20] gettable   9   9   5  
+00B3  9D420200           [21] getglobal  10  9        ; replacementTransmissions
+00B7  8E420105           [22] gettable   10  10  5  
+00BB  D2020003           [23] move       11  6      
+00BF  E2418002           [24] call       7   5   1  
+00C3  9480FB7F           [25] forloop    2   -17      ; to [9] if loop
+00C7  DD810200           [26] getglobal  7   10       ; overRideEndVo
+00CB  D8010000           [27] test       7       0    ; to [29] if true
+00CF  1A800080           [28] jmp        3            ; to [32]
+00D3  DD010000           [29] getglobal  7   0        ; _T
+00D7  1DC20200           [30] getglobal  8   11       ; newEndVo
+00DB  CC018280           [31] settable   7   257 8    ; "EndOfMissionVoiceOverride"
+00DF  DD810100           [32] getglobal  7   6        ; 1074689893
+00E3  1D020300           [33] getglobal  8   12       ; transmissionSetOverride
+00E7  E2810001           [34] call       7   2   2  
+00EB  D8410000           [35] test       7       1    ; to [37] if false
+00EF  1A800080           [36] jmp        3            ; to [40]
+00F3  DD010000           [37] getglobal  7   0        ; _T
+00F7  1D020300           [38] getglobal  8   12       ; transmissionSetOverride
+00FB  CC018286           [39] settable   7   269 8    ; "MissionTransmissionSet"
+00FF  DD810100           [40] getglobal  7   6        ; 1074689893
+0103  1D820300           [41] getglobal  8   14       ; ambientTransmissionSetOverride
+0107  E2810001           [42] call       7   2   2  
+010B  D8410000           [43] test       7       1    ; to [45] if false
+010F  1A800080           [44] jmp        3            ; to [48]
+0113  DD010000           [45] getglobal  7   0        ; _T
+0117  1D820300           [46] getglobal  8   14       ; ambientTransmissionSetOverride
+011B  CC018287           [47] settable   7   271 8    ; "AmbientMissionTransmissionSet"
+011F  1E008000           [48] return     0   1      
+                         * constants:
+0123  10                 sizek (16)
+0124  04                 const type 4
+0125  03                 string size (3)
+0126  5F5400             "_T\0"
+                         const [0]: "_T"
+0129  04                 const type 4
+012A  1A                 string size (26)
+012B  456E644F664D6973+  "EndOfMis"
+0133  73696F6E566F6963+  "sionVoic"
+013B  654F766572726964+  "eOverrid"
+0143  6500               "e\0"
+                         const [1]: "EndOfMissionVoiceOverride"
+0145  04                 const type 4
+0146  15                 string size (21)
+0147  656E644F664D6973+  "endOfMis"
+014F  73696F6E4F766572+  "sionOver"
+0157  7269646500         "ride\0"
+                         const [2]: "endOfMissionOverride"
+015C  03                 const type 3
+015D  0000803F           const [3]: (0)
+0161  04                 const type 4
+0162  16                 string size (22)
+0163  6F726967696E616C+  "original"
+016B  5472616E736D6973+  "Transmis"
+0173  73696F6E7300       "sions\0"
+                         const [4]: "originalTransmissions"
+0179  03                 const type 3
+017A  00000000           const [5]: (0)
+017E  01                 const type 3
+017F  65770E40           const [6]: (1074689893)
+0183  04                 const type 4
+0184  09                 string size (9)
+0185  6D6178436F756E74+  "maxCount"
+018D  00                 "\0"
+                         const [7]: "maxCount"
+018E  01                 const type 3
+018F  DB118FAD           const [8]: (-1383132709)
+0193  04                 const type 4
+0194  19                 string size (25)
+0195  7265706C6163656D+  "replacem"
+019D  656E745472616E73+  "entTrans"
+01A5  6D697373696F6E73+  "missions"
+01AD  00                 "\0"
+                         const [9]: "replacementTransmissions"
+01AE  04                 const type 4
+01AF  0E                 string size (14)
+01B0  6F76657252696465+  "overRide"
+01B8  456E64566F00       "EndVo\0"
+                         const [10]: "overRideEndVo"
+01BE  04                 const type 4
+01BF  09                 string size (9)
+01C0  6E6577456E64566F+  "newEndVo"
+01C8  00                 "\0"
+                         const [11]: "newEndVo"
+01C9  04                 const type 4
+01CA  18                 string size (24)
+01CB  7472616E736D6973+  "transmis"
+01D3  73696F6E5365744F+  "sionSetO"
+01DB  7665727269646500   "verride\0"
+                         const [12]: "transmissionSetOverride"
+01E3  04                 const type 4
+01E4  17                 string size (23)
+01E5  4D697373696F6E54+  "MissionT"
+01ED  72616E736D697373+  "ransmiss"
+01F5  696F6E53657400     "ionSet\0"
+                         const [13]: "MissionTransmissionSet"
+01FC  04                 const type 4
+01FD  1F                 string size (31)
+01FE  616D6269656E7454+  "ambientT"
+0206  72616E736D697373+  "ransmiss"
+020E  696F6E5365744F76+  "ionSetOv"
+0216  65727269646500     "erride\0"
+                         const [14]: "ambientTransmissionSetOverride"
+021D  04                 const type 4
+021E  1E                 string size (30)
+021F  416D6269656E744D+  "AmbientM"
+0227  697373696F6E5472+  "issionTr"
+022F  616E736D69737369+  "ansmissi"
+0237  6F6E53657400       "onSet\0"
+                         const [15]: "AmbientMissionTransmissionSet"
+                         * functions:
+023D  00                 sizep (0)
+                         * lines:
+023E  30                 sizelineinfo (48)
+                         [pc] (line)
+023F  11                 [01] (17)
+0240  00                 [02] (17)
+0241  00                 [03] (17)
+0242  00                 [04] (18)
+0243  11                 [05] (18)
+0244  00                 [06] (18)
+0245  00                 [07] (18)
+0246  00                 [08] (18)
+0247  11                 [09] (19)
+0248  00                 [10] (20)
+0249  00                 [11] (20)
+024A  00                 [12] (20)
+024B  12                 [13] (20)
+024C  00                 [14] (20)
+024D  00                 [15] (20)
+024E  00                 [16] (21)
+024F  12                 [17] (21)
+0250  00                 [18] (23)
+0251  00                 [19] (23)
+0252  00                 [20] (23)
+0253  12                 [21] (23)
+0254  00                 [22] (23)
+0255  00                 [23] (23)
+0256  00                 [24] (23)
+0257  12                 [25] (18)
+0258  00                 [26] (26)
+0259  00                 [27] (26)
+025A  00                 [28] (26)
+025B  12                 [29] (27)
+025C  00                 [30] (27)
+025D  00                 [31] (27)
+025E  00                 [32] (29)
+025F  13                 [33] (29)
+0260  00                 [34] (29)
+0261  00                 [35] (29)
+0262  00                 [36] (29)
+0263  14                 [37] (30)
+0264  00                 [38] (30)
+0265  00                 [39] (30)
+0266  00                 [40] (32)
+0267  14                 [41] (32)
+0268  00                 [42] (32)
+0269  00                 [43] (32)
+026A  00                 [44] (32)
+026B  14                 [45] (33)
+026C  00                 [46] (33)
+026D  00                 [47] (33)
+026E  00                 [48] (35)
+                         * locals:
+02FF  00                 sizelocvars (0)
+                         * upvalues:
+0300  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0301                     ** function [1] definition (level 2)
+                         ** start of function **
+0301  00                 string size (0)
+                         source name: (none)
+0302  25                 line defined (37)
+0303  3C                 last line defined (60)
+0304  00                 nups (0)
+0305  00                 numparams (0)
+0306  00                 is_vararg (0)
+0307  0B                 maxstacksize (11)
+                         * code:
+0308  39                 sizecode (57)
+0309  1D000000           [01] getglobal  0   0        ; gGameRules
+030D  5D400000           [02] getglobal  1   1        ; 1074689893
+0311  9D800000           [03] getglobal  2   2        ; endOfMissionOverride
+0315  62800001           [04] call       1   2   2  
+0319  58400000           [05] test       1       1    ; to [7] if false
+031D  1AC00080           [06] jmp        4            ; to [11]
+0321  5DC00000           [07] getglobal  1   3        ; _T
+0325  9D800000           [08] getglobal  2   2        ; endOfMissionOverride
+0329  4C800082           [09] settable   1   260 2    ; "EndOfMissionVoiceOverride"
+032D  1A400080           [10] jmp        2            ; to [13]
+0331  5DC00000           [11] getglobal  1   3        ; _T
+0335  4C404182           [12] settable   1   260 261  ; "EndOfMissionVoiceOverride" ""
+0339  59800100           [13] loadk      1   6        ; 0
+033D  9DC00100           [14] getglobal  2   7        ; originalTransmissions
+0341  8A000001           [15] len        2   2      
+0345  D9800100           [16] loadk      3   6        ; 0
+0349  50C00380           [17] forprep    1   16       ; to [34]
+034D  59010200           [18] loadk      5   8        ; 0
+0351  9D410000           [19] getglobal  6   1        ; 1074689893
+0355  DD410200           [20] getglobal  7   9        ; maxCount
+0359  CE018103           [21] gettable   7   7   4  
+035D  A2810001           [22] call       6   2   2  
+0361  98410000           [23] test       6       1    ; to [25] if false
+0365  1A400080           [24] jmp        2            ; to [27]
+0369  9D410200           [25] getglobal  6   9        ; maxCount
+036D  4E010103           [26] gettable   5   6   4  
+0371  A4814200           [27] self       6   0   266  ; -1383132709
+0375  1DC20100           [28] getglobal  8   7        ; originalTransmissions
+0379  0E020104           [29] gettable   8   8   4  
+037D  5DC20200           [30] getglobal  9   11       ; replacementTransmissions
+0381  4E028104           [31] gettable   9   9   4  
+0385  92028002           [32] move       10  5      
+0389  A2418002           [33] call       6   5   1  
+038D  5480FB7F           [34] forloop    1   -17      ; to [18] if loop
+0391  9D010300           [35] getglobal  6   12       ; overRideEndVo
+0395  98010000           [36] test       6       0    ; to [38] if true
+0399  1A800080           [37] jmp        3            ; to [41]
+039D  9DC10000           [38] getglobal  6   3        ; _T
+03A1  DD410300           [39] getglobal  7   13       ; newEndVo
+03A5  8CC10182           [40] settable   6   260 7    ; "EndOfMissionVoiceOverride"
+03A9  9D410000           [41] getglobal  6   1        ; 1074689893
+03AD  DD810300           [42] getglobal  7   14       ; transmissionSetOverride
+03B1  A2810001           [43] call       6   2   2  
+03B5  98410000           [44] test       6       1    ; to [46] if false
+03B9  1A800080           [45] jmp        3            ; to [49]
+03BD  9DC10000           [46] getglobal  6   3        ; _T
+03C1  DD810300           [47] getglobal  7   14       ; transmissionSetOverride
+03C5  8CC18187           [48] settable   6   271 7    ; "MissionTransmissionSet"
+03C9  9D410000           [49] getglobal  6   1        ; 1074689893
+03CD  DD010400           [50] getglobal  7   16       ; ambientTransmissionSetOverride
+03D1  A2810001           [51] call       6   2   2  
+03D5  98410000           [52] test       6       1    ; to [54] if false
+03D9  1A800080           [53] jmp        3            ; to [57]
+03DD  9DC10000           [54] getglobal  6   3        ; _T
+03E1  DD010400           [55] getglobal  7   16       ; ambientTransmissionSetOverride
+03E5  8CC18188           [56] settable   6   273 7    ; "AmbientMissionTransmissionSet"
+03E9  1E008000           [57] return     0   1      
+                         * constants:
+03ED  12                 sizek (18)
+03EE  04                 const type 4
+03EF  0B                 string size (11)
+03F0  6747616D6552756C+  "gGameRul"
+03F8  657300             "es\0"
+                         const [0]: "gGameRules"
+03FB  01                 const type 3
+03FC  65770E40           const [1]: (1074689893)
+0400  04                 const type 4
+0401  15                 string size (21)
+0402  656E644F664D6973+  "endOfMis"
+040A  73696F6E4F766572+  "sionOver"
+0412  7269646500         "ride\0"
+                         const [2]: "endOfMissionOverride"
+0417  04                 const type 4
+0418  03                 string size (3)
+0419  5F5400             "_T\0"
+                         const [3]: "_T"
+041C  04                 const type 4
+041D  1A                 string size (26)
+041E  456E644F664D6973+  "EndOfMis"
+0426  73696F6E566F6963+  "sionVoic"
+042E  654F766572726964+  "eOverrid"
+0436  6500               "e\0"
+                         const [4]: "EndOfMissionVoiceOverride"
+0438  04                 const type 4
+0439  01                 string size (0)
+                         const [5]: ""
+043B  03                 const type 3
+043C  0000803F           const [6]: (0)
+0440  04                 const type 4
+0441  16                 string size (22)
+0442  6F726967696E616C+  "original"
+044A  5472616E736D6973+  "Transmis"
+0452  73696F6E7300       "sions\0"
+                         const [7]: "originalTransmissions"
+0458  03                 const type 3
+0459  00000000           const [8]: (0)
+045D  04                 const type 4
+045E  09                 string size (9)
+045F  6D6178436F756E74+  "maxCount"
+0467  00                 "\0"
+                         const [9]: "maxCount"
+0468  01                 const type 3
+0469  DB118FAD           const [10]: (-1383132709)
+046D  04                 const type 4
+046E  19                 string size (25)
+046F  7265706C6163656D+  "replacem"
+0477  656E745472616E73+  "entTrans"
+047F  6D697373696F6E73+  "missions"
+0487  00                 "\0"
+                         const [11]: "replacementTransmissions"
+0488  04                 const type 4
+0489  0E                 string size (14)
+048A  6F76657252696465+  "overRide"
+0492  456E64566F00       "EndVo\0"
+                         const [12]: "overRideEndVo"
+0498  04                 const type 4
+0499  09                 string size (9)
+049A  6E6577456E64566F+  "newEndVo"
+04A2  00                 "\0"
+                         const [13]: "newEndVo"
+04A3  04                 const type 4
+04A4  18                 string size (24)
+04A5  7472616E736D6973+  "transmis"
+04AD  73696F6E5365744F+  "sionSetO"
+04B5  7665727269646500   "verride\0"
+                         const [14]: "transmissionSetOverride"
+04BD  04                 const type 4
+04BE  17                 string size (23)
+04BF  4D697373696F6E54+  "MissionT"
+04C7  72616E736D697373+  "ransmiss"
+04CF  696F6E53657400     "ionSet\0"
+                         const [15]: "MissionTransmissionSet"
+04D6  04                 const type 4
+04D7  1F                 string size (31)
+04D8  616D6269656E7454+  "ambientT"
+04E0  72616E736D697373+  "ransmiss"
+04E8  696F6E5365744F76+  "ionSetOv"
+04F0  65727269646500     "erride\0"
+                         const [16]: "ambientTransmissionSetOverride"
+04F7  04                 const type 4
+04F8  1E                 string size (30)
+04F9  416D6269656E744D+  "AmbientM"
+0501  697373696F6E5472+  "issionTr"
+0509  616E736D69737369+  "ansmissi"
+0511  6F6E53657400       "onSet\0"
+                         const [17]: "AmbientMissionTransmissionSet"
+                         * functions:
+0517  00                 sizep (0)
+                         * lines:
+0518  39                 sizelineinfo (57)
+                         [pc] (line)
+0519  26                 [01] (38)
+051A  00                 [02] (39)
+051B  00                 [03] (39)
+051C  00                 [04] (39)
+051D  27                 [05] (39)
+051E  00                 [06] (39)
+051F  00                 [07] (40)
+0520  00                 [08] (40)
+0521  27                 [09] (40)
+0522  00                 [10] (40)
+0523  00                 [11] (42)
+0524  00                 [12] (42)
+0525  27                 [13] (44)
+0526  00                 [14] (44)
+0527  00                 [15] (44)
+0528  00                 [16] (44)
+0529  27                 [17] (44)
+052A  00                 [18] (45)
+052B  00                 [19] (46)
+052C  00                 [20] (46)
+052D  27                 [21] (46)
+052E  00                 [22] (46)
+052F  00                 [23] (46)
+0530  00                 [24] (46)
+0531  28                 [25] (47)
+0532  00                 [26] (47)
+0533  00                 [27] (49)
+0534  00                 [28] (49)
+0535  28                 [29] (49)
+0536  00                 [30] (49)
+0537  00                 [31] (49)
+0538  00                 [32] (49)
+0539  28                 [33] (49)
+053A  00                 [34] (44)
+053B  00                 [35] (51)
+053C  00                 [36] (51)
+053D  28                 [37] (51)
+053E  00                 [38] (52)
+053F  00                 [39] (52)
+0540  00                 [40] (52)
+0541  2A                 [41] (54)
+0542  00                 [42] (54)
+0543  00                 [43] (54)
+0544  00                 [44] (54)
+0545  2A                 [45] (54)
+0546  00                 [46] (55)
+0547  00                 [47] (55)
+0548  00                 [48] (55)
+0549  2C                 [49] (57)
+054A  00                 [50] (57)
+054B  00                 [51] (57)
+054C  00                 [52] (57)
+054D  2C                 [53] (57)
+054E  00                 [54] (58)
+054F  00                 [55] (58)
+0550  00                 [56] (58)
+0551  2C                 [57] (60)
+                         * locals:
+05FD  00                 sizelocvars (0)
+                         * upvalues:
+05FE  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+05FF  07                 sizelineinfo (7)
+                         [pc] (line)
+0600  23                 [1] (35)
+0601  00                 [2] (35)
+0602  00                 [3] (14)
+0603  00                 [4] (60)
+0604  23                 [5] (60)
+0605  00                 [6] (37)
+0606  00                 [7] (60)
+                         * locals:
+061C  00                 sizelocvars (0)
+                         * upvalues:
+061D  00                 sizeupvalues (0)
+                         ** end of function **
+
+061E                     ** end of chunk **

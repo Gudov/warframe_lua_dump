@@ -1,0 +1,619 @@
+1	C:\wlua_dump\path\Lotus\Scripts\LibsLevelToolsLib.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Scripts\LibsLevelToolsLib.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  04                 size of number (bytes)
+0008  19                 integral (1=integral)
+425
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+package
+seeall
+/Lotus/Types/LevelObjects/LockerAttachments/LockerReplicatedHitSwitch
+GetLockerHitSwitch
+UnlockLocker
+BreakLocker
+gRegion
+/Lotus/Types/LevelObjects/LockerAttachments/LockerOpenIconDeco
+Show
+Lotus_Game
+EMISSIVE_TINT_COLOR
+red
+green
+blue
+alpha
+EMPTY_SYMBOL
+Lotus_Game
+EMISSIVE_MAP_ATTEN
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  04                 maxstacksize (4)
+                         * code:
+0008  19                 sizecode (25)
+0009  1D000000           [01] getglobal  0   0        ; 954442511
+000D  41000001           [02] vararg     1   2      
+0011  9D400000           [03] getglobal  2   1        ; package
+0015  8E804001           [04] gettable   2   2   258  ; "seeall"
+0019  22408001           [05] call       0   3   1  
+001D  1DC00000           [06] getglobal  0   3        ; 738251817
+0021  59000100           [07] loadk      1   4        ; "/Lotus/Types/LevelObjects/LockerAttachments/LockerReplicatedHitSwitch"
+0025  22800001           [08] call       0   2   2  
+0029  65000000           [09] closure    1   0      
+002D  A5400000           [10] closure    2   1      
+0031  12000000           [11] move       0   0      
+0035  E5800000           [12] closure    3   2      
+0039  12000001           [13] move       0   2      
+003D  E0400100           [14] setglobal  3   5        ; GetLockerHitSwitch
+0041  E0800100           [15] setglobal  3   6        ; -752491900
+0045  E5C00000           [16] closure    3   3      
+0049  12000001           [17] move       0   2      
+004D  12008000           [18] move       0   1      
+0051  E0C00100           [19] setglobal  3   7        ; UnlockLocker
+0055  E0000200           [20] setglobal  3   8        ; 1045782085
+0059  E5000100           [21] closure    3   4      
+005D  12008000           [22] move       0   1      
+0061  E0400200           [23] setglobal  3   9        ; BreakLocker
+0065  E0800200           [24] setglobal  3   10       ; 438441978
+0069  1E008000           [25] return     0   1      
+                         * constants:
+006D  0B                 sizek (11)
+006E  01                 const type 3
+006F  0FA3E338           const [0]: (954442511)
+0073  04                 const type 4
+0074  08                 string size (8)
+0075  7061636B61676500   "package\0"
+                         const [1]: "package"
+007D  04                 const type 4
+007E  07                 string size (7)
+007F  736565616C6C00     "seeall\0"
+                         const [2]: "seeall"
+0086  01                 const type 3
+0087  29D4002C           const [3]: (738251817)
+008B  04                 const type 4
+008C  46                 string size (70)
+008D  2F4C6F7475732F54+  "/Lotus/T"
+0095  797065732F4C6576+  "ypes/Lev"
+009D  656C4F626A656374+  "elObject"
+00A5  732F4C6F636B6572+  "s/Locker"
+00AD  4174746163686D65+  "Attachme"
+00B5  6E74732F4C6F636B+  "nts/Lock"
+00BD  65725265706C6963+  "erReplic"
+00C5  6174656448697453+  "atedHitS"
+00CD  776974636800       "witch\0"
+                         const [4]: "/Lotus/Types/LevelObjects/LockerAttachments/LockerReplicatedHitSwitch"
+00D3  04                 const type 4
+00D4  13                 string size (19)
+00D5  4765744C6F636B65+  "GetLocke"
+00DD  7248697453776974+  "rHitSwit"
+00E5  636800             "ch\0"
+                         const [5]: "GetLockerHitSwitch"
+00E8  01                 const type 3
+00E9  84E225D3           const [6]: (-752491900)
+00ED  04                 const type 4
+00EE  0D                 string size (13)
+00EF  556E6C6F636B4C6F+  "UnlockLo"
+00F7  636B657200         "cker\0"
+                         const [7]: "UnlockLocker"
+00FC  01                 const type 3
+00FD  455E553E           const [8]: (1045782085)
+0101  04                 const type 4
+0102  0C                 string size (12)
+0103  427265616B4C6F63+  "BreakLoc"
+010B  6B657200           "ker\0"
+                         const [9]: "BreakLocker"
+010F  01                 const type 3
+0110  FA17221A           const [10]: (438441978)
+                         * functions:
+0114  05                 sizep (5)
+                         
+0115                     ** function [0] definition (level 2)
+                         ** start of function **
+0115  00                 string size (0)
+                         source name: (none)
+0116  06                 line defined (6)
+0117  0E                 last line defined (14)
+0118  00                 nups (0)
+0119  02                 numparams (2)
+011A  00                 is_vararg (0)
+011B  06                 maxstacksize (6)
+                         * code:
+011C  11                 sizecode (17)
+011D  DD000000           [01] getglobal  3   0        ; 1074689893
+0121  12010000           [02] move       4   0      
+0125  E2800001           [03] call       3   2   2  
+0129  D8400000           [04] test       3       1    ; to [6] if false
+012D  1AC00080           [05] jmp        4            ; to [10]
+0131  E4404000           [06] self       3   0   257  ; -1625438872
+0135  52018000           [07] move       5   1      
+0139  E2808001           [08] call       3   3   2  
+013D  92008001           [09] move       2   3      
+0141  DD000000           [10] getglobal  3   0        ; 1074689893
+0145  12010001           [11] move       4   2      
+0149  E2800001           [12] call       3   2   2  
+014D  D8400000           [13] test       3       1    ; to [15] if false
+0151  1A400080           [14] jmp        2            ; to [17]
+0155  E4804001           [15] self       3   2   258  ; -725453761
+0159  E2400001           [16] call       3   2   1  
+015D  1E008000           [17] return     0   1      
+                         * constants:
+0161  03                 sizek (3)
+0162  01                 const type 3
+0163  65770E40           const [0]: (1074689893)
+0167  01                 const type 3
+0168  68C51D9F           const [1]: (-1625438872)
+016C  01                 const type 3
+016D  3F74C2D4           const [2]: (-725453761)
+                         * functions:
+0171  00                 sizep (0)
+                         * lines:
+0172  11                 sizelineinfo (17)
+                         [pc] (line)
+0173  08                 [01] (8)
+0174  00                 [02] (8)
+0175  00                 [03] (8)
+0176  00                 [04] (8)
+0177  08                 [05] (8)
+0178  00                 [06] (9)
+0179  00                 [07] (9)
+017A  00                 [08] (9)
+017B  08                 [09] (9)
+017C  00                 [10] (11)
+017D  00                 [11] (11)
+017E  00                 [12] (11)
+017F  08                 [13] (11)
+0180  00                 [14] (11)
+0181  00                 [15] (12)
+0182  00                 [16] (12)
+0183  08                 [17] (14)
+                         * locals:
+01B7  00                 sizelocvars (0)
+                         * upvalues:
+01B8  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+01B9                     ** function [1] definition (level 2)
+                         ** start of function **
+01B9  00                 string size (0)
+                         source name: (none)
+01BA  10                 line defined (16)
+01BB  16                 last line defined (22)
+01BC  01                 nups (1)
+01BD  01                 numparams (1)
+01BE  00                 is_vararg (0)
+01BF  04                 maxstacksize (4)
+                         * code:
+01C0  0C                 sizecode (12)
+01C1  5D000000           [01] getglobal  1   0        ; 1074689893
+01C5  93000000           [02] getupval   2   0      
+01C9  62800001           [03] call       1   2   2  
+01CD  58000000           [04] test       1       0    ; to [6] if true
+01D1  1A400080           [05] jmp        2            ; to [8]
+01D5  46008000           [06] loadnil    1   1      
+01D9  5E000001           [07] return     1   2      
+01DD  64404000           [08] self       1   0   257  ; -1625438872
+01E1  D3000000           [09] getupval   3   0      
+01E5  47008001           [10] tailcall   1   3   0  
+01E9  5E000000           [11] return     1   0      
+01ED  1E008000           [12] return     0   1      
+                         * constants:
+01F1  02                 sizek (2)
+01F2  01                 const type 3
+01F3  65770E40           const [0]: (1074689893)
+01F7  01                 const type 3
+01F8  68C51D9F           const [1]: (-1625438872)
+                         * functions:
+01FC  00                 sizep (0)
+                         * lines:
+01FD  0C                 sizelineinfo (12)
+                         [pc] (line)
+01FE  11                 [01] (17)
+01FF  00                 [02] (17)
+0200  00                 [03] (17)
+0201  00                 [04] (17)
+0202  11                 [05] (17)
+0203  00                 [06] (18)
+0204  00                 [07] (18)
+0205  00                 [08] (21)
+0206  11                 [09] (21)
+0207  00                 [10] (21)
+0208  00                 [11] (21)
+0209  00                 [12] (22)
+                         * locals:
+022E  00                 sizelocvars (0)
+                         * upvalues:
+022F  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0230                     ** function [2] definition (level 2)
+                         ** start of function **
+0230  00                 string size (0)
+                         source name: (none)
+0231  18                 line defined (24)
+0232  1A                 last line defined (26)
+0233  01                 nups (1)
+0234  01                 numparams (1)
+0235  00                 is_vararg (0)
+0236  03                 maxstacksize (3)
+                         * code:
+0237  05                 sizecode (5)
+0238  53000000           [1] getupval   1   0      
+023C  92000000           [2] move       2   0      
+0240  47000001           [3] tailcall   1   2   0  
+0244  5E000000           [4] return     1   0      
+0248  1E008000           [5] return     0   1      
+                         * constants:
+024C  00                 sizek (0)
+                         * functions:
+024D  00                 sizep (0)
+                         * lines:
+024E  05                 sizelineinfo (5)
+                         [pc] (line)
+024F  19                 [1] (25)
+0250  00                 [2] (25)
+0251  00                 [3] (25)
+0252  00                 [4] (25)
+0253  19                 [5] (26)
+                         * locals:
+0263  00                 sizelocvars (0)
+                         * upvalues:
+0264  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0265                     ** function [3] definition (level 2)
+                         ** start of function **
+0265  00                 string size (0)
+                         source name: (none)
+0266  1C                 line defined (28)
+0267  37                 last line defined (55)
+0268  02                 nups (2)
+0269  04                 numparams (4)
+026A  00                 is_vararg (0)
+026B  0D                 maxstacksize (13)
+                         * code:
+026C  46                 sizecode (70)
+026D  13010000           [01] getupval   4   0      
+0271  52010000           [02] move       5   0      
+0275  22810001           [03] call       4   2   2  
+0279  5D010000           [04] getglobal  5   0        ; gRegion
+027D  6441C002           [05] self       5   5   257  ; -1520831144
+0281  62810001           [06] call       5   2   2  
+0285  58010000           [07] test       5       0    ; to [9] if true
+0289  1AC00580           [08] jmp        24           ; to [33]
+028D  5D810000           [09] getglobal  5   2        ; 1074689893
+0291  92010002           [10] move       6   4      
+0295  62810001           [11] call       5   2   2  
+0299  58410000           [12] test       5       1    ; to [14] if false
+029D  1A400180           [13] jmp        6            ; to [20]
+02A1  64C14002           [14] self       5   4   259  ; -1318948062
+02A5  62810001           [15] call       5   2   2  
+02A9  58410000           [16] test       5       1    ; to [18] if false
+02AD  1A400080           [17] jmp        2            ; to [20]
+02B1  64014102           [18] self       5   4   260  ; -974578778
+02B5  62410001           [19] call       5   2   1  
+02B9  64414100           [20] self       5   0   261  ; -1625438872
+02BD  DD810100           [21] getglobal  7   6        ; 738251817
+02C1  19C20100           [22] loadk      8   7        ; "/Lotus/Types/LevelObjects/LockerAttachments/LockerOpenIconDeco"
+02C5  E2010001           [23] call       7   2   0  
+02C9  62810000           [24] call       5   0   2  
+02CD  9D810000           [25] getglobal  6   2        ; 1074689893
+02D1  D2018002           [26] move       7   5      
+02D5  A2810001           [27] call       6   2   2  
+02D9  98410000           [28] test       6       1    ; to [30] if false
+02DD  1A800080           [29] jmp        3            ; to [33]
+02E1  A401C202           [30] self       6   5   264  ; -1923578185
+02E5  19420200           [31] loadk      8   9        ; "Show"
+02E9  A2418001           [32] call       6   3   1  
+02ED  A4814200           [33] self       6   0   266  ; -786111647
+02F1  1DC20200           [34] getglobal  8   11       ; Lotus_Game
+02F5  0E024304           [35] gettable   8   8   268  ; "EMISSIVE_TINT_COLOR"
+02F9  4E42C301           [36] gettable   9   3   269  ; "red"
+02FD  5C82C304           [37] div        9   9   270  ; 0
+0301  8EC2C301           [38] gettable   10  3   271  ; "green"
+0305  9C824305           [39] div        10  10  270  ; 0
+0309  CE02C401           [40] gettable   11  3   272  ; "blue"
+030D  DC82C305           [41] div        11  11  270  ; 0
+0311  0E43C401           [42] gettable   12  3   273  ; "alpha"
+0315  1C834306           [43] div        12  12  270  ; 0
+0319  A2418003           [44] call       6   7   1  
+031D  86010003           [45] loadnil    6   6      
+0321  DD810000           [46] getglobal  7   2        ; 1074689893
+0325  12020001           [47] move       8   2      
+0329  E2810001           [48] call       7   2   2  
+032D  D8410000           [49] test       7       1    ; to [51] if false
+0331  1A000180           [50] jmp        5            ; to [56]
+0335  E4814400           [51] self       7   0   274  ; -1421644046
+0339  52020001           [52] move       9   2      
+033D  9DC20400           [53] getglobal  10  19       ; EMPTY_SYMBOL
+0341  E2810002           [54] call       7   4   2  
+0345  92018003           [55] move       6   7      
+0349  D3018000           [56] getupval   7   1      
+034D  12020000           [57] move       8   0      
+0351  52028000           [58] move       9   1      
+0355  E2418001           [59] call       7   3   1  
+0359  DD010500           [60] getglobal  7   20       ; 538022378
+035D  19420500           [61] loadk      8   21       ; 0
+0361  E2410001           [62] call       7   2   1  
+0365  DD810000           [63] getglobal  7   2        ; 1074689893
+0369  12020003           [64] move       8   6      
+036D  E2810001           [65] call       7   2   2  
+0371  D8410000           [66] test       7       1    ; to [68] if false
+0375  1A400080           [67] jmp        2            ; to [70]
+0379  E4814503           [68] self       7   6   278  ; -725453761
+037D  E2410001           [69] call       7   2   1  
+0381  1E008000           [70] return     0   1      
+                         * constants:
+0385  17                 sizek (23)
+0386  04                 const type 4
+0387  08                 string size (8)
+0388  67526567696F6E00   "gRegion\0"
+                         const [0]: "gRegion"
+0390  01                 const type 3
+0391  58F559A5           const [1]: (-1520831144)
+0395  01                 const type 3
+0396  65770E40           const [2]: (1074689893)
+039A  01                 const type 3
+039B  227362B1           const [3]: (-1318948062)
+039F  01                 const type 3
+03A0  A61BE9C5           const [4]: (-974578778)
+03A4  01                 const type 3
+03A5  68C51D9F           const [5]: (-1625438872)
+03A9  01                 const type 3
+03AA  29D4002C           const [6]: (738251817)
+03AE  04                 const type 4
+03AF  3F                 string size (63)
+03B0  2F4C6F7475732F54+  "/Lotus/T"
+03B8  797065732F4C6576+  "ypes/Lev"
+03C0  656C4F626A656374+  "elObject"
+03C8  732F4C6F636B6572+  "s/Locker"
+03D0  4174746163686D65+  "Attachme"
+03D8  6E74732F4C6F636B+  "nts/Lock"
+03E0  65724F70656E4963+  "erOpenIc"
+03E8  6F6E4465636F00     "onDeco\0"
+                         const [7]: "/Lotus/Types/LevelObjects/LockerAttachments/LockerOpenIconDeco"
+03EF  01                 const type 3
+03F0  B786588D           const [8]: (-1923578185)
+03F4  04                 const type 4
+03F5  05                 string size (5)
+03F6  53686F7700         "Show\0"
+                         const [9]: "Show"
+03FB  01                 const type 3
+03FC  61E324D1           const [10]: (-786111647)
+0400  04                 const type 4
+0401  0B                 string size (11)
+0402  4C6F7475735F4761+  "Lotus_Ga"
+040A  6D6500             "me\0"
+                         const [11]: "Lotus_Game"
+040D  04                 const type 4
+040E  14                 string size (20)
+040F  454D495353495645+  "EMISSIVE"
+0417  5F54494E545F434F+  "_TINT_CO"
+041F  4C4F5200           "LOR\0"
+                         const [12]: "EMISSIVE_TINT_COLOR"
+0423  04                 const type 4
+0424  04                 string size (4)
+0425  72656400           "red\0"
+                         const [13]: "red"
+0429  03                 const type 3
+042A  00007F43           const [14]: (0)
+042E  04                 const type 4
+042F  06                 string size (6)
+0430  677265656E00       "green\0"
+                         const [15]: "green"
+0436  04                 const type 4
+0437  05                 string size (5)
+0438  626C756500         "blue\0"
+                         const [16]: "blue"
+043D  04                 const type 4
+043E  06                 string size (6)
+043F  616C70686100       "alpha\0"
+                         const [17]: "alpha"
+0445  01                 const type 3
+0446  F26E43AB           const [18]: (-1421644046)
+044A  04                 const type 4
+044B  0D                 string size (13)
+044C  454D5054595F5359+  "EMPTY_SY"
+0454  4D424F4C00         "MBOL\0"
+                         const [19]: "EMPTY_SYMBOL"
+0459  01                 const type 3
+045A  EA911120           const [20]: (538022378)
+045E  03                 const type 3
+045F  0000A03F           const [21]: (0)
+0463  01                 const type 3
+0464  3F74C2D4           const [22]: (-725453761)
+                         * functions:
+0468  00                 sizep (0)
+                         * lines:
+0469  46                 sizelineinfo (70)
+                         [pc] (line)
+046A  1D                 [01] (29)
+046B  00                 [02] (29)
+046C  00                 [03] (29)
+046D  00                 [04] (31)
+046E  1D                 [05] (31)
+046F  00                 [06] (31)
+0470  00                 [07] (31)
+0471  00                 [08] (31)
+0472  1D                 [09] (32)
+0473  00                 [10] (32)
+0474  00                 [11] (32)
+0475  00                 [12] (32)
+0476  1F                 [13] (32)
+0477  00                 [14] (32)
+0478  00                 [15] (32)
+0479  00                 [16] (32)
+047A  1F                 [17] (32)
+047B  00                 [18] (33)
+047C  00                 [19] (33)
+047D  00                 [20] (35)
+047E  1F                 [21] (35)
+047F  00                 [22] (35)
+0480  00                 [23] (35)
+0481  00                 [24] (35)
+0482  1F                 [25] (36)
+0483  00                 [26] (36)
+0484  00                 [27] (36)
+0485  00                 [28] (36)
+0486  1F                 [29] (36)
+0487  00                 [30] (37)
+0488  00                 [31] (37)
+0489  00                 [32] (37)
+048A  20                 [33] (41)
+048B  00                 [34] (41)
+048C  00                 [35] (41)
+048D  00                 [36] (41)
+048E  20                 [37] (41)
+048F  00                 [38] (41)
+0490  00                 [39] (41)
+0491  00                 [40] (41)
+0492  20                 [41] (41)
+0493  00                 [42] (41)
+0494  00                 [43] (41)
+0495  00                 [44] (41)
+0496  20                 [45] (43)
+0497  00                 [46] (44)
+0498  00                 [47] (44)
+0499  00                 [48] (44)
+049A  20                 [49] (44)
+049B  00                 [50] (44)
+049C  00                 [51] (45)
+049D  00                 [52] (45)
+049E  20                 [53] (45)
+049F  00                 [54] (45)
+04A0  00                 [55] (45)
+04A1  00                 [56] (48)
+04A2  20                 [57] (48)
+04A3  00                 [58] (48)
+04A4  00                 [59] (48)
+04A5  00                 [60] (50)
+04A6  20                 [61] (50)
+04A7  00                 [62] (50)
+04A8  00                 [63] (52)
+04A9  00                 [64] (52)
+04AA  20                 [65] (52)
+04AB  00                 [66] (52)
+04AC  00                 [67] (52)
+04AD  00                 [68] (53)
+04AE  21                 [69] (53)
+04AF  00                 [70] (55)
+                         * locals:
+0582  00                 sizelocvars (0)
+                         * upvalues:
+0583  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0584                     ** function [4] definition (level 2)
+                         ** start of function **
+0584  00                 string size (0)
+                         source name: (none)
+0585  39                 line defined (57)
+0586  3C                 last line defined (60)
+0587  01                 nups (1)
+0588  02                 numparams (2)
+0589  00                 is_vararg (0)
+058A  06                 maxstacksize (6)
+                         * code:
+058B  0A                 sizecode (10)
+058C  A4004000           [01] self       2   0   256  ; -786111647
+0590  1D410000           [02] getglobal  4   1        ; Lotus_Game
+0594  0E814002           [03] gettable   4   4   258  ; "EMISSIVE_MAP_ATTEN"
+0598  59C10000           [04] loadk      5   3        ; 0
+059C  A2400002           [05] call       2   4   1  
+05A0  93000000           [06] getupval   2   0      
+05A4  D2000000           [07] move       3   0      
+05A8  12018000           [08] move       4   1      
+05AC  A2408001           [09] call       2   3   1  
+05B0  1E008000           [10] return     0   1      
+                         * constants:
+05B4  04                 sizek (4)
+05B5  01                 const type 3
+05B6  61E324D1           const [0]: (-786111647)
+05BA  04                 const type 4
+05BB  0B                 string size (11)
+05BC  4C6F7475735F4761+  "Lotus_Ga"
+05C4  6D6500             "me\0"
+                         const [1]: "Lotus_Game"
+05C7  04                 const type 4
+05C8  13                 string size (19)
+05C9  454D495353495645+  "EMISSIVE"
+05D1  5F4D41505F415454+  "_MAP_ATT"
+05D9  454E00             "EN\0"
+                         const [2]: "EMISSIVE_MAP_ATTEN"
+05DC  03                 const type 3
+05DD  00000000           const [3]: (0)
+                         * functions:
+05E1  00                 sizep (0)
+                         * lines:
+05E2  0A                 sizelineinfo (10)
+                         [pc] (line)
+05E3  3A                 [01] (58)
+05E4  00                 [02] (58)
+05E5  00                 [03] (58)
+05E6  00                 [04] (58)
+05E7  3A                 [05] (58)
+05E8  00                 [06] (59)
+05E9  00                 [07] (59)
+05EA  00                 [08] (59)
+05EB  3A                 [09] (59)
+05EC  00                 [10] (60)
+                         * locals:
+060B  00                 sizelocvars (0)
+                         * upvalues:
+060C  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+060D  19                 sizelineinfo (25)
+                         [pc] (line)
+060E  01                 [01] (1)
+060F  00                 [02] (1)
+0610  00                 [03] (1)
+0611  00                 [04] (1)
+0612  01                 [05] (1)
+0613  00                 [06] (3)
+0614  00                 [07] (3)
+0615  00                 [08] (3)
+0616  01                 [09] (14)
+0617  00                 [10] (22)
+0618  00                 [11] (22)
+0619  00                 [12] (26)
+061A  01                 [13] (26)
+061B  00                 [14] (26)
+061C  00                 [15] (24)
+061D  00                 [16] (55)
+061E  01                 [17] (55)
+061F  00                 [18] (55)
+0620  00                 [19] (55)
+0621  00                 [20] (28)
+0622  03                 [21] (60)
+0623  00                 [22] (60)
+0624  00                 [23] (60)
+0625  00                 [24] (57)
+0626  03                 [25] (60)
+                         * locals:
+0672  00                 sizelocvars (0)
+                         * upvalues:
+0673  00                 sizeupvalues (0)
+                         ** end of function **
+
+0674                     ** end of chunk **

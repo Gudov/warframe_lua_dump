@@ -1,0 +1,1536 @@
+1	C:\wlua_dump\path\Lotus\Scripts\NPCCreateFabricator.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Scripts\NPCCreateFabricator.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  05                 size of number (bytes)
+0008  1A                 integral (1=integral)
+426
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+gRegion
+TENNO
+Lotus.Scripts.NPC.NekrosCloneTheDeadFix
+PlaceDeco
+StartFabricator
+MonitorFaction
+gRegion
+gBaseAvatarType
+gHitProxyType
+decoType
+gProjectileType
+_T
+fabricatorInstances
+table
+gRegion
+spawnFx
+agentTypes
+RandomTeam
+MonitorFaction
+openingAnim
+openAnim
+gRegion
+levelMod
+gNpcSpawnPointType
+startDelay
+maxLifeTime
+avatarType
+minSpawnDelay
+maxSpawnDelay
+_T
+fabricatorInstances
+table
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  05                 maxstacksize (5)
+                         * code:
+0008  1A                 sizecode (26)
+0009  1D000000           [01] getglobal  0   0        ; gRegion
+000D  24404000           [02] self       0   0   257  ; -774964848
+0011  22800001           [03] call       0   2   2  
+0015  5D800000           [04] getglobal  1   2        ; -332969190
+0019  99C00000           [05] loadk      2   3        ; "TENNO"
+001D  62800001           [06] call       1   2   2  
+0021  9D000100           [07] getglobal  2   4        ; 849075268
+0025  D9400100           [08] loadk      3   5        ; "Lotus.Scripts.NPC.NekrosCloneTheDeadFix"
+0029  A2800001           [09] call       2   2   2  
+002D  E5000000           [10] closure    3   0      
+0031  12000000           [11] move       0   0      
+0035  E0800100           [12] setglobal  3   6        ; PlaceDeco
+0039  E0C00100           [13] setglobal  3   7        ; -1539387095
+003D  E5400000           [14] closure    3   1      
+0041  12008000           [15] move       0   1      
+0045  12000001           [16] move       0   2      
+0049  25810000           [17] closure    4   2      
+004D  12000000           [18] move       0   0      
+0051  12000001           [19] move       0   2      
+0055  12008001           [20] move       0   3      
+0059  20010200           [21] setglobal  4   8        ; StartFabricator
+005D  20410200           [22] setglobal  4   9        ; 1956567974
+0061  25C10000           [23] closure    4   3      
+0065  20810200           [24] setglobal  4   10       ; MonitorFaction
+0069  20C10200           [25] setglobal  4   11       ; -2077235691
+006D  1E008000           [26] return     0   1      
+                         * constants:
+0071  0C                 sizek (12)
+0072  04                 const type 4
+0073  08                 string size (8)
+0074  67526567696F6E00   "gRegion\0"
+                         const [0]: "gRegion"
+007C  01                 const type 3
+007D  90F9CED1           const [1]: (-774964848)
+0081  01                 const type 3
+0082  1A4B27EC           const [2]: (-332969190)
+0086  04                 const type 4
+0087  06                 string size (6)
+0088  54454E4E4F00       "TENNO\0"
+                         const [3]: "TENNO"
+008E  01                 const type 3
+008F  44DC9B32           const [4]: (849075268)
+0093  04                 const type 4
+0094  28                 string size (40)
+0095  4C6F7475732E5363+  "Lotus.Sc"
+009D  72697074732E4E50+  "ripts.NP"
+00A5  432E4E656B726F73+  "C.Nekros"
+00AD  436C6F6E65546865+  "CloneThe"
+00B5  4465616446697800   "DeadFix\0"
+                         const [5]: "Lotus.Scripts.NPC.NekrosCloneTheDeadFix"
+00BD  04                 const type 4
+00BE  0A                 string size (10)
+00BF  506C616365446563+  "PlaceDec"
+00C7  6F00               "o\0"
+                         const [6]: "PlaceDeco"
+00C9  01                 const type 3
+00CA  29D13EA4           const [7]: (-1539387095)
+00CE  04                 const type 4
+00CF  10                 string size (16)
+00D0  5374617274466162+  "StartFab"
+00D8  72696361746F7200   "ricator\0"
+                         const [8]: "StartFabricator"
+00E0  01                 const type 3
+00E1  A6DB9E74           const [9]: (1956567974)
+00E5  04                 const type 4
+00E6  0F                 string size (15)
+00E7  4D6F6E69746F7246+  "MonitorF"
+00EF  616374696F6E00     "action\0"
+                         const [10]: "MonitorFaction"
+00F6  01                 const type 3
+00F7  15E62F84           const [11]: (-2077235691)
+                         * functions:
+00FB  04                 sizep (4)
+                         
+00FC                     ** function [0] definition (level 2)
+                         ** start of function **
+00FC  00                 string size (0)
+                         source name: (none)
+00FD  11                 line defined (17)
+00FE  3C                 last line defined (60)
+00FF  01                 nups (1)
+0100  02                 numparams (2)
+0101  00                 is_vararg (0)
+0102  12                 maxstacksize (18)
+                         * code:
+0103  5C                 sizecode (92)
+0104  DD000000           [01] getglobal  3   0        ; 1074689893
+0108  13010000           [02] getupval   4   0      
+010C  E2800001           [03] call       3   2   2  
+0110  D8400000           [04] test       3       1    ; to [6] if false
+0114  1AC00080           [05] jmp        4            ; to [10]
+0118  D3000000           [06] getupval   3   0      
+011C  E440C001           [07] self       3   3   257  ; 537471347
+0120  E2800001           [08] call       3   2   2  
+0124  92008001           [09] move       2   3      
+0128  DD800000           [10] getglobal  3   2        ; 572299008
+012C  E2808000           [11] call       3   1   2  
+0130  1DC10000           [12] getglobal  4   3        ; 508519041
+0134  22818000           [13] call       4   1   2  
+0138  64014101           [14] self       5   2   260  ; 1085792015
+013C  E4414100           [15] self       7   0   261  ; 1839670529
+0140  E2010001           [16] call       7   2   0  
+0144  62810000           [17] call       5   0   2  
+0148  A4814100           [18] self       6   0   262  ; -365711519
+014C  A2810001           [19] call       6   2   2  
+0150  DD010000           [20] getglobal  7   0        ; 1074689893
+0154  12028000           [21] move       8   1      
+0158  E2810001           [22] call       7   2   2  
+015C  D8410000           [23] test       7       1    ; to [25] if false
+0160  1A400180           [24] jmp        6            ; to [31]
+0164  DD810000           [25] getglobal  7   2        ; 572299008
+0168  19C20100           [26] loadk      8   7        ; 0
+016C  59020200           [27] loadk      9   8        ; 0
+0170  99C20100           [28] loadk      10  7        ; 0
+0174  E2810002           [29] call       7   4   2  
+0178  92018003           [30] move       6   7      
+017C  DD410200           [31] getglobal  7   9        ; gRegion
+0180  E481C203           [32] self       7   7   266  ; 682635563
+0184  52028002           [33] move       9   5      
+0188  92020003           [34] move       10  6      
+018C  CB028001           [35] newtable   11  3   0    ; array=3, hash=0
+0190  1DC30200           [36] getglobal  12  11       ; gBaseAvatarType
+0194  5D030300           [37] getglobal  13  12       ; gHitProxyType
+0198  9D430300           [38] getglobal  14  13       ; decoType
+019C  DB428001           [39] setlist    11  3   1    ; index 1 to 3
+01A0  12038001           [40] move       12  3      
+01A4  52030002           [41] move       13  4      
+01A8  E2418003           [42] call       7   7   1  
+01AC  E4814300           [43] self       7   0   270  ; 129677183
+01B0  E2810001           [44] call       7   2   2  
+01B4  24C24300           [45] self       8   0   271  ; -1957065004
+01B8  9D020400           [46] getglobal  10  16       ; gProjectileType
+01BC  22828001           [47] call       8   3   2  
+01C0  18020000           [48] test       8       0    ; to [50] if true
+01C4  1A800080           [49] jmp        3            ; to [53]
+01C8  24424400           [50] self       8   0   273  ; 2082429591
+01CC  22820001           [51] call       8   2   2  
+01D0  D2010004           [52] move       7   8      
+01D4  1D420200           [53] getglobal  8   9        ; gRegion
+01D8  24824404           [54] self       8   8   274  ; -1520831144
+01DC  22820001           [55] call       8   2   2  
+01E0  18420000           [56] test       8       1    ; to [58] if false
+01E4  1A000080           [57] jmp        1            ; to [59]
+01E8  1E008000           [58] return     0   1      
+01EC  1D420200           [59] getglobal  8   9        ; gRegion
+01F0  24C24404           [60] self       8   8   275  ; -1110225722
+01F4  9D420300           [61] getglobal  10  13       ; decoType
+01F8  D2028001           [62] move       11  3      
+01FC  12030002           [63] move       12  4      
+0200  52038003           [64] move       13  7      
+0204  22820003           [65] call       8   6   2  
+0208  57020000           [66] loadbool   9   0   0    ; false
+020C  9D020500           [67] getglobal  10  20       ; _T
+0210  8E424505           [68] gettable   10  10  277  ; "fabricatorInstances"
+fail op	35
+0214  63804505           [69] close      1  
+0218  1A000380           [70] jmp        13           ; to [84]
+021C  9DC20500           [71] getglobal  10  23       ; 1672515847
+0220  DD020500           [72] getglobal  11  20       ; _T
+0224  CE42C505           [73] gettable   11  11  277  ; "fabricatorInstances"
+0228  A2020101           [74] call       10  2   4  
+022C  1A400180           [75] jmp        6            ; to [82]
+fail op	35
+0230  23C00107           [76] close      0  
+0234  1AC00080           [77] jmp        4            ; to [82]
+0238  DD030500           [78] getglobal  15  20       ; _T
+023C  CE43C507           [79] gettable   15  15  277  ; "fabricatorInstances"
+0240  CC038206           [80] settable   15  13  8  
+0244  57028000           [81] loadbool   9   1   0    ; true
+0248  96820000           [82] tforloop   10      2    ; to [84] if exit
+024C  1AC0FD7F           [83] jmp        -8           ; to [76]
+0250  58420000           [84] test       9       1    ; to [86] if false
+0254  1A400180           [85] jmp        6            ; to [92]
+0258  DD030600           [86] getglobal  15  24       ; table
+025C  CE43C607           [87] gettable   15  15  281  ; -431682403
+0260  1D040500           [88] getglobal  16  20       ; _T
+0264  0E444508           [89] gettable   16  16  277  ; "fabricatorInstances"
+0268  52040004           [90] move       17  8      
+026C  E2438001           [91] call       15  3   1  
+0270  1E008000           [92] return     0   1      
+                         * constants:
+0274  1A                 sizek (26)
+0275  01                 const type 3
+0276  65770E40           const [0]: (1074689893)
+027A  01                 const type 3
+027B  73290920           const [1]: (537471347)
+027F  01                 const type 3
+0280  00971C22           const [2]: (572299008)
+0284  01                 const type 3
+0285  81624F1E           const [3]: (508519041)
+0289  01                 const type 3
+028A  0FDFB740           const [4]: (1085792015)
+028E  01                 const type 3
+028F  0125A76D           const [5]: (1839670529)
+0293  01                 const type 3
+0294  61AF33EA           const [6]: (-365711519)
+0298  03                 const type 3
+0299  00000000           const [7]: (0)
+029D  03                 const type 3
+029E  000080BF           const [8]: (0)
+02A2  04                 const type 4
+02A3  08                 string size (8)
+02A4  67526567696F6E00   "gRegion\0"
+                         const [9]: "gRegion"
+02AC  01                 const type 3
+02AD  2B31B028           const [10]: (682635563)
+02B1  04                 const type 4
+02B2  10                 string size (16)
+02B3  6742617365417661+  "gBaseAva"
+02BB  7461725479706500   "tarType\0"
+                         const [11]: "gBaseAvatarType"
+02C3  04                 const type 4
+02C4  0E                 string size (14)
+02C5  6748697450726F78+  "gHitProx"
+02CD  795479706500       "yType\0"
+                         const [12]: "gHitProxyType"
+02D3  04                 const type 4
+02D4  09                 string size (9)
+02D5  6465636F54797065+  "decoType"
+02DD  00                 "\0"
+                         const [13]: "decoType"
+02DE  01                 const type 3
+02DF  7FB7BA07           const [14]: (129677183)
+02E3  01                 const type 3
+02E4  D48E598B           const [15]: (-1957065004)
+02E8  04                 const type 4
+02E9  10                 string size (16)
+02EA  6750726F6A656374+  "gProject"
+02F2  696C655479706500   "ileType\0"
+                         const [16]: "gProjectileType"
+02FA  01                 const type 3
+02FB  975A1F7C           const [17]: (2082429591)
+02FF  01                 const type 3
+0300  58F559A5           const [18]: (-1520831144)
+0304  01                 const type 3
+0305  C64CD3BD           const [19]: (-1110225722)
+0309  04                 const type 4
+030A  03                 string size (3)
+030B  5F5400             "_T\0"
+                         const [20]: "_T"
+030E  04                 const type 4
+030F  14                 string size (20)
+0310  6661627269636174+  "fabricat"
+0318  6F72496E7374616E+  "orInstan"
+0320  63657300           "ces\0"
+                         const [21]: "fabricatorInstances"
+0324  00                 const type 0
+                         const [22]: nil
+0325  01                 const type 3
+0326  0791B063           const [23]: (1672515847)
+032A  04                 const type 4
+032B  06                 string size (6)
+032C  7461626C6500       "table\0"
+                         const [24]: "table"
+0332  01                 const type 3
+0333  9D0C45E6           const [25]: (-431682403)
+                         * functions:
+0337  00                 sizep (0)
+                         * lines:
+0338  5C                 sizelineinfo (92)
+                         [pc] (line)
+0339  14                 [01] (20)
+033A  00                 [02] (20)
+033B  00                 [03] (20)
+033C  00                 [04] (20)
+033D  14                 [05] (20)
+033E  00                 [06] (21)
+033F  00                 [07] (21)
+0340  00                 [08] (21)
+0341  14                 [09] (21)
+0342  00                 [10] (24)
+0343  00                 [11] (24)
+0344  00                 [12] (25)
+0345  14                 [13] (25)
+0346  00                 [14] (27)
+0347  00                 [15] (27)
+0348  00                 [16] (27)
+0349  14                 [17] (27)
+034A  00                 [18] (28)
+034B  00                 [19] (28)
+034C  00                 [20] (29)
+034D  15                 [21] (29)
+034E  00                 [22] (29)
+034F  00                 [23] (29)
+0350  00                 [24] (29)
+0351  15                 [25] (30)
+0352  00                 [26] (30)
+0353  00                 [27] (30)
+0354  00                 [28] (30)
+0355  15                 [29] (30)
+0356  00                 [30] (30)
+0357  00                 [31] (33)
+0358  00                 [32] (33)
+0359  15                 [33] (33)
+035A  00                 [34] (33)
+035B  00                 [35] (33)
+035C  00                 [36] (34)
+035D  18                 [37] (34)
+035E  00                 [38] (34)
+035F  00                 [39] (34)
+0360  00                 [40] (35)
+0361  18                 [41] (35)
+0362  00                 [42] (33)
+0363  00                 [43] (37)
+0364  00                 [44] (37)
+0365  19                 [45] (38)
+0366  00                 [46] (38)
+0367  00                 [47] (38)
+0368  00                 [48] (38)
+0369  19                 [49] (38)
+036A  00                 [50] (39)
+036B  00                 [51] (39)
+036C  00                 [52] (39)
+036D  1B                 [53] (41)
+036E  00                 [54] (41)
+036F  00                 [55] (41)
+0370  00                 [56] (41)
+0371  1B                 [57] (41)
+0372  00                 [58] (42)
+0373  00                 [59] (44)
+0374  00                 [60] (44)
+0375  1B                 [61] (44)
+0376  00                 [62] (44)
+0377  00                 [63] (44)
+0378  00                 [64] (44)
+0379  1B                 [65] (44)
+037A  00                 [66] (47)
+037B  00                 [67] (48)
+037C  00                 [68] (48)
+037D  1C                 [69] (48)
+037E  00                 [70] (48)
+037F  00                 [71] (49)
+0380  00                 [72] (49)
+0381  1C                 [73] (49)
+0382  00                 [74] (49)
+0383  00                 [75] (49)
+0384  00                 [76] (50)
+0385  1D                 [77] (50)
+0386  00                 [78] (51)
+0387  00                 [79] (51)
+0388  00                 [80] (51)
+0389  1D                 [81] (52)
+038A  00                 [82] (49)
+038B  00                 [83] (53)
+038C  00                 [84] (57)
+038D  1D                 [85] (57)
+038E  00                 [86] (58)
+038F  00                 [87] (58)
+0390  00                 [88] (58)
+0391  1D                 [89] (58)
+0392  00                 [90] (58)
+0393  00                 [91] (58)
+0394  00                 [92] (60)
+                         * locals:
+04A9  00                 sizelocvars (0)
+                         * upvalues:
+04AA  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+04AB                     ** function [1] definition (level 2)
+                         ** start of function **
+04AB  00                 string size (0)
+                         source name: (none)
+04AC  3E                 line defined (62)
+04AD  69                 last line defined (105)
+04AE  02                 nups (2)
+04AF  09                 numparams (9)
+04B0  00                 is_vararg (0)
+04B1  12                 maxstacksize (18)
+                         * code:
+04B2  6F                 sizecode (111)
+04B3  5D020000           [001] getglobal  9   0        ; gRegion
+04B7  6442C004           [002] self       9   9   257  ; -1520831144
+04BB  62820001           [003] call       9   2   2  
+04BF  58020000           [004] test       9       0    ; to [6] if true
+04C3  1A001A80           [005] jmp        105          ; to [111]
+04C7  5D820000           [006] getglobal  9   2        ; 1074689893
+04CB  92020000           [007] move       10  0      
+04CF  62820001           [008] call       9   2   2  
+04D3  58420000           [009] test       9       1    ; to [11] if false
+04D7  1AC01880           [010] jmp        100          ; to [111]
+04DB  57020000           [011] loadbool   9   0   0    ; false
+04DF  93020000           [012] getupval   10  0      
+fail op	35
+04E3  23808201           [013] close      0  
+04E7  1A000080           [014] jmp        1            ; to [16]
+04EB  57028000           [015] loadbool   9   1   0    ; true
+04EF  9D020000           [016] getglobal  10  0        ; gRegion
+04F3  A4C24005           [017] self       10  10  259  ; -1110225722
+04F7  1D030100           [018] getglobal  12  4        ; spawnFx
+04FB  52038000           [019] move       13  1      
+04FF  92030001           [020] move       14  2      
+0503  D2030004           [021] move       15  8      
+0507  A2420003           [022] call       10  6   1  
+050B  9D020000           [023] getglobal  10  0        ; gRegion
+050F  A4424105           [024] self       10  10  261  ; -774964848
+0513  A2820001           [025] call       10  2   2  
+0517  A4824105           [026] self       10  10  262  ; 436282865
+051B  1DC30100           [027] getglobal  12  7        ; agentTypes
+051F  5D030200           [028] getglobal  13  8        ; 2144646525
+0523  99430200           [029] loadk      14  9        ; 0
+0527  DDC30100           [030] getglobal  15  7        ; agentTypes
+052B  CA038007           [031] len        15  15     
+052F  62838001           [032] call       13  3   2  
+0533  0E430306           [033] gettable   12  12  13 
+0537  52038000           [034] move       13  1      
+053B  92030001           [035] move       14  2      
+053F  DD830200           [036] getglobal  15  10       ; -332969190
+0543  19C40200           [037] loadk      16  11       ; "RandomTeam"
+0547  E2830001           [038] call       15  2   2  
+054B  12040003           [039] move       16  6      
+054F  52048004           [040] move       17  9      
+0553  A2820004           [041] call       10  8   2  
+0557  DD820000           [042] getglobal  11  2        ; 1074689893
+055B  12030005           [043] move       12  10     
+055F  E2820001           [044] call       11  2   2  
+0563  D8420000           [045] test       11      1    ; to [47] if false
+0567  1AC00F80           [046] jmp        64           ; to [111]
+056B  E4024305           [047] self       11  10  268  ; -2135866365
+056F  E2820001           [048] call       11  2   2  
+0573  2443C305           [049] self       12  11  269  ; -315621992
+0577  92030004           [050] move       14  8      
+057B  22438001           [051] call       12  3   1  
+057F  1D830000           [052] getglobal  12  2        ; 1074689893
+0583  52030004           [053] move       13  8      
+0587  22830001           [054] call       12  2   2  
+058B  18430000           [055] test       12      1    ; to [57] if false
+058F  1A000380           [056] jmp        13           ; to [70]
+0593  24834304           [057] self       12  8   270  ; -1411785325
+0597  22830001           [058] call       12  2   2  
+059B  18030000           [059] test       12      0    ; to [61] if true
+059F  1A000280           [060] jmp        9            ; to [70]
+05A3  64C34306           [061] self       13  12  271  ; 1945512164
+05A7  62830001           [062] call       13  2   2  
+05AB  58030000           [063] test       13      0    ; to [65] if true
+05AF  1A000180           [064] jmp        5            ; to [70]
+05B3  64C34306           [065] self       13  12  271  ; 1945512164
+05B7  62830001           [066] call       13  2   2  
+05BB  A403C406           [067] self       14  13  272  ; -742329559
+05BF  12040005           [068] move       16  10     
+05C3  A2438001           [069] call       14  3   1  
+05C7  9D830000           [070] getglobal  14  2        ; 1074689893
+05CB  D2038001           [071] move       15  3      
+05CF  A2830001           [072] call       14  2   2  
+05D3  98430000           [073] test       14      1    ; to [75] if false
+05D7  1AC00380           [074] jmp        16           ; to [91]
+05DB  9D830000           [075] getglobal  14  2        ; 1074689893
+05DF  D2030002           [076] move       15  4      
+05E3  A2830001           [077] call       14  2   2  
+05E7  98430000           [078] test       14      1    ; to [80] if false
+05EB  1A800280           [079] jmp        11           ; to [91]
+05EF  A443C405           [080] self       14  11  273  ; -1338608417
+05F3  12048001           [081] move       16  3      
+05F7  A2438001           [082] call       14  3   1  
+fail op	35
+05FB  63008101           [083] close      1  
+05FF  1A400180           [084] jmp        6            ; to [91]
+0603  A483C405           [085] self       14  11  274  ; -1302048094
+0607  1D840200           [086] getglobal  16  10       ; -332969190
+060B  59C40400           [087] loadk      17  19       ; "MonitorFaction"
+060F  22840001           [088] call       16  2   2  
+0613  57040000           [089] loadbool   17  0   0    ; false
+0617  A2430002           [090] call       14  4   1  
+061B  9D830000           [091] getglobal  14  2        ; 1074689893
+061F  D2038002           [092] move       15  5      
+0623  A2830001           [093] call       14  2   2  
+0627  98430000           [094] test       14      1    ; to [96] if false
+062B  1A800080           [095] jmp        3            ; to [99]
+062F  A4034505           [096] self       14  10  276  ; 1755388072
+0633  12048002           [097] move       16  5      
+0637  A2438001           [098] call       14  3   1  
+063B  58420000           [099] test       9       1    ; to [101] if false
+063F  1A400080           [100] jmp        2            ; to [103]
+0643  A443C503           [101] self       14  7   277  ; -1213957098
+0647  A2430001           [102] call       14  2   1  
+064B  A4834505           [103] self       14  10  278  ; -1850937571
+064F  A2430001           [104] call       14  2   1  
+0653  93038000           [105] getupval   14  1      
+0657  8EC34507           [106] gettable   14  14  279  ; 455242376
+065B  D2030004           [107] move       15  8      
+065F  24044305           [108] self       16  10  268  ; -2135866365
+0663  22040001           [109] call       16  2   0  
+0667  A2430000           [110] call       14  0   1  
+066B  1E008000           [111] return     0   1      
+                         * constants:
+066F  18                 sizek (24)
+0670  04                 const type 4
+0671  08                 string size (8)
+0672  67526567696F6E00   "gRegion\0"
+                         const [0]: "gRegion"
+067A  01                 const type 3
+067B  58F559A5           const [1]: (-1520831144)
+067F  01                 const type 3
+0680  65770E40           const [2]: (1074689893)
+0684  01                 const type 3
+0685  C64CD3BD           const [3]: (-1110225722)
+0689  04                 const type 4
+068A  08                 string size (8)
+068B  737061776E467800   "spawnFx\0"
+                         const [4]: "spawnFx"
+0693  01                 const type 3
+0694  90F9CED1           const [5]: (-774964848)
+0698  01                 const type 3
+0699  F125011A           const [6]: (436282865)
+069D  04                 const type 4
+069E  0B                 string size (11)
+069F  6167656E74547970+  "agentTyp"
+06A7  657300             "es\0"
+                         const [7]: "agentTypes"
+06AA  01                 const type 3
+06AB  7DB5D47F           const [8]: (2144646525)
+06AF  03                 const type 3
+06B0  0000803F           const [9]: (0)
+06B4  01                 const type 3
+06B5  1A4B27EC           const [10]: (-332969190)
+06B9  04                 const type 4
+06BA  0B                 string size (11)
+06BB  52616E646F6D5465+  "RandomTe"
+06C3  616D00             "am\0"
+                         const [11]: "RandomTeam"
+06C6  01                 const type 3
+06C7  0344B180           const [12]: (-2135866365)
+06CB  01                 const type 3
+06CC  98FD2FED           const [13]: (-315621992)
+06D0  01                 const type 3
+06D1  93DDD9AB           const [14]: (-1411785325)
+06D5  01                 const type 3
+06D6  E428F673           const [15]: (1945512164)
+06DA  01                 const type 3
+06DB  29F3C0D3           const [16]: (-742329559)
+06DF  01                 const type 3
+06E0  DF7436B0           const [17]: (-1338608417)
+06E4  01                 const type 3
+06E5  A25264B2           const [18]: (-1302048094)
+06E9  04                 const type 4
+06EA  0F                 string size (15)
+06EB  4D6F6E69746F7246+  "MonitorF"
+06F3  616374696F6E00     "action\0"
+                         const [19]: "MonitorFaction"
+06FA  01                 const type 3
+06FB  A818A168           const [20]: (1755388072)
+06FF  01                 const type 3
+0700  167CA4B7           const [21]: (-1213957098)
+0704  01                 const type 3
+0705  1DEFAC91           const [22]: (-1850937571)
+0709  01                 const type 3
+070A  8872221B           const [23]: (455242376)
+                         * functions:
+070E  00                 sizep (0)
+                         * lines:
+070F  6F                 sizelineinfo (111)
+                         [pc] (line)
+0710  40                 [001] (64)
+0711  00                 [002] (64)
+0712  00                 [003] (64)
+0713  00                 [004] (64)
+0714  40                 [005] (64)
+0715  00                 [006] (65)
+0716  00                 [007] (65)
+0717  00                 [008] (65)
+0718  40                 [009] (65)
+0719  00                 [010] (65)
+071A  00                 [011] (66)
+071B  00                 [012] (67)
+071C  40                 [013] (67)
+071D  00                 [014] (67)
+071E  00                 [015] (68)
+071F  00                 [016] (70)
+0720  40                 [017] (70)
+0721  00                 [018] (70)
+0722  00                 [019] (70)
+0723  00                 [020] (70)
+0724  41                 [021] (70)
+0725  00                 [022] (70)
+0726  00                 [023] (71)
+0727  00                 [024] (71)
+0728  41                 [025] (71)
+0729  00                 [026] (71)
+072A  00                 [027] (71)
+072B  00                 [028] (71)
+072C  41                 [029] (71)
+072D  00                 [030] (71)
+072E  00                 [031] (71)
+072F  00                 [032] (71)
+0730  41                 [033] (71)
+0731  00                 [034] (71)
+0732  00                 [035] (71)
+0733  00                 [036] (71)
+0734  41                 [037] (71)
+0735  00                 [038] (71)
+0736  00                 [039] (71)
+0737  00                 [040] (71)
+0738  42                 [041] (71)
+0739  00                 [042] (72)
+073A  00                 [043] (72)
+073B  00                 [044] (72)
+073C  43                 [045] (72)
+073D  00                 [046] (72)
+073E  00                 [047] (73)
+073F  00                 [048] (73)
+0740  43                 [049] (74)
+0741  00                 [050] (74)
+0742  00                 [051] (74)
+0743  00                 [052] (76)
+0744  43                 [053] (76)
+0745  00                 [054] (76)
+0746  00                 [055] (76)
+0747  00                 [056] (76)
+0748  44                 [057] (77)
+0749  00                 [058] (77)
+074A  00                 [059] (78)
+074B  00                 [060] (78)
+074C  46                 [061] (78)
+074D  00                 [062] (78)
+074E  00                 [063] (78)
+074F  00                 [064] (78)
+0750  46                 [065] (79)
+0751  00                 [066] (79)
+0752  00                 [067] (80)
+0753  00                 [068] (80)
+0754  46                 [069] (80)
+0755  00                 [070] (85)
+0756  00                 [071] (85)
+0757  00                 [072] (85)
+0758  46                 [073] (85)
+0759  00                 [074] (85)
+075A  00                 [075] (85)
+075B  00                 [076] (85)
+075C  46                 [077] (85)
+075D  00                 [078] (85)
+075E  00                 [079] (85)
+075F  00                 [080] (86)
+0760  46                 [081] (86)
+0761  00                 [082] (86)
+0762  00                 [083] (87)
+0763  00                 [084] (87)
+0764  46                 [085] (88)
+0765  00                 [086] (88)
+0766  00                 [087] (88)
+0767  00                 [088] (88)
+0768  47                 [089] (88)
+0769  00                 [090] (88)
+076A  00                 [091] (93)
+076B  00                 [092] (93)
+076C  47                 [093] (93)
+076D  00                 [094] (93)
+076E  00                 [095] (93)
+076F  00                 [096] (94)
+0770  47                 [097] (94)
+0771  00                 [098] (94)
+0772  00                 [099] (96)
+0773  00                 [100] (96)
+0774  47                 [101] (97)
+0775  00                 [102] (97)
+0776  00                 [103] (99)
+0777  00                 [104] (99)
+0778  47                 [105] (100)
+0779  00                 [106] (100)
+077A  00                 [107] (100)
+077B  00                 [108] (100)
+077C  47                 [109] (100)
+077D  00                 [110] (100)
+077E  00                 [111] (105)
+                         * locals:
+08CC  00                 sizelocvars (0)
+                         * upvalues:
+08CD  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+08CE                     ** function [2] definition (level 2)
+                         ** start of function **
+08CE  00                 string size (0)
+                         source name: (none)
+08CF  6B                 line defined (107)
+08D0  D6                 last line defined (214)
+08D1  01                 nups (3)
+08D2  03                 numparams (1)
+08D3  01                 is_vararg (0)
+08D4  00                 maxstacksize (29)
+                         * code:
+08D7  01                 sizecode (238)
+08D8  64004000           [001] self       1   0   256  ; 2056776437
+08DC  DD400000           [002] getglobal  3   1        ; openingAnim
+08E0  17018000           [003] loadbool   4   1   0    ; true
+08E4  57010000           [004] loadbool   5   0   0    ; false
+08E8  62408002           [005] call       1   5   1  
+08EC  64804000           [006] self       1   0   258  ; 1489721288
+08F0  DDC00000           [007] getglobal  3   3        ; openAnim
+08F4  62408001           [008] call       1   3   1  
+08F8  46008000           [009] loadnil    1   1      
+08FC  9D000100           [010] getglobal  2   4        ; 1074689893
+0900  D3000000           [011] getupval   3   0      
+0904  A2800001           [012] call       2   2   2  
+0908  98400000           [013] test       2       1    ; to [15] if false
+090C  1AC00080           [014] jmp        4            ; to [19]
+0910  93000000           [015] getupval   2   0      
+0914  A4404101           [016] self       2   2   261  ; 537471347
+0918  A2800001           [017] call       2   2   2  
+091C  52000001           [018] move       1   2      
+0920  99800100           [019] loadk      2   6        ; 0
+0924  C6008003           [020] loadnil    3   7      
+0928  24C24100           [021] self       8   0   263  ; 129677183
+092C  22820001           [022] call       8   2   2  
+0930  5D020100           [023] getglobal  9   4        ; 1074689893
+0934  92020004           [024] move       10  8      
+0938  62820001           [025] call       9   2   2  
+093C  58020000           [026] test       9       0    ; to [28] if true
+0940  1AC00080           [027] jmp        4            ; to [32]
+0944  64024200           [028] self       9   0   264  ; -725453761
+0948  62420001           [029] call       9   2   1  
+094C  1E008000           [030] return     0   1      
+0950  1A000080           [031] jmp        1            ; to [33]
+0954  92010004           [032] move       6   8      
+0958  53028000           [033] getupval   9   1      
+095C  4E42C204           [034] gettable   9   9   265  ; 455242376
+0960  92020003           [035] move       10  6      
+0964  D2020000           [036] move       11  0      
+0968  62428001           [037] call       9   3   1  
+096C  5D820200           [038] getglobal  9   10       ; gRegion
+0970  64C2C204           [039] self       9   9   267  ; -1520831144
+0974  62820001           [040] call       9   2   2  
+0978  58020000           [041] test       9       0    ; to [43] if true
+097C  1A000A80           [042] jmp        41           ; to [84]
+0980  5D020100           [043] getglobal  9   4        ; 1074689893
+0984  92020003           [044] move       10  6      
+0988  62820001           [045] call       9   2   2  
+098C  58420000           [046] test       9       1    ; to [48] if false
+0990  1AC00880           [047] jmp        36           ; to [84]
+0994  5D020100           [048] getglobal  9   4        ; 1074689893
+0998  92020000           [049] move       10  0      
+099C  62820001           [050] call       9   2   2  
+09A0  58420000           [051] test       9       1    ; to [53] if false
+09A4  1A800780           [052] jmp        31           ; to [84]
+09A8  5D020100           [053] getglobal  9   4        ; 1074689893
+09AC  A4024303           [054] self       10  6   268  ; -1411785325
+09B0  A2020001           [055] call       10  2   0  
+09B4  62820000           [056] call       9   0   2  
+09B8  58420000           [057] test       9       1    ; to [59] if false
+09BC  1A000680           [058] jmp        25           ; to [84]
+09C0  64024303           [059] self       9   6   268  ; -1411785325
+09C4  62820001           [060] call       9   2   2  
+09C8  6442C304           [061] self       9   9   269  ; 1983029550
+09CC  62820001           [062] call       9   2   2  
+09D0  92008004           [063] move       2   9      
+09D4  64824300           [064] self       9   0   270  ; 796523475
+09D8  62820001           [065] call       9   2   2  
+09DC  D2018004           [066] move       7   9      
+09E0  64C24300           [067] self       9   0   271  ; 1992436207
+09E4  C4828003           [068] mul        11  7   2  
+09E8  17038000           [069] loadbool   12  1   0    ; true
+09EC  62420002           [070] call       9   4   1  
+09F0  5D020400           [071] getglobal  9   16       ; levelMod
+09F4  84400201           [072] mul        2   2   9  
+09F8  64424403           [073] self       9   6   273  ; -2031737093
+09FC  62820001           [074] call       9   2   2  
+0A00  D2008004           [075] move       3   9      
+0A04  64824403           [076] self       9   6   274  ; -1081228973
+0A08  62820001           [077] call       9   2   2  
+0A0C  12018004           [078] move       4   9      
+0A10  64024303           [079] self       9   6   268  ; -1411785325
+0A14  62820001           [080] call       9   2   2  
+0A18  64C2C404           [081] self       9   9   275  ; 1569762139
+0A1C  62820001           [082] call       9   2   2  
+0A20  52018004           [083] move       5   9      
+0A24  64024500           [084] self       9   0   276  ; -1625438872
+0A28  DD420500           [085] getglobal  11  21       ; gNpcSpawnPointType
+0A2C  62828001           [086] call       9   3   2  
+0A30  86028005           [087] loadnil    10  11     
+0A34  1D030100           [088] getglobal  12  4        ; 1074689893
+0A38  52038004           [089] move       13  9      
+0A3C  22830001           [090] call       12  2   2  
+0A40  18430000           [091] test       12      1    ; to [93] if false
+0A44  1A800180           [092] jmp        7            ; to [100]
+0A48  2483C504           [093] self       12  9   278  ; 1839670529
+0A4C  22830001           [094] call       12  2   2  
+0A50  92020006           [095] move       10  12     
+0A54  24C3C504           [096] self       12  9   279  ; -231049143
+0A58  22830001           [097] call       12  2   2  
+0A5C  D2020006           [098] move       11  12     
+0A60  1A400180           [099] jmp        6            ; to [106]
+0A64  24834500           [100] self       12  0   278  ; 1839670529
+0A68  22830001           [101] call       12  2   2  
+0A6C  92020006           [102] move       10  12     
+0A70  24C34500           [103] self       12  0   279  ; -231049143
+0A74  22830001           [104] call       12  2   2  
+0A78  D2020006           [105] move       11  12     
+0A7C  1D030600           [106] getglobal  12  24       ; 538022378
+0A80  5D430600           [107] getglobal  13  25       ; startDelay
+0A84  22430001           [108] call       12  2   1  
+0A88  1D830600           [109] getglobal  12  26       ; maxLifeTime
+0A8C  46038006           [110] loadnil    13  13     
+0A90  9D830200           [111] getglobal  14  10       ; gRegion
+0A94  A4C34607           [112] self       14  14  283  ; 152279552
+0A98  1D040700           [113] getglobal  16  28       ; avatarType
+0A9C  52040005           [114] move       17  10     
+0AA0  99440700           [115] loadk      18  29       ; 0
+0AA4  D9840700           [116] loadk      19  30       ; 0
+0AA8  A2830003           [117] call       14  6   2  
+0AAC  DD830200           [118] getglobal  15  10       ; gRegion
+0AB0  E4C3C707           [119] self       15  15  287  ; -2071158816
+0AB4  E2830001           [120] call       15  2   2  
+0AB8  0A048007           [121] len        16  15     
+0ABC  03044808           [122] add        16  16  288  ; 0
+0AC0  6444C800           [123] self       17  1   289  ; -1626084341
+0AC4  D7048000           [124] loadbool   19  1   0    ; true
+0AC8  62848001           [125] call       17  3   2  
+0ACC  9D040100           [126] getglobal  18  4        ; 1074689893
+0AD0  D2040003           [127] move       19  6      
+0AD4  A2840001           [128] call       18  2   2  
+0AD8  98440000           [129] test       18      1    ; to [131] if false
+0ADC  1A400180           [130] jmp        6            ; to [137]
+0AE0  9D040100           [131] getglobal  18  4        ; 1074689893
+0AE4  E4844803           [132] self       19  6   290  ; -1073689042
+0AE8  E2040001           [133] call       19  2   0  
+0AEC  A2840000           [134] call       18  0   2  
+fail op	9
+0AF0  89040009           [135] settable   18  18  0  
+0AF4  1A400080           [136] jmp        2            ; to [139]
+0AF8  97440000           [137] loadbool   18  0   1    ; false, to [139]
+0AFC  97048000           [138] loadbool   18  1   0    ; true
+0B00  DD040100           [139] getglobal  19  4        ; 1074689893
+0B04  12050000           [140] move       20  0      
+0B08  E2840001           [141] call       19  2   2  
+0B0C  D8440000           [142] test       19      1    ; to [144] if false
+0B10  1AC00D80           [143] jmp        56           ; to [200]
+fail op	21
+0B14  1500838E           [144] concat     0   285 12 
+0B18  1A400D80           [145] jmp        54           ; to [200]
+0B1C  98040000           [146] test       18      0    ; to [148] if true
+0B20  1A000280           [147] jmp        9            ; to [157]
+0B24  DD040100           [148] getglobal  19  4        ; 1074689893
+0B28  12050003           [149] move       20  6      
+0B2C  E2840001           [150] call       19  2   2  
+0B30  D8440000           [151] test       19      1    ; to [153] if false
+0B34  1A800B80           [152] jmp        47           ; to [200]
+0B38  E4C44803           [153] self       19  6   291  ; 1511086594
+0B3C  E2840001           [154] call       19  2   2  
+0B40  D8440000           [155] test       19      1    ; to [157] if false
+0B44  1A800A80           [156] jmp        43           ; to [200]
+0B48  DD840200           [157] getglobal  19  10       ; gRegion
+0B4C  E4C4C609           [158] self       19  19  283  ; 152279552
+0B50  5D050700           [159] getglobal  21  28       ; avatarType
+0B54  92050005           [160] move       22  10     
+0B58  D9450700           [161] loadk      23  29       ; 0
+0B5C  19860700           [162] loadk      24  30       ; 0
+0B60  E2840003           [163] call       19  6   2  
+0B64  92038009           [164] move       14  19     
+0B68  E444C800           [165] self       19  1   289  ; -1626084341
+0B6C  57058000           [166] loadbool   21  1   0    ; true
+0B70  E2848001           [167] call       19  3   2  
+0B74  52048009           [168] move       17  19     
+0B78  CA040007           [169] len        19  14     
+fail op	21
+0B7C  15008409           [170] concat     0   19  16 
+0B80  1A800380           [171] jmp        15           ; to [187]
+0B84  E404C900           [172] self       19  1   292  ; -1738719634
+0B88  E2840001           [173] call       19  2   2  
+fail op	21
+0B8C  15C08408           [174] concat     0   17  19 
+0B90  1A800280           [175] jmp        11           ; to [187]
+0B94  D3040001           [176] getupval   19  2      
+0B98  12050000           [177] move       20  0      
+0B9C  52050005           [178] move       21  10     
+0BA0  92058005           [179] move       22  11     
+0BA4  D2058001           [180] move       23  3      
+0BA8  12060002           [181] move       24  4      
+0BAC  52068002           [182] move       25  5      
+0BB0  92060001           [183] move       26  2      
+0BB4  D2068000           [184] move       27  1      
+0BB8  12070003           [185] move       28  6      
+0BBC  E2440005           [186] call       19  10  1  
+0BC0  DD440900           [187] getglobal  19  37       ; -1941280958
+0BC4  1D850900           [188] getglobal  20  38       ; minSpawnDelay
+0BC8  5DC50900           [189] getglobal  21  39       ; maxSpawnDelay
+0BCC  E2848001           [190] call       19  3   2  
+0BD0  52038009           [191] move       13  19     
+0BD4  CD440306           [192] sub        19  12  13 
+0BD8  1D050A00           [193] getglobal  20  40       ; 1289681407
+0BDC  22858000           [194] call       20  1   2  
+0BE0  0D038509           [195] sub        12  19  20 
+0BE4  DD040600           [196] getglobal  19  24       ; 538022378
+0BE8  12058006           [197] move       20  13     
+0BEC  E2440001           [198] call       19  2   1  
+0BF0  1A80F07F           [199] jmp        -61          ; to [139]
+0BF4  DD440A00           [200] getglobal  19  41       ; _T
+0BF8  CE84CA09           [201] gettable   19  19  298  ; "fabricatorInstances"
+fail op	35
+0BFC  63C0CA09           [202] close      1  
+0C00  1A800680           [203] jmp        27           ; to [231]
+0C04  DD440A00           [204] getglobal  19  41       ; _T
+0C08  CE84CA09           [205] gettable   19  19  298  ; "fabricatorInstances"
+0C0C  CA048009           [206] len        19  19     
+0C10  19050B00           [207] loadk      20  44       ; 0
+0C14  59450B00           [208] loadk      21  45       ; 0
+0C18  D0C40280           [209] forprep    19  12       ; to [222]
+0C1C  DD450A00           [210] getglobal  23  41       ; _T
+0C20  CE85CA0B           [211] gettable   23  23  298  ; "fabricatorInstances"
+0C24  CE85850B           [212] gettable   23  23  22 
+fail op	35
+0C28  2300800B           [213] close      0  
+0C2C  1A800180           [214] jmp        7            ; to [222]
+0C30  DD850B00           [215] getglobal  23  46       ; table
+0C34  CEC5CB0B           [216] gettable   23  23  303  ; -843973282
+0C38  1D460A00           [217] getglobal  24  41       ; _T
+0C3C  0E864A0C           [218] gettable   24  24  298  ; "fabricatorInstances"
+0C40  5206000B           [219] move       25  22     
+0C44  E2458001           [220] call       23  3   1  
+0C48  1A000080           [221] jmp        1            ; to [223]
+0C4C  D484FC7F           [222] forloop    19  -13      ; to [210] if loop
+0C50  DD050C00           [223] getglobal  23  48       ; -1442191459
+0C54  1D460A00           [224] getglobal  24  41       ; _T
+0C58  0E864A0C           [225] gettable   24  24  298  ; "fabricatorInstances"
+0C5C  E2850001           [226] call       23  2   2  
+fail op	35
+0C60  23C0CA0B           [227] close      0  
+0C64  1A400080           [228] jmp        2            ; to [231]
+0C68  DD450A00           [229] getglobal  23  41       ; _T
+0C6C  CCC54A95           [230] settable   23  298 299  ; "fabricatorInstances" nil
+0C70  DD050100           [231] getglobal  23  4        ; 1074689893
+0C74  12060000           [232] move       24  0      
+0C78  E2850001           [233] call       23  2   2  
+0C7C  D8450000           [234] test       23      1    ; to [236] if false
+0C80  1A400080           [235] jmp        2            ; to [238]
+0C84  E4054200           [236] self       23  0   264  ; -725453761
+0C88  E2450001           [237] call       23  2   1  
+0C8C  1E008000           [238] return     0   1      
+                         * constants:
+0C90  31                 sizek (49)
+0C91  01                 const type 3
+0C92  F5EA977A           const [0]: (2056776437)
+0C96  04                 const type 4
+0C97  0C                 string size (12)
+0C98  6F70656E696E6741+  "openingA"
+0CA0  6E696D00           "nim\0"
+                         const [1]: "openingAnim"
+0CA4  01                 const type 3
+0CA5  C857CB58           const [2]: (1489721288)
+0CA9  04                 const type 4
+0CAA  09                 string size (9)
+0CAB  6F70656E416E696D+  "openAnim"
+0CB3  00                 "\0"
+                         const [3]: "openAnim"
+0CB4  01                 const type 3
+0CB5  65770E40           const [4]: (1074689893)
+0CB9  01                 const type 3
+0CBA  73290920           const [5]: (537471347)
+0CBE  03                 const type 3
+0CBF  00007041           const [6]: (0)
+0CC3  01                 const type 3
+0CC4  7FB7BA07           const [7]: (129677183)
+0CC8  01                 const type 3
+0CC9  3F74C2D4           const [8]: (-725453761)
+0CCD  01                 const type 3
+0CCE  8872221B           const [9]: (455242376)
+0CD2  04                 const type 4
+0CD3  08                 string size (8)
+0CD4  67526567696F6E00   "gRegion\0"
+                         const [10]: "gRegion"
+0CDC  01                 const type 3
+0CDD  58F559A5           const [11]: (-1520831144)
+0CE1  01                 const type 3
+0CE2  93DDD9AB           const [12]: (-1411785325)
+0CE6  01                 const type 3
+0CE7  2EA13276           const [13]: (1983029550)
+0CEB  01                 const type 3
+0CEC  D3FB792F           const [14]: (796523475)
+0CF0  01                 const type 3
+0CF1  EF29C276           const [15]: (1992436207)
+0CF5  04                 const type 4
+0CF6  09                 string size (9)
+0CF7  6C6576656C4D6F64+  "levelMod"
+0CFF  00                 "\0"
+                         const [16]: "levelMod"
+0D00  01                 const type 3
+0D01  FB26E686           const [17]: (-2031737093)
+0D05  01                 const type 3
+0D06  53C18DBF           const [18]: (-1081228973)
+0D0A  01                 const type 3
+0D0B  5BAB905D           const [19]: (1569762139)
+0D0F  01                 const type 3
+0D10  68C51D9F           const [20]: (-1625438872)
+0D14  04                 const type 4
+0D15  13                 string size (19)
+0D16  674E706353706177+  "gNpcSpaw"
+0D1E  6E506F696E745479+  "nPointTy"
+0D26  706500             "pe\0"
+                         const [21]: "gNpcSpawnPointType"
+0D29  01                 const type 3
+0D2A  0125A76D           const [22]: (1839670529)
+0D2E  01                 const type 3
+0D2F  49783AF2           const [23]: (-231049143)
+0D33  01                 const type 3
+0D34  EA911120           const [24]: (538022378)
+0D38  04                 const type 4
+0D39  0B                 string size (11)
+0D3A  737461727444656C+  "startDel"
+0D42  617900             "ay\0"
+                         const [25]: "startDelay"
+0D45  04                 const type 4
+0D46  0C                 string size (12)
+0D47  6D61784C69666554+  "maxLifeT"
+0D4F  696D6500           "ime\0"
+                         const [26]: "maxLifeTime"
+0D53  01                 const type 3
+0D54  009A1309           const [27]: (152279552)
+0D58  04                 const type 4
+0D59  0B                 string size (11)
+0D5A  6176617461725479+  "avatarTy"
+0D62  706500             "pe\0"
+                         const [28]: "avatarType"
+0D65  03                 const type 3
+0D66  00000000           const [29]: (0)
+0D6A  03                 const type 3
+0D6B  0000C842           const [30]: (0)
+0D6F  01                 const type 3
+0D70  E09F8C84           const [31]: (-2071158816)
+0D74  03                 const type 3
+0D75  00004040           const [32]: (0)
+0D79  01                 const type 3
+0D7A  0BEC139F           const [33]: (-1626084341)
+0D7E  01                 const type 3
+0D7F  2ECE00C0           const [34]: (-1073689042)
+0D83  01                 const type 3
+0D84  025A115A           const [35]: (1511086594)
+0D88  01                 const type 3
+0D89  6E3E5D98           const [36]: (-1738719634)
+0D8D  01                 const type 3
+0D8E  42674A8C           const [37]: (-1941280958)
+0D92  04                 const type 4
+0D93  0E                 string size (14)
+0D94  6D696E537061776E+  "minSpawn"
+0D9C  44656C617900       "Delay\0"
+                         const [38]: "minSpawnDelay"
+0DA2  04                 const type 4
+0DA3  0E                 string size (14)
+0DA4  6D6178537061776E+  "maxSpawn"
+0DAC  44656C617900       "Delay\0"
+                         const [39]: "maxSpawnDelay"
+0DB2  01                 const type 3
+0DB3  FFF9DE4C           const [40]: (1289681407)
+0DB7  04                 const type 4
+0DB8  03                 string size (3)
+0DB9  5F5400             "_T\0"
+                         const [41]: "_T"
+0DBC  04                 const type 4
+0DBD  14                 string size (20)
+0DBE  6661627269636174+  "fabricat"
+0DC6  6F72496E7374616E+  "orInstan"
+0DCE  63657300           "ces\0"
+                         const [42]: "fabricatorInstances"
+0DD2  00                 const type 0
+                         const [43]: nil
+0DD3  03                 const type 3
+0DD4  0000803F           const [44]: (0)
+0DD8  03                 const type 3
+0DD9  000080BF           const [45]: (0)
+0DDD  04                 const type 4
+0DDE  06                 string size (6)
+0DDF  7461626C6500       "table\0"
+                         const [46]: "table"
+0DE5  01                 const type 3
+0DE6  5EFDB1CD           const [47]: (-843973282)
+0DEA  01                 const type 3
+0DEB  9DE709AA           const [48]: (-1442191459)
+                         * functions:
+0DEF  00                 sizep (0)
+                         * lines:
+0DF1  01                 sizelineinfo (238)
+                         [pc] (line)
+0DF2  76                 [001] (118)
+0DF3  00                 [002] (118)
+0DF4  00                 [003] (118)
+0DF5  00                 [004] (118)
+0DF6  76                 [005] (118)
+0DF7  00                 [006] (119)
+0DF8  00                 [007] (119)
+0DF9  00                 [008] (119)
+0DFA  76                 [009] (121)
+0DFB  00                 [010] (122)
+0DFC  00                 [011] (122)
+0DFD  00                 [012] (122)
+0DFE  76                 [013] (122)
+0DFF  00                 [014] (122)
+0E00  00                 [015] (123)
+0E01  00                 [016] (123)
+0E02  76                 [017] (123)
+0E03  00                 [018] (123)
+0E04  00                 [019] (126)
+0E05  00                 [020] (127)
+0E06  77                 [021] (-124)
+0E07  00                 [022] (-124)
+0E08  00                 [023] (-122)
+0E09  00                 [024] (-122)
+0E0A  77                 [025] (-122)
+0E0B  00                 [026] (-122)
+0E0C  00                 [027] (-122)
+0E0D  00                 [028] (-121)
+0E0E  77                 [029] (-121)
+0E0F  00                 [030] (-120)
+0E10  00                 [031] (-120)
+0E11  00                 [032] (-118)
+0E12  79                 [033] (-115)
+0E13  00                 [034] (-115)
+0E14  00                 [035] (-115)
+0E15  00                 [036] (-115)
+0E16  7A                 [037] (-115)
+0E17  00                 [038] (-113)
+0E18  00                 [039] (-113)
+0E19  00                 [040] (-113)
+0E1A  7A                 [041] (-113)
+0E1B  00                 [042] (-113)
+0E1C  00                 [043] (-112)
+0E1D  00                 [044] (-112)
+0E1E  7A                 [045] (-112)
+0E1F  00                 [046] (-112)
+0E20  00                 [047] (-112)
+0E21  00                 [048] (-112)
+0E22  7A                 [049] (-112)
+0E23  00                 [050] (-112)
+0E24  00                 [051] (-112)
+0E25  00                 [052] (-112)
+0E26  7A                 [053] (-112)
+0E27  00                 [054] (-112)
+0E28  00                 [055] (-112)
+0E29  00                 [056] (-112)
+0E2A  7B                 [057] (-112)
+0E2B  00                 [058] (-112)
+0E2C  00                 [059] (-111)
+0E2D  00                 [060] (-111)
+0E2E  7B                 [061] (-111)
+0E2F  00                 [062] (-111)
+0E30  00                 [063] (-111)
+0E31  00                 [064] (-110)
+0E32  7B                 [065] (-110)
+0E33  00                 [066] (-110)
+0E34  00                 [067] (-109)
+0E35  00                 [068] (-109)
+0E36  7B                 [069] (-109)
+0E37  00                 [070] (-109)
+0E38  00                 [071] (-108)
+0E39  00                 [072] (-108)
+0E3A  7E                 [073] (-107)
+0E3B  00                 [074] (-107)
+0E3C  00                 [075] (-107)
+0E3D  00                 [076] (-106)
+0E3E  7F                 [077] (-106)
+0E3F  00                 [078] (-106)
+0E40  00                 [079] (-105)
+0E41  00                 [080] (-105)
+0E42  84                 [081] (-105)
+0E43  00                 [082] (-105)
+0E44  00                 [083] (-105)
+0E45  00                 [084] (-101)
+0E46  84                 [085] (-101)
+0E47  00                 [086] (-101)
+0E48  00                 [087] (-100)
+0E49  00                 [088] (-98)
+0E4A  86                 [089] (-98)
+0E4B  00                 [090] (-98)
+0E4C  00                 [091] (-98)
+0E4D  00                 [092] (-98)
+0E4E  86                 [093] (-97)
+0E4F  00                 [094] (-97)
+0E50  00                 [095] (-97)
+0E51  00                 [096] (-96)
+0E52  86                 [097] (-96)
+0E53  00                 [098] (-96)
+0E54  00                 [099] (-96)
+0E55  00                 [100] (-94)
+0E56  86                 [101] (-94)
+0E57  00                 [102] (-94)
+0E58  00                 [103] (-93)
+0E59  00                 [104] (-93)
+0E5A  86                 [105] (-93)
+0E5B  00                 [106] (-90)
+0E5C  00                 [107] (-90)
+0E5D  00                 [108] (-90)
+0E5E  87                 [109] (-88)
+0E5F  00                 [110] (-87)
+0E60  00                 [111] (-86)
+0E61  00                 [112] (-86)
+0E62  87                 [113] (-86)
+0E63  00                 [114] (-86)
+0E64  00                 [115] (-86)
+0E65  00                 [116] (-86)
+0E66  88                 [117] (-86)
+0E67  00                 [118] (-85)
+0E68  00                 [119] (-85)
+0E69  00                 [120] (-85)
+0E6A  88                 [121] (-84)
+0E6B  00                 [122] (-84)
+0E6C  00                 [123] (-83)
+0E6D  00                 [124] (-83)
+0E6E  8A                 [125] (-83)
+0E6F  00                 [126] (-82)
+0E70  00                 [127] (-82)
+0E71  00                 [128] (-82)
+0E72  8D                 [129] (-82)
+0E73  00                 [130] (-82)
+0E74  00                 [131] (-82)
+0E75  00                 [132] (-82)
+0E76  8D                 [133] (-82)
+0E77  00                 [134] (-82)
+0E78  00                 [135] (-82)
+0E79  00                 [136] (-82)
+0E7A  8D                 [137] (-82)
+0E7B  00                 [138] (-82)
+0E7C  00                 [139] (-79)
+0E7D  00                 [140] (-79)
+0E7E  8D                 [141] (-79)
+0E7F  00                 [142] (-79)
+0E80  00                 [143] (-79)
+0E81  00                 [144] (-78)
+0E82  8D                 [145] (-78)
+0E83  00                 [146] (-76)
+0E84  00                 [147] (-76)
+0E85  00                 [148] (-74)
+0E86  8F                 [149] (-74)
+0E87  00                 [150] (-74)
+0E88  00                 [151] (-74)
+0E89  00                 [152] (-74)
+0E8A  8F                 [153] (-73)
+0E8B  00                 [154] (-73)
+0E8C  00                 [155] (-71)
+0E8D  00                 [156] (-71)
+0E8E  8F                 [157] (-69)
+0E8F  00                 [158] (-69)
+0E90  00                 [159] (-69)
+0E91  00                 [160] (-69)
+0E92  8F                 [161] (-69)
+0E93  00                 [162] (-69)
+0E94  00                 [163] (-69)
+0E95  00                 [164] (-69)
+0E96  8F                 [165] (-68)
+0E97  00                 [166] (-68)
+0E98  00                 [167] (-68)
+0E99  00                 [168] (-68)
+0E9A  90                 [169] (-67)
+0E9B  00                 [170] (-67)
+0E9C  00                 [171] (-67)
+0E9D  00                 [172] (-67)
+0E9E  90                 [173] (-67)
+0E9F  00                 [174] (-67)
+0EA0  00                 [175] (-67)
+0EA1  00                 [176] (-66)
+0EA2  90                 [177] (-66)
+0EA3  00                 [178] (-66)
+0EA4  00                 [179] (-66)
+0EA5  00                 [180] (-66)
+0EA6  90                 [181] (-66)
+0EA7  00                 [182] (-66)
+0EA8  00                 [183] (-66)
+0EA9  00                 [184] (-66)
+0EAA  90                 [185] (-66)
+0EAB  00                 [186] (-66)
+0EAC  00                 [187] (-64)
+0EAD  00                 [188] (-64)
+0EAE  90                 [189] (-64)
+0EAF  00                 [190] (-64)
+0EB0  00                 [191] (-64)
+0EB1  00                 [192] (-63)
+0EB2  90                 [193] (-63)
+0EB3  00                 [194] (-63)
+0EB4  00                 [195] (-63)
+0EB5  00                 [196] (-62)
+0EB6  90                 [197] (-62)
+0EB7  00                 [198] (-62)
+0EB8  00                 [199] (-62)
+0EB9  00                 [200] (-58)
+0EBA  90                 [201] (-58)
+0EBB  00                 [202] (-58)
+0EBC  00                 [203] (-58)
+0EBD  00                 [204] (-57)
+0EBE  90                 [205] (-57)
+0EBF  00                 [206] (-57)
+0EC0  00                 [207] (-57)
+0EC1  00                 [208] (-57)
+0EC2  90                 [209] (-57)
+0EC3  00                 [210] (-56)
+0EC4  00                 [211] (-56)
+0EC5  00                 [212] (-56)
+0EC6  90                 [213] (-56)
+0EC7  00                 [214] (-56)
+0EC8  00                 [215] (-55)
+0EC9  00                 [216] (-55)
+0ECA  90                 [217] (-55)
+0ECB  00                 [218] (-55)
+0ECC  00                 [219] (-55)
+0ECD  00                 [220] (-55)
+0ECE  90                 [221] (-54)
+0ECF  00                 [222] (-57)
+0ED0  00                 [223] (-50)
+0ED1  00                 [224] (-50)
+0ED2  90                 [225] (-50)
+0ED3  00                 [226] (-50)
+0ED4  00                 [227] (-50)
+0ED5  00                 [228] (-50)
+0ED6  90                 [229] (-49)
+0ED7  00                 [230] (-49)
+0ED8  00                 [231] (-45)
+0ED9  00                 [232] (-45)
+0EDA  91                 [233] (-45)
+0EDB  00                 [234] (-45)
+0EDC  00                 [235] (-45)
+0EDD  00                 [236] (-44)
+0EDE  91                 [237] (-44)
+0EDF  00                 [238] (-42)
+                         * locals:
+11AA  00                 sizelocvars (0)
+                         * upvalues:
+11AB  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+11AC                     ** function [3] definition (level 2)
+                         ** start of function **
+11AC  00                 string size (0)
+                         source name: (none)
+11AE  01                 line defined (216)
+11AF  EB                 last line defined (235)
+11B0  01                 nups (0)
+11B1  00                 numparams (1)
+11B2  01                 is_vararg (0)
+11B3  00                 maxstacksize (7)
+                         * code:
+11B5  28                 sizecode (40)
+11B6  64004000           [01] self       1   0   256  ; -1073689042
+11BA  62800001           [02] call       1   2   2  
+11BE  A4404000           [03] self       2   0   257  ; -2031737093
+11C2  A2800001           [04] call       2   2   2  
+11C6  E4804000           [05] self       3   0   258  ; 1511086594
+11CA  E2800001           [06] call       3   2   2  
+11CE  D8400000           [07] test       3       1    ; to [9] if false
+11D2  1AC00580           [08] jmp        24           ; to [33]
+11D6  DDC00000           [09] getglobal  3   3        ; 1074689893
+11DA  12018000           [10] move       4   1      
+11DE  E2800001           [11] call       3   2   2  
+11E2  D8400000           [12] test       3       1    ; to [14] if false
+11E6  1A800480           [13] jmp        19           ; to [33]
+11EA  E440C000           [14] self       3   1   257  ; -2031737093
+11EE  E2800001           [15] call       3   2   2  
+fail op	35
+11F2  23808001           [16] close      0  
+11F6  1A000080           [17] jmp        1            ; to [19]
+11FA  1A400380           [18] jmp        14           ; to [33]
+11FE  E440C000           [19] self       3   1   257  ; -2031737093
+1202  E2800001           [20] call       3   2   2  
+1206  24414000           [21] self       4   0   257  ; -2031737093
+120A  22810001           [22] call       4   2   2  
+fail op	35
+120E  63008101           [23] close      1  
+1212  1AC00080           [24] jmp        4            ; to [29]
+1216  E4004100           [25] self       3   0   260  ; -1338608417
+121A  6441C000           [26] self       5   1   257  ; -2031737093
+121E  62010001           [27] call       5   2   0  
+1222  E2400000           [28] call       3   0   1  
+1226  DD400100           [29] getglobal  3   5        ; 538022378
+122A  19810100           [30] loadk      4   6        ; 0
+122E  E2400001           [31] call       3   2   1  
+1232  1AC0F87F           [32] jmp        -28          ; to [5]
+1236  E4804000           [33] self       3   0   258  ; 1511086594
+123A  E2800001           [34] call       3   2   2  
+123E  D8400000           [35] test       3       1    ; to [37] if false
+1242  1A800080           [36] jmp        3            ; to [40]
+1246  E4004100           [37] self       3   0   260  ; -1338608417
+124A  52010001           [38] move       5   2      
+124E  E2408001           [39] call       3   3   1  
+1252  1E008000           [40] return     0   1      
+                         * constants:
+1256  07                 sizek (7)
+1257  01                 const type 3
+1258  2ECE00C0           const [0]: (-1073689042)
+125C  01                 const type 3
+125D  FB26E686           const [1]: (-2031737093)
+1261  01                 const type 3
+1262  025A115A           const [2]: (1511086594)
+1266  01                 const type 3
+1267  65770E40           const [3]: (1074689893)
+126B  01                 const type 3
+126C  DF7436B0           const [4]: (-1338608417)
+1270  01                 const type 3
+1271  EA911120           const [5]: (538022378)
+1275  03                 const type 3
+1276  0000803E           const [6]: (0)
+                         * functions:
+127A  00                 sizep (0)
+                         * lines:
+127B  28                 sizelineinfo (40)
+                         [pc] (line)
+127C  D9                 [01] (-39)
+127D  00                 [02] (-39)
+127E  00                 [03] (-38)
+127F  00                 [04] (-38)
+1280  D9                 [05] (-36)
+1281  00                 [06] (-36)
+1282  00                 [07] (-36)
+1283  00                 [08] (-36)
+1284  DA                 [09] (-36)
+1285  00                 [10] (-36)
+1286  00                 [11] (-36)
+1287  00                 [12] (-36)
+1288  DA                 [13] (-36)
+1289  00                 [14] (-35)
+128A  00                 [15] (-35)
+128B  00                 [16] (-35)
+128C  DC                 [17] (-35)
+128D  00                 [18] (-34)
+128E  00                 [19] (-31)
+128F  00                 [20] (-31)
+1290  DC                 [21] (-31)
+1291  00                 [22] (-31)
+1292  00                 [23] (-31)
+1293  00                 [24] (-31)
+1294  DC                 [25] (-30)
+1295  00                 [26] (-30)
+1296  00                 [27] (-30)
+1297  00                 [28] (-30)
+1298  DC                 [29] (-27)
+1299  00                 [30] (-27)
+129A  00                 [31] (-27)
+129B  00                 [32] (-27)
+129C  DC                 [33] (-24)
+129D  00                 [34] (-24)
+129E  00                 [35] (-24)
+129F  00                 [36] (-24)
+12A0  DC                 [37] (-23)
+12A1  00                 [38] (-23)
+12A2  00                 [39] (-23)
+12A3  00                 [40] (-21)
+                         * locals:
+131C  00                 sizelocvars (0)
+                         * upvalues:
+131D  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+131E  1A                 sizelineinfo (26)
+                         [pc] (line)
+131F  0D                 [01] (13)
+1320  00                 [02] (13)
+1321  00                 [03] (13)
+1322  00                 [04] (14)
+1323  0D                 [05] (14)
+1324  00                 [06] (14)
+1325  00                 [07] (15)
+1326  00                 [08] (15)
+1327  0D                 [09] (15)
+1328  00                 [10] (60)
+1329  00                 [11] (60)
+132A  00                 [12] (60)
+132B  0E                 [13] (17)
+132C  00                 [14] (105)
+132D  00                 [15] (105)
+132E  00                 [16] (105)
+132F  0E                 [17] (-42)
+1330  00                 [18] (-42)
+1331  00                 [19] (-42)
+1332  00                 [20] (-42)
+1333  0E                 [21] (-42)
+1334  00                 [22] (107)
+1335  00                 [23] (-21)
+1336  00                 [24] (-21)
+1337  0F                 [25] (-40)
+1338  00                 [26] (-21)
+                         * locals:
+1387  00                 sizelocvars (0)
+                         * upvalues:
+1388  00                 sizeupvalues (0)
+                         ** end of function **
+
+1389                     ** end of chunk **

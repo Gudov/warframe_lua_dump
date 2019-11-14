@@ -1,0 +1,661 @@
+1	C:\wlua_dump\path\Lotus\Types\Enemies\Corpus\Vip\AmbulasAmbulasBossTransmissions.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Types\Enemies\Corpus\Vip\AmbulasAmbulasBossTransmissions.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  04                 size of number (bytes)
+0008  0E                 integral (1=integral)
+414
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+Lotus.Scripts.Libs.TransmissionSet
+Lotus.Interface.LotusUtilities
+Run
+gGameRules
+gRegion
+vipAgent
+gRegion
+_T
+TransmissionSet
+transmissionSet
+table
+AmbulasBossIntro2
+AmbulasBossIntro4
+AmbulasBossIntro6
+OpenCinDone
+gGameRules
+AmbulasFightStage
+AmbulasBossIntro1
+targetNumTransmission
+minDistToTarget
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  04                 maxstacksize (4)
+                         * code:
+0008  0E                 sizecode (14)
+0009  1D000000           [01] getglobal  0   0        ; 849075268
+000D  59400000           [02] loadk      1   1        ; "Lotus.Scripts.Libs.TransmissionSet"
+0011  22800001           [03] call       0   2   2  
+0015  5D000000           [04] getglobal  1   0        ; 849075268
+0019  99800000           [05] loadk      2   2        ; "Lotus.Interface.LotusUtilities"
+001D  62800001           [06] call       1   2   2  
+0021  A5000000           [07] closure    2   0      
+0025  E5400000           [08] closure    3   1      
+0029  12000000           [09] move       0   0      
+002D  12000001           [10] move       0   2      
+0031  12008000           [11] move       0   1      
+0035  E0C00000           [12] setglobal  3   3        ; Run
+0039  E0000100           [13] setglobal  3   4        ; -881964922
+003D  1E008000           [14] return     0   1      
+                         * constants:
+0041  05                 sizek (5)
+0042  01                 const type 3
+0043  44DC9B32           const [0]: (849075268)
+0047  04                 const type 4
+0048  23                 string size (35)
+0049  4C6F7475732E5363+  "Lotus.Sc"
+0051  72697074732E4C69+  "ripts.Li"
+0059  62732E5472616E73+  "bs.Trans"
+0061  6D697373696F6E53+  "missionS"
+0069  657400             "et\0"
+                         const [1]: "Lotus.Scripts.Libs.TransmissionSet"
+006C  04                 const type 4
+006D  1F                 string size (31)
+006E  4C6F7475732E496E+  "Lotus.In"
+0076  746572666163652E+  "terface."
+007E  4C6F747573557469+  "LotusUti"
+0086  6C697469657300     "lities\0"
+                         const [2]: "Lotus.Interface.LotusUtilities"
+008D  04                 const type 4
+008E  04                 string size (4)
+008F  52756E00           "Run\0"
+                         const [3]: "Run"
+0093  01                 const type 3
+0094  86486ECB           const [4]: (-881964922)
+                         * functions:
+0098  02                 sizep (2)
+                         
+0099                     ** function [0] definition (level 2)
+                         ** start of function **
+0099  00                 string size (0)
+                         source name: (none)
+009A  08                 line defined (8)
+009B  16                 last line defined (22)
+009C  00                 nups (0)
+009D  00                 numparams (0)
+009E  00                 is_vararg (0)
+009F  0B                 maxstacksize (11)
+                         * code:
+00A0  27                 sizecode (39)
+00A1  1D000000           [01] getglobal  0   0        ; gGameRules
+00A5  64404000           [02] self       1   0   257  ; -1201441975
+00A9  62800001           [03] call       1   2   2  
+00AD  9D800000           [04] getglobal  2   2        ; gRegion
+00B1  A4C04001           [05] self       2   2   259  ; 19448449
+00B5  A2800001           [06] call       2   2   2  
+00B9  D9000100           [07] loadk      3   4        ; 0
+00BD  0A010001           [08] len        4   2      
+00C1  59010100           [09] loadk      5   4        ; 0
+00C5  D0000680           [10] forprep    3   25       ; to [36]
+00C9  DD410100           [11] getglobal  7   5        ; 1074689893
+00CD  0E820101           [12] gettable   8   2   6  
+00D1  E2810001           [13] call       7   2   2  
+00D5  D8410000           [14] test       7       1    ; to [16] if false
+00D9  1AC00480           [15] jmp        20           ; to [36]
+00DD  CE810101           [16] gettable   7   2   6  
+00E1  E481C103           [17] self       7   7   262  ; 1511086594
+00E5  E2810001           [18] call       7   2   2  
+00E9  D8410000           [19] test       7       1    ; to [21] if false
+00ED  1A800380           [20] jmp        15           ; to [36]
+00F1  CE810101           [21] gettable   7   2   6  
+00F5  E4C1C103           [22] self       7   7   263  ; -1411785325
+00F9  E2810001           [23] call       7   2   2  
+00FD  1D420100           [24] getglobal  8   5        ; 1074689893
+0101  52028003           [25] move       9   7      
+0105  22820001           [26] call       8   2   2  
+0109  18420000           [27] test       8       1    ; to [29] if false
+010D  1A800180           [28] jmp        7            ; to [36]
+0111  2402C203           [29] self       8   7   264  ; -1957065004
+0115  8E42C200           [30] gettable   10  1   265  ; "vipAgent"
+0119  22828001           [31] call       8   3   2  
+011D  18020000           [32] test       8       0    ; to [34] if true
+0121  1A400080           [33] jmp        2            ; to [36]
+0125  17028000           [34] loadbool   8   1   0    ; true
+0129  1E020001           [35] return     8   2      
+012D  D440F97F           [36] forloop    3   -26      ; to [11] if loop
+0131  17020000           [37] loadbool   8   0   0    ; false
+0135  1E020001           [38] return     8   2      
+0139  1E008000           [39] return     0   1      
+                         * constants:
+013D  0A                 sizek (10)
+013E  04                 const type 4
+013F  0B                 string size (11)
+0140  6747616D6552756C+  "gGameRul"
+0148  657300             "es\0"
+                         const [0]: "gGameRules"
+014B  01                 const type 3
+014C  497363B8           const [1]: (-1201441975)
+0150  04                 const type 4
+0151  08                 string size (8)
+0152  67526567696F6E00   "gRegion\0"
+                         const [2]: "gRegion"
+015A  01                 const type 3
+015B  81C22801           const [3]: (19448449)
+015F  03                 const type 3
+0160  0000803F           const [4]: (0)
+0164  01                 const type 3
+0165  65770E40           const [5]: (1074689893)
+0169  01                 const type 3
+016A  025A115A           const [6]: (1511086594)
+016E  01                 const type 3
+016F  93DDD9AB           const [7]: (-1411785325)
+0173  01                 const type 3
+0174  D48E598B           const [8]: (-1957065004)
+0178  04                 const type 4
+0179  09                 string size (9)
+017A  7669704167656E74+  "vipAgent"
+0182  00                 "\0"
+                         const [9]: "vipAgent"
+                         * functions:
+0183  00                 sizep (0)
+                         * lines:
+0184  27                 sizelineinfo (39)
+                         [pc] (line)
+0185  09                 [01] (9)
+0186  00                 [02] (10)
+0187  00                 [03] (10)
+0188  00                 [04] (12)
+0189  0A                 [05] (12)
+018A  00                 [06] (12)
+018B  00                 [07] (13)
+018C  00                 [08] (13)
+018D  0A                 [09] (13)
+018E  00                 [10] (13)
+018F  00                 [11] (14)
+0190  00                 [12] (14)
+0191  0C                 [13] (14)
+0192  00                 [14] (14)
+0193  00                 [15] (14)
+0194  00                 [16] (14)
+0195  0C                 [17] (14)
+0196  00                 [18] (14)
+0197  00                 [19] (14)
+0198  00                 [20] (14)
+0199  0C                 [21] (15)
+019A  00                 [22] (15)
+019B  00                 [23] (15)
+019C  00                 [24] (16)
+019D  0D                 [25] (16)
+019E  00                 [26] (16)
+019F  00                 [27] (16)
+01A0  00                 [28] (16)
+01A1  0D                 [29] (16)
+01A2  00                 [30] (16)
+01A3  00                 [31] (16)
+01A4  00                 [32] (16)
+01A5  0D                 [33] (16)
+01A6  00                 [34] (17)
+01A7  00                 [35] (17)
+01A8  00                 [36] (13)
+01A9  0D                 [37] (21)
+01AA  00                 [38] (21)
+01AB  00                 [39] (22)
+                         * locals:
+0221  00                 sizelocvars (0)
+                         * upvalues:
+0222  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0223                     ** function [1] definition (level 2)
+                         ** start of function **
+0223  00                 string size (0)
+                         source name: (none)
+0224  18                 line defined (24)
+0225  4D                 last line defined (77)
+0226  03                 nups (3)
+0227  01                 numparams (1)
+0228  00                 is_vararg (0)
+0229  16                 maxstacksize (22)
+                         * code:
+022B  01                 sizecode (139)
+022C  5D000000           [001] getglobal  1   0        ; gRegion
+0230  6440C000           [002] self       1   1   257  ; -774964848
+0234  62800001           [003] call       1   2   2  
+0238  A480C000           [004] self       2   1   258  ; 537471347
+023C  A2800001           [005] call       2   2   2  
+0240  DDC00000           [006] getglobal  3   3        ; _T
+0244  1D410100           [007] getglobal  4   5        ; transmissionSet
+0248  CC000182           [008] settable   3   260 4    ; "TransmissionSet"
+024C  CB000000           [009] newtable   3   0   0    ; array=0, hash=0
+0250  1D810100           [010] getglobal  4   6        ; table
+0254  0EC14102           [011] gettable   4   4   263  ; -431682403
+0258  52018001           [012] move       5   3      
+025C  9D010200           [013] getglobal  6   8        ; -332969190
+0260  D9410200           [014] loadk      7   9        ; "AmbulasBossIntro2"
+0264  A2010001           [015] call       6   2   0  
+0268  22410000           [016] call       4   0   1  
+026C  1D810100           [017] getglobal  4   6        ; table
+0270  0EC14102           [018] gettable   4   4   263  ; -431682403
+0274  52018001           [019] move       5   3      
+0278  9D010200           [020] getglobal  6   8        ; -332969190
+027C  D9810200           [021] loadk      7   10       ; "AmbulasBossIntro4"
+0280  A2010001           [022] call       6   2   0  
+0284  22410000           [023] call       4   0   1  
+0288  1D810100           [024] getglobal  4   6        ; table
+028C  0EC14102           [025] gettable   4   4   263  ; -431682403
+0290  52018001           [026] move       5   3      
+0294  9D010200           [027] getglobal  6   8        ; -332969190
+0298  D9C10200           [028] loadk      7   11       ; "AmbulasBossIntro6"
+029C  A2010001           [029] call       6   2   0  
+02A0  22410000           [030] call       4   0   1  
+02A4  1D010300           [031] getglobal  4   12       ; 538022378
+02A8  59410300           [032] loadk      5   13       ; 0
+02AC  22410001           [033] call       4   2   1  
+02B0  1D010200           [034] getglobal  4   8        ; -332969190
+02B4  59810300           [035] loadk      5   14       ; "OpenCinDone"
+02B8  22810001           [036] call       4   2   2  
+02BC  5DC10300           [037] getglobal  5   15       ; 1074689893
+02C0  9D010400           [038] getglobal  6   16       ; gGameRules
+02C4  62810001           [039] call       5   2   2  
+02C8  58410000           [040] test       5       1    ; to [42] if false
+02CC  1A800280           [041] jmp        11           ; to [53]
+02D0  5D010400           [042] getglobal  5   16       ; gGameRules
+02D4  6441C402           [043] self       5   5   273  ; -317790213
+02D8  D2010002           [044] move       7   4      
+02DC  19820400           [045] loadk      8   18       ; 0
+02E0  62810002           [046] call       5   4   2  
+fail op	21
+02E4  1540C302           [047] concat     0   5   269
+02E8  1AC00080           [048] jmp        4            ; to [53]
+02EC  5D010300           [049] getglobal  5   12       ; 538022378
+02F0  99810400           [050] loadk      6   18       ; 0
+02F4  62410001           [051] call       5   2   1  
+02F8  1AC0FB7F           [052] jmp        -16          ; to [37]
+02FC  5D010200           [053] getglobal  5   8        ; -332969190
+0300  99C10400           [054] loadk      6   19       ; "AmbulasFightStage"
+0304  62810001           [055] call       5   2   2  
+0308  9D010400           [056] getglobal  6   16       ; gGameRules
+030C  A4414403           [057] self       6   6   273  ; -317790213
+0310  12028002           [058] move       8   5      
+0314  59820400           [059] loadk      9   18       ; 0
+0318  A2810002           [060] call       6   4   2  
+fail op	21
+031C  15800189           [061] concat     0   274 6  
+0320  1A000080           [062] jmp        1            ; to [64]
+0324  1E008000           [063] return     0   1      
+0328  93010000           [064] getupval   6   0      
+032C  8E014503           [065] gettable   6   6   276  ; -78033590
+0330  DDC10000           [066] getglobal  7   3        ; _T
+0334  CE01C103           [067] gettable   7   7   260  ; "TransmissionSet"
+0338  1D020200           [068] getglobal  8   8        ; -332969190
+033C  59420500           [069] loadk      9   21       ; "AmbulasBossIntro1"
+0340  22820001           [070] call       8   2   2  
+0344  59820400           [071] loadk      9   18       ; 0
+0348  A2410002           [072] call       6   4   1  
+034C  A4814501           [073] self       6   2   278  ; 991298814
+0350  A2810001           [074] call       6   2   2  
+0354  DDC10500           [075] getglobal  7   23       ; targetNumTransmission
+0358  DCC10103           [076] div        7   6   7  
+035C  0B020000           [077] newtable   8   0   0    ; array=0, hash=0
+0360  59420300           [078] loadk      9   13       ; 0
+0364  9DC20500           [079] getglobal  10  23       ; targetNumTransmission
+0368  D9420300           [080] loadk      11  13       ; 0
+036C  50420380           [081] forprep    9   14       ; to [96]
+fail op	33
+0370  21804403           [082] tforloop   0       274  ; to [84] if exit
+0374  1A400080           [083] jmp        2            ; to [86]
+0378  0C024606           [084] settable   8   12  280  ; 0
+037C  1A400280           [085] jmp        10           ; to [96]
+0380  4D434306           [086] sub        13  12  269  ; 0
+0384  9DC30500           [087] getglobal  14  23       ; targetNumTransmission
+0388  8D434307           [088] sub        14  14  269  ; 0
+038C  5C838306           [089] div        13  13  14 
+0390  9D430600           [090] getglobal  14  25       ; -1828500651
+0394  DD830600           [091] getglobal  15  26       ; minDistToTarget
+0398  0DC44603           [092] sub        16  6   283  ; 0
+039C  44448306           [093] mul        17  13  13 
+03A0  A2830002           [094] call       14  4   2  
+03A4  0C820306           [095] settable   8   12  14 
+03A8  5402FC7F           [096] forloop    9   -15      ; to [82] if loop
+03AC  93038000           [097] getupval   14  1      
+03B0  A2838000           [098] call       14  1   2  
+03B4  98430000           [099] test       14      1    ; to [101] if false
+03B8  1A400980           [100] jmp        38           ; to [139]
+03BC  9D030300           [101] getglobal  14  12       ; 538022378
+03C0  D9430300           [102] loadk      15  13       ; 0
+03C4  A2430001           [103] call       14  2   1  
+03C8  A4834501           [104] self       14  2   278  ; 991298814
+03CC  A2830001           [105] call       14  2   2  
+03D0  92010007           [106] move       6   14     
+03D4  93030001           [107] getupval   14  2      
+03D8  8E034707           [108] gettable   14  14  284  ; 1776858983
+03DC  A2838000           [109] call       14  1   2  
+03E0  98430000           [110] test       14      1    ; to [112] if false
+03E4  1A00FC7F           [111] jmp        -15          ; to [97]
+03E8  99430300           [112] loadk      14  13       ; 0
+03EC  DDC30500           [113] getglobal  15  23       ; targetNumTransmission
+03F0  19440300           [114] loadk      16  13       ; 0
+03F4  90030580           [115] forprep    14  21       ; to [137]
+03F8  8E440404           [116] gettable   18  8   17 
+fail op	21
+03FC  15800403           [117] concat     0   6   18 
+0400  1A400480           [118] jmp        18           ; to [137]
+0404  0C02C608           [119] settable   8   17  280  ; 0
+0408  9DC40300           [120] getglobal  18  15       ; 1074689893
+040C  CE44C301           [121] gettable   19  3   269  ; 0
+0410  A2840001           [122] call       18  2   2  
+0414  98440000           [123] test       18      1    ; to [125] if false
+0418  1AC00280           [124] jmp        12           ; to [137]
+041C  93040000           [125] getupval   18  0      
+0420  8E044509           [126] gettable   18  18  276  ; -78033590
+0424  DDC40000           [127] getglobal  19  3        ; _T
+0428  CE04C109           [128] gettable   19  19  260  ; "TransmissionSet"
+042C  0E45C301           [129] gettable   20  3   269  ; 0
+0430  59850400           [130] loadk      21  18       ; 0
+0434  A2440002           [131] call       18  4   1  
+0438  9D840100           [132] getglobal  18  6        ; table
+043C  8E444709           [133] gettable   18  18  285  ; -843973282
+0440  D2048001           [134] move       19  3      
+0444  19450300           [135] loadk      20  13       ; 0
+0448  A2448001           [136] call       18  3   1  
+044C  9443FA7F           [137] forloop    14  -22      ; to [116] if loop
+0450  1A40F57F           [138] jmp        -42          ; to [97]
+0454  1E008000           [139] return     0   1      
+                         * constants:
+0458  1E                 sizek (30)
+0459  04                 const type 4
+045A  08                 string size (8)
+045B  67526567696F6E00   "gRegion\0"
+                         const [0]: "gRegion"
+0463  01                 const type 3
+0464  90F9CED1           const [1]: (-774964848)
+0468  01                 const type 3
+0469  73290920           const [2]: (537471347)
+046D  04                 const type 4
+046E  03                 string size (3)
+046F  5F5400             "_T\0"
+                         const [3]: "_T"
+0472  04                 const type 4
+0473  10                 string size (16)
+0474  5472616E736D6973+  "Transmis"
+047C  73696F6E53657400   "sionSet\0"
+                         const [4]: "TransmissionSet"
+0484  04                 const type 4
+0485  10                 string size (16)
+0486  7472616E736D6973+  "transmis"
+048E  73696F6E53657400   "sionSet\0"
+                         const [5]: "transmissionSet"
+0496  04                 const type 4
+0497  06                 string size (6)
+0498  7461626C6500       "table\0"
+                         const [6]: "table"
+049E  01                 const type 3
+049F  9D0C45E6           const [7]: (-431682403)
+04A3  01                 const type 3
+04A4  1A4B27EC           const [8]: (-332969190)
+04A8  04                 const type 4
+04A9  12                 string size (18)
+04AA  416D62756C617342+  "AmbulasB"
+04B2  6F7373496E74726F+  "ossIntro"
+04BA  3200               "2\0"
+                         const [9]: "AmbulasBossIntro2"
+04BC  04                 const type 4
+04BD  12                 string size (18)
+04BE  416D62756C617342+  "AmbulasB"
+04C6  6F7373496E74726F+  "ossIntro"
+04CE  3400               "4\0"
+                         const [10]: "AmbulasBossIntro4"
+04D0  04                 const type 4
+04D1  12                 string size (18)
+04D2  416D62756C617342+  "AmbulasB"
+04DA  6F7373496E74726F+  "ossIntro"
+04E2  3600               "6\0"
+                         const [11]: "AmbulasBossIntro6"
+04E4  01                 const type 3
+04E5  EA911120           const [12]: (538022378)
+04E9  03                 const type 3
+04EA  0000803F           const [13]: (0)
+04EE  04                 const type 4
+04EF  0C                 string size (12)
+04F0  4F70656E43696E44+  "OpenCinD"
+04F8  6F6E6500           "one\0"
+                         const [14]: "OpenCinDone"
+04FC  01                 const type 3
+04FD  65770E40           const [15]: (1074689893)
+0501  04                 const type 4
+0502  0B                 string size (11)
+0503  6747616D6552756C+  "gGameRul"
+050B  657300             "es\0"
+                         const [16]: "gGameRules"
+050E  01                 const type 3
+050F  FBE70EED           const [17]: (-317790213)
+0513  03                 const type 3
+0514  00000000           const [18]: (0)
+0518  04                 const type 4
+0519  12                 string size (18)
+051A  416D62756C617346+  "AmbulasF"
+0522  6967687453746167+  "ightStag"
+052A  6500               "e\0"
+                         const [19]: "AmbulasFightStage"
+052C  01                 const type 3
+052D  4A4D59FB           const [20]: (-78033590)
+0531  04                 const type 4
+0532  12                 string size (18)
+0533  416D62756C617342+  "AmbulasB"
+053B  6F7373496E74726F+  "ossIntro"
+0543  3100               "1\0"
+                         const [21]: "AmbulasBossIntro1"
+0545  01                 const type 3
+0546  FE04163B           const [22]: (991298814)
+054A  04                 const type 4
+054B  16                 string size (22)
+054C  7461726765744E75+  "targetNu"
+0554  6D5472616E736D69+  "mTransmi"
+055C  7373696F6E00       "ssion\0"
+                         const [23]: "targetNumTransmission"
+0562  03                 const type 3
+0563  000080BF           const [24]: (0)
+0567  01                 const type 3
+0568  554B0393           const [25]: (-1828500651)
+056C  04                 const type 4
+056D  10                 string size (16)
+056E  6D696E4469737454+  "minDistT"
+0576  6F54617267657400   "oTarget\0"
+                         const [26]: "minDistToTarget"
+057E  03                 const type 3
+057F  0000C842           const [27]: (0)
+0583  01                 const type 3
+0584  67B7E869           const [28]: (1776858983)
+0588  01                 const type 3
+0589  5EFDB1CD           const [29]: (-843973282)
+                         * functions:
+058D  00                 sizep (0)
+                         * lines:
+058F  01                 sizelineinfo (139)
+                         [pc] (line)
+0590  19                 [001] (25)
+0591  00                 [002] (25)
+0592  00                 [003] (25)
+0593  00                 [004] (26)
+0594  19                 [005] (26)
+0595  00                 [006] (27)
+0596  00                 [007] (27)
+0597  00                 [008] (27)
+0598  19                 [009] (29)
+0599  00                 [010] (30)
+059A  00                 [011] (30)
+059B  00                 [012] (30)
+059C  1A                 [013] (30)
+059D  00                 [014] (30)
+059E  00                 [015] (30)
+059F  00                 [016] (30)
+05A0  1A                 [017] (31)
+05A1  00                 [018] (31)
+05A2  00                 [019] (31)
+05A3  00                 [020] (31)
+05A4  1B                 [021] (31)
+05A5  00                 [022] (31)
+05A6  00                 [023] (31)
+05A7  00                 [024] (32)
+05A8  1B                 [025] (32)
+05A9  00                 [026] (32)
+05AA  00                 [027] (32)
+05AB  00                 [028] (32)
+05AC  1B                 [029] (32)
+05AD  00                 [030] (32)
+05AE  00                 [031] (34)
+05AF  00                 [032] (34)
+05B0  1D                 [033] (34)
+05B1  00                 [034] (36)
+05B2  00                 [035] (36)
+05B3  00                 [036] (36)
+05B4  1E                 [037] (37)
+05B5  00                 [038] (37)
+05B6  00                 [039] (37)
+05B7  00                 [040] (37)
+05B8  1E                 [041] (37)
+05B9  00                 [042] (37)
+05BA  00                 [043] (37)
+05BB  00                 [044] (37)
+05BC  1E                 [045] (37)
+05BD  00                 [046] (37)
+05BE  00                 [047] (37)
+05BF  00                 [048] (37)
+05C0  1E                 [049] (38)
+05C1  00                 [050] (38)
+05C2  00                 [051] (38)
+05C3  00                 [052] (38)
+05C4  1E                 [053] (41)
+05C5  00                 [054] (41)
+05C6  00                 [055] (41)
+05C7  00                 [056] (42)
+05C8  1E                 [057] (42)
+05C9  00                 [058] (42)
+05CA  00                 [059] (42)
+05CB  00                 [060] (42)
+05CC  1E                 [061] (42)
+05CD  00                 [062] (42)
+05CE  00                 [063] (43)
+05CF  00                 [064] (46)
+05D0  1F                 [065] (46)
+05D1  00                 [066] (46)
+05D2  00                 [067] (46)
+05D3  00                 [068] (46)
+05D4  1F                 [069] (46)
+05D5  00                 [070] (46)
+05D6  00                 [071] (46)
+05D7  00                 [072] (46)
+05D8  1F                 [073] (48)
+05D9  00                 [074] (48)
+05DA  00                 [075] (50)
+05DB  00                 [076] (50)
+05DC  1F                 [077] (51)
+05DD  00                 [078] (52)
+05DE  00                 [079] (52)
+05DF  00                 [080] (52)
+05E0  1F                 [081] (52)
+05E1  00                 [082] (53)
+05E2  00                 [083] (53)
+05E3  00                 [084] (54)
+05E4  1F                 [085] (54)
+05E5  00                 [086] (56)
+05E6  00                 [087] (56)
+05E7  00                 [088] (56)
+05E8  1F                 [089] (56)
+05E9  00                 [090] (57)
+05EA  00                 [091] (57)
+05EB  00                 [092] (57)
+05EC  20                 [093] (57)
+05ED  00                 [094] (57)
+05EE  00                 [095] (57)
+05EF  00                 [096] (52)
+05F0  20                 [097] (62)
+05F1  00                 [098] (62)
+05F2  00                 [099] (62)
+05F3  00                 [100] (62)
+05F4  20                 [101] (63)
+05F5  00                 [102] (63)
+05F6  00                 [103] (63)
+05F7  00                 [104] (64)
+05F8  20                 [105] (64)
+05F9  00                 [106] (64)
+05FA  00                 [107] (65)
+05FB  00                 [108] (65)
+05FC  20                 [109] (65)
+05FD  00                 [110] (65)
+05FE  00                 [111] (65)
+05FF  00                 [112] (66)
+0600  20                 [113] (66)
+0601  00                 [114] (66)
+0602  00                 [115] (66)
+0603  00                 [116] (67)
+0604  20                 [117] (67)
+0605  00                 [118] (67)
+0606  00                 [119] (68)
+0607  00                 [120] (69)
+0608  22                 [121] (69)
+0609  00                 [122] (69)
+060A  00                 [123] (69)
+060B  00                 [124] (69)
+060C  22                 [125] (70)
+060D  00                 [126] (70)
+060E  00                 [127] (70)
+060F  00                 [128] (70)
+0610  22                 [129] (70)
+0611  00                 [130] (70)
+0612  00                 [131] (70)
+0613  00                 [132] (71)
+0614  24                 [133] (71)
+0615  00                 [134] (71)
+0616  00                 [135] (71)
+0617  00                 [136] (71)
+0618  24                 [137] (66)
+0619  00                 [138] (75)
+061A  00                 [139] (77)
+                         * locals:
+07BC  00                 sizelocvars (0)
+                         * upvalues:
+07BD  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+07BE  0E                 sizelineinfo (14)
+                         [pc] (line)
+07BF  05                 [01] (5)
+07C0  00                 [02] (5)
+07C1  00                 [03] (5)
+07C2  00                 [04] (6)
+07C3  05                 [05] (6)
+07C4  00                 [06] (6)
+07C5  00                 [07] (22)
+07C6  00                 [08] (77)
+07C7  05                 [09] (77)
+07C8  00                 [10] (77)
+07C9  00                 [11] (77)
+07CA  00                 [12] (77)
+07CB  06                 [13] (24)
+07CC  00                 [14] (77)
+                         * locals:
+07F7  00                 sizelocvars (0)
+                         * upvalues:
+07F8  00                 sizeupvalues (0)
+                         ** end of function **
+
+07F9                     ** end of chunk **

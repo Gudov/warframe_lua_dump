@@ -1,0 +1,409 @@
+1	C:\wlua_dump\path\Lotus\ScriptsLaserBeamDetect.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\ScriptsLaserBeamDetect.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  02                 size of number (bytes)
+0008  04                 integral (1=integral)
+44
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+DetectionLaserHit
+gLotusSentinelAvatarType
+gLotusAvatarType
+gTennoAvatarType
+gRegion
+CameraTileEvents
+TriggerPort
+damagePlayers
+dmgPercent
+baseHealth
+healthBonus
+minDmgPercent
+dmgType
+bodyPart
+impulse
+impulseDir
+hitEffect
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  02                 maxstacksize (2)
+                         * code:
+0008  04                 sizecode (4)
+0009  25000000           [1] closure    0   0      
+000D  20000000           [2] setglobal  0   0        ; DetectionLaserHit
+0011  20400000           [3] setglobal  0   1        ; -1093286293
+0015  1E008000           [4] return     0   1      
+                         * constants:
+0019  02                 sizek (2)
+001A  04                 const type 4
+001B  12                 string size (18)
+001C  446574656374696F+  "Detectio"
+0024  6E4C617365724869+  "nLaserHi"
+002C  7400               "t\0"
+                         const [0]: "DetectionLaserHit"
+002E  01                 const type 3
+002F  6BC6D5BE           const [1]: (-1093286293)
+                         * functions:
+0033  01                 sizep (1)
+                         
+0034                     ** function [0] definition (level 2)
+                         ** start of function **
+0034  00                 string size (0)
+                         source name: (none)
+0035  0D                 line defined (13)
+0036  2C                 last line defined (44)
+0037  00                 nups (0)
+0038  02                 numparams (2)
+0039  00                 is_vararg (0)
+003A  19                 maxstacksize (25)
+                         * code:
+003B  60                 sizecode (96)
+003C  9D000000           [01] getglobal  2   0        ; 1074689893
+0040  D2008000           [02] move       3   1      
+0044  A2800001           [03] call       2   2   2  
+0048  98400000           [04] test       2       1    ; to [6] if false
+004C  1A800280           [05] jmp        11           ; to [17]
+0050  A440C000           [06] self       2   1   257  ; -1957065004
+0054  1D810000           [07] getglobal  4   2        ; gLotusSentinelAvatarType
+0058  A2808001           [08] call       2   3   2  
+005C  98400000           [09] test       2       1    ; to [11] if false
+0060  1A000180           [10] jmp        5            ; to [16]
+0064  A440C000           [11] self       2   1   257  ; -1957065004
+0068  1DC10000           [12] getglobal  4   3        ; gLotusAvatarType
+006C  A2808001           [13] call       2   3   2  
+0070  98400000           [14] test       2       1    ; to [16] if false
+0074  1A000080           [15] jmp        1            ; to [17]
+0078  1E008000           [16] return     0   1      
+007C  9D000000           [17] getglobal  2   0        ; 1074689893
+0080  D2008000           [18] move       3   1      
+0084  A2800001           [19] call       2   2   2  
+0088  98400000           [20] test       2       1    ; to [22] if false
+008C  1A400780           [21] jmp        30           ; to [52]
+0090  A440C000           [22] self       2   1   257  ; -1957065004
+0094  1D010100           [23] getglobal  4   4        ; gTennoAvatarType
+0098  A2808001           [24] call       2   3   2  
+009C  98000000           [25] test       2       0    ; to [27] if true
+00A0  1A000680           [26] jmp        25           ; to [52]
+00A4  A4404100           [27] self       2   0   261  ; 1927666530
+00A8  A2800001           [28] call       2   2   2  
+00AC  E4804101           [29] self       3   2   262  ; -2104556066
+00B0  E2800001           [30] call       3   2   2  
+00B4  1DC10100           [31] getglobal  4   7        ; gRegion
+00B8  24014202           [32] self       4   4   264  ; -1485896174
+00BC  9D410200           [33] getglobal  6   9        ; -332969190
+00C0  D9810200           [34] loadk      7   10       ; "CameraTileEvents"
+00C4  A2010001           [35] call       6   2   0  
+00C8  22810000           [36] call       4   0   2  
+00CC  5DC10200           [37] getglobal  5   11       ; 1672515847
+00D0  92010002           [38] move       6   4      
+00D4  62010101           [39] call       5   2   4  
+00D8  1A000280           [40] jmp        9            ; to [50]
+00DC  A442C104           [41] self       10  9   261  ; 1927666530
+00E0  A2820001           [42] call       10  2   2  
+00E4  E4824105           [43] self       11  10  262  ; -2104556066
+00E8  E2820001           [44] call       11  2   2  
+fail op	35
+00EC  23C08201           [45] close      0  
+00F0  1A800080           [46] jmp        3            ; to [50]
+00F4  2403C304           [47] self       12  9   268  ; -1923578185
+00F8  99430300           [48] loadk      14  13       ; "TriggerPort"
+00FC  22438001           [49] call       12  3   1  
+0100  56810000           [50] tforloop   5       2    ; to [52] if exit
+0104  1A00FD7F           [51] jmp        -11          ; to [41]
+0108  1D830300           [52] getglobal  12  14       ; damagePlayers
+010C  18030000           [53] test       12      0    ; to [55] if true
+0110  1A000A80           [54] jmp        41           ; to [96]
+0114  1D030000           [55] getglobal  12  0        ; 1074689893
+0118  52030000           [56] move       13  0      
+011C  22830001           [57] call       12  2   2  
+0120  18430000           [58] test       12      1    ; to [60] if false
+0124  1AC00880           [59] jmp        36           ; to [96]
+0128  1D030000           [60] getglobal  12  0        ; 1074689893
+012C  52038000           [61] move       13  1      
+0130  22830001           [62] call       12  2   2  
+0134  18430000           [63] test       12      1    ; to [65] if false
+0138  1A800780           [64] jmp        31           ; to [96]
+013C  24C34300           [65] self       12  0   271  ; -1529359942
+0140  22830001           [66] call       12  2   2  
+0144  6403C400           [67] self       13  1   272  ; -1544157541
+0148  62830001           [68] call       13  2   2  
+014C  6443C406           [69] self       13  13  273  ; -227502409
+0150  62830001           [70] call       13  2   2  
+0154  A483C400           [71] self       14  1   274  ; 945541886
+0158  A2830001           [72] call       14  2   2  
+015C  43838306           [73] add        13  13  14 
+0160  9DC30400           [74] getglobal  14  19       ; 1668611480
+0164  DD030500           [75] getglobal  15  20       ; dmgPercent
+0168  1D440500           [76] getglobal  16  21       ; baseHealth
+016C  0D048406           [77] sub        16  13  16 
+0170  5D840500           [78] getglobal  17  22       ; healthBonus
+0174  1C440408           [79] div        16  16  17 
+0178  CD038407           [80] sub        15  15  16 
+017C  1DC40500           [81] getglobal  16  23       ; minDmgPercent
+0180  5D040500           [82] getglobal  17  20       ; dmgPercent
+0184  A2830002           [83] call       14  4   2  
+0188  E403C600           [84] self       15  1   280  ; 1353558453
+018C  5C444607           [85] div        17  14  281  ; 0
+0190  44048308           [86] mul        17  17  12 
+0194  44448406           [87] mul        17  13  17 
+0198  9D840600           [88] getglobal  18  26       ; dmgType
+019C  DDC40600           [89] getglobal  19  27       ; bodyPart
+01A0  1D050700           [90] getglobal  20  28       ; impulse
+01A4  52050000           [91] move       21  0      
+01A8  92050000           [92] move       22  0      
+01AC  DD450700           [93] getglobal  23  29       ; impulseDir
+01B0  1D860700           [94] getglobal  24  30       ; hitEffect
+01B4  E2430005           [95] call       15  10  1  
+01B8  1E008000           [96] return     0   1      
+                         * constants:
+01BC  1F                 sizek (31)
+01BD  01                 const type 3
+01BE  65770E40           const [0]: (1074689893)
+01C2  01                 const type 3
+01C3  D48E598B           const [1]: (-1957065004)
+01C7  04                 const type 4
+01C8  19                 string size (25)
+01C9  674C6F7475735365+  "gLotusSe"
+01D1  6E74696E656C4176+  "ntinelAv"
+01D9  6174617254797065+  "atarType"
+01E1  00                 "\0"
+                         const [2]: "gLotusSentinelAvatarType"
+01E2  04                 const type 4
+01E3  11                 string size (17)
+01E4  674C6F7475734176+  "gLotusAv"
+01EC  6174617254797065+  "atarType"
+01F4  00                 "\0"
+                         const [3]: "gLotusAvatarType"
+01F5  04                 const type 4
+01F6  11                 string size (17)
+01F7  6754656E6E6F4176+  "gTennoAv"
+01FF  6174617254797065+  "atarType"
+0207  00                 "\0"
+                         const [4]: "gTennoAvatarType"
+0208  01                 const type 3
+0209  62DBE572           const [5]: (1927666530)
+020D  01                 const type 3
+020E  DE058F82           const [6]: (-2104556066)
+0212  04                 const type 4
+0213  08                 string size (8)
+0214  67526567696F6E00   "gRegion\0"
+                         const [7]: "gRegion"
+021C  01                 const type 3
+021D  12066FA7           const [8]: (-1485896174)
+0221  01                 const type 3
+0222  1A4B27EC           const [9]: (-332969190)
+0226  04                 const type 4
+0227  11                 string size (17)
+0228  43616D6572615469+  "CameraTi"
+0230  6C654576656E7473+  "leEvents"
+0238  00                 "\0"
+                         const [10]: "CameraTileEvents"
+0239  01                 const type 3
+023A  0791B063           const [11]: (1672515847)
+023E  01                 const type 3
+023F  B786588D           const [12]: (-1923578185)
+0243  04                 const type 4
+0244  0C                 string size (12)
+0245  5472696767657250+  "TriggerP"
+024D  6F727400           "ort\0"
+                         const [13]: "TriggerPort"
+0251  04                 const type 4
+0252  0E                 string size (14)
+0253  64616D616765506C+  "damagePl"
+025B  617965727300       "ayers\0"
+                         const [14]: "damagePlayers"
+0261  01                 const type 3
+0262  BAD1D7A4           const [15]: (-1529359942)
+0266  01                 const type 3
+0267  9B06F6A3           const [16]: (-1544157541)
+026B  01                 const type 3
+026C  B79670F2           const [17]: (-227502409)
+0270  01                 const type 3
+0271  FED25B38           const [18]: (945541886)
+0275  01                 const type 3
+0276  98FD7463           const [19]: (1668611480)
+027A  04                 const type 4
+027B  0B                 string size (11)
+027C  646D675065726365+  "dmgPerce"
+0284  6E7400             "nt\0"
+                         const [20]: "dmgPercent"
+0287  04                 const type 4
+0288  0B                 string size (11)
+0289  626173654865616C+  "baseHeal"
+0291  746800             "th\0"
+                         const [21]: "baseHealth"
+0294  04                 const type 4
+0295  0C                 string size (12)
+0296  6865616C7468426F+  "healthBo"
+029E  6E757300           "nus\0"
+                         const [22]: "healthBonus"
+02A2  04                 const type 4
+02A3  0E                 string size (14)
+02A4  6D696E446D675065+  "minDmgPe"
+02AC  7263656E7400       "rcent\0"
+                         const [23]: "minDmgPercent"
+02B2  01                 const type 3
+02B3  B5A9AD50           const [24]: (1353558453)
+02B7  03                 const type 3
+02B8  0000C842           const [25]: (0)
+02BC  04                 const type 4
+02BD  08                 string size (8)
+02BE  646D675479706500   "dmgType\0"
+                         const [26]: "dmgType"
+02C6  04                 const type 4
+02C7  09                 string size (9)
+02C8  626F647950617274+  "bodyPart"
+02D0  00                 "\0"
+                         const [27]: "bodyPart"
+02D1  04                 const type 4
+02D2  08                 string size (8)
+02D3  696D70756C736500   "impulse\0"
+                         const [28]: "impulse"
+02DB  04                 const type 4
+02DC  0B                 string size (11)
+02DD  696D70756C736544+  "impulseD"
+02E5  697200             "ir\0"
+                         const [29]: "impulseDir"
+02E8  04                 const type 4
+02E9  0A                 string size (10)
+02EA  6869744566666563+  "hitEffec"
+02F2  7400               "t\0"
+                         const [30]: "hitEffect"
+                         * functions:
+02F4  00                 sizep (0)
+                         * lines:
+02F5  60                 sizelineinfo (96)
+                         [pc] (line)
+02F6  0F                 [01] (15)
+02F7  00                 [02] (15)
+02F8  00                 [03] (15)
+02F9  00                 [04] (15)
+02FA  0F                 [05] (15)
+02FB  00                 [06] (16)
+02FC  00                 [07] (16)
+02FD  00                 [08] (16)
+02FE  0F                 [09] (16)
+02FF  00                 [10] (16)
+0300  00                 [11] (16)
+0301  00                 [12] (16)
+0302  0F                 [13] (16)
+0303  00                 [14] (16)
+0304  00                 [15] (16)
+0305  00                 [16] (17)
+0306  0F                 [17] (22)
+0307  00                 [18] (22)
+0308  00                 [19] (22)
+0309  00                 [20] (22)
+030A  10                 [21] (22)
+030B  00                 [22] (23)
+030C  00                 [23] (23)
+030D  00                 [24] (23)
+030E  10                 [25] (23)
+030F  00                 [26] (23)
+0310  00                 [27] (24)
+0311  00                 [28] (24)
+0312  10                 [29] (25)
+0313  00                 [30] (25)
+0314  00                 [31] (26)
+0315  00                 [32] (26)
+0316  10                 [33] (26)
+0317  00                 [34] (26)
+0318  00                 [35] (26)
+0319  00                 [36] (26)
+031A  10                 [37] (27)
+031B  00                 [38] (27)
+031C  00                 [39] (27)
+031D  00                 [40] (27)
+031E  10                 [41] (28)
+031F  00                 [42] (28)
+0320  00                 [43] (29)
+0321  00                 [44] (29)
+0322  10                 [45] (30)
+0323  00                 [46] (30)
+0324  00                 [47] (31)
+0325  00                 [48] (31)
+0326  10                 [49] (31)
+0327  00                 [50] (27)
+0328  00                 [51] (32)
+0329  00                 [52] (38)
+032A  10                 [53] (38)
+032B  00                 [54] (38)
+032C  00                 [55] (38)
+032D  00                 [56] (38)
+032E  10                 [57] (38)
+032F  00                 [58] (38)
+0330  00                 [59] (38)
+0331  00                 [60] (38)
+0332  11                 [61] (38)
+0333  00                 [62] (38)
+0334  00                 [63] (38)
+0335  00                 [64] (38)
+0336  16                 [65] (39)
+0337  00                 [66] (39)
+0338  00                 [67] (40)
+0339  00                 [68] (40)
+033A  16                 [69] (40)
+033B  00                 [70] (40)
+033C  00                 [71] (40)
+033D  00                 [72] (40)
+033E  16                 [73] (40)
+033F  00                 [74] (41)
+0340  00                 [75] (41)
+0341  00                 [76] (41)
+0342  16                 [77] (41)
+0343  00                 [78] (41)
+0344  00                 [79] (41)
+0345  00                 [80] (41)
+0346  16                 [81] (41)
+0347  00                 [82] (41)
+0348  00                 [83] (41)
+0349  00                 [84] (42)
+034A  17                 [85] (42)
+034B  00                 [86] (42)
+034C  00                 [87] (42)
+034D  00                 [88] (42)
+034E  17                 [89] (42)
+034F  00                 [90] (42)
+0350  00                 [91] (42)
+0351  00                 [92] (42)
+0352  17                 [93] (42)
+0353  00                 [94] (42)
+0354  00                 [95] (42)
+0355  00                 [96] (44)
+                         * locals:
+0476  00                 sizelocvars (0)
+                         * upvalues:
+0477  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+0478  04                 sizelineinfo (4)
+                         [pc] (line)
+0479  2C                 [1] (44)
+047A  00                 [2] (44)
+047B  00                 [3] (13)
+047C  00                 [4] (44)
+                         * locals:
+0489  00                 sizelocvars (0)
+                         * upvalues:
+048A  00                 sizeupvalues (0)
+                         ** end of function **
+
+048B                     ** end of chunk **

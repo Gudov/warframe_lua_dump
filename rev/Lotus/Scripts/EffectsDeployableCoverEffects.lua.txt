@@ -1,0 +1,251 @@
+1	C:\wlua_dump\path\Lotus\Scripts\EffectsDeployableCoverEffects.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Scripts\EffectsDeployableCoverEffects.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  02                 size of number (bytes)
+0008  04                 integral (1=integral)
+44
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+AnimDeco
+attachedDecoType
+effectDecoType
+TransferCoverAttachment
+GAME_L1_WEAPON1
+ZERO_VECTOR
+ZERO_ROTATION
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  02                 maxstacksize (2)
+                         * code:
+0008  04                 sizecode (4)
+0009  25000000           [1] closure    0   0      
+000D  20000000           [2] setglobal  0   0        ; AnimDeco
+0011  20400000           [3] setglobal  0   1        ; -1985923685
+0015  1E008000           [4] return     0   1      
+                         * constants:
+0019  02                 sizek (2)
+001A  04                 const type 4
+001B  09                 string size (9)
+001C  416E696D4465636F+  "AnimDeco"
+0024  00                 "\0"
+                         const [0]: "AnimDeco"
+0025  01                 const type 3
+0026  9B35A189           const [1]: (-1985923685)
+                         * functions:
+002A  01                 sizep (1)
+                         
+002B                     ** function [0] definition (level 2)
+                         ** start of function **
+002B  00                 string size (0)
+                         source name: (none)
+002C  04                 line defined (4)
+002D  15                 last line defined (21)
+002E  00                 nups (0)
+002F  01                 numparams (1)
+0030  00                 is_vararg (0)
+0031  0A                 maxstacksize (10)
+                         * code:
+0032  33                 sizecode (51)
+0033  64004000           [01] self       1   0   256  ; -704974830
+0037  62800001           [02] call       1   2   2  
+003B  9D400000           [03] getglobal  2   1        ; 1074689893
+003F  D2008000           [04] move       3   1      
+0043  A2800001           [05] call       2   2   2  
+0047  98000000           [06] test       2       0    ; to [8] if true
+004B  1A000080           [07] jmp        1            ; to [9]
+004F  1E008000           [08] return     0   1      
+0053  A480C000           [09] self       2   1   258  ; -1625438872
+0057  1DC10000           [10] getglobal  4   3        ; attachedDecoType
+005B  A2808001           [11] call       2   3   2  
+005F  DD400000           [12] getglobal  3   1        ; 1074689893
+0063  12010001           [13] move       4   2      
+0067  E2800001           [14] call       3   2   2  
+006B  D8000000           [15] test       3       0    ; to [17] if true
+006F  1A000080           [16] jmp        1            ; to [18]
+0073  1E008000           [17] return     0   1      
+0077  E400C100           [18] self       3   1   260  ; -1421644046
+007B  5D410100           [19] getglobal  5   5        ; effectDecoType
+007F  A4814101           [20] self       6   2   262  ; -631671221
+0083  A2810001           [21] call       6   2   2  
+0087  E4C14101           [22] self       7   2   263  ; 917683095
+008B  E2810001           [23] call       7   2   2  
+008F  24024201           [24] self       8   2   264  ; 578679216
+0093  22020001           [25] call       8   2   0  
+0097  E2800000           [26] call       3   0   2  
+009B  2441C200           [27] self       4   1   265  ; -1925372830
+009F  99810200           [28] loadk      6   10       ; "TransferCoverAttachment"
+00A3  D9C10200           [29] loadk      7   11       ; -51
+00A7  22410002           [30] call       4   4   1  
+00AB  1D410000           [31] getglobal  4   1        ; 1074689893
+00AF  52018001           [32] move       5   3      
+00B3  22810001           [33] call       4   2   2  
+00B7  18410000           [34] test       4       1    ; to [36] if false
+00BB  1A800380           [35] jmp        15           ; to [51]
+00BF  1D410000           [36] getglobal  4   1        ; 1074689893
+00C3  52018000           [37] move       5   1      
+00C7  22810001           [38] call       4   2   2  
+00CB  18410000           [39] test       4       1    ; to [41] if false
+00CF  1A400280           [40] jmp        10           ; to [51]
+00D3  2401C301           [41] self       4   3   268  ; 1146685999
+00D7  92018000           [42] move       6   1      
+00DB  DD410300           [43] getglobal  7   13       ; -332969190
+00DF  19820300           [44] loadk      8   14       ; "GAME_L1_WEAPON1"
+00E3  E2010001           [45] call       7   2   0  
+00E7  22410000           [46] call       4   0   1  
+00EB  24C1C301           [47] self       4   3   271  ; -1484030041
+00EF  9D010400           [48] getglobal  6   16       ; ZERO_VECTOR
+00F3  DD410400           [49] getglobal  7   17       ; ZERO_ROTATION
+00F7  22410002           [50] call       4   4   1  
+00FB  1E008000           [51] return     0   1      
+                         * constants:
+00FF  12                 sizek (18)
+0100  01                 const type 3
+0101  12F0FAD5           const [0]: (-704974830)
+0105  01                 const type 3
+0106  65770E40           const [1]: (1074689893)
+010A  01                 const type 3
+010B  68C51D9F           const [2]: (-1625438872)
+010F  04                 const type 4
+0110  11                 string size (17)
+0111  6174746163686564+  "attached"
+0119  4465636F54797065+  "DecoType"
+0121  00                 "\0"
+                         const [3]: "attachedDecoType"
+0122  01                 const type 3
+0123  F26E43AB           const [4]: (-1421644046)
+0127  04                 const type 4
+0128  0F                 string size (15)
+0129  6566666563744465+  "effectDe"
+0131  636F5479706500     "coType\0"
+                         const [5]: "effectDecoType"
+0138  01                 const type 3
+0139  4B7659DA           const [6]: (-631671221)
+013D  01                 const type 3
+013E  97BBB236           const [7]: (917683095)
+0142  01                 const type 3
+0143  B0F17D22           const [8]: (578679216)
+0147  01                 const type 3
+0148  62243D8D           const [9]: (-1925372830)
+014C  04                 const type 4
+014D  18                 string size (24)
+014E  5472616E73666572+  "Transfer"
+0156  436F766572417474+  "CoverAtt"
+015E  6163686D656E7400   "achment\0"
+                         const [10]: "TransferCoverAttachment"
+0166  03                 const type 3
+0167  CDCC4C3E           const [11]: (-51)
+016B  01                 const type 3
+016C  2F0A5944           const [12]: (1146685999)
+0170  01                 const type 3
+0171  1A4B27EC           const [13]: (-332969190)
+0175  04                 const type 4
+0176  10                 string size (16)
+0177  47414D455F4C315F+  "GAME_L1_"
+017F  574541504F4E3100   "WEAPON1\0"
+                         const [14]: "GAME_L1_WEAPON1"
+0187  01                 const type 3
+0188  A77F8BA7           const [15]: (-1484030041)
+018C  04                 const type 4
+018D  0C                 string size (12)
+018E  5A45524F5F564543+  "ZERO_VEC"
+0196  544F5200           "TOR\0"
+                         const [16]: "ZERO_VECTOR"
+019A  04                 const type 4
+019B  0E                 string size (14)
+019C  5A45524F5F524F54+  "ZERO_ROT"
+01A4  4154494F4E00       "ATION\0"
+                         const [17]: "ZERO_ROTATION"
+                         * functions:
+01AA  00                 sizep (0)
+                         * lines:
+01AB  33                 sizelineinfo (51)
+                         [pc] (line)
+01AC  05                 [01] (5)
+01AD  00                 [02] (5)
+01AE  00                 [03] (6)
+01AF  00                 [04] (6)
+01B0  05                 [05] (6)
+01B1  00                 [06] (6)
+01B2  00                 [07] (6)
+01B3  00                 [08] (7)
+01B4  06                 [09] (10)
+01B5  00                 [10] (10)
+01B6  00                 [11] (10)
+01B7  00                 [12] (11)
+01B8  06                 [13] (11)
+01B9  00                 [14] (11)
+01BA  00                 [15] (11)
+01BB  00                 [16] (11)
+01BC  06                 [17] (12)
+01BD  00                 [18] (14)
+01BE  00                 [19] (14)
+01BF  00                 [20] (14)
+01C0  06                 [21] (14)
+01C1  00                 [22] (14)
+01C2  00                 [23] (14)
+01C3  00                 [24] (14)
+01C4  06                 [25] (14)
+01C5  00                 [26] (14)
+01C6  00                 [27] (16)
+01C7  00                 [28] (16)
+01C8  07                 [29] (16)
+01C9  00                 [30] (16)
+01CA  00                 [31] (17)
+01CB  00                 [32] (17)
+01CC  0A                 [33] (17)
+01CD  00                 [34] (17)
+01CE  00                 [35] (17)
+01CF  00                 [36] (17)
+01D0  0A                 [37] (17)
+01D1  00                 [38] (17)
+01D2  00                 [39] (17)
+01D3  00                 [40] (17)
+01D4  0A                 [41] (18)
+01D5  00                 [42] (18)
+01D6  00                 [43] (18)
+01D7  00                 [44] (18)
+01D8  0B                 [45] (18)
+01D9  00                 [46] (18)
+01DA  00                 [47] (19)
+01DB  00                 [48] (19)
+01DC  0B                 [49] (19)
+01DD  00                 [50] (19)
+01DE  00                 [51] (21)
+                         * locals:
+0278  00                 sizelocvars (0)
+                         * upvalues:
+0279  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+027A  04                 sizelineinfo (4)
+                         [pc] (line)
+027B  15                 [1] (21)
+027C  00                 [2] (21)
+027D  00                 [3] (4)
+027E  00                 [4] (21)
+                         * locals:
+028B  00                 sizelocvars (0)
+                         * upvalues:
+028C  00                 sizeupvalues (0)
+                         ** end of function **
+
+028D                     ** end of chunk **

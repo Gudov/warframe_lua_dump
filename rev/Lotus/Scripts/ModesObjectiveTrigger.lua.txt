@@ -1,0 +1,179 @@
+1	C:\wlua_dump\path\Lotus\Scripts\ModesObjectiveTrigger.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Scripts\ModesObjectiveTrigger.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  02                 size of number (bytes)
+0008  04                 integral (1=integral)
+44
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+ChooseScriptFromMissionType
+gGameRules
+Lotus_Game
+MT_TERRITORY
+territoryTrigger
+Execute
+MT_DEFENSE
+defenseTrigger
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  02                 maxstacksize (2)
+                         * code:
+0008  04                 sizecode (4)
+0009  25000000           [1] closure    0   0      
+000D  20000000           [2] setglobal  0   0        ; ChooseScriptFromMissionType
+0011  20400000           [3] setglobal  0   1        ; 1497203229
+0015  1E008000           [4] return     0   1      
+                         * constants:
+0019  02                 sizek (2)
+001A  04                 const type 4
+001B  1C                 string size (28)
+001C  43686F6F73655363+  "ChooseSc"
+0024  7269707446726F6D+  "riptFrom"
+002C  4D697373696F6E54+  "MissionT"
+0034  79706500           "ype\0"
+                         const [0]: "ChooseScriptFromMissionType"
+0038  01                 const type 3
+0039  1D823D59           const [1]: (1497203229)
+                         * functions:
+003D  01                 sizep (1)
+                         
+003E                     ** function [0] definition (level 2)
+                         ** start of function **
+003E  00                 string size (0)
+                         source name: (none)
+003F  04                 line defined (4)
+0040  0D                 last line defined (13)
+0041  00                 nups (0)
+0042  00                 numparams (0)
+0043  00                 is_vararg (0)
+0044  05                 maxstacksize (5)
+                         * code:
+0045  15                 sizecode (21)
+0046  1D000000           [01] getglobal  0   0        ; gGameRules
+004A  64404000           [02] self       1   0   257  ; -502414055
+004E  62800001           [03] call       1   2   2  
+0052  9D800000           [04] getglobal  2   2        ; Lotus_Game
+0056  8EC04001           [05] gettable   2   2   259  ; "MT_TERRITORY"
+fail op	35
+005A  23808000           [06] close      0  
+005E  1A000180           [07] jmp        5            ; to [13]
+0062  9D000100           [08] getglobal  2   4        ; territoryTrigger
+0066  A4404101           [09] self       2   2   261  ; -1923578185
+006A  19810100           [10] loadk      4   6        ; "Execute"
+006E  A2408001           [11] call       2   3   1  
+0072  1AC00180           [12] jmp        8            ; to [21]
+0076  9D800000           [13] getglobal  2   2        ; Lotus_Game
+007A  8EC04101           [14] gettable   2   2   263  ; "MT_DEFENSE"
+fail op	35
+007E  23808000           [15] close      0  
+0082  1AC00080           [16] jmp        4            ; to [21]
+0086  9D000200           [17] getglobal  2   8        ; defenseTrigger
+008A  A4404101           [18] self       2   2   261  ; -1923578185
+008E  19810100           [19] loadk      4   6        ; "Execute"
+0092  A2408001           [20] call       2   3   1  
+0096  1E008000           [21] return     0   1      
+                         * constants:
+009A  09                 sizek (9)
+009B  04                 const type 4
+009C  0B                 string size (11)
+009D  6747616D6552756C+  "gGameRul"
+00A5  657300             "es\0"
+                         const [0]: "gGameRules"
+00A8  01                 const type 3
+00A9  19C50DE2           const [1]: (-502414055)
+00AD  04                 const type 4
+00AE  0B                 string size (11)
+00AF  4C6F7475735F4761+  "Lotus_Ga"
+00B7  6D6500             "me\0"
+                         const [2]: "Lotus_Game"
+00BA  04                 const type 4
+00BB  0D                 string size (13)
+00BC  4D545F5445525249+  "MT_TERRI"
+00C4  544F525900         "TORY\0"
+                         const [3]: "MT_TERRITORY"
+00C9  04                 const type 4
+00CA  11                 string size (17)
+00CB  7465727269746F72+  "territor"
+00D3  7954726967676572+  "yTrigger"
+00DB  00                 "\0"
+                         const [4]: "territoryTrigger"
+00DC  01                 const type 3
+00DD  B786588D           const [5]: (-1923578185)
+00E1  04                 const type 4
+00E2  08                 string size (8)
+00E3  4578656375746500   "Execute\0"
+                         const [6]: "Execute"
+00EB  04                 const type 4
+00EC  0B                 string size (11)
+00ED  4D545F444546454E+  "MT_DEFEN"
+00F5  534500             "SE\0"
+                         const [7]: "MT_DEFENSE"
+00F8  04                 const type 4
+00F9  0F                 string size (15)
+00FA  646566656E736554+  "defenseT"
+0102  72696767657200     "rigger\0"
+                         const [8]: "defenseTrigger"
+                         * functions:
+0109  00                 sizep (0)
+                         * lines:
+010A  15                 sizelineinfo (21)
+                         [pc] (line)
+010B  05                 [01] (5)
+010C  00                 [02] (6)
+010D  00                 [03] (6)
+010E  00                 [04] (8)
+010F  06                 [05] (8)
+0110  00                 [06] (8)
+0111  00                 [07] (8)
+0112  00                 [08] (9)
+0113  06                 [09] (9)
+0114  00                 [10] (9)
+0115  00                 [11] (9)
+0116  00                 [12] (9)
+0117  08                 [13] (10)
+0118  00                 [14] (10)
+0119  00                 [15] (10)
+011A  00                 [16] (10)
+011B  08                 [17] (11)
+011C  00                 [18] (11)
+011D  00                 [19] (11)
+011E  00                 [20] (11)
+011F  08                 [21] (13)
+                         * locals:
+015F  00                 sizelocvars (0)
+                         * upvalues:
+0160  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+0161  04                 sizelineinfo (4)
+                         [pc] (line)
+0162  0D                 [1] (13)
+0163  00                 [2] (13)
+0164  00                 [3] (4)
+0165  00                 [4] (13)
+                         * locals:
+0172  00                 sizelocvars (0)
+                         * upvalues:
+0173  00                 sizeupvalues (0)
+                         ** end of function **
+
+0174                     ** end of chunk **

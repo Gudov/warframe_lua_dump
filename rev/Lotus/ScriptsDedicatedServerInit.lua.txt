@@ -1,0 +1,1190 @@
+1	C:\wlua_dump\path\Lotus\ScriptsDedicatedServerInit.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\ScriptsDedicatedServerInit.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  03                 size of number (bytes)
+0008  0A                 integral (1=integral)
+410
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+EE.Interface.Utilities
+DedicatedServerInit
+UIColor_LightBlue
+UIColor_MediumBlue
+UIColor_DarkBlue
+UIColor_MediumGrey
+UIColor_DarkGrey
+UIColor_Yellow
+UIColor_Orange
+UIColor_Gold
+UIColor_Health
+UIColor_Shield
+UIColor_Overshield
+UIColor_Stamina
+UIColor_Armor
+UIColor_Red
+UIColor_Green
+UIColor_LightGreen
+UIColor_White
+UIColor_Black
+UIColor_PositiveReputation
+UIColor_NegativeReputation
+UIColor_OpposedReputation
+UIColor_PvpTeamOne
+UIColor_PvpTeamTwo
+UIColor_PvpKill
+UIColor_Hyperlink
+UIColorObject_White
+UIColorObject_Black
+UIColorObject_Yellow
+UIColorObject_DarkBlue
+_T
+InitializeTerritoryHUDElements
+UpdateTerritoryProgress
+UpdateTerritoryScores
+HideTerritoryHUDElements
+InitializePvpHUDElements
+UpdatePvpXP
+ShowWeaponPanel
+HideWeaponPanel
+ShowAbilityPanel
+HideAbilityPanel
+SetAbilityTimer
+AddAbilityTimer
+SetFocusTimer
+AddLogMessage
+AddPvpKillMessage
+ShowImpactMessage
+HideImpactMessage
+_G
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  03                 maxstacksize (3)
+                         * code:
+0008  0A                 sizecode (10)
+0009  1D000000           [01] getglobal  0   0        ; 849075268
+000D  59400000           [02] loadk      1   1        ; "EE.Interface.Utilities"
+0011  22800001           [03] call       0   2   2  
+0015  65000000           [04] closure    1   0      
+0019  12000000           [05] move       0   0      
+001D  A5400000           [06] closure    2   1      
+0021  12008000           [07] move       0   1      
+0025  A0800000           [08] setglobal  2   2        ; DedicatedServerInit
+0029  A0C00000           [09] setglobal  2   3        ; 200704698
+002D  1E008000           [10] return     0   1      
+                         * constants:
+0031  04                 sizek (4)
+0032  01                 const type 3
+0033  44DC9B32           const [0]: (849075268)
+0037  04                 const type 4
+0038  17                 string size (23)
+0039  45452E496E746572+  "EE.Inter"
+0041  666163652E557469+  "face.Uti"
+0049  6C697469657300     "lities\0"
+                         const [1]: "EE.Interface.Utilities"
+0050  04                 const type 4
+0051  14                 string size (20)
+0052  4465646963617465+  "Dedicate"
+005A  6453657276657249+  "dServerI"
+0062  6E697400           "nit\0"
+                         const [2]: "DedicatedServerInit"
+0066  01                 const type 3
+0067  BA82F60B           const [3]: (200704698)
+                         * functions:
+006B  02                 sizep (2)
+                         
+006C                     ** function [0] definition (level 2)
+                         ** start of function **
+006C  00                 string size (0)
+                         source name: (none)
+006D  06                 line defined (6)
+006E  25                 last line defined (37)
+006F  01                 nups (1)
+0070  01                 numparams (1)
+0071  00                 is_vararg (0)
+0072  03                 maxstacksize (3)
+                         * code:
+0073  2E                 sizecode (46)
+0074  0C404080           [01] settable   0   256 257  ; "UIColor_LightBlue" -39
+0078  0CC04081           [02] settable   0   258 259  ; "UIColor_MediumBlue" 76
+007C  0C404182           [03] settable   0   260 261  ; "UIColor_DarkBlue" -38
+0080  0CC04183           [04] settable   0   262 263  ; "UIColor_MediumGrey" -128
+0084  0C404284           [05] settable   0   264 265  ; "UIColor_DarkGrey" -112
+0088  0CC04285           [06] settable   0   266 267  ; "UIColor_Yellow" 93
+008C  0C404386           [07] settable   0   268 269  ; "UIColor_Orange" 1
+0090  0CC04387           [08] settable   0   270 271  ; "UIColor_Gold" 0
+0094  0C404488           [09] settable   0   272 273  ; "UIColor_Health" 41
+0098  0CC04489           [10] settable   0   274 275  ; "UIColor_Shield" 0
+009C  0C40458A           [11] settable   0   276 277  ; "UIColor_Overshield" -1
+00A0  0CC0458B           [12] settable   0   278 279  ; "UIColor_Stamina" -82
+00A4  0C40468C           [13] settable   0   280 281  ; "UIColor_Armor" 53
+00A8  0CC0468D           [14] settable   0   282 283  ; "UIColor_Red" 6
+00AC  0C40478E           [15] settable   0   284 285  ; "UIColor_Green" 38
+00B0  0CC0478F           [16] settable   0   286 287  ; "UIColor_LightGreen" -128
+00B4  0C404890           [17] settable   0   288 289  ; "UIColor_White" -17
+00B8  0CC04891           [18] settable   0   290 291  ; "UIColor_Black" 0
+00BC  0C404992           [19] settable   0   292 293  ; "UIColor_PositiveReputation" -2
+00C0  0CC04993           [20] settable   0   294 295  ; "UIColor_NegativeReputation" 76
+00C4  0C404A94           [21] settable   0   296 297  ; "UIColor_OpposedReputation" 0
+00C8  0CC04A95           [22] settable   0   298 299  ; "UIColor_PvpTeamOne" 57
+00CC  0C404B96           [23] settable   0   300 301  ; "UIColor_PvpTeamTwo" -128
+00D0  0CC04B97           [24] settable   0   302 303  ; "UIColor_PvpKill" 20
+00D4  0C404C98           [25] settable   0   304 305  ; "UIColor_Hyperlink" -4
+00D8  53000000           [26] getupval   1   0      
+00DC  4EC0CC00           [27] gettable   1   1   307  ; -1749580735
+00E0  8E004800           [28] gettable   2   0   288  ; "UIColor_White"
+00E4  62800001           [29] call       1   2   2  
+00E8  0C400099           [30] settable   0   306 1    ; "UIColorObject_White"
+00EC  53000000           [31] getupval   1   0      
+00F0  4EC0CC00           [32] gettable   1   1   307  ; -1749580735
+00F4  8E804800           [33] gettable   2   0   290  ; "UIColor_Black"
+00F8  62800001           [34] call       1   2   2  
+00FC  0C40009A           [35] settable   0   308 1    ; "UIColorObject_Black"
+0100  53000000           [36] getupval   1   0      
+0104  4EC0CC00           [37] gettable   1   1   307  ; -1749580735
+0108  8E804200           [38] gettable   2   0   266  ; "UIColor_Yellow"
+010C  62800001           [39] call       1   2   2  
+0110  0C40809A           [40] settable   0   309 1    ; "UIColorObject_Yellow"
+0114  53000000           [41] getupval   1   0      
+0118  4EC0CC00           [42] gettable   1   1   307  ; -1749580735
+011C  8E004100           [43] gettable   2   0   260  ; "UIColor_DarkBlue"
+0120  62800001           [44] call       1   2   2  
+0124  0C40009B           [45] settable   0   310 1    ; "UIColorObject_DarkBlue"
+0128  1E008000           [46] return     0   1      
+                         * constants:
+012C  37                 sizek (55)
+012D  04                 const type 4
+012E  12                 string size (18)
+012F  5549436F6C6F725F+  "UIColor_"
+0137  4C69676874426C75+  "LightBlu"
+013F  6500               "e\0"
+                         const [0]: "UIColor_LightBlue"
+0141  03                 const type 3
+0142  D9D8424B           const [1]: (-39)
+0146  04                 const type 4
+0147  13                 string size (19)
+0148  5549436F6C6F725F+  "UIColor_"
+0150  4D656469756D426C+  "MediumBl"
+0158  756500             "ue\0"
+                         const [2]: "UIColor_MediumBlue"
+015B  03                 const type 3
+015C  4C31F74A           const [3]: (76)
+0160  04                 const type 4
+0161  11                 string size (17)
+0162  5549436F6C6F725F+  "UIColor_"
+016A  4461726B426C7565+  "DarkBlue"
+0172  00                 "\0"
+                         const [4]: "UIColor_DarkBlue"
+0173  03                 const type 3
+0174  DAC08A4A           const [5]: (-38)
+0178  04                 const type 4
+0179  13                 string size (19)
+017A  5549436F6C6F725F+  "UIColor_"
+0182  4D656469756D4772+  "MediumGr"
+018A  657900             "ey\0"
+                         const [6]: "UIColor_MediumGrey"
+018D  03                 const type 3
+018E  8080004B           const [7]: (-128)
+0192  04                 const type 4
+0193  11                 string size (17)
+0194  5549436F6C6F725F+  "UIColor_"
+019C  4461726B47726579+  "DarkGrey"
+01A4  00                 "\0"
+                         const [8]: "UIColor_DarkGrey"
+01A5  03                 const type 3
+01A6  9090104A           const [9]: (-112)
+01AA  04                 const type 4
+01AB  0F                 string size (15)
+01AC  5549436F6C6F725F+  "UIColor_"
+01B4  59656C6C6F7700     "Yellow\0"
+                         const [10]: "UIColor_Yellow"
+01BB  03                 const type 3
+01BC  5DD5684B           const [11]: (93)
+01C0  04                 const type 4
+01C1  0F                 string size (15)
+01C2  5549436F6C6F725F+  "UIColor_"
+01CA  4F72616E676500     "Orange\0"
+                         const [12]: "UIColor_Orange"
+01D1  03                 const type 3
+01D2  017C4D4B           const [13]: (1)
+01D6  04                 const type 4
+01D7  0D                 string size (13)
+01D8  5549436F6C6F725F+  "UIColor_"
+01E0  476F6C6400         "Gold\0"
+                         const [14]: "UIColor_Gold"
+01E5  03                 const type 3
+01E6  00CC7F4B           const [15]: (0)
+01EA  04                 const type 4
+01EB  0F                 string size (15)
+01EC  5549436F6C6F725F+  "UIColor_"
+01F4  4865616C746800     "Health\0"
+                         const [16]: "UIColor_Health"
+01FB  03                 const type 3
+01FC  29294C4B           const [17]: (41)
+0200  04                 const type 4
+0201  0F                 string size (15)
+0202  5549436F6C6F725F+  "UIColor_"
+020A  536869656C6400     "Shield\0"
+                         const [18]: "UIColor_Shield"
+0211  03                 const type 3
+0212  00FF5547           const [19]: (0)
+0216  04                 const type 4
+0217  13                 string size (19)
+0218  5549436F6C6F725F+  "UIColor_"
+0220  4F76657273686965+  "Overshie"
+0228  6C6400             "ld\0"
+                         const [20]: "UIColor_Overshield"
+022B  03                 const type 3
+022C  FF00334B           const [21]: (-1)
+0230  04                 const type 4
+0231  10                 string size (16)
+0232  5549436F6C6F725F+  "UIColor_"
+023A  5374616D696E6100   "Stamina\0"
+                         const [22]: "UIColor_Stamina"
+0242  03                 const type 3
+0243  AE66894A           const [23]: (-82)
+0247  04                 const type 4
+0248  0E                 string size (14)
+0249  5549436F6C6F725F+  "UIColor_"
+0251  41726D6F7200       "Armor\0"
+                         const [24]: "UIColor_Armor"
+0257  03                 const type 3
+0258  35A65E4B           const [25]: (53)
+025C  04                 const type 4
+025D  0C                 string size (12)
+025E  5549436F6C6F725F+  "UIColor_"
+0266  52656400           "Red\0"
+                         const [26]: "UIColor_Red"
+026A  03                 const type 3
+026B  0604484B           const [27]: (6)
+026F  04                 const type 4
+0270  0E                 string size (14)
+0271  5549436F6C6F725F+  "UIColor_"
+0279  477265656E00       "Green\0"
+                         const [28]: "UIColor_Green"
+027F  03                 const type 3
+0280  26E40D4B           const [29]: (38)
+0284  04                 const type 4
+0285  13                 string size (19)
+0286  5549436F6C6F725F+  "UIColor_"
+028E  4C69676874477265+  "LightGre"
+0296  656E00             "en\0"
+                         const [30]: "UIColor_LightGreen"
+0299  03                 const type 3
+029A  80E8384B           const [31]: (-128)
+029E  04                 const type 4
+029F  0E                 string size (14)
+02A0  5549436F6C6F725F+  "UIColor_"
+02A8  576869746500       "White\0"
+                         const [32]: "UIColor_White"
+02AE  03                 const type 3
+02AF  EFEF6F4B           const [33]: (-17)
+02B3  04                 const type 4
+02B4  0E                 string size (14)
+02B5  5549436F6C6F725F+  "UIColor_"
+02BD  426C61636B00       "Black\0"
+                         const [34]: "UIColor_Black"
+02C3  03                 const type 3
+02C4  00000000           const [35]: (0)
+02C8  04                 const type 4
+02C9  1B                 string size (27)
+02CA  5549436F6C6F725F+  "UIColor_"
+02D2  506F736974697665+  "Positive"
+02DA  5265707574617469+  "Reputati"
+02E2  6F6E00             "on\0"
+                         const [36]: "UIColor_PositiveReputation"
+02E5  03                 const type 3
+02E6  FE87994A           const [37]: (-2)
+02EA  04                 const type 4
+02EB  1B                 string size (27)
+02EC  5549436F6C6F725F+  "UIColor_"
+02F4  4E65676174697665+  "Negative"
+02FC  5265707574617469+  "Reputati"
+0304  6F6E00             "on\0"
+                         const [38]: "UIColor_NegativeReputation"
+0307  03                 const type 3
+0308  4C4C7F4B           const [39]: (76)
+030C  04                 const type 4
+030D  1A                 string size (26)
+030E  5549436F6C6F725F+  "UIColor_"
+0316  4F70706F73656452+  "OpposedR"
+031E  657075746174696F+  "eputatio"
+0326  6E00               "n\0"
+                         const [40]: "UIColor_OpposedReputation"
+0328  03                 const type 3
+0329  00C46E4B           const [41]: (0)
+032D  04                 const type 4
+032E  13                 string size (19)
+032F  5549436F6C6F725F+  "UIColor_"
+0337  5076705465616D4F+  "PvpTeamO"
+033F  6E6500             "ne\0"
+                         const [42]: "UIColor_PvpTeamOne"
+0342  03                 const type 3
+0343  398F654B           const [43]: (57)
+0347  04                 const type 4
+0348  13                 string size (19)
+0349  5549436F6C6F725F+  "UIColor_"
+0351  5076705465616D54+  "PvpTeamT"
+0359  776F00             "wo\0"
+                         const [44]: "UIColor_PvpTeamTwo"
+035C  03                 const type 3
+035D  8023374A           const [45]: (-128)
+0361  04                 const type 4
+0362  10                 string size (16)
+0363  5549436F6C6F725F+  "UIColor_"
+036B  5076704B696C6C00   "PvpKill\0"
+                         const [46]: "UIColor_PvpKill"
+0373  03                 const type 3
+0374  144E734B           const [47]: (20)
+0378  04                 const type 4
+0379  12                 string size (18)
+037A  5549436F6C6F725F+  "UIColor_"
+0382  48797065726C696E+  "Hyperlin"
+038A  6B00               "k\0"
+                         const [48]: "UIColor_Hyperlink"
+038C  03                 const type 3
+038D  FC334F4A           const [49]: (-4)
+0391  04                 const type 4
+0392  14                 string size (20)
+0393  5549436F6C6F724F+  "UIColorO"
+039B  626A6563745F5768+  "bject_Wh"
+03A3  69746500           "ite\0"
+                         const [50]: "UIColorObject_White"
+03A7  01                 const type 3
+03A8  4184B797           const [51]: (-1749580735)
+03AC  04                 const type 4
+03AD  14                 string size (20)
+03AE  5549436F6C6F724F+  "UIColorO"
+03B6  626A6563745F426C+  "bject_Bl"
+03BE  61636B00           "ack\0"
+                         const [52]: "UIColorObject_Black"
+03C2  04                 const type 4
+03C3  15                 string size (21)
+03C4  5549436F6C6F724F+  "UIColorO"
+03CC  626A6563745F5965+  "bject_Ye"
+03D4  6C6C6F7700         "llow\0"
+                         const [53]: "UIColorObject_Yellow"
+03D9  04                 const type 4
+03DA  17                 string size (23)
+03DB  5549436F6C6F724F+  "UIColorO"
+03E3  626A6563745F4461+  "bject_Da"
+03EB  726B426C756500     "rkBlue\0"
+                         const [54]: "UIColorObject_DarkBlue"
+                         * functions:
+03F2  00                 sizep (0)
+                         * lines:
+03F3  2E                 sizelineinfo (46)
+                         [pc] (line)
+03F4  08                 [01] (8)
+03F5  00                 [02] (9)
+03F6  00                 [03] (10)
+03F7  00                 [04] (11)
+03F8  09                 [05] (12)
+03F9  00                 [06] (13)
+03FA  00                 [07] (14)
+03FB  00                 [08] (15)
+03FC  0A                 [09] (16)
+03FD  00                 [10] (17)
+03FE  00                 [11] (18)
+03FF  00                 [12] (19)
+0400  0B                 [13] (20)
+0401  00                 [14] (21)
+0402  00                 [15] (22)
+0403  00                 [16] (23)
+0404  0C                 [17] (24)
+0405  00                 [18] (25)
+0406  00                 [19] (26)
+0407  00                 [20] (27)
+0408  0D                 [21] (28)
+0409  00                 [22] (29)
+040A  00                 [23] (30)
+040B  00                 [24] (31)
+040C  0E                 [25] (32)
+040D  00                 [26] (33)
+040E  00                 [27] (33)
+040F  00                 [28] (33)
+0410  0F                 [29] (33)
+0411  00                 [30] (33)
+0412  00                 [31] (34)
+0413  00                 [32] (34)
+0414  10                 [33] (34)
+0415  00                 [34] (34)
+0416  00                 [35] (34)
+0417  00                 [36] (35)
+0418  11                 [37] (35)
+0419  00                 [38] (35)
+041A  00                 [39] (35)
+041B  00                 [40] (35)
+041C  12                 [41] (36)
+041D  00                 [42] (36)
+041E  00                 [43] (36)
+041F  00                 [44] (36)
+0420  13                 [45] (36)
+0421  00                 [46] (37)
+                         * locals:
+04AC  00                 sizelocvars (0)
+                         * upvalues:
+04AD  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+04AE                     ** function [1] definition (level 2)
+                         ** start of function **
+04AE  00                 string size (0)
+                         source name: (none)
+04AF  28                 line defined (40)
+04B0  42                 last line defined (66)
+04B1  01                 nups (1)
+04B2  00                 numparams (0)
+04B3  00                 is_vararg (0)
+04B4  02                 maxstacksize (2)
+                         * code:
+04B5  3A                 sizecode (58)
+04B6  1D000000           [01] getglobal  0   0        ; _T
+04BA  65000000           [02] closure    1   0      
+04BE  0C408080           [03] settable   0   257 1    ; "InitializeTerritoryHUDElements"
+04C2  1D000000           [04] getglobal  0   0        ; _T
+04C6  65400000           [05] closure    1   1      
+04CA  0C400081           [06] settable   0   258 1    ; "UpdateTerritoryProgress"
+04CE  1D000000           [07] getglobal  0   0        ; _T
+04D2  65800000           [08] closure    1   2      
+04D6  0C408081           [09] settable   0   259 1    ; "UpdateTerritoryScores"
+04DA  1D000000           [10] getglobal  0   0        ; _T
+04DE  65C00000           [11] closure    1   3      
+04E2  0C400082           [12] settable   0   260 1    ; "HideTerritoryHUDElements"
+04E6  1D000000           [13] getglobal  0   0        ; _T
+04EA  65000100           [14] closure    1   4      
+04EE  0C408082           [15] settable   0   261 1    ; "InitializePvpHUDElements"
+04F2  1D000000           [16] getglobal  0   0        ; _T
+04F6  65400100           [17] closure    1   5      
+04FA  0C400083           [18] settable   0   262 1    ; "UpdatePvpXP"
+04FE  1D000000           [19] getglobal  0   0        ; _T
+0502  65800100           [20] closure    1   6      
+0506  0C408083           [21] settable   0   263 1    ; "ShowWeaponPanel"
+050A  1D000000           [22] getglobal  0   0        ; _T
+050E  65C00100           [23] closure    1   7      
+0512  0C400084           [24] settable   0   264 1    ; "HideWeaponPanel"
+0516  1D000000           [25] getglobal  0   0        ; _T
+051A  65000200           [26] closure    1   8      
+051E  0C408084           [27] settable   0   265 1    ; "ShowAbilityPanel"
+0522  1D000000           [28] getglobal  0   0        ; _T
+0526  65400200           [29] closure    1   9      
+052A  0C400085           [30] settable   0   266 1    ; "HideAbilityPanel"
+052E  1D000000           [31] getglobal  0   0        ; _T
+0532  65800200           [32] closure    1   10     
+0536  0C408085           [33] settable   0   267 1    ; "SetAbilityTimer"
+053A  1D000000           [34] getglobal  0   0        ; _T
+053E  65C00200           [35] closure    1   11     
+0542  0C400086           [36] settable   0   268 1    ; "AddAbilityTimer"
+0546  1D000000           [37] getglobal  0   0        ; _T
+054A  65000300           [38] closure    1   12     
+054E  0C408086           [39] settable   0   269 1    ; "SetFocusTimer"
+0552  1D000000           [40] getglobal  0   0        ; _T
+0556  65400300           [41] closure    1   13     
+055A  0C400087           [42] settable   0   270 1    ; "AddLogMessage"
+055E  1D000000           [43] getglobal  0   0        ; _T
+0562  65800300           [44] closure    1   14     
+0566  0C408087           [45] settable   0   271 1    ; "AddPvpKillMessage"
+056A  1D000000           [46] getglobal  0   0        ; _T
+056E  65C00300           [47] closure    1   15     
+0572  0C400088           [48] settable   0   272 1    ; "ShowImpactMessage"
+0576  1D000000           [49] getglobal  0   0        ; _T
+057A  65000400           [50] closure    1   16     
+057E  0C408088           [51] settable   0   273 1    ; "HideImpactMessage"
+0582  13000000           [52] getupval   0   0      
+0586  5D000000           [53] getglobal  1   0        ; _T
+058A  22400001           [54] call       0   2   1  
+058E  13000000           [55] getupval   0   0      
+0592  5D800400           [56] getglobal  1   18       ; _G
+0596  22400001           [57] call       0   2   1  
+059A  1E008000           [58] return     0   1      
+                         * constants:
+059E  13                 sizek (19)
+059F  04                 const type 4
+05A0  03                 string size (3)
+05A1  5F5400             "_T\0"
+                         const [0]: "_T"
+05A4  04                 const type 4
+05A5  1F                 string size (31)
+05A6  496E697469616C69+  "Initiali"
+05AE  7A65546572726974+  "zeTerrit"
+05B6  6F7279485544456C+  "oryHUDEl"
+05BE  656D656E747300     "ements\0"
+                         const [1]: "InitializeTerritoryHUDElements"
+05C5  04                 const type 4
+05C6  18                 string size (24)
+05C7  5570646174655465+  "UpdateTe"
+05CF  727269746F727950+  "rritoryP"
+05D7  726F677265737300   "rogress\0"
+                         const [2]: "UpdateTerritoryProgress"
+05DF  04                 const type 4
+05E0  16                 string size (22)
+05E1  5570646174655465+  "UpdateTe"
+05E9  727269746F727953+  "rritoryS"
+05F1  636F72657300       "cores\0"
+                         const [3]: "UpdateTerritoryScores"
+05F7  04                 const type 4
+05F8  19                 string size (25)
+05F9  4869646554657272+  "HideTerr"
+0601  69746F7279485544+  "itoryHUD"
+0609  456C656D656E7473+  "Elements"
+0611  00                 "\0"
+                         const [4]: "HideTerritoryHUDElements"
+0612  04                 const type 4
+0613  19                 string size (25)
+0614  496E697469616C69+  "Initiali"
+061C  7A65507670485544+  "zePvpHUD"
+0624  456C656D656E7473+  "Elements"
+062C  00                 "\0"
+                         const [5]: "InitializePvpHUDElements"
+062D  04                 const type 4
+062E  0C                 string size (12)
+062F  5570646174655076+  "UpdatePv"
+0637  70585000           "pXP\0"
+                         const [6]: "UpdatePvpXP"
+063B  04                 const type 4
+063C  10                 string size (16)
+063D  53686F7757656170+  "ShowWeap"
+0645  6F6E50616E656C00   "onPanel\0"
+                         const [7]: "ShowWeaponPanel"
+064D  04                 const type 4
+064E  10                 string size (16)
+064F  4869646557656170+  "HideWeap"
+0657  6F6E50616E656C00   "onPanel\0"
+                         const [8]: "HideWeaponPanel"
+065F  04                 const type 4
+0660  11                 string size (17)
+0661  53686F774162696C+  "ShowAbil"
+0669  69747950616E656C+  "ityPanel"
+0671  00                 "\0"
+                         const [9]: "ShowAbilityPanel"
+0672  04                 const type 4
+0673  11                 string size (17)
+0674  486964654162696C+  "HideAbil"
+067C  69747950616E656C+  "ityPanel"
+0684  00                 "\0"
+                         const [10]: "HideAbilityPanel"
+0685  04                 const type 4
+0686  10                 string size (16)
+0687  5365744162696C69+  "SetAbili"
+068F  747954696D657200   "tyTimer\0"
+                         const [11]: "SetAbilityTimer"
+0697  04                 const type 4
+0698  10                 string size (16)
+0699  4164644162696C69+  "AddAbili"
+06A1  747954696D657200   "tyTimer\0"
+                         const [12]: "AddAbilityTimer"
+06A9  04                 const type 4
+06AA  0E                 string size (14)
+06AB  536574466F637573+  "SetFocus"
+06B3  54696D657200       "Timer\0"
+                         const [13]: "SetFocusTimer"
+06B9  04                 const type 4
+06BA  0E                 string size (14)
+06BB  4164644C6F674D65+  "AddLogMe"
+06C3  737361676500       "ssage\0"
+                         const [14]: "AddLogMessage"
+06C9  04                 const type 4
+06CA  12                 string size (18)
+06CB  4164645076704B69+  "AddPvpKi"
+06D3  6C6C4D6573736167+  "llMessag"
+06DB  6500               "e\0"
+                         const [15]: "AddPvpKillMessage"
+06DD  04                 const type 4
+06DE  12                 string size (18)
+06DF  53686F77496D7061+  "ShowImpa"
+06E7  63744D6573736167+  "ctMessag"
+06EF  6500               "e\0"
+                         const [16]: "ShowImpactMessage"
+06F1  04                 const type 4
+06F2  12                 string size (18)
+06F3  48696465496D7061+  "HideImpa"
+06FB  63744D6573736167+  "ctMessag"
+0703  6500               "e\0"
+                         const [17]: "HideImpactMessage"
+0705  04                 const type 4
+0706  03                 string size (3)
+0707  5F4700             "_G\0"
+                         const [18]: "_G"
+                         * functions:
+070A  11                 sizep (17)
+                         
+070B                     ** function [0] definition (level 3)
+                         ** start of function **
+070B  00                 string size (0)
+                         source name: (none)
+070C  29                 line defined (41)
+070D  29                 last line defined (41)
+070E  00                 nups (0)
+070F  00                 numparams (0)
+0710  07                 is_vararg (7)
+0711  02                 maxstacksize (2)
+                         * code:
+0712  01                 sizecode (1)
+0713  1E008000           [1] return     0   1      
+                         * constants:
+0717  00                 sizek (0)
+                         * functions:
+0718  00                 sizep (0)
+                         * lines:
+0719  01                 sizelineinfo (1)
+                         [pc] (line)
+071A  29                 [1] (41)
+                         * locals:
+071E  00                 sizelocvars (0)
+                         * upvalues:
+071F  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0720                     ** function [1] definition (level 3)
+                         ** start of function **
+0720  00                 string size (0)
+                         source name: (none)
+0721  2A                 line defined (42)
+0722  2A                 last line defined (42)
+0723  00                 nups (0)
+0724  00                 numparams (0)
+0725  07                 is_vararg (7)
+0726  02                 maxstacksize (2)
+                         * code:
+0727  01                 sizecode (1)
+0728  1E008000           [1] return     0   1      
+                         * constants:
+072C  00                 sizek (0)
+                         * functions:
+072D  00                 sizep (0)
+                         * lines:
+072E  01                 sizelineinfo (1)
+                         [pc] (line)
+072F  2A                 [1] (42)
+                         * locals:
+0733  00                 sizelocvars (0)
+                         * upvalues:
+0734  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0735                     ** function [2] definition (level 3)
+                         ** start of function **
+0735  00                 string size (0)
+                         source name: (none)
+0736  2B                 line defined (43)
+0737  2B                 last line defined (43)
+0738  00                 nups (0)
+0739  00                 numparams (0)
+073A  07                 is_vararg (7)
+073B  02                 maxstacksize (2)
+                         * code:
+073C  01                 sizecode (1)
+073D  1E008000           [1] return     0   1      
+                         * constants:
+0741  00                 sizek (0)
+                         * functions:
+0742  00                 sizep (0)
+                         * lines:
+0743  01                 sizelineinfo (1)
+                         [pc] (line)
+0744  2B                 [1] (43)
+                         * locals:
+0748  00                 sizelocvars (0)
+                         * upvalues:
+0749  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+074A                     ** function [3] definition (level 3)
+                         ** start of function **
+074A  00                 string size (0)
+                         source name: (none)
+074B  2C                 line defined (44)
+074C  2C                 last line defined (44)
+074D  00                 nups (0)
+074E  00                 numparams (0)
+074F  07                 is_vararg (7)
+0750  02                 maxstacksize (2)
+                         * code:
+0751  01                 sizecode (1)
+0752  1E008000           [1] return     0   1      
+                         * constants:
+0756  00                 sizek (0)
+                         * functions:
+0757  00                 sizep (0)
+                         * lines:
+0758  01                 sizelineinfo (1)
+                         [pc] (line)
+0759  2C                 [1] (44)
+                         * locals:
+075D  00                 sizelocvars (0)
+                         * upvalues:
+075E  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+075F                     ** function [4] definition (level 3)
+                         ** start of function **
+075F  00                 string size (0)
+                         source name: (none)
+0760  2E                 line defined (46)
+0761  2E                 last line defined (46)
+0762  00                 nups (0)
+0763  00                 numparams (0)
+0764  07                 is_vararg (7)
+0765  02                 maxstacksize (2)
+                         * code:
+0766  01                 sizecode (1)
+0767  1E008000           [1] return     0   1      
+                         * constants:
+076B  00                 sizek (0)
+                         * functions:
+076C  00                 sizep (0)
+                         * lines:
+076D  01                 sizelineinfo (1)
+                         [pc] (line)
+076E  2E                 [1] (46)
+                         * locals:
+0772  00                 sizelocvars (0)
+                         * upvalues:
+0773  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0774                     ** function [5] definition (level 3)
+                         ** start of function **
+0774  00                 string size (0)
+                         source name: (none)
+0775  2F                 line defined (47)
+0776  2F                 last line defined (47)
+0777  00                 nups (0)
+0778  00                 numparams (0)
+0779  07                 is_vararg (7)
+077A  02                 maxstacksize (2)
+                         * code:
+077B  01                 sizecode (1)
+077C  1E008000           [1] return     0   1      
+                         * constants:
+0780  00                 sizek (0)
+                         * functions:
+0781  00                 sizep (0)
+                         * lines:
+0782  01                 sizelineinfo (1)
+                         [pc] (line)
+0783  2F                 [1] (47)
+                         * locals:
+0787  00                 sizelocvars (0)
+                         * upvalues:
+0788  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0789                     ** function [6] definition (level 3)
+                         ** start of function **
+0789  00                 string size (0)
+                         source name: (none)
+078A  31                 line defined (49)
+078B  31                 last line defined (49)
+078C  00                 nups (0)
+078D  00                 numparams (0)
+078E  07                 is_vararg (7)
+078F  02                 maxstacksize (2)
+                         * code:
+0790  01                 sizecode (1)
+0791  1E008000           [1] return     0   1      
+                         * constants:
+0795  00                 sizek (0)
+                         * functions:
+0796  00                 sizep (0)
+                         * lines:
+0797  01                 sizelineinfo (1)
+                         [pc] (line)
+0798  31                 [1] (49)
+                         * locals:
+079C  00                 sizelocvars (0)
+                         * upvalues:
+079D  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+079E                     ** function [7] definition (level 3)
+                         ** start of function **
+079E  00                 string size (0)
+                         source name: (none)
+079F  32                 line defined (50)
+07A0  32                 last line defined (50)
+07A1  00                 nups (0)
+07A2  00                 numparams (0)
+07A3  07                 is_vararg (7)
+07A4  02                 maxstacksize (2)
+                         * code:
+07A5  01                 sizecode (1)
+07A6  1E008000           [1] return     0   1      
+                         * constants:
+07AA  00                 sizek (0)
+                         * functions:
+07AB  00                 sizep (0)
+                         * lines:
+07AC  01                 sizelineinfo (1)
+                         [pc] (line)
+07AD  32                 [1] (50)
+                         * locals:
+07B1  00                 sizelocvars (0)
+                         * upvalues:
+07B2  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+07B3                     ** function [8] definition (level 3)
+                         ** start of function **
+07B3  00                 string size (0)
+                         source name: (none)
+07B4  33                 line defined (51)
+07B5  33                 last line defined (51)
+07B6  00                 nups (0)
+07B7  00                 numparams (0)
+07B8  07                 is_vararg (7)
+07B9  02                 maxstacksize (2)
+                         * code:
+07BA  01                 sizecode (1)
+07BB  1E008000           [1] return     0   1      
+                         * constants:
+07BF  00                 sizek (0)
+                         * functions:
+07C0  00                 sizep (0)
+                         * lines:
+07C1  01                 sizelineinfo (1)
+                         [pc] (line)
+07C2  33                 [1] (51)
+                         * locals:
+07C6  00                 sizelocvars (0)
+                         * upvalues:
+07C7  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+07C8                     ** function [9] definition (level 3)
+                         ** start of function **
+07C8  00                 string size (0)
+                         source name: (none)
+07C9  34                 line defined (52)
+07CA  34                 last line defined (52)
+07CB  00                 nups (0)
+07CC  00                 numparams (0)
+07CD  07                 is_vararg (7)
+07CE  02                 maxstacksize (2)
+                         * code:
+07CF  01                 sizecode (1)
+07D0  1E008000           [1] return     0   1      
+                         * constants:
+07D4  00                 sizek (0)
+                         * functions:
+07D5  00                 sizep (0)
+                         * lines:
+07D6  01                 sizelineinfo (1)
+                         [pc] (line)
+07D7  34                 [1] (52)
+                         * locals:
+07DB  00                 sizelocvars (0)
+                         * upvalues:
+07DC  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+07DD                     ** function [10] definition (level 3)
+                         ** start of function **
+07DD  00                 string size (0)
+                         source name: (none)
+07DE  36                 line defined (54)
+07DF  36                 last line defined (54)
+07E0  00                 nups (0)
+07E1  00                 numparams (0)
+07E2  07                 is_vararg (7)
+07E3  02                 maxstacksize (2)
+                         * code:
+07E4  01                 sizecode (1)
+07E5  1E008000           [1] return     0   1      
+                         * constants:
+07E9  00                 sizek (0)
+                         * functions:
+07EA  00                 sizep (0)
+                         * lines:
+07EB  01                 sizelineinfo (1)
+                         [pc] (line)
+07EC  36                 [1] (54)
+                         * locals:
+07F0  00                 sizelocvars (0)
+                         * upvalues:
+07F1  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+07F2                     ** function [11] definition (level 3)
+                         ** start of function **
+07F2  00                 string size (0)
+                         source name: (none)
+07F3  37                 line defined (55)
+07F4  37                 last line defined (55)
+07F5  00                 nups (0)
+07F6  00                 numparams (0)
+07F7  07                 is_vararg (7)
+07F8  02                 maxstacksize (2)
+                         * code:
+07F9  01                 sizecode (1)
+07FA  1E008000           [1] return     0   1      
+                         * constants:
+07FE  00                 sizek (0)
+                         * functions:
+07FF  00                 sizep (0)
+                         * lines:
+0800  01                 sizelineinfo (1)
+                         [pc] (line)
+0801  37                 [1] (55)
+                         * locals:
+0805  00                 sizelocvars (0)
+                         * upvalues:
+0806  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0807                     ** function [12] definition (level 3)
+                         ** start of function **
+0807  00                 string size (0)
+                         source name: (none)
+0808  38                 line defined (56)
+0809  38                 last line defined (56)
+080A  00                 nups (0)
+080B  00                 numparams (0)
+080C  07                 is_vararg (7)
+080D  02                 maxstacksize (2)
+                         * code:
+080E  01                 sizecode (1)
+080F  1E008000           [1] return     0   1      
+                         * constants:
+0813  00                 sizek (0)
+                         * functions:
+0814  00                 sizep (0)
+                         * lines:
+0815  01                 sizelineinfo (1)
+                         [pc] (line)
+0816  38                 [1] (56)
+                         * locals:
+081A  00                 sizelocvars (0)
+                         * upvalues:
+081B  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+081C                     ** function [13] definition (level 3)
+                         ** start of function **
+081C  00                 string size (0)
+                         source name: (none)
+081D  3A                 line defined (58)
+081E  3A                 last line defined (58)
+081F  00                 nups (0)
+0820  00                 numparams (0)
+0821  07                 is_vararg (7)
+0822  02                 maxstacksize (2)
+                         * code:
+0823  01                 sizecode (1)
+0824  1E008000           [1] return     0   1      
+                         * constants:
+0828  00                 sizek (0)
+                         * functions:
+0829  00                 sizep (0)
+                         * lines:
+082A  01                 sizelineinfo (1)
+                         [pc] (line)
+082B  3A                 [1] (58)
+                         * locals:
+082F  00                 sizelocvars (0)
+                         * upvalues:
+0830  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0831                     ** function [14] definition (level 3)
+                         ** start of function **
+0831  00                 string size (0)
+                         source name: (none)
+0832  3B                 line defined (59)
+0833  3B                 last line defined (59)
+0834  00                 nups (0)
+0835  00                 numparams (0)
+0836  07                 is_vararg (7)
+0837  02                 maxstacksize (2)
+                         * code:
+0838  01                 sizecode (1)
+0839  1E008000           [1] return     0   1      
+                         * constants:
+083D  00                 sizek (0)
+                         * functions:
+083E  00                 sizep (0)
+                         * lines:
+083F  01                 sizelineinfo (1)
+                         [pc] (line)
+0840  3B                 [1] (59)
+                         * locals:
+0844  00                 sizelocvars (0)
+                         * upvalues:
+0845  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0846                     ** function [15] definition (level 3)
+                         ** start of function **
+0846  00                 string size (0)
+                         source name: (none)
+0847  3D                 line defined (61)
+0848  3D                 last line defined (61)
+0849  00                 nups (0)
+084A  00                 numparams (0)
+084B  07                 is_vararg (7)
+084C  02                 maxstacksize (2)
+                         * code:
+084D  01                 sizecode (1)
+084E  1E008000           [1] return     0   1      
+                         * constants:
+0852  00                 sizek (0)
+                         * functions:
+0853  00                 sizep (0)
+                         * lines:
+0854  01                 sizelineinfo (1)
+                         [pc] (line)
+0855  3D                 [1] (61)
+                         * locals:
+0859  00                 sizelocvars (0)
+                         * upvalues:
+085A  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+085B                     ** function [16] definition (level 3)
+                         ** start of function **
+085B  00                 string size (0)
+                         source name: (none)
+085C  3E                 line defined (62)
+085D  3E                 last line defined (62)
+085E  00                 nups (0)
+085F  00                 numparams (0)
+0860  07                 is_vararg (7)
+0861  02                 maxstacksize (2)
+                         * code:
+0862  01                 sizecode (1)
+0863  1E008000           [1] return     0   1      
+                         * constants:
+0867  00                 sizek (0)
+                         * functions:
+0868  00                 sizep (0)
+                         * lines:
+0869  01                 sizelineinfo (1)
+                         [pc] (line)
+086A  3E                 [1] (62)
+                         * locals:
+086E  00                 sizelocvars (0)
+                         * upvalues:
+086F  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+0870  3A                 sizelineinfo (58)
+                         [pc] (line)
+0871  29                 [01] (41)
+0872  00                 [02] (41)
+0873  00                 [03] (41)
+0874  00                 [04] (42)
+0875  29                 [05] (42)
+0876  00                 [06] (42)
+0877  00                 [07] (43)
+0878  00                 [08] (43)
+0879  29                 [09] (43)
+087A  00                 [10] (44)
+087B  00                 [11] (44)
+087C  00                 [12] (44)
+087D  2A                 [13] (46)
+087E  00                 [14] (46)
+087F  00                 [15] (46)
+0880  00                 [16] (47)
+0881  2A                 [17] (47)
+0882  00                 [18] (47)
+0883  00                 [19] (49)
+0884  00                 [20] (49)
+0885  2A                 [21] (49)
+0886  00                 [22] (50)
+0887  00                 [23] (50)
+0888  00                 [24] (50)
+0889  2B                 [25] (51)
+088A  00                 [26] (51)
+088B  00                 [27] (51)
+088C  00                 [28] (52)
+088D  2B                 [29] (52)
+088E  00                 [30] (52)
+088F  00                 [31] (54)
+0890  00                 [32] (54)
+0891  2B                 [33] (54)
+0892  00                 [34] (55)
+0893  00                 [35] (55)
+0894  00                 [36] (55)
+0895  2C                 [37] (56)
+0896  00                 [38] (56)
+0897  00                 [39] (56)
+0898  00                 [40] (58)
+0899  2C                 [41] (58)
+089A  00                 [42] (58)
+089B  00                 [43] (59)
+089C  00                 [44] (59)
+089D  2C                 [45] (59)
+089E  00                 [46] (61)
+089F  00                 [47] (61)
+08A0  00                 [48] (61)
+08A1  2E                 [49] (62)
+08A2  00                 [50] (62)
+08A3  00                 [51] (62)
+08A4  00                 [52] (64)
+08A5  2E                 [53] (64)
+08A6  00                 [54] (64)
+08A7  00                 [55] (65)
+08A8  00                 [56] (65)
+08A9  2E                 [57] (65)
+08AA  00                 [58] (66)
+                         * locals:
+0959  00                 sizelocvars (0)
+                         * upvalues:
+095A  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+095B  0A                 sizelineinfo (10)
+                         [pc] (line)
+095C  01                 [01] (1)
+095D  00                 [02] (1)
+095E  00                 [03] (1)
+095F  00                 [04] (37)
+0960  01                 [05] (37)
+0961  00                 [06] (66)
+0962  00                 [07] (66)
+0963  00                 [08] (66)
+0964  01                 [09] (40)
+0965  00                 [10] (66)
+                         * locals:
+0984  00                 sizelocvars (0)
+                         * upvalues:
+0985  00                 sizeupvalues (0)
+                         ** end of function **
+
+0986                     ** end of chunk **

@@ -1,0 +1,826 @@
+1	C:\wlua_dump\path\Lotus\Scripts\NemesisSetupHenchman.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Scripts\NemesisSetupHenchman.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  05                 size of number (bytes)
+0008  14                 integral (1=integral)
+420
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+Lotus.Scripts.Nemesis.NemesisGenerator
+KuvaHenchmanVIPImmunity
+/Lotus/Types/Enemies/KuvaLich/KuvaLichHenchmanFinisherAction
+/Lotus/Types/DropTables/GrineerThrallMercyDropTable
+ApplyOverrides
+gBaseAvatarType
+gMatchingService
+cjson
+loadout
+Nemesis
+table
+playerName
+name
+nemesis
+/Lotus/Language/Kingpins/GrineerHenchmanName
+LICH_NAME
+string
+mName
+mCustomization
+mExtraAbility
+Lotus_Game
+AR_RESIST_ALL
+Engine
+STUN
+KNOCKDOWN
+RAGDOLL
+gRegion
+mType
+playerName
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  05                 maxstacksize (5)
+                         * code:
+0008  14                 sizecode (20)
+0009  1D000000           [01] getglobal  0   0        ; 849075268
+000D  59400000           [02] loadk      1   1        ; "Lotus.Scripts.Nemesis.NemesisGenerator"
+0011  22800001           [03] call       0   2   2  
+0015  5D800000           [04] getglobal  1   2        ; -332969190
+0019  99C00000           [05] loadk      2   3        ; "KuvaHenchmanVIPImmunity"
+001D  62800001           [06] call       1   2   2  
+0021  9D000100           [07] getglobal  2   4        ; -895206725
+0025  D9400100           [08] loadk      3   5        ; "/Lotus/Types/Enemies/KuvaLich/KuvaLichHenchmanFinisherAction"
+0029  A2800001           [09] call       2   2   2  
+002D  DD800100           [10] getglobal  3   6        ; 2083004503
+0031  19C10100           [11] loadk      4   7        ; "/Lotus/Types/DropTables/GrineerThrallMercyDropTable"
+0035  E2800001           [12] call       3   2   2  
+0039  25010000           [13] closure    4   0      
+003D  12000000           [14] move       0   0      
+0041  12008000           [15] move       0   1      
+0045  12000001           [16] move       0   2      
+0049  12008001           [17] move       0   3      
+004D  20010200           [18] setglobal  4   8        ; ApplyOverrides
+0051  20410200           [19] setglobal  4   9        ; 391885767
+0055  1E008000           [20] return     0   1      
+                         * constants:
+0059  0A                 sizek (10)
+005A  01                 const type 3
+005B  44DC9B32           const [0]: (849075268)
+005F  04                 const type 4
+0060  27                 string size (39)
+0061  4C6F7475732E5363+  "Lotus.Sc"
+0069  72697074732E4E65+  "ripts.Ne"
+0071  6D657369732E4E65+  "mesis.Ne"
+0079  6D6573697347656E+  "mesisGen"
+0081  657261746F7200     "erator\0"
+                         const [1]: "Lotus.Scripts.Nemesis.NemesisGenerator"
+0088  01                 const type 3
+0089  1A4B27EC           const [2]: (-332969190)
+008D  04                 const type 4
+008E  18                 string size (24)
+008F  4B75766148656E63+  "KuvaHenc"
+0097  686D616E56495049+  "hmanVIPI"
+009F  6D6D756E69747900   "mmunity\0"
+                         const [3]: "KuvaHenchmanVIPImmunity"
+00A7  01                 const type 3
+00A8  BB3AA4CA           const [4]: (-895206725)
+00AC  04                 const type 4
+00AD  3D                 string size (61)
+00AE  2F4C6F7475732F54+  "/Lotus/T"
+00B6  797065732F456E65+  "ypes/Ene"
+00BE  6D6965732F4B7576+  "mies/Kuv"
+00C6  614C6963682F4B75+  "aLich/Ku"
+00CE  76614C6963684865+  "vaLichHe"
+00D6  6E63686D616E4669+  "nchmanFi"
+00DE  6E69736865724163+  "nisherAc"
+00E6  74696F6E00         "tion\0"
+                         const [5]: "/Lotus/Types/Enemies/KuvaLich/KuvaLichHenchmanFinisherAction"
+00EB  01                 const type 3
+00EC  5720287C           const [6]: (2083004503)
+00F0  04                 const type 4
+00F1  34                 string size (52)
+00F2  2F4C6F7475732F54+  "/Lotus/T"
+00FA  797065732F44726F+  "ypes/Dro"
+0102  705461626C65732F+  "pTables/"
+010A  4772696E65657254+  "GrineerT"
+0112  6872616C6C4D6572+  "hrallMer"
+011A  637944726F705461+  "cyDropTa"
+0122  626C6500           "ble\0"
+                         const [7]: "/Lotus/Types/DropTables/GrineerThrallMercyDropTable"
+0126  04                 const type 4
+0127  0F                 string size (15)
+0128  4170706C794F7665+  "ApplyOve"
+0130  72726964657300     "rrides\0"
+                         const [8]: "ApplyOverrides"
+0137  01                 const type 3
+0138  C7B35B17           const [9]: (391885767)
+                         * functions:
+013C  01                 sizep (1)
+                         
+013D                     ** function [0] definition (level 2)
+                         ** start of function **
+013D  00                 string size (0)
+                         source name: (none)
+013E  07                 line defined (7)
+013F  5E                 last line defined (94)
+0140  04                 nups (4)
+0141  01                 numparams (1)
+0142  00                 is_vararg (0)
+0143  1A                 maxstacksize (26)
+                         * code:
+0145  01                 sizecode (199)
+0146  52000000           [001] move       1   0      
+014A  A4004000           [002] self       2   0   256  ; -1957065004
+014E  1D410000           [003] getglobal  4   1        ; gBaseAvatarType
+0152  A2808001           [004] call       2   3   2  
+0156  98400000           [005] test       2       1    ; to [7] if false
+015A  1A000380           [006] jmp        13           ; to [20]
+015E  9D800000           [007] getglobal  2   2        ; 1074689893
+0162  E4C04000           [008] self       3   0   259  ; -1870903749
+0166  E2000001           [009] call       3   2   0  
+016A  A2800000           [010] call       2   0   2  
+016E  98000000           [011] test       2       0    ; to [13] if true
+0172  1AC00080           [012] jmp        4            ; to [17]
+0176  9D000100           [013] getglobal  2   4        ; 538022378
+017A  D9400100           [014] loadk      3   5        ; 0
+017E  A2400001           [015] call       2   2   1  
+0182  1A40FD7F           [016] jmp        -10          ; to [7]
+0186  A4C04000           [017] self       2   0   259  ; -1870903749
+018A  A2800001           [018] call       2   2   2  
+018E  52000001           [019] move       1   2      
+0192  8B000000           [020] newtable   2   0   0    ; array=0, hash=0
+0196  DD800100           [021] getglobal  3   6        ; gMatchingService
+019A  E4C0C101           [022] self       3   3   263  ; -1985412809
+019E  E2800001           [023] call       3   2   2  
+01A2  1D010200           [024] getglobal  4   8        ; 248503575
+01A6  52018001           [025] move       5   3      
+01AA  22010101           [026] call       4   2   4  
+01AE  1A800580           [027] jmp        23           ; to [51]
+01B2  5D420200           [028] getglobal  9   9        ; cjson
+01B6  4E82C204           [029] gettable   9   9   266  ; -1976663275
+01BA  8EC24204           [030] gettable   10  8   267  ; "loadout"
+01BE  62820001           [031] call       9   2   2  
+01C2  58020000           [032] test       9       0    ; to [34] if true
+01C6  1A000480           [033] jmp        17           ; to [51]
+01CA  8E02C304           [034] gettable   10  9   268  ; "Nemesis"
+01CE  98020000           [035] test       10      0    ; to [37] if true
+01D2  1A400380           [036] jmp        14           ; to [51]
+01D6  93020000           [037] getupval   10  0      
+01DA  8E424305           [038] gettable   10  10  269  ; -198334568
+01DE  CE02C304           [039] gettable   11  9   268  ; "Nemesis"
+01E2  A2820001           [040] call       10  2   2  
+01E6  98020000           [041] test       10      0    ; to [43] if true
+01EA  1AC00180           [042] jmp        8            ; to [51]
+01EE  DD820300           [043] getglobal  11  14       ; table
+01F2  CEC2C305           [044] gettable   11  11  271  ; -431682403
+01F6  12030001           [045] move       12  2      
+01FA  4B830000           [046] newtable   13  0   2    ; array=0, hash=2
+01FE  8E434404           [047] gettable   14  8   273  ; "name"
+0202  4C830388           [048] settable   13  272 14   ; "playerName"
+0206  4C830289           [049] settable   13  274 10   ; "nemesis"
+020A  E2428001           [050] call       11  3   1  
+020E  16810000           [051] tforloop   4       2    ; to [53] if exit
+0212  1A80F97F           [052] jmp        -25          ; to [28]
+0216  C6028005           [053] loadnil    11  11     
+021A  0A030001           [054] len        12  2      
+fail op	21
+021E  15008382           [055] concat     0   261 12 
+0222  1A000A80           [056] jmp        41           ; to [98]
+0226  1D830300           [057] getglobal  12  14       ; table
+022A  0EC34406           [058] gettable   12  12  275  ; -1513783280
+022E  52030001           [059] move       13  2      
+0232  A5030000           [060] closure    14  0      
+0236  22438001           [061] call       12  3   1  
+023A  2403C500           [062] self       12  1   276  ; -605089866
+023E  22830001           [063] call       12  2   2  
+0242  4A030001           [064] len        13  2      
+0246  5F430306           [065] mod        13  12  13 
+024A  4343C506           [066] add        13  13  277  ; 0
+024E  8E430301           [067] gettable   14  2   13 
+0252  8E834407           [068] gettable   14  14  274  ; "nemesis"
+0256  DD830000           [069] getglobal  15  2        ; 1074689893
+025A  12040007           [070] move       16  14     
+025E  E2830001           [071] call       15  2   2  
+0262  D8430000           [072] test       15      1    ; to [74] if false
+0266  1AC00580           [073] jmp        24           ; to [98]
+026A  E483C500           [074] self       15  1   278  ; -786839083
+026E  5DC40500           [075] getglobal  17  23       ; -421772368
+0272  99040600           [076] loadk      18  24       ; "/Lotus/Language/Kingpins/GrineerHenchmanName"
+0276  CB440000           [077] newtable   19  0   1    ; array=0, hash=1
+027A  1D850600           [078] getglobal  20  26       ; string
+027E  0EC5460A           [079] gettable   20  20  283  ; 1671193642
+0282  4E054707           [080] gettable   21  14  284  ; "mName"
+0286  22850001           [081] call       20  2   2  
+028A  CC04858C           [082] settable   19  281 20   ; "LICH_NAME"
+028E  62048001           [083] call       17  3   0  
+0292  E2430000           [084] call       15  0   1  
+0296  CE434707           [085] gettable   15  14  285  ; "mCustomization"
+029A  1D840000           [086] getglobal  16  2        ; 1074689893
+029E  52048007           [087] move       17  15     
+02A2  22840001           [088] call       16  2   2  
+02A6  18440000           [089] test       16      1    ; to [91] if false
+02AA  1A800080           [090] jmp        3            ; to [94]
+02AE  2484C707           [091] self       16  15  286  ; -1216321311
+02B2  92048000           [092] move       18  1      
+02B6  22448001           [093] call       16  3   1  
+02BA  1DC40700           [094] getglobal  16  31       ; -895206725
+02BE  4E044807           [095] gettable   17  14  288  ; "mExtraAbility"
+02C2  22840001           [096] call       16  2   2  
+02C6  D2020008           [097] move       11  16     
+02CA  2444C800           [098] self       16  1   289  ; -419776588
+02CE  99840800           [099] loadk      18  34       ; 0
+02D2  22448001           [100] call       16  3   1  
+02D6  24C4C800           [101] self       16  1   291  ; -1266465662
+02DA  9D040900           [102] getglobal  18  36       ; Lotus_Game
+02DE  8E444909           [103] gettable   18  18  293  ; "AR_RESIST_ALL"
+02E2  D3048000           [104] getupval   19  1      
+02E6  22440002           [105] call       16  4   1  
+02EA  2484C900           [106] self       16  1   294  ; 1511086594
+02EE  22840001           [107] call       16  2   2  
+02F2  18440000           [108] test       16      1    ; to [110] if false
+02F6  1AC00180           [109] jmp        8            ; to [118]
+02FA  24C4C900           [110] self       16  1   295  ; -1519595333
+02FE  22840001           [111] call       16  2   2  
+0302  18440000           [112] test       16      1    ; to [114] if false
+0306  1AC00080           [113] jmp        4            ; to [118]
+030A  2404CA00           [114] self       16  1   296  ; 1992436207
+030E  A444CA00           [115] self       18  1   297  ; 945541886
+0312  A2040001           [116] call       18  2   0  
+0316  22440000           [117] call       16  0   1  
+031A  2484CA00           [118] self       16  1   298  ; -1544157541
+031E  22840001           [119] call       16  2   2  
+0322  64C44A08           [120] self       17  16  299  ; 1685228074
+0326  DD040B00           [121] getglobal  19  44       ; Engine
+032A  CE44CB09           [122] gettable   19  19  301  ; "STUN"
+032E  13058000           [123] getupval   20  1      
+0332  62440002           [124] call       17  4   1  
+0336  64C44A08           [125] self       17  16  299  ; 1685228074
+033A  DD040B00           [126] getglobal  19  44       ; Engine
+033E  CE84CB09           [127] gettable   19  19  302  ; "KNOCKDOWN"
+0342  13058000           [128] getupval   20  1      
+0346  62440002           [129] call       17  4   1  
+034A  64C44A08           [130] self       17  16  299  ; 1685228074
+034E  DD040B00           [131] getglobal  19  44       ; Engine
+0352  CEC4CB09           [132] gettable   19  19  303  ; "RAGDOLL"
+0356  13058000           [133] getupval   20  1      
+035A  62440002           [134] call       17  4   1  
+035E  5D040C00           [135] getglobal  17  48       ; gRegion
+0362  6444CC08           [136] self       17  17  305  ; -1520831144
+0366  62840001           [137] call       17  2   2  
+036A  58040000           [138] test       17      0    ; to [140] if true
+036E  1AC00080           [139] jmp        4            ; to [144]
+0372  64844C08           [140] self       17  16  306  ; -1992773175
+0376  E4C44C08           [141] self       19  16  307  ; -227502409
+037A  E2040001           [142] call       19  2   0  
+037E  62440000           [143] call       17  0   1  
+0382  64044D08           [144] self       17  16  308  ; -1791147114
+0386  D7048000           [145] loadbool   19  1   0    ; true
+038A  62448001           [146] call       17  3   1  
+038E  5D040B00           [147] getglobal  17  44       ; Engine
+0392  4E44CD08           [148] gettable   17  17  309  ; -1762979278
+0396  62848000           [149] call       17  1   2  
+039A  93040001           [150] getupval   18  2      
+039E  4C84049B           [151] settable   17  310 18   ; "mType"
+03A2  A4C4CD00           [152] self       18  1   311  ; -1802508524
+03A6  12058008           [153] move       20  17     
+03AA  A2448001           [154] call       18  3   1  
+03AE  A404CE00           [155] self       18  1   312  ; 2080276352
+03B2  13058001           [156] getupval   20  3      
+03B6  A2448001           [157] call       18  3   1  
+03BA  9D840000           [158] getglobal  18  2        ; 1074689893
+03BE  D2048005           [159] move       19  11     
+03C2  A2840001           [160] call       18  2   2  
+03C6  98440000           [161] test       18      1    ; to [163] if false
+03CA  1A000680           [162] jmp        25           ; to [188]
+03CE  A444CE00           [163] self       18  1   313  ; -1917464545
+03D2  A2840001           [164] call       18  2   2  
+03D6  E4844E09           [165] self       19  18  314  ; 1769516121
+03DA  E2840001           [166] call       19  2   2  
+03DE  1D850000           [167] getglobal  20  2        ; 1074689893
+03E2  52058009           [168] move       21  19     
+03E6  22850001           [169] call       20  2   2  
+03EA  18050000           [170] test       20      0    ; to [172] if true
+03EE  1A800180           [171] jmp        7            ; to [179]
+03F2  1D050100           [172] getglobal  20  4        ; 538022378
+03F6  59450100           [173] loadk      21  5        ; 0
+03FA  22450001           [174] call       20  2   1  
+03FE  24854E09           [175] self       20  18  314  ; 1769516121
+0402  22850001           [176] call       20  2   2  
+0406  D204000A           [177] move       19  20     
+040A  1AC0FC7F           [178] jmp        -12          ; to [167]
+040E  24C5CE09           [179] self       20  19  315  ; -380227431
+0412  92058005           [180] move       22  11     
+0416  22458001           [181] call       20  3   1  
+041A  2405CF09           [182] self       20  19  316  ; 868102503
+041E  99450500           [183] loadk      22  21       ; 0
+0422  E445CF09           [184] self       23  19  317  ; 1789415806
+0426  52068005           [185] move       25  11     
+042A  E2058001           [186] call       23  3   0  
+042E  22450000           [187] call       20  0   1  
+0432  2485CF00           [188] self       20  1   318  ; 1554995653
+0436  22850001           [189] call       20  2   2  
+043A  64C5CF00           [190] self       21  1   319  ; 1035550862
+043E  D7058000           [191] loadbool   23  1   0    ; true
+0442  62458001           [192] call       21  3   1  
+0446  5D050100           [193] getglobal  21  4        ; 538022378
+044A  99450100           [194] loadk      22  5        ; 0
+044E  62450001           [195] call       21  2   1  
+0452  64C5CF00           [196] self       21  1   319  ; 1035550862
+0456  D205000A           [197] move       23  20     
+045A  62458001           [198] call       21  3   1  
+045E  1E008000           [199] return     0   1      
+                         * constants:
+0462  40                 sizek (64)
+0463  01                 const type 3
+0464  D48E598B           const [0]: (-1957065004)
+0468  04                 const type 4
+0469  10                 string size (16)
+046A  6742617365417661+  "gBaseAva"
+0472  7461725479706500   "tarType\0"
+                         const [1]: "gBaseAvatarType"
+047A  01                 const type 3
+047B  65770E40           const [2]: (1074689893)
+047F  01                 const type 3
+0480  3B467C90           const [3]: (-1870903749)
+0484  01                 const type 3
+0485  EA911120           const [4]: (538022378)
+0489  03                 const type 3
+048A  00000000           const [5]: (0)
+048E  04                 const type 4
+048F  11                 string size (17)
+0490  674D61746368696E+  "gMatchin"
+0498  6753657276696365+  "gService"
+04A0  00                 "\0"
+                         const [6]: "gMatchingService"
+04A1  01                 const type 3
+04A2  3701A989           const [7]: (-1985412809)
+04A6  01                 const type 3
+04A7  17DDCF0E           const [8]: (248503575)
+04AB  04                 const type 4
+04AC  06                 string size (6)
+04AD  636A736F6E00       "cjson\0"
+                         const [9]: "cjson"
+04B3  01                 const type 3
+04B4  15832E8A           const [10]: (-1976663275)
+04B8  04                 const type 4
+04B9  08                 string size (8)
+04BA  6C6F61646F757400   "loadout\0"
+                         const [11]: "loadout"
+04C2  04                 const type 4
+04C3  08                 string size (8)
+04C4  4E656D6573697300   "Nemesis\0"
+                         const [12]: "Nemesis"
+04CC  01                 const type 3
+04CD  98A72DF4           const [13]: (-198334568)
+04D1  04                 const type 4
+04D2  06                 string size (6)
+04D3  7461626C6500       "table\0"
+                         const [14]: "table"
+04D9  01                 const type 3
+04DA  9D0C45E6           const [15]: (-431682403)
+04DE  04                 const type 4
+04DF  0B                 string size (11)
+04E0  706C617965724E61+  "playerNa"
+04E8  6D6500             "me\0"
+                         const [16]: "playerName"
+04EB  04                 const type 4
+04EC  05                 string size (5)
+04ED  6E616D6500         "name\0"
+                         const [17]: "name"
+04F2  04                 const type 4
+04F3  08                 string size (8)
+04F4  6E656D6573697300   "nemesis\0"
+                         const [18]: "nemesis"
+04FC  01                 const type 3
+04FD  1080C5A5           const [19]: (-1513783280)
+0501  01                 const type 3
+0502  B60FEFDB           const [20]: (-605089866)
+0506  03                 const type 3
+0507  0000803F           const [21]: (0)
+050B  01                 const type 3
+050C  D5C919D1           const [22]: (-786839083)
+0510  01                 const type 3
+0511  B043DCE6           const [23]: (-421772368)
+0515  04                 const type 4
+0516  2D                 string size (45)
+0517  2F4C6F7475732F4C+  "/Lotus/L"
+051F  616E67756167652F+  "anguage/"
+0527  4B696E6770696E73+  "Kingpins"
+052F  2F4772696E656572+  "/Grineer"
+0537  48656E63686D616E+  "Henchman"
+053F  4E616D6500         "Name\0"
+                         const [24]: "/Lotus/Language/Kingpins/GrineerHenchmanName"
+0544  04                 const type 4
+0545  0A                 string size (10)
+0546  4C4943485F4E414D+  "LICH_NAM"
+054E  4500               "E\0"
+                         const [25]: "LICH_NAME"
+0550  04                 const type 4
+0551  07                 string size (7)
+0552  737472696E6700     "string\0"
+                         const [26]: "string"
+0559  01                 const type 3
+055A  2A649C63           const [27]: (1671193642)
+055E  04                 const type 4
+055F  06                 string size (6)
+0560  6D4E616D6500       "mName\0"
+                         const [28]: "mName"
+0566  04                 const type 4
+0567  0F                 string size (15)
+0568  6D437573746F6D69+  "mCustomi"
+0570  7A6174696F6E00     "zation\0"
+                         const [29]: "mCustomization"
+0577  01                 const type 3
+0578  E16880B7           const [30]: (-1216321311)
+057C  01                 const type 3
+057D  BB3AA4CA           const [31]: (-895206725)
+0581  04                 const type 4
+0582  0E                 string size (14)
+0583  6D45787472614162+  "mExtraAb"
+058B  696C69747900       "ility\0"
+                         const [32]: "mExtraAbility"
+0591  01                 const type 3
+0592  B4B7FAE6           const [33]: (-419776588)
+0596  03                 const type 3
+0597  00000040           const [34]: (0)
+059B  01                 const type 3
+059C  824483B4           const [35]: (-1266465662)
+05A0  04                 const type 4
+05A1  0B                 string size (11)
+05A2  4C6F7475735F4761+  "Lotus_Ga"
+05AA  6D6500             "me\0"
+                         const [36]: "Lotus_Game"
+05AD  04                 const type 4
+05AE  0E                 string size (14)
+05AF  41525F5245534953+  "AR_RESIS"
+05B7  545F414C4C00       "T_ALL\0"
+                         const [37]: "AR_RESIST_ALL"
+05BD  01                 const type 3
+05BE  025A115A           const [38]: (1511086594)
+05C2  01                 const type 3
+05C3  BBD06CA5           const [39]: (-1519595333)
+05C7  01                 const type 3
+05C8  EF29C276           const [40]: (1992436207)
+05CC  01                 const type 3
+05CD  FED25B38           const [41]: (945541886)
+05D1  01                 const type 3
+05D2  9B06F6A3           const [42]: (-1544157541)
+05D6  01                 const type 3
+05D7  2A8A7264           const [43]: (1685228074)
+05DB  04                 const type 4
+05DC  07                 string size (7)
+05DD  456E67696E6500     "Engine\0"
+                         const [44]: "Engine"
+05E4  04                 const type 4
+05E5  05                 string size (5)
+05E6  5354554E00         "STUN\0"
+                         const [45]: "STUN"
+05EB  04                 const type 4
+05EC  0A                 string size (10)
+05ED  4B4E4F434B444F57+  "KNOCKDOW"
+05F5  4E00               "N\0"
+                         const [46]: "KNOCKDOWN"
+05F7  04                 const type 4
+05F8  08                 string size (8)
+05F9  524147444F4C4C00   "RAGDOLL\0"
+                         const [47]: "RAGDOLL"
+0601  04                 const type 4
+0602  08                 string size (8)
+0603  67526567696F6E00   "gRegion\0"
+                         const [48]: "gRegion"
+060B  01                 const type 3
+060C  58F559A5           const [49]: (-1520831144)
+0610  01                 const type 3
+0611  C9B13889           const [50]: (-1992773175)
+0615  01                 const type 3
+0616  B79670F2           const [51]: (-227502409)
+061A  01                 const type 3
+061B  96433D95           const [52]: (-1791147114)
+061F  01                 const type 3
+0620  3212EB96           const [53]: (-1762979278)
+0624  04                 const type 4
+0625  06                 string size (6)
+0626  6D5479706500       "mType\0"
+                         const [54]: "mType"
+062C  01                 const type 3
+062D  14E78F94           const [55]: (-1802508524)
+0631  01                 const type 3
+0632  807FFE7B           const [56]: (2080276352)
+0636  01                 const type 3
+0637  1FD0B58D           const [57]: (-1917464545)
+063B  01                 const type 3
+063C  59AC7869           const [58]: (1769516121)
+0640  01                 const type 3
+0641  993056E9           const [59]: (-380227431)
+0645  01                 const type 3
+0646  6731BE33           const [60]: (868102503)
+064A  01                 const type 3
+064B  7E51A86A           const [61]: (1789415806)
+064F  01                 const type 3
+0650  C559AF5C           const [62]: (1554995653)
+0654  01                 const type 3
+0655  8E40B93D           const [63]: (1035550862)
+                         * functions:
+0659  01                 sizep (1)
+                         
+065A                     ** function [0] definition (level 3)
+                         ** start of function **
+065A  00                 string size (0)
+                         source name: (none)
+065B  1F                 line defined (31)
+065C  1F                 last line defined (31)
+065D  00                 nups (0)
+065E  02                 numparams (2)
+065F  00                 is_vararg (0)
+0660  04                 maxstacksize (4)
+                         * code:
+0661  08                 sizecode (8)
+0662  8E004000           [1] gettable   2   0   256  ; "playerName"
+0666  CE00C000           [2] gettable   3   1   256  ; "playerName"
+fail op	21
+066A  55C00001           [3] concat     1   2   3  
+066E  1A000080           [4] jmp        1            ; to [6]
+0672  97400000           [5] loadbool   2   0   1    ; false, to [7]
+0676  97008000           [6] loadbool   2   1   0    ; true
+067A  9E000001           [7] return     2   2      
+067E  1E008000           [8] return     0   1      
+                         * constants:
+0682  01                 sizek (1)
+0683  04                 const type 4
+0684  0B                 string size (11)
+0685  706C617965724E61+  "playerNa"
+068D  6D6500             "me\0"
+                         const [0]: "playerName"
+                         * functions:
+0690  00                 sizep (0)
+                         * lines:
+0691  08                 sizelineinfo (8)
+                         [pc] (line)
+0692  1F                 [1] (31)
+0693  00                 [2] (31)
+0694  00                 [3] (31)
+0695  00                 [4] (31)
+0696  1F                 [5] (31)
+0697  00                 [6] (31)
+0698  00                 [7] (31)
+0699  00                 [8] (31)
+                         * locals:
+06B2  00                 sizelocvars (0)
+                         * upvalues:
+06B3  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+06B5  01                 sizelineinfo (199)
+                         [pc] (line)
+06B6  08                 [001] (8)
+06B7  00                 [002] (9)
+06B8  00                 [003] (9)
+06B9  00                 [004] (9)
+06BA  09                 [005] (9)
+06BB  00                 [006] (9)
+06BC  00                 [007] (10)
+06BD  00                 [008] (10)
+06BE  09                 [009] (10)
+06BF  00                 [010] (10)
+06C0  00                 [011] (10)
+06C1  00                 [012] (10)
+06C2  09                 [013] (11)
+06C3  00                 [014] (11)
+06C4  00                 [015] (11)
+06C5  00                 [016] (11)
+06C6  09                 [017] (13)
+06C7  00                 [018] (13)
+06C8  00                 [019] (13)
+06C9  00                 [020] (16)
+06CA  09                 [021] (17)
+06CB  00                 [022] (17)
+06CC  00                 [023] (17)
+06CD  00                 [024] (19)
+06CE  0A                 [025] (19)
+06CF  00                 [026] (19)
+06D0  00                 [027] (19)
+06D1  00                 [028] (20)
+06D2  0A                 [029] (20)
+06D3  00                 [030] (20)
+06D4  00                 [031] (20)
+06D5  00                 [032] (21)
+06D6  0A                 [033] (21)
+06D7  00                 [034] (21)
+06D8  00                 [035] (21)
+06D9  00                 [036] (21)
+06DA  0A                 [037] (22)
+06DB  00                 [038] (22)
+06DC  00                 [039] (22)
+06DD  00                 [040] (22)
+06DE  0A                 [041] (23)
+06DF  00                 [042] (23)
+06E0  00                 [043] (24)
+06E1  00                 [044] (24)
+06E2  0A                 [045] (24)
+06E3  00                 [046] (24)
+06E4  00                 [047] (24)
+06E5  00                 [048] (24)
+06E6  0B                 [049] (24)
+06E7  00                 [050] (24)
+06E8  00                 [051] (19)
+06E9  00                 [052] (26)
+06EA  0B                 [053] (29)
+06EB  00                 [054] (30)
+06EC  00                 [055] (30)
+06ED  00                 [056] (30)
+06EE  0B                 [057] (31)
+06EF  00                 [058] (31)
+06F0  00                 [059] (31)
+06F1  00                 [060] (31)
+06F2  0B                 [061] (31)
+06F3  00                 [062] (34)
+06F4  00                 [063] (34)
+06F5  00                 [064] (35)
+06F6  0D                 [065] (35)
+06F7  00                 [066] (35)
+06F8  00                 [067] (36)
+06F9  00                 [068] (36)
+06FA  0D                 [069] (37)
+06FB  00                 [070] (37)
+06FC  00                 [071] (37)
+06FD  00                 [072] (37)
+06FE  0D                 [073] (37)
+06FF  00                 [074] (38)
+0700  00                 [075] (38)
+0701  00                 [076] (38)
+0702  10                 [077] (38)
+0703  00                 [078] (38)
+0704  00                 [079] (38)
+0705  00                 [080] (38)
+0706  11                 [081] (38)
+0707  00                 [082] (38)
+0708  00                 [083] (38)
+0709  00                 [084] (38)
+070A  11                 [085] (40)
+070B  00                 [086] (41)
+070C  00                 [087] (41)
+070D  00                 [088] (41)
+070E  11                 [089] (41)
+070F  00                 [090] (41)
+0710  00                 [091] (42)
+0711  00                 [092] (42)
+0712  13                 [093] (42)
+0713  00                 [094] (45)
+0714  00                 [095] (45)
+0715  00                 [096] (45)
+0716  13                 [097] (45)
+0717  00                 [098] (49)
+0718  00                 [099] (49)
+0719  00                 [100] (49)
+071A  13                 [101] (51)
+071B  00                 [102] (51)
+071C  00                 [103] (51)
+071D  00                 [104] (51)
+071E  13                 [105] (51)
+071F  00                 [106] (53)
+0720  00                 [107] (53)
+0721  00                 [108] (53)
+0722  14                 [109] (53)
+0723  00                 [110] (53)
+0724  00                 [111] (53)
+0725  00                 [112] (53)
+0726  14                 [113] (53)
+0727  00                 [114] (54)
+0728  00                 [115] (54)
+0729  00                 [116] (54)
+072A  14                 [117] (54)
+072B  00                 [118] (57)
+072C  00                 [119] (57)
+072D  00                 [120] (59)
+072E  14                 [121] (59)
+072F  00                 [122] (59)
+0730  00                 [123] (59)
+0731  00                 [124] (59)
+0732  15                 [125] (60)
+0733  00                 [126] (60)
+0734  00                 [127] (60)
+0735  00                 [128] (60)
+0736  15                 [129] (60)
+0737  00                 [130] (61)
+0738  00                 [131] (61)
+0739  00                 [132] (61)
+073A  15                 [133] (61)
+073B  00                 [134] (61)
+073C  00                 [135] (63)
+073D  00                 [136] (63)
+073E  15                 [137] (63)
+073F  00                 [138] (63)
+0740  00                 [139] (63)
+0741  00                 [140] (64)
+0742  15                 [141] (64)
+0743  00                 [142] (64)
+0744  00                 [143] (64)
+0745  00                 [144] (67)
+0746  16                 [145] (67)
+0747  00                 [146] (67)
+0748  00                 [147] (69)
+0749  00                 [148] (69)
+074A  16                 [149] (69)
+074B  00                 [150] (70)
+074C  00                 [151] (70)
+074D  00                 [152] (71)
+074E  16                 [153] (71)
+074F  00                 [154] (71)
+0750  00                 [155] (73)
+0751  00                 [156] (73)
+0752  16                 [157] (73)
+0753  00                 [158] (75)
+0754  00                 [159] (75)
+0755  00                 [160] (75)
+0756  17                 [161] (75)
+0757  00                 [162] (75)
+0758  00                 [163] (77)
+0759  00                 [164] (77)
+075A  17                 [165] (78)
+075B  00                 [166] (78)
+075C  00                 [167] (80)
+075D  00                 [168] (80)
+075E  18                 [169] (80)
+075F  00                 [170] (80)
+0760  00                 [171] (80)
+0761  00                 [172] (81)
+0762  18                 [173] (81)
+0763  00                 [174] (81)
+0764  00                 [175] (82)
+0765  00                 [176] (82)
+0766  18                 [177] (82)
+0767  00                 [178] (82)
+0768  00                 [179] (85)
+0769  00                 [180] (85)
+076A  18                 [181] (85)
+076B  00                 [182] (86)
+076C  00                 [183] (86)
+076D  00                 [184] (86)
+076E  18                 [185] (86)
+076F  00                 [186] (86)
+0770  00                 [187] (86)
+0771  00                 [188] (90)
+0772  18                 [189] (90)
+0773  00                 [190] (91)
+0774  00                 [191] (91)
+0775  00                 [192] (91)
+0776  18                 [193] (92)
+0777  00                 [194] (92)
+0778  00                 [195] (92)
+0779  00                 [196] (93)
+077A  18                 [197] (93)
+077B  00                 [198] (93)
+077C  00                 [199] (94)
+                         * locals:
+09D2  00                 sizelocvars (0)
+                         * upvalues:
+09D3  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+09D4  14                 sizelineinfo (20)
+                         [pc] (line)
+09D5  01                 [01] (1)
+09D6  00                 [02] (1)
+09D7  00                 [03] (1)
+09D8  00                 [04] (3)
+09D9  01                 [05] (3)
+09DA  00                 [06] (3)
+09DB  00                 [07] (4)
+09DC  00                 [08] (4)
+09DD  01                 [09] (4)
+09DE  00                 [10] (5)
+09DF  00                 [11] (5)
+09E0  00                 [12] (5)
+09E1  03                 [13] (94)
+09E2  00                 [14] (94)
+09E3  00                 [15] (94)
+09E4  00                 [16] (94)
+09E5  03                 [17] (94)
+09E6  00                 [18] (94)
+09E7  00                 [19] (7)
+09E8  00                 [20] (94)
+                         * locals:
+0A25  00                 sizelocvars (0)
+                         * upvalues:
+0A26  00                 sizeupvalues (0)
+                         ** end of function **
+
+0A27                     ** end of chunk **

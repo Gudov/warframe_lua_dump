@@ -1,0 +1,889 @@
+1	C:\wlua_dump\path\Lotus\Scripts\NPCNekrosCloneTheDeadFix.lua
+Pos   Hex Data           Description or Code
+------------------------------------------------------------------------
+0000                     ** source chunk: C:\wlua_dump\path\Lotus\Scripts\NPCNekrosCloneTheDeadFix.lua
+                         ** global header start **
+0000  7F                 header signature: ""
+0001  00                 version (major:minor hex digits)
+0002  00                 format (0=official)
+0003  00                 endianness (1=little endian)
+0004  00                 size of int (bytes)
+0005  00                 size of size_t (bytes)
+0006  02                 size of Instruction (bytes)
+0007  04                 size of number (bytes)
+0008  1B                 integral (1=integral)
+427
+                         * number type: single
+                         * x86 standard (32-bit, little endian, doubles)
+                         ** global header end **
+package
+seeall
+/Lotus/Fx/PowersuitAbilities/Necro/CloneTheDeadTeleportIn
+Lotus.Scripts.Libs.AbilitiesLib
+IsCloneTheDeadEntity
+ApplyCloneTheDeadMods
+ApplyCloneTheDeadModsForAmalgam
+_T
+cloneTheDeadAbility
+clones
+entity
+_T
+cloneTheDeadAbility
+gRegion
+clones
+entity
+gRegion
+gLotusNpcAvatarType
+EMPTY_SYMBOL
+ZERO_VECTOR
+ZERO_ROTATION
+gRegion
+gLotusNpcAvatarType
+EMPTY_SYMBOL
+ZERO_VECTOR
+ZERO_ROTATION
+table
+_T
+cloneTheDeadAbility
+clones
+entity
+healthDrain
+                         
+0001                     ** function [0] definition (level 1)
+                         ** start of function **
+0001  00                 string size (0)
+                         source name: (none)
+0002  00                 line defined (0)
+0003  00                 last line defined (0)
+0004  00                 nups (0)
+0005  00                 numparams (0)
+0006  02                 is_vararg (2)
+0007  04                 maxstacksize (4)
+                         * code:
+0008  1B                 sizecode (27)
+0009  1D000000           [01] getglobal  0   0        ; 954442511
+000D  41000001           [02] vararg     1   2      
+0011  9D400000           [03] getglobal  2   1        ; package
+0015  8E804001           [04] gettable   2   2   258  ; "seeall"
+0019  22408001           [05] call       0   3   1  
+001D  1DC00000           [06] getglobal  0   3        ; 738251817
+0021  59000100           [07] loadk      1   4        ; "/Lotus/Fx/PowersuitAbilities/Necro/CloneTheDeadTeleportIn"
+0025  22800001           [08] call       0   2   2  
+0029  5D400100           [09] getglobal  1   5        ; 849075268
+002D  99800100           [10] loadk      2   6        ; "Lotus.Scripts.Libs.AbilitiesLib"
+0031  62800001           [11] call       1   2   2  
+0035  A5000000           [12] closure    2   0      
+0039  A0C00100           [13] setglobal  2   7        ; IsCloneTheDeadEntity
+003D  A0000200           [14] setglobal  2   8        ; 1231106688
+0041  A5400000           [15] closure    2   1      
+0045  E5800000           [16] closure    3   2      
+0049  12000001           [17] move       0   2      
+004D  12000000           [18] move       0   0      
+0051  E0400200           [19] setglobal  3   9        ; ApplyCloneTheDeadMods
+0055  E0800200           [20] setglobal  3   10       ; 455242376
+0059  E5C00000           [21] closure    3   3      
+005D  12000001           [22] move       0   2      
+0061  12008000           [23] move       0   1      
+0065  12000000           [24] move       0   0      
+0069  E0C00200           [25] setglobal  3   11       ; ApplyCloneTheDeadModsForAmalgam
+006D  E0000300           [26] setglobal  3   12       ; -1405109618
+0071  1E008000           [27] return     0   1      
+                         * constants:
+0075  0D                 sizek (13)
+0076  01                 const type 3
+0077  0FA3E338           const [0]: (954442511)
+007B  04                 const type 4
+007C  08                 string size (8)
+007D  7061636B61676500   "package\0"
+                         const [1]: "package"
+0085  04                 const type 4
+0086  07                 string size (7)
+0087  736565616C6C00     "seeall\0"
+                         const [2]: "seeall"
+008E  01                 const type 3
+008F  29D4002C           const [3]: (738251817)
+0093  04                 const type 4
+0094  3A                 string size (58)
+0095  2F4C6F7475732F46+  "/Lotus/F"
+009D  782F506F77657273+  "x/Powers"
+00A5  7569744162696C69+  "uitAbili"
+00AD  746965732F4E6563+  "ties/Nec"
+00B5  726F2F436C6F6E65+  "ro/Clone"
+00BD  5468654465616454+  "TheDeadT"
+00C5  656C65706F727449+  "eleportI"
+00CD  6E00               "n\0"
+                         const [4]: "/Lotus/Fx/PowersuitAbilities/Necro/CloneTheDeadTeleportIn"
+00CF  01                 const type 3
+00D0  44DC9B32           const [5]: (849075268)
+00D4  04                 const type 4
+00D5  20                 string size (32)
+00D6  4C6F7475732E5363+  "Lotus.Sc"
+00DE  72697074732E4C69+  "ripts.Li"
+00E6  62732E4162696C69+  "bs.Abili"
+00EE  746965734C696200   "tiesLib\0"
+                         const [6]: "Lotus.Scripts.Libs.AbilitiesLib"
+00F6  04                 const type 4
+00F7  15                 string size (21)
+00F8  4973436C6F6E6554+  "IsCloneT"
+0100  686544656164456E+  "heDeadEn"
+0108  7469747900         "tity\0"
+                         const [7]: "IsCloneTheDeadEntity"
+010D  01                 const type 3
+010E  80326149           const [8]: (1231106688)
+0112  04                 const type 4
+0113  16                 string size (22)
+0114  4170706C79436C6F+  "ApplyClo"
+011C  6E65546865446561+  "neTheDea"
+0124  644D6F647300       "dMods\0"
+                         const [9]: "ApplyCloneTheDeadMods"
+012A  01                 const type 3
+012B  8872221B           const [10]: (455242376)
+012F  04                 const type 4
+0130  20                 string size (32)
+0131  4170706C79436C6F+  "ApplyClo"
+0139  6E65546865446561+  "neTheDea"
+0141  644D6F6473466F72+  "dModsFor"
+0149  416D616C67616D00   "Amalgam\0"
+                         const [11]: "ApplyCloneTheDeadModsForAmalgam"
+0151  01                 const type 3
+0152  8EBA3FAC           const [12]: (-1405109618)
+                         * functions:
+0156  04                 sizep (4)
+                         
+0157                     ** function [0] definition (level 2)
+                         ** start of function **
+0157  00                 string size (0)
+                         source name: (none)
+0158  05                 line defined (5)
+0159  14                 last line defined (20)
+015A  00                 nups (0)
+015B  01                 numparams (1)
+015C  00                 is_vararg (0)
+015D  0D                 maxstacksize (13)
+                         * code:
+015E  23                 sizecode (35)
+015F  5D000000           [01] getglobal  1   0        ; 1074689893
+0163  9D400000           [02] getglobal  2   1        ; _T
+0167  8E804001           [03] gettable   2   2   258  ; "cloneTheDeadAbility"
+016B  62800001           [04] call       1   2   2  
+016F  58400000           [05] test       1       1    ; to [7] if false
+0173  1A000180           [06] jmp        5            ; to [12]
+0177  5D000000           [07] getglobal  1   0        ; 1074689893
+017B  92000000           [08] move       2   0      
+017F  62800001           [09] call       1   2   2  
+0183  58000000           [10] test       1       0    ; to [12] if true
+0187  1A400080           [11] jmp        2            ; to [14]
+018B  57000000           [12] loadbool   1   0   0    ; false
+018F  5E000001           [13] return     1   2      
+0193  5DC00000           [14] getglobal  1   3        ; 248503575
+0197  9D400000           [15] getglobal  2   1        ; _T
+019B  8E804001           [16] gettable   2   2   258  ; "cloneTheDeadAbility"
+019F  62000101           [17] call       1   2   4  
+01A3  1AC00280           [18] jmp        12           ; to [31]
+01A7  8E01C102           [19] gettable   6   5   260  ; "clones"
+01AB  DD410100           [20] getglobal  7   5        ; 1672515847
+01AF  12020003           [21] move       8   6      
+01B3  E2010101           [22] call       7   2   4  
+01B7  1A000180           [23] jmp        5            ; to [29]
+01BB  0E83C105           [24] gettable   12  11  262  ; "entity"
+fail op	35
+01BF  23000006           [25] close      0  
+01C3  1A400080           [26] jmp        2            ; to [29]
+01C7  17038000           [27] loadbool   12  1   0    ; true
+01CB  1E030001           [28] return     12  2      
+01CF  D6810000           [29] tforloop   7       2    ; to [31] if exit
+01D3  1A00FE7F           [30] jmp        -7           ; to [24]
+01D7  56800000           [31] tforloop   1       2    ; to [33] if exit
+01DB  1A40FC7F           [32] jmp        -14          ; to [19]
+01DF  17030000           [33] loadbool   12  0   0    ; false
+01E3  1E030001           [34] return     12  2      
+01E7  1E008000           [35] return     0   1      
+                         * constants:
+01EB  07                 sizek (7)
+01EC  01                 const type 3
+01ED  65770E40           const [0]: (1074689893)
+01F1  04                 const type 4
+01F2  03                 string size (3)
+01F3  5F5400             "_T\0"
+                         const [1]: "_T"
+01F6  04                 const type 4
+01F7  14                 string size (20)
+01F8  636C6F6E65546865+  "cloneThe"
+0200  446561644162696C+  "DeadAbil"
+0208  69747900           "ity\0"
+                         const [2]: "cloneTheDeadAbility"
+020C  01                 const type 3
+020D  17DDCF0E           const [3]: (248503575)
+0211  04                 const type 4
+0212  07                 string size (7)
+0213  636C6F6E657300     "clones\0"
+                         const [4]: "clones"
+021A  01                 const type 3
+021B  0791B063           const [5]: (1672515847)
+021F  04                 const type 4
+0220  07                 string size (7)
+0221  656E7469747900     "entity\0"
+                         const [6]: "entity"
+                         * functions:
+0228  00                 sizep (0)
+                         * lines:
+0229  23                 sizelineinfo (35)
+                         [pc] (line)
+022A  06                 [01] (6)
+022B  00                 [02] (6)
+022C  00                 [03] (6)
+022D  00                 [04] (6)
+022E  06                 [05] (6)
+022F  00                 [06] (6)
+0230  00                 [07] (6)
+0231  00                 [08] (6)
+0232  06                 [09] (6)
+0233  00                 [10] (6)
+0234  00                 [11] (6)
+0235  00                 [12] (7)
+0236  06                 [13] (7)
+0237  00                 [14] (10)
+0238  00                 [15] (10)
+0239  00                 [16] (10)
+023A  06                 [17] (10)
+023B  00                 [18] (10)
+023C  00                 [19] (11)
+023D  00                 [20] (12)
+023E  06                 [21] (12)
+023F  00                 [22] (12)
+0240  00                 [23] (12)
+0241  00                 [24] (13)
+0242  06                 [25] (13)
+0243  00                 [26] (13)
+0244  00                 [27] (14)
+0245  00                 [28] (14)
+0246  06                 [29] (12)
+0247  00                 [30] (15)
+0248  00                 [31] (10)
+0249  00                 [32] (16)
+024A  06                 [33] (19)
+024B  00                 [34] (19)
+024C  00                 [35] (20)
+                         * locals:
+02B6  00                 sizelocvars (0)
+                         * upvalues:
+02B7  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+02B8                     ** function [1] definition (level 2)
+                         ** start of function **
+02B8  00                 string size (0)
+                         source name: (none)
+02B9  16                 line defined (22)
+02BA  2B                 last line defined (43)
+02BB  00                 nups (0)
+02BC  01                 numparams (1)
+02BD  00                 is_vararg (0)
+02BE  0E                 maxstacksize (14)
+                         * code:
+02BF  30                 sizecode (48)
+02C0  5D000000           [01] getglobal  1   0        ; 1074689893
+02C4  9D400000           [02] getglobal  2   1        ; _T
+02C8  8E804001           [03] gettable   2   2   258  ; "cloneTheDeadAbility"
+02CC  62800001           [04] call       1   2   2  
+02D0  58000000           [05] test       1       0    ; to [7] if true
+02D4  1A400080           [06] jmp        2            ; to [9]
+02D8  46008000           [07] loadnil    1   1      
+02DC  5E000001           [08] return     1   2      
+02E0  5D000000           [09] getglobal  1   0        ; 1074689893
+02E4  9D400000           [10] getglobal  2   1        ; _T
+02E8  8E804001           [11] gettable   2   2   258  ; "cloneTheDeadAbility"
+02EC  62800001           [12] call       1   2   2  
+02F0  58400000           [13] test       1       1    ; to [15] if false
+02F4  1A800780           [14] jmp        31           ; to [46]
+02F8  5DC00000           [15] getglobal  1   3        ; gRegion
+02FC  6400C100           [16] self       1   1   260  ; -2071158816
+0300  62800001           [17] call       1   2   2  
+0304  9D400100           [18] getglobal  2   5        ; 1672515847
+0308  D2008000           [19] move       3   1      
+030C  A2000101           [20] call       2   2   4  
+0310  1A400580           [21] jmp        22           ; to [44]
+0314  E4814103           [22] self       7   6   262  ; -605089866
+0318  E2810001           [23] call       7   2   2  
+031C  1D020000           [24] getglobal  8   0        ; 1074689893
+0320  5D420000           [25] getglobal  9   1        ; _T
+0324  4E82C004           [26] gettable   9   9   258  ; "cloneTheDeadAbility"
+0328  4EC28104           [27] gettable   9   9   7  
+032C  22820001           [28] call       8   2   2  
+0330  18420000           [29] test       8       1    ; to [31] if false
+0334  1A000380           [30] jmp        13           ; to [44]
+0338  1D420100           [31] getglobal  8   5        ; 1672515847
+033C  5D420000           [32] getglobal  9   1        ; _T
+0340  4E82C004           [33] gettable   9   9   258  ; "cloneTheDeadAbility"
+0344  4EC28104           [34] gettable   9   9   7  
+0348  4EC2C104           [35] gettable   9   9   263  ; "clones"
+034C  22020101           [36] call       8   2   4  
+0350  1AC00080           [37] jmp        4            ; to [42]
+0354  4E034206           [38] gettable   13  12  264  ; "entity"
+fail op	35
+0358  23008006           [39] close      0  
+035C  1A000080           [40] jmp        1            ; to [42]
+0360  9E010001           [41] return     6   2      
+0364  16820000           [42] tforloop   8       2    ; to [44] if exit
+0368  1A40FE7F           [43] jmp        -6           ; to [38]
+036C  96800000           [44] tforloop   2       2    ; to [46] if exit
+0370  1AC0F97F           [45] jmp        -24          ; to [22]
+0374  46038006           [46] loadnil    13  13     
+0378  5E030001           [47] return     13  2      
+037C  1E008000           [48] return     0   1      
+                         * constants:
+0380  09                 sizek (9)
+0381  01                 const type 3
+0382  65770E40           const [0]: (1074689893)
+0386  04                 const type 4
+0387  03                 string size (3)
+0388  5F5400             "_T\0"
+                         const [1]: "_T"
+038B  04                 const type 4
+038C  14                 string size (20)
+038D  636C6F6E65546865+  "cloneThe"
+0395  446561644162696C+  "DeadAbil"
+039D  69747900           "ity\0"
+                         const [2]: "cloneTheDeadAbility"
+03A1  04                 const type 4
+03A2  08                 string size (8)
+03A3  67526567696F6E00   "gRegion\0"
+                         const [3]: "gRegion"
+03AB  01                 const type 3
+03AC  E09F8C84           const [4]: (-2071158816)
+03B0  01                 const type 3
+03B1  0791B063           const [5]: (1672515847)
+03B5  01                 const type 3
+03B6  B60FEFDB           const [6]: (-605089866)
+03BA  04                 const type 4
+03BB  07                 string size (7)
+03BC  636C6F6E657300     "clones\0"
+                         const [7]: "clones"
+03C3  04                 const type 4
+03C4  07                 string size (7)
+03C5  656E7469747900     "entity\0"
+                         const [8]: "entity"
+                         * functions:
+03CC  00                 sizep (0)
+                         * lines:
+03CD  30                 sizelineinfo (48)
+                         [pc] (line)
+03CE  17                 [01] (23)
+03CF  00                 [02] (23)
+03D0  00                 [03] (23)
+03D1  00                 [04] (23)
+03D2  17                 [05] (23)
+03D3  00                 [06] (23)
+03D4  00                 [07] (24)
+03D5  00                 [08] (24)
+03D6  17                 [09] (27)
+03D7  00                 [10] (27)
+03D8  00                 [11] (27)
+03D9  00                 [12] (27)
+03DA  17                 [13] (27)
+03DB  00                 [14] (27)
+03DC  00                 [15] (29)
+03DD  00                 [16] (29)
+03DE  17                 [17] (29)
+03DF  00                 [18] (30)
+03E0  00                 [19] (30)
+03E1  00                 [20] (30)
+03E2  17                 [21] (30)
+03E3  00                 [22] (31)
+03E4  00                 [23] (31)
+03E5  00                 [24] (32)
+03E6  18                 [25] (32)
+03E7  00                 [26] (32)
+03E8  00                 [27] (32)
+03E9  00                 [28] (32)
+03EA  18                 [29] (32)
+03EB  00                 [30] (32)
+03EC  00                 [31] (33)
+03ED  00                 [32] (33)
+03EE  1B                 [33] (33)
+03EF  00                 [34] (33)
+03F0  00                 [35] (33)
+03F1  00                 [36] (33)
+03F2  1B                 [37] (33)
+03F3  00                 [38] (34)
+03F4  00                 [39] (34)
+03F5  00                 [40] (34)
+03F6  1B                 [41] (35)
+03F7  00                 [42] (33)
+03F8  00                 [43] (36)
+03F9  00                 [44] (30)
+03FA  1B                 [45] (38)
+03FB  00                 [46] (42)
+03FC  00                 [47] (42)
+03FD  00                 [48] (43)
+                         * locals:
+048E  00                 sizelocvars (0)
+                         * upvalues:
+048F  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+0490                     ** function [2] definition (level 2)
+                         ** start of function **
+0490  00                 string size (0)
+                         source name: (none)
+0491  2D                 line defined (45)
+0492  42                 last line defined (66)
+0493  02                 nups (2)
+0494  02                 numparams (2)
+0495  00                 is_vararg (0)
+0496  0A                 maxstacksize (10)
+                         * code:
+0497  3D                 sizecode (61)
+0498  9D000000           [01] getglobal  2   0        ; gRegion
+049C  A4404001           [02] self       2   2   257  ; -1520831144
+04A0  A2800001           [03] call       2   2   2  
+04A4  98000000           [04] test       2       0    ; to [6] if true
+04A8  1A400280           [05] jmp        10           ; to [16]
+04AC  9D800000           [06] getglobal  2   2        ; 1074689893
+04B0  D2000000           [07] move       3   0      
+04B4  A2800001           [08] call       2   2   2  
+04B8  98400000           [09] test       2       1    ; to [11] if false
+04BC  1A000180           [10] jmp        5            ; to [16]
+04C0  9D800000           [11] getglobal  2   2        ; 1074689893
+04C4  D2008000           [12] move       3   1      
+04C8  A2800001           [13] call       2   2   2  
+04CC  98000000           [14] test       2       0    ; to [16] if true
+04D0  1A000080           [15] jmp        1            ; to [17]
+04D4  1E008000           [16] return     0   1      
+04D8  A4C04000           [17] self       2   0   259  ; -1957065004
+04DC  1D010100           [18] getglobal  4   4        ; gLotusNpcAvatarType
+04E0  A2808001           [19] call       2   3   2  
+04E4  98000000           [20] test       2       0    ; to [22] if true
+04E8  1A400380           [21] jmp        14           ; to [36]
+04EC  A4C0C000           [22] self       2   1   259  ; -1957065004
+04F0  1D010100           [23] getglobal  4   4        ; gLotusNpcAvatarType
+04F4  A2808001           [24] call       2   3   2  
+04F8  98000000           [25] test       2       0    ; to [27] if true
+04FC  1A000280           [26] jmp        9            ; to [36]
+0500  9D800000           [27] getglobal  2   2        ; 1074689893
+0504  E4404100           [28] self       3   0   261  ; -1073689042
+0508  E2000001           [29] call       3   2   0  
+050C  A2800000           [30] call       2   0   2  
+0510  98400000           [31] test       2       1    ; to [33] if false
+0514  1A800080           [32] jmp        3            ; to [36]
+0518  A480C100           [33] self       2   1   262  ; 1857319847
+051C  17018000           [34] loadbool   4   1   0    ; true
+0520  A2408001           [35] call       2   3   1  
+0524  93000000           [36] getupval   2   0      
+0528  D2000000           [37] move       3   0      
+052C  A2800001           [38] call       2   2   2  
+0530  DD800000           [39] getglobal  3   2        ; 1074689893
+0534  12010001           [40] move       4   2      
+0538  E2800001           [41] call       3   2   2  
+053C  D8400000           [42] test       3       1    ; to [44] if false
+0540  1A000480           [43] jmp        17           ; to [61]
+0544  E4C0C100           [44] self       3   1   263  ; -1421644046
+0548  5D010200           [45] getglobal  5   8        ; -895206725
+054C  93018000           [46] getupval   6   1      
+0550  62810001           [47] call       5   2   2  
+0554  9D410200           [48] getglobal  6   9        ; EMPTY_SYMBOL
+0558  DD810200           [49] getglobal  7   10       ; ZERO_VECTOR
+055C  1DC20200           [50] getglobal  8   11       ; ZERO_ROTATION
+0560  52020001           [51] move       9   2      
+0564  E2408003           [52] call       3   7   1  
+0568  E4C0C000           [53] self       3   1   259  ; -1957065004
+056C  5D010100           [54] getglobal  5   4        ; gLotusNpcAvatarType
+0570  E2808001           [55] call       3   3   2  
+0574  D8000000           [56] test       3       0    ; to [58] if true
+0578  1A800080           [57] jmp        3            ; to [61]
+057C  E480C100           [58] self       3   1   262  ; 1857319847
+0580  57010000           [59] loadbool   5   0   0    ; false
+0584  E2408001           [60] call       3   3   1  
+0588  1E008000           [61] return     0   1      
+                         * constants:
+058C  0C                 sizek (12)
+058D  04                 const type 4
+058E  08                 string size (8)
+058F  67526567696F6E00   "gRegion\0"
+                         const [0]: "gRegion"
+0597  01                 const type 3
+0598  58F559A5           const [1]: (-1520831144)
+059C  01                 const type 3
+059D  65770E40           const [2]: (1074689893)
+05A1  01                 const type 3
+05A2  D48E598B           const [3]: (-1957065004)
+05A6  04                 const type 4
+05A7  14                 string size (20)
+05A8  674C6F7475734E70+  "gLotusNp"
+05B0  6341766174617254+  "cAvatarT"
+05B8  79706500           "ype\0"
+                         const [4]: "gLotusNpcAvatarType"
+05BC  01                 const type 3
+05BD  2ECE00C0           const [5]: (-1073689042)
+05C1  01                 const type 3
+05C2  A773B46E           const [6]: (1857319847)
+05C6  01                 const type 3
+05C7  F26E43AB           const [7]: (-1421644046)
+05CB  01                 const type 3
+05CC  BB3AA4CA           const [8]: (-895206725)
+05D0  04                 const type 4
+05D1  0D                 string size (13)
+05D2  454D5054595F5359+  "EMPTY_SY"
+05DA  4D424F4C00         "MBOL\0"
+                         const [9]: "EMPTY_SYMBOL"
+05DF  04                 const type 4
+05E0  0C                 string size (12)
+05E1  5A45524F5F564543+  "ZERO_VEC"
+05E9  544F5200           "TOR\0"
+                         const [10]: "ZERO_VECTOR"
+05ED  04                 const type 4
+05EE  0E                 string size (14)
+05EF  5A45524F5F524F54+  "ZERO_ROT"
+05F7  4154494F4E00       "ATION\0"
+                         const [11]: "ZERO_ROTATION"
+                         * functions:
+05FD  00                 sizep (0)
+                         * lines:
+05FE  3D                 sizelineinfo (61)
+                         [pc] (line)
+05FF  30                 [01] (48)
+0600  00                 [02] (48)
+0601  00                 [03] (48)
+0602  00                 [04] (48)
+0603  30                 [05] (48)
+0604  00                 [06] (48)
+0605  00                 [07] (48)
+0606  00                 [08] (48)
+0607  30                 [09] (48)
+0608  00                 [10] (48)
+0609  00                 [11] (48)
+060A  00                 [12] (48)
+060B  30                 [13] (48)
+060C  00                 [14] (48)
+060D  00                 [15] (48)
+060E  00                 [16] (49)
+060F  30                 [17] (54)
+0610  00                 [18] (54)
+0611  00                 [19] (54)
+0612  00                 [20] (54)
+0613  30                 [21] (54)
+0614  00                 [22] (54)
+0615  00                 [23] (54)
+0616  00                 [24] (54)
+0617  30                 [25] (54)
+0618  00                 [26] (54)
+0619  00                 [27] (54)
+061A  00                 [28] (54)
+061B  30                 [29] (54)
+061C  00                 [30] (54)
+061D  00                 [31] (54)
+061E  00                 [32] (54)
+061F  30                 [33] (55)
+0620  00                 [34] (55)
+0621  00                 [35] (55)
+0622  00                 [36] (58)
+0623  30                 [37] (58)
+0624  00                 [38] (58)
+0625  00                 [39] (60)
+0626  00                 [40] (60)
+0627  30                 [41] (60)
+0628  00                 [42] (60)
+0629  00                 [43] (60)
+062A  00                 [44] (61)
+062B  30                 [45] (61)
+062C  00                 [46] (61)
+062D  00                 [47] (61)
+062E  00                 [48] (61)
+062F  30                 [49] (61)
+0630  00                 [50] (61)
+0631  00                 [51] (61)
+0632  00                 [52] (61)
+0633  30                 [53] (62)
+0634  00                 [54] (62)
+0635  00                 [55] (62)
+0636  00                 [56] (62)
+0637  30                 [57] (62)
+0638  00                 [58] (63)
+0639  00                 [59] (63)
+063A  00                 [60] (63)
+063B  31                 [61] (66)
+                         * locals:
+06F3  00                 sizelocvars (0)
+                         * upvalues:
+06F4  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         
+06F5                     ** function [3] definition (level 2)
+                         ** start of function **
+06F5  00                 string size (0)
+                         source name: (none)
+06F6  44                 line defined (68)
+06F7  54                 last line defined (84)
+06F8  03                 nups (3)
+06F9  02                 numparams (2)
+06FA  00                 is_vararg (0)
+06FB  0A                 maxstacksize (10)
+                         * code:
+06FC  46                 sizecode (70)
+06FD  9D000000           [01] getglobal  2   0        ; gRegion
+0701  A4404001           [02] self       2   2   257  ; -1520831144
+0705  A2800001           [03] call       2   2   2  
+0709  98000000           [04] test       2       0    ; to [6] if true
+070D  1A400280           [05] jmp        10           ; to [16]
+0711  9D800000           [06] getglobal  2   2        ; 1074689893
+0715  D2000000           [07] move       3   0      
+0719  A2800001           [08] call       2   2   2  
+071D  98400000           [09] test       2       1    ; to [11] if false
+0721  1A000180           [10] jmp        5            ; to [16]
+0725  9D800000           [11] getglobal  2   2        ; 1074689893
+0729  D2008000           [12] move       3   1      
+072D  A2800001           [13] call       2   2   2  
+0731  98000000           [14] test       2       0    ; to [16] if true
+0735  1A000080           [15] jmp        1            ; to [17]
+0739  1E008000           [16] return     0   1      
+073D  A4C04000           [17] self       2   0   259  ; -1957065004
+0741  1D010100           [18] getglobal  4   4        ; gLotusNpcAvatarType
+0745  A2808001           [19] call       2   3   2  
+0749  98000000           [20] test       2       0    ; to [22] if true
+074D  1A400380           [21] jmp        14           ; to [36]
+0751  A4C0C000           [22] self       2   1   259  ; -1957065004
+0755  1D010100           [23] getglobal  4   4        ; gLotusNpcAvatarType
+0759  A2808001           [24] call       2   3   2  
+075D  98000000           [25] test       2       0    ; to [27] if true
+0761  1A000280           [26] jmp        9            ; to [36]
+0765  9D800000           [27] getglobal  2   2        ; 1074689893
+0769  E4404100           [28] self       3   0   261  ; -1073689042
+076D  E2000001           [29] call       3   2   0  
+0771  A2800000           [30] call       2   0   2  
+0775  98400000           [31] test       2       1    ; to [33] if false
+0779  1A800080           [32] jmp        3            ; to [36]
+077D  A480C100           [33] self       2   1   262  ; 1857319847
+0781  17018000           [34] loadbool   4   1   0    ; true
+0785  A2408001           [35] call       2   3   1  
+0789  93000000           [36] getupval   2   0      
+078D  D2000000           [37] move       3   0      
+0791  A2800001           [38] call       2   2   2  
+0795  DD800000           [39] getglobal  3   2        ; 1074689893
+0799  12010001           [40] move       4   2      
+079D  E2800001           [41] call       3   2   2  
+07A1  D8400000           [42] test       3       1    ; to [44] if false
+07A5  1A400680           [43] jmp        26           ; to [70]
+07A9  D3008000           [44] getupval   3   1      
+07AD  CEC0C101           [45] gettable   3   3   263  ; -1822566011
+07B1  12018000           [46] move       4   1      
+07B5  57010000           [47] loadbool   5   0   0    ; false
+07B9  E2408001           [48] call       3   3   1  
+07BD  E400C200           [49] self       3   1   264  ; -1421644046
+07C1  5D410200           [50] getglobal  5   9        ; -895206725
+07C5  93010001           [51] getupval   6   2      
+07C9  62810001           [52] call       5   2   2  
+07CD  9D810200           [53] getglobal  6   10       ; EMPTY_SYMBOL
+07D1  DDC10200           [54] getglobal  7   11       ; ZERO_VECTOR
+07D5  1D020300           [55] getglobal  8   12       ; ZERO_ROTATION
+07D9  52020000           [56] move       9   0      
+07DD  E2408003           [57] call       3   7   1  
+07E1  DD400300           [58] getglobal  3   13       ; table
+07E5  CE80C301           [59] gettable   3   3   270  ; -431682403
+07E9  1DC10300           [60] getglobal  4   15       ; _T
+07ED  0E014402           [61] gettable   4   4   272  ; "cloneTheDeadAbility"
+07F1  64414401           [62] self       5   2   273  ; -605089866
+07F5  62810001           [63] call       5   2   2  
+07F9  0E410102           [64] gettable   4   4   5  
+07FD  0E814402           [65] gettable   4   4   274  ; "clones"
+0801  4B810000           [66] newtable   5   0   2    ; array=0, hash=2
+0805  4C418089           [67] settable   5   275 1    ; "entity"
+0809  4C41458A           [68] settable   5   276 277  ; "healthDrain" 0
+080D  E2408001           [69] call       3   3   1  
+0811  1E008000           [70] return     0   1      
+                         * constants:
+0815  16                 sizek (22)
+0816  04                 const type 4
+0817  08                 string size (8)
+0818  67526567696F6E00   "gRegion\0"
+                         const [0]: "gRegion"
+0820  01                 const type 3
+0821  58F559A5           const [1]: (-1520831144)
+0825  01                 const type 3
+0826  65770E40           const [2]: (1074689893)
+082A  01                 const type 3
+082B  D48E598B           const [3]: (-1957065004)
+082F  04                 const type 4
+0830  14                 string size (20)
+0831  674C6F7475734E70+  "gLotusNp"
+0839  6341766174617254+  "cAvatarT"
+0841  79706500           "ype\0"
+                         const [4]: "gLotusNpcAvatarType"
+0845  01                 const type 3
+0846  2ECE00C0           const [5]: (-1073689042)
+084A  01                 const type 3
+084B  A773B46E           const [6]: (1857319847)
+084F  01                 const type 3
+0850  85D95D93           const [7]: (-1822566011)
+0854  01                 const type 3
+0855  F26E43AB           const [8]: (-1421644046)
+0859  01                 const type 3
+085A  BB3AA4CA           const [9]: (-895206725)
+085E  04                 const type 4
+085F  0D                 string size (13)
+0860  454D5054595F5359+  "EMPTY_SY"
+0868  4D424F4C00         "MBOL\0"
+                         const [10]: "EMPTY_SYMBOL"
+086D  04                 const type 4
+086E  0C                 string size (12)
+086F  5A45524F5F564543+  "ZERO_VEC"
+0877  544F5200           "TOR\0"
+                         const [11]: "ZERO_VECTOR"
+087B  04                 const type 4
+087C  0E                 string size (14)
+087D  5A45524F5F524F54+  "ZERO_ROT"
+0885  4154494F4E00       "ATION\0"
+                         const [12]: "ZERO_ROTATION"
+088B  04                 const type 4
+088C  06                 string size (6)
+088D  7461626C6500       "table\0"
+                         const [13]: "table"
+0893  01                 const type 3
+0894  9D0C45E6           const [14]: (-431682403)
+0898  04                 const type 4
+0899  03                 string size (3)
+089A  5F5400             "_T\0"
+                         const [15]: "_T"
+089D  04                 const type 4
+089E  14                 string size (20)
+089F  636C6F6E65546865+  "cloneThe"
+08A7  446561644162696C+  "DeadAbil"
+08AF  69747900           "ity\0"
+                         const [16]: "cloneTheDeadAbility"
+08B3  01                 const type 3
+08B4  B60FEFDB           const [17]: (-605089866)
+08B8  04                 const type 4
+08B9  07                 string size (7)
+08BA  636C6F6E657300     "clones\0"
+                         const [18]: "clones"
+08C1  04                 const type 4
+08C2  07                 string size (7)
+08C3  656E7469747900     "entity\0"
+                         const [19]: "entity"
+08CA  04                 const type 4
+08CB  0C                 string size (12)
+08CC  6865616C74684472+  "healthDr"
+08D4  61696E00           "ain\0"
+                         const [20]: "healthDrain"
+08D8  03                 const type 3
+08D9  00000000           const [21]: (0)
+                         * functions:
+08DD  00                 sizep (0)
+                         * lines:
+08DE  46                 sizelineinfo (70)
+                         [pc] (line)
+08DF  45                 [01] (69)
+08E0  00                 [02] (69)
+08E1  00                 [03] (69)
+08E2  00                 [04] (69)
+08E3  45                 [05] (69)
+08E4  00                 [06] (69)
+08E5  00                 [07] (69)
+08E6  00                 [08] (69)
+08E7  45                 [09] (69)
+08E8  00                 [10] (69)
+08E9  00                 [11] (69)
+08EA  00                 [12] (69)
+08EB  45                 [13] (69)
+08EC  00                 [14] (69)
+08ED  00                 [15] (69)
+08EE  00                 [16] (70)
+08EF  45                 [17] (73)
+08F0  00                 [18] (73)
+08F1  00                 [19] (73)
+08F2  00                 [20] (73)
+08F3  45                 [21] (73)
+08F4  00                 [22] (73)
+08F5  00                 [23] (73)
+08F6  00                 [24] (73)
+08F7  45                 [25] (73)
+08F8  00                 [26] (73)
+08F9  00                 [27] (73)
+08FA  00                 [28] (73)
+08FB  45                 [29] (73)
+08FC  00                 [30] (73)
+08FD  00                 [31] (73)
+08FE  00                 [32] (73)
+08FF  45                 [33] (74)
+0900  00                 [34] (74)
+0901  00                 [35] (74)
+0902  00                 [36] (77)
+0903  45                 [37] (77)
+0904  00                 [38] (77)
+0905  00                 [39] (79)
+0906  00                 [40] (79)
+0907  45                 [41] (79)
+0908  00                 [42] (79)
+0909  00                 [43] (79)
+090A  00                 [44] (80)
+090B  45                 [45] (80)
+090C  00                 [46] (80)
+090D  00                 [47] (80)
+090E  00                 [48] (80)
+090F  45                 [49] (81)
+0910  00                 [50] (81)
+0911  00                 [51] (81)
+0912  00                 [52] (81)
+0913  45                 [53] (81)
+0914  00                 [54] (81)
+0915  00                 [55] (81)
+0916  00                 [56] (81)
+0917  45                 [57] (81)
+0918  00                 [58] (82)
+0919  00                 [59] (82)
+091A  00                 [60] (82)
+091B  46                 [61] (82)
+091C  00                 [62] (82)
+091D  00                 [63] (82)
+091E  00                 [64] (82)
+091F  49                 [65] (82)
+0920  00                 [66] (82)
+0921  00                 [67] (82)
+0922  00                 [68] (82)
+0923  49                 [69] (82)
+0924  00                 [70] (84)
+                         * locals:
+09F7  00                 sizelocvars (0)
+                         * upvalues:
+09F8  00                 sizeupvalues (0)
+                         ** end of function **
+
+                         * lines:
+09F9  1B                 sizelineinfo (27)
+                         [pc] (line)
+09FA  01                 [01] (1)
+09FB  00                 [02] (1)
+09FC  00                 [03] (1)
+09FD  00                 [04] (1)
+09FE  01                 [05] (1)
+09FF  00                 [06] (2)
+0A00  00                 [07] (2)
+0A01  00                 [08] (2)
+0A02  01                 [09] (3)
+0A03  00                 [10] (3)
+0A04  00                 [11] (3)
+0A05  00                 [12] (20)
+0A06  01                 [13] (20)
+0A07  00                 [14] (5)
+0A08  00                 [15] (43)
+0A09  00                 [16] (66)
+0A0A  01                 [17] (66)
+0A0B  00                 [18] (66)
+0A0C  00                 [19] (66)
+0A0D  00                 [20] (45)
+0A0E  02                 [21] (84)
+0A0F  00                 [22] (84)
+0A10  00                 [23] (84)
+0A11  00                 [24] (84)
+0A12  02                 [25] (84)
+0A13  00                 [26] (68)
+0A14  00                 [27] (84)
+                         * locals:
+0A66  00                 sizelocvars (0)
+                         * upvalues:
+0A67  00                 sizeupvalues (0)
+                         ** end of function **
+
+0A68                     ** end of chunk **
